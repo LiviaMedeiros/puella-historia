@@ -1,0 +1,53 @@
+<div id="PresentHistory">
+	<ul id="filterTab" class="common_tab t_gold">
+		<li data-id="ALL" class="se_tabs TE current"><span>ALL</span></li>
+		<li data-id="LOGIN_BONUS" class="se_tabs TE"><span>ログインボーナス</span></li>
+		<li data-id="GACHA" class="se_tabs TE"><span>ガチャ</span></li>
+		<li data-id="QUEST" class="se_tabs TE"><span>クエスト</span></li>
+		<li data-id="OTHER" class="se_tabs TE"><span>その他</span></li>
+	</ul>
+	<div id="historyBaseWrap" class="commonFrame2">
+		<h2><span id="titleFilter" class="c_white">ALL</span></h2>
+		<div id="presentWrap">
+			<div id="presentScrollWrap">
+				<div id="presentInner" class="presentScrollInner">
+				</div>
+			</div>
+			<div id="pagingWrap">
+			</div>
+			<div id="historyCaution" class="hide">現在表示できる履歴がありません。</div>
+		</div>
+		<p class="presentCnt c_gold">ページ内受け取り件数<span id="presentCnt" class="c_gold"></span>件</p>
+	</div>
+</div>
+
+
+<script type="text/template" id="presentParts">
+	<div class="wrap">
+		<%="<% console.log(model); %\>" %>
+		<!-- プレゼント日時 -->
+		<p class="presentDate c_gold"><%= "<%= model.presentDate.split(' ')[0] %\>" %></p>
+
+		<!-- プレゼント名前 -->
+		<%="<% if (model.presentType === 'GEM') { %\>" %>
+		<p class="presentName c_purple"><%= "<%= model.displayName %\>" %>のデスティニージェム</p>
+		<%="<% } else if(model.presentType === 'CARD' && model.chara.id === 1042) { %\>" %>
+			<p class="presentName c_purple"><%= "<%= _.escape(userName) %\>" %></p>
+		<%="<% } else { %\>" %>
+		<p class="presentName c_purple"><%= "<%= model.displayName %\>" %></p>
+		<%="<% } %\>" %>
+
+		<!-- プレゼント文言 -->
+		<div class="presentCommentWrap">
+			<%= "<% var presentComment = model.presentComment; %\>" %>
+			<%= "<% if (presentComment) { %\>" %>
+				<%= "<% presentComment = model.presentComment.replace(/＠/g, '　'); %\>" %>
+				<%= "<% presentComment = presentComment.replace(/userName/g,_.escape(userName)); %\>" %>
+			<%= "<% } %\>" %>
+			<p class="presentComment c_gold"><%= "<%= presentComment %\>" %></p>
+			<%= "<% if(model.presentId) { %\>" %>
+				<p class="presentCaution">プレゼントボックスから受け取り</p>
+			<%= "<% } %\>" %>
+		</div>
+	</div>
+</script>

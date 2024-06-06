@@ -1,0 +1,1246 @@
+@charset "UTF-8";
+#popupArea .setNameChangePop #popupInfoDetailTitle {
+  margin-bottom: 40px;
+}
+#popupArea .setNameChangePop .popupTextArea {
+  height: 300px;
+}
+#popupArea .setNameChangePop .text {
+  font-size: 24px;
+}
+#popupArea .setNameChangePop .commonInput {
+  width: 500px;
+  height: 64px;
+  margin: 40px auto;
+  padding-right: 24px;
+  padding-left: 24px;
+  font-size: 24px;
+  line-height: 64px;
+}
+#popupArea .setNameChangePop #defaultNameBtn {
+  width: 112px;
+  position: absolute;
+  top: 169px;
+  left: 675px;
+}
+#popupArea .setNameChangePop .textCount {
+  position: absolute;
+  top: 220px;
+  left: 610px;
+  font-size: 18px;
+}
+#popupArea .setNameChangePop .commentNotis {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+#popupArea .pieceArchivePop .popupTextArea {
+  font-size: 20px !important;
+}
+#popupArea .archiveMoveSelectPop .popupInner {
+  width: 850px;
+  height: 510px;
+  position: absolute;
+  top: -webkit-calc(50% - 250px);
+  left: -webkit-calc((100% - 850px) / 2);
+}
+#popupArea .archiveMoveSelectPop #popupInfoDetailTitle {
+  width: 740px;
+}
+#popupArea .archiveMoveSelectPop .choiceNum {
+  display: inline-block;
+  width: 50%;
+  margin: 10px auto 2px;
+  font-size: 22px;
+  background: rgb(255, 255, 255);
+  position: relative;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 6px;
+  -webkit-box-shadow: rgb(198, 168, 130) 0px 0px 0px 2px, rgb(238, 233, 224) 0px 0px 5px inset;
+          box-shadow: rgb(198, 168, 130) 0px 0px 0px 2px, rgb(238, 233, 224) 0px 0px 5px inset;
+}
+#popupArea .archiveMoveSelectPop .normalTitle {
+  position: relative;
+  background: url("/magica/resource/image_web/page/memoria/memoria_title_storage_01.png") left top no-repeat;
+  width: 814px;
+  height: 38px;
+  margin: 10px auto -10px;
+}
+#popupArea .archiveMoveSelectPop .archiveTitle {
+  position: relative;
+  background: url("/magica/resource/image_web/page/memoria/memoria_title_storage_02.png") left top no-repeat;
+  width: 814px;
+  height: 38px;
+  margin: 10px auto -10px;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea {
+  width: 300px;
+  margin: 20px auto 0px;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .addNum {
+  color: #fbf681;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toListBtn {
+  position: relative;
+  background: url("/magica/resource/image_web/page/memoria/btn_memoria_storage_11.png") left top no-repeat;
+  width: 258px;
+  height: 74px;
+  display: block;
+  margin: 10px auto;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toListBtn .name, #popupArea .archiveMoveSelectPop .popupBtnArea .toListBtn .pieceAddNum {
+  color: #fff;
+  text-shadow: -1px -1px 3px #d754a8, 1px -1px 3px #d754a8, -1px 1px 3px #d754a8, 1px 1px 3px #d754a8, -1px -1px 3px #d754a8, 1px -1px 3px #d754a8, -1px 1px 3px #d754a8, 1px 1px 3px #d754a8;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toListBtn .name {
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  width: 210px;
+  font-size: 18px;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toListBtn .pieceAddNum {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  width: 200px;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toListBtn.off, #popupArea .archiveMoveSelectPop .popupBtnArea .toListBtn.now {
+  pointer-events: none;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toListBtn.off:after, #popupArea .archiveMoveSelectPop .popupBtnArea .toListBtn.now:after {
+  content: "OVER";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 258px;
+  height: 74px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0 0;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: -1px -1px 3px #d754a8, 1px -1px 3px #d754a8, -1px 1px 3px #d754a8, 1px 1px 3px #d754a8, -1px -1px 3px #d754a8, 1px -1px 3px #d754a8, -1px 1px 3px #d754a8, 1px 1px 3px #d754a8;
+  border-radius: 18px;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toListBtn.off .addNum {
+  color: #ffffff;
+  text-shadow: -1px -1px 3px #e42e62, 1px -1px 3px #e42e62, -1px 1px 3px #e42e62, 1px 1px 3px #e42e62, -1px -1px 3px #e42e62, 1px -1px 3px #e42e62, -1px 1px 3px #e42e62, 1px 1px 3px #e42e62;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toListBtn.now:after {
+  content: "表示中";
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toListBtn.now .pieceAddNum .addNum {
+  color: #fff;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toArchiveBtn {
+  position: relative;
+  background: url("/magica/resource/image_web/page/memoria/btn_memoria_storage_12.png") left top no-repeat;
+  width: 258px;
+  height: 74px;
+  display: block;
+  margin: 10px auto 0;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toArchiveBtn .name, #popupArea .archiveMoveSelectPop .popupBtnArea .toArchiveBtn .pieceAddNum {
+  color: #fff;
+  text-shadow: -1px -1px 3px #7240f0, 1px -1px 3px #7240f0, -1px 1px 3px #7240f0, 1px 1px 3px #7240f0, -1px -1px 3px #7240f0, 1px -1px 3px #7240f0, -1px 1px 3px #7240f0, 1px 1px 3px #7240f0;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toArchiveBtn .name {
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  width: 210px;
+  font-size: 18px;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toArchiveBtn .pieceAddNum {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  width: 200px;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toArchiveBtn.off, #popupArea .archiveMoveSelectPop .popupBtnArea .toArchiveBtn.now {
+  pointer-events: none;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toArchiveBtn.off:after, #popupArea .archiveMoveSelectPop .popupBtnArea .toArchiveBtn.now:after {
+  content: "OVER";
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 258px;
+  height: 74px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0 0;
+  color: #fff;
+  font-size: 20px;
+  text-shadow: -1px -1px 3px #d754a8, 1px -1px 3px #d754a8, -1px 1px 3px #d754a8, 1px 1px 3px #d754a8, -1px -1px 3px #d754a8, 1px -1px 3px #d754a8, -1px 1px 3px #d754a8, 1px 1px 3px #d754a8;
+  border-radius: 18px;
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toArchiveBtn.now:after {
+  content: "表示中";
+}
+#popupArea .archiveMoveSelectPop .popupBtnArea .toArchiveBtn.now .pieceAddNum .addNum {
+  color: #fff;
+}
+
+#UserMemoriaList.archive #memoriaWrap.onlyEvent .memoriaScrollWrap .userMemoriaIcon.overEffective {
+  display: block;
+}
+#UserMemoriaList.archive #listUtil, #UserMemoriaList.archive #composeItemFrame {
+  display: none;
+}
+#UserMemoriaList.archive.toHand #memoriaWrap .userMemoriaIcon.selected .overWrap {
+  border: 4px solid #8f37ff;
+}
+#UserMemoriaList.archive #sizeChange {
+  width: 70px;
+}
+#UserMemoriaList.archive #memoriaListHeader #nameChangeBtn {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 240px;
+  height: 44px;
+}
+#UserMemoriaList.archive #memoriaListHeader #memoriaListInfo .memoriaSelectNum {
+  display: inline-block;
+}
+#UserMemoriaList.archive #archiveUtil {
+  display: block;
+}
+#UserMemoriaList.archive #memoriaWrap {
+  width: 758px;
+  left: 64px;
+}
+#UserMemoriaList.archive #memoriaWrap h2 {
+  display: block;
+}
+#UserMemoriaList.archive #memoriaWrap .memoriaScrollWrap {
+  width: 716px;
+  height: -webkit-calc(100% - 58px) !important;
+  margin-top: 30px !important;
+  left: 24px;
+}
+#UserMemoriaList.archive #memoriaWrap.reachLimit .userMemoriaIcon .overWrap {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  border-radius: 16px 8px 8px 8px;
+  z-index: 18;
+}
+#UserMemoriaList.archive #memoriaWrap.reachLimit .userMemoriaIcon.selected .overWrap {
+  background-color: inherit;
+}
+#UserMemoriaList.archive #memoriaWrap .userMemoriaIcon .cardInner, #UserMemoriaList.archive #memoriaWrap .userMemoriaIcon .overWrap {
+  width: 100%;
+  height: 100%;
+}
+#UserMemoriaList.archive #memoriaWrap .userMemoriaIcon.selected .overWrap {
+  width: -webkit-calc(100% + 8px);
+  height: -webkit-calc(100% + 8px);
+  position: absolute;
+  top: -4px;
+  left: -4px;
+}
+#UserMemoriaList.archive #memoriaWrap.smaller .memoriaScrollWrap {
+  width: 668px;
+  left: 56px;
+}
+#UserMemoriaList.archive #memoriaWrap.smaller .memoriaScrollWrap .userMemoriaIcon .overWrap {
+  border-radius: 16px 8px 8px 8px;
+}
+#UserMemoriaList.archive #memoriaWrap.smaller .memoriaScrollWrap .userMemoriaIcon .overWrap:before {
+  font-size: 16px !important;
+  line-height: 100px !important;
+}
+#UserMemoriaList.archive #memoriaWrap.smallest .memoriaScrollWrap {
+  width: 692px;
+  left: 43px;
+}
+#UserMemoriaList.archive #memoriaWrap.smallest .memoriaScrollWrap .userMemoriaIcon .overWrap {
+  border-radius: 12px 4px 4px 4px;
+}
+#UserMemoriaList.archive #memoriaWrap.smallest .memoriaScrollWrap .userMemoriaIcon .overWrap:before {
+  font-size: 14px !important;
+  line-height: 88px !important;
+}
+#UserMemoriaList.archive #archiveUtil {
+  width: 168px;
+  height: -webkit-calc(100% - 124px);
+  display: block;
+  position: absolute;
+  top: 112px;
+  right: 17px;
+}
+#UserMemoriaList.archive #archiveUtil .btn {
+  width: 168px;
+  min-width: 168px;
+}
+#UserMemoriaList.archive #archiveUtil #archiveBtn {
+  position: absolute;
+  right: 2px;
+  bottom: 16px;
+}
+#UserMemoriaList.archive #archiveUtil #archiveBtn.off {
+  pointer-events: none;
+}
+#UserMemoriaList.archive #archiveUtil .countInfoWrap {
+  width: 160px;
+  height: 60px;
+  position: absolute;
+}
+#UserMemoriaList.archive #archiveUtil .countInfoWrap .title {
+  width: 141px;
+  position: absolute;
+  top: -15px;
+  left: -12px;
+  text-align: left;
+  padding-left: 18px;
+}
+#UserMemoriaList.archive #archiveUtil .countInfoWrap .countWrap {
+  width: 100%;
+  position: absolute;
+  right: 10px;
+  bottom: 9px;
+  font-size: 20px;
+  text-align: right;
+}
+#UserMemoriaList.archive #archiveUtil .countInfoWrap .countWrap span {
+  font-size: 20px;
+}
+#UserMemoriaList.archive #archiveUtil #selectCountWrap {
+  bottom: 95px;
+}
+#UserMemoriaList.archive #archiveUtil #memoriaCountWrap {
+  display: none;
+  bottom: 95px;
+}
+#UserMemoriaList.archive #archiveUtil #memoriaCountWrap:after {
+  width: 15px;
+  height: 15px;
+  background: url("/magica/resource/image_web/page/memoria/icon_arrow_mini.png") center center no-repeat;
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: -11px;
+}
+#UserMemoriaList.archive #archiveUtil #toArchive {
+  width: 173px;
+  height: 93px;
+  background: url("/magica/resource/image_web/page/memoria/memoria_storage_btn_on_01.png") center center no-repeat;
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  border: 4px solid #ff3b81;
+  border-radius: 18px;
+}
+#UserMemoriaList.archive #archiveUtil #toArchive.gray {
+  border: none;
+  -webkit-filter: brightness(80%);
+}
+#UserMemoriaList.archive #archiveUtil #toHand {
+  width: 173px;
+  height: 93px;
+  background: url("/magica/resource/image_web/page/memoria/memoria_storage_btn_on_02.png") center center no-repeat;
+  position: absolute;
+  top: 176px;
+  right: 0px;
+  border: 4px solid #8f37ff;
+  border-radius: 18px;
+}
+#UserMemoriaList.archive #archiveUtil #toHand.gray {
+  border: none;
+  -webkit-filter: brightness(80%);
+}
+#UserMemoriaList.archive #archiveUtil .modeToggle {
+  pointer-events: none;
+}
+#UserMemoriaList.archive #archiveUtil .modeToggle.gray {
+  pointer-events: auto;
+}
+#UserMemoriaList.archive #archiveUtil #selectResetBtn,
+#UserMemoriaList.archive #archiveUtil #bulkSelectBtn {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  font-size: 18px;
+}
+#UserMemoriaList.archive #archiveUtil .btn {
+  width: 168px;
+  min-width: 168px;
+}
+#UserMemoriaList.archive #archiveUtil #bulkSelectBtn {
+  top: 82px;
+}
+#UserMemoriaList.archive #archiveUtil #bulkSelectBtn .btnText {
+  position: absolute;
+  width: 168px;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  color: #a47122;
+  z-index: 2;
+}
+
+.setNameChangePop #popupInfoDetailTitle {
+  margin-bottom: 40px;
+}
+.setNameChangePop .popupTextArea {
+  height: 300px;
+}
+.setNameChangePop .text {
+  font-size: 24px;
+}
+.setNameChangePop .commonInput {
+  width: 500px;
+  height: 64px;
+  margin: 40px auto;
+  padding-right: 24px;
+  padding-left: 24px;
+  font-size: 24px;
+  line-height: 64px;
+}
+.setNameChangePop #defaultNameBtn {
+  width: 112px;
+  position: absolute;
+  top: 169px;
+  left: 675px;
+}
+.setNameChangePop .textCount {
+  position: absolute;
+  top: 220px;
+  left: 610px;
+  font-size: 18px;
+}
+.setNameChangePop .commentNotis {
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.sellCautionPop .popupInner .popupBtnArea {
+  margin-top: 76px;
+}
+.sellCautionPop .popupInner .popupTextArea {
+  height: 120px !important;
+  font-size: 20px;
+}
+.sellCautionPop .popupInner .popupTextArea .common_dl {
+  position: absolute;
+  top: 128px;
+  left: -webkit-calc(50% - 268px);
+  height: auto;
+  margin-top: 40px;
+}
+.sellCautionPop .popupInner .popupTextArea .common_dl dt, .sellCautionPop .popupInner .popupTextArea .common_dl dd {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.sellCautionPop .popupInner .popupTextArea .common_dl dt {
+  width: 120px;
+  font-size: 16px;
+}
+.sellCautionPop .popupInner .popupTextArea .common_dl dd {
+  width: 416px;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: left;
+}
+.sellCautionPop .popupInner .popupTextArea .common_dl dd span {
+  font-size: 15px;
+}
+.sellCautionPop .popupInner .popupTextArea .common_dl dd span:not(:nth-child(1)):before {
+  margin-right: 5px;
+  display: inline-block;
+  content: "、";
+}
+
+#UserMemoriaList {
+  width: 1024px;
+  height: 100%;
+  position: relative;
+}
+#UserMemoriaList #memoriaListHeader {
+  width: 942px;
+  height: 44px;
+  background-image: url("/magica/resource/image_web/page/memoria/memoria_headerpanel_l.png");
+  position: absolute;
+  top: 60px;
+  left: 66px;
+  z-index: 1;
+}
+#UserMemoriaList #memoriaListHeader #nameChangeBtn {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 270px;
+  height: 44px;
+}
+#UserMemoriaList #memoriaListHeader #sortPanel {
+  position: absolute;
+  top: 5px;
+  right: 115px;
+}
+#UserMemoriaList #memoriaListHeader #sortPanel.off {
+  display: none;
+}
+#UserMemoriaList #memoriaListHeader #sortPanel #eventFilterBtn {
+  display: none;
+}
+#UserMemoriaList #memoriaListHeader #sortPanel #eventFilterBtn.onDisp {
+  display: inline-block;
+}
+#UserMemoriaList #memoriaListHeader #sortPanel #eventFilterBtn .switchIcon {
+  width: 34px;
+  height: 18px;
+  background: url("/magica/resource/image_web/common/filter/icon_filter_off.png") left top no-repeat;
+  background-size: 34px 18px;
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: 0;
+  z-index: 1000;
+}
+#UserMemoriaList #memoriaListHeader #sortPanel #eventFilterBtn.on .switchIcon {
+  background: url("/magica/resource/image_web/common/filter/icon_filter_on.png") left top no-repeat;
+  background-size: 34px 18px;
+}
+#UserMemoriaList #memoriaListHeader #sortPanel #sortPopupMemoria #filterTypes {
+  width: 34px;
+  height: 18px;
+  margin-left: 8px;
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  font-size: 14px;
+  line-height: 14px;
+  z-index: 20;
+}
+#UserMemoriaList #memoriaListHeader #sortPanel #sortPopupMemoria.on #filterTypes {
+  background: url("/magica/resource/image_web/common/filter/icon_filter_on.png") left top no-repeat;
+  background-size: 100% 100%;
+}
+#UserMemoriaList #memoriaListHeader #sortPanel #sortPopupMemoria.off #filterTypes {
+  background: url("/magica/resource/image_web/common/filter/icon_filter_off.png") left top no-repeat;
+  background-size: 34px 18px;
+}
+#UserMemoriaList #memoriaListHeader #sortPanel #sortBtn {
+  width: 110px;
+}
+#UserMemoriaList #memoriaListHeader #ascPanelMemoria {
+  width: 80px;
+  height: 24px;
+  position: absolute;
+  top: 10px;
+  right: 28px;
+}
+#UserMemoriaList #memoriaListHeader #ascPanelMemoria .touch {
+  -webkit-filter: brightness(120%);
+}
+#UserMemoriaList #memoriaListHeader #ascPanelMemoria li {
+  width: 100%;
+  height: 100%;
+}
+#UserMemoriaList #memoriaListHeader #ascPanelMemoria li.none {
+  display: none;
+}
+#UserMemoriaList #memoriaListHeader #ascPanelMemoria li#ascMemoria {
+  background: url("/magica/resource/image_web/common/filter/btn_memoria_ascending.png") left top no-repeat;
+}
+#UserMemoriaList #memoriaListHeader #ascPanelMemoria li#descMemoria {
+  background: url("/magica/resource/image_web/common/filter/btn_memoria_descending.png") left top no-repeat;
+}
+#UserMemoriaList #memoriaWrap {
+  width: 758px;
+  height: -webkit-calc(100% - 124px) !important;
+  position: absolute;
+  top: 112px;
+  left: 64px;
+  z-index: 3;
+}
+#UserMemoriaList #memoriaWrap.onlyEvent .memoriaScrollWrap .userMemoriaIcon {
+  display: none;
+}
+#UserMemoriaList #memoriaWrap.onlyEvent .memoriaScrollWrap .userMemoriaIcon.effective, #UserMemoriaList #memoriaWrap.onlyEvent .memoriaScrollWrap .userMemoriaIcon.regularEffective, #UserMemoriaList #memoriaWrap.onlyEvent .memoriaScrollWrap .userMemoriaIcon.selected {
+  display: block;
+}
+#UserMemoriaList #memoriaWrap.lockMode #scrollSet #memoriaWrapInner .userMemoriaIcon .overWrap {
+  display: none;
+}
+#UserMemoriaList #memoriaWrap.lockMode #scrollSet #memoriaWrapInner .userMemoriaIcon.selected .lock {
+  width: 24px;
+  height: 27px;
+  background-image: url(/magica/resource/image_web/page/memoria/memoria_lock.png);
+  display: block;
+  position: absolute;
+  right: 0px;
+  bottom: 24px;
+  z-index: 150;
+}
+#UserMemoriaList #memoriaWrap.lockMode #scrollSet #memoriaWrapInner .userMemoriaIcon.selected.protected .lock {
+  display: none;
+}
+#UserMemoriaList #memoriaWrap h2 {
+  width: 720px;
+  height: 32px;
+  padding: 0 20px;
+  padding-left: 36px;
+  background-image: url("/magica/resource/image_web/page/memoria/memoria_wrap_header_a.png");
+  background-size: auto auto;
+  background-size: 720px 32px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  overflow: hidden;
+  color: #a47122;
+  font-size: 18px;
+  line-height: 32px;
+  border-radius: 10px 0 0 0;
+  text-shadow: none;
+  z-index: 1;
+}
+#UserMemoriaList #memoriaWrap .memoriaScrollWrap {
+  width: 716px;
+  height: -webkit-calc(100% - 58px);
+  margin-top: 30px;
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  overflow: hidden;
+}
+#UserMemoriaList #memoriaWrap .memoriaScrollWrap #memoriaWrapInner {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  padding: 4px 0 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+#UserMemoriaList #memoriaWrap .memoriaScrollWrap #memoriaWrapInner.level .lv, #UserMemoriaList #memoriaWrap .memoriaScrollWrap #memoriaWrapInner.rank .lv {
+  display: block;
+}
+#UserMemoriaList #memoriaWrap .memoriaScrollWrap #memoriaWrapInner.atk .dispPrm, #UserMemoriaList #memoriaWrap .memoriaScrollWrap #memoriaWrapInner.def .dispPrm, #UserMemoriaList #memoriaWrap .memoriaScrollWrap #memoriaWrapInner.hp .dispPrm, #UserMemoriaList #memoriaWrap .memoriaScrollWrap #memoriaWrapInner.get .dispPrm {
+  display: block;
+}
+#UserMemoriaList #memoriaWrap .memoriaScrollWrap #memoriaWrapInner.lb .limitBreak {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#UserMemoriaList #memoriaWrap .memoriaScrollWrap #memoriaWrapInner .userMemoriaIcon {
+  margin: 10px 8px 12px 8px;
+  position: relative;
+}
+#UserMemoriaList #memoriaWrap.smaller .memoriaScrollWrap {
+  width: 668px;
+  left: 56px;
+}
+#UserMemoriaList #memoriaWrap.smaller .memoriaScrollWrap #memoriaWrapInner .userMemoriaIcon {
+  margin: 8px 4px 10px 4px;
+}
+#UserMemoriaList #memoriaWrap.smaller .memoriaScrollWrap #memoriaWrapInner .userMemoriaIcon .overWrap {
+  border-radius: 16px 8px 8px 8px;
+}
+#UserMemoriaList #memoriaWrap.smaller .memoriaScrollWrap #memoriaWrapInner .userMemoriaIcon .overWrap:before {
+  font-size: 16px !important;
+  line-height: 100px !important;
+}
+#UserMemoriaList #memoriaWrap.smallest .memoriaScrollWrap {
+  width: 692px;
+  left: 43px;
+}
+#UserMemoriaList #memoriaWrap.smallest .memoriaScrollWrap #memoriaWrapInner .userMemoriaIcon {
+  margin: 6px 4px 4px 4px;
+}
+#UserMemoriaList #memoriaWrap.smallest .memoriaScrollWrap #memoriaWrapInner .userMemoriaIcon .overWrap {
+  border-radius: 12px 4px 4px 4px;
+}
+#UserMemoriaList #memoriaWrap.smallest .memoriaScrollWrap #memoriaWrapInner .userMemoriaIcon .overWrap:before {
+  font-size: 14px !important;
+  line-height: 88px !important;
+}
+#UserMemoriaList #multiLock {
+  width: 60px;
+  position: fixed;
+  bottom: 100px;
+  left: 0px;
+}
+#UserMemoriaList #composeItemFrame {
+  position: absolute;
+  right: 14px;
+  top: 112px;
+  width: 178px;
+  height: 252px;
+  padding-top: 42px;
+}
+#UserMemoriaList #composeItemFrame h2 {
+  width: 168px;
+  height: 34px;
+  padding: 0 20px;
+  padding-left: 24px;
+  background-image: url(/magica/resource/image_web/page/memoria/memoria_header_item.png);
+  background-size: auto auto;
+  background-size: 168px 34px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  overflow: hidden;
+  color: #ffffff;
+  text-shadow: -1px -1px 2px #ff4f92, 1px -1px 2px #ff4f92, -1px 1px 2px #ff4f92, 1px 1px 2px #ff4f92, -1px -1px 2px #ff4f92, 1px -1px 2px #ff4f92, -1px 1px 2px #ff4f92, 1px 1px 2px #ff4f92;
+  font-size: 16px;
+  line-height: 34px;
+  border-radius: 12px 12px 0 0;
+  z-index: 1;
+}
+#UserMemoriaList #composeItemFrame .item {
+  position: relative;
+  display: inline-block;
+  margin: 11px 11px 24px;
+}
+#UserMemoriaList #composeItemFrame .item img {
+  position: relative;
+  width: 54px;
+  height: 54px;
+  z-index: 2;
+}
+#UserMemoriaList #composeItemFrame .item .num {
+  position: absolute;
+  left: 0;
+  bottom: -21px;
+  width: 54px;
+  height: 30px;
+  padding-top: 8px;
+  color: #fff;
+  background: #efdcba;
+  font-size: 14px;
+  text-align: center;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  text-shadow: -1px -1px 2px #b07422, 1px -1px 2px #b07422, -1px 1px 2px #b07422, 1px 1px 2px #b07422, -1px -1px 2px #b07422, 1px -1px 2px #b07422, -1px 1px 2px #b07422, 1px 1px 2px #b07422;
+  z-index: 1;
+}
+#UserMemoriaList #sizeChange {
+  width: 60px;
+  height: 66px;
+  background: url("/magica/resource/image_web/page/memoria/btn_memoria_l.png") left top no-repeat;
+  position: fixed;
+  bottom: 26px;
+  left: 0px;
+}
+#UserMemoriaList #sizeChange.smaller {
+  background: url("/magica/resource/image_web/page/memoria/btn_memoria_m.png") left top no-repeat;
+}
+#UserMemoriaList #sizeChange.smallest {
+  background: url("/magica/resource/image_web/page/memoria/btn_memoria_s.png") left top no-repeat;
+}
+#UserMemoriaList #listUtil, #UserMemoriaList #archiveListUtil {
+  width: 168px;
+  height: -webkit-calc(100% - 124px);
+  position: absolute;
+  top: 112px;
+  right: 17px;
+}
+#UserMemoriaList #listUtil .btn, #UserMemoriaList #archiveListUtil .btn {
+  width: 168px;
+  min-width: 168px;
+}
+#UserMemoriaList #listUtil .archiveLinkBtn, #UserMemoriaList #archiveListUtil .archiveLinkBtn {
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  font-size: 16px;
+}
+#UserMemoriaList #listUtil .archiveLinkBtn.off, #UserMemoriaList #archiveListUtil .archiveLinkBtn.off {
+  pointer-events: none;
+}
+#UserMemoriaList #archiveListUtil {
+  display: none;
+}
+#UserMemoriaList #archiveListUtil #toArchive1, #UserMemoriaList #archiveListUtil #toArchive2, #UserMemoriaList #archiveListUtil #toArchive3, #UserMemoriaList #archiveListUtil #toArchive4 {
+  display: none;
+}
+#UserMemoriaList #sellUtil {
+  width: 168px;
+  height: -webkit-calc(100% - 124px);
+  display: none;
+  position: absolute;
+  top: 112px;
+  right: 17px;
+}
+#UserMemoriaList #sellUtil #sellBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#UserMemoriaList #sellUtil .btn {
+  width: 168px;
+  min-width: 168px;
+}
+#UserMemoriaList #sellUtil #sellConfirm {
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+}
+#UserMemoriaList #sellUtil #sellResetBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 18px;
+}
+#UserMemoriaList #sellUtil #selectCommon {
+  position: absolute;
+  top: 78px;
+  right: 0;
+  font-size: 14px;
+}
+#UserMemoriaList #sellUtil #richeWrap {
+  width: 164px;
+  height: 104px;
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 102px;
+}
+#UserMemoriaList #sellUtil #richeWrap .pointFrame {
+  width: 122px;
+  display: block;
+  text-align: center;
+}
+#UserMemoriaList #sellUtil #richeWrap .totalRiche .pointFrame {
+  position: absolute;
+  top: -15px;
+  left: -12px;
+}
+#UserMemoriaList #sellUtil #richeWrap .hasRiche .pointFrame {
+  position: absolute;
+  top: 43px;
+  left: -12px;
+}
+#UserMemoriaList #sellUtil #richeWrap #info_sellCount {
+  width: 100%;
+  padding: 0 10px;
+  position: absolute;
+  top: 14px;
+  left: 0;
+  text-align: right;
+}
+#UserMemoriaList #sellUtil #richeWrap #info_totalGold {
+  width: 100%;
+  padding: 0 10px;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  text-align: right;
+}
+#UserMemoriaList.archiveList1 #memoriaWrap.onlyEvent .memoriaScrollWrap .userMemoriaIcon.overEffective, #UserMemoriaList.archiveList2 #memoriaWrap.onlyEvent .memoriaScrollWrap .userMemoriaIcon.overEffective, #UserMemoriaList.archiveList3 #memoriaWrap.onlyEvent .memoriaScrollWrap .userMemoriaIcon.overEffective, #UserMemoriaList.archiveList4 #memoriaWrap.onlyEvent .memoriaScrollWrap .userMemoriaIcon.overEffective, #UserMemoriaList.archiveSell #memoriaWrap.onlyEvent .memoriaScrollWrap .userMemoriaIcon.overEffective {
+  display: block;
+}
+#UserMemoriaList.archiveList1 #listUtil, #UserMemoriaList.archiveList2 #listUtil, #UserMemoriaList.archiveList3 #listUtil, #UserMemoriaList.archiveList4 #listUtil {
+  display: none;
+}
+#UserMemoriaList.archiveList1 #archiveListUtil, #UserMemoriaList.archiveList2 #archiveListUtil, #UserMemoriaList.archiveList3 #archiveListUtil, #UserMemoriaList.archiveList4 #archiveListUtil {
+  display: block !important;
+}
+#UserMemoriaList.archiveList1 #toArchive1 {
+  display: block !important;
+}
+#UserMemoriaList.archiveList2 #toArchive2 {
+  display: block !important;
+}
+#UserMemoriaList.archiveList3 #toArchive3 {
+  display: block !important;
+}
+#UserMemoriaList.archiveList4 #toArchive4 {
+  display: block !important;
+}
+#UserMemoriaList.sell #listUtil, #UserMemoriaList.sell #composeItemFrame, #UserMemoriaList.archiveSell1 #listUtil, #UserMemoriaList.archiveSell1 #composeItemFrame, #UserMemoriaList.archiveSell2 #listUtil, #UserMemoriaList.archiveSell2 #composeItemFrame, #UserMemoriaList.archiveSell3 #listUtil, #UserMemoriaList.archiveSell3 #composeItemFrame, #UserMemoriaList.archiveSell4 #listUtil, #UserMemoriaList.archiveSell4 #composeItemFrame {
+  display: none;
+}
+#UserMemoriaList.sell #sizeChange, #UserMemoriaList.archiveSell1 #sizeChange, #UserMemoriaList.archiveSell2 #sizeChange, #UserMemoriaList.archiveSell3 #sizeChange, #UserMemoriaList.archiveSell4 #sizeChange {
+  width: 70px;
+}
+#UserMemoriaList.sell #memoriaListHeader #memoriaListInfo .memoriaSelectNum, #UserMemoriaList.archiveSell1 #memoriaListHeader #memoriaListInfo .memoriaSelectNum, #UserMemoriaList.archiveSell2 #memoriaListHeader #memoriaListInfo .memoriaSelectNum, #UserMemoriaList.archiveSell3 #memoriaListHeader #memoriaListInfo .memoriaSelectNum, #UserMemoriaList.archiveSell4 #memoriaListHeader #memoriaListInfo .memoriaSelectNum {
+  display: inline-block;
+}
+#UserMemoriaList.sell #sellUtil, #UserMemoriaList.archiveSell1 #sellUtil, #UserMemoriaList.archiveSell2 #sellUtil, #UserMemoriaList.archiveSell3 #sellUtil, #UserMemoriaList.archiveSell4 #sellUtil {
+  display: block;
+}
+#UserMemoriaList.compose #listUtil, #UserMemoriaList.compose #composeItemFrame, #UserMemoriaList.limitbreak #listUtil, #UserMemoriaList.limitbreak #composeItemFrame {
+  display: none;
+}
+#UserMemoriaList.compose #memoriaListHeader, #UserMemoriaList.limitbreak #memoriaListHeader {
+  width: 942px;
+  background-image: url("/magica/resource/image_web/page/memoria/memoria_headerpanel_l.png");
+  left: -webkit-calc(50% - 471px) !important;
+}
+#UserMemoriaList.compose #memoriaWrap, #UserMemoriaList.limitbreak #memoriaWrap {
+  width: 908px;
+  left: -webkit-calc(50% - 454px);
+}
+#UserMemoriaList.compose #memoriaWrap h2, #UserMemoriaList.limitbreak #memoriaWrap h2 {
+  display: block;
+}
+#UserMemoriaList.compose #memoriaWrap .memoriaScrollWrap, #UserMemoriaList.limitbreak #memoriaWrap .memoriaScrollWrap {
+  width: 876px;
+  height: -webkit-calc(100% - 58px) !important;
+  margin-top: 30px !important;
+  left: 24px;
+}
+#UserMemoriaList.compose #memoriaWrap .memoriaScrollWrap .userMemoriaIcon .overWrap:before, #UserMemoriaList.limitbreak #memoriaWrap .memoriaScrollWrap .userMemoriaIcon .overWrap:before {
+  font-size: 18px;
+  line-height: 126px;
+}
+#UserMemoriaList.compose #memoriaWrap.smaller .memoriaScrollWrap .userMemoriaIcon .overWrap, #UserMemoriaList.limitbreak #memoriaWrap.smaller .memoriaScrollWrap .userMemoriaIcon .overWrap {
+  border-radius: 16px 8px 8px 8px;
+}
+#UserMemoriaList.compose #memoriaWrap.smaller .memoriaScrollWrap .userMemoriaIcon .overWrap:before, #UserMemoriaList.limitbreak #memoriaWrap.smaller .memoriaScrollWrap .userMemoriaIcon .overWrap:before {
+  font-size: 16px;
+  line-height: 100px;
+}
+#UserMemoriaList.compose #memoriaWrap.smallest .memoriaScrollWrap .userMemoriaIcon .overWrap, #UserMemoriaList.limitbreak #memoriaWrap.smallest .memoriaScrollWrap .userMemoriaIcon .overWrap {
+  border-radius: 12px 4px 4px 4px;
+}
+#UserMemoriaList.compose #memoriaWrap.smallest .memoriaScrollWrap .userMemoriaIcon .overWrap:before, #UserMemoriaList.limitbreak #memoriaWrap.smallest .memoriaScrollWrap .userMemoriaIcon .overWrap:before {
+  font-size: 14px;
+  line-height: 88px;
+}
+#UserMemoriaList.compose .userMemoriaIcon.lvMax .overWrap {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 18px 8px 8px 8px;
+  text-shadow: none;
+  z-index: 18;
+}
+#UserMemoriaList.compose .userMemoriaIcon.lvMax .overWrap:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  text-align: center;
+  content: "Lv MAX";
+  text-shadow: -2px -2px 2px #724a33, 2px -2px 2px #724a33, -2px 2px 2px #724a33, 2px 2px 2px #724a33, -2px -2px #724a33, 2px -2px #724a33, -2px 2px #724a33, 2px 2px #724a33;
+}
+#UserMemoriaList.limitbreak .userMemoriaIcon .overWrap {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 16px 8px 8px 8px;
+  z-index: 18;
+}
+#UserMemoriaList.limitbreak .userMemoriaIcon.canLB .overWrap {
+  display: none;
+}
+#UserMemoriaList.limitbreak .userMemoriaIcon.lbMax .overWrap {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 16px 8px 8px 8px;
+  z-index: 18;
+}
+#UserMemoriaList.limitbreak .userMemoriaIcon.lbMax .overWrap:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  text-align: center;
+  content: "限界突破済";
+  text-shadow: -2px -2px 2px #724a33, 2px -2px 2px #724a33, -2px 2px 2px #724a33, 2px 2px 2px #724a33, -2px -2px #724a33, 2px -2px #724a33, -2px 2px #724a33, 2px 2px #724a33;
+}
+
+#memoriaSaleCurtain {
+  width: 1424px;
+  height: 768px;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: -200px;
+  z-index: 30000;
+}
+#memoriaSaleCurtain.on {
+  display: block;
+}
+
+#baseContainer.fadein #memoriaSaleGlowWrap {
+  display: block;
+  -webkit-animation: readyFadeIn 0.2s ease-in;
+  -webkit-animation-fill-mode: forwards;
+}
+#baseContainer.fadeout #memoriaSaleGlowWrap {
+  display: none;
+  display: none !important;
+}
+
+#memoriaSaleGlowWrap {
+  width: 1024px;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1001;
+}
+#memoriaSaleGlowWrap.hide {
+  display: none !important;
+}
+#memoriaSaleGlowWrap.fadeIn {
+  display: block;
+  -webkit-animation: common_fade_in 0.2s ease-in 0.3s;
+  -webkit-animation-fill-mode: forwards;
+}
+#memoriaSaleGlowWrap #memoriaSaleCurtain {
+  width: 1024px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30000;
+}
+#memoriaSaleGlowWrap #memoriaSaleCurtain.on {
+  display: block;
+}
+#memoriaSaleGlowWrap.on {
+  opacity: 1;
+  z-index: 30001;
+}
+#memoriaSaleGlowWrap.on #memoriaListInfo {
+  background-image: url("/magica/resource/image_web/page/memoria/memoria_headerpanel_l.png") !important;
+  background-size: 968px 44px;
+  width: 968px;
+}
+#memoriaSaleGlowWrap.sale #richeWrap {
+  display: block;
+}
+#memoriaSaleGlowWrap.sale #memoriaListInfo .memoriaSelectNum {
+  display: inline-block;
+}
+#memoriaSaleGlowWrap #memoriaListInfo {
+  width: 802px;
+  height: 44px;
+  padding: 10px 0 0 7px;
+  position: absolute;
+  top: 60px;
+  left: -webkit-calc(50% - 471px) !important;
+}
+#memoriaSaleGlowWrap #memoriaListInfo .listIcon {
+  position: relative;
+  display: inline-block;
+  margin: -12px 0 -17px -12px;
+  width: 132px;
+  height: 48px;
+  background: url(/magica/resource/image_web/page/memoria/icon_memoria_storage_01.png) left top no-repeat;
+}
+#memoriaSaleGlowWrap #memoriaListInfo .listIcon span {
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  color: #fff;
+  font-size: 18px;
+}
+#memoriaSaleGlowWrap #memoriaListInfo .listIcon.archive {
+  width: 320px;
+  background: url("/magica/resource/image_web/page/memoria/bg_memoria_storage_02.png") left top no-repeat;
+}
+#memoriaSaleGlowWrap #memoriaListInfo .listIcon.archive span {
+  display: block;
+}
+#memoriaSaleGlowWrap #memoriaListInfo .listIcon.archive:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 30px;
+  width: 19px;
+  height: 20px;
+  background: url("/magica/resource/image_web/page/memoria/icon_storage_rename.png") left top no-repeat;
+}
+#memoriaSaleGlowWrap #memoriaListInfo .hasMemoriaNum, #memoriaSaleGlowWrap #memoriaListInfo .memoriaSelectNum {
+  padding-right: 10px;
+  display: inline-block;
+  color: #ffffff;
+  text-align: right;
+}
+#memoriaSaleGlowWrap #memoriaListInfo .hasMemoriaNum span, #memoriaSaleGlowWrap #memoriaListInfo .memoriaSelectNum span {
+  color: #ffffff;
+  font-size: 18px;
+}
+#memoriaSaleGlowWrap #memoriaListInfo .hasMemoriaNum {
+  width: 189px;
+  height: 24px;
+  margin-left: 10px;
+  position: relative;
+  line-height: 24px;
+}
+#memoriaSaleGlowWrap #memoriaListInfo .hasMemoriaNum:before {
+  height: 24px;
+  padding: 0 10px;
+  background-color: #ffffff;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ff5491;
+  line-height: 24px;
+  content: "所持数";
+  -webkit-border-radius: 5px 0 0 5px;
+}
+#memoriaSaleGlowWrap #memoriaListInfo .hasMemoriaNum.archive:before {
+  content: "保管数" !important;
+}
+#memoriaSaleGlowWrap #memoriaListInfo .hasMemoriaNum #info_memoriaCount {
+  margin-left: 5px;
+}
+#memoriaSaleGlowWrap #memoriaListInfo .memoriaSelectNum {
+  width: 135px;
+  height: 24px;
+  display: none;
+  position: relative;
+  line-height: 24px;
+}
+#memoriaSaleGlowWrap #memoriaListInfo .memoriaSelectNum:before {
+  height: 24px;
+  padding: 0 10px;
+  background-color: #ffffff;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  color: #ff5491;
+  line-height: 24px;
+  content: "選択数";
+  -webkit-border-radius: 5px 0 0 5px;
+}
+#memoriaSaleGlowWrap #richeWrap {
+  width: 164px;
+  height: 156px;
+  display: none;
+  position: absolute;
+  right: 17px;
+  bottom: 124px;
+}
+#memoriaSaleGlowWrap #richeWrap .pointFrame {
+  width: 122px;
+  display: block;
+  text-align: center;
+}
+#memoriaSaleGlowWrap #richeWrap .selectCount .pointFrame {
+  position: absolute;
+  top: -15px;
+  left: -12px;
+}
+#memoriaSaleGlowWrap #richeWrap .totalRiche .pointFrame {
+  position: absolute;
+  top: 43px;
+  left: -12px;
+}
+#memoriaSaleGlowWrap #richeWrap .hasRiche .pointFrame {
+  position: absolute;
+  top: 101px;
+  left: -12px;
+}
+#memoriaSaleGlowWrap #richeWrap #info_selectCount {
+  width: 100%;
+  padding: 0 10px;
+  position: absolute;
+  top: 14px;
+  left: 0;
+  text-align: right;
+}
+#memoriaSaleGlowWrap #richeWrap #info_sellCount {
+  width: 100%;
+  padding: 0 10px;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  text-align: right;
+}
+#memoriaSaleGlowWrap #richeWrap #info_totalGold {
+  width: 100%;
+  padding: 0 10px;
+  position: absolute;
+  top: 130px;
+  left: 0;
+  text-align: right;
+}
+
+.memoriaConfirmPop .popupInner {
+  width: 490px !important;
+  height: 360px !important;
+  top: calc(50% - 166px) !important;
+  left: calc(50% - 245px) !important;
+}
+.memoriaConfirmPop .popupTitle {
+  width: 370px !important;
+}
+.memoriaConfirmPop .popupTextArea {
+  height: 210px !important;
+  font-size: 20px !important;
+}
+.memoriaConfirmPop #memoriaPopCardArray {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.memoriaConfirmPop #memoriaPopCardArray li {
+  width: 38px;
+  height: 38px;
+  margin: 0 2px;
+  background: url("/magica/resource/image_web/page/memoria/memoria_empty.png");
+  display: block;
+}
+.memoriaConfirmPop #memoriaPopCardArray li img {
+  width: 38px;
+  height: 38px;
+}

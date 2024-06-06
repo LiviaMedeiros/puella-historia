@@ -1,0 +1,23 @@
+	<div class="APPopWrap">
+		<div class="confirmText"><%= item.itemName %>を使ってAPを回復します。<br>よろしいですか？</div>
+		<div class="confirmSP">
+			<span class="pointFrame">AP</span>
+			<div class="rightWrap">
+				<div class="beforeWrap"><span class="c_purple"><%= item.nowACP %></span>/<%= item.nowMAX %></div>
+				<img src="/magica/resource/image_web/common/icon/ap_pop_arrow.png">
+				<div class="afterWrap"><span class="chargeSP c_red"><%= item.after %></span>/<%= item.nowMAX %></div>
+			</div>
+		</div>
+		<div class="confirmSP">
+			<span class="pointFrame">所持数</span>
+			<div class="rightWrap">
+				<div class="beforeWrap"><% if(item.itemName === "マギアストーン"){ %><img src="/magica/resource/image_web/common/icon/icon_money.png"><% } %><span class="c_purple"><%= item.quantity %></div>
+				<img src="/magica/resource/image_web/common/icon/ap_pop_arrow.png" class="arrow">
+				<div class="afterWrap"><span class="chargeSP c_red"><% if(item.itemName !== "マギアストーン"){ %><%= (item.quantity - 1) %><% }else{ %><%= (item.quantity - 5) %><% } %></span></div>
+			</div>
+		</div>
+		<div id="confirmBtns">
+			<div class="btn se_cancel cancel b_white TE" data-action="cancel"><span class="b_screen"></span>キャンセル</div>
+			<div class="btn se_decide useDecide b_pink TE" data-action="use"><span class="b_screen"></span>回復する</div>
+		</div>
+	</div>

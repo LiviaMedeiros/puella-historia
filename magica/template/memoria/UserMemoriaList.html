@@ -1,0 +1,201 @@
+<div id="UserMemoriaList">
+	<!-- ヘッダー部 -->
+	<div id="memoriaListHeader"><div id="nameChangeBtn"></div>
+		<!-- ソート関連パネル -->
+		<ul id="sortPanel">
+			<li id="eventFilterBtn" class="sb_gold_02 se_tabs TE"><span class="b_screen"></span>イベントフィルタ<span class="switchIcon"></span></li>
+			<li id="sortPopupMemoria" class='se_tabs sb_gold_02 TE'><span class='b_screen'></span>フィルタ<span id="filterTypes"></span></li>
+			<li id="sortBtn" class='se_tabs sb_gold_02 TE'><span class='b_screen'></span>ソート順</li>
+		</ul>
+
+		<!-- 昇降順ボタン -->
+		<ul id="ascPanelMemoria">
+			<li id="ascMemoria" class="TE se_tabs" data-ascId="asc"></li>
+			<li id="descMemoria" class="TE se_tabs" data-ascId="desc"></li>
+		</ul>
+	</div>
+
+	<!-- 一覧パーツ -->
+	<div id="listUtil">
+		<div class="archiveLinkBtn btn linkBtn TE se_decide b_white" data-href="#/PieceArchive/normal"><span class='b_screen'></span>保管庫へ移動</div>
+	</div>
+	<div id="archiveListUtil">
+		<div id="toArchive1" class="archiveLinkBtn btn linkBtn TE se_decide b_white" data-href="#/PieceArchive/archive1"><span class='b_screen'></span>移動</div>
+		<div id="toArchive2" class="archiveLinkBtn btn linkBtn TE se_decide b_white" data-href="#/PieceArchive/archive2"><span class='b_screen'></span>移動</div>
+		<div id="toArchive3" class="archiveLinkBtn btn linkBtn TE se_decide b_white" data-href="#/PieceArchive/archive3"><span class='b_screen'></span>移動</div>
+		<div id="toArchive4" class="archiveLinkBtn btn linkBtn TE se_decide b_white" data-href="#/PieceArchive/archive4"><span class='b_screen'></span>移動</div>
+	</div>
+
+	<!-- 売却用パーツ -->
+	<div id="sellUtil">
+		<div id="sellResetBtn" class="btn TE se_cancel b_white"><span class='b_screen'></span>選択全解除</div>
+		<div id="selectCommon" class="btn TE se_decide b_white"><span class='b_screen'></span><span>★1を全て選択</span></div>
+		<div id="sellConfirm" class="btn TE se_decide b_pink off"><span class='b_screen'></span>売却</div>
+	</div>
+
+	<!-- メモリア一覧表示領域 -->
+	<div id="memoriaWrap" class="commonFrame2">
+		<h2 id="memoriaInfoWrap"></h2>
+		<div class="memoriaScrollWrap" id="scrollSet">
+			<div id="memoriaWrapInner" class="scrollInner"></div>
+		</div>
+	</div>
+
+	<!-- 所持アイテム -->
+	<%
+		var itemArr = [
+			"MEMORIA_CIRCUIT",
+			"MEMORIA_CIRCUIT_CORE",
+			"OVER_LIMITTER",
+			"OVER_LIMITTER_CORE"
+			]
+	%>
+	<div id="composeItemFrame" class="commonFrame2">
+		<h2>強化アイテム</h2>
+		<% _.each(itemArr,function(itemId){ %>
+		<div class="item">
+			<img src='/magica/resource/image_web/page/memoria/item/<%= itemId.toLowerCase() %>.png' alt=''>
+			<span class="num"  data-item-id="<%= itemId %>"></span>
+		</div>
+		<% }); %>
+	</div>
+
+	<!-- メモリアサイズ変更ボタン -->
+	<div id="sizeChange" class="se_tabs TE" data-size="smaller"><span class="b_screen"></span></div>
+</div>
+
+<!-- メモリア表示パーツ -->
+<script type="text/template" id="MemoriaListParts">
+	<div class="cardInner">
+		<div class="overWrap"></div><span class="dispPrm"></span><span class="lv"><span class="lvNum">Lv<%="<%=model.level%\></span>/<%=model.maxLevel%\>"%></span><span class="limitBreak lbCount<%='<%=model.lbCount%\>'%>"><span class="lb1"></span><span class="lb2"></span><span class="lb3"></span><span class="lb4"></span></span><span class="lock"></span><div class="eventEffect"></div><%="<% if(model.formationEquipFlag || model.equipFlag){ %\>"%><span class="equip"></span><%="<% } %\>"%><img src='/magica/resource/image_web/memoria/memoria_<%="<%= model.pieceId %\>"%>_s.png' alt=''><div class="paramWrap" data-pid="<%='<%=model.id%\>'%>" data-level="<%='<%=model.level%\>'%>" data-piece-id="<%='<%=model.pieceId%\>'%>" data-hp="<%='<%=model.hp%\>'%>" data-atk="<%='<%=model.attack%\>'%>" data-def="<%='<%=model.defense%\>'%>" data-rank="<%='<%=model.piece.rank%\>'%>" data-created="<%='<%=model.createdAt%\>'%>" data-lb="<%='<%=model.lbCount%\>'%>"></div>
+	</div>
+</script>
+
+<!-- 他の魔法少女から装備付け替え時ポップアップ -->
+<script type="text/template" id="formationEquipPop">
+	<p style="font-size:20px;line-height:36px;">
+		編成中のチームで、<%='<%= cardName %\>'%>が装備中です。<br>
+		<%='<%= cardName %\>'%>の装備を外して<br>
+		<%='<%= targetName %\>'%>が装備しますか？
+	</p>
+</script>
+
+<script type="text/template" id="formationEquipCautionPop">
+	<div class="popupInner">
+		<span class="closeDefault se_cancel popupCloseBtn TE"></span>
+		<p id="popupInfoDetailTitle" class="popupTitle common_title">装備中のメモリア</p>
+
+		<div class="popupTextArea">
+			装備中のメモリアは売却できません。<br>
+			全ての編成から装備をはずしますか？
+
+			<dl class='common_dl'>
+				<dt>装備中の編成</dt>
+				<dd>
+					<!-- <%='<% console.log(model.equipDeck) %\>'%> -->
+					<%='<% if(model.equipDeck.indexOf("quest") !== -1) { %\>'%>
+						<span class="c_purple">クエスト編成</span>
+					<%='<% } %\>'%>
+					<%='<% if(model.equipDeck.indexOf("support") !== -1) { %\>'%>
+						<span class="c_purple">サポート編成</span>
+					<%='<% } %\>'%>
+					<%='<% if(model.equipDeck.indexOf("arena") !== -1) { %\>'%>
+						<span class="c_purple">ミラーズ編成</span>
+					<%='<% } %\>'%>
+					<%='<% if(model.equipDeck.indexOf("pieceSet") !== -1) { %\>'%>
+						<span class="c_purple">メモリアセット</span>
+					<%='<% } %\>'%>
+					<%='<% if(model.equipDeck.indexOf("event") !== -1) { %\>'%>
+						<span class="c_purple">イベント編成</span>
+					<%='<% } %\>'%>
+				</dd>
+			</dl>
+		</div>
+		<table class="popupBtnArea" width="400" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td><span class="cancelBtn se_cancel popupCloseBtn btn b_white TE"><span class='b_screen'></span>キャンセル</span></td>
+				<td><span class="decideBtn se_cancel btn b_pink TE"><span class='b_screen'></span>OK</span></td>
+			</tr>
+		</table>
+	</div>
+</script>
+
+<script type="text/template" id="formationEquipCautionPop2">
+	<div class="popupInner">
+		<span class="closeDefault se_cancel popupCloseBtn TE"></span>
+		<p id="popupInfoDetailTitle" class="popupTitle common_title">装備中のメモリア</p>
+
+		<div class="popupTextArea">
+			全ての編成から装備をはずします。<br>
+			よろしいですか？
+		</div>
+		<table class="popupBtnArea" width="400" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td><span class="decideBtn se_cancel btn b_pink TE"><span class='b_screen'></span>はずす</span></td>
+				<td><span class="cancelBtn se_cancel popupCloseBtn btn b_white TE"><span class='b_screen'></span>キャンセル</span></td>
+			</tr>
+		</table>
+	</div>
+</script>
+
+<script type="text/template" id="formationEquipPop2">
+	<p style="font-size:20px;line-height:36px;">
+		編成中のチームで、<%='<%= targetName %\>'%>が装備中です。<br>
+		装備を外して選択中の装備枠に装備しますか？
+	</p>
+</script>
+
+<!-- 売却確認ポップアップ -->
+<script type="text/template" id="salePopTemp">
+	<%='<%= sellNum %\>'%>枚のメモリアを<%='<%= sellPrice %\>'%>CCで売却します。<br>
+	よろしいですか？<br>
+	<%='<% if(rarityAlert){ %\>'%><span class="c_red">★3以上のメモリアが含まれています。</span><%='<% } %\>'%>
+</script>
+
+<!-- 情報表示パーツ -->
+<script type="text/template" id="saleGlow">
+	<!-- CC関連表示 -->
+	<div id="richeWrap" class="commonFrame3">
+		<div class="selectCount">
+			<p class="pointFrame">選択数</p>
+			<p id="info_selectCount">0</p>
+		</div>
+		<div class="totalRiche">
+			<p class="pointFrame">合計売却CC</p>
+			<p id="info_sellCount">0</p>
+		</div>
+		<div class="hasRiche">
+			<p class="countTitle pointFrame">所持CC</p>
+			<p id="info_totalGold"><%= gameUser.riche %></p>
+		</div>
+	</div>
+
+	<!-- 所持数関連表示 -->
+	<ul id="memoriaListInfo" class="memoriaInfo">
+		<li class="listIcon"><span id="archiveName"></span></li>
+		<li class="hasMemoriaNum">
+			<span id="info_memoriaCount"></span>/<span id="info_memoriaCapacity"></span>
+		</li>
+	</ul>
+</script>
+
+<script type="text/template" id="SetNameChangeTemp">
+	<div class="popupInner">
+		<span class="closeDefault se_cancel popupCloseBtn TE"></span>
+		<p id="popupInfoDetailTitle" class="popupTitle">保管庫名入力</p>
+
+		<div class="popupTextArea">
+			<p class='text'>保管庫名を入力してください</p>
+
+			<div class="inputWrap">
+				<input id="commentInput" class='commonInput' readonly="readonly" value='<%="<%= model.name %\>"%>' maxlength="50" />
+
+				<div id='defaultNameBtn' class='sb_gold_02 TE se_tabs'>デフォルト名</div>
+				<p class="commentNotis c_red">絵文字は使用できません</p>
+				<div></div>
+				<div class="textCount c_gold"><span id="textCount" class="c_gold"><%="<%= model.name.length %\>"%></span>/10</div>
+				<div class="btn b_pink se_decide TE" id="commentDecide"><span class="b_screen"></span>OK</div>
+			</div>
+		</div>
+	</div>
+</script>
