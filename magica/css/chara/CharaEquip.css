@@ -1,0 +1,370 @@
+#charaImg {
+  display: none;
+}
+
+#lbConfirm .popupInner {
+  position: absolute;
+}
+
+#lbConfirm .popupTitle {
+  width: 370px;
+}
+
+#lbConfirm .popupTextArea {
+  width: 450px;
+  height: 240px;
+  font-size: 20px;
+}
+
+#lbConfirm .popupContent .popupInner .popupBtnArea td {
+  padding: 0 14px;
+}
+
+#lbConfirm .imgWrap {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#lbConfirm .imgWrap img {
+  width: 100%;
+  height: 100%;
+}
+
+#lbConfirm .numWrap {
+  position: absolute;
+  right: 8px;
+  bottom: 5px;
+  font-size: 18px;
+}
+
+#lbConfirm .lbBtn,
+#lbConfirm .lbAllItemWrap,
+#lbConfirm .revWrap,
+#lbConfirm .canRevWrap {
+  display: none;
+}
+
+#lbConfirm #cautionWrap {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 18px;
+  margin: 15px 0px 25px 40px;
+  text-align: left;
+}
+
+#lbConfirm #cautionWrap .checkBox {
+  width: 30px;
+  height: 30px;
+  background-image: url("/magica/resource/image_web/common/icon/icon_checkbox.png");
+  background-size: 30px 30px;
+  display: block;
+  position: relative;
+  margin-right: 6px;
+}
+
+#lbConfirm #cautionWrap.current .checkBox:before {
+  width: 23px;
+  height: 18px;
+  background-image: url("/magica/resource/image_web/common/icon/icon_checkbox_check.png");
+  background-repeat: no-repeat;
+  background-size: 23px 18px;
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  content: "";
+}
+
+#CharaEquip {
+  width: 1024px;
+  height: 100%;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+#CharaEquip .lbBtn {
+  text-align: center;
+  position: absolute;
+  display: inline-block;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#CharaEquip .lbBtn.off {
+  pointer-events: none;
+  -webkit-filter: grayscale(100%);
+}
+
+#CharaEquip .lbBtn.hide {
+  display: none;
+}
+
+#CharaEquip .lbBtn.touch {
+  -webkit-transform: scale(0.95) translateZ(0) !important;
+}
+
+#CharaEquip #equipWrap {
+  width: 364px;
+  height: 403px;
+  padding: 28px 6px 0 10px;
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: -webkit-calc(50% - 235px);
+  right: 102px;
+  overflow: hidden;
+}
+
+#CharaEquip #equipWrap .topWrap {
+  width: 100%;
+  height: 28px;
+  padding: 0 0 0 4px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#CharaEquip #equipWrap .imgWrap {
+  width: 136px;
+  height: 136px;
+  background: url("/magica/resource/image_web/page/chara/bg_gift_popup.png") left top no-repeat;
+  position: absolute;
+  top: 45px;
+  left: -webkit-calc(50% - 68px);
+}
+
+#CharaEquip #equipWrap .imgWrap img {
+  width: 100%;
+  height: 100%;
+}
+
+#CharaEquip #equipWrap .imgWrap .lbBtn {
+  bottom: -138px;
+  left: -webkit-calc(50% - 75px);
+  width: 150px;
+  height: 56px;
+  background: url("/magica/resource/image_web/page/chara/btn_pink.png") left top no-repeat;
+  line-height: 56px;
+}
+
+#CharaEquip #equipWrap .numWrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+}
+
+#CharaEquip #equipWrap .numWrap .hasNum.ts_pink {
+  position: absolute;
+  right: 76px;
+  bottom: 112px;
+  text-align: center;
+}
+
+#CharaEquip #equipWrap .numWrap .hasNum.ts_gold {
+  position: absolute;
+  right: 76px;
+  bottom: 114px;
+  text-align: center;
+}
+
+#CharaEquip #equipWrap .numWrap .sla {
+  width: 14px;
+  position: absolute;
+  bottom: 114px;
+  left: -webkit-calc(50% - 7px);
+  text-align: center;
+}
+
+#CharaEquip #equipWrap .numWrap .needNum {
+  position: absolute;
+  bottom: 114px;
+  left: 76px;
+  text-align: center;
+}
+
+#CharaEquip #equipWrap .numWrap .ts_pink {
+  font-size: 24px;
+}
+
+#CharaEquip #equipWrap .revWrap, #CharaEquip #equipWrap .canRevWrap {
+  width: 162px;
+  height: 28px;
+  background: #fff;
+  position: absolute;
+  left: -webkit-calc(50% - 81px);
+  -webkit-border-radius: 14px;
+}
+
+#CharaEquip #equipWrap .revWrap p, #CharaEquip #equipWrap .canRevWrap p {
+  position: absolute;
+  top: 0;
+  left: 13px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+#CharaEquip #equipWrap .revWrap p .icon, #CharaEquip #equipWrap .canRevWrap p .icon {
+  width: 20px;
+  height: 20px;
+  margin-top: -5px;
+  margin-right: 2px;
+  margin-left: 10px;
+  background: url("/magica/resource/image_web/common/chara/result_icon_equip.png") left top no-repeat;
+  background-size: 20px 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#CharaEquip #equipWrap .revWrap {
+  bottom: -40px;
+}
+
+#CharaEquip #equipWrap .revWrap .revisionIcon {
+  position: absolute;
+  top: 5px;
+  left: 80px;
+}
+
+#CharaEquip #equipWrap .revWrap.canSet .revisionIcon li {
+  position: relative;
+}
+
+#CharaEquip #equipWrap .revWrap.canSet .revisionIcon .on + .off:before,
+#CharaEquip #equipWrap .revWrap.canSet .revisionIcon .off:first-child:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  background: url("/magica/resource/image_web/page/chara/effect_limitbreak.png") left top no-repeat;
+  background-size: 30px 30px;
+  opacity: 0;
+  -webkit-animation: rev_icon_anim 1s ease-in-out 0s infinite normal;
+}
+
+#CharaEquip #equipWrap .canRevWrap {
+  display: none;
+  bottom: -74px;
+}
+
+#CharaEquip #equipWrap .canRevWrap.canSet {
+  display: block;
+}
+
+#CharaEquip #equipWrap .bottomWrap {
+  width: 100%;
+  height: 72px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  border-radius: 0 0 6px 6px;
+  z-index: 2;
+}
+
+#CharaEquip #equipWrap .bottomWrap .equipCaution {
+  font-size: 15px;
+  line-height: 22px;
+  width: 200px;
+  margin-top: 17px;
+  margin-left: 16px;
+  text-align: left;
+  display: block;
+}
+
+#CharaEquip #equipWrap .bottomWrap #convertGemBtn {
+  width: 134px;
+  height: 54px;
+  background: url("/magica/resource/image_web/page/chara/btn_convert.png") left top no-repeat;
+  position: absolute;
+  top: 9px;
+  left: 219px;
+}
+
+#CharaEquip #equipWrap .bottomWrap #convertGemBtn.off {
+  background: url("/magica/resource/image_web/page/chara/btn_convert_gray.png") left top no-repeat;
+  pointer-events: none !important;
+}
+
+#CharaEquip #equipWrap .bottomWrap .crystalPop {
+  width: 134px;
+  height: 46px;
+  background: url("/magica/resource/image_web/page/chara/tag_cristal.png") left top no-repeat;
+  position: absolute;
+  top: -37px;
+  left: 219px;
+  pointer-events: none;
+}
+
+#CharaEquip #equipWrap .bottomWrap .lbAllItemWrap {
+  position: absolute;
+  left: -webkit-calc(50% - 160px);
+  bottom: 6px;
+  width: 320px;
+  height: 56px;
+  border: 2px solid #b28750;
+  border-radius: 10px;
+  padding: 14px 17px 0px;
+  background: #fff;
+}
+
+#CharaEquip #equipWrap .bottomWrap .lbAllItemWrap dt {
+  width: 97px;
+  height: 24px;
+  margin: 0 0 3px;
+  background: url(/magica/resource/image_web/page/chara/bg_riche.png) left top no-repeat;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 12px;
+}
+
+#CharaEquip #equipWrap .bottomWrap .lbAllItemWrap dt:after {
+  content: "";
+  background: url(/magica/resource/image_web/page/chara/icon_limit_break_all_f_a.png) left top no-repeat;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 38px;
+  height: 42px;
+}
+
+#CharaEquip #equipWrap .bottomWrap .lbAllItemWrap dd {
+  width: 56px;
+  text-align: center;
+}
+
+#CharaEquip #equipWrap .bottomWrap .lbBtn {
+  bottom: 5px;
+  left: 175px;
+  width: 132px;
+  line-height: 16px;
+  font-size: 14px;
+}
+
+@-webkit-keyframes rev_icon_anim {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+  }
+  25% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  75% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+}
