@@ -1,0 +1,370 @@
+#Scene0StorySelectBeforeFilm1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec {
+  width: 100%;
+  height: 100%;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec {
+  position: relative;
+  width: 480px;
+  height: -webkit-calc(100% - 50px);
+  padding: 58px 8px 0px;
+  position: fixed;
+  top: 100px;
+  right: 6px;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec .listTitle {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/bg_scene01_title.png") left top no-repeat;
+  width: 480px;
+  height: 58px;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec #scrollWrap {
+  width: 100%;
+  height: -webkit-calc(100%);
+  overflow: hidden;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec #scrollWrap .scrollInner {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec .scene0QuestListSecWrap {
+  margin: 24px 0px 0px 28px;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec .scene0QuestListSecWrap:last-child {
+  padding: 0 0 100px 0;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec .scene0QuestListSec {
+  position: relative;
+  width: 412px;
+  height: 76px;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec .scene0QuestListSec .cleardSec,
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec .scene0QuestListSec .noClearSec {
+  display: none;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-shadow: -1px -1px 2px #68a006, 1px -1px 2px #68a006, -1px 1px 2px #68a006, 1px 1px 2px #68a006, -1px -1px 2px #68a006, 1px -1px 2px #68a006, -1px 1px 2px #68a006, 1px 1px 2px #68a006;
+  font-size: 130%;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec .scene0QuestListSec .cleardSec {
+  padding: 21px 0 0 54px;
+  background-image: url("/magica/resource/image_web/page/quest/scene0/storySelect/btn_scene01_base.png");
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec .scene0QuestListSec .cleardSec .space {
+  display: inline-block;
+  margin: 0 0 0 0;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec .scene0QuestListSec .noClearSec {
+  padding: 21px 0 0 30px;
+  background-image: url("/magica/resource/image_web/page/quest/scene0/storySelect/btn_scene01_close.png");
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec .scene0QuestListSec .noClearSec .newIcon {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 84px;
+  height: 21px;
+  background-image: url("/magica/resource/image_web/page/quest/quest_state_new.png");
+  background-size: 100%;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec .scene0QuestListSec .noClearSec .itemSec {
+  display: inline-block;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec .scene0QuestListSec .noClearSec .itemSec .icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url("/magica/resource/image_web/common/icon/icon_scenezero_play_ticket.png");
+  background-size: 100%;
+  margin: -9px -2px -13px 6px;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec .scene0QuestListSec .noClearSec .itemSec .numSec {
+  display: inline-block;
+  color: #fff;
+  font-size: 90%;
+  margin: 0;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec .scene0QuestListSec.cleared .cleardSec {
+  display: block;
+}
+
+#Scene0StorySelectBeforeFilm1 .mainSec .questListSec .scene0QuestListSec.noClear .noClearSec {
+  display: block;
+}
+
+.popupContent.typeC.scene0StoryPopup .popupTextArea {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+#Scene0FilmAnimation {
+  position: fixed;
+  width: 1024px;
+  height: 100% !important;
+  top: 0;
+  left: 0;
+}
+
+#Scene0FilmAnimation .mainWrap {
+  width: 1024px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+#Scene0FilmAnimation .mainWrap .flowWrap {
+  width: 1024px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#Scene0FilmAnimation .mainWrap .flowWrap .filmWrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+  -webkit-transform: translateY(-1px);
+  -webkit-transform: scaleY(0);
+  -webkit-animation: filmScaleAnimation 0.05s linear 0.666s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#Scene0FilmAnimation .mainWrap .flowWrap .filmWrap .filmImg {
+  position: absolute;
+  background: url("/magica/resource/image_web/page/quest/scene0/top/animation/mov_film_frame.png") left top no-repeat;
+  background-size: cover;
+  width: 1424px;
+  height: 766px;
+  left: -192px;
+  top: -72px;
+}
+
+#Scene0FilmAnimation .mainWrap .flowWrap .filmWrap .filmImg.vibration {
+  -webkit-animation: filmVibrationAnimation 0.15s linear 0s 1;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: none;
+  -webkit-animation-direction: alternate;
+}
+
+#Scene0FilmAnimation .mainWrap .flowWrap .noiseWrap {
+  position: fixed;
+  width: 1280px;
+  height: 780px;
+}
+
+#Scene0FilmAnimation .mainWrap .flowWrap .noiseWrap .noise1 {
+  position: fixed;
+  background: url("/magica/resource/image_web/page/quest/scene0/top/animation/mov_film_noise.png") left top no-repeat;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  scale: 1.2;
+  -webkit-animation: noiseAnimation 0.12s linear 0.85s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#Scene0FilmAnimation .mainWrap .flowWrap .noiseWrap .noise2 {
+  position: fixed;
+  background: url("/magica/resource/image_web/page/quest/scene0/top/animation/mov_film_noise.png") left top no-repeat;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  scale: 1.2;
+  -webkit-animation: noiseAnimation 0.12s linear 1.60s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#Scene0FilmAnimation .mainWrap .flowWrap .noiseWrap .noise3 {
+  position: fixed;
+  background: url("/magica/resource/image_web/page/quest/scene0/top/animation/mov_film_noise.png") left top no-repeat;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  scale: 1.2;
+  -webkit-animation: noiseAnimation 0.12s linear 1.80s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#Scene0FilmAnimation .mainWrap .flowWrap .noiseWrap .noise4 {
+  position: fixed;
+  background: url("/magica/resource/image_web/page/quest/scene0/top/animation/mov_film_noise.png") left top no-repeat;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  scale: 1.2;
+  -webkit-animation: noiseAnimation 0.12s linear 2.35s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#Scene0FilmAnimation .mainWrap .flowWrap .noiseWrap .noise5 {
+  position: fixed;
+  background: url("/magica/resource/image_web/page/quest/scene0/top/animation/mov_film_noise.png") left top no-repeat;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  scale: 1.2;
+  -webkit-animation: noiseAnimation 0.12s linear 2.85s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#Scene0FilmAnimation .mainWrap .flowWrap .noiseWrap .noise6 {
+  position: fixed;
+  background: url("/magica/resource/image_web/page/quest/scene0/top/animation/mov_film_noise.png") left top no-repeat;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  scale: 1.2;
+  -webkit-animation: noiseAnimation 0.12s linear 3.35s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#Scene0FilmAnimation .mainWrap .flowWrap .noiseWrap .noise7 {
+  position: fixed;
+  background: url("/magica/resource/image_web/page/quest/scene0/top/animation/mov_film_noise.png") left top no-repeat;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  scale: 1.2;
+  -webkit-animation: noiseAnimation 0.12s linear 3.85s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#Scene0FilmAnimation .mainWrap .flowWrap .fadeWrap {
+  position: fixed;
+  width: 132%;
+  height: 106%;
+  left: -160px;
+  background-color: #000;
+  opacity: 0;
+  -webkit-animation: fadeWrapAnimation 2s linear 1.75s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#Scene0FilmAnimation .mainWrap .flowWrap .frameWrap {
+  position: fixed;
+  background: url("/magica/resource/image_web/page/quest/scene0/top/animation/efe_mov_film.png") left top no-repeat;
+  width: 1280px;
+  height: 574px;
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+  opacity: 0;
+  scale: 1.2;
+  left: -100px;
+  -webkit-transform: scaleY(0);
+  -webkit-animation: frameAnimation 1s linear 2.666s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#Scene0FilmAnimation.iPhoneXOrMore .mainWrap .flowWrap .filmWrap {
+  -webkit-animation: filmScaleAnimationForIPhoneXOrMore 0.05s linear 0.666s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#Scene0FilmAnimation.iPad .mainWrap .flowWrap .filmWrap {
+  -webkit-animation: filmScaleAnimationForIPad 0.05s linear 0.666s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#Scene0FilmAnimation.iPad .mainWrap .flowWrap .filmWrap .filmImg {
+  top: -32px;
+}
+
+@-webkit-keyframes filmScaleAnimation {
+  0% {
+    -webkit-transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(0.93);
+  }
+}
+
+@-webkit-keyframes filmScaleAnimationForIPhoneXOrMore {
+  0% {
+    -webkit-transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
+
+@-webkit-keyframes filmScaleAnimationForIPad {
+  0% {
+    -webkit-transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1.1);
+  }
+}
+
+@-webkit-keyframes filmVibrationAnimation {
+  0% {
+    -webkit-transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(-1px);
+  }
+}
+
+@-webkit-keyframes noiseAnimation {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeWrapAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes frameAnimation {
+  0% {
+    -webkit-transform: scaleY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scaleY(1.5);
+    opacity: 1;
+  }
+}

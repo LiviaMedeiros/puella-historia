@@ -1,0 +1,1352 @@
+#PatrolResult {
+  width: 1024px;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+#PatrolResult #tapAction {
+  width: 100%;
+  height: 100%;
+  background: url("/magica/resource/image_web/page/questresult/result_touchscreen.png") no-repeat;
+  background-position: 395px -webkit-calc(100% - 10px);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#PatrolResult #tapAction.active {
+  display: block;
+  -webkit-animation: touchScreen 1s ease-in-out 0s infinite normal;
+  z-index: 1000;
+}
+#PatrolResult #ResultWrap {
+  width: 786px;
+  height: 576px;
+  position: absolute;
+  top: -webkit-calc(50% - 288px);
+  left: 119px;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+#PatrolResult #ResultWrap .resultMark {
+  width: 100%;
+  height: 95px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  z-index: 3;
+}
+#PatrolResult #ResultWrap .resultMark.win {
+  background: url("/magica/resource/image_web/page/patrol/text_result_header.png") top center;
+  background-repeat: no-repeat;
+}
+#PatrolResult #ResultWrap .resultMark.win.complete {
+  background: url("/magica/resource/image_web/page/patrol/result_mission_complete.png") top center;
+  background-repeat: no-repeat;
+}
+#PatrolResult #ResultWrap .ResultPopup {
+  width: 786px;
+  height: 450px;
+  position: absolute;
+  bottom: 44px;
+  z-index: 10;
+}
+#PatrolResult #ResultWrap .ResultPopup.anim {
+  -webkit-animation: flameAnimation 0.5s ease 0s 1 alternate;
+  -webkit-animation-fill-mode: backwards;
+}
+#PatrolResult #ResultWrap .ResultPopup .expWrapTitleWtap {
+  position: absolute;
+  background: url("/magica/resource/image_web/page/patrol/bg_result_title.png") left top no-repeat;
+  width: 450px;
+  height: 33px;
+  top: 0;
+  left: -webkit-calc(50% - 230px);
+  line-height: 32px;
+  z-index: 100;
+}
+#PatrolResult #ResultWrap .ResultPopup .expWrapTitleWtap .expWrapTitle {
+  position: relative;
+  top: 2px;
+  left: 230px;
+  font-size: 18px;
+  color: #fff;
+}
+#PatrolResult #ResultWrap .ResultPopup .hrWrap {
+  position: relative;
+  background: url("/magica/resource/image_web/page/questresult/line.png") left top no-repeat;
+  width: 758px;
+  height: 18px;
+  top: 0;
+  left: -webkit-calc(50% - 379px);
+}
+#PatrolResult #ResultWrap .ResultPopup .expWrap, #PatrolResult #ResultWrap .ResultPopup .itemWrap, #PatrolResult #ResultWrap .ResultPopup .richeWrap {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+#PatrolResult #ResultWrap .ResultPopup .expWrap .expMiniTitle, #PatrolResult #ResultWrap .ResultPopup .expWrap .charaExMiniTitle, #PatrolResult #ResultWrap .ResultPopup .itemWrap .expMiniTitle, #PatrolResult #ResultWrap .ResultPopup .itemWrap .charaExMiniTitle, #PatrolResult #ResultWrap .ResultPopup .richeWrap .expMiniTitle, #PatrolResult #ResultWrap .ResultPopup .richeWrap .charaExMiniTitle {
+  width: 124px;
+  height: 28px;
+  background: #b28750;
+  position: absolute;
+  top: 50px;
+  left: 32px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 14px;
+}
+#PatrolResult #ResultWrap .ResultPopup .expWrap .charaExMiniTitle, #PatrolResult #ResultWrap .ResultPopup .itemWrap .charaExMiniTitle, #PatrolResult #ResultWrap .ResultPopup .richeWrap .charaExMiniTitle {
+  top: 121px;
+}
+#PatrolResult #ResultWrap .ResultPopup .expWrap.off, #PatrolResult #ResultWrap .ResultPopup .itemWrap.off, #PatrolResult #ResultWrap .ResultPopup .richeWrap.off {
+  display: none;
+}
+#PatrolResult #ResultWrap .ResultPopup .expWrap .wrapTitle, #PatrolResult #ResultWrap .ResultPopup .itemWrap .wrapTitle, #PatrolResult #ResultWrap .ResultPopup .richeWrap .wrapTitle {
+  width: 125px;
+  height: 24px;
+  background: #b28750;
+  position: absolute;
+  left: 30px;
+  color: #ffffff;
+  line-height: 24px;
+  text-align: center;
+  border-radius: 12px;
+}
+#PatrolResult #ResultWrap .ResultPopup .expWrap .wrapTitle.clearRiche, #PatrolResult #ResultWrap .ResultPopup .itemWrap .wrapTitle.clearRiche, #PatrolResult #ResultWrap .ResultPopup .richeWrap .wrapTitle.clearRiche {
+  bottom: 6px;
+}
+#PatrolResult #ResultWrap .ResultPopup .expWrap {
+  height: 200px;
+}
+#PatrolResult #ResultWrap .ResultPopup .itemWrap {
+  height: 180px;
+}
+#PatrolResult #ResultWrap .ResultPopup .richeWrap {
+  height: 30px;
+}
+#PatrolResult #ResultWrap .ResultPopup .richeWrap .gold {
+  width: 140px;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 232px;
+  height: 32px;
+  font-size: 20px !important;
+  line-height: 32px !important;
+}
+#PatrolResult #ResultWrap .ResultPopup .richeWrap .gold:before {
+  width: 37px;
+  height: 37px;
+  background: url("/magica/resource/image_web/page/questresult/icon_cursechip.png") left top;
+  background-repeat: no-repeat;
+  background-size: contains;
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -48px;
+  content: "";
+}
+#PatrolResult #ResultWrap .ResultPopup .richeWrap .hasTotalRiche {
+  position: absolute;
+  right: 36px;
+  bottom: 0;
+}
+#PatrolResult #ResultWrap .ResultPopup .richeWrap .hasTotalRiche dt {
+  width: 154px;
+  height: 34px;
+  padding-left: 30px;
+  font-size: 18px;
+  line-height: 34px;
+}
+#PatrolResult #ResultWrap .ResultPopup .richeWrap .hasTotalRiche dt:before {
+  width: 30px;
+  height: 30px;
+  background: url("/magica/resource/image_web/page/questresult/icon_cursechip.png") left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  content: "";
+}
+#PatrolResult #ResultWrap .ResultPopup .richeWrap .hasTotalRiche dd {
+  width: 200px;
+  height: 34px;
+  padding-left: 10px;
+  background-color: #ffffff;
+  font-size: 18px;
+  line-height: 34px;
+  text-align: right;
+}
+#PatrolResult #ResultWrap .ResultPopup .getTotalRiche {
+  left: 36px;
+}
+#PatrolResult #ResultWrap .ResultPopup .rankTitle {
+  width: 60px;
+  height: 24px;
+  background: url("/magica/resource/image_web/page/questresult/rank.png") left top no-repeat;
+  position: absolute;
+  top: 52px;
+  left: 168px;
+}
+#PatrolResult #ResultWrap .ResultPopup .nextRankExp {
+  display: none;
+  position: absolute;
+  top: 78px;
+  right: 206px;
+  font-size: 16px;
+  line-height: 16px;
+}
+#PatrolResult #ResultWrap .ResultPopup .nextRankExp #nextRankExpNum {
+  margin-left: 5px;
+  display: inline-block;
+  font-size: 16px;
+  text-align: left;
+}
+#PatrolResult #ResultWrap .ResultPopup .nextRankExp.on {
+  display: block;
+}
+#PatrolResult #ResultWrap .ResultPopup .exp {
+  width: 286px;
+  height: 24px;
+  background: url("/magica/resource/image_web/page/questresult/bg_player_exp.png") left top no-repeat;
+  position: absolute;
+  top: 52px;
+  left: 308px;
+}
+#PatrolResult #ResultWrap .ResultPopup .exp .exGuageWrap {
+  width: 140px;
+  height: 14px;
+  padding: 3px;
+  background-color: #dcbe41;
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  overflow: hidden;
+  border-radius: 7px;
+}
+#PatrolResult #ResultWrap .ResultPopup .exp .exGuageWrap:before {
+  width: 140px;
+  height: 14px;
+  background: rgba(255, 250, 190, 0);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  border-radius: 7px;
+  z-index: 10;
+}
+#PatrolResult #ResultWrap .ResultPopup .exp .exGuageWrap .exGuageBar {
+  max-width: -webkit-calc(100% - 4px);
+  height: 10px;
+  background-color: #24c6c9;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 5px;
+}
+#PatrolResult #ResultWrap .ResultPopup .exp .exGuageWrap.active:before {
+  -webkit-animation: guageFade 0.5s ease 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+}
+#PatrolResult #ResultWrap .ResultPopup .expNum {
+  width: 140px;
+  height: 22px;
+  display: block;
+  position: absolute;
+  top: 54px;
+  left: 596px;
+  font-size: 20px;
+  line-height: 22px;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 24px;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap.off {
+  display: none;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap.on {
+  -webkit-animation: itemAppear 0.8s ease 0s 1 alternate;
+  -webkit-animation-fill-mode: backwards;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li {
+  width: 126px;
+  height: 179px;
+  margin: 0 10px;
+  display: block;
+  position: relative;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .userCharaIcon {
+  width: 97px;
+  height: 97px;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 48.5px);
+  z-index: 1;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .userCharaIcon .att, #PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .userCharaIcon .star, #PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .userCharaIcon .rank, #PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .userCharaIcon .bg {
+  width: 97px;
+  height: 97px;
+  background-size: contain;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li img {
+  width: 90px;
+  height: 90px;
+  top: 4px;
+  left: 4px;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .textUp {
+  position: absolute;
+  bottom: 102px;
+  height: 40px;
+  z-index: 3;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .textUp .lvup {
+  width: 122px;
+  height: 40px;
+  background-image: url("/magica/resource/image_web/page/questresult/result_chara_lvup.png");
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: -webkit-calc(50%);
+  opacity: 0;
+  z-index: 2;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .textUp .lvup.anim {
+  -webkit-animation: lvUP 1s ease 0s 1 alternate;
+  -webkit-animation-fill-mode: backwards;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .textUp .epup {
+  width: 134px;
+  height: 32px;
+  background-image: url("/magica/resource/image_web/page/questresult/result_chara_epup.png");
+  background-size: 134px 32px;
+  position: absolute;
+  top: 25px;
+  left: -webkit-calc(50% - 5px);
+  opacity: 0;
+  z-index: 3;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .textUp .epup.anim {
+  -webkit-animation: lvUP 1s ease 0s 1 alternate;
+  -webkit-animation-fill-mode: backwards;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .lv {
+  width: 140px;
+  position: absolute;
+  top: 100px;
+  right: -33px;
+  color: #5b5b5b;
+  font-size: 16px;
+  text-align: left;
+  text-shadow: none;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .lv span, #PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .lv:before {
+  color: #5b5b5b;
+  font-size: 16px;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .lv span.c_red {
+  color: #ff403b;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaExWrap {
+  width: 126px;
+  height: 18px;
+  padding: 4px 9px;
+  background: url("/magica/resource/image_web/page/chara/bg_exp_gauge_c.png") left top;
+  background-repeat: no-repeat;
+  background-position: 11px 0;
+  background-size: 104px 18px;
+  position: absolute;
+  top: 107px;
+  left: 0px;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaExWrap .exFlashWrap {
+  width: 126px;
+  height: 18px;
+  background: url("/magica/resource/image_web/page/questresult/result_gauge_flash.png") left top no-repeat;
+  background-size: 126px 18px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  opacity: 0;
+  z-index: 10;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaExWrap .exFlashWrap.active {
+  -webkit-animation: guageFadeOpacity 1s ease 0s normal;
+  -webkit-animation-fill-mode: both;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaExWrap:before, #PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaExWrap:after {
+  width: 16px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  top: 0;
+  content: "";
+  z-index: 2;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaExWrap:before {
+  background: url("/magica/resource/image_web/page/chara/bg_exp_gauge_l.png") left top no-repeat;
+  background-size: 16px 18px;
+  left: 0;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaExWrap:after {
+  background: url("/magica/resource/image_web/page/chara/bg_exp_gauge_r.png") left top no-repeat;
+  background-size: 16px 18px;
+  right: 0;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaExWrap .miniGuageWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaExWrap .miniGuageWrap .charaExGuage {
+  height: 10px;
+  background: url("/magica/resource/image_web/page/chara/exp_gauge_l.png") left top no-repeat, url("/magica/resource/image_web/page/chara/exp_gauge_r.png") right top no-repeat, url("/magica/resource/image_web/page/chara/exp_gauge_c.png") left top repeat-x;
+  background-size: auto 10px, auto 10px, auto 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .getExNum {
+  width: 100%;
+  position: absolute;
+  top: 90px;
+  right: -8px;
+  color: #00a3a7;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: right;
+  opacity: 0;
+  z-index: 10;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .getExNum.anim {
+  -webkit-animation: exNumAppear 1s ease 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .getEpExNum {
+  width: 100%;
+  position: absolute;
+  top: 129px;
+  right: -8px;
+  color: #7642f0;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: right;
+  opacity: 0;
+  z-index: 10;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .getEpExNum.anim {
+  -webkit-animation: exNumAppear 1s ease 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaEpTitle {
+  width: -webkit-calc(100% - 4px);
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 130px;
+  left: 3px;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaEpTitle .epTitle {
+  width: 78px;
+  height: 16px;
+  background: url("/magica/resource/image_web/page/questresult/header_eplv.png") left top no-repeat;
+  background-size: contain;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaEpTitle .epLvNum {
+  padding-left: 3px;
+  padding-top: 1px;
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaLvTitle {
+  width: -webkit-calc(100% - 4px);
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 91px;
+  left: 3px;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaLvTitle .lvTitle {
+  width: 30px;
+  height: 16px;
+  background: url("/magica/resource/image_web/page/questresult/header_lv.png") left top no-repeat;
+  background-size: contain;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaLvTitle .unitLv {
+  padding-left: 3px;
+  padding-top: 1px;
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaLvTitle .lvArrow {
+  display: none;
+  width: 30px;
+  height: 30px;
+  background: url("/magica/resource/image_web/page/chara/arrow.png") left top no-repeat;
+  position: relative;
+  scale: 0.4;
+  top: -6px;
+  left: 8px;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaLvTitle .lvArrow.on {
+  display: inline-block;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaLvTitle .afterUnitLv {
+  display: none;
+  padding-top: 1px;
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  left: 10px;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaLvTitle .afterUnitLv.on {
+  display: inline-block;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaEpWrap {
+  width: 126px;
+  height: 18px;
+  padding: 4px 9px;
+  background: url("/magica/resource/image_web/page/chara/bg_exp_gauge_c.png") left top;
+  background-repeat: no-repeat;
+  background-position: 11px 0;
+  background-size: 104px 18px;
+  position: absolute;
+  top: 146px;
+  left: 0px;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaEpWrap .epFlashWrap {
+  width: 126px;
+  height: 18px;
+  background: url("/magica/resource/image_web/page/questresult/result_gauge_flash.png") left top no-repeat;
+  background-size: 126px 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 10;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaEpWrap .epFlashWrap.active {
+  -webkit-animation: guageFadeOpacity 1s ease 0s normal;
+  -webkit-animation-fill-mode: both;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaEpWrap:before, #PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaEpWrap:after {
+  width: 16px;
+  height: 18px;
+  display: block;
+  position: absolute;
+  top: 0;
+  content: "";
+  z-index: 2;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaEpWrap:before {
+  background: url("/magica/resource/image_web/page/chara/bg_exp_gauge_l.png") left top no-repeat;
+  background-size: 16px 18px;
+  left: 0;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaEpWrap:after {
+  background: url("/magica/resource/image_web/page/chara/bg_exp_gauge_r.png") left top no-repeat;
+  background-size: 16px 18px;
+  right: 0;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaEpWrap .miniGuageWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaEpWrap .miniGuageWrap .charaEpGuage {
+  height: 10px;
+  background: url("/magica/resource/image_web/common/chara/eplv_gauge_l.png") left top no-repeat, url("/magica/resource/image_web/common/chara/eplv_gauge_r.png") right top no-repeat, url("/magica/resource/image_web/common/chara/eplv_gauge_c.png") left top repeat-x;
+  background-size: auto 10px, auto 10px, auto 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaEpLeftWrap {
+  width: 99px;
+  height: 16px;
+  display: none;
+  position: absolute;
+  bottom: 0px;
+  left: 16px;
+  font-size: 14px;
+  text-align: right;
+}
+#PatrolResult #ResultWrap .ResultPopup ul#charaWrap li .charaEpLeftWrap.on {
+  display: block;
+}
+#PatrolResult #itemResult {
+  width: 568px;
+  max-width: 568px;
+  height: 180px;
+  padding: 20px 20px 0 20px;
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 170px;
+  overflow: hidden;
+  z-index: 999;
+}
+#PatrolResult #itemResult.off {
+  display: none;
+}
+#PatrolResult #itemResult.canScroll {
+  height: 176px;
+  padding: 0;
+  top: -webkit-calc(50% - 2px);
+  left: 303px;
+  z-index: 1001;
+}
+#PatrolResult #itemResult.canScroll .itemScroll {
+  pointer-events: auto !important;
+}
+#PatrolResult #itemResult.anim .effectWrap .effectCircle {
+  -webkit-animation: itemCicleEffect 0.5s ease 0.25s 1 alternate;
+  -webkit-animation-fill-mode: both;
+}
+#PatrolResult #itemResult.anim .effectWrap .effectFlash {
+  -webkit-animation: itemFlashEffect 0.5s ease 0.25s 1 alternate;
+  -webkit-animation-fill-mode: both;
+}
+#PatrolResult #itemResult.anim .effectWrap .effectGlitter {
+  -webkit-animation: itemEffectEffect 0.5s ease 0.25s 1 alternate;
+  -webkit-animation-fill-mode: both;
+}
+#PatrolResult #itemResult.anim img, #PatrolResult #itemResult.anim .rewardNum {
+  -webkit-animation: itemAppear 0.13s ease 0.5s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+#PatrolResult #itemResult.anim .maskWrap {
+  -webkit-animation: itemBoxOpen 0.75s ease 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+#PatrolResult #itemResult.anim .maskWrap.SILVER {
+  -webkit-animation: rareItemBoxOpen 0.75s ease 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+#PatrolResult #itemResult.anim .maskWrap.GOLD {
+  -webkit-animation: SSRItemBoxOpen 0.75s ease 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+#PatrolResult #itemResult .itemScroll {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+  pointer-events: none;
+}
+#PatrolResult #itemResult ul#getItemList {
+  width: 590px;
+  max-width: 590px;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  pointer-events: none;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+#PatrolResult #itemResult ul#getItemList * {
+  pointer-events: none;
+}
+#PatrolResult #itemResult ul#getItemList li {
+  min-width: 77px;
+  max-width: 77px;
+  min-height: 77px;
+  max-height: 77px;
+  display: block;
+  position: relative;
+  opacity: 1;
+}
+#PatrolResult #itemResult ul#getItemList li .effectWrap {
+  width: 77px;
+  height: 77px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: 5;
+}
+#PatrolResult #itemResult ul#getItemList li .effectWrap .effectCircle {
+  width: 77px;
+  height: 77px;
+  background: url("/magica/resource/image_web/page/questresult/ef_item_circle.png");
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+#PatrolResult #itemResult ul#getItemList li .effectWrap .effectFlash {
+  width: 77px;
+  height: 77px;
+  background: url("/magica/resource/image_web/page/questresult/ef_item_flash.png");
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  mix-blend-mode: screen;
+}
+#PatrolResult #itemResult ul#getItemList li .effectWrap .effectGlitter {
+  width: 77px;
+  height: 77px;
+  background: url("/magica/resource/image_web/page/questresult/ef_item_glitter.png");
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+#PatrolResult #itemResult ul#getItemList li img {
+  min-height: 72px;
+  max-height: 72px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+#PatrolResult #itemResult ul#getItemList li .maskWrap {
+  width: 90px;
+  height: 96px;
+  background: url("/magica/resource/image_web/common/treasure/bronze_close.png") bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -26px;
+  left: -10px;
+}
+#PatrolResult #itemResult ul#getItemList li .maskWrap.SILVER {
+  background: url("/magica/resource/image_web/common/treasure/silver_close.png") bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#PatrolResult #itemResult ul#getItemList li .maskWrap.GOLD {
+  background: url("/magica/resource/image_web/common/treasure/gold_close.png") bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#PatrolResult #itemResult ul#getItemList li .rewardNum {
+  width: 90px;
+  position: absolute;
+  right: 7px;
+  bottom: 0;
+  text-align: right;
+  opacity: 0;
+  z-index: 2;
+}
+
+#PatrolCutin {
+  width: 1024px;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#PatrolCutin #textWrap {
+  position: absolute;
+  left: -webkit-calc(50% - 212px);
+  top: -webkit-calc(50% - 300px);
+  width: 424px;
+  height: 254px;
+}
+#PatrolCutin #textWrap .bg2 {
+  background: url("/magica/resource/image_web/page/patrol/anime/efe_plate_02.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 212px);
+  top: 0px;
+  width: 424px;
+  height: 254px;
+  opacity: 0;
+}
+#PatrolCutin #textWrap .bg1 {
+  background: url("/magica/resource/image_web/page/patrol/anime/efe_plate_01.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 200px);
+  top: 67px;
+  width: 400px;
+  height: 118px;
+  opacity: 0;
+}
+#PatrolCutin #textWrap .text {
+  background: url("/magica/resource/image_web/page/patrol/anime/txt_start.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 130px);
+  top: 77px;
+  width: 260px;
+  height: 90px;
+  opacity: 0;
+}
+#PatrolCutin #textWrap.anim .bg2 {
+  -webkit-animation: patrolResult_textBg2_1 1.1333333333s ease-in-out 0s 1 both;
+}
+#PatrolCutin #textWrap.anim .bg2.effect {
+  -webkit-animation: patrolResult_textBg2_2 1.1333333333s ease-in-out 0.2s 1 both;
+}
+#PatrolCutin #textWrap.anim .bg1 {
+  -webkit-animation: patrolResult_textBg1 0.6666666667s ease-in-out 0.1666666667s 1 both;
+}
+#PatrolCutin #textWrap.anim .text {
+  -webkit-animation: patrolResult_text 0.3333333333s ease-in-out 0.4333333333s 1 both;
+}
+#PatrolCutin .curtainWrap {
+  background: url("/magica/resource/image_web/page/patrol/anime/efe_door_half.png") left top no-repeat;
+  position: absolute;
+  top: 0px;
+  width: 410px;
+  height: 768px;
+  -webkit-animation: patrolResult_curtain 1.6333333333s ease-in-out 0s 1 both;
+}
+#PatrolCutin .curtainWrap .top {
+  background: url("/magica/resource/image_web/page/patrol/anime/efe_door_spring.png") left top no-repeat;
+  position: absolute;
+  width: 406px;
+  height: 308px;
+}
+#PatrolCutin .curtainWrap#curtainWrapL {
+  left: -200px;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+#PatrolCutin .curtainWrap#curtainWrapL .top {
+  left: 2px;
+}
+#PatrolCutin .curtainWrap#curtainWrapR {
+  right: -200px;
+  -webkit-transform-origin: 100% 50%;
+          transform-origin: 100% 50%;
+  background-position: right top;
+}
+#PatrolCutin .curtainWrap#curtainWrapR .top {
+  right: 2px;
+}
+#PatrolCutin.end #textWrap .bg2 {
+  background: url("/magica/resource/image_web/page/patrol/anime/efe_plate_04.png") left top no-repeat;
+}
+#PatrolCutin.end #textWrap .bg1 {
+  background: url("/magica/resource/image_web/page/patrol/anime/efe_plate_03.png") left top no-repeat;
+}
+#PatrolCutin.end #textWrap .text {
+  background: url("/magica/resource/image_web/page/patrol/anime/txt_finish.png") left top no-repeat;
+}
+
+@-webkit-keyframes patrolResult_curtain {
+  0% {
+    -webkit-transform: scaleX(1.735);
+            transform: scaleX(1.735);
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+}
+@-webkit-keyframes patrolResult_text {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1.8);
+            transform: scale(1.8);
+    opacity: 1;
+  }
+  66.666% {
+    -webkit-transform: scale(1.533);
+            transform: scale(1.533);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes patrolResult_textBg1 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0.71;
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes patrolResult_textBg2_1 {
+  0% {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+    opacity: 0;
+  }
+  13.04% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0.1;
+  }
+  91.304% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.88;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes patrolResult_textBg2_2 {
+  0% {
+    -webkit-transform: scale(1.444);
+            transform: scale(1.444);
+    opacity: 0;
+  }
+  34.783% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.27;
+  }
+  65.217% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes PatrolWinAnimation {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2) translateZ(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes starBound {
+  0% {
+    -webkit-transform: scale(2) translateZ(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(0.8) translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes starBoundOver {
+  0% {
+    -webkit-transform: scale(0.8) translateZ(0);
+    opacity: 100%;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: scale(3) translateZ(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes starFadeIn {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes guageFade {
+  0%, 100% {
+    background: rgba(255, 250, 190, 0);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  50% {
+    background: rgba(255, 250, 190, 0.6);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+@-webkit-keyframes guageFadeOpacity {
+  0%, 100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 0.6;
+  }
+}
+@-webkit-keyframes boxFlash {
+  0% {
+    -webkit-transform: scale(1) translateY(0) translateZ(0);
+    opacity: 0.8;
+  }
+  100% {
+    -webkit-transform: scale(2) translateY(-10px) translateZ(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes missionItemAnimation {
+  0% {
+    -webkit-transform: scale(0) rotate(-90deg) translateZ(0);
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(0deg) translateZ(0);
+  }
+}
+@-webkit-keyframes itemBoxOpen {
+  0% {
+    background-image: url("/magica/resource/image_web/common/treasure/bronze_close.png");
+    -webkit-transform: scale(1) translateZ(0);
+  }
+  33% {
+    background-image: url("/magica/resource/image_web/common/treasure/bronze_close.png");
+    -webkit-transform: scale(0.8) translateZ(0);
+  }
+  34% {
+    background-image: url("/magica/resource/image_web/common/treasure/bronze_open.png");
+    -webkit-transform: scale(1) translateZ(0);
+  }
+  50% {
+    background-image: url("/magica/resource/image_web/common/treasure/bronze_open.png");
+    -webkit-transform: scale(1.1) translateZ(0);
+    opacity: 1;
+  }
+  66% {
+    background-image: url("/magica/resource/image_web/common/treasure/bronze_open.png");
+    opacity: 1;
+  }
+  100% {
+    background-image: url("/magica/resource/image_web/common/treasure/bronze_open.png");
+    opacity: 0;
+  }
+}
+@-webkit-keyframes rareItemBoxOpen {
+  0% {
+    background-image: url("/magica/resource/image_web/common/treasure/silver_close.png");
+    -webkit-transform: scale(1) translateZ(0);
+  }
+  33% {
+    background-image: url("/magica/resource/image_web/common/treasure/silver_close.png");
+    -webkit-transform: scale(0.8) translateZ(0);
+  }
+  34% {
+    background-image: url("/magica/resource/image_web/common/treasure/silver_open.png");
+    -webkit-transform: scale(1) translateZ(0);
+  }
+  50% {
+    background-image: url("/magica/resource/image_web/common/treasure/silver_open.png");
+    -webkit-transform: scale(1.1) translateZ(0);
+    opacity: 1;
+  }
+  66% {
+    background-image: url("/magica/resource/image_web/common/treasure/silver_open.png");
+    opacity: 1;
+  }
+  100% {
+    background-image: url("/magica/resource/image_web/common/treasure/silver_open.png");
+    opacity: 0;
+  }
+}
+@-webkit-keyframes SSRItemBoxOpen {
+  0% {
+    background-image: url("/magica/resource/image_web/common/treasure/gold_close.png");
+    -webkit-transform: scale(1) translateZ(0);
+  }
+  33% {
+    background-image: url("/magica/resource/image_web/common/treasure/gold_close.png");
+    -webkit-transform: scale(0.8) translateZ(0);
+  }
+  34% {
+    background-image: url("/magica/resource/image_web/common/treasure/gold_open.png");
+    -webkit-transform: scale(1) translateZ(0);
+  }
+  50% {
+    background-image: url("/magica/resource/image_web/common/treasure/gold_open.png");
+    -webkit-transform: scale(1.1) translateZ(0);
+    opacity: 1;
+  }
+  66% {
+    background-image: url("/magica/resource/image_web/common/treasure/gold_open.png");
+    opacity: 1;
+  }
+  100% {
+    background-image: url("/magica/resource/image_web/common/treasure/gold_open.png");
+    opacity: 0;
+  }
+}
+@-webkit-keyframes lvUP {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+  99% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flameAnimation {
+  0% {
+    -webkit-transform: translateY(-102px) scaleY(0) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px) scaleY(1) translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes itemAppear {
+  0% {
+    -webkit-transform: translateY(-26px) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes itemCicleEffect {
+  0% {
+    -webkit-transform: scale(0.3) translateZ(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.2) translateZ(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes itemFlashEffect {
+  0% {
+    -webkit-transform: scale(1.2) translateZ(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5) translateZ(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes itemGlitterEffect {
+  0% {
+    -webkit-transform: scale(0.8) translateZ(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.3) translateZ(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes missionBgAnim {
+  0% {
+    -webkit-transform: scale(0) translateZ(0);
+    opacity: 0.5;
+  }
+  60% {
+    -webkit-transform: scale(1) translateZ(0);
+    opacity: 1;
+    -webkit-filter: blightness(900%);
+            filter: blightness(900%);
+  }
+  63% {
+    -webkit-transform: scale(1) translateZ(0);
+    -webkit-filter: blightness(100%);
+            filter: blightness(100%);
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes frame_in {
+  0% {
+    -webkit-transform: translateX(-10px) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px) translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes frame_in_mission {
+  0% {
+    -webkit-transform: translateX(-116px) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px) translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes frame_in_chara {
+  0% {
+    -webkit-transform: translateX(50px) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px) translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes mission_panel_flash {
+  0%, 100% {
+    -webkit-transform: translateZ(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateZ(0);
+    opacity: 0.6;
+  }
+}
+@-webkit-keyframes chara_L_frame_in {
+  0% {
+    -webkit-transform: translateX(-50px) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px) translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes touchScreen {
+  0%, 100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 0.5;
+  }
+  50% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes exNumAppear {
+  0% {
+    -webkit-transform: translateY(24px) translateZ(0);
+    opacity: 0;
+  }
+  25%, 75% {
+    -webkit-transform: translateY(0px) translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(-24px) translateZ(0);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flashAppear {
+  0% {
+    -webkit-transform: scale(1.5) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1) translateZ(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes flashRoling {
+  0% {
+    -webkit-transform: rotate(0deg) translateZ(0);
+  }
+  25% {
+    -webkit-transform: rotate(90deg) translateZ(0);
+  }
+  50% {
+    -webkit-transform: rotate(180deg) translateZ(0);
+  }
+  75% {
+    -webkit-transform: rotate(270deg) translateZ(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) translateZ(0);
+  }
+}

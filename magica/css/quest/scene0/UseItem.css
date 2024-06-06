@@ -1,0 +1,21 @@
+#scene0UseItemSec {
+  position: absolute;
+  top: 12px;
+  right: 264px;
+  width: 112px;
+  height: 36px;
+  background-image: url("/magica/resource/image_web/page/quest/scene0/top/zeroitem_base.png");
+}
+
+#scene0UseItemSec .itemNum {
+  position: absolute;
+  top: 8px;
+  right: 18px;
+  color: #ffe38f;
+  font-size: 14px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+#scene0UseItemSec.noDisp {
+  display: none;
+}
