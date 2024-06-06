@@ -1,0 +1,21 @@
+<div id="useItemList">
+	<div class="listSec" id="listSec">
+		<div class='useItem'>
+			<p class="numWrap c_white">
+				<span class="hasNum <%= model.haveclass %>"><%= model.have %></span>
+				<span class="sla ts_gold">/</span>
+				<span class="needNum ts_gold"><%= model.quantity %></span>
+			</p>
+			<% if(
+				model.id == 'COMPOSE_ITEM_LIFE' || 
+				model.id == 'COMPOSE_ITEM_POWER' || 
+				model.id == 'COMPOSE_ITEM_PROTECT'
+			) { %>
+				<img src='/magica/resource/image_web/item/main/<%= model.id.toLowerCase() %>_noframe.png' alt='' class="img">
+			<% }else { %>
+				<img data-nativeimgkey='<%= model.id.toLowerCase() %>' data-src='resource/image_native/item/<%= model.id.toLowerCase() %>_b.png' class="img">
+			<% } %>
+			<div class="name"><%= model.name %></div>
+		</div>
+	</div>
+</div>

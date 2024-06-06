@@ -1,0 +1,1003 @@
+#charaImg {
+  display: none;
+}
+
+#CharaComposeAttribute .listSec {
+  width: 364px;
+  height: 410px;
+  padding: 26px 6px 0 3px;
+  position: absolute;
+  top: -webkit-calc(50% - 239px);
+  right: 102px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+#CharaComposeAttribute .listSec .topSec {
+  width: 100%;
+  height: 24px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#CharaComposeAttribute .listSec .topSec:before {
+  width: 100%;
+  height: 16px;
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/tex_attribute_00.png") left top no-repeat;
+  position: absolute;
+  top: 4px;
+  left: 116px;
+  content: "";
+}
+
+#CharaComposeAttribute .listSec .topSec .text {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 100px;
+  height: 16px;
+}
+
+#CharaComposeAttribute .listSec .topSec .text.FIRE {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/tex_attribute_fire.png") left top no-repeat;
+}
+
+#CharaComposeAttribute .listSec .topSec .text.WATER {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/tex_attribute_water.png") left top no-repeat;
+}
+
+#CharaComposeAttribute .listSec .topSec .text.TIMBER {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/tex_attribute_timber.png") left top no-repeat;
+}
+
+#CharaComposeAttribute .listSec .topSec .text.LIGHT {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/tex_attribute_light.png") left top no-repeat;
+}
+
+#CharaComposeAttribute .listSec .topSec .text.DARK {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/tex_attribute_dark.png") left top no-repeat;
+}
+
+#CharaComposeAttribute .listSec .topSec .text.VOID {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/tex_attribute_void.png") left top no-repeat;
+}
+
+#CharaComposeAttribute .listSec #listMain {
+  height: 100%;
+  padding: 16px 4px 10px;
+  overflow: hidden;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner {
+  height: auto;
+  min-height: 100%;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .groupWrap {
+  position: relative;
+  margin: 10px 0 28px 0;
+  border-radius: 0 6px 6px 6px;
+  background: rgba(255, 255, 255, 0.4);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .groupWrap .typeTitle {
+  position: absolute;
+  top: -27px;
+  left: -2px;
+  height: 26px;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .groupWrap .typeTitle dt {
+  width: 60px;
+  border-radius: 5px 0 0 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .groupWrap .typeTitle dd {
+  background-color: #ffffff;
+  border-radius: 0 5px 0 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .groupWrap .itemListSec {
+  padding: 3px 0;
+  height: 82px;
+  text-align: center;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap {
+  position: relative;
+  display: inline-block;
+  margin: 0 6px;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.hp_fire {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_hp_fire.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.hp_fire.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_hp_fire_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.atk_fire {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_atk_fire.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.atk_fire.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_atk_fire_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.def_fire {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_def_fire.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.def_fire.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_def_fire_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.hp_water {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_hp_water.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.hp_water.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_hp_water_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.atk_water {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_atk_water.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.atk_water.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_atk_water_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.def_water {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_def_water.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.def_water.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_def_water_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.hp_timber {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_hp_timber.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.hp_timber.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_hp_timber_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.atk_timber {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_atk_timber.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.atk_timber.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_atk_timber_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.def_timber {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_def_timber.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.def_timber.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_def_timber_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.hp_light {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_hp_light.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.hp_light.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_hp_light_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.atk_light {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_atk_light.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.atk_light.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_atk_light_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.def_light {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_def_light.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.def_light.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_def_light_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.hp_dark {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_hp_dark.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.hp_dark.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_hp_dark_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.atk_dark {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_atk_dark.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.atk_dark.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_atk_dark_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.def_dark {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_def_dark.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.def_dark.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_def_dark_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.hp_void {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_hp_void.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.hp_void.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_hp_void_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.atk_void {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_atk_void.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.atk_void.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_atk_void_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.def_void {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_def_void.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.def_void.composed {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/icon_attribute_def_void_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn .iconLock {
+  display: none;
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 0px;
+  right: 0px;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn .text {
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  width: 95%;
+  text-align: center;
+  color: #ff403b;
+  text-shadow: -1px -1px 1px #ffffff, 1px -1px 1px #ffffff, -1px 1px 1px #ffffff, 1px 1px 1px #ffffff, -1px -1px #ffffff, 1px -1px #ffffff, -1px 1px #ffffff, 1px 1px #ffffff, -1px -1px 1px #ffffff, 1px -1px 1px #ffffff, -1px 1px 1px #ffffff, 1px 1px 1px #ffffff, -1px -1px #ffffff, 1px -1px #ffffff, -1px 1px #ffffff, 1px 1px #ffffff;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.lock .iconLock {
+  display: block;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.lock .text {
+  display: none;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .composeBtn.composed .text {
+  color: #5b5b5b;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .effectWrap {
+  display: none;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .effectWrap .effect01 {
+  width: 116px;
+  height: 116px;
+  background: url("/magica/resource/image_web/page/chara/set_light_sphere.png") center center no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -webkit-calc(50% - 58px);
+  left: -webkit-calc(50% - 58px);
+  opacity: 0;
+  z-index: 1000;
+  mix-blend-mode: screen !important;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .effectWrap .effect02 {
+  width: 216px;
+  height: 216px;
+  background: url("/magica/resource/image_web/page/chara/set_light_circle.png") center center no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: -webkit-calc(50% - 108px);
+  left: -webkit-calc(50% - 108px);
+  opacity: 0;
+  z-index: 1000;
+  mix-blend-mode: screen !important;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .effectWrap.anim {
+  display: block;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .effectWrap.anim .effect01 {
+  -webkit-animation: set_effect_sphere 1s ease-in-out .25s 1 alternate;
+          animation: set_effect_sphere 1s ease-in-out .25s 1 alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#CharaComposeAttribute .listSec #listMain .listMainInner .composeBtnWrap .effectWrap.anim .effect02 {
+  -webkit-animation: set_effect_circle 1s ease-in-out .25s 1 alternate;
+          animation: set_effect_circle 1s ease-in-out .25s 1 alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#CharaComposeAttribute .listSec .footSec {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+  background-color: #ffffff;
+}
+
+#CharaComposeAttribute .listSec .footSec .bulkBtn {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+}
+
+#materialConfirm .popupTitle,
+#popupItemConfirm .popupTitle,
+#popupAllItemConfirm .popupTitle {
+  width: 370px;
+}
+
+#materialConfirm .popupTextArea,
+#popupItemConfirm .popupTextArea,
+#popupAllItemConfirm .popupTextArea {
+  height: 200px;
+  vertical-align: top;
+}
+
+#materialConfirm .popupTextArea .text,
+#popupItemConfirm .popupTextArea .text,
+#popupAllItemConfirm .popupTextArea .text {
+  padding-top: 23px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#materialConfirm .popupTextArea .text .hide,
+#popupItemConfirm .popupTextArea .text .hide,
+#popupAllItemConfirm .popupTextArea .text .hide {
+  display: none;
+}
+
+#materialConfirm .popupTextArea #useItemList,
+#popupItemConfirm .popupTextArea #useItemList,
+#popupAllItemConfirm .popupTextArea #useItemList {
+  width: 510px;
+  height: 118px;
+  position: absolute;
+  bottom: 80px;
+  left: 30px;
+}
+
+#materialConfirm .popupTextArea #useItemList #useItemScrollOuter,
+#popupItemConfirm .popupTextArea #useItemList #useItemScrollOuter,
+#popupAllItemConfirm .popupTextArea #useItemList #useItemScrollOuter {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#materialConfirm .popupTextArea #useItemList #useItemScrollOuter .useItemScrollInner,
+#popupItemConfirm .popupTextArea #useItemList #useItemScrollOuter .useItemScrollInner,
+#popupAllItemConfirm .popupTextArea #useItemList #useItemScrollOuter .useItemScrollInner {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  padding: 20px 0 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#materialConfirm .popupTextArea #useItemList #useItemScrollOuter .useItemScrollInner.scrollWrap,
+#popupItemConfirm .popupTextArea #useItemList #useItemScrollOuter .useItemScrollInner.scrollWrap,
+#popupAllItemConfirm .popupTextArea #useItemList #useItemScrollOuter .useItemScrollInner.scrollWrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#materialConfirm .popupTextArea #useItemList .useItem,
+#popupItemConfirm .popupTextArea #useItemList .useItem,
+#popupAllItemConfirm .popupTextArea #useItemList .useItem {
+  width: 80px;
+  height: 80px;
+  margin: 0 11px 14px;
+  background: url("/magica/resource/image_web/page/chara/bg_gift_popup.png") left top no-repeat;
+  background-size: 80px 80px;
+  position: relative;
+  display: inline-block;
+}
+
+#materialConfirm .popupTextArea #useItemList .useItem .numWrap,
+#popupItemConfirm .popupTextArea #useItemList .useItem .numWrap,
+#popupAllItemConfirm .popupTextArea #useItemList .useItem .numWrap {
+  width: 96px;
+  min-width: 100%;
+  position: absolute;
+  top: -10px;
+  left: -webkit-calc((100% - 96px) / 2);
+  font-size: 14px;
+  z-index: 10;
+}
+
+#materialConfirm .popupTextArea #useItemList .useItem .numWrap .ts_pink,
+#popupItemConfirm .popupTextArea #useItemList .useItem .numWrap .ts_pink,
+#popupAllItemConfirm .popupTextArea #useItemList .useItem .numWrap .ts_pink {
+  font-size: 16px;
+}
+
+#materialConfirm .popupTextArea #useItemList .useItem .img,
+#popupItemConfirm .popupTextArea #useItemList .useItem .img,
+#popupAllItemConfirm .popupTextArea #useItemList .useItem .img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -webkit-calc(50% - 40px);
+  left: -webkit-calc(50% - 40px);
+  z-index: 1;
+}
+
+#materialConfirm .popupTextArea #useItemList .useItem #itemInfo,
+#popupItemConfirm .popupTextArea #useItemList .useItem #itemInfo,
+#popupAllItemConfirm .popupTextArea #useItemList .useItem #itemInfo {
+  display: none;
+}
+
+#materialConfirm .popupBtnArea,
+#popupItemConfirm .popupBtnArea,
+#popupAllItemConfirm .popupBtnArea {
+  margin-top: 7px;
+}
+
+#materialConfirm.disable .popupTextArea,
+#popupItemConfirm.disable .popupTextArea,
+#popupAllItemConfirm.disable .popupTextArea {
+  vertical-align: middle;
+}
+
+#materialConfirm.disable .popupTextArea .text,
+#popupItemConfirm.disable .popupTextArea .text,
+#popupAllItemConfirm.disable .popupTextArea .text {
+  padding-top: 0px;
+  font-size: 22px;
+}
+
+#popupAllItemConfirm .popupTextArea #useItemList {
+  bottom: 68px;
+}
+
+#popupAllItemConfirm .popupTextArea #useItemList .useItem.none {
+  display: none;
+}
+
+#popupAllItemConfirm .popupTextArea .textSec {
+  display: inline-block;
+  font-size: 22px;
+  width: 100%;
+  text-align: center;
+  margin: 14px 0 0 0;
+}
+
+#popupAllItemConfirm .popupTextArea .textSec .upList {
+  display: inline-block;
+  margin: 6px 0 0 0;
+}
+
+#popupAllItemConfirm .popupTextArea .textSec .upList td {
+  text-align: right;
+}
+
+#popupAllItemConfirm .popupTextArea .textSec .upList td.arrowSec {
+  text-align: center;
+}
+
+#popupAllItemConfirm .popupTextArea .textSec .upList .secHP,
+#popupAllItemConfirm .popupTextArea .textSec .upList .secATTACK,
+#popupAllItemConfirm .popupTextArea .textSec .upList .secDEFENSE {
+  height: 36px;
+}
+
+#popupAllItemConfirm .popupTextArea .textSec .upList .secHP.hide,
+#popupAllItemConfirm .popupTextArea .textSec .upList .secATTACK.hide,
+#popupAllItemConfirm .popupTextArea .textSec .upList .secDEFENSE.hide {
+  display: none;
+}
+
+#popupAllItemConfirm .popupTextArea .textSec .text {
+  display: inline-block;
+  padding-top: 0;
+  font-size: 22px;
+}
+
+#popupAllItemConfirm .popupTextArea .textSec .text.plus {
+  vertical-align: top;
+  font-size: 20px;
+  margin: 1px 0 0 3px;
+}
+
+#popupAllItemConfirm .popupTextArea .textSec .arrow {
+  display: inline-block;
+  width: 23px;
+  height: 26px;
+  margin: 0 6px -5px;
+  background: url("/magica/resource/image_web/page/chara/arrow.png") left top no-repeat;
+  background-size: contain;
+}
+
+#popupAllItemConfirm .popupTextArea .textSec .type {
+  margin: 0 8px 0 0;
+}
+
+#popupAllItemConfirm .popupBtnArea {
+  margin-top: 34px;
+}
+
+#popupAllItemConfirm.statusNo2 .popupBtnArea {
+  margin-top: 76px;
+}
+
+#popupAllItemConfirm.statusNo3 .popupBtnArea {
+  margin-top: 114px;
+}
+
+@-webkit-keyframes set_effect_sphere {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 0;
+  }
+  55% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+    opacity: 1;
+  }
+  95% {
+    -webkit-transform: scale(1.7) translateZ(0);
+            transform: scale(1.7) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1.7) translateZ(0);
+            transform: scale(1.7) translateZ(0);
+    opacity: 0;
+  }
+}
+
+@keyframes set_effect_sphere {
+  0% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 0;
+  }
+  55% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0);
+    opacity: 1;
+  }
+  95% {
+    -webkit-transform: scale(1.7) translateZ(0);
+            transform: scale(1.7) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1.7) translateZ(0);
+            transform: scale(1.7) translateZ(0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes set_effect_circle {
+  0% {
+    -webkit-transform: scale(1.5) translateZ(0);
+            transform: scale(1.5) translateZ(0);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: scale(0) translateZ(0);
+            transform: scale(0) translateZ(0);
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: scale(0) translateZ(0);
+            transform: scale(0) translateZ(0);
+    opacity: 1;
+  }
+  95% {
+    -webkit-transform: scale(0) translateZ(0);
+            transform: scale(0) translateZ(0);
+    opacity: 1;
+  }
+  99% {
+    -webkit-transform: scale(0) translateZ(0);
+            transform: scale(0) translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0) translateZ(0);
+            transform: scale(0) translateZ(0);
+    opacity: 0;
+  }
+}
+
+@keyframes set_effect_circle {
+  0% {
+    -webkit-transform: scale(1.5) translateZ(0);
+            transform: scale(1.5) translateZ(0);
+    opacity: 0;
+  }
+  35% {
+    -webkit-transform: scale(0) translateZ(0);
+            transform: scale(0) translateZ(0);
+    opacity: 1;
+  }
+  55% {
+    -webkit-transform: scale(0) translateZ(0);
+            transform: scale(0) translateZ(0);
+    opacity: 1;
+  }
+  95% {
+    -webkit-transform: scale(0) translateZ(0);
+            transform: scale(0) translateZ(0);
+    opacity: 1;
+  }
+  99% {
+    -webkit-transform: scale(0) translateZ(0);
+            transform: scale(0) translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0) translateZ(0);
+            transform: scale(0) translateZ(0);
+    opacity: 0;
+  }
+}
+
+#composeAttributeResult,
+#composeAttributeBulkResult {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#composeAttributeResult.show,
+#composeAttributeBulkResult.show {
+  display: block;
+}
+
+#composeAttributeResult.show .mainSec,
+#composeAttributeBulkResult.show .mainSec {
+  -webkit-animation: result_anime .4s ease-out 0s 1 alternate;
+          animation: result_anime .4s ease-out 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#composeAttributeResult .mainSec,
+#composeAttributeBulkResult .mainSec {
+  width: 880px;
+  height: 196px;
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/bg_popup_black.png") left top no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  text-align: center;
+}
+
+#composeAttributeResult .mainSec .textImg,
+#composeAttributeBulkResult .mainSec .textImg {
+  margin: 22px 0 0 0;
+  display: inline-block;
+}
+
+#composeAttributeResult .mainSec .textSec,
+#composeAttributeBulkResult .mainSec .textSec {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 14px 0 0 0;
+}
+
+#composeAttributeResult .mainSec .textSec .text,
+#composeAttributeBulkResult .mainSec .textSec .text {
+  display: inline-block;
+  font-size: 32px;
+}
+
+#composeAttributeResult .mainSec .textSec .text.before,
+#composeAttributeBulkResult .mainSec .textSec .text.before {
+  color: #ffffff;
+}
+
+#composeAttributeResult .mainSec .textSec .text.after, #composeAttributeResult .mainSec .textSec .text.plus,
+#composeAttributeBulkResult .mainSec .textSec .text.after,
+#composeAttributeBulkResult .mainSec .textSec .text.plus {
+  text-shadow: 2px 0px 2px #ffffff, -2px 0px 2px #ffffff, 0px 2px 2px #ffffff, 0px -2px 2px #ffffff, 2px 2px 2px #ffffff, -2px 2px 2px #ffffff, 2px -2px 2px #ffffff, -2px -2px 2px #ffffff;
+}
+
+#composeAttributeResult .mainSec .textSec .text.plus,
+#composeAttributeBulkResult .mainSec .textSec .text.plus {
+  vertical-align: top;
+  font-size: 24px;
+  margin: 6px 0 0 5px;
+}
+
+#composeAttributeResult .mainSec .textSec .text.attribute,
+#composeAttributeBulkResult .mainSec .textSec .text.attribute {
+  width: auto;
+  height: auto;
+  font-size: 26px;
+  color: #ffffff;
+  margin: 0 0 6px 0;
+}
+
+#composeAttributeResult .mainSec .textSec .arrow,
+#composeAttributeBulkResult .mainSec .textSec .arrow {
+  display: inline-block;
+  width: 28px;
+  height: 34px;
+  background: url("/magica/resource/image_web/page/chara/arrow.png") left top no-repeat;
+  background-size: contain;
+  margin: 0 24px -4px;
+}
+
+#composeAttributeResult .mainSec .textSec .type,
+#composeAttributeBulkResult .mainSec .textSec .type {
+  margin: 0 12px 0 0;
+}
+
+#composeAttributeResult .touchScreen,
+#composeAttributeBulkResult .touchScreen {
+  width: 234px;
+  height: 22px;
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/result_touchscreen.png") left top no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 130%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#composeAttributeResult .touchScreen.active,
+#composeAttributeBulkResult .touchScreen.active {
+  -webkit-animation: touchScreen 1s ease-in-out 0s infinite normal;
+          animation: touchScreen 1s ease-in-out 0s infinite normal;
+}
+
+#composeAttributeBulkResult .mainSec {
+  height: 144px;
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/bg_popup_black_main.png") left top repeat-y;
+  background-size: contain;
+  top: 48%;
+}
+
+#composeAttributeBulkResult .mainSec .textImg {
+  margin: 0;
+}
+
+#composeAttributeBulkResult .mainSec .textSec .upList {
+  display: inline-block;
+}
+
+#composeAttributeBulkResult .mainSec .textSec .upList td {
+  text-align: right;
+}
+
+#composeAttributeBulkResult .mainSec .textSec .upList td.arrowSec {
+  text-align: center;
+}
+
+#composeAttributeBulkResult .mainSec .textSec .upList .secHP,
+#composeAttributeBulkResult .mainSec .textSec .upList .secATTACK,
+#composeAttributeBulkResult .mainSec .textSec .upList .secDEFENSE {
+  height: 58px;
+}
+
+#composeAttributeBulkResult .mainSec .textSec .upList .secHP.none,
+#composeAttributeBulkResult .mainSec .textSec .upList .secATTACK.none,
+#composeAttributeBulkResult .mainSec .textSec .upList .secDEFENSE.none {
+  display: none;
+}
+
+#composeAttributeBulkResult .mainSec .bgHeader,
+#composeAttributeBulkResult .mainSec .bgFooter {
+  width: 880px;
+  height: 30px;
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/bg_popup_black_top.png") left top no-repeat;
+  background-size: contain;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -30px;
+  left: 50%;
+  z-index: 1;
+  text-align: center;
+}
+
+#composeAttributeBulkResult .mainSec .bgFooter {
+  background: url("/magica/resource/image_web/page/chara/compose_attribute/bg_popup_black_bottom.png") left top no-repeat;
+  background-size: contain;
+  top: 144px;
+}
+
+#composeAttributeBulkResult .mainSec.statusNo1 .touchScreen {
+  top: 150%;
+}
+
+#composeAttributeBulkResult .mainSec.statusNo2 {
+  height: 218px;
+}
+
+#composeAttributeBulkResult .mainSec.statusNo2 .touchScreen {
+  top: 140%;
+}
+
+#composeAttributeBulkResult .mainSec.statusNo2 .bgFooter {
+  top: 218px;
+}
+
+#composeAttributeBulkResult .mainSec.statusNo3 {
+  height: 274px;
+}
+
+#composeAttributeBulkResult .mainSec.statusNo3 .bgFooter {
+  top: 274px;
+}
+
+#materialConfirm .popupTextArea #useItemList {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  bottom: 0px;
+  left: 0px;
+}
+
+#materialConfirm .popupTextArea #useItemList .listSec {
+  height: 100%;
+}
+
+#materialConfirm .popupTextArea #useItemList .useItem {
+  position: relative;
+  margin: 50px 11px 14px;
+}
+
+#materialConfirm .popupTextArea #useItemList .useItem .name {
+  position: absolute;
+  bottom: -30px;
+  left: -110px;
+  width: 300px;
+  text-align: center;
+  font-size: 20px;
+}
+
+@-webkit-keyframes result_anime {
+  0% {
+    -webkit-transform: translate(-42%, -50%);
+            transform: translate(-42%, -50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes result_anime {
+  0% {
+    -webkit-transform: translate(-42%, -50%);
+            transform: translate(-42%, -50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes touchScreen {
+  0%, 100% {
+    opacity: .5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes touchScreen {
+  0%, 100% {
+    opacity: .5;
+  }
+  50% {
+    opacity: 1;
+  }
+}

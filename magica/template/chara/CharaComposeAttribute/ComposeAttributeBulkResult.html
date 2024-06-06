@@ -1,0 +1,79 @@
+<div class="mainSec <%= model.dispCountClass %>">
+	<img src="/magica/resource/image_web/page/chara/compose_attribute/title_attribute_result.png" alt="" class="textImg">
+	<div class="textSec">
+		<div class="text attribute"><%= model.attribute %>属性</div><br>
+		<table class="upList">
+			<tr class="secHP <%= model.dispStatusList.HP.secClass %>">
+				<td>
+					<div class="text before type"><%= model.dispStatusList.HP.convertType %></div>
+				</td>
+				<td>
+					<div class="text before"><%= model.dispStatusList.HP.beforeQuantity %></div>
+				</td>
+				<td class="arrowSec">
+					<div class="arrow"></div>
+				</td>
+				<td>
+					<div class="text after type c_red"><%= model.dispStatusList.HP.convertType %></div>
+				</td>
+				<td>
+					<div class="text after c_red"><%= model.dispStatusList.HP.afterQuantity %></div><div class="text plus c_red">（＋<%= model.dispStatusList.HP.diffQuantity %>）</div>
+				</td>
+			</tr>
+			<tr class="secATTACK <%= model.dispStatusList.ATTACK.secClass %>">
+				<td>
+					<div class="text before type"><%= model.dispStatusList.ATTACK.convertType %></div>
+				</td>
+				<td>
+					<div class="text before"><%= model.dispStatusList.ATTACK.beforeQuantity %></div>
+				</td>
+				<td class="arrowSec">
+					<div class="arrow"></div>
+				</td>
+				<td>
+					<div class="text after type c_red"><%= model.dispStatusList.ATTACK.convertType %></div>
+				</td>
+				<td>
+					<div class="text after c_red"><%= model.dispStatusList.ATTACK.afterQuantity %></div><div class="text plus c_red">（＋<%= model.dispStatusList.ATTACK.diffQuantity %>）</div>
+				</td>
+			</tr>
+			<tr class="secDEFENSE <%= model.dispStatusList.DEFENSE.secClass %>">
+				<td>
+					<div class="text before type"><%= model.dispStatusList.DEFENSE.convertType %></div>
+				</td>
+				<td>
+					<div class="text before"><%= model.dispStatusList.DEFENSE.beforeQuantity %></div>
+				</td>
+				<td class="arrowSec">
+					<div class="arrow"></div>
+				</td>
+				<td>
+					<div class="text after type c_red"><%= model.dispStatusList.DEFENSE.convertType %></div>
+				</td>
+				<td>
+					<div class="text after c_red"><%= model.dispStatusList.DEFENSE.afterQuantity %></div><div class="text plus c_red">（＋<%= model.dispStatusList.DEFENSE.diffQuantity %>）</div>
+				</td>
+			</tr>
+		</table>
+			<!-- 
+			<div class="secHP <%= model.dispStatusList.HP.secClass %>">
+				<div class="text before type"><%= model.dispStatusList.HP.convertType %></div><div class="text before"><%= model.dispStatusList.HP.beforeQuantity %></div>
+				<div class="arrow"></div>
+				<div class="text after type c_red"><%= model.dispStatusList.HP.convertType %></div><div class="text after c_red"><%= model.dispStatusList.HP.afterQuantity %></div><div class="text plus c_red">（＋<%= model.dispStatusList.HP.diffQuantity %>）</div>
+			</div>
+			<div class="secATTACK <%= model.dispStatusList.ATTACK.secClass %>">
+				<div class="text before type"><%= model.dispStatusList.ATTACK.convertType %></div><div class="text before"><%= model.dispStatusList.ATTACK.beforeQuantity %></div>
+				<div class="arrow"></div>
+				<div class="text after type c_red"><%= model.dispStatusList.ATTACK.convertType %></div><div class="text after c_red"><%= model.dispStatusList.ATTACK.afterQuantity %></div><div class="text plus c_red">（＋<%= model.dispStatusList.ATTACK.diffQuantity %>）</div>
+			</div>
+			<div class="secDEFENSE <%= model.dispStatusList.DEFENSE.secClass %>">
+				<div class="text before type"><%= model.dispStatusList.DEFENSE.convertType %></div><div class="text before"><%= model.dispStatusList.DEFENSE.beforeQuantity %></div>
+				<div class="arrow"></div>
+				<div class="text after type c_red"><%= model.dispStatusList.DEFENSE.convertType %></div><div class="text after c_red"><%= model.dispStatusList.DEFENSE.afterQuantity %></div><div class="text plus c_red">（＋<%= model.dispStatusList.DEFENSE.diffQuantity %>）</div>
+			</div>
+			 -->
+	</div>
+	<div class="touchScreen active"></div>
+	<div class="bgHeader"></div>
+	<div class="bgFooter"></div>
+</div>

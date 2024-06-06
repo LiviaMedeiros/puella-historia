@@ -1,0 +1,991 @@
+#ConfigTop {
+  width: 1024px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#ConfigTop #menuPanel {
+  width: 222px;
+  height: auto;
+  padding: 28px 18px 15px;
+  position: absolute;
+  top: 70px;
+  left: 85px;
+}
+
+#ConfigTop #menuPanel .btn {
+  width: 186px;
+  margin-bottom: 13px;
+}
+
+#ConfigTop #menuPanel .btn .noPassIcon {
+  display: block;
+  width: 66px;
+  height: 22px;
+  background-image: url("/magica/resource/image_web/page/config/config_password_noset.png");
+  position: absolute;
+  top: -6px;
+  left: 0px;
+}
+
+#ConfigTop #menuPanel .btn .noPassIcon.off {
+  display: none;
+}
+
+#ConfigTop #menuPanel .btn.playerData {
+  font-size: 98%;
+}
+
+#ConfigTop #configWrap {
+  width: 610px;
+  height: -webkit-calc(100% - 98px);
+  padding: 10px 5px;
+  position: absolute;
+  top: 70px;
+  left: 326px;
+}
+
+#ConfigTop #configWrap .commonConfigMain {
+  display: none;
+  width: 100%;
+  height: -webkit-calc(100% - 47px);
+  overflow: hidden;
+  padding: 0px 10px;
+  position: relative;
+  top: 37px;
+}
+
+#ConfigTop #configWrap .commonConfigMain .scrollIndicator {
+  right: 8px;
+}
+
+#ConfigTop #configWrap .commonConfigMain h3 {
+  color: #ff4f9e;
+  position: relative;
+  line-height: 20px;
+  padding: 0px 0 0 30px;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#ConfigTop #configWrap .commonConfigMain h3:before {
+  background: url(/magica/resource/image_web/common/frame/title_icon.png) left top no-repeat;
+  width: 14px;
+  height: 14px;
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 10px;
+}
+
+#ConfigTop #configWrap .commonConfigMain .pushMiniWrap {
+  margin: 16px 0 9px 15px;
+}
+
+#ConfigTop #configWrap .commonConfigMain .pushMiniWrap .pushToggle {
+  width: 255px;
+  border: 2px solid #b28750;
+  border-radius: 5px;
+  margin: 0px 5px;
+  padding: 11px 15px;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+#ConfigTop #configWrap .commonConfigMain .pushMiniWrap .pushToggle #pushEvent, #ConfigTop #configWrap .commonConfigMain .pushMiniWrap .pushToggle #pushAP {
+  display: block;
+  position: absolute;
+  top: 11px;
+  right: 15px;
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap {
+  width: 570px;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 0 15px 0;
+  position: relative;
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap .colLeft, #ConfigTop #configWrap .commonConfigMain .colWrap .colRight {
+  padding: 11px 10px !important;
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap .colLeft {
+  margin-left: 10px;
+  width: 120px;
+  position: relative;
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap .colLeft.playerName {
+  font-size: 15px;
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap.soundDl .colRight, #ConfigTop #configWrap .commonConfigMain .colWrap.soundDl .colLeft {
+  padding: 20px 10px !important;
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap .colRight {
+  min-width: 250px;
+  position: relative;
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap .colRight .slider {
+  width: 336px;
+  margin: 0 0 0 30px;
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap .colRight.soundCol {
+  width: 450px;
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap .colRight.soundCol:before {
+  width: 26px;
+  height: 24px;
+  background-image: url("/magica/resource/image_web/page/config/icon_sound_off.png");
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  content: '';
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap .colRight.soundCol:after {
+  width: 29px;
+  height: 24px;
+  background-image: url("/magica/resource/image_web/page/config/icon_sound_on.png");
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  content: '';
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap .colRight span.black {
+  color: #333;
+  text-shadow: none;
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap .colRight.btnFlex {
+  min-width: 70%;
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap .colRight.btnFlex .btnWrap {
+  width: 100%;
+  display: -webkit-flex-grow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap .colRight.btnFlex .btnWrap .btn {
+  width: 190px;
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap .colRight .btn {
+  display: inline-block;
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap .colRight .btn.rightPosition {
+  width: 111px;
+  position: absolute;
+  top: 4px;
+  right: -140px;
+}
+
+#ConfigTop #configWrap .commonConfigMain .colWrap .colLow {
+  margin: 0 0 10px 0;
+  display: inline-block;
+}
+
+#ConfigTop #configWrap .commonConfigMain .subFrame {
+  width: 558px;
+  margin: 8px auto 17px;
+  position: relative;
+}
+
+#ConfigTop #configWrap .commonConfigMain .subFrame .mainText {
+  font-size: 20px;
+  margin: 10px 20px 10px;
+  line-height: 120%;
+}
+
+#ConfigTop #configWrap .commonConfigMain .subFrame .caution {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+#ConfigTop #configWrap .commonConfigMain .subFrame .mainBtn {
+  width: 327px;
+  height: 55px;
+  margin: 3px 0 8px 114px;
+  -webkit-filter: none;
+  filter: none;
+}
+
+#ConfigTop #configWrap .commonConfigMain .subFrame .mainBtn.off {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#ConfigTop #configWrap .commonConfigMain .subFrame .mainBtn span.btnText {
+  color: #fff;
+  font-size: 18px;
+  top: -12px;
+  height: 55px;
+  line-height: 55px;
+}
+
+#ConfigTop #configWrap #transferWrap {
+  height: -webkit-calc(100% - 37px);
+}
+
+#ConfigTop #configWrap #datasWrap .configScroll {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#ConfigTop #configWrap #datasWrap .btn {
+  width: 320px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+
+#ConfigTop #configWrap #datasWrap .dataFrames {
+  width: 550px;
+  margin: 12px auto 21px;
+  padding: 15px 5px;
+  text-align: center;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet {
+  width: 558px;
+  margin: 8px auto 17px;
+  position: relative;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet .fullVoiceDl, #ConfigTop #configWrap #datasWrap .nowDataSet .fullMovieDl, #ConfigTop #configWrap #datasWrap .nowDataSet .movieAdd {
+  width: 327px;
+  height: 55px;
+  margin: 3px 0 8px 114px;
+  -webkit-filter: none;
+  filter: none;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet .fullVoiceDl.off, #ConfigTop #configWrap #datasWrap .nowDataSet .fullMovieDl.off, #ConfigTop #configWrap #datasWrap .nowDataSet .movieAdd.off {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet .fullVoiceDl span.fullVoiceTx, #ConfigTop #configWrap #datasWrap .nowDataSet .fullVoiceDl span.fullMovieTx, #ConfigTop #configWrap #datasWrap .nowDataSet .fullMovieDl span.fullVoiceTx, #ConfigTop #configWrap #datasWrap .nowDataSet .fullMovieDl span.fullMovieTx, #ConfigTop #configWrap #datasWrap .nowDataSet .movieAdd span.fullVoiceTx, #ConfigTop #configWrap #datasWrap .nowDataSet .movieAdd span.fullMovieTx {
+  color: #fff;
+  font-size: 18px;
+  top: -12px;
+  height: 55px;
+  line-height: 55px;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataWrap, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataOffWrap, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataWrap, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataLowWrap, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataOffWrap, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap {
+  width: 100%;
+  height: 40px;
+  padding: 0px 20px;
+  margin: 10px 0px 10px;
+  line-height: 40px;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataWrap span, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataOffWrap span, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataWrap span, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataLowWrap span, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataOffWrap span, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap span, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap span {
+  display: inline-block;
+  position: relative;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataWrap .checkBox, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataOffWrap .checkBox, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataWrap .checkBox, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataLowWrap .checkBox, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataOffWrap .checkBox, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap .checkBox, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap .checkBox {
+  width: 40px;
+  height: 40px;
+  background-image: url("/magica/resource/image_web/common/icon/icon_checkbox.png");
+  position: relative;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataWrap .voiceCheck, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataOffWrap .voiceCheck, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataWrap .voiceCheck, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataLowWrap .voiceCheck, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataOffWrap .voiceCheck, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap .voiceCheck, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap .voiceCheck {
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+  background-image: url("/magica/resource/image_web/page/config/icon_sound_data_on.png");
+  top: -4px;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataWrap .movieCheck, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataOffWrap .movieCheck, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataWrap .movieCheck, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataLowWrap .movieCheck, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataOffWrap .movieCheck, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap .movieCheck, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap .movieCheck {
+  width: 32px;
+  height: 32px;
+  margin-left: 5px;
+  background-image: url("/magica/resource/image_web/page/config/icon_movie_data_on.png");
+  top: -4px;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataWrap .dataTexts, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataOffWrap .dataTexts, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataWrap .dataTexts, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataLowWrap .dataTexts, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataOffWrap .dataTexts, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap .dataTexts, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap .dataTexts {
+  font-size: 20px;
+  top: -13px;
+  margin-left: 3px;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataWrap.on .checkBox:before, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataWrap.on .dataDeleteCheckBox:before, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataOffWrap.on .checkBox:before, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataOffWrap.on .dataDeleteCheckBox:before, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataWrap.on .checkBox:before, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataWrap.on .dataDeleteCheckBox:before, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataLowWrap.on .checkBox:before, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataLowWrap.on .dataDeleteCheckBox:before, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataOffWrap.on .checkBox:before, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataOffWrap.on .dataDeleteCheckBox:before, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap.on .checkBox:before, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap.on .dataDeleteCheckBox:before, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap.on .checkBox:before, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap.on .dataDeleteCheckBox:before {
+  width: 27px;
+  height: 21px;
+  content: "";
+  background-image: url("/magica/resource/image_web/common/icon/icon_checkbox_check.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 9px;
+  left: 6px;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataWrap.on .checkBox, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataOffWrap.on .checkBox, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataWrap.on .checkBox, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataLowWrap.on .checkBox, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataOffWrap.on .checkBox, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap.on .checkBox, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap.on .checkBox {
+  pointer-events: none;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataWrap.invalid, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataOffWrap.invalid, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataWrap.invalid, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataLowWrap.invalid, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataOffWrap.invalid, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap.invalid, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap.invalid {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  pointer-events: none;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataWrap .pointFrame, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataOffWrap .pointFrame, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataWrap .pointFrame, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataLowWrap .pointFrame, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataOffWrap .pointFrame, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap .pointFrame, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap .pointFrame {
+  width: 165px;
+  height: 34px;
+  line-height: 34px;
+  font-size: 20px;
+  top: -11px;
+  margin-left: 14px;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataWrap .pointFrame:before, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataWrap .pointFrame:after, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataOffWrap .pointFrame:before, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataOffWrap .pointFrame:after, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataWrap .pointFrame:before, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataWrap .pointFrame:after, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataLowWrap .pointFrame:before, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataLowWrap .pointFrame:after, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataOffWrap .pointFrame:before, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDataOffWrap .pointFrame:after, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap .pointFrame:before, #ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap .pointFrame:after, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap .pointFrame:before, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap .pointFrame:after {
+  height: 34px;
+  background-size: 100% 100%;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDataOffWrap .voiceCheck {
+  margin-left: 5px;
+  background-image: url("/magica/resource/image_web/page/config/icon_sound_data_off.png");
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #movieDataOffWrap .movieCheck {
+  margin-left: 5px;
+  background-image: url("/magica/resource/image_web/page/config/icon_movie_data_off.png");
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap {
+  margin-left: 93px;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap .dataDeleteCheckBox, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap .dataDeleteCheckBox {
+  width: 33px;
+  height: 33px;
+  background-image: url("/magica/resource/image_web/common/icon/icon_checkbox.png");
+  background-size: contain;
+  position: relative;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap .dataTexts, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap .dataTexts {
+  font-size: 16px;
+  top: -10px;
+}
+
+#ConfigTop #configWrap #datasWrap .nowDataSet #voiceDeleteSettingWrap.on .dataDeleteCheckBox:before, #ConfigTop #configWrap #datasWrap .nowDataSet #movieDeleteSettingWrap.on .dataDeleteCheckBox:before {
+  width: 23px;
+  height: 17px;
+  content: "";
+  background-image: url("/magica/resource/image_web/common/icon/icon_checkbox_check.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 9px;
+  left: 6px;
+}
+
+#ConfigTop #configWrap #pushWrap .pushDailyWrap {
+  width: 538px;
+  margin-left: 20px;
+  position: relative;
+  display: -webkit-flex-grow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#ConfigTop #configWrap #pushWrap .pushDailyWrap .pushDailyQuest {
+  width: 50%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+#ConfigTop #configWrap #pushWrap .pushDailyWrap .pushDailyQuest .weekName {
+  width: 87px;
+  padding: 0px 15px;
+  background: -o-linear-gradient(45deg, transparent 8px, #e1d2bb 8px), -o-linear-gradient(135deg, transparent 8px, #e1d2bb 8px), -o-linear-gradient(225deg, transparent 8px, #e1d2bb 8px), -o-linear-gradient(315deg, transparent 8px, #e1d2bb 8px);
+  background: linear-gradient(45deg, transparent 8px, #e1d2bb 8px), linear-gradient(315deg, transparent 8px, #e1d2bb 8px), linear-gradient(225deg, transparent 8px, #e1d2bb 8px), linear-gradient(135deg, transparent 8px, #e1d2bb 8px);
+  background-repeat: no-repeat;
+  background-position: bottom left, bottom right, top right, top left;
+  background-size: 51% 51%;
+  margin-bottom: 5px;
+}
+
+#ConfigTop #configWrap #pushWrap .pushDailyWrap .pushDailyQuest .triangleArrow {
+  background: -webkit-linear-gradient(top, #e5b271 0%, #b28750 100%);
+  width: 64px;
+  height: 36px;
+  position: absolute;
+  top: 29px;
+  right: 14px;
+  z-index: 2px;
+  border: 2px solid #b28750;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  pointer-events: none;
+  padding-left: 16px;
+  padding-top: 8px;
+}
+
+#ConfigTop #configWrap #pushWrap .pushDailyWrap .pushDailyQuest .triangleArrow .arrow {
+  width: 25px;
+  height: 18px;
+  display: block;
+  position: relative;
+  pointer-events: none;
+}
+
+#ConfigTop #configWrap #transferWrap p {
+  margin-left: 15px;
+}
+
+#ConfigTop #configWrap #transferWrap .firstText {
+  margin: 5px 9px;
+  font-size: 18px;
+}
+
+#ConfigTop #configWrap #transferWrap #transferIdCopy {
+  position: absolute;
+  top: 71px;
+  right: 64px;
+}
+
+#ConfigTop #configWrap #transferWrap .transferNotice {
+  margin: 9px 12px 10px 8px;
+  background-color: #e1d2bb;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  word-wrap: break-word;
+}
+
+#ConfigTop #configWrap #transferWrap .colWrap {
+  padding: 0px;
+}
+
+#ConfigTop #configWrap #transferWrap .colWrap .colLeft {
+  width: 140px !important;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#ConfigTop #configWrap #transferWrap .relationWrap {
+  margin: 5px 0 15px 0;
+  display: block;
+  text-align: center;
+}
+
+#ConfigTop #configWrap #transferWrap .relationWrap .btn {
+  display: inline-block;
+}
+
+#ConfigTop #configWrap #inputCodeWrap .codeScroll {
+  min-height: 100%;
+}
+
+#ConfigTop #configWrap #inputCodeWrap .codeText,
+#ConfigTop #configWrap #inputCodeWrap .nowArraival {
+  margin: 5px 9px 16px;
+  font-size: 18px;
+}
+
+#ConfigTop #configWrap #inputCodeWrap input#presentCode {
+  width: 260px;
+  height: auto;
+  padding: 5px 10px;
+  background-color: #fff;
+  margin: 5px 0px 5px 16px;
+  color: #333;
+  border: 2px solid #c6a882;
+  border-radius: 5px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  text-shadow: none;
+}
+
+#ConfigTop #configWrap #inputCodeWrap #codeCaution {
+  margin-left: 18px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+#ConfigTop #configWrap #inputCodeWrap .defCaution {
+  margin-left: 18px;
+  margin-bottom: 15px;
+}
+
+#ConfigTop #configWrap #inputCodeWrap #codeSubmit {
+  margin: 3px auto 18px;
+  display: block;
+  width: 200px;
+}
+
+#ConfigTop #configWrap #inputCodeWrap #codeSubmit.off {
+  pointer-events: none;
+}
+
+#ConfigTop #configWrap #inputCodeWrap #codeAfter {
+  width: 260px;
+  height: 36px;
+  margin: 5px 9px 16px;
+  background-color: #b28750;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  padding: 6px 13px;
+  position: absolute;
+  top: 44px;
+  right: 16px;
+}
+
+#ConfigTop #configWrap #inputCodeWrap .rewardCol {
+  margin-bottom: 10px;
+}
+
+#ConfigTop #configWrap #inputCodeWrap .rewardCol .rewardSpan {
+  font-size: 14px;
+}
+
+#ConfigTop #configWrap #inputCodeWrap .configScroll {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#ConfigTop #configWrap.user #userWrap,
+#ConfigTop #configWrap.push #pushWrap,
+#ConfigTop #configWrap.datas #datasWrap,
+#ConfigTop #configWrap.transfer #transferWrap,
+#ConfigTop #configWrap.inputCode #inputCodeWrap,
+#ConfigTop #configWrap.deleteUserData #deleteUserDataWrap {
+  display: block;
+}
+
+#ConfigTop input[type=range] {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  -webkit-appearance: none;
+}
+
+#ConfigTop input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 15px;
+  background-color: #dcd7ce;
+  border-radius: 10px;
+}
+
+#ConfigTop input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 38px;
+  height: 38px;
+  margin-top: -8px;
+  background-image: url("/magica/resource/image_web/page/config/icon_slider_tab.png");
+  border-radius: 39px;
+  border-width: 0px !important;
+}
+
+#ConfigTop input[type=range]::-webkit-slider-thumb:hover, #ConfigTop input[type=range]::-webkit-slider-thumb:active {
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+#ConfigTop select {
+  -webkit-appearance: none;
+  border: 2px solid #b28750;
+  border-radius: 5px;
+  width: 255px;
+  height: 36px;
+  position: relative;
+  text-align: center;
+  padding-left: 20px;
+  background-color: #fff;
+}
+
+#ConfigTop .slideLeft {
+  width: 10px;
+  height: 5px;
+  display: inline-block;
+  border-top: 10px solid transparent;
+  border-right: 20px solid #fff;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid transparent;
+}
+
+#ConfigTop .slideRight {
+  width: 10px;
+  height: 5px;
+  display: inline-block;
+  border-top: 10px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 20px solid #fff;
+}
+
+.transferError .popupTextArea {
+  height: 356px !important;
+}
+
+.transferPop .popupTextArea {
+  height: 356px !important;
+}
+
+.transferPop #transferPopup {
+  width: 510px;
+  height: auto;
+  position: relative;
+  font-size: 20px;
+  text-align: left;
+}
+
+.transferPop #transferPopup .leftCol {
+  width: 176px;
+  margin-left: 52px;
+  padding: 5px 5px;
+  display: inline-block;
+  text-align: right;
+  text-shadow: none;
+}
+
+.transferPop #transferPopup .rightCol {
+  width: 200px;
+  padding: 5px 5px;
+  display: inline-block;
+  text-align: left;
+}
+
+.transferPop #transferPopup .rightCol input {
+  width: 200px;
+  height: auto;
+  padding: 5px 10px;
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #c6a882;
+  border-radius: 5px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  text-shadow: none;
+}
+
+.transferPop #transferPopup #transferSubmit {
+  position: absolute;
+  right: 52px;
+  bottom: 10px;
+}
+
+.transferPop #transferPopup .transferCanncel {
+  position: absolute;
+  bottom: 10px;
+  left: 52px;
+}
+
+.transferPop #transferPopup .transferAlert {
+  margin: 20px auto 10px;
+  text-align: center;
+  text-shadow: none;
+}
+
+.transferPop #transferPopup .transferNotice {
+  width: 448px;
+  margin: 30px auto 0;
+  padding: 15px 34px;
+  background-color: #e1d2bb;
+  text-align: left;
+  border-radius: 5px;
+}
+
+#transferPassword,
+#checkPassWord {
+  width: 250px;
+  padding: 5px 10px;
+  background-color: #fff;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 2px solid #c6a882;
+  color: #333;
+  text-shadow: none;
+}
+
+#changeName {
+  width: 300px;
+  height: auto;
+  padding: 5px 10px;
+  background-color: #fff;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 2px solid #c6a882;
+  color: #333;
+  text-shadow: none;
+}
+
+#transferForm th {
+  padding-right: 5px;
+  padding-bottom: 10px;
+  text-align: right;
+}
+
+#transferForm td {
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.dataDeletePopup #dataDeletePopupText {
+  font-size: 22px;
+}
+
+#dataPopup {
+  position: relative;
+}
+
+#dataPopup #dataPopText {
+  padding: 5px 0px;
+  font-size: 18px;
+  text-align: center;
+  height: 82px;
+}
+
+#dataPopup .popBtnWrap {
+  margin-top: 10px;
+}
+
+#dataPopup .popBtnWrap .dataDecide {
+  margin-left: 55px;
+}
+
+#dataPopup #voiceDataWrapBefore, #dataPopup #voiceDataWrapAfter, #dataPopup #movieDataWrapBefore, #dataPopup #movieDataWrapAfter {
+  width: 100%;
+  height: 40px;
+  padding: 0px 40px;
+  margin: 0px 0px 0px;
+  line-height: 40px;
+}
+
+#dataPopup #voiceDataWrapBefore span, #dataPopup #voiceDataWrapAfter span, #dataPopup #movieDataWrapBefore span, #dataPopup #movieDataWrapAfter span {
+  display: inline-block;
+  position: relative;
+}
+
+#dataPopup #voiceDataWrapBefore .changeText, #dataPopup #voiceDataWrapAfter .changeText, #dataPopup #movieDataWrapBefore .changeText, #dataPopup #movieDataWrapAfter .changeText {
+  width: 266px;
+  text-align: left;
+  height: 40px;
+  margin-right: 10px;
+  line-height: 40px;
+  position: relative;
+  font-size: 22px;
+  top: -12px;
+}
+
+#dataPopup #voiceDataWrapBefore .checkBox, #dataPopup #voiceDataWrapAfter .checkBox, #dataPopup #movieDataWrapBefore .checkBox, #dataPopup #movieDataWrapAfter .checkBox {
+  width: 40px;
+  height: 40px;
+  background-image: url("/magica/resource/image_web/common/icon/icon_checkbox.png");
+  position: relative;
+  margin-left: 2px;
+}
+
+#dataPopup #voiceDataWrapBefore .voiceCheck, #dataPopup #voiceDataWrapAfter .voiceCheck, #dataPopup #movieDataWrapBefore .voiceCheck, #dataPopup #movieDataWrapAfter .voiceCheck {
+  width: 32px;
+  height: 32px;
+  margin-left: 4px;
+  background-image: url("/magica/resource/image_web/page/config/icon_sound_data_off.png");
+  top: -4px;
+}
+
+#dataPopup #voiceDataWrapBefore .movieCheck, #dataPopup #voiceDataWrapAfter .movieCheck, #dataPopup #movieDataWrapBefore .movieCheck, #dataPopup #movieDataWrapAfter .movieCheck {
+  width: 32px;
+  height: 32px;
+  margin-left: 4px;
+  background-image: url("/magica/resource/image_web/page/config/icon_movie_data_off.png");
+  top: -4px;
+}
+
+#dataPopup #voiceDataWrapBefore .movieCheck.on, #dataPopup #voiceDataWrapAfter .movieCheck.on, #dataPopup #movieDataWrapBefore .movieCheck.on, #dataPopup #movieDataWrapAfter .movieCheck.on {
+  background-image: url("/magica/resource/image_web/page/config/icon_movie_data_on.png");
+}
+
+#dataPopup #voiceDataWrapBefore.on .voiceCheck, #dataPopup #voiceDataWrapAfter.on .voiceCheck, #dataPopup #movieDataWrapBefore.on .voiceCheck, #dataPopup #movieDataWrapAfter.on .voiceCheck {
+  background-image: url("/magica/resource/image_web/page/config/icon_sound_data_on.png");
+}
+
+#dataPopup #voiceDataWrapBefore .pointFrame, #dataPopup #voiceDataWrapAfter .pointFrame, #dataPopup #movieDataWrapBefore .pointFrame, #dataPopup #movieDataWrapAfter .pointFrame {
+  width: 108px;
+  height: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  top: -14px;
+  margin-left: 14px;
+}
+
+#dataPopup #voiceDataWrapBefore .pointFrame:before, #dataPopup #voiceDataWrapBefore .pointFrame:after, #dataPopup #voiceDataWrapAfter .pointFrame:before, #dataPopup #voiceDataWrapAfter .pointFrame:after, #dataPopup #movieDataWrapBefore .pointFrame:before, #dataPopup #movieDataWrapBefore .pointFrame:after, #dataPopup #movieDataWrapAfter .pointFrame:before, #dataPopup #movieDataWrapAfter .pointFrame:after {
+  height: 24px;
+  background-size: 100% 100%;
+}
+
+#dataPopup #voiceDataWrapBefore, #dataPopup #movieDataWrapBefore {
+  margin-top: 25px;
+}
+
+.allDlPop .popupTextArea {
+  font-size: 22px !important;
+}
+
+.allDlPop .popupTextArea .settings {
+  width: 450px;
+  height: 102px;
+  border-radius: 5px;
+  border: 1px solid #b28750;
+  margin: 15px auto 25px;
+  text-align: left;
+  padding: 4px 27px 0;
+  line-height: 39px;
+  font-size: 20px;
+}
+
+.allDlPop .popupTextArea .settings .pointFrame {
+  width: 108px;
+  height: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  top: 0px;
+  position: relative;
+}
+
+.allDlPop .popupTextArea .settings .pointFrame:before, .allDlPop .popupTextArea .settings .pointFrame:after {
+  height: 24px;
+  background-size: 100% 100%;
+}
+
+.allDlPop .popupTextArea .settings .voiceIcon, .allDlPop .popupTextArea .settings .movieIcon {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
+  width: 32px;
+  height: 32px;
+}
+
+.allDlPop .popupTextArea .settings .voiceIcon {
+  background-image: url("/magica/resource/image_web/page/config/icon_sound_data_off.png");
+}
+
+.allDlPop .popupTextArea .settings .voiceIcon.on {
+  background-image: url("/magica/resource/image_web/page/config/icon_sound_data_on.png");
+}
+
+.allDlPop .popupTextArea .settings .movieIcon {
+  background-image: url("/magica/resource/image_web/page/config/icon_movie_data_off.png");
+}
+
+.allDlPop .popupTextArea .settings .movieIcon.on {
+  background-image: url("/magica/resource/image_web/page/config/icon_movie_data_on.png");
+}
+
+.allDlPop .popupTextArea .c_red {
+  font-size: 22px;
+}
+
+.popupInputPlayerID .main {
+  position: relative;
+}
+
+.popupInputPlayerID .main input#playerID {
+  display: inline-block;
+  width: 260px;
+  height: auto;
+  padding: 5px 10px;
+  background-color: #fff;
+  margin: 0px 0px 0px 0px;
+  color: #333;
+  border: 2px solid #c6a882;
+  border-radius: 5px;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  text-shadow: none;
+}
+
+.popupReConfirm .statusSec {
+  margin: 10px 0 -48px 0;
+}
+
+.popupReConfirm .statusMain {
+  display: inline-block;
+  margin: 8px 0;
+}
+
+.popupReConfirm .statusMain.noDisp {
+  display: none;
+}
+
+.popupReConfirm .statusMain .colWrap {
+  width: auto;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 0 15px 0;
+  position: relative;
+  font-size: 80%;
+}
+
+.popupReConfirm .statusMain .colWrap .colLeft, .popupReConfirm .statusMain .colWrap .colRight {
+  padding: 10px;
+}
+
+.popupReConfirm .statusMain .colWrap .colLeft {
+  padding: 16px 10px 10px 10px;
+  margin-left: auto;
+  font-size: 70%;
+  position: relative;
+  width: 140px;
+}
+
+.popupReConfirm .statusMain .colWrap .colRight {
+  position: relative;
+  min-width: 180px;
+}
+
+.popupReConfirm .statusMain .colWrap .colRight span.black {
+  color: #333;
+  text-shadow: none;
+}
+
+.popupReConfirm .caution {
+  display: inline-block;
+  margin: 12px 0 0 0;
+}

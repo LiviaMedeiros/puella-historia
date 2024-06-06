@@ -1,0 +1,33 @@
+以下のプレイヤーデータをサーバーから削除します。<br>
+本当によろしいですか？
+<br>
+<div class="statusSec">
+	<div class="statusMain">
+	<dl class="colWrap common_dl">
+		<dt class="colLeft">プレイヤー名</dt>
+		<dd class="colRight">
+			<span class="black"><%= model.loginName %></span>
+		</dd>
+	</dl>
+	</div>
+	<div class="statusMain">
+		<dl class="colWrap common_dl">
+			<dt class="colLeft">プレイヤーランク</dt>
+			<dd class="colRight">
+				<span class="black"><%= model.level %></span>
+			</dd>
+		</dl>
+	</div><br>
+	<div class="statusMain <%= model.isDispBirthDay %>">
+	<dl class="colWrap common_dl">
+		<dt class="colLeft">誕生日</dt>
+		<dd class="colRight">
+			<span class="black"><%= model.birthDay %></span>
+		</dd>
+	</dl>
+	</div>
+</div><!-- statusSec -->
+<br>
+<div class="c_red caution">
+	※削除しない場合は、キャンセルを選択してください
+</div>

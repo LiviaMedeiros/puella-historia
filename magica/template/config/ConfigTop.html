@@ -1,0 +1,266 @@
+<div id="ConfigTop">
+	<div id="menuPanel" class="commonFrame2">
+		<ul class="common_tab t_pink">
+			<li class="btn se_tabs TE current" data-type="user">ゲーム設定</li>
+			<li class="btn se_tabs TE" data-type="push">プッシュ通知</li>
+			<li class="btn se_tabs TE" data-type="datas">データ管理</li>
+			<li class="btn se_tabs TE" data-type="transfer">引き継ぎ・連携<span class="noPassIcon<% if(setPassword){ %> off<% }%>"></span></li>
+			<% if(currentPlatform === "DMM" || currentPlatform === "ANDROID"){ %>
+				<li class="btn se_tabs TE" data-type="inputCode">シリアルコード</li>
+			<% } %>
+			<li class="btn se_tabs TE playerData" data-type="deleteUserData">プレイヤーデータ</li>
+		</ul>
+	</div>
+	<div id="configWrap" class="commonFrame1 user">
+		<h2 id="listTitle">ゲーム設定</h2>
+		<div id="userWrap" class="commonConfigMain">
+			<h3>プレイヤー</h3>
+			<dl class="colWrap common_dl">
+				<dt class="colLeft playerName">プレイヤー名</dt>
+				<%
+					var nameChangeLimited = (gameUser.closeFunctions && gameUser.closeFunctions.indexOf("CHANGE_NAME") > -1) ? true : false;
+				%>
+				<dd class="colRight"><span id="userName" class="black"><%= _.escape(user.loginName) %></span><span class="btn rightPosition sb_gold_01 TE se_decide <% if(!canChangeLoginName || nameChangeLimited){ %> off<% } %>" id="nameChange"><span class="b_screen"></span>変更</span></dd>
+			</dl>
+			<dl class="colWrap common_dl">
+				<dt class="colLeft">プレイヤーID</dt>
+				<dd class="colRight"><span id="userName" class="black"><%= gameUser.inviteCode %></span><span class="btn rightPosition se_decide sb_gold_01 TE " id="idCopy"><span class="b_screen"></span>コピー</span></dd>
+			</dl>
+			<h3>音量</h3>
+			<dl class="colWrap common_dl soundDl">
+				<dt class="colLeft">BGM</dt>
+				<dd class="colRight soundCol">
+					<input id="bgmSlider" class="slider" type="range" max="10" value="">
+				</dd>
+			</dl>
+			<dl class="colWrap common_dl soundDl">
+				<dt class="colLeft">SE</dt>
+				<dd class="colRight soundCol">
+					<input id="soundSlider" class="slider" type="range" max="10" value="">
+				</dd>
+			</dl>
+			<dl class="colWrap common_dl soundDl">
+				<dt class="colLeft">ボイス</dt>
+				<dd class="colRight soundCol">
+					<input id="voiceSlider" class="slider" type="range" max="10" value="">
+				</dd>
+			</dl>
+
+		</div>
+
+		<div id="pushWrap" class="commonConfigMain">
+			<div class="pushMiniWrap">
+				<div class="pushToggle">イベント<span id="pushEvent" class="sb_gold_02 TE se_decide"><span class="b_screen"></span>ON</span></div>
+				<div class="pushToggle">AP回復時<span id="pushAP" class="sb_gold_02 TE se_decide"><span class="b_screen"></span>ON</span></div>
+			</div>
+		</div>
+
+		<div id="datasWrap" class="commonConfigMain">
+			<div class="configScroll">
+				<h3>ボイスデータ設定</h3>
+				<div class="nowDataSet commonFrame3" id="voices">
+					<div id="voiceDataWrap">
+						<span class="checkBox se_decide"></span>
+						<span class="voiceCheck"></span>
+						<span class="dataTexts">ダウンロードする</span>
+					</div>
+					<div id="voiceDataOffWrap">
+						<span class="checkBox se_decide"></span>
+						<span class="voiceCheck"></span>
+						<span class="dataTexts">ダウンロードしない</span>
+					</div>
+					<div id="voiceDeleteSettingWrap">
+						<span class="dataDeleteCheckBox se_decide" data-delete-type="voice"></span>
+						<span class="dataTexts">ストーリーボイスのデータを端末に保存する</span>
+					</div>
+					<div id="fullVoiceBtn" class="fullVoiceDl btn mb_pink se_decide TE">
+						<span class="b_screen"></span>
+						<span class="fullVoiceTx">ストーリーボイス一括ダウンロード</span>
+					</div>
+				</div>
+
+				<h3>ムービーデータ設定</h3>
+				<div class="nowDataSet commonFrame3" id="movies">
+					<div id="movieDataWrap">
+						<span class="checkBox se_decide" data-movie-type="high"></span>
+						<span class="movieCheck"></span>
+						<span class="dataTexts">高画質版をダウンロードする</span>
+					</div>
+					<div id="movieDataLowWrap">
+						<span class="checkBox se_decide" data-movie-type="low"></span>
+						<span class="movieCheck"></span>
+						<span class="dataTexts">低画質版をダウンロードする</span>
+					</div>
+					<div id="movieDataOffWrap">
+						<span class="checkBox se_decide" data-movie-type="off"></span>
+						<span class="movieCheck"></span>
+						<span class="dataTexts">ダウンロードしない</span>
+					</div>
+					<div id="movieDeleteSettingWrap">
+						<span class="dataDeleteCheckBox se_decide" data-delete-type="movie"></span>
+						<span class="dataTexts">変身ムービーデータを端末に保存する</span>
+					</div>
+					<div id="fullMovieBtn" class="fullMovieDl btn mb_pink se_decide TE">
+						<span class="b_screen"></span>
+						<span class="fullMovieTx">変身ムービー括ダウンロード</span>
+					</div>
+				</div>
+
+				<h3>データの最適化</h3>
+				<div class="commonFrame3 dataFrames">
+					画像が表示されない場合、音声が再生されない場合に実行してください。
+					<div id="allDownload" class="btn se_decide b_pink TE"><span class="b_screen"></span>データの最適化</div>
+				</div>
+				<h3>キャッシュクリア</h3>
+				<div class="commonFrame3 dataFrames">
+					画像が乱れたり、正常に表示されない場合に実行してください。
+					<div id="cacheClear" class="btn se_decide b_pink TE"><span class="b_screen"></span>キャッシュクリアの実行</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="transferWrap" class="commonConfigMain">
+			<p class="firstText">
+				パスワードを設定することで、機種変更時のデータ引き継ぎや<br>
+				PC版とスマートフォン版間でのデータ連携が行えます。
+			</p>
+			<dl class="colWrap common_dl">
+				<dt class="colLeft">引き継ぎ・連携ID</dt>
+				<dd class="colRight"><%= user.personalId %></dd>
+			</dl>
+			<span class="btn rightPosition se_decide sb_gold_01 TE " id="transferIdCopy"><span class="b_screen"></span>コピー</span>
+			<dl class="colWrap common_dl">
+				<dt class="colLeft">パスワード</dt>
+				<dd class="colRight" id="transferSettings"><% if(!setPassword){ %>未設定<% }else{ %>設定済み<% } %></dd>
+			</dl>
+			<!-- <p class="c_red">※8文字以上15文字以内で入力してください</p> -->
+			<p class="transferNotice">※現在の端末でパスワードを設定していないと、新しい端末に変更した後に、この端末のデータを引き継ぐことができません。<br>
+				また、パスワード設定した際は、引き継ぎ・連携IDとパスワードを忘れないよう、お願いいたします。</p>
+			<div class="relationWrap">
+				<span class="btn se_decide b_pink TE" id="transfer"><span class="b_screen"></span>パスワード設定</span>
+			</div>
+			<p class="c_red">※データの引き継ぎを行いたい場合はTOPページより行ってください。</p>
+		</div>
+
+		<div id="inputCodeWrap" class="commonConfigMain" class="commonConfigMain">
+			<div class="codeScroll">
+				<div class="codeText">
+					シリアルコードを入力してください。
+				</div>
+				<input id="presentCode" class="commonFrame3" readonly="readonly" type="text" maxlength="12" value="">
+				<div id="codeCaution" class="c_red"></div>
+				<div id="codeAfter"></div>
+				<div class="defCaution c_red">
+					※シリアルコードは、ー（ハイフン）を除いた12桁の半角英数字です。<br>
+					※特典はプレゼントボックスよりお受け取りください。
+				</div>
+				<div id="codeSubmit" class="btn b_pink TE se_decide off"><div class="b_screen"></div><span>OK</span></div>
+				<h3>現在獲得可能な特典</h3>
+				<div class="nowArraival">
+					<% if(rewardList.length > 0){ %>
+						<% rewardList = _.sortBy(rewardList,function(reward){ return reward.orderNum;}); %>
+						<% _.each(rewardList,function(reward,index){ %>
+							<div class="rewardCol">
+								<span class="rewardTitle ts_gold outerLink" data-url="<%= reward.url %>">■&nbsp;<%= reward.title %></span><br>
+								<span class="rewardDetail"><%= reward.detail.replace(/＠/g, "<br>") %></span>
+								<% if(reward.startAt || reward.endAt){ %>
+									<br>
+									<span class="rewardSpan">有効期間：<% if(reward.startAt){ %><%= reward.startAt.substr(0,10) %><% } %>&nbsp;〜&nbsp;<% if(reward.endAt){ %><%= reward.endAt.substr(0,10) %><% } %></span>
+								<% } %>
+							</div>
+						<% }); %>
+					<% }else{ %>
+						現在獲得可能な特典はありません。
+					<% } %>
+				</div>
+			</div>
+		</div>
+
+		<div id="deleteUserDataWrap" class="commonConfigMain">
+			<h3>データの削除</h3>
+			<div class="subFrame commonFrame3">
+				<div class="mainText">
+					プレイヤーデータを完全に削除します。
+					<span class="c_red caution">※削除されたデータはいかなる場合でも元に戻すことはできません。</span>
+				</div>
+				<div id="deleteUserDataBtn" class="mainBtn btn mb_pink se_decide TE">
+					<span class="b_screen"></span>
+					<span class="btnText">プレイヤーデータ削除</span>
+				</div>
+			</div>
+		</div><!-- /deleteUserDataWrap -->
+	</div>
+</div>
+
+<script id="transferInner" type="text/template">
+	<div id="transferPopup">
+		<span class="leftCol c_gold">引き継ぎ・連携ID</span><span class="rightCol transferId"><%='<%= user.personalId %\>'%></span><br>
+		<span class="leftCol c_gold">パスワード</span><span class="rightCol"><input readonly="readonly" type="password" id="transferPassword" class="commonFrame3" value=""></span><br>
+		<span class="leftCol c_gold">確認用</span><span class="rightCol"><input readonly="readonly" type="password" id="checkPassWord" class="commonFrame3" value=""></span>
+		<div class="transferAlert">※パスワードは8文字以上15文字以内です</div>
+		<div class="transferNotice">引き継ぎ・連携IDは引き継ぎ・連携の際に入力する必要があります。<br>メモに残すなどしてください。</div>
+	</div>
+</script>
+
+<script id="dataPopInner" type="text/template">
+	<div id="dataPopup">
+		<div id="<%="<%= model.type %\>"%>DataWrapBefore"<%="<% if(model.onFlag){ %\>"%> class="on"<%="<% } %\>"%>>
+			<span class="pointFrame">変更前</span>
+			<span class="<%="<%= model.type %\>"%>Check<%="<% if(model.type === 'movie' && model.oldType !== 0){ %\>"%> on<%="<% } %\>"%>"></span>
+			<span class="changeText"><%="<% if(model.type === 'voice'){ %\>"%><%="<% if(model.onFlag){ %\>"%>ダウンロードする<%="<% }else{ %\>"%>ダウンロードしない<%="<% } %\>"%><%="<% }else{ %\>"%><%='<% if(model.oldType === 0){ %\>'%>ダウンロードしない<%='<% }else if(model.oldType === 2){ %\>'%>高画質版をダウンロード<%='<% }else if(model.oldType === 1){ %\>'%>低画質版をダウンロード<%="<% } %\>"%><%="<% } %\>"%></span>
+		</div>
+		<div id="<%="<%= model.type %\>"%>DataWrapAfter"<%="<% if(!model.onFlag){ %\>"%> class="on"<%="<% } %\>"%>>
+			<span class="pointFrame">変更後</span>
+			<span class="<%="<%= model.type %\>"%>Check<%="<% if(model.type === 'movie' && model.newType !== 'off'){ %\>"%> on<%="<% } %\>"%>"></span>
+			<span class="changeText"><%="<% if(model.type === 'voice'){ %\>"%><%="<% if(model.onFlag){ %\>"%>ダウンロードしない<%="<% }else{ %\>"%>ダウンロードする<%="<% } %\>"%><%="<% }else{ %\>"%><%='<% if(model.newType === "off"){ %\>'%>ダウンロードしない<%='<% }else if(model.newType === "high"){ %\>'%>高画質版をダウンロード<%='<% }else if(model.newType === "low"){ %\>'%>低画質版をダウンロード<%="<% } %\>"%><%="<% } %\>"%></span>
+		</div>
+		<p id="dataPopText">
+			<%='<% if((model.type === "voice" && model.onFlag) || (model.type === "movie" && model.newType === "off")){ %\>'%>
+				ダウンロード済みの<%="<% if(model.type === 'voice'){ %\>"%>ボイス<%="<% }else{ %\>"%>ムービー<%="<% } %\>"%>データを削除します。<br>
+				変更することで<%="<% if(model.type === 'voice'){ %\>"%>ボイス<%="<% }else{ %\>"%>ムービー<%="<% } %\>"%>は再生されなくなります。
+			<%="<% }else{ %\>"%>
+				<%="<% if(model.type === 'voice'){ %\>"%>ボイス<%="<% }else{ %\>"%>ムービー<%="<% } %\>"%>データをダウンロードします。<br>
+				変更することで<%="<% if(model.type === 'voice'){ %\>"%>ボイス<%="<% }else{ %\>"%>ムービー<%="<% } %\>"%>が再生されるようになります。<br>
+				<span class="c_red">※Wi-Fiなど安定した通信環境をお勧めいたします。</span>
+			<%="<% } %\>"%>
+		</p>
+		<div class="popBtnWrap">
+			<span class="btn b_white se_cancel TE popupCloseBtn"><span class="b_screen"></span>キャンセル</span>
+			<span class="btn b_pink se_decide TE dataDecide popupCloseBtn"><span class="b_screen"></span>OK</span>
+		</div>
+	</div>
+</script>
+
+<script id="allDownloadPop" type="text/template">
+	ゲーム内で使用されるデータの最適化を行います。<br>
+	<span class="c_red">データ量が多いためWi-Fi環境でのダウンロードをお勧めします。</span>
+</script>
+
+<script id="nameChangePop" type="text/template">
+	新しく設定するプレイヤー名を入力してください。<br><br>
+	<input id="changeName" class="commonFrame3" readonly="readonly" type="text" maxlength="8" value="">
+	<div class="textCount" style="display:inline-block;margin-left:50px;">
+		<span id="textCount">0</span>/8
+	</div>
+	<div class="c_red" style="margin-top:20px;">※名前の変更は1日1回だけ可能です</div>
+</script>
+
+<script id="deleteConfirmPop" type="text/template">
+<div id="dataDeletePopupText">
+	<%='<% if(isOn){ %\>'%>
+	ダウンロードした以下のデータを端末へ保存しないように変更しました。<br>
+	※アプリを終了した時に以下のデータは削除され、<br>使用時に再びダウンロードされます。
+	<%='<% } else { %\>'%>
+	ダウンロードした以下のデータを端末へ保存するように変更しました。<br>
+	※アプリを終了しても以下のデータは削除されません。
+	<%='<% } %\>'%>
+
+	<div class="c_red" style="margin-top:20px;">
+		<%='<% if(type == "voice"){ %\>'%>
+		・ストーリーボイス
+		<%='<% } else { %\>'%>
+		・変身ムービー
+		<%='<% } %\>'%>
+	</div>
+</div>
+</script>

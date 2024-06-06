@@ -1,0 +1,63 @@
+<div class="textSec">
+  <%= model.attribute %>属性全員のステータスがアップ！<br>
+  <table class="upList">
+    <tr class="secHP <%= model.HP.dispClass %>">
+      <td>
+        <div class="text before type"><%= model.HP.type %></div>
+      </td>
+      <td>
+        <div class="text before"><%= model.beforeInfo.composed.HP %></div>
+      </td>
+      <td class="arrowSec">
+        <div class="arrow"></div>
+      </td>
+      <td>
+        <div class="text before type c_red"><%= model.HP.type %></div>
+      </td>
+      <td>
+        <div class="text after c_red"><%= model.HP.quantity + model.beforeInfo.composed.HP %></div><div class="text plus c_red">（＋<%= model.HP.quantity %>）</div>
+      </td>
+    </tr>
+    <tr class="secATTACK <%= model.ATTACK.dispClass %>">
+      <td>
+        <div class="text before type"><%= model.ATTACK.type %></div>
+      </td>
+      <td>
+        <div class="text before"><%= model.beforeInfo.composed.ATTACK %></div>
+      </td>
+      <td class="arrowSec">
+        <div class="arrow"></div>
+      </td>
+      <td>
+        <div class="text before type c_red"><%= model.ATTACK.type %></div>
+      </td>
+      <td>
+        <div class="text after c_red"><%= model.ATTACK.quantity + model.beforeInfo.composed.ATTACK %></div><div class="text plus c_red">（＋<%= model.ATTACK.quantity %>）</div>
+      </td>
+    </tr>
+    <tr class="secDEFENSE <%= model.DEFENSE.dispClass %>">
+      <td>
+        <div class="text before type"><%= model.DEFENSE.type %></div>
+      </td>
+      <td>
+        <div class="text before"><%= model.beforeInfo.composed.DEFENSE %></div>
+      </td>
+      <td class="arrowSec">
+        <div class="arrow"></div>
+      </td>
+      <td>
+        <div class="text before type c_red"><%= model.DEFENSE.type %></div>
+      </td>
+      <td>
+        <div class="text after c_red"><%= model.DEFENSE.quantity + model.beforeInfo.composed.DEFENSE %></div><div class="text plus c_red">（＋<%= model.DEFENSE.quantity %>）</div>
+      </td>
+    </tr>
+  </table><br>
+  以下のアイテムを使って強化しますか？
+</div>
+<div id="useItemList">
+  <div id="useItemScrollOuter">
+		<div class="useItemScrollInner" id="listSec">
+		</div>
+	</div>
+</div>
