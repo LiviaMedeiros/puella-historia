@@ -1,0 +1,367 @@
+<div id="ArenaResult" class="<%= battleData.result.arenaBattleType %>">
+	<% var arenaType = "";
+		if (battleData.isRanking) {
+			arenaType = "ranking";
+		}
+		else if (battleData.isSimulate) {
+			arenaType = "simulate";
+		}
+	%>
+	<!-- タイトル -->
+	<div id="resultTitle" class="<%= arenaType %>"></div>
+
+	<!-- 対戦日時 -->
+	<div id="resultDate" class="arenaColor"><%= battleData.result.completedAt.slice(5,-3) %></div>
+
+	<!-- リプレイ -->
+	<div id="replayBtn" class="replayBtn se_decide TE"></div>
+
+	<!-- 対戦相手 -->
+	<div id="enemyBtn" class="<%= arenaType %>">
+		<div id="enemyClip" class='se_decide'></div>
+		<div class="enemyTitle"></div>
+		<img class="enemyImage" data-nativeimgkey='card_<%= model.enemyData.leaderUserCard.displayCardId %>_s' data-src='resource/image_native/card/image/card_<%= model.enemyData.leaderUserCard.displayCardId %>_s.png'>
+		<div class="enemyNameRank">
+			<% if (battleData.result.arenaBattleType != "CODE_MATCH") { %>
+			<div class="enemyRank">Rank<%= model.enemyData.userRank %></div>
+			<% } else { %>
+			<div class="enemyRank">Rank？？</div>
+			<% } %>
+			<div class="enemyName arenaColor"><%= _.escape(model.enemyData.userName) %></div>
+		</div>
+	</div>
+
+	<!-- タッチスクリーン -->
+	<div id="touchScreen"></div>
+
+	<div id="rankupFlash"></div>
+
+	<!-- メイン表示 -->
+	<div id="mainWrap">
+		<div id="flowWrap">
+
+			<!-- ランク表示:果てなしのみ -->
+			<% if(!battleData.isRanking && !battleData.isSimulate){ %>
+			<div id="rankMark">
+				<%
+					var split = battleData.oldBattle.currentFreeRankClassType.split("_");
+					var floorNumber = split[split.length-1];
+					if(Number(floorNumber) < 10){
+				%>
+				<img src="/magica/resource/image_web/page/arena/result/numbers/num_floor_<%= floorNumber %>_s.png">
+				<% }else{ %>
+					<%
+						var strNumber = (floorNumber+"").split("");
+						for(var si=0,sleng=strNumber.length;si<sleng;si++){
+					%>
+					<img src="/magica/resource/image_web/page/arena/result/numbers/num_floor_<%= strNumber[si] %>_s.png">
+					<% } %>
+				<% } %>
+			</div>
+			<% } %>
+
+			<!-- WIN or LOSEマーク : アニメーション -->
+			<%
+				var addClass = arenaType;
+				addClass += (battleData.result.arenaBattleStatus !== "WIN") ? (addClass !== "") ? " lose" : "lose" : "";
+			%>
+			<div id="resultMark"<% if(addClass !== ""){ %> class="<%= addClass %>"<% } %>>
+				<% if(battleData.result.arenaBattleStatus === "WIN"){ %>
+					<div class="resultDeco winLeft"></div>
+					<div class="resultString W"></div>
+					<div class="resultString I"></div>
+					<div class="resultString N"></div>
+					<div class="resultDeco winRight"></div>
+					<div class="winCircle1"></div>
+					<div class="winCircle2"></div>
+					<div class="winCircle3"></div>
+					<div class="winCircle4"></div>
+					<div class="resultWinAdd"></div>
+					<div class="resultWin"></div>
+				<% } %>
+			</div>
+
+			<!-- 獲得ポイント -->
+			<div id="pointsWrap">
+				<!-- 果てなしのミラーズの場合 -->
+				<% if(!battleData.isRanking && !battleData.isSimulate){ %>
+					<!-- (対戦前に)次の鏡層が解放済みだった場合 -->
+					<% if(battleData.oldBattle.currentFreeRankClass.nextClass){ %>
+
+						<!-- 連勝数 -->
+						<div id="subInfo">
+							<div class="consective"><%= battleData.result.numberOfConsecutiveWins %></div>
+						</div>
+
+						<!-- 獲得ポイントと合計ポイント -->
+						<div id="arenaPoints" class="freerank">
+							<div class="getPoint arenaColor">+<%= battleData.result.point %></div>
+							<div class="totalPoint arenaColor"><%= battleData.battle.freeRankArenaPoint %>Pt</div>
+
+							<!-- (対戦後に)次の鏡層がない場合はMAX表示 -->
+							<% if(!battleData.battle.currentFreeRankClass.nextClass){ %>
+								<div class="resultPointMax"></div>
+							<% } %>
+						</div>
+
+						<!-- 次の鏡層までのポイント -->
+						<div id="requireWrap">
+							<p class="requireFirst">次の鏡層まで</p>
+							<div class="requireGuage">
+								<%
+									var mathFact = (battleData.oldBattle.previousFreeRankClass) ? battleData.oldBattle.previousFreeRankClass.requiredPoint | 0 : 0;
+									var guageLen = Math.round((battleData.oldBattle.freeRankArenaPoint - mathFact) / (battleData.oldBattle.currentFreeRankClass.requiredPoint - mathFact) * 100);
+								%>
+								<div class="requireGuageInner" style="width:<%= battleData.freeResult.guageLen %>%;"></div>
+							</div>
+							<p class="requireSecond">あと<span id="leftCount"><%= battleData.freeResult.mirrorsPoint %></span>Pt</p>
+						</div>
+
+					<!-- (対戦前に)次の鏡層が未解放(最終改装到達済み)の場合 -->
+					<% }else{ %>
+						<div id="subInfo">
+							<div class="maxRank c_red">次の鏡層が解放されていないため、ミラーズPtは加算されません</div>
+						</div>
+
+						<!-- MAX表示 -->
+						<div id="arenaPoints">
+							<div class="getPoint arenaColor">+0</div>
+							<div class="totalPoint arenaColor"><%= battleData.battle.freeRankArenaPoint %>Pt</div>
+							<% if(!battleData.battle.currentFreeRankClass.nextClass){ %>
+								<div class="resultPointMax"></div>
+							<% } %>
+						</div>
+					<% } %>
+
+				<% }else if(battleData.isRanking){ %>
+					<!-- ランキング時表示 -->
+					<div id="arenaPoints" class="ranking">
+						<div class="getPoint arenaColor">+<%= battleData.result.point %></div>
+						<div class="totalPoint arenaColor"><%= battleData.battle.rankingArenaPoint %>Pt</div>
+					</div>
+				<% }else if(battleData.isSimulate){ %>
+					<!-- 演習時表示 -->
+					<div id="arenaPoints" class="simulate">
+						<div class="getPoint arenaColor"><%= battleData.simulateResult.point %></div>
+					</div>
+					<div id="subInfo">
+						<div class="simulateInfo c_red">演習ではミラーズコイン・ミラーズPtを獲得できません</div>
+					</div>
+				<% } %>
+
+				<!-- ポイント内訳表示 -->
+				<ul class="resultPointTitle <%= arenaType %>">
+					<% if(battleData.isRanking){ %>
+						<!-- ランキングの場合 -->
+						<li>基本</li>
+						<li>バトル評価</li>
+						<li>戦力ボーナス</li>
+						<li class="break">ブレイクチャンス</li>
+					<% } else if(battleData.isSimulate){ %>
+						<!-- 演習の場合 -->
+						<li>基本スコア</li>
+						<li>残ＨＰ</li>
+						<li>バトル評価</li>
+						<li>戦力ボーナス</li>
+					<% } else { %>
+						<!-- 果てなしの場合 -->
+						<li>基本</li>
+						<li>連勝ボーナス</li>
+						<li>ターンボーナス</li>
+						<li>相手ボーナス</li>
+					<% } %>
+				</ul>
+				<ul class="resultPointNums <%= arenaType %>">
+				<% if(battleData.isRanking){ %>
+					<!-- ランキングの場合 -->
+					<li><%= battleData.basePoint %>Pt</li>
+					<li><%= battleData.rankResult.battleBonus %></li>
+					<li><%= battleData.rankResult.powerBonus %></li>
+					<li><%= battleData.rankResult.breakBonus %></li>
+				<% }else if(battleData.isSimulate){ %>
+					<!-- 演習の場合 -->
+					<li><%= battleData.simulateResult.basePoint %></li>
+					<li><%= battleData.simulateResult.remainHp %></li>
+					<li><%= battleData.simulateResult.battleBonus %></li>
+					<li><%= battleData.simulateResult.powerBonus %></li>
+				<% }else{ %>
+					<!-- 果てなしの場合 -->
+					<!-- 最終階層未到達時のみ表示 -->
+					<% if(battleData.oldBattle.currentFreeRankClass.nextClass){ %>
+						<li><% if(battleData.result.arenaBattleStatus !== "WIN"){ %>3<% }else{ %>10<% } %>Pt</li>
+						<li><% if(battleData.result.arenaBattleStatus !== "WIN"){ %>-<% }else{ %><%= battleData.freeResult.consectiveBonus %>Pt<% } %></li>
+						<li><% if(battleData.result.arenaBattleStatus !== "WIN"){ %>-<% }else{ %>×<%= battleData.freeResult.turnBonus %><% } %></li>
+						<li><% if(battleData.result.arenaBattleStatus !== "WIN"){ %>-<% }else{ %>×<%= battleData.freeResult.difficultyBonus %><% } %></li>
+					<% }else{ %>
+						<li>-</li>
+						<li>-</li>
+						<li>-</li>
+						<li>-</li>
+					<% } %>
+				<% } %>
+				</ul>
+
+				<!-- 獲得ミラーズコイン数 -->
+				<% if(battleData.isRanking){ %>
+					<!-- ランキング戦報酬 -->
+					<div class="getRankingReward">
+						<!-- ミラーズコイン -->
+						<div class="itemWrap">
+							<img src="/magica/resource/image_web/item/main/arena_coin.png">
+							<span class="itemNum ts_gold">×<%= battleData.arenaCoinNum %></span>
+						</div>
+						<div class="itemWrap">
+							<%
+								var rewardItemCode = battleData.rewardItemCode;
+								if(rewardItemCode.indexOf("event_arenaranking") > -1) rewardItemCode = "event_arenaranking_1013_exchange_1";
+							%>
+							<img src="/magica/resource/image_web/item/event/<%= rewardItemCode %>.png">
+							<span class="itemNum ts_gold">×<%= battleData.rewardItemNum %></span>
+						</div>
+					</div>
+				<% }else if(!battleData.isSimulate){ %>
+					<div class="getCoinWrap">
+						<!-- フリーランク -->
+						<img src="/magica/resource/image_web/common/icon/icon_arenacoin.png">ミラーズコイン×<span class="coinNum"><%= battleData.freeResult.getCoin %></span>
+					</div>
+				<% } %>
+			</div>
+			<div class="touch_screen"></div>
+		</div>
+	</div>
+
+	<!-- 果てなしのミラーズの場合 -->
+	<% if(!battleData.isRanking){ %>
+		<!-- ランクアップ表示 -->
+		<div id="rankupWrap" class="nodisp">
+		<!-- ランクアップしていた場合のみDOMを生成 -->
+		<% if(model.rankup){ %>
+			<!-- NEXT MIRRORSアニメーション用 -->
+			<div class="nextMirror">
+				<div class="rankDeco"></div>
+				<div class="rankString N"></div>
+				<div class="rankString E"></div>
+				<div class="rankString X"></div>
+				<div class="rankString T"></div>
+				<div class="rankString M"></div>
+				<div class="rankString I"></div>
+				<div class="rankString R1"></div>
+				<div class="rankString R2"></div>
+				<div class="rankString O"></div>
+				<div class="rankString R3"></div>
+				<div class="rankDeco2"></div>
+			</div>
+
+			<!-- タッチスクリーン -->
+			<div class="touch_screen"></div>
+
+			<!-- ランクアップ前のランク表示 -->
+			<div class="nextMirrorBefore">
+				<%
+					var splitNext = battleData.battle.currentFreeRankClassType.split("_");
+					var floorNumberNext = splitNext[split.length-1];
+				%>
+					<%
+						if(Number(floorNumber) < 10){
+					%>
+					<img src="/magica/resource/image_web/page/arena/result/numbers/num_floor_<%= floorNumber %>_s.png">
+					<% }else{ %>
+						<%
+							var strNumber = (floorNumber+"").split("");
+							for(var si=0,sleng=strNumber.length;si<sleng;si++){
+						%>
+						<img src="/magica/resource/image_web/page/arena/result/numbers/num_floor_<%= strNumber[si] %>_s.png">
+						<% } %>
+					<% } %>
+			</div>
+
+			<div class="nextMirrorArrow"></div>
+
+			<!-- ランクアップ後のランク表示 -->
+			<div class="nextMirrorAfter">
+				<% if(Number(floorNumberNext) < 10){ %>
+				<img src="/magica/resource/image_web/page/arena/result/numbers/num_floor_<%= floorNumberNext %>_s.png">
+				<% }else{ %>
+					<%
+						var strNextNumber = (floorNumberNext+"").split("");
+						for(var sn=0,nleng=strNextNumber.length;sn<nleng;sn++){
+					%>
+					<img src="/magica/resource/image_web/page/arena/result/numbers/num_floor_<%= strNextNumber[sn] %>_s.png">
+					<% } %>
+				<% } %>
+			</div>
+
+			<!-- 鏡層到達ボーナスがある場合:獲得ボーナスの表示 -->
+			<% if(battleData.battle.currentFreeRankClass.bonusRewardList){ %>
+			<div class="rankupReward">
+				<% _.each(battleData.battle.currentFreeRankClass.bonusRewardList,function(reward,index){ %>
+					<% var itemType = reward.presentType.toLowerCase();console.log(reward[itemType]) %>
+					<p class="arenaColor rewardItem <%= reward[itemType].itemCode.toLowerCase() %>"><%= reward.displayName %>×<%= reward.quantity %></p>
+				<% }); %>
+			</div>
+			<% } %>
+
+			<!-- 解放ストーリーがある場合：解放ストーリーのタイトルや解放条件を表示 -->
+			<% if(model.rankupDisp.storyName){ %>
+			<div class="nextStoryWrap">
+				<div class="storyTitle arenaColor"><%= model.rankupDisp.storyName %></div>
+				<div class="condition"><%= model.rankupDisp.conditionSection %></div>
+			</div>
+			<% } %>
+
+		<% } %>
+		</div>
+	<% } %>
+
+	<!-- 背景の鏡とミラーズ編成パーティ表示：パーティメンバーは勝利時のみ -->
+	<div id="resultMirror">
+		<div class="mirrorReflec">
+			<div class="reflecMirror">
+				<img src="/magica/resource/image_web/page/arena/result/reflection.png">
+			</div>
+		</div>
+		<div class="mirrorWrap"></div>
+		<% if(battleData.result.arenaBattleStatus === "WIN"){ %>
+		<div class="mirrorMemberWrap">
+			<div class="members_left mirror_left2">
+				<% if(model.arenaDecks.noneLeader[2]){ %>
+					<% var noleader02_image = (!model.arenaDecks.noneLeader[2].chara.doubleUnitFlg) ? model.arenaDecks.noneLeader[2].displayCardId + "_m" : model.arenaDecks.noneLeader[2].displayCardId + "_o"; %>
+					<img data-nativeimgkey='card_<%= noleader02_image %>' data-src='resource/image_native/card/image/card_<%= noleader02_image %>.png'>
+				<% } %>
+			</div>
+			<div class="members_left mirror_left1">
+				<% if(model.arenaDecks.noneLeader[0]){ %>
+					<% var noleader00_image = (!model.arenaDecks.noneLeader[0].chara.doubleUnitFlg) ? model.arenaDecks.noneLeader[0].displayCardId + "_m" : model.arenaDecks.noneLeader[0].displayCardId + "_o"; %>
+					<img data-nativeimgkey='card_<%= noleader00_image %>' data-src='resource/image_native/card/image/card_<%= noleader00_image %>.png'>
+				<% } %>
+			</div>
+			<div class="leader">
+				<% var leader_image = (!model.arenaDecks.leaderCard.chara.doubleUnitFlg) ? model.arenaDecks.leaderCard.displayCardId + "_m" : model.arenaDecks.leaderCard.displayCardId + "_o"; %>
+				<img data-nativeimgkey='card_<%= leader_image %>' data-src='resource/image_native/card/image/card_<%= leader_image %>.png'>
+			</div>
+			<div class="members_right mirror_right1">
+				<% if(model.arenaDecks.noneLeader[1]){ %>
+					<% var noleader01_image = (!model.arenaDecks.noneLeader[1].chara.doubleUnitFlg) ? model.arenaDecks.noneLeader[1].displayCardId + "_m" : model.arenaDecks.noneLeader[1].displayCardId + "_o"; %>
+					<img data-nativeimgkey='card_<%= noleader01_image %>' data-src='resource/image_native/card/image/card_<%= noleader01_image %>.png'>
+				<% } %>
+			</div>
+			<div class="members_right mirror_right2">
+				<% if(model.arenaDecks.noneLeader[3]){ %>
+					<% var noleader03_image = (!model.arenaDecks.noneLeader[3].chara.doubleUnitFlg) ? model.arenaDecks.noneLeader[3].displayCardId + "_m" : model.arenaDecks.noneLeader[3].displayCardId + "_o"; %>
+					<img data-nativeimgkey='card_<%= noleader03_image %>' data-src='resource/image_native/card/image/card_<%= noleader03_image %>.png'>
+				<% } %>
+			</div>
+		</div>
+		<% } %>
+	</div>
+
+
+</div>
+
+
+<script type="text/template" id="createCodePopParts">
+	<dl class="colWrap common_dl">
+		<dt class="colLeft">リプレイID</dt>
+		<dd class="colRight"><span class="black"><%='<%= userQuestBattleResultId %\>'%></span><span class="btn rightPosition se_decide sb_gold_01 TE " id="codeCopy"><span class="b_screen"></span>コピー</span></dd>
+	</dl>
+</script>

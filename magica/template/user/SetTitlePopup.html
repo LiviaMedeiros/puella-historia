@@ -1,0 +1,64 @@
+<div class="setTitle">
+	<div id="titleListWrap" class="commonFrame3">
+		<div id="titleListScrollOuter">
+			<div class="titleListWrapInner">
+			<div class="userTitle_m listTitles<% if(!nowTitle){ %> selected<% } %>" data-tid="0">
+				<div class="userTitleText">設定なし</div>
+				<img class="userTitleBg" src="/magica/resource/image_web/common/grade/title_00000.png">
+			</div>
+			<% var ids = []; %>
+			<% _.each(titles,function(title){ %>
+				<% ids.push(title.titleId); %>
+				<div class="userTitle_m listTitles <%= title.title.font %><% if(nowTitle && nowTitle.id === title.titleId){ %> selected<% } %>" data-tid="<%= title.titleId %>">
+					<div class="userTitleText"><%= title.title.name %></div>
+					<img class="userTitleBg" src="/magica/resource/image_web/common/grade/<%= title.title.baseImage %>.png">
+				</div>
+			<% }) %>
+			<% _.each(titleMasters,function(title){ %>
+				<% if(ids.indexOf(title.id) === -1){ %>
+					<div class="userTitle_m listTitles unknown" data-tid="<%= title.id %>">
+						<div class="userTitleText"></div>
+						<img class="userTitleBg" src="/magica/resource/image_web/common/grade/grade_none_m.png">
+					</div>
+				<% } %>
+			<% }) %>
+			</div>
+		</div>
+	</div>
+	<div id="nowTitleWrap" class="commonFrame3">
+		<p class="c_pink">◆ 現在の称号</p>
+		<div class="nowTitleWrap">
+			<% if(!nowTitle){ %>
+			<div class="userTitle_m" data-tid="">
+				<div class="userTitleText">設定なし</div>
+				<img class="userTitleBg" src="/magica/resource/image_web/common/grade/title_00000.png">
+			</div>
+			<% }else{ %>
+			<div class="userTitle_m <%= nowTitle.font %>" data-tid="<%= nowTitle.id %>">
+				<div class="userTitleText"><%= nowTitle.name %></div>
+				<img class="userTitleBg" src="/magica/resource/image_web/common/grade/<%= nowTitle.baseImage %>.png">
+			</div>
+			<% } %>
+		</div>
+	</div>
+	<div class="arrow"></div>
+	<div id="afterTitleWrap" class="commonFrame3">
+		<p class="c_pink">◆ 変更する称号</p>
+		<div class="titleInfo">
+			<% if(!nowTitle){ %>
+			<div class="userTitle_m">
+				<div id="targetTitleText" class="userTitleText">設定なし</div>
+				<img id="targetTitleBg" class="userTitleBg" src="/magica/resource/image_web/common/grade/title_00000.png">
+			</div>
+			<div id="targetTitleDesc">称号を非表示にします</div>
+			<% }else{ %>
+			<div class="userTitle_m <%= nowTitle.font %>">
+				<div id="targetTitleText" class="userTitleText"><%= nowTitle.name %></div>
+				<img id="targetTitleBg" class="userTitleBg" src="/magica/resource/image_web/common/grade/<%= nowTitle.baseImage %>.png">
+			</div>
+			<div id="targetTitleDesc"><%= nowTitle.description %></div>
+			<% } %>
+		</div>
+	</div>
+	<div id="titleChangeDecide" class="btn b_pink se_decide TE off"><span class="b_screen"></span>OK</div>
+</div>
