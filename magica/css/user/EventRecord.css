@@ -1,0 +1,1534 @@
+@charset "UTF-8";
+.gradeD {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_d0.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeD1 {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_d1.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeD2 {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_d2.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeD3 {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_d3.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeC {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_c0.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeC1 {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_c1.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeC2 {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_c2.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeC3 {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_c3.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeB {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_b0.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeB1 {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_b1.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeB2 {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_b2.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeB3 {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_b3.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeA {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_a0.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeA1 {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_a1.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeA2 {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_a2.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeA3 {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_a3.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeS {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_s0.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeS1 {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_s1.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeS2 {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_s2.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.gradeS3 {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/grade/icon_grade_s3.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.emblemD {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/emblem/icon_emblem_d0.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.emblemC {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/emblem/icon_emblem_c0.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.emblemB {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/emblem/icon_emblem_b0.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.emblemA {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/emblem/icon_emblem_a0.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.emblemS {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/emblem/icon_emblem_s0.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.emblemSS {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common/emblem/icon_emblem_ss0.png") left top no-repeat;
+  background-size: 100% 100%; }
+
+.sb_regular_01 {
+  min-width: 76px;
+  height: 25px;
+  padding: 0 16px;
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/group/btn_bg_s_1_c.png") center top no-repeat;
+  background-size: -webkit-calc(100% - 8px) 25px;
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color: #a47122; }
+  .sb_regular_01:before, .sb_regular_01:after {
+    width: 10px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 0;
+    content: ""; }
+  .sb_regular_01:before {
+    background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/group/btn_bg_s_1_l.png") left top no-repeat;
+    left: 0; }
+  .sb_regular_01:after {
+    background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/group/btn_bg_s_1_r.png") left top no-repeat;
+    right: 0; }
+
+.sb_regular_02 {
+  min-width: 76px;
+  height: 25px;
+  padding: 0 16px;
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/group/btn_bg_s_2_c.png") center top no-repeat;
+  background-size: -webkit-calc(100% - 8px) 25px;
+  display: inline-block;
+  position: relative;
+  color: #a47122;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff; }
+  .sb_regular_02:before, .sb_regular_02:after {
+    width: 10px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top: 0;
+    content: ""; }
+  .sb_regular_02:before {
+    background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/group/btn_bg_s_2_l.png") left top no-repeat;
+    left: 0; }
+  .sb_regular_02:after {
+    background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/group/btn_bg_s_2_r.png") left top no-repeat;
+    right: 0; }
+
+.gbFontImgL {
+  font-size: 0; }
+  .gbFontImgL div {
+    width: 15px;
+    height: 20px;
+    display: inline-block; }
+    .gbFontImgL div.num0 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_b_00.png") center center no-repeat; }
+    .gbFontImgL div.num1 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_b_01.png") center center no-repeat; }
+    .gbFontImgL div.num2 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_b_02.png") center center no-repeat; }
+    .gbFontImgL div.num3 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_b_03.png") center center no-repeat; }
+    .gbFontImgL div.num4 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_b_04.png") center center no-repeat; }
+    .gbFontImgL div.num5 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_b_05.png") center center no-repeat; }
+    .gbFontImgL div.num6 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_b_06.png") center center no-repeat; }
+    .gbFontImgL div.num7 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_b_07.png") center center no-repeat; }
+    .gbFontImgL div.num8 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_b_08.png") center center no-repeat; }
+    .gbFontImgL div.num9 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_b_09.png") center center no-repeat; }
+    .gbFontImgL div.none {
+      width: 43px;
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_b_line.png") center center no-repeat; }
+
+.gbFontImgS {
+  font-size: 0; }
+  .gbFontImgS div {
+    width: 12px;
+    height: 15px;
+    display: inline-block; }
+    .gbFontImgS div.num0 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_s_00.png") center center no-repeat; }
+    .gbFontImgS div.num1 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_s_01.png") center center no-repeat; }
+    .gbFontImgS div.num2 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_s_02.png") center center no-repeat; }
+    .gbFontImgS div.num3 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_s_03.png") center center no-repeat; }
+    .gbFontImgS div.num4 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_s_04.png") center center no-repeat; }
+    .gbFontImgS div.num5 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_s_05.png") center center no-repeat; }
+    .gbFontImgS div.num6 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_s_06.png") center center no-repeat; }
+    .gbFontImgS div.num7 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_s_07.png") center center no-repeat; }
+    .gbFontImgS div.num8 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_s_08.png") center center no-repeat; }
+    .gbFontImgS div.num9 {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_s_09.png") center center no-repeat; }
+    .gbFontImgS div.none {
+      width: 43px;
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text/nm_s_line.png") center center no-repeat; }
+
+.gbFontWhite {
+  color: #ffffff; }
+
+.gbFontGold {
+  color: #f9de8c; }
+
+.gbFontPurple {
+  color: #820ac7; }
+
+.sb_regular_01.off, .sb_regular_02.off, #rewardPopup #rewardTabWrap li.off, #MissionContainer #allReserve.off, #MissionContainer .wrap .missionBtn {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-filter: grayscale(100%);
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0.2126 0.7152 0.0722 0 0 0 0 0 1 0" /></filter></svg>#filter');
+  filter: grayscale(100%); }
+
+#battleLogPopup .popupInner, #rewardPopup .popupInner, #MissionContainer .popupInner {
+  position: absolute;
+  width: 984px !important;
+  height: 538px !important;
+  left: -webkit-calc(50% - 492px);
+  top: -webkit-calc(50% - 269px); }
+
+#rewardPopup #rewardTabWrap li {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/btn_tab_c.png") center top no-repeat;
+  background-size: -webkit-calc(100% - 32px) 100%;
+  margin-bottom: 13px;
+  text-shadow: -1px -1px 2px #723998, 1px -1px 2px #723998, -1px 1px 2px #723998, 1px 1px 2px #723998, -1px -1px 2px #723998, 1px -1px 2px #723998, -1px 1px 2px #723998, 1px 1px 2px #723998;
+  min-width: 130px;
+  height: 62px;
+  padding: 0 10px;
+  position: relative;
+  font-size: 14px;
+  line-height: 62px;
+  text-align: center; }
+  #rewardPopup #rewardTabWrap li:before {
+    background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/btn_tab_l.png") left top no-repeat;
+    background-size: 100% 100%; }
+  #rewardPopup #rewardTabWrap li:after {
+    background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/btn_tab_r.png") left top no-repeat;
+    background-size: 100% 100%; }
+  #rewardPopup #rewardTabWrap li > span {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #ffffff;
+    line-height: 20px;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  #rewardPopup #rewardTabWrap li.touch {
+    -webkit-filter: brightness(120%); }
+  #rewardPopup #rewardTabWrap li.current {
+    background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/btn_tab_on_c.png") center top no-repeat;
+    text-shadow: none; }
+    #rewardPopup #rewardTabWrap li.current > span {
+      color: #723998; }
+    #rewardPopup #rewardTabWrap li.current:before {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/btn_tab_on_l.png") left top no-repeat; }
+    #rewardPopup #rewardTabWrap li.current:after {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/btn_tab_on_r.png") left top no-repeat; }
+  #rewardPopup #rewardTabWrap li:before, #rewardPopup #rewardTabWrap li:after {
+    width: 18px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    content: ""; }
+  #rewardPopup #rewardTabWrap li:before {
+    left: 0; }
+  #rewardPopup #rewardTabWrap li:after {
+    right: 0; }
+  #rewardPopup #rewardTabWrap li img {
+    width: 36px;
+    margin: -4px 0 0;
+    -webkit-filter: drop-shadow(0 0 2px #b07422) drop-shadow(0 0 2px #b07422) drop-shadow(0 0 4px #b07422); }
+  #rewardPopup #rewardTabWrap li .b_screen {
+    -webkit-border-radius: 100px; }
+  #rewardPopup #rewardTabWrap li.off {
+    pointer-events: none; }
+
+#overlapContainer #curtain.show.light {
+  opacity: .4; }
+
+#groupBattleCommonMenu.hide {
+  display: none; }
+
+#groupBattleCommonMenu #debugBtn {
+  width: 100px;
+  position: absolute;
+  top: 13px;
+  right: 176px;
+  z-index: 10000; }
+
+#dailyResultPopup .popupInner .popupTextArea {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 8px 0; }
+  #dailyResultPopup .popupInner .popupTextArea .dailyDamage {
+    text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000; }
+  #dailyResultPopup .popupInner .popupTextArea .emblemWrap {
+    display: block;
+    position: relative;
+    margin: -6px auto;
+    width: 198px;
+    height: 188px; }
+    #dailyResultPopup .popupInner .popupTextArea .emblemWrap .bg {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/bg_user_emblem.png") center top no-repeat;
+      width: 100%;
+      height: 100%; }
+    #dailyResultPopup .popupInner .popupTextArea .emblemWrap .emblemIcon {
+      position: absolute;
+      left: 19px;
+      top: 16px;
+      width: 160px;
+      height: 152px; }
+  #dailyResultPopup .popupInner .popupTextArea .goodWrap, #dailyResultPopup .popupInner .popupTextArea .supportPtWrap {
+    background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/bg_userscore.png") center top no-repeat;
+    display: inline-block;
+    width: 314px;
+    height: 44px;
+    font-size: 16px; }
+    #dailyResultPopup .popupInner .popupTextArea .goodWrap > div, #dailyResultPopup .popupInner .popupTextArea .supportPtWrap > div {
+      display: inline-block; }
+    #dailyResultPopup .popupInner .popupTextArea .goodWrap .title, #dailyResultPopup .popupInner .popupTextArea .supportPtWrap .title {
+      width: 122px;
+      line-height: 44px;
+      margin-left: 17px; }
+    #dailyResultPopup .popupInner .popupTextArea .goodWrap .value, #dailyResultPopup .popupInner .popupTextArea .supportPtWrap .value {
+      width: 152px;
+      margin-right: 17px;
+      text-align: center; }
+
+#FirstCutinContainer {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+#firstCutinWrap {
+  width: 1024px;
+  height: 100% !important;
+  position: fixed;
+  top: 0;
+  left: -webkit-calc(50% - 512px);
+  overflow: hidden;
+  z-index: 100001; }
+  #firstCutinWrap .bg2 {
+    background: url("/magica/resource/image_web/regularEvent/groupBattle/common/result/bg_result_02.png") left top no-repeat;
+    position: absolute;
+    left: 128px;
+    top: -webkit-calc(50% - 384px);
+    width: 764px;
+    height: 294px;
+    z-index: 3; }
+  #firstCutinWrap .bg3 {
+    background: url("/magica/resource/image_web/regularEvent/groupBattle/common/result/bg_result_03.png") left top no-repeat;
+    position: absolute;
+    left: 187px;
+    top: -webkit-calc(50% - 340px);
+    width: 646px;
+    height: 646px;
+    z-index: 2;
+    opacity: 0;
+    -webkit-animation: 0.58333s regularEventFirstCutinBg3 linear 0s 1 both; }
+  #firstCutinWrap .text1 {
+    background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text_01.png") left top no-repeat;
+    position: absolute;
+    left: -webkit-calc(50% - 56.5px);
+    top: -webkit-calc(50% - 57px);
+    width: 103px;
+    height: 48px;
+    z-index: 5;
+    opacity: 0;
+    -webkit-animation: 0.46667s regularEventFirstCutinText linear 1.15s 1 both; }
+    #firstCutinWrap .text1.bright {
+      mix-blend-mode: color-dodge;
+      -webkit-animation: 0.83333s regularEventFirstCutinTextBright linear 0s 1 both; }
+  #firstCutinWrap .text2 {
+    background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/text_02.png") left top no-repeat;
+    position: absolute;
+    left: -webkit-calc(50% - 170.5px);
+    top: -webkit-calc(50% + 12px);
+    width: 341px;
+    height: 49px;
+    z-index: 5;
+    opacity: 0;
+    -webkit-animation: 0.28333s regularEventFirstCutinText linear 1.28333s 1 both; }
+    #firstCutinWrap .text2.bright {
+      mix-blend-mode: color-dodge;
+      -webkit-animation: 0.91667s regularEventFirstCutinTextBright linear 0.38333s 1 both; }
+  #firstCutinWrap .clearLight {
+    background: url("/magica/resource/image_web/page/quest/animation/clear_light.png") center center;
+    position: absolute;
+    left: -webkit-calc(50% - 256px);
+    top: -webkit-calc(50% - 256px);
+    width: 512px;
+    height: 512px;
+    z-index: 10;
+    mix-blend-mode: color-dodge;
+    -webkit-animation: 0.98333s regularEventFirstCutinClearLight linear 0.48333s 1 both; }
+
+#finalRoundStartPopup .popupInner .popupTextArea {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 24px 0; }
+  #finalRoundStartPopup .popupInner .popupTextArea .decideText {
+    font-size: 22px;
+    color: #a37a47; }
+  #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap {
+    margin: 20px auto;
+    border: 2px solid #6755ce;
+    border-radius: 10px;
+    width: 760px;
+    height: 218px; }
+    #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .header {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/bg_title_pop1.png") left top no-repeat;
+      width: 744px;
+      height: 33px;
+      line-height: 33px;
+      text-align: center;
+      margin: 20px auto;
+      font-size: 17px;
+      text-shadow: 2px 0px 2px #4d3abb, -2px 0px 2px #4d3abb, 0px 2px 2px #4d3abb, 0px -2px 2px #4d3abb, 2px 2px 2px #4d3abb, -2px 2px 2px #4d3abb, 2px -2px 2px #4d3abb, -2px -2px 2px #4d3abb; }
+    #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .decideText {
+      font-size: 21.84px;
+      color: #a37a47; }
+    #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap {
+      position: relative;
+      margin: 22px auto;
+      width: 125px;
+      height: 124px; }
+      #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .bg {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/bg_user_emblem.png") left top no-repeat;
+        background-size: contain;
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%; }
+      #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon {
+        position: absolute;
+        left: 39px;
+        top: 39.5px;
+        width: 47px;
+        height: 45px; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank1 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_01.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank2 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_02.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank3 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_03.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank4 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_04.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank5 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_05.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank6 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_06.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank7 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_07.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank8 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_08.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank9 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_09.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank10 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_10.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank11 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_11.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank12 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_12.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank13 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_13.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank14 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_14.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank15 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_15.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank16 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_16.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank17 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_17.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank18 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_18.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank19 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_19.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank20 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_20.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank21 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_21.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank22 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_22.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank23 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_23.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank24 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_24.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank25 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_25.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank26 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_26.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank27 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_27.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank28 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_28.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank29 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_29.png") left top no-repeat;
+          background-size: 100% 100%; }
+        #finalRoundStartPopup .popupInner .popupTextArea .memberRankingWrap .rankingWrap .rankIcon.rank30 {
+          background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_30.png") left top no-repeat;
+          background-size: 100% 100%; }
+
+#battleLogPopup .header {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/bg_title_pop1.png") left top no-repeat;
+  position: absolute;
+  left: 100px;
+  top: 60px;
+  width: 744px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 17px;
+  text-shadow: 2px 0px 2px #4d3abb, -2px 0px 2px #4d3abb, 0px 2px 2px #4d3abb, 0px -2px 2px #4d3abb, 2px 2px 2px #4d3abb, -2px 2px 2px #4d3abb, 2px -2px 2px #4d3abb, -2px -2px 2px #4d3abb; }
+
+#battleLogPopup #battleLogListWrap {
+  position: absolute;
+  left: 35px;
+  top: 112px;
+  width: 872px;
+  height: 378px; }
+  #battleLogPopup #battleLogListWrap .noLog {
+    width: 100%;
+    position: absolute;
+    top: -webkit-calc(50% - 10px);
+    font-size: 20px;
+    text-align: center; }
+    #battleLogPopup #battleLogListWrap .noLog.hide {
+      display: none; }
+  #battleLogPopup #battleLogListWrap .log {
+    background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/bg_list_pop_log.png") left top no-repeat;
+    background-size: contain;
+    width: 872px;
+    height: 122px;
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    position: relative; }
+    #battleLogPopup #battleLogListWrap .log .index {
+      position: absolute;
+      left: 25px;
+      top: 16px;
+      line-height: 26px; }
+      #battleLogPopup #battleLogListWrap .log .index span {
+        font-size: 24px; }
+    #battleLogPopup #battleLogListWrap .log .attribute {
+      position: absolute;
+      left: 182px;
+      top: 16px;
+      width: 27px;
+      height: 27px; }
+    #battleLogPopup #battleLogListWrap .log .name {
+      position: absolute;
+      left: 215px;
+      top: 16px;
+      line-height: 26px; }
+    #battleLogPopup #battleLogListWrap .log .level {
+      position: absolute;
+      left: 270px;
+      top: 16px;
+      width: 80px;
+      text-align: right;
+      line-height: 26px;
+      text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000; }
+    #battleLogPopup #battleLogListWrap .log .damageWrap {
+      position: absolute;
+      left: 25px;
+      top: 49px; }
+      #battleLogPopup #battleLogListWrap .log .damageWrap > div {
+        display: inline-block; }
+      #battleLogPopup #battleLogListWrap .log .damageWrap .title {
+        text-align: left;
+        width: 100px; }
+      #battleLogPopup #battleLogListWrap .log .damageWrap .value {
+        text-align: right;
+        width: 217px;
+        top: 4px;
+        position: relative;
+        padding-right: 10px; }
+    #battleLogPopup #battleLogListWrap .log .takeOverMpWrap, #battleLogPopup #battleLogListWrap .log .takeOverChargeWrap {
+      position: absolute;
+      top: 89px; }
+      #battleLogPopup #battleLogListWrap .log .takeOverMpWrap > div, #battleLogPopup #battleLogListWrap .log .takeOverChargeWrap > div {
+        display: inline-block; }
+      #battleLogPopup #battleLogListWrap .log .takeOverMpWrap .title, #battleLogPopup #battleLogListWrap .log .takeOverChargeWrap .title {
+        text-align: left; }
+      #battleLogPopup #battleLogListWrap .log .takeOverMpWrap .value, #battleLogPopup #battleLogListWrap .log .takeOverChargeWrap .value {
+        text-align: center;
+        width: 65px;
+        text-shadow: -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000, -1px -1px 1px #000, 1px -1px 1px #000, -1px 1px 1px #000, 1px 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000; }
+    #battleLogPopup #battleLogListWrap .log .takeOverMpWrap {
+      left: 25px; }
+    #battleLogPopup #battleLogListWrap .log .takeOverChargeWrap {
+      left: 200px; }
+    #battleLogPopup #battleLogListWrap .log .battleCharaList {
+      position: absolute;
+      left: 404px;
+      top: 5px;
+      width: 500px;
+      height: 40px;
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+      text-align: left; }
+      #battleLogPopup #battleLogListWrap .log .battleCharaList .userCharaIcon {
+        display: inline-block;
+        margin: 0 6px; }
+    #battleLogPopup #battleLogListWrap .log .formationWrap {
+      position: absolute;
+      left: 430px;
+      bottom: 6px;
+      font-size: 15.65px; }
+      #battleLogPopup #battleLogListWrap .log .formationWrap > div {
+        display: inline-block; }
+      #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg {
+        width: 34px;
+        height: 34px;
+        padding: 2px;
+        background-color: #4d4462;
+        position: absolute;
+        bottom: 0;
+        left: -40px;
+        border-radius: 5px; }
+        #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner {
+          width: 32px;
+          height: 32px;
+          padding: 2px;
+          background-color: #736080;
+          position: relative;
+          border-radius: 5px; }
+          #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols {
+            width: 8px;
+            height: 8px;
+            background-color: #736080;
+            position: absolute; }
+            #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.on {
+              background-color: #f4e0ca; }
+            #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation1, #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation4, #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation7 {
+              top: 22px; }
+            #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation2, #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation5, #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation8 {
+              top: 12px; }
+            #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation3, #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation6, #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation9 {
+              top: 2px; }
+            #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation1, #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation2, #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation3 {
+              left: 2px; }
+            #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation4, #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation5, #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation6 {
+              left: 12px; }
+            #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation7, #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation8, #battleLogPopup #battleLogListWrap .log .formationWrap .formationImg .formationInner .cols.formation9 {
+              left: 22px; }
+    #battleLogPopup #battleLogListWrap .log .copyDeckBtn {
+      position: absolute;
+      right: 23px;
+      bottom: 8px; }
+
+#battleLogPopup .arrow {
+  position: absolute;
+  width: 50px;
+  height: 84px;
+  display: block;
+  top: 50%; }
+  #battleLogPopup .arrow.left {
+    background: url(/magica/resource/image_web/page/gacha/gacha_arrow_left_a.png) left center no-repeat;
+    background-size: contain;
+    left: -14px; }
+  #battleLogPopup .arrow.right {
+    background: url(/magica/resource/image_web/page/gacha/gacha_arrow_right_a.png) left center no-repeat;
+    background-size: contain;
+    right: -14px; }
+
+#rewardPopup #rewardTabWrap {
+  position: absolute;
+  left: 18px;
+  top: 58px; }
+
+#rewardPopup .header {
+  background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/bg_title_pop1.png") left top no-repeat;
+  position: absolute;
+  left: 176px;
+  top: 60px;
+  width: 744px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 17px;
+  text-shadow: 2px 0px 2px #4d3abb, -2px 0px 2px #4d3abb, 0px 2px 2px #4d3abb, 0px -2px 2px #4d3abb, 2px 2px 2px #4d3abb, -2px 2px 2px #4d3abb, 2px -2px 2px #4d3abb, -2px -2px 2px #4d3abb; }
+
+#rewardPopup .rewardInfoWrap {
+  position: absolute;
+  left: 176px;
+  top: 103px;
+  width: 743px;
+  height: 39px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 10px 0 34px;
+  border: 2px solid #6755ce;
+  border-radius: 10px; }
+  #rewardPopup .rewardInfoWrap > div {
+    display: inline-block;
+    line-height: 35px; }
+  #rewardPopup .rewardInfoWrap .name {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    font-size: 15px;
+    text-align: left; }
+    #rewardPopup .rewardInfoWrap .name .gradeIcon {
+      position: absolute;
+      right: -50px;
+      top: -6px;
+      width: 45px;
+      height: 45px; }
+  #rewardPopup .rewardInfoWrap .param {
+    position: absolute;
+    right: 10px;
+    top: 0; }
+    #rewardPopup .rewardInfoWrap .param .value {
+      text-align: right; }
+    #rewardPopup .rewardInfoWrap .param .gradeIcon {
+      width: 39px;
+      height: 38px;
+      margin: -3px 0 0 auto;
+      position: absolute;
+      right: 0;
+      top: 2px; }
+    #rewardPopup .rewardInfoWrap .param .gbFontImgL div {
+      height: 35px; }
+  #rewardPopup .rewardInfoWrap .paramWrap {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 17px; }
+    #rewardPopup .rewardInfoWrap .paramWrap > div {
+      display: inline-block; }
+    #rewardPopup .rewardInfoWrap .paramWrap .value {
+      top: 3px;
+      position: relative;
+      min-width: 100px; }
+
+#rewardPopup #groupTabWrap {
+  display: none;
+  position: absolute;
+  right: 25px;
+  top: 148px; }
+  #rewardPopup #groupTabWrap li {
+    display: inline-block;
+    line-height: 35px; }
+    #rewardPopup #groupTabWrap li.current {
+      pointer-events: none; }
+
+#rewardPopup #rewardListWrap {
+  position: absolute;
+  left: 176px;
+  top: 150px;
+  width: 777px;
+  height: -webkit-calc(100% - 138px);
+  overflow-y: hidden; }
+  #rewardPopup #rewardListWrap .scrollInner {
+    height: auto;
+    min-height: 100%; }
+  #rewardPopup #rewardListWrap #rewardList.hide {
+    display: none; }
+  #rewardPopup #rewardListWrap #rewardList .reward {
+    background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/bg_list_pop.png") left top no-repeat;
+    position: relative;
+    width: 743px;
+    height: 102px;
+    margin: 0 0 10px 0;
+    padding: 20px;
+    z-index: 1; }
+    #rewardPopup #rewardListWrap #rewardList .reward:last-child {
+      height: 156px; }
+    #rewardPopup #rewardListWrap #rewardList .reward.current:before {
+      content: "現在のグレード";
+      position: absolute;
+      left: 114px;
+      top: 0px;
+      width: 168px;
+      line-height: 24px;
+      font-size: 15px;
+      color: #fff;
+      z-index: 5;
+      text-align: center; }
+    #rewardPopup #rewardListWrap #rewardList .reward.current:after {
+      content: "";
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/line_grade.png") left top no-repeat;
+      position: absolute;
+      left: -1px;
+      top: -1px;
+      width: 743px;
+      height: 102px;
+      z-index: 4; }
+    #rewardPopup #rewardListWrap #rewardList .reward .rewardImgTitle {
+      position: absolute;
+      left: 43px;
+      top: 45px;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2em; }
+    #rewardPopup #rewardListWrap #rewardList .reward .rewardTitle {
+      position: absolute;
+      left: 42px;
+      top: 0;
+      line-height: 102px;
+      font-size: 14px; }
+    #rewardPopup #rewardListWrap #rewardList .reward .gradeWrap {
+      position: absolute;
+      left: 14px;
+      top: 5px; }
+      #rewardPopup #rewardListWrap #rewardList .reward .gradeWrap .gradeBg {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/top/bg_grade.png") left top no-repeat;
+        background-size: contain;
+        position: relative;
+        width: 98px;
+        height: 98px; }
+      #rewardPopup #rewardListWrap #rewardList .reward .gradeWrap .gradeIcon {
+        position: absolute;
+        left: 3px;
+        top: 0px;
+        width: 90px;
+        height: 90px; }
+      #rewardPopup #rewardListWrap #rewardList .reward .gradeWrap .emblemIcon {
+        position: absolute;
+        left: 3px;
+        top: 0px;
+        width: 90px;
+        height: 90px; }
+    #rewardPopup #rewardListWrap #rewardList .reward .rankIcon {
+      position: absolute;
+      left: 18px;
+      top: 10px;
+      width: 49px;
+      height: 46px; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank1 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_01.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank2 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_02.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank3 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_03.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank4 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_04.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank5 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_05.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank6 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_06.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank7 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_07.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank8 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_08.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank9 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_09.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank10 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_10.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank11 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_11.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank12 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_12.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank13 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_13.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank14 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_14.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank15 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_15.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank16 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_16.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank17 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_17.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank18 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_18.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank19 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_19.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank20 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_20.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank21 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_21.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank22 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_22.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank23 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_23.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank24 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_24.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank25 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_25.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank26 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_26.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank27 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_27.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank28 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_28.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank29 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_29.png") left top no-repeat;
+        background-size: 100% 100%; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rankIcon.rank30 {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common/rank/rank_30.png") left top no-repeat;
+        background-size: 100% 100%; }
+    #rewardPopup #rewardListWrap #rewardList .reward .needGp {
+      position: absolute;
+      left: 126px;
+      top: 28px;
+      width: 168px;
+      height: 48px;
+      text-align: right;
+      padding: 22px 8px 0 0;
+      background: #000;
+      -webkit-clip-path: polygon(0px 24px, 18px 0px, 168px 0px, 168px 48px, 18px 48px);
+      clip-path: polygon(0px 24px, 18px 0px, 168px 0px, 168px 48px, 18px 48px); }
+      #rewardPopup #rewardListWrap #rewardList .reward .needGp:after {
+        content: "必要GP";
+        position: absolute;
+        left: 20px;
+        top: 0;
+        font-size: 14px;
+        color: #fff; }
+    #rewardPopup #rewardListWrap #rewardList .reward .needRepel {
+      position: absolute;
+      left: 33px;
+      top: 28px;
+      width: 238px;
+      height: 48px;
+      text-align: right;
+      padding: 22px 8px 0 0;
+      background: #000;
+      -webkit-clip-path: polygon(0px 24px, 18px 0px, 238px 0px, 238px 48px, 18px 48px);
+      clip-path: polygon(0px 24px, 18px 0px, 238px 0px, 238px 48px, 18px 48px); }
+      #rewardPopup #rewardListWrap #rewardList .reward .needRepel:after {
+        content: "必要撃退数";
+        position: absolute;
+        left: 20px;
+        top: 0;
+        font-size: 14px;
+        color: #fff; }
+    #rewardPopup #rewardListWrap #rewardList .reward .rankTarget {
+      position: absolute;
+      left: 73px;
+      font-size: 16px;
+      top: 2px;
+      width: 130px;
+      text-align: left;
+      line-height: 25px; }
+    #rewardPopup #rewardListWrap #rewardList .reward .desc {
+      font-size: 16px;
+      position: absolute;
+      left: 0;
+      top: 45px;
+      width: 200px; }
+    #rewardPopup #rewardListWrap #rewardList .reward .rewardImgList {
+      position: absolute;
+      left: 385px;
+      top: 8px;
+      text-align: left; }
+      #rewardPopup #rewardListWrap #rewardList .reward .rewardImgList .rewardImg {
+        display: inline-block;
+        position: relative;
+        width: 36px;
+        height: 36px;
+        margin: 0 0 5px 0; }
+        #rewardPopup #rewardListWrap #rewardList .reward .rewardImgList .rewardImg img {
+          width: 100%;
+          height: 100%; }
+        #rewardPopup #rewardListWrap #rewardList .reward .rewardImgList .rewardImg .quantity {
+          width: 38px;
+          text-align: right;
+          display: block;
+          position: absolute;
+          bottom: -7px;
+          right: 0px;
+          font-size: 14px;
+          pointer-events: none;
+          z-index: 2;
+          text-shadow: -1px -1px 1px #8a5f29, 1px -1px 1px #8a5f29, -1px 1px 1px #8a5f29, 1px 1px 1px #8a5f29, -1px -1px #8a5f29, 1px -1px #8a5f29, -1px 1px #8a5f29, 1px 1px #8a5f29, -1px -1px 1px #8a5f29, 1px -1px 1px #8a5f29, -1px 1px 1px #8a5f29, 1px 1px 1px #8a5f29, -1px -1px #8a5f29, 1px -1px #8a5f29, -1px 1px #8a5f29, 1px 1px #8a5f29; }
+        #rewardPopup #rewardListWrap #rewardList .reward .rewardImgList .rewardImg.main {
+          position: absolute;
+          left: -83px;
+          top: 3px;
+          width: 74px;
+          height: 74px; }
+          #rewardPopup #rewardListWrap #rewardList .reward .rewardImgList .rewardImg.main .quantity {
+            font-size: 16px;
+            width: 74px; }
+        #rewardPopup #rewardListWrap #rewardList .reward .rewardImgList .rewardImg.userTitle_m {
+          width: 190px;
+          height: 24px; }
+  #rewardPopup #rewardListWrap.subjugation #rewardList .reward.current:before {
+    content: "到達した撃退Lv"; }
+  #rewardPopup #rewardListWrap.emblem #rewardList .reward.current:before {
+    content: "最高獲得エンブレム"; }
+  #rewardPopup #rewardListWrap.emblem #rewardList .reward .needGp:after {
+    content: "デイリーダメージ"; }
+  #rewardPopup #rewardListWrap.groupRanking, #rewardPopup #rewardListWrap.memberRanking {
+    top: 194px;
+    height: -webkit-calc(100% - 182px); }
+    #rewardPopup #rewardListWrap.groupRanking #rewardList .reward, #rewardPopup #rewardListWrap.memberRanking #rewardList .reward {
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/bg_list_pop_02.png") left top no-repeat; }
+      #rewardPopup #rewardListWrap.groupRanking #rewardList .reward .rewardImgList, #rewardPopup #rewardListWrap.memberRanking #rewardList .reward .rewardImgList {
+        left: 120px;
+        top: 34px; }
+  #rewardPopup #rewardListWrap.group #rewardList .reward.current:before {
+    content: "現在のグレード"; }
+  #rewardPopup #rewardListWrap.group #rewardList .reward .gradeWrap {
+    left: 166px; }
+  #rewardPopup #rewardListWrap.group #rewardList .reward .desc {
+    width: 436px; }
+  #rewardPopup #rewardListWrap.group #rewardList .reward .rewardImgList {
+    left: 280px;
+    top: 36px; }
+
+#MissionContainer {
+  -webkit-animation: popup_open .3s ease 0s 1 both; }
+  #MissionContainer.close {
+    -webkit-animation: popup_close .3s ease 0s 1 both; }
+  #MissionContainer #missionScrollWrap {
+    width: 896px;
+    height: -webkit-calc(100% - 44px);
+    left: 46px;
+    top: 12px;
+    overflow: hidden; }
+  #MissionContainer #allReserve {
+    width: 130px;
+    position: absolute;
+    top: 11px;
+    right: 24px;
+    z-index: 100;
+    -webkit-filter: unset;
+    filter: unset; }
+    #MissionContainer #allReserve.hide {
+      display: none; }
+  #MissionContainer .missionList {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    padding-right: 0;
+    padding-bottom: 50px;
+    position: relative; }
+    #MissionContainer .missionList .noMission {
+      width: 100%;
+      padding-left: 18px;
+      position: absolute;
+      top: -webkit-calc(50% - 10px);
+      left: 0;
+      font-size: 20px;
+      text-align: center; }
+  #MissionContainer .wrap {
+    background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/bg_list_l.png") left top no-repeat;
+    width: 870px;
+    height: 104px;
+    margin: 10px 0 10px 5px;
+    padding: 20px;
+    position: relative; }
+    #MissionContainer .wrap .commonItemImgWrap {
+      width: 74px;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: wrap;
+      flex-flow: wrap;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      #MissionContainer .wrap .commonItemImgWrap.formation_sheet {
+        background: url("/magica/resource/image_web/item/main/item_bg.png") left center no-repeat;
+        background-size: 74px 74px; }
+        #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase {
+          width: 50px;
+          height: 50px;
+          padding: 5px;
+          background-color: #4d4462;
+          position: absolute;
+          top: -webkit-calc(50% - 25px);
+          left: -webkit-calc(50% - 25px);
+          border-radius: 5px; }
+          #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner {
+            width: 40px;
+            height: 40px;
+            background-color: #736080;
+            position: relative;
+            border-radius: 5px; }
+            #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols {
+              width: 10px;
+              height: 10px;
+              background-color: #736080;
+              position: absolute; }
+              #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.on {
+                background-color: #f4e0ca; }
+              #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation1, #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation4, #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation7 {
+                top: 27px; }
+              #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation2, #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation5, #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation8 {
+                top: 15px; }
+              #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation3, #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation6, #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation9 {
+                top: 3px; }
+              #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation1, #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation2, #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation3 {
+                left: 3px; }
+              #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation4, #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation5, #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation6 {
+                left: 15px; }
+              #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation7, #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation8, #MissionContainer .wrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation9 {
+                left: 27px; }
+      #MissionContainer .wrap .commonItemImgWrap.live2d {
+        background: url("/magica/resource/image_web/item/main/live2d.png") left center no-repeat;
+        background-size: 74px 74px; }
+      #MissionContainer .wrap .commonItemImgWrap.doppel {
+        background: url("/magica/resource/image_web/item/main/doppel.png") left center no-repeat;
+        background-size: 74px 74px; }
+      #MissionContainer .wrap .commonItemImgWrap .commonItemImg {
+        width: 74px; }
+      #MissionContainer .wrap .commonItemImgWrap .quantity {
+        position: absolute;
+        color: #fff;
+        text-shadow: -1px -1px 1px #8a5f29, 1px -1px 1px #8a5f29, -1px 1px 1px #8a5f29, 1px 1px 1px #8a5f29, -1px -1px #8a5f29, 1px -1px #8a5f29, -1px 1px #8a5f29, 1px 1px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 3px #8a5f29, 1px -1px 3px #8a5f29, -1px 1px 3px #8a5f29, 1px 1px 3px #8a5f29; }
+      #MissionContainer .wrap .commonItemImgWrap .charaIcon {
+        width: 58px;
+        height: 52px;
+        position: absolute;
+        bottom: 5px;
+        right: -12px; }
+        #MissionContainer .wrap .commonItemImgWrap .charaIcon:before {
+          width: 58px;
+          height: 52px;
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: -webkit-calc(50% - 29px);
+          background: url("/magica/resource/image_web/common/chara/chara_frame_S.png") left top no-repeat;
+          background-size: 100% 100%;
+          z-index: 100; }
+        #MissionContainer .wrap .commonItemImgWrap .charaIcon:after {
+          width: 58px;
+          height: 52px;
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: -webkit-calc(50% - 29px);
+          background: url("/magica/resource/image_web/common/chara/chara_base_S.png") left top no-repeat;
+          background-size: 100% 100%;
+          z-index: 80; }
+        #MissionContainer .wrap .commonItemImgWrap .charaIcon .maskWrap {
+          width: 52px;
+          height: 52px;
+          position: absolute;
+          top: 0;
+          left: -webkit-calc(50% - 26px);
+          z-index: 90;
+          overflow: hidden;
+          border-radius: 26px; }
+          #MissionContainer .wrap .commonItemImgWrap .charaIcon .maskWrap img {
+            width: 60px;
+            height: auto;
+            position: absolute;
+            top: 0;
+            left: -webkit-calc(50% - 30px); }
+    #MissionContainer .wrap .commonItemImgWrap {
+      top: 0;
+      left: 45px; }
+      #MissionContainer .wrap .commonItemImgWrap .quantity {
+        position: absolute;
+        right: 0;
+        bottom: 4px;
+        font-size: 16px;
+        color: #fff; }
+    #MissionContainer .wrap .missionTitleWrap {
+      width: 546px;
+      height: 60px;
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: 140px;
+      overflow: hidden;
+      font-size: 16px;
+      text-align: left;
+      color: #ffffff; }
+    #MissionContainer .wrap .missionBtn {
+      pointer-events: none;
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      color: #ffffff;
+      min-width: 162px;
+      font-size: 19px;
+      text-shadow: 2px 0px 2px #9931bb, -2px 0px 2px #9931bb, 0px 2px 2px #9931bb, 0px -2px 2px #9931bb, 2px 2px 2px #9931bb, -2px 2px 2px #9931bb, 2px -2px 2px #9931bb, -2px -2px 2px #9931bb;
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/btn_mission_c.png") center top no-repeat;
+      background-size: -webkit-calc(100% - 30px) 64px; }
+      #MissionContainer .wrap .missionBtn:before {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/btn_mission_l.png") left top no-repeat;
+        width: 39px; }
+      #MissionContainer .wrap .missionBtn:after {
+        background: url("/magica/resource/image_web/regularEvent/groupBattle/common2/btn_mission_r.png") left top no-repeat;
+        width: 39px; }
+    #MissionContainer .wrap.clear .missionBtn {
+      pointer-events: auto;
+      -webkit-transform: none;
+      transform: none;
+      -webkit-filter: none;
+      filter: none; }
+    #MissionContainer .wrap.clear:before {
+      width: 66px;
+      height: 68px;
+      background: url("/magica/resource/image_web/regularEvent/groupBattle/common/mission_clear.png") left top no-repeat;
+      position: absolute;
+      top: 1px;
+      left: 0px;
+      content: "";
+      z-index: 2; }
+
+.missionPop .popupTextArea {
+  height: 240px !important;
+  font-size: 24px !important;
+  line-height: 42px !important; }
+
+@-webkit-keyframes regularEventHpBarBrightness {
+  0% {
+    -webkit-filter: brightness(1);
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1" /><feFuncG type="linear" slope="1" /><feFuncB type="linear" slope="1" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(1); }
+  50% {
+    -webkit-filter: brightness(1.75);
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.75" /><feFuncG type="linear" slope="1.75" /><feFuncB type="linear" slope="1.75" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(1.75); }
+  100% {
+    -webkit-filter: brightness(1);
+    filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1" /><feFuncG type="linear" slope="1" /><feFuncB type="linear" slope="1" /></feComponentTransfer></filter></svg>#filter');
+    filter: brightness(1); } }
+
+@-webkit-keyframes regularEventFirstCutinBg2 {
+  0% {
+    -webkit-transform: translateY(-142px);
+    opacity: 1; }
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1; } }
+
+@-webkit-keyframes regularEventFirstCutinBg3 {
+  0% {
+    -webkit-transform: scaleY(-0.22);
+    opacity: 0; }
+  100% {
+    -webkit-transform: scaleY(0.756);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scaleY(1);
+    opacity: 1; } }
+
+@-webkit-keyframes regularEventFirstCutinClearLight {
+  0% {
+    -webkit-transform: rotate(-20deg) scale(0);
+    opacity: 1; }
+  22% {
+    -webkit-transform: rotate(-20deg) scale(0.874);
+    opacity: 1; }
+  52.54% {
+    -webkit-transform: rotate(-10.5deg) scale(2.3);
+    opacity: 1; }
+  77.97% {
+    -webkit-transform: rotate(-2.6deg) scale(1.051);
+    opacity: 0; }
+  86.44% {
+    -webkit-transform: rotate(0deg) scale(0.569);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotate(0deg) scale(0);
+    opacity: 0; } }
+
+@-webkit-keyframes regularEventFirstCutinText {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes regularEventFirstCutinTextBright {
+  0% {
+    -webkit-transform: scale(2);
+    opacity: 0; }
+  38% {
+    -webkit-transform: scale(1.316);
+    opacity: 0; }
+  58% {
+    -webkit-transform: scale(1);
+    opacity: 0.5; }
+  78% {
+    -webkit-transform: scale(1);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0; } }
+
+#EventRecord {
+  width: 1024px;
+  height: 100%; }
+  #EventRecord #header {
+    background: url("/magica/resource/image_web/page/record/title_bg.png") left top no-repeat;
+    position: absolute;
+    left: 0;
+    top: 82px;
+    width: 400px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 32px;
+    padding-left: 56px;
+    color: #fff; }
+    #EventRecord #header:after {
+      content: "";
+      background: url(/magica/resource/image_web/common/frame/icon_header_star.png) left top no-repeat;
+      position: absolute;
+      left: 20px;
+      top: 10px;
+      width: 14px;
+      height: 14px;
+      background-size: 100%; }
+  #EventRecord #scrollOuter {
+    position: relative;
+    left: 136px;
+    top: 110px;
+    width: 100%;
+    height: -webkit-calc(100% - 108px);
+    overflow-y: hidden; }
+  #EventRecord #groupBattleResultList {
+    width: 750px;
+    height: auto;
+    min-height: 100%;
+    padding: 10px 0 30px; }
+    #EventRecord #groupBattleResultList .noList {
+      text-align: center;
+      margin-top: 100px;
+      font-size: 20px; }
+    #EventRecord #groupBattleResultList .result {
+      background: url("/magica/resource/image_web/page/record/record_kimochi_bg.png") left top no-repeat;
+      position: relative;
+      width: 750px;
+      height: 136px;
+      margin-bottom: 15px; }
+      #EventRecord #groupBattleResultList .result .logoWrap {
+        position: absolute;
+        left: 56px;
+        top: 26px;
+        width: 230px;
+        height: 73px;
+        overflow: hidden; }
+        #EventRecord #groupBattleResultList .result .logoWrap .stone {
+          position: absolute;
+          left: 0;
+          top: -5px;
+          height: 82px; }
+        #EventRecord #groupBattleResultList .result .logoWrap .title {
+          position: absolute;
+          right: 0;
+          top: 6px;
+          width: 200px; }
+      #EventRecord #groupBattleResultList .result.special .logoWrap .title {
+        position: absolute;
+        right: -webkit-calc(50% - 100px);
+        width: 200px; }
+      #EventRecord #groupBattleResultList .result .date {
+        position: absolute;
+        left: 55px;
+        top: 8px;
+        width: 500px;
+        font-size: 12px;
+        color: #fff; }
+      #EventRecord #groupBattleResultList .result .infoWrap {
+        position: absolute;
+        font-size: 17px; }
+        #EventRecord #groupBattleResultList .result .infoWrap div:nth-Child(1) {
+          position: absolute;
+          left: 12px;
+          top: 0px;
+          width: 156px;
+          font-size: 14px;
+          line-height: 28px;
+          text-align: center; }
+        #EventRecord #groupBattleResultList .result .infoWrap div:nth-Child(2) {
+          position: absolute;
+          right: 22px;
+          top: 0px;
+          width: 152px;
+          text-align: right;
+          font-size: 16px;
+          line-height: 28px; }
+      #EventRecord #groupBattleResultList .result .totalPointWrap {
+        background: url("/magica/resource/image_web/page/record/kimochi_point_bg.png") left top no-repeat;
+        left: 20px;
+        bottom: 10px;
+        width: 338px;
+        height: 28px; }
+      #EventRecord #groupBattleResultList .result .dailyDamageWrap {
+        background: url("/magica/resource/image_web/page/record/kimochi_damage_bg.png") left top no-repeat;
+        left: 358px;
+        bottom: 10px;
+        width: 340px;
+        height: 28px; }
+      #EventRecord #groupBattleResultList .result .gradeBg {
+        background: url("/magica/resource/image_web/page/record/kimochi_grade_bg.png") left top no-repeat;
+        position: absolute;
+        left: 8px;
+        bottom: 7px;
+        width: 52px;
+        height: 62px; }
+      #EventRecord #groupBattleResultList .result .gradeIcon {
+        position: absolute;
+        left: 8px;
+        bottom: 11px;
+        width: 50px;
+        height: 51px; }
+      #EventRecord #groupBattleResultList .result .dailyTitle {
+        position: absolute;
+        left: 334px;
+        top: 5px;
+        width: 350px;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #962eec; }
+      #EventRecord #groupBattleResultList .result .dailyList {
+        position: absolute;
+        left: 272px;
+        bottom: 34px; }
+        #EventRecord #groupBattleResultList .result .dailyList .dailyWrap {
+          background: url("/magica/resource/image_web/page/record/kimochi_emblem_bg.png") left top no-repeat;
+          display: inline-block;
+          position: relative;
+          width: 120px;
+          height: 70px;
+          margin-right: -38px; }
+          #EventRecord #groupBattleResultList .result .dailyList .dailyWrap .gbFontWhite {
+            position: absolute;
+            left: 42px;
+            width: 71px;
+            line-height: 18px;
+            text-align: center;
+            font-size: 14px; }
+          #EventRecord #groupBattleResultList .result .dailyList .dailyWrap .emblemIcon {
+            position: absolute;
+            left: 37px;
+            top: 21px;
+            width: 53px;
+            height: 48px; }
+          #EventRecord #groupBattleResultList .result .dailyList .dailyWrap .noEntry {
+            position: absolute;
+            left: 37px;
+            top: 21px;
+            width: 48px;
+            line-height: 48px;
+            text-align: center; }
