@@ -1,0 +1,247 @@
+li.touch {
+  -webkit-transform: translateZ(0) scale(0.95);
+  -webkit-filter: brightness(120%) !important;
+}
+
+#popupArea .saleSelectPop .popupInner {
+  width: 850px;
+  height: 490px;
+  position: absolute;
+  top: -webkit-calc(50% - 220px);
+  left: -webkit-calc((100% - 850px) / 2);
+}
+
+#popupArea .saleSelectPop #popupInfoDetailTitle {
+  width: 740px;
+}
+
+#popupArea .saleSelectPop .normalTitle {
+  position: relative;
+  background: url("/magica/resource/image_web/page/memoria/memoria_title_storage_01.png") left top no-repeat;
+  width: 814px;
+  height: 38px;
+  margin: 10px auto -10px;
+}
+
+#popupArea .saleSelectPop .archiveTitle {
+  position: relative;
+  background: url("/magica/resource/image_web/page/memoria/memoria_title_storage_02.png") left top no-repeat;
+  width: 814px;
+  height: 38px;
+  margin: 10px auto -10px;
+}
+
+#popupArea .saleSelectPop .popupBtnArea {
+  width: 300px;
+  margin: 20px auto 0px;
+}
+
+#popupArea .saleSelectPop .popupBtnArea .toListBtn {
+  position: relative;
+  background: url("/magica/resource/image_web/page/memoria/btn_memoria_storage_11.png") left top no-repeat;
+  width: 258px;
+  height: 74px;
+  display: block;
+  margin: 10px auto;
+}
+
+#popupArea .saleSelectPop .popupBtnArea .toListBtn .name, #popupArea .saleSelectPop .popupBtnArea .toListBtn .pieceNum {
+  color: #fff;
+  text-shadow: -1px -1px 3px #d754a8, 1px -1px 3px #d754a8, -1px 1px 3px #d754a8, 1px 1px 3px #d754a8, -1px -1px 3px #d754a8, 1px -1px 3px #d754a8, -1px 1px 3px #d754a8, 1px 1px 3px #d754a8;
+}
+
+#popupArea .saleSelectPop .popupBtnArea .toListBtn .name {
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  width: 210px;
+  font-size: 18px;
+}
+
+#popupArea .saleSelectPop .popupBtnArea .toListBtn .pieceNum {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  width: 200px;
+}
+
+#popupArea .saleSelectPop .popupBtnArea .toArchiveBtn {
+  position: relative;
+  background: url("/magica/resource/image_web/page/memoria/btn_memoria_storage_12.png") left top no-repeat;
+  width: 258px;
+  height: 74px;
+  display: block;
+  margin: 10px auto;
+}
+
+#popupArea .saleSelectPop .popupBtnArea .toArchiveBtn .name, #popupArea .saleSelectPop .popupBtnArea .toArchiveBtn .pieceNum {
+  color: #fff;
+  text-shadow: -1px -1px 3px #7240f0, 1px -1px 3px #7240f0, -1px 1px 3px #7240f0, 1px 1px 3px #7240f0, -1px -1px 3px #7240f0, 1px -1px 3px #7240f0, -1px 1px 3px #7240f0, 1px 1px 3px #7240f0;
+}
+
+#popupArea .saleSelectPop .popupBtnArea .toArchiveBtn .name {
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  width: 210px;
+  font-size: 18px;
+}
+
+#popupArea .saleSelectPop .popupBtnArea .toArchiveBtn .pieceNum {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  width: 200px;
+}
+
+#popupArea .saleSelectPop .popupBtnArea .toArchiveBtn.off, #popupArea .saleSelectPop .popupBtnArea .toListBtn.off {
+  pointer-events: none;
+}
+
+#popupArea .saleSelectPop .popupBtnArea .toArchiveBtn.off:after, #popupArea .saleSelectPop .popupBtnArea .toListBtn.off:after {
+  content: "";
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 258px;
+  height: 74px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px 0 0;
+  border-radius: 18px;
+}
+
+#popupArea .archiveSelectPop .popupInner {
+  width: 850px;
+  height: 340px;
+  position: absolute;
+  top: -webkit-calc(50% - 150px);
+  left: -webkit-calc((100% - 850px) / 2);
+}
+
+#popupArea .archiveSelectPop #popupInfoDetailTitle {
+  width: 740px;
+}
+
+#popupArea .archiveSelectPop .archiveTitle {
+  position: relative;
+  background: url("/magica/resource/image_web/page/memoria/memoria_title_storage_02.png") left top no-repeat;
+  width: 814px;
+  height: 38px;
+  margin: 10px auto -10px;
+}
+
+#popupArea .archiveSelectPop .popupBtnArea {
+  width: 300px;
+  margin: 20px auto 0px;
+}
+
+#popupArea .archiveSelectPop .popupBtnArea .toArchiveBtn {
+  position: relative;
+  background: url("/magica/resource/image_web/page/memoria/btn_memoria_storage_12.png") left top no-repeat;
+  width: 258px;
+  height: 74px;
+  display: block;
+  margin: 10px auto;
+}
+
+#popupArea .archiveSelectPop .popupBtnArea .toArchiveBtn .name, #popupArea .archiveSelectPop .popupBtnArea .toArchiveBtn .pieceNum {
+  color: #fff;
+  text-shadow: -1px -1px 3px #7240f0, 1px -1px 3px #7240f0, -1px 1px 3px #7240f0, 1px 1px 3px #7240f0, -1px -1px 3px #7240f0, 1px -1px 3px #7240f0, -1px 1px 3px #7240f0, 1px 1px 3px #7240f0;
+}
+
+#popupArea .archiveSelectPop .popupBtnArea .toArchiveBtn .name {
+  position: absolute;
+  top: 14px;
+  left: 24px;
+  width: 210px;
+  font-size: 18px;
+}
+
+#popupArea .archiveSelectPop .popupBtnArea .toArchiveBtn .pieceNum {
+  position: absolute;
+  top: 40px;
+  left: 30px;
+  width: 200px;
+}
+
+#MemoriaTop {
+  width: 1024px;
+  height: 100%;
+  position: relative;
+}
+
+#MemoriaTop #charaImgWrap {
+  width: 1024px;
+  height: 768px;
+  position: absolute;
+  top: -webkit-calc(50% - 384px);
+  left: -240px;
+}
+
+#MemoriaTop .btnList {
+  width: 100%;
+  height: 448px;
+  display: block;
+  position: absolute;
+  top: -webkit-calc(50% - 200px);
+  left: 0;
+}
+
+#MemoriaTop .btnList li {
+  width: 166px;
+  height: 224px;
+  position: absolute;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -webkit-transform: translateZ(0);
+}
+
+#MemoriaTop .btnList li .diamond {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -webkit-transform: translateZ(0);
+}
+
+#MemoriaTop .btnList li.composeLinkBtn, #MemoriaTop .btnList li.listLinkBtn, #MemoriaTop .btnList li.limitBreakLinkBtn {
+  top: 0px;
+}
+
+#MemoriaTop .btnList li.setLinkBtn, #MemoriaTop .btnList li.archiveLinkBtn, #MemoriaTop .btnList li.saleLinkBtn {
+  bottom: 0px;
+}
+
+#MemoriaTop .btnList li.composeLinkBtn {
+  background: url("/magica/resource/image_web/page/memoria/memoriatop_btn_compose_b.png") left top no-repeat;
+  right: 387px;
+}
+
+#MemoriaTop .btnList li.listLinkBtn {
+  background: url("/magica/resource/image_web/page/memoria/memoriatop_btn_list_b.png") left top no-repeat;
+  right: 221px;
+}
+
+#MemoriaTop .btnList li.limitBreakLinkBtn {
+  background: url("/magica/resource/image_web/page/memoria/memoriatop_btn_limitbreak_b.png") left top no-repeat;
+  right: 55px;
+}
+
+#MemoriaTop .btnList li.setLinkBtn {
+  background: url("/magica/resource/image_web/page/memoria/memoriatop_btn_set_a.png") left top no-repeat;
+  right: 387px;
+}
+
+#MemoriaTop .btnList li.archiveLinkBtn {
+  background: url("/magica/resource/image_web/page/memoria/memoriatop_btn_storage.png") left top no-repeat;
+  right: 221px;
+}
+
+#MemoriaTop .btnList li.saleLinkBtn {
+  background: url("/magica/resource/image_web/page/memoria/memoriatop_btn_sale_b.png") left top no-repeat;
+  right: 55px;
+}

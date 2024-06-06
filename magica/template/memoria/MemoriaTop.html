@@ -1,0 +1,85 @@
+<div id="MemoriaTop">
+	<div id="charaImgWrap"></div>
+
+	<ul class="btnList">
+		<li class="TE composeLinkBtn"><div class="linkBtn se_decide diamond" data-href="#/MemoriaList/compose"></div></li>
+		<li class="TE listLinkBtn"><div class="linkBtn se_decide diamond" data-href="#/MemoriaList"></div></li>
+		<li class="TE limitBreakLinkBtn"><div class="linkBtn se_decide diamond" data-href="#/MemoriaList/limitbreak"></div></li>
+		<li class="TE setLinkBtn"><div class="linkBtn se_decide diamond" data-href="#/MemoriaSetList"></div></li>
+		<li class="TE archiveLinkBtn"><div class="se_decide diamond"></div></li>
+		<li class="TE saleLinkBtn"><div class="se_decide diamond"></div></li>
+	</ul>
+</div>
+
+<!-- 売却ポップアップ -->
+<script type="text/template" id="salePopTempParts">
+	<div class="popupInner">
+		<span class="closeDefault popupCloseBtn se_cancel TE"></span>
+		<p id="popupInfoDetailTitle" class="popupTitle common_title">売却する場所を選択</p>
+
+		<div class="normalTitle"></div>
+		<table class="popupBtnArea" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td colspan="2"><span class="TE toListBtn linkBtn popupCloseBtn se_decide<%='<% if(model.piece.length <= 0){ %\>'%> off<%='<% } %\>'%>" data-href="#/MemoriaList/sell">
+					<span class="name">所持枠</span>
+					<span class="pieceNum"><%='<%= model.piece.length %\>'%>/<%='<%= model.cardCapacity %\>'%></span>
+				</span></td>
+			</tr>
+		</table>
+
+		<div class="archiveTitle"></div>
+		<table class="popupBtnArea" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td><span class="TE toArchiveBtn linkBtn popupCloseBtn se_decide<%='<% if(model.data[0].piece.length <= 0){ %\>'%> off<%='<% } %\>'%>" data-href="#/MemoriaList/archiveSell1">
+					<span class="name"><%='<%= _.escape(model.data[0].storage.name) %\>'%></span>
+					<span class="pieceNum"><%='<%= model.data[0].piece.length %\>'%>/500</span>
+				</span></td>
+				<td><span class="TE toArchiveBtn linkBtn popupCloseBtn se_decide<%='<% if(model.data[1].piece.length <= 0){ %\>'%> off<%='<% } %\>'%>" data-href="#/MemoriaList/archiveSell2">
+					<span class="name"><%='<%= _.escape(model.data[1].storage.name) %\>'%></span>
+					<span class="pieceNum"><%='<%= model.data[1].piece.length %\>'%>/500</span>
+				</span></td>
+			</tr>
+			<tr>
+				<td><span class="TE toArchiveBtn linkBtn popupCloseBtn se_decide<%='<% if(model.data[2].piece.length <= 0){ %\>'%> off<%='<% } %\>'%>" data-href="#/MemoriaList/archiveSell3">
+					<span class="name"><%='<%= _.escape(model.data[2].storage.name) %\>'%></span>
+					<span class="pieceNum"><%='<%= model.data[2].piece.length %\>'%>/500</span>
+				</span></td>
+				<td><span class="TE toArchiveBtn linkBtn popupCloseBtn se_decide<%='<% if(model.data[3].piece.length <= 0){ %\>'%> off<%='<% } %\>'%>" data-href="#/MemoriaList/archiveSell4">
+					<span class="name"><%='<%= _.escape(model.data[3].storage.name) %\>'%></span>
+					<span class="pieceNum"><%='<%= model.data[3].piece.length %\>'%>/500</span>
+				</span></td>
+			</tr>
+		</table>
+	</div>
+</script>
+
+<!-- 保管庫増築 -->
+<script type="text/template" id="archivePopTempParts">
+	<div class="popupInner">
+		<span class="closeDefault popupCloseBtn se_cancel TE"></span>
+		<p id="popupInfoDetailTitle" class="popupTitle common_title">一覧を表示する保管庫を選択</p>
+		<div class="archiveTitle"></div>
+		<table class="popupBtnArea" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td><span class="TE toArchiveBtn linkBtn popupCloseBtn se_decide" data-href="#/MemoriaList/archiveList1">
+					<span class="name"><%='<%= _.escape(model.data[0].storage.name) %\>'%></span>
+					<span class="pieceNum"><%='<%= model.data[0].piece.length %\>'%>/500</span>
+				</span></td>
+				<td><span class="TE toArchiveBtn linkBtn popupCloseBtn se_decide" data-href="#/MemoriaList/archiveList2">
+					<span class="name"><%='<%= _.escape(model.data[1].storage.name) %\>'%></span>
+					<span class="pieceNum"><%='<%= model.data[1].piece.length %\>'%>/500</span>
+				</span></td>
+			</tr>
+			<tr>
+				<td><span class="TE toArchiveBtn linkBtn popupCloseBtn se_decide" data-href="#/MemoriaList/archiveList3">
+					<span class="name"><%='<%= _.escape(model.data[2].storage.name) %\>'%></span>
+					<span class="pieceNum"><%='<%= model.data[2].piece.length %\>'%>/500</span>
+				</span></td>
+				<td><span class="TE toArchiveBtn linkBtn popupCloseBtn se_decide" data-href="#/MemoriaList/archiveList4">
+					<span class="name"><%='<%= _.escape(model.data[3].storage.name) %\>'%></span>
+					<span class="pieceNum"><%='<%= model.data[3].piece.length %\>'%>/500</span>
+				</span></td>
+			</tr>
+		</table>
+	</div>
+</script>
