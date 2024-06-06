@@ -1,0 +1,714 @@
+.missionPop .popupTextArea {
+  height: 240px !important;
+  font-size: 24px !important;
+  line-height: 42px !important;
+}
+
+/* panelMissionTop */
+#panelMissionTop {
+  width: 100%;
+  height: 100%;
+}
+
+#panelMissionTop #titleImage {
+  width: 316px;
+  height: 140px;
+  position: absolute;
+  left: 0;
+  bottom: 86px;
+}
+
+#panelMissionTop #titleInfo {
+  width: 316px;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  bottom: 6px;
+}
+
+#panelMissionTop #titleInfo.hide {
+  display: none;
+}
+
+#panelMissionTop #lastMision {
+  width: 316px;
+  height: 80px;
+  position: absolute;
+  left: 0px;
+  bottom: 6px;
+  display: none;
+}
+
+#panelMissionTop #lastMision.clear {
+  display: block;
+}
+
+#panelMissionTop #lastMision .missionBtn {
+  width: 316px;
+  height: 80px;
+  background: url("/magica/resource/image_web/page/mission/panelMission/common/btn_get_comp.png") left top no-repeat;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  line-height: 76px;
+  text-shadow: 2px 0px 2px #ff5e7c, -2px 0px 2px #ff5e7c, 0px 2px 2px #ff5e7c, 0px -2px 2px #ff5e7c, 2px 2px 2px #ff5e7c, -2px 2px 2px #ff5e7c, 2px -2px 2px #ff5e7c, -2px -2px 2px #ff5e7c;
+}
+
+#panelMissionTop #lastMision .missionBtn.received, #panelMissionTop #lastMision .missionBtn.disable {
+  pointer-events: none;
+  -webkit-filter: grayscale(100%);
+}
+
+#panelMissionTop #lastMision .missionWrap .commonItemImgWrap {
+  display: none;
+}
+
+#panelMissionTop #panelWrap {
+  width: 690px;
+  height: 500px;
+  position: absolute;
+  top: -webkit-calc(50% - 250px + 26px);
+  right: 18px;
+  padding-top: 44px;
+  padding-left: 20px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner {
+  width: 650px;
+  height: 445px;
+  position: relative;
+  -webkit-display: flex;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap {
+  width: 210px;
+  height: 140px;
+  background: rgba(225, 231, 239, 0.7);
+  border-radius: 5px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap.complete:before {
+  width: 132px;
+  height: 132px;
+  z-index: 100;
+  background: url("/magica/resource/image_web/page/mission/panelMission/common/icon_panelmission_clear.png") left top no-repeat;
+  position: absolute;
+  top: 4px;
+  left: 39px;
+  content: "";
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .missionText {
+  width: 190px;
+  font-size: 18px;
+  line-height: 22px;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  overflow: hidden;
+  display: block;
+  text-align: left;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap {
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet {
+  background: url("/magica/resource/image_web/item/main/item_bg.png") left center no-repeat;
+  background-size: 60px 60px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  background-color: #4d4462;
+  position: absolute;
+  top: -webkit-calc(50% - 25px);
+  left: -webkit-calc(50% - 25px);
+  border-radius: 5px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner {
+  width: 40px;
+  height: 40px;
+  background-color: #736080;
+  position: relative;
+  border-radius: 5px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols {
+  width: 10px;
+  height: 10px;
+  background-color: #736080;
+  position: absolute;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.on {
+  background-color: #f4e0ca;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation1, #panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation4, #panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation7 {
+  top: 27px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation2, #panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation5, #panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation8 {
+  top: 15px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation3, #panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation6, #panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation9 {
+  top: 3px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation1, #panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation2, #panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation3 {
+  left: 3px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation4, #panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation5, #panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation6 {
+  left: 15px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation7, #panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation8, #panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation9 {
+  left: 27px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.live2d {
+  background: url("/magica/resource/image_web/item/main/live2d.png") left center no-repeat;
+  background-size: 60px 60px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap.doppel {
+  background: url("/magica/resource/image_web/item/main/doppel.png") left center no-repeat;
+  background-size: 60px 60px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .commonItemImg {
+  width: 60px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .quantity {
+  position: absolute;
+  color: #fff;
+  text-shadow: -1px -1px 1px #8a5f29, 1px -1px 1px #8a5f29, -1px 1px 1px #8a5f29, 1px 1px 1px #8a5f29, -1px -1px #8a5f29, 1px -1px #8a5f29, -1px 1px #8a5f29, 1px 1px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 3px #8a5f29, 1px -1px 3px #8a5f29, -1px 1px 3px #8a5f29, 1px 1px 3px #8a5f29;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .charaIcon {
+  width: 58px;
+  height: 52px;
+  position: absolute;
+  bottom: 5px;
+  right: -12px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .charaIcon:before {
+  width: 58px;
+  height: 52px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 29px);
+  background: url("/magica/resource/image_web/common/chara/chara_frame_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  z-index: 100;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .charaIcon:after {
+  width: 58px;
+  height: 52px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 29px);
+  background: url("/magica/resource/image_web/common/chara/chara_base_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  z-index: 80;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .charaIcon .maskWrap {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 26px);
+  z-index: 90;
+  overflow: hidden;
+  border-radius: 26px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .charaIcon .maskWrap img {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 30px);
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap {
+  bottom: 13px;
+  left: 15px;
+  height: 60px;
+  top: initial;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .userCharaIcon {
+  width: 60px;
+  height: 60px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .userCharaIcon .att, #panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .userCharaIcon .star, #panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .userCharaIcon .rank, #panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .userCharaIcon .bg {
+  width: 60px;
+  height: 60px;
+  background-size: 60px 60px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .userCharaIcon img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  z-index: 5;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .charaIcon {
+  width: 44px;
+  height: 38px;
+  position: absolute;
+  right: -20px;
+  bottom: -8px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .charaIcon.live2d {
+  right: 176px;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .charaIcon img {
+  max-width: 100%;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .charaIcon:before {
+  width: 44px;
+  height: 38px;
+  background: url("/magica/resource/image_web/common/chara/chara_frame_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 29px);
+  content: "";
+  z-index: 100;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .charaIcon:after {
+  width: 44px;
+  height: 38px;
+  background: url("/magica/resource/image_web/common/chara/chara_base_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 29px);
+  content: "";
+  z-index: 80;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .charaIcon .maskWrap {
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 26px);
+  overflow: hidden;
+  border-radius: 26px;
+  z-index: 90;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .charaIcon .maskWrap img {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 20px);
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .commonItemImgWrap .quantity {
+  position: absolute;
+  font-size: 14px;
+  right: -5px;
+  bottom: -8px;
+  color: #fff;
+  text-shadow: -1px -1px 1px #8a5f29, 1px -1px 1px #8a5f29, -1px 1px 1px #8a5f29, 1px 1px 1px #8a5f29, -1px -1px #8a5f29, 1px -1px #8a5f29, -1px 1px #8a5f29, 1px 1px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 3px #8a5f29, 1px -1px 3px #8a5f29, -1px 1px 3px #8a5f29, 1px 1px 3px #8a5f29;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .missionBtn {
+  width: 110px;
+  height: 34px;
+  position: absolute;
+  right: 12px;
+  bottom: 25px;
+  background: url("/magica/resource/image_web/page/mission/panelMission/common/btn_challenge.png") left top no-repeat;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .missionBtn.clear {
+  background: url("/magica/resource/image_web/page/mission/panelMission/common/btn_get.png") left top no-repeat;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .missionBtn.received {
+  background: url("/magica/resource/image_web/page/mission/panelMission/common/btn_get_gray.png") left top no-repeat;
+  pointer-events: none;
+}
+
+#panelMissionTop #panelWrap #panelWrapInner .missionWrap .missionBtn.disable {
+  pointer-events: none;
+  -webkit-filter: grayscale(100%);
+}
+
+#panelMissionTop #campaignAnimationWrap {
+  width: 1424px;
+  height: 768px;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -200px;
+  opacity: 0;
+  z-index: 101;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap {
+  width: 1024px;
+  height: 576px;
+  position: fixed;
+  top: -webkit-calc(50% - 288px);
+  left: 0px;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap {
+  width: 244px;
+  height: 114px;
+  display: -webkit-flex;
+  display: flex;
+  position: absolute;
+  top: 242px;
+  left: 386px;
+  -webkit-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-content: space-around;
+  align-content: space-around;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap.card {
+  top: 234px;
+  left: 390px;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap.card .animItemBox {
+  width: 130px;
+  height: 130px;
+  padding: 9px;
+  background: url("/magica/resource/image_web/page/mission/panelMission/common/mission_comp_ef.png") left top no-repeat;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap.card .animItemBox .userCharaIcon {
+  width: 112px;
+  height: 112px;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap.card .animItemBox .userCharaIcon .att, #panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap.card .animItemBox .userCharaIcon .star, #panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap.card .animItemBox .userCharaIcon .rank, #panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap.card .animItemBox .userCharaIcon .bg {
+  width: 112px;
+  height: 112px;
+  background-size: 112px 112px;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap.card .animItemBox .userCharaIcon img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 5;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap .animItemBox {
+  width: 114px;
+  height: 114px;
+  padding: 7px;
+  background: url("/magica/resource/image_web/page/quest/animation/square_light.png") left top no-repeat;
+  opacity: 0;
+  z-index: 5;
+  position: relative;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap .animItemBox img {
+  width: 100px;
+  height: 100px;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap .animItemBox .campaignQuantity {
+  position: absolute;
+  top: 88px;
+  right: 6px;
+  font-size: 20px;
+  z-index: 10;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap .animItemBox .userCharaIcon {
+  width: 100px;
+  height: 100px;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap .animItemBox .userCharaIcon .att, #panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap .animItemBox .userCharaIcon .star, #panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap .animItemBox .userCharaIcon .rank, #panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap .animItemBox .userCharaIcon .bg {
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animItemWrap .animItemBox .userCharaIcon img {
+  width: 94px;
+  height: 94px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 5;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animRolingLight {
+  width: 414px;
+  height: 417px;
+  background: url("/magica/resource/image_web/page/quest/animation/light.png") left top no-repeat;
+  position: absolute;
+  top: 94px;
+  left: 305px;
+  opacity: 0;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animEf01 {
+  width: 389px;
+  height: 389px;
+  background: url("/magica/resource/image_web/page/quest/animation/story_clear_magic_team.png") left top no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 91px;
+  left: 317px;
+  opacity: 0;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animEf02 {
+  width: 558px;
+  height: 558px;
+  background: url("/magica/resource/image_web/page/quest/animation/section_clear_petal.png") center center no-repeat;
+  position: absolute;
+  top: 6px;
+  left: 224px;
+  opacity: 0;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animRibon {
+  width: 295px;
+  height: 189px;
+  background: url("/magica/resource/image_web/campaign/login_bonus/common/campaign_result_ribon.png") left top no-repeat;
+  position: absolute;
+  top: 57px;
+  left: 358px;
+  opacity: 0;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .itemPetal1 {
+  width: 314px;
+  height: 139px;
+  background: url("/magica/resource/image_web/page/quest/animation/section_clear_petal.png") left top no-repeat;
+  position: absolute;
+  top: 218px;
+  left: 355px;
+  opacity: 0;
+  z-index: 8;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .itemPetal2 {
+  width: 314px;
+  height: 139px;
+  background: url("/magica/resource/image_web/page/quest/animation/section_clear_petal.png") left top no-repeat;
+  position: absolute;
+  top: 218px;
+  left: 355px;
+  opacity: 0;
+  z-index: 9;
+}
+
+#panelMissionTop #campaignAnimationWrap .animationBaseWrap .animTx {
+  width: 453px;
+  height: 174px;
+  background: url("/magica/resource/image_web/page/mission/panelMission/common/mission_complete_b.png") center center no-repeat, url("/magica/resource/image_web/page/mission/panelMission/common/mission_complete_s.png") center 122px no-repeat;
+  position: absolute;
+  top: 66px;
+  left: 283px;
+  opacity: 0;
+  z-index: 10;
+}
+
+#panelMissionTop #campaignAnimationWrap.anim {
+  display: block;
+  -webkit-animation: .6s simpleFadeIn ease .0s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#panelMissionTop #campaignAnimationWrap.anim.fadeOut {
+  -webkit-animation: .167s simpleFadeOut ease-in-out 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#panelMissionTop #campaignAnimationWrap.anim .animationBaseWrap .animRolingLight {
+  -webkit-animation: .167s simpleFadeIn ease-in-out 1.2s 1 normal, 2.03s itemLightScale linear 1.2s 1 normal, 33.33s itemLightRotate linear 1.2s infinite normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#panelMissionTop #campaignAnimationWrap.anim .animationBaseWrap .itemPetal1 {
+  -webkit-animation: .73s petalFirst linear 1.2s 1 normal, .73s petalFadeInOut ease-in-out 1.2s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#panelMissionTop #campaignAnimationWrap.anim .animationBaseWrap .itemPetal2 {
+  -webkit-animation: .73s petalSecond linear 1.2s 1 normal, .73s petalFadeInOut ease-in-out 1.2s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#panelMissionTop #campaignAnimationWrap.anim .animationBaseWrap .animItemBox {
+  -webkit-animation: .167s simpleFadeIn ease-in-out 1.2s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#panelMissionTop #campaignAnimationWrap.anim .animationBaseWrap .animEf01 {
+  -webkit-animation: .167s simpleFadeIn ease .667s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#panelMissionTop #campaignAnimationWrap.anim .animationBaseWrap .animEf02 {
+  -webkit-animation: .167s simpleFadeIn ease 1.2s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#panelMissionTop #campaignAnimationWrap.anim .animationBaseWrap .animTx {
+  -webkit-animation: .167s simpleFadeIn ease .867s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+@-webkit-keyframes simpleFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes simpleFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes itemLightScale {
+  0% {
+    -webkit-transform: scale(1.5);
+  }
+  63% {
+    -webkit-transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-webkit-keyframes itemLightRotate {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+  25% {
+    -webkit-transform: rotate(90deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes petalFadeInOut {
+  0%, 100% {
+    opacity: 0;
+    -webkit-filter: brightness(100%);
+  }
+  11% {
+    opacity: 1;
+    -webkit-filter: brightness(400%);
+  }
+}
+
+@-webkit-keyframes petalFirst {
+  0% {
+    -webkit-transform: rotate(0deg) scale(0);
+  }
+  25% {
+    -webkit-transform: rotate(60deg) scale(0.425);
+  }
+  50% {
+    -webkit-transform: rotate(120deg) scale(0.85);
+  }
+  75% {
+    -webkit-transform: rotate(180deg) scale(1.275);
+  }
+  100% {
+    -webkit-transform: rotate(240deg) scale(1.7);
+  }
+}
+
+@-webkit-keyframes petalSecond {
+  0% {
+    -webkit-transform: rotate(90deg) scale(0);
+  }
+  25% {
+    -webkit-transform: rotate(180deg) scale(0.35);
+  }
+  50% {
+    -webkit-transform: rotate(240deg) scale(0.7);
+  }
+  75% {
+    -webkit-transform: rotate(300deg) scale(1.15);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1.4);
+  }
+}
