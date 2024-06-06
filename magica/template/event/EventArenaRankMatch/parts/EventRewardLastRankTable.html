@@ -1,0 +1,19 @@
+<tr>
+  <td class="rankSec"><%= model.rank %></td>
+  <td class="emblemSec">
+    <div class="emblem rank<%= model.emblemRank %>"></div>
+  </td>
+  <td class="itemSec">
+<% if(model.itemList[0]){ %>
+    <!-- いったんアイテム数は1個想定 -->
+    <div class="item">
+      <p class="numWrap c_white">
+        <span class="getNum ts_gold">×<%= model.itemList[0].num %></span>
+      </p>
+      <img src="<%= model.itemList[0].img %>" alt="" class="img">
+    </div>
+<% }else { %>
+    <div class="noItemText">報酬なし</div>
+<% } %>
+  </td>
+</tr>

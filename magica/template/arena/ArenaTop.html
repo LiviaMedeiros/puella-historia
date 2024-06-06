@@ -1,0 +1,307 @@
+<div id="ArenaTop" class="<%= currentEventClass %>">
+	<div id="infinitMirrorsWrap">
+
+		<!-- 現在の鏡層 -->
+		<div class="nowTitle"></div>
+		<div class="nowFloor">
+			<img src="<%= resDir %>/magica/resource/image_web/page/arena/rank_string/<%= model.currentFreeRankClassType.toLowerCase() %>.png">
+		</div>
+
+		<!-- 果てなしのミラーズ -->
+		<div class="nextWrap <% if(!canPlay){ %> cantEnter<% } %>">
+
+			<!-- 次の鏡層が実装済みの場合 -->
+			<% if(model.currentFreeRankClass.nextClass){ %>
+
+			<p class="nextFloor arenaColor">NEXT...&nbsp;<span class="nextFloorInner arenaColor"><%= model.currentFreeRankClass.nextClassName %></span></p>
+
+			<!-- ミラーズPt関連 -->
+			<div class="infinitGuage">
+				<%
+					var mathFact = (model.previousFreeRankClass) ? model.previousFreeRankClass.requiredPoint | 0 : 0;
+					var guageLen = Math.round((model.freeRankArenaPoint - mathFact) / (model.currentFreeRankClass.requiredPoint - mathFact) * 100);
+				%>
+				<span class="infinitGuageInner" style="width:<%= guageLen %>%;"></span>
+			</div>
+			<p class="pointLeft arenaColor">あと<%= (model.currentFreeRankClass.requiredPoint - model.freeRankArenaPoint) %>Pt</p>
+
+			<!-- 連勝数 -->
+			<% if(gameUser.numberOfFreeRankConsecutiveWins > 0 && gameUser.numberOfFreeRankConsecutiveWins < 7){ %>
+			<div class="consectiveWrap">
+				<p class="numberOfWin"><span class="firstNumber"><%= gameUser.numberOfFreeRankConsecutiveWins %></span>/7連勝</p>
+				<% var consectiveBonus = [0,1,2,3,5,7,10]; %>
+				<p class="bonusPoint arenaColor">ミラーズPt+<%= consectiveBonus[gameUser.numberOfFreeRankConsecutiveWins] %></p>
+			</div>
+			<% } %>
+
+			<!-- 鏡層未解放時テキスト&鏡層解放条件ボタン -->
+			<div class="limitedText">次の鏡層は<br>解放されていません</div>
+			<div class="limitedBtn se_decide TE<% if(!canPlay || nextCondition){ %> on<% } %>">
+				<span class="b_screen"></span>
+			</div>
+
+			<!-- 最大鏡層到達時 -->
+			<% }else{ %>
+			<!-- 鏡層未解放時テキスト&鏡層解放条件ボタン -->
+			<div class="limitedBtn se_decide TE<% if(!canPlay || nextCondition){ %> on<% } %>">
+				<span class="b_screen"></span>
+			</div>
+			<div class="limitedText c_red reachMax">現在解放されている<br>鏡層はここまでです</div>
+			<div class="cantGetWrap">ミラーズコインは獲得できますが<br>ミラーズptは獲得できません</div>
+			<% } %>
+
+		</div>
+
+		<!-- 果てなしのミラーズ入場ボタン -->
+		<%
+			var infinitCanPlay = true;
+			if(!canPlay) infinitCanPlay = false;
+			if(ranking.rankingEventStatus === "counting" || ranking.rankingEventStatus === "isOver"){
+				infinitCanPlay = false;
+			}
+			if(
+				rankMatchModel && 
+				rankMatchModel.status == 'counting'
+			){
+				infinitCanPlay = false;
+			}
+		%>
+		<div class="enterMirror mirrorsEnter se_decide TE<% if(!infinitCanPlay){ %> cantEnter<% } %>">
+			<span class="b_screen"></span>
+			<span class="mirrorsPoint"><%= model.freeRankArenaPoint %>Pt</span>
+			<% if(!model.currentFreeRankClass.nextClass){ %>
+			<div class="rankMaxMark"></div>
+			<% } %>
+		</div>
+		<% if(campaign){ %>
+			<div class="arenaCampaignBadge">
+				<img src='/magica/resource/image_web/campaign/arena_reward_up/common/arena_coin_<%= campaign %>.png' alt="">
+			</div>
+		<% } %>
+	</div>
+
+	<!-- ミラーズランキング情報 -->
+	<div id="rankingBattleWrap">
+		<!-- 未解放時は非表示 -->
+		<% if(ranking.rankingEventStatus){ %>
+			<!-- 開催状況(null:結果 prelim:予選 final:本戦) -->
+			<div class="nowTitle <%= ranking.rankingEventStatus %>"></div>
+			<!-- 現在の自分のランク -->
+			<% if(ranking.rankingEventStatus === "prelim"){ %>
+				<% if(!gameUser.interimArenaBattleRankingClassType && ranking.rankingBattleLeftCount !== ranking.rankingBattleMaxCount){ %>
+					<div class="nowRank idle"></div>
+				<% }else if(!gameUser.interimArenaBattleRankingClassType && ranking.rankingBattleLeftCount === ranking.rankingBattleMaxCount){ %>
+					<div class="nowRank"></div>
+				<% }else{ %>
+					<div class="nowRank rank<%= gameUser.interimArenaBattleRankingClassType %>"></div>
+				<% } %>
+			<% }else if(ranking.rankingEventStatus === "counting"){ %>
+				<div class="nowRank rank<%= gameUser.interimArenaBattleRankingClassType %>"></div>
+			<% } else {%>
+				<% if(model.currentRankingClassType === "E" && ranking.rankingBattleLeftCount !== ranking.rankingBattleMaxCount){ %>
+					<div class="nowRank idle"></div>
+				<% }else{ %>
+					<div class="nowRank rank<%= model.currentRankingClassType %>"></div>
+				<% } %>
+			<% }%>
+			<!-- ランキング開催期間 -->
+			<div class="rankingPeriod">
+				<!-- 進行状況(null:非表示 going:開催中 counting:集計中) -->
+				<p class="openStatus<% if(ranking.rankingEventStatus !== 'counting' && ranking.rankingEventStatus !== 'isOver'){ %> going<% }else{ %> counting <% } %>"></p>
+				<!-- 開催期間 -->
+				<p class="periodInner">
+					<!-- 予選中 -->
+					<% if(ranking.rankingEventStatus === "prelim"){ %>
+						<span class="limitTitle">予選開催期間</span><br>
+						<span id="rankingLimit" class="arenaColor"><%= ranking.battleLimit %>まで</span>
+					<!-- 集計中 -->
+					<% }else if(ranking.rankingEventStatus === "counting"){ %>
+						<span class="limitTitle">本戦開催</span><br>
+						<span id="rankingLimit" class="arenaColor"><%= ranking.battleLimit %>から</span>
+					<!-- 本戦中 -->
+					<% }else if(ranking.rankingEventStatus === "final"){ %>
+						<span class="limitTitle">本戦開催期間</span><br>
+						<span id="rankingLimit" class="arenaColor"><%= ranking.battleLimit %>まで</span>
+					<% }else if(ranking.rankingEventStatus === "isOver"){ %>
+						<span class="limitTitle">結果発表</span><br>
+						<span id="rankingLimit" class="arenaColor"><%= ranking.battleLimit %></span>
+					<% } %>
+				</p>
+			</div>
+		<% }else{ %>
+			<div class="nowTitle"></div>
+			<div class="nowRank rank<%= model.definiteClassRank %>"></div>
+			<!-- 未開催時文言 -->
+			<p class="rankingCloseText">次回開催を<br>お待ちください</p>
+		<% } %>
+		<!-- ランキング履歴 -->
+		<div class="rankHistoryBtn TE se_tabs linkBtn" data-href="#/EventArenaRankingHistory">
+			<span class="b_screen"></span>
+		</div>
+		<!-- ミラーズランキングボタン -->
+		<div class="enterMirror rankingEnter TE se_decide<% if(!ranking.canEnter){ %> cantEnter<% } %>" data-href="#/EventArenaRankingTop">
+			<span class="b_screen"></span>
+			<!-- ランキングポイント -->
+			<!-- 未開催かつ前回不参加の場合は0pt強制 -->
+			<% if(!ranking.rankingEventStatus && !model.definiteClassRank){ %>
+				<span class="mirrorsPoint">0Pt</span>
+			<% }else{ %>
+				<span class="mirrorsPoint"><%= model.rankingArenaPoint %>Pt</span>
+			<% } %>
+			<!-- 本日対戦可能回数(対戦可能時のみ) -->
+			<% if(ranking.rankingEventStatus === "prelim" || ranking.rankingEventStatus === "final"){ %>
+			<div class="canPlayRanking">
+				<span class="leftCount c_red"><%= ranking.rankingBattleLeftCount %></span>
+				<span class="maxCount">/<%= ranking.rankingBattleMaxCount %>戦</span>
+			</div>
+			<% } %>
+		</div>
+	</div><!-- rankingBattleWrap -->
+
+	<!-- ミラーズランクマッチ情報 -->
+	<div id="rankMatchWrap" class="<%= rankMatchModel.status %>">
+		<div class="nowTitle"></div>
+		<div class="nowRank rank<%= rankMatchModel.currentClassRank %>"></div>
+		<!-- ランキング開催期間 -->
+		<div class="rankingPeriod">
+			<p class="openStatus <%= rankMatchModel.status %>"></p>
+			<!-- 開催期間 -->
+			<p class="periodInner">
+				<span class="limitTitle"><%= rankMatchModel.limitTitleText %></span><br>
+				<span id="rankingLimit" class="arenaColor"><%= rankMatchModel.battleLimit %></span>
+			</p>
+		</div>
+		<!-- ランキング戦績ボタン -->
+		<div class="rankHistoryBtn TE se_tabs linkBtn" data-href="#/RegularEventArenaRankMatchHistory">
+			<span class="b_screen"></span>
+		</div>
+		<!-- イベント報酬ボタン -->
+		<div id="rankMatchRewardBtn" class="rankMatchRewardBtn TE se_tabs">
+			<span class="b_screen"></span>
+		</div>
+		<!-- ミラーズランキングボタン -->
+		<div class="enterMirror rankMatchTopBtn TE se_decide">
+			<span class="b_screen"></span>
+			<span class="mirrorsPoint"><%= rankMatchModel.userRank %></span>
+			<div class="canPlayRanking">
+				<span class="leftCount c_red"><%= rankMatchModel.currentBattleCount %></span>
+				<span class="maxCount">/5戦</span>
+			</div>
+		</div>
+	</div><!-- rankMatchWrap -->
+
+	<!-- ミラーズイベント非開催時情報 -->
+	<div id="noEventWrap">
+		<div class="nowRank ranking rank<%= noEventModel.rankingInfo.rank %>">
+			<div class="pointSec"><%= noEventModel.rankingInfo.point %></div>
+		</div>
+		<div class="nowRank rankMatch rank<%= noEventModel.rankMatchInfo.rank %>">
+			<div class="pointSec"><%= noEventModel.rankMatchInfo.point %></div>
+		</div>
+		<!-- ランキング履歴 -->
+		<div class="rankHistoryBtn TE se_tabs linkBtn" data-href="#/EventArenaRankingHistory">
+			<span class="b_screen"></span>
+		</div>
+		<!-- ミラーズランキングボタン -->
+		<div class="enterMirror noEventMirrorBtn TE se_decide">
+			<span class="b_screen"></span>
+		</div>
+	</div><!-- noEventWrap -->
+
+	<!-- フッター -->
+	<div id="arenaTopFooter"<% if(ranking.rankingEventStatus){ %> class="rankingRunning"<% } %>>
+		<p class="sb_gold_02 se_tabs TE linkBtn battleHistory" data-href="#/ArenaHistory">
+			<span class="b_screen"></span>
+			対戦履歴
+		</p>
+		<p class="sb_gold_02 se_tabs TE linkBtn battleReward" data-href="#/ArenaReward">
+			<span class="b_screen"></span>
+			報酬一覧
+		</p>
+
+		<%
+			var btnSimulateClass = "se_tabs linkBtn TE ";
+			//ミラーズランキングのステータス
+			if(ranking.rankingEventStatus === "counting" || ranking.rankingEventStatus === "isOver"){
+				btnSimulateClass = "off";
+			}
+			//ミラーズランクマッチのステータス
+			if(rankMatchModel && rankMatchModel.status == 'counting'){
+				btnSimulateClass = "off";
+			}
+		%>
+		<p class="sb_gold_02 battleSimulate <%= btnSimulateClass %>" data-href="#/ArenaSimulate">
+			<span class="b_screen"></span>
+			演習
+		</p>
+
+		<!-- ミラーズコイン -->
+		<p class="pointFrame footerChips">
+			<span class="mirrorsChipIcon"></span>
+			<span id="hasMirrorsChip"><%= chips %></span>
+		</p>
+
+		<% if(ranking.rankingEventStatus){ %>
+			<!-- ランキングイベント中のみ表示 -->
+			<!-- ランキングアイテム -->
+			<p class="rankingItemWrap">
+				<img src="/magica/resource/image_web/item/event/event_arenaranking_1013_exchange_1.png" class="itemImage">
+				<span class="itemNum c_gold">×<%= ranking.itemHasNum %></span>
+			</p>
+			<!-- ショップへのリンク -->
+			<p class="shopBtn linkBtn se_decide TE" data-href="#/ShopTop/<%= ranking.shopId %>">
+				<span class="b_screen"></span>
+			</p>
+		<% } %>
+
+		<% if(rankMatchModel && rankMatchModel.status){ %>
+			<!-- ランクマッチイベント中のみ表示 -->
+			<!-- ランクマッチアイテム -->
+			<p class="rankingItemWrap">
+				<img src="/magica/resource/image_web/item/event/event_arenarankmatch_2028_exchange_1.png" class="itemImage">
+				<span class="itemNum c_gold">×<%= rankMatchModel.itemHasNum %></span>
+			</p>
+			<!-- ショップへのリンク -->
+			<p class="shopBtn linkBtn se_decide TE" data-href="#/ShopTop/<%= rankMatchModel.shopId %>">
+				<span class="b_screen"></span>
+			</p>
+		<% } %>
+
+		<!-- BPゲージWrap -->
+		<div id="bpGuageTop" class="bpGuageWrap"></div>
+	</div>
+
+	<!-- 背景キャラ -->
+	<div id="bgCharactor">
+		<div class="maskWrap"></div>
+		<img data-src="resource/image_native/card/image/card_<%= leader %>_l.png" data-nativeimgkey="card_<%= leader %>_l">
+	</div>
+</div>
+
+<!-- 前日防衛ポップアップ -->
+<script type="text/template" id="yestadayBonus">
+	<div class="common_title_frame yestadayTitle">前日の防衛戦績</div>
+	<div class="bonusResult"><%='<%= model.winNum %\>'%>勝<%='<%= model.loseNum %\>'%>敗</div>
+<%='<% if(model.mirrorsWins > 0 || model.rankMatchWins > 0){ %\>'%>
+	<div class="common_title_frame bonusTitle">防衛ボーナス報酬</div>
+<%='<% } %\>'%>
+<%='<% if(model.mirrorsWins > 0){ %\>'%>
+	<%='<% var coinNum = (model.mirrorsWins > 50) ? 15 : (model.mirrorsWins > 20) ? 12 : (model.mirrorsWins > 10) ? 10 : (model.mirrorsWins > 5) ? 7 : (model.mirrorsWins > 2) ? 5 : 3; %\>'%>
+	<div class="bonusChip">
+		<img src="/magica/resource/image_web/common/icon/icon_arena_coin_f.png" class="itemImage">ミラーズコイン&nbsp;<%='<%= coinNum %\>'%>個獲得
+	</div>
+<%='<% } %\>'%>
+<%='<% if(model.rankMatchWins > 0){ %\>'%>
+	<div class="bonusChip">
+		<img src="/magica/resource/image_web/common/icon/event/icon_event_arenarankmatch_2028_exchange_1_f.png" class="itemImage">ランクメダル&nbsp;<%='<%= model.rankMatchCoinNum %\>'%>個獲得
+	</div>
+<%='<% } %\>'%>
+</script>
+
+<!-- 解放条件ポップアップ -->
+<script type="text/template" id="limitedPopup">
+	<dl class="condition common_dl">
+		<dt>1</dt>
+		<dd><%='<%= conditionText %\>'%></dd>
+	</dl>
+</script>

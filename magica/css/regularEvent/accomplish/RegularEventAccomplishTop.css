@@ -1,0 +1,2362 @@
+@charset "UTF-8";
+#battleMuseumTop {
+  width: 1024px;
+  height: 100%;
+  position: relative;
+}
+
+#battleMuseumTop .touch {
+  -webkit-transform: scale(0.95) translateZ(0);
+}
+
+#battleMuseumTop #logo {
+  position: absolute;
+  left: 14px;
+  top: calc(50% - 240px);
+  width: 220px;
+  height: 124px;
+}
+
+#battleMuseumTop #logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220px;
+}
+
+#battleMuseumTop #logo #day {
+  position: absolute;
+  top: 126px;
+  left: -10px;
+  display: block;
+  width: 237px;
+  height: 30px;
+  text-align: center;
+  line-height: 2;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/bg_infostage_date.png") left top no-repeat !important;
+  color: #eee;
+  text-shadow: 0px 0px 5px #000;
+}
+
+#battleMuseumTop #helpBtn {
+  width: 100px;
+  position: absolute;
+  top: 13px;
+  right: 276px;
+  z-index: 10000;
+}
+
+#battleMuseumTop #archiveBtn {
+  width: 120px;
+  position: absolute;
+  top: 13px;
+  right: 144px;
+  z-index: 10000;
+}
+
+#battleMuseumTop #buttonArea {
+  position: absolute;
+  top: calc(50% - 70px);
+  left: 52px;
+  width: 145px;
+  height: 120px;
+}
+
+#battleMuseumTop #buttonArea #missionBtn {
+  position: absolute;
+  top: 0px;
+  width: 145px;
+  height: 46px;
+}
+
+#battleMuseumTop #buttonArea #allRecovery {
+  position: absolute;
+  top: 66px;
+}
+
+#battleMuseumTop #enemyArea {
+  position: absolute;
+  top: calc(50% - 254px);
+  left: 186px;
+  width: 550px;
+  height: 320px;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0.93);
+      -ms-transform: scale(0.93);
+          transform: scale(0.93);
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea {
+  position: absolute;
+  width: 100px;
+  height: 172px;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea .attribute {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_type.png") left top no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea .attribute div {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea .hpGauge {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 30px;
+  width: 60px;
+  height: 8px;
+  margin: 4px 0 0 4px;
+  background: url("/magica/resource/image_web/event/accomplish/common/deck/bg_gauge.png") left top no-repeat;
+  -webkit-transform: scaleY(1.5);
+      -ms-transform: scaleY(1.5);
+          transform: scaleY(1.5);
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea .hpGauge .gaugeInner01 {
+  width: 48px;
+  height: 4px;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  z-index: 2;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea .hpGauge .gaugeInner01 .gaugeBg {
+  background: url("/magica/resource/image_web/event/accomplish/common/deck/gauge_hp.png") left bottom repeat-x;
+  width: 0%;
+  height: 100%;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea .mpGauge {
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 25px;
+  width: 60px;
+  height: 8px;
+  margin: 4px 0 0 4px;
+  background: url("/magica/resource/image_web/event/accomplish/common/deck/bg_gauge.png") left top no-repeat;
+  -webkit-transform: scaleY(1.2) scale(0.8);
+      -ms-transform: scaleY(1.2) scale(0.8);
+          transform: scaleY(1.2) scale(0.8);
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea .mpGauge .gaugeInner01, #battleMuseumTop #enemyArea #enemydetailWrap .enemyArea .mpGauge .gaugeInner02 {
+  width: 48px;
+  height: 4px;
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  z-index: 2;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea .mpGauge .gaugeInner01 .gaugeBg, #battleMuseumTop #enemyArea #enemydetailWrap .enemyArea .mpGauge .gaugeInner02 .gaugeBg {
+  background: url("/magica/resource/image_web/event/accomplish/common/deck/gauge_doppel.png") left bottom repeat-x;
+  width: 0%;
+  height: 100%;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea .mpGauge .gaugeInner02 {
+  z-index: 1;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea .mpGauge .gaugeInner02 .gaugeBg {
+  background: url("/magica/resource/image_web/event/accomplish/common/deck/gauge_magia.png") left bottom repeat-x;
+  width: 0%;
+  height: 100%;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea.pos1 {
+  top: 20px;
+  left: 420px;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea.pos2 {
+  top: 70px;
+  left: 380px;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea.pos3 {
+  top: 130px;
+  left: 340px;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea.pos4 {
+  top: 20px;
+  left: 270px;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea.pos5 {
+  top: 70px;
+  left: 230px;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea.pos6 {
+  top: 130px;
+  left: 190px;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea.pos7 {
+  top: 20px;
+  left: 120px;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea.pos8 {
+  top: 70px;
+  left: 80px;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea.pos9 {
+  top: 130px;
+  left: 40px;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea.boss {
+  top: 190px !important;
+  left: 340px !important;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea .enemyInfoBtn {
+  position: absolute;
+  top: 0px;
+  right: -30px;
+  width: 40px;
+  height: 40px;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea .enemyInfoBtn:after {
+  content: "";
+  display: block;
+  background: url("/magica/resource/image_web/common/btn/btn_info_s.png") left top no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 35px;
+  height: 35px;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea.dead:after {
+  content: "";
+  display: block;
+  width: 92px;
+  height: 50px;
+  position: absolute;
+  top: -5px;
+  left: 18px;
+  z-index: 1;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/icon_clear.png") left top no-repeat !important;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap .enemyArea.dead.dead.noHp:after {
+  display: none;
+}
+
+#battleMuseumTop #enemyArea #enemydetailWrap #enemyText {
+  position: absolute;
+  bottom: -34px;
+  right: -14px;
+  width: 112px;
+  height: 58px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/text_enemy.png") left top no-repeat;
+}
+
+#battleMuseumTop #enemyArea.xstyle {
+  top: calc(50% - 246px);
+}
+
+#battleMuseumTop #questArea {
+  position: absolute;
+  top: calc(50% - 110px);
+  left: 764px;
+  width: 234px;
+  height: 160px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/bg_info_accomplish_main.png") left top repeat-y;
+}
+
+#battleMuseumTop #questArea:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -110px;
+  left: 0px;
+  width: 234px;
+  height: 110px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/bg_info_accomplish_top.png") left top no-repeat;
+}
+
+#battleMuseumTop #questArea:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -19px;
+  left: 0px;
+  width: 234px;
+  height: 19px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/bg_info_accomplish_05.png") left top no-repeat;
+}
+
+#battleMuseumTop #questArea #questdetailWrap {
+  position: absolute;
+  top: -110px;
+  right: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 234px;
+  height: 160px;
+}
+
+#battleMuseumTop #questArea #questdetailWrap #stageArea {
+  position: relative;
+  height: 40px;
+  padding: 10px 20px 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #7cdaea;
+  text-align: center;
+}
+
+#battleMuseumTop #questArea #questdetailWrap #stageArea #nowStageText {
+  display: inline-block;
+  color: #7cdaea;
+  font-size: 24px;
+  vertical-align: middle;
+  margin: -3px 0 0 10px;
+}
+
+#battleMuseumTop #questArea #questdetailWrap #rewardArea {
+  position: relative;
+  height: 100px;
+  text-align: center;
+  padding: 10px 0 0 0;
+  color: #fff;
+}
+
+#battleMuseumTop #questArea #questdetailWrap #rewardArea #rewardList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0px 8px;
+}
+
+#battleMuseumTop #questArea #questdetailWrap #rewardArea #rewardList.cleare_true .commonItemImgWrap {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
+#battleMuseumTop #questArea #questdetailWrap .commonItemImgWrap {
+  position: relative;
+  width: 50px;
+  height: 100%;
+  margin: 4px 0 5px;
+  vertical-align: middle;
+}
+
+#battleMuseumTop #questArea #questdetailWrap .commonItemImgWrap .commonItemImg {
+  width: 45px;
+}
+
+#battleMuseumTop #questArea #questdetailWrap .commonItemImgWrap .quantity {
+  position: absolute;
+  font-size: 10px;
+  right: 0px;
+  bottom: -7px;
+  color: #fff;
+  text-shadow: -1px -1px 1px #8a5f29, 1px -1px 1px #8a5f29, -1px 1px 1px #8a5f29, 1px 1px 1px #8a5f29, -1px -1px #8a5f29, 1px -1px #8a5f29, -1px 1px #8a5f29, 1px 1px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 3px #8a5f29, 1px -1px 3px #8a5f29, -1px 1px 3px #8a5f29, 1px 1px 3px #8a5f29;
+}
+
+#battleMuseumTop #questArea #questdetailWrap .commonItemImgWrap.LIVE2D {
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+}
+
+#battleMuseumTop #questArea #questdetailWrap .commonItemImgWrap.LIVE2D:after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 32px;
+  left: 25px;
+  background: url(/magica/resource/image_web/item/main/live2d.png) left center no-repeat;
+  background-size: 40px 40px;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+#battleMuseumTop #questArea #questdetailWrap .commonItemImgWrap.LIVE2D .l2dIcon {
+  margin: 0px auto;
+}
+
+#battleMuseumTop #questArea #questdetailWrap .commonItemImgWrap.LIVE2D .charaIcon {
+  width: 90px;
+  height: 110px;
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
+}
+
+#battleMuseumTop #questArea #questdetailWrap .commonItemImgWrap.LIVE2D .charaIcon .maskWrap {
+  width: 90px;
+  height: 110px;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+}
+
+#battleMuseumTop #questArea #questdetailWrap .commonItemImgWrap.LIVE2D .charaIcon .maskWrap img {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  top: 3px;
+  right: -6px;
+}
+
+#battleMuseumTop #main {
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 400px);
+  width: 600px;
+  height: 280px;
+  background: #eeeeee;
+  text-align: center;
+}
+
+#battleMuseumTop #allStageNum {
+  position: absolute;
+  top: calc(50% - -60px);
+  left: calc(0% - 210px);
+  width: 442px;
+  height: 34px;
+  color: #fff;
+  padding: 5px 0 0 198px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/bg_infostage_left.png") left top no-repeat;
+  text-align: center;
+}
+
+#battleMuseumTop #allStageNum #maxStageText {
+  color: #fff;
+}
+
+#battleMuseumTop #nowBook {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(100% - 250px);
+  width: 210px;
+  height: 100px;
+  z-index: 100;
+  text-align: center;
+}
+
+#battleMuseumTop #nowBook #battleBtn {
+  position: absolute;
+  top: 4px;
+  left: 14px;
+  pointer-events: none;
+  -webkit-filter: grayscale(100%) brightness(70%);
+          filter: grayscale(100%) brightness(70%);
+}
+
+#battleMuseumTop #nowBook.cleared #battleBtn {
+  pointer-events: none;
+  -webkit-filter: grayscale(100%) brightness(70%);
+          filter: grayscale(100%) brightness(70%);
+}
+
+#battleMuseumTop #nowBook.canPlay #battleBtn {
+  pointer-events: auto;
+  -webkit-filter: none;
+          filter: none;
+}
+
+#battleMuseumTop #nowBook #nowBattleBtn {
+  position: absolute;
+  top: 51px;
+  left: -32px;
+  width: 60px;
+  height: 60px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/btn_back.png") center center no-repeat;
+  display: none;
+}
+
+#battleMuseumTop #nowBook #nowBattleBtn.show {
+  display: block;
+}
+
+#battleMuseumTop #questListArea {
+  position: absolute;
+  top: calc(50% - -55px);
+  left: calc(0% - 162px);
+  width: 1354px;
+  height: 234px;
+  padding: 0 0 0 555px;
+}
+
+#battleMuseumTop #questListArea #questListWrap {
+  position: relative;
+  width: 240px;
+  height: 230px;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList {
+  width: 100%;
+  padding: 0;
+  position: relative;
+  font-size: 0;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest {
+  position: relative;
+  font-size: 16px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: bottom;
+  text-align: center;
+  width: 60px;
+  z-index: 1;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner {
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 240px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/icon_stage_back_01.png") left top no-repeat;
+  background-position: bottom;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner .questNumber {
+  position: absolute;
+  top: 144px;
+  left: 10px;
+  width: 40px;
+  text-align: center;
+  font-size: 0;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner .questNumber span {
+  width: 10px;
+  height: 16px;
+  display: inline-block;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner .questNumber span.num0 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_s_0.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner .questNumber span.num1 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_s_1.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner .questNumber span.num2 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_s_2.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner .questNumber span.num3 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_s_3.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner .questNumber span.num4 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_s_4.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner .questNumber span.num5 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_s_5.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner .questNumber span.num6 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_s_6.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner .questNumber span.num7 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_s_7.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner .questNumber span.num8 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_s_8.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner .questNumber span.num9 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_s_9.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner .storyChara {
+  display: none;
+  position: absolute;
+  top: -2px;
+  left: 16px;
+  width: 170px;
+  height: 60px;
+  z-index: 1;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner .storyIcon {
+  position: absolute;
+  top: 80px;
+  left: 13px;
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/icon_story.png") left top no-repeat !important;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest .questInner:nth-child(2) {
+  position: relative;
+  top: -240px;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.leftBook .questInner:nth-child(1) {
+  -webkit-animation: 0.5s open_book2 ease-in-out 0s 1 both;
+          animation: 0.5s open_book2 ease-in-out 0s 1 both;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transform-origin: 0% 90%;
+      -ms-transform-origin: 0% 90%;
+          transform-origin: 0% 90%;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.rightBook .questInner:nth-child(1) {
+  -webkit-animation: 0.5s open_book3 ease-in-out 0s 1 both;
+          animation: 0.5s open_book3 ease-in-out 0s 1 both;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transform-origin: 0% 90%;
+      -ms-transform-origin: 0% 90%;
+          transform-origin: 0% 90%;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest {
+  width: 230px;
+  padding: 0px 10px 0px 20px;
+  top: 10px;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(1) {
+  position: relative;
+  top: -10px;
+  left: 70px;
+  width: 60px;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) {
+  height: 240px;
+  -webkit-animation: 0.5s open_book ease-in-out 0.2s 1 both;
+          animation: 0.5s open_book ease-in-out 0.2s 1 both;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-transform-origin: 50% 90%;
+      -ms-transform-origin: 50% 90%;
+          transform-origin: 50% 90%;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2):before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 240px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/icon_stage_front_01.png") left top no-repeat !important;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) .questNumber {
+  position: absolute;
+  top: 98px;
+  left: 50px;
+  width: 100px;
+  text-align: center;
+  font-size: 0;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) .questNumber span {
+  width: 22px;
+  height: 36px;
+  display: inline-block;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) .questNumber span.num0 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_m_0.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) .questNumber span.num1 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_m_1.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) .questNumber span.num2 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_m_2.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) .questNumber span.num3 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_m_3.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) .questNumber span.num4 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_m_4.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) .questNumber span.num5 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_m_5.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) .questNumber span.num6 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_m_6.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) .questNumber span.num7 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_m_7.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) .questNumber span.num8 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_m_8.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) .questNumber span.num9 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_m_9.png") center center no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) .storyChara {
+  display: block;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) .storyIcon {
+  position: absolute;
+  top: 21px;
+  left: 44px;
+  width: 110px;
+  font-size: 16px;
+  line-height: 2.6em;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest .questInner:nth-child(2) .storyIcon:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 30px;
+  width: 48px;
+  height: 31px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/text_story.png") left top no-repeat !important;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest.story .questInner:nth-child(2):before {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/icon_stage_front_02.png") left top no-repeat !important;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest.goBattle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: 94px;
+  width: 50px;
+  height: 50px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/icon_point_stage.png") left top no-repeat;
+  -webkit-animation: 2s upDown ease-in-out 0s infinite both;
+          animation: 2s upDown ease-in-out 0s infinite both;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.nowQuest.cleared .questInner:nth-child(2):after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 104px;
+  left: 18px;
+  width: 160px;
+  height: 110px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/icon_stage_clear_l.png") left top no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.goBattle:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -30px;
+  left: 4px;
+  width: 50px;
+  height: 50px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/icon_point_stage.png") left top no-repeat;
+  -webkit-animation: 2s upDown2 ease-in-out 0s infinite both;
+          animation: 2s upDown2 ease-in-out 0s infinite both;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.cleared .questInner:before {
+  -webkit-filter: brightness(60%) grayscale(40%) !important;
+          filter: brightness(60%) grayscale(40%) !important;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.cleared .questInner:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 170px;
+  left: 7px;
+  width: 47px;
+  height: 40px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/icon_stage_clear_s.png") left top no-repeat;
+}
+
+#battleMuseumTop #questListArea #questListWrap #questList .quest.story .questInner:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 240px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/icon_stage_back_02.png") left top no-repeat;
+  background-position: bottom;
+}
+
+#battleMuseumTop #questListArea #questListWrap .iScrollHorizontalScrollbar {
+  overflow: hidden;
+  position: absolute;
+  z-index: 9999;
+  width: 262px;
+  height: 6px;
+  background-color: rgba(235, 121, 219, 0.5);
+  top: -20px;
+  right: -8px;
+  bottom: 2px;
+  border-radius: 5px;
+}
+
+#battleMuseumTop #questListArea #questListWrap .iScrollHorizontalScrollbar .iScrollIndicator {
+  width: 100%;
+  position: absolute;
+  background: red;
+  border: 3px solid #d128a7;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#battleMuseumTop #questListArea.hide {
+  opacity: 0;
+}
+
+#battleMuseumTop #questListArea:before {
+  content: "";
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/bg_bookshelf.png") left top repeat;
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 1530px;
+  height: 90px;
+}
+
+#battleMuseumTop #allClear {
+  display: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  top: calc(50% - -135px);
+  left: 640px;
+  width: 350px;
+  height: 100px;
+  padding: 20px 0 0 30px;
+  font-size: 20px;
+  color: #f0f0f0;
+  background: rgba(127, 119, 106, 0.8);
+  -webkit-clip-path: polygon(5% 0%, 95% 0%, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0% 85%, 0% 15%);
+          clip-path: polygon(5% 0%, 95% 0%, 100% 15%, 100% 85%, 95% 100%, 5% 100%, 0% 85%, 0% 15%);
+}
+
+#battleMuseumTop #allClear.show {
+  display: block;
+}
+
+#battleMuseumTop #arrowBtnArea {
+  position: absolute;
+  width: 270px;
+  height: 140px;
+  top: calc(50% - -115px);
+  left: calc(50% - 135px);
+  pointer-events: none;
+}
+
+#battleMuseumTop #arrowBtnArea .battleArrow {
+  width: 48px;
+  height: 62px;
+  position: absolute;
+  top: 40px;
+  z-index: 100;
+}
+
+#battleMuseumTop #arrowBtnArea .battleArrow.hide {
+  display: none;
+}
+
+#battleMuseumTop #arrowBtnArea .battleArrow.leftArr {
+  left: 0px;
+  background: url("/magica/resource/image_web/page/formation_2/arrow_l.png") left top no-repeat;
+  background-size: cover;
+  pointer-events: auto;
+}
+
+#battleMuseumTop #arrowBtnArea .battleArrow.rightArr {
+  right: 0px;
+  background: url("/magica/resource/image_web/page/formation_2/arrow_r.png") left top no-repeat;
+  background-size: cover;
+  pointer-events: auto;
+}
+
+#recoverConfirm #cautionWrap {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 18px;
+  margin: 35px 0px 25px 120px;
+  text-align: left;
+}
+
+#recoverConfirm #cautionWrap .checkBox {
+  width: 30px;
+  height: 30px;
+  background-image: url("/magica/resource/image_web/common/icon/icon_checkbox.png");
+  background-size: 30px 30px;
+  display: block;
+  position: relative;
+  margin-right: 6px;
+}
+
+#recoverConfirm #cautionWrap.current .checkBox:before {
+  width: 23px;
+  height: 18px;
+  background-image: url("/magica/resource/image_web/common/icon/icon_checkbox_check.png");
+  background-repeat: no-repeat;
+  background-size: 23px 18px;
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  content: "";
+}
+
+#enemyInfolPop .popupInner {
+  height: 440px !important;
+}
+
+#enemyInfolPop #enemyInfoList {
+  width: 826px;
+  height: 320px;
+  margin: 20px 0 0;
+  border: 1px solid #c2a56d;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo {
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .name {
+  position: absolute;
+  top: 80px;
+  left: 260px;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .name .attribute {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_type.png") left top no-repeat;
+  position: absolute;
+  top: 5px;
+  left: -32px;
+  width: 30px;
+  height: 30px;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .name .attribute div {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .hpArea {
+  position: absolute;
+  top: 85px;
+  right: 20px;
+  font-size: 20px;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .hpArea .hp {
+  display: inline-block;
+  width: 60px;
+  height: 27px;
+  background: #c26be0;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .hpArea .hpText {
+  padding: 5px 0px 5px 10px;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo img {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+  width: 210px;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo img.mini {
+  top: 70px;
+  -webkit-transform: scaleY(1.5) scaleX(-1.5);
+      -ms-transform: scaleY(1.5) scaleX(-1.5);
+          transform: scaleY(1.5) scaleX(-1.5);
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .power {
+  position: absolute;
+  top: 110px;
+  right: 10px;
+  background: #c4a46b;
+  width: 250px;
+  font-size: 16px;
+  text-align: left;
+  padding: 6px;
+  color: #fff;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .power span {
+  position: absolute;
+  right: 10px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1em;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .skillTitle {
+  position: absolute;
+  top: 130px;
+  left: 230px;
+  width: 590px;
+  height: 26px;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #fff;
+  background: #c26be0;
+  -webkit-clip-path: polygon(2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%, 0% 50%);
+          clip-path: polygon(2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%, 0% 50%);
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .skillWrap {
+  position: absolute;
+  top: 164px;
+  left: 240px;
+  width: 540px;
+  text-align: left;
+  font-size: 18px;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .skillWrap .skill {
+  line-height: 1.6em;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .skillWrap .skill:before {
+  content: "◆";
+  color: #c26be0;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .taiseiTitle {
+  position: absolute;
+  top: 260px;
+  left: 230px;
+  width: 590px;
+  height: 26px;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #fff;
+  background: #c26be0;
+  -webkit-clip-path: polygon(2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%, 0% 50%);
+          clip-path: polygon(2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%, 0% 50%);
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .taiseiList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: absolute;
+  top: 296px;
+  left: 250px;
+  width: 560px;
+  height: 84px;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .taiseiList .taiseiWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 140px;
+  font-size: 20px;
+  margin: 1px 0;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .taiseiList .taiseiWrap .title {
+  text-align: left;
+  width: 110px;
+  background: #b7b4ab;
+  color: #fff;
+  font-size: 16px;
+  padding: 1px 0 0 6px;
+}
+
+#enemyInfolPop #enemyInfoList .enemyInfo .taiseiList .taiseiWrap .value {
+  font-weight: bold;
+  width: 30px;
+  font-size: 18px;
+}
+
+#ClearAnimation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+#ClearAnimation:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#ClearAnimation #rollLightArea {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#ClearAnimation #rollLightArea.touchOK {
+  pointer-events: auto;
+}
+
+#ClearAnimation #rollLightArea #light01 {
+  position: absolute;
+  top: 50px;
+  left: calc(50% - 225px);
+  width: 473px;
+  height: 476px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_acp_02.png") left top no-repeat;
+  -webkit-transform-origin: 236.5px 238px;
+      -ms-transform-origin: 236.5px 238px;
+          transform-origin: 236.5px 238px;
+  -webkit-animation: 0.5s scaleAnime linear 0s 1 normal, 10s rotationAnime linear 0.5s infinite normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #rollLightArea #light02scale {
+  position: absolute;
+  top: -23px;
+  left: calc(50% - 306px);
+  width: 645px;
+  height: 635px;
+  -webkit-transform-origin: 322.5px 317.5px;
+      -ms-transform-origin: 322.5px 317.5px;
+          transform-origin: 322.5px 317.5px;
+  -webkit-animation: 5s rotationScaleAnime linear 0.5s infinite normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #rollLightArea #light02scale #light02 {
+  width: 645px;
+  height: 635px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_acp_01.png") left top no-repeat;
+  -webkit-transform-origin: 316.5px 313.5px;
+      -ms-transform-origin: 316.5px 313.5px;
+          transform-origin: 316.5px 313.5px;
+  -webkit-animation: 0.5s scaleAnime linear 0s 1 normal, 8s rotationAnime linear 0.5s infinite normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #bookArea {
+  position: absolute;
+  top: 137px;
+  left: calc(50% - 140px);
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
+}
+
+#ClearAnimation #bookArea #book01_r, #ClearAnimation #bookArea #book01_l {
+  position: absolute;
+  top: 0px;
+  left: 146px;
+  width: 148px;
+  height: 252px;
+  -webkit-transform-origin: 0px 50%;
+      -ms-transform-origin: 0px 50%;
+          transform-origin: 0px 50%;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_page_01.png") left top no-repeat;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: 0.4s bookOpen_r linear 0.4s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #bookArea #book01_l {
+  left: 152px;
+  -webkit-animation: 0.4s bookOpen_l linear 0.4s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #bookArea #book02_r, #ClearAnimation #bookArea #book02_l {
+  position: absolute;
+  top: 6px;
+  left: 148px;
+  width: 132px;
+  height: 243px;
+  -webkit-transform-origin: 0px 50%;
+      -ms-transform-origin: 0px 50%;
+          transform-origin: 0px 50%;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_page_02.png") left top no-repeat;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: 0.4s bookOpen_r linear 0.5s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #bookArea #book02_l {
+  left: 148px;
+  -webkit-animation: 0.4s bookOpen_l linear 0.5s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #bookArea #book03_r, #ClearAnimation #bookArea #book03_l {
+  position: absolute;
+  top: 0px;
+  left: 148px;
+  width: 115px;
+  height: 249px;
+  -webkit-transform-origin: 0px 50%;
+      -ms-transform-origin: 0px 50%;
+          transform-origin: 0px 50%;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_page_03.png") left top no-repeat;
+  -webkit-transform: scaleX(0);
+      -ms-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-animation: 0.4s bookOpen_r linear 0.6s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #bookArea #book03_l {
+  left: 148px;
+  -webkit-animation: 0.4s bookOpen_l linear 0.6s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #stageClearArea {
+  position: absolute;
+  top: 137px;
+  left: calc(50% - 140px);
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
+}
+
+#ClearAnimation #stageClearArea #acp {
+  position: absolute;
+  top: 20px;
+  left: -2px;
+  width: 300px;
+  height: 300px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_acp_03.png") left top no-repeat;
+  opacity: 0;
+  -webkit-animation: 0.4s acp01 linear 1s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #stageClearArea #acp div {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 300px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_acp_04.png") left top no-repeat;
+  opacity: 0;
+  -webkit-animation: 0.4s acp02 linear 1s 1 normal, 1s fadeInAnimeEnd linear 2s 1 normal, 1s fadeInAnimeEnd linear 3s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #stageClearArea #textArea {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 300px;
+  height: 220px;
+}
+
+#ClearAnimation #stageClearArea #textArea div:nth-child(1) {
+  position: absolute;
+  top: 0px;
+  left: 86px;
+  width: 130px;
+  height: 56px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/text_stage.png") left top no-repeat;
+  opacity: 0;
+  -webkit-animation: 0.2s fadeInScaleAnime linear 1.5s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #stageClearArea #textArea div:nth-child(2) {
+  position: absolute;
+  top: 40px;
+  left: 60px;
+  width: 180px;
+  height: 50px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/text_clear.png") left top no-repeat;
+  opacity: 0;
+  -webkit-animation: 0.2s fadeInScaleAnime linear 1.7s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #stageClearArea #textArea div:nth-child(3) {
+  position: absolute;
+  top: 180px;
+  left: 90px;
+  width: 120px;
+  height: 40px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/text_reward.png") left top no-repeat;
+  opacity: 0;
+  -webkit-animation: 0.4s fadeInTransitionAnime ease-in 1.7s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #stageClearArea #questNumberArea {
+  position: absolute;
+  top: 140px;
+  left: 38px;
+  width: 220px;
+  text-align: center;
+  font-size: 0;
+  opacity: 0;
+  -webkit-animation: 0.5s fadeInAnime linear 2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+  pointer-events: none;
+}
+
+#ClearAnimation #stageClearArea #questNumberArea span {
+  width: 40px;
+  height: 60px;
+  display: inline-block;
+}
+
+#ClearAnimation #stageClearArea #questNumberArea span.num0 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_l_0.png") center center no-repeat;
+}
+
+#ClearAnimation #stageClearArea #questNumberArea span.num1 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_l_1.png") center center no-repeat;
+}
+
+#ClearAnimation #stageClearArea #questNumberArea span.num2 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_l_2.png") center center no-repeat;
+}
+
+#ClearAnimation #stageClearArea #questNumberArea span.num3 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_l_3.png") center center no-repeat;
+}
+
+#ClearAnimation #stageClearArea #questNumberArea span.num4 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_l_4.png") center center no-repeat;
+}
+
+#ClearAnimation #stageClearArea #questNumberArea span.num5 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_l_5.png") center center no-repeat;
+}
+
+#ClearAnimation #stageClearArea #questNumberArea span.num6 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_l_6.png") center center no-repeat;
+}
+
+#ClearAnimation #stageClearArea #questNumberArea span.num7 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_l_7.png") center center no-repeat;
+}
+
+#ClearAnimation #stageClearArea #questNumberArea span.num8 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_l_8.png") center center no-repeat;
+}
+
+#ClearAnimation #stageClearArea #questNumberArea span.num9 {
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/num/num_l_9.png") center center no-repeat;
+}
+
+#ClearAnimation #centerDom {
+  position: absolute;
+  top: 340px;
+  left: calc(50% - 340px);
+  width: 710px;
+  height: 200px;
+  margin: 0px auto;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/bg_clear_reward.png") left top no-repeat;
+  opacity: 0;
+  -webkit-animation: 0.4s yscale linear 1.9s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+  pointer-events: none;
+}
+
+#ClearAnimation #centerDom.end:after {
+  content: "";
+  display: block;
+  background: url(/magica/resource/image_web/page/questresult/result_touchscreen.png) no-repeat;
+  background-position: 395px -webkit-calc(100% - 70px);
+  position: fixed;
+  top: 90px;
+  left: -webkit-calc(50% - 515px);
+  width: 100%;
+  height: 100%;
+  -webkit-animation: touchScreen 1s ease-in-out 0s infinite normal;
+}
+
+#ClearAnimation #rewardArea {
+  position: absolute;
+  top: 56px;
+  left: 40px;
+  width: 620px;
+  height: 90px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  -webkit-animation: 0.4s fadeInAnime linear 2.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+  border: none;
+  background: transparent;
+}
+
+#ClearAnimation #rewardArea .commonItemImgWrap {
+  position: relative;
+  width: 69px;
+  height: 70px;
+  margin: 10px;
+}
+
+#ClearAnimation #rewardArea .commonItemImgWrap .quantity {
+  position: absolute;
+  font-size: 14px;
+  right: -5px;
+  bottom: 0px;
+  color: #fff;
+  text-shadow: 2px 0px 2px #b28850, -2px 0px 2px #b28850, 0px 2px 2px #b28850, 0px -2px 2px #b28850, 2px 2px 2px #b28850, -2px 2px 2px #b28850, 2px -2px 2px #b28850, -2px -2px 2px #b28850;
+}
+
+#ClearAnimation #rewardArea .commonItemImgWrap img {
+  width: 100%;
+}
+
+#ClearAnimation #dotLightArea {
+  position: absolute;
+  top: 280px;
+  left: calc(50% - 0px);
+  width: 10px;
+  height: 10px;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(1) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime1 ease-in 2.2s 1 normal, 1s dotAnime1 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(2) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime2 ease-in 2.2s 1 normal, 1s dotAnime2 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(3) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime3 ease-in 2.2s 1 normal, 1s dotAnime3 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(4) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime4 ease-in 2.2s 1 normal, 1s dotAnime4 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(5) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime5 ease-in 2.2s 1 normal, 1s dotAnime5 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(6) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime6 ease-in 2.2s 1 normal, 1s dotAnime6 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(7) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime7 ease-in 2.2s 1 normal, 1s dotAnime7 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(8) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime8 ease-in 2.2s 1 normal, 1s dotAnime8 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(9) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime9 ease-in 2.2s 1 normal, 1s dotAnime9 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(10) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime10 ease-in 2.2s 1 normal, 1s dotAnime10 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(11) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime11 ease-in 2.2s 1 normal, 1s dotAnime11 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(12) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime12 ease-in 2.2s 1 normal, 1s dotAnime12 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(13) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime13 ease-in 2.2s 1 normal, 1s dotAnime13 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(14) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime14 ease-in 2.2s 1 normal, 1s dotAnime14 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(15) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime15 ease-in 2.2s 1 normal, 1s dotAnime15 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(16) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime16 ease-in 2.2s 1 normal, 1s dotAnime16 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(17) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime17 ease-in 2.2s 1 normal, 1s dotAnime17 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(18) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime18 ease-in 2.2s 1 normal, 1s dotAnime18 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(19) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime19 ease-in 2.2s 1 normal, 1s dotAnime19 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #dotLightArea div:nth-child(20) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: url("/magica/resource/image_web/regularEvent/accomplish/common/clearanime/efe_light.png") center center no-repeat;
+  opacity: 0;
+  -webkit-animation: 1s dotAnime20 ease-in 2.2s 1 normal, 1s dotAnime20 ease-in 3.2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeInAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInAnimeEnd {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeInScaleAnime {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fadeInTransitionAnime {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes acp01 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes acp02 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes yscale {
+  0% {
+    opacity: 1;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scaleY(1.5);
+            transform: scaleY(1.5);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@-webkit-keyframes bookOpen_r {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  70% {
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes bookOpen_l {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  70% {
+    -webkit-transform: scaleX(-1.1);
+            transform: scaleX(-1.1);
+  }
+  100% {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+}
+
+@-webkit-keyframes scaleAnime {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  70% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes rotationAnime {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotationScaleAnime {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes upDown {
+  0% {
+    top: -40px;
+  }
+  45% {
+    top: -30px;
+  }
+  55% {
+    top: -30px;
+  }
+  100% {
+    top: -40px;
+  }
+}
+
+@-webkit-keyframes upDown2 {
+  0% {
+    top: -10px;
+  }
+  45% {
+    top: 0px;
+  }
+  55% {
+    top: 0px;
+  }
+  100% {
+    top: -10px;
+  }
+}
+
+@-webkit-keyframes dotAnime1 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(-100px, -110px);
+            transform: translate(-100px, -110px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(-520px, -430px);
+            transform: translate(-520px, -430px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-520px, -430px);
+            transform: translate(-520px, -430px);
+  }
+}
+
+@-webkit-keyframes dotAnime2 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(-80px, -120px);
+            transform: translate(-80px, -120px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(-200px, -500px);
+            transform: translate(-200px, -500px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-200px, -500px);
+            transform: translate(-200px, -500px);
+  }
+}
+
+@-webkit-keyframes dotAnime3 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(-40px, -150px);
+            transform: translate(-40px, -150px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(-60px, -500px);
+            transform: translate(-60px, -500px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-60px, -500px);
+            transform: translate(-60px, -500px);
+  }
+}
+
+@-webkit-keyframes dotAnime4 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(10px, -130px);
+            transform: translate(10px, -130px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(12px, -480px);
+            transform: translate(12px, -480px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(12px, -480px);
+            transform: translate(12px, -480px);
+  }
+}
+
+@-webkit-keyframes dotAnime5 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(50px, -140px);
+            transform: translate(50px, -140px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(70px, -480px);
+            transform: translate(70px, -480px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(70px, -480px);
+            transform: translate(70px, -480px);
+  }
+}
+
+@-webkit-keyframes dotAnime6 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(80px, -150px);
+            transform: translate(80px, -150px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(230px, -480px);
+            transform: translate(230px, -480px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(230px, -480px);
+            transform: translate(230px, -480px);
+  }
+}
+
+@-webkit-keyframes dotAnime7 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(120px, -110px);
+            transform: translate(120px, -110px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(330px, -480px);
+            transform: translate(330px, -480px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(330px, -480px);
+            transform: translate(330px, -480px);
+  }
+}
+
+@-webkit-keyframes dotAnime8 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(150px, -70px);
+            transform: translate(150px, -70px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(460px, -480px);
+            transform: translate(460px, -480px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(460px, -480px);
+            transform: translate(460px, -480px);
+  }
+}
+
+@-webkit-keyframes dotAnime9 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(130px, -30px);
+            transform: translate(130px, -30px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(500px, -200px);
+            transform: translate(500px, -200px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(500px, -200px);
+            transform: translate(500px, -200px);
+  }
+}
+
+@-webkit-keyframes dotAnime10 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(150px, 10px);
+            transform: translate(150px, 10px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(600px, -80px);
+            transform: translate(600px, -80px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(600px, -80px);
+            transform: translate(600px, -80px);
+  }
+}
+
+@-webkit-keyframes dotAnime11 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(110px, 40px);
+            transform: translate(110px, 40px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(600px, 40px);
+            transform: translate(600px, 40px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(600px, 40px);
+            transform: translate(600px, 40px);
+  }
+}
+
+@-webkit-keyframes dotAnime12 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(70px, 70px);
+            transform: translate(70px, 70px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(540px, 140px);
+            transform: translate(540px, 140px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(540px, 140px);
+            transform: translate(540px, 140px);
+  }
+}
+
+@-webkit-keyframes dotAnime13 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(40px, 80px);
+            transform: translate(40px, 80px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(340px, 280px);
+            transform: translate(340px, 280px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(340px, 280px);
+            transform: translate(340px, 280px);
+  }
+}
+
+@-webkit-keyframes dotAnime14 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(-10px, 70px);
+            transform: translate(-10px, 70px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(100px, 300px);
+            transform: translate(100px, 300px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(100px, 300px);
+            transform: translate(100px, 300px);
+  }
+}
+
+@-webkit-keyframes dotAnime15 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(-60px, 80px);
+            transform: translate(-60px, 80px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(-90px, 300px);
+            transform: translate(-90px, 300px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-90px, 300px);
+            transform: translate(-90px, 300px);
+  }
+}
+
+@-webkit-keyframes dotAnime16 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(-90px, 60px);
+            transform: translate(-90px, 60px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(-220px, 340px);
+            transform: translate(-220px, 340px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-220px, 340px);
+            transform: translate(-220px, 340px);
+  }
+}
+
+@-webkit-keyframes dotAnime17 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(-120px, 20px);
+            transform: translate(-120px, 20px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(-360px, 340px);
+            transform: translate(-360px, 340px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-360px, 340px);
+            transform: translate(-360px, 340px);
+  }
+}
+
+@-webkit-keyframes dotAnime18 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(-110px, -10px);
+            transform: translate(-110px, -10px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(-540px, 200px);
+            transform: translate(-540px, 200px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-540px, 200px);
+            transform: translate(-540px, 200px);
+  }
+}
+
+@-webkit-keyframes dotAnime19 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(-130px, -50px);
+            transform: translate(-130px, -50px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(-540px, 0px);
+            transform: translate(-540px, 0px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-540px, 0px);
+            transform: translate(-540px, 0px);
+  }
+}
+
+@-webkit-keyframes dotAnime20 {
+  0% {
+    opacity: 0.8;
+    -webkit-transform: translate(-140px, -90px);
+            transform: translate(-140px, -90px);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: translate(-540px, -100px);
+            transform: translate(-540px, -100px);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(-540px, -100px);
+            transform: translate(-540px, -100px);
+  }
+}
+
+@-webkit-keyframes open_book {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleY(0.9) scaleX(0.4);
+            transform: scaleY(0.9) scaleX(0.4);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scaleY(1) scaleX(1.1);
+            transform: scaleY(1) scaleX(1.1);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleY(1) scaleX(1);
+            transform: scaleY(1) scaleX(1);
+  }
+}
+
+@-webkit-keyframes open_book2 {
+  0% {
+    -webkit-transform: translateX(-50px) scaleY(1) scaleX(1) rotateY(0deg);
+            transform: translateX(-50px) scaleY(1) scaleX(1) rotateY(0deg);
+  }
+  69% {
+    -webkit-transform: translateX(0px) scaleY(1) scaleX(1) rotateY(0deg);
+            transform: translateX(0px) scaleY(1) scaleX(1) rotateY(0deg);
+  }
+  70% {
+    -webkit-transform: translateX(0px) scaleY(1.1) scaleX(1.6) rotateY(90deg);
+            transform: translateX(0px) scaleY(1.1) scaleX(1.6) rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: translateX(0px) scaleY(1.1) scaleX(1.6) rotateY(90deg);
+            transform: translateX(0px) scaleY(1.1) scaleX(1.6) rotateY(90deg);
+  }
+}
+
+@-webkit-keyframes open_book3 {
+  0% {
+    -webkit-transform: translateX(50px) scaleY(1) scaleX(1) rotateY(0deg);
+            transform: translateX(50px) scaleY(1) scaleX(1) rotateY(0deg);
+  }
+  69% {
+    -webkit-transform: translateX(0px) scaleY(1) scaleX(1) rotateY(0deg);
+            transform: translateX(0px) scaleY(1) scaleX(1) rotateY(0deg);
+  }
+  70% {
+    -webkit-transform: translateX(0px) scaleY(1.1) scaleX(1.6) rotateY(90deg);
+            transform: translateX(0px) scaleY(1.1) scaleX(1.6) rotateY(90deg);
+  }
+  100% {
+    -webkit-transform: translateX(0px) scaleY(1.1) scaleX(1.6) rotateY(90deg);
+            transform: translateX(0px) scaleY(1.1) scaleX(1.6) rotateY(90deg);
+  }
+}
+
+@-webkit-keyframes touchScreen {
+  0%, 100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: .5;
+  }
+  50% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,50 @@
+<div class="currentRankingSec">
+  <div class="currentRanking">
+    <span class="title">現在の順位</span>
+    <span class="num"><%= model.rankInfo.orderRank %>位</span>
+  </div>
+  <div class="maxRanking">
+    <span class="title">最高順位</span>
+    <span class="num"><%= model.rankInfo.highestOrderRank %>位</span>
+  </div>
+</div>
+<ul class="btnSec common_tab">
+  <li class="changeBtn TE rank" data-id="rank"></li>
+  <li class="changeBtn TE daily" data-id="daily"></li>
+  <li class="changeBtn TE lastRank" data-id="lastRank"></li>
+</ul>
+<div id="listWrap" class="">
+  <div class="listScrollInner" id="listText">
+    <div class="explainTextSec">
+      <span class="text rank">
+        ■ランクアップ報酬<br>
+        ランキングの最高順位を更新すると、マギアストーンが獲得できます。
+      </span>
+      <span class="text daily">
+        ■デイリー報酬<br>
+        イベント期間中に到達したランキングの最高順位に応じて<br>
+        1日1回「ランクメダル」が獲得できます。
+      </span>
+      <span class="text lastRank">
+        ■最終順位報酬<br>
+        イベント終了後に決定したランキングの順位に応じて<br>
+        エンブレムと「みたまの勲章」が獲得できます。
+      </span>
+    </div>
+    <table class="listTable dailyMaxRank">
+      <%= model.dailyList %>
+      <%= model.maxRankList %>
+    </table>
+    <div class="lastRankTableSec">
+      <table class="listTable lastRank">
+        <tr>
+          <th class="empty"></th>
+          <th>エンブレム</th>
+          <th>みたまの勲章</th>
+        </tr>
+        <%= model.lastRankingList %>
+      </table>
+      <div class="blindSec"></div>
+    </div>
+  </div>
+</div>

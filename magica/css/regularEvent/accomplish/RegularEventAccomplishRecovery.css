@@ -1,0 +1,42 @@
+#allRecoveryBtn {
+  width: 144px;
+  height: 46px;
+  background: url("/magica/resource/image_web/event/accomplish/common/deck/btn_cure.png") left top no-repeat;
+}
+
+#allRecoveryBtn.off {
+  -webkit-filter: grayscale(100%) brightness(70%);
+  filter: grayscale(100%) brightness(70%);
+}
+
+#recoverConfirm #cautionWrap {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 18px;
+  margin: 35px 0px 25px 120px;
+  text-align: left;
+}
+
+#recoverConfirm #cautionWrap .checkBox {
+  width: 30px;
+  height: 30px;
+  background-image: url("/magica/resource/image_web/common/icon/icon_checkbox.png");
+  background-size: 30px 30px;
+  display: block;
+  position: relative;
+  margin-right: 6px;
+}
+
+#recoverConfirm #cautionWrap.current .checkBox:before {
+  width: 23px;
+  height: 18px;
+  background-image: url("/magica/resource/image_web/common/icon/icon_checkbox_check.png");
+  background-repeat: no-repeat;
+  background-size: 23px 18px;
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  content: "";
+}

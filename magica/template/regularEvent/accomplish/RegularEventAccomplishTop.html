@@ -1,0 +1,263 @@
+<div id="battleMuseumTop">
+
+	<% if (window.isDebug) { %>
+			<div id="debugBtn" class="mb_white TE" style="position:absolute;left:220px;top:50px;z-index:1000;">クリア演出</div>
+			<div id="debugBtn2" class="mb_white TE" style="position:absolute;left:220px;top:110px;z-index:1000;">場所</div>
+	<% } %>
+
+	<div id="mainArea">
+		<div id="logo">
+			<img src="/magica/resource/image_web/regularEvent/accomplish/common/logo_accomplish.png" alt="">
+			<% var year = eventMaster.endAt.slice(0,4); %>
+			<% var mo;  if(eventMaster.endAt.slice(5,6) == 0){mo = eventMaster.endAt.slice(6,7);}else{mo = eventMaster.endAt.slice(5,7);} %>
+			<% var day; if(eventMaster.endAt.slice(8,9) == 0){day = eventMaster.endAt.slice(9,10);}else{day = eventMaster.endAt.slice(8,10);} %>
+			<% var time = eventMaster.endAt.slice(11,16) %>
+			<span id="day"><%= year %>年<%= mo %>月<%= day %>日 <%= time %>まで</span>
+		</div>
+
+		<div id="helpBtn" class="se_decide TE sb_gold_02" data-eventid="<%= eventMaster.regularEventId %>">遊び方</div>
+		<div id='archiveBtn' class='se_decide TE sb_gold_02 linkBtn' data-href="#/StoryCollection/accomplish">アーカイブ</div>
+
+		<div id="buttonArea">
+			<div id="missionBtn" class="mb_white popupBtn TE linkBtn" data-href="#/MissionTop/<%= eventMaster.regularEventId %>">ミッション</div>
+			<div id="allRecovery"></div>
+		</div>
+
+		<div id="allStageNum">解放済ステージ：<span id="maxStageText"></span></div>
+	</div>
+
+	<div id="questArea"></div>
+
+	<div id="nowBook" class="">
+		<span id="battleBtn" class="btn b_pink TE">挑戦する</span>
+		<div id="nowBattleBtn" class="se_decide TE"></div>
+	</div>
+
+	<div id="questListArea" class="hide"></div>
+
+	<div id="arrowBtnArea">
+		<div class="battleArrow rightArr se_tabs TE"></div>
+		<div class="battleArrow leftArr se_tabs TE"></div>
+	</div>
+
+	<div id="enemyArea"></div>
+
+	<div id="allClear">最高ステージに到達しています<br>更新をお待ちください</div>
+
+</div>
+
+<!-- メイン部分 -->
+<script type="text/template" id="questDetailTemp">
+
+	<div id="stageArea">Stage <span id="nowStageText"></span></div>
+	<div id="rewardArea">Reward<div id="rewardList" class="cleare_<%="<%= model.cleared %\>"%>">
+		<%="<% _.forEach(rewardModels,function(txt,index){ %\>"%>
+		<div class="commonItemImgWrap">
+			<%="<%= txt %\>"%>
+		</div>
+		<%="<% }) %\>"%>
+	</div></div>
+
+</script>
+
+<!-- 敵ユニット情報関連 -->
+<script type="text/template" id="enemyListTemp">
+	<ul id="enemyList">
+		<%='<% _.forEach(model,function(_model,index){ %\>'%>
+		<%='<% var status = ""; if( _model.hp && _model.hpStart == 0 ){ status = "dead"; }else{ if(!winFlag){status = "alive"; }else{status = "dead";}; } %\>'%>
+		<%='<% var noHp = ""; if( _model.hp == 0 ){ noHp = "noHp"; } %\>'%>
+		<li class='enemyArea pos<%="<%= _model.pos %\>"%> <%="<%= status %\>"%> <%="<%= noHp %\>"%> <%="<% if(_model.bossType == 4){%\>"%>boss<%="<%} %\>"%>'>
+			<%='<% if(_model.hp != 0){  %\>'%>
+			<div class="attribute"><div class="<%="<%= _model.align %\>"%>"></div></div>
+
+			<%='<% if(!winFlag){  %\>'%>
+				<div class="hpGauge">
+					<div class="gaugeInner01"><div class="gaugeBg" style="width: <%="<%= Math.floor( (_model.hpStart / _model.hp) * 100) %\>"%>%"></div></div>
+				</div>
+
+				<%='<% if(_model.magiaId){  %\>'%>
+					<%='<% var mp = Math.floor(_model.mpStart / 10) | 0; if(mp > 100){ var dp = (mp - 100)*2; mp = 100;} if(dp > 100){ dp = 100 }  %\>'%>
+					<div class="mpGauge">
+						<div class="gaugeInner01"><div class="gaugeBg" style="width: <%="<%= dp %\>"%>%"></div></div>
+						<div class="gaugeInner02"><div class="gaugeBg" style="width: <%="<%= mp %\>"%>%"></div></div>
+					</div>
+				<%='<% } %\>'%>
+			<%='<% } %\>'%>
+
+
+			<div class="enemyInfoBtn se_decide TE" data-index="<%="<%= index %\>"%>"></div>
+			<%='<% } %\>'%>
+		</li>
+		<%='<% }) %\>'%>
+	</ul>
+	<div id="enemyText"></div>
+</script>
+
+<!-- 下部クエストリスト 右からバトル１を表示させるためにステージ総数から減算-->
+<script type="text/template" id="questListTemp">
+	<ul id="questList">
+		<%='<% _.forEach(model,function(_model,index){  %\>'%>
+		<%='<% var _index = index + 1; %\>'%>
+		<li id='<%='<%= "questId" + _index %\>'%>' class='quest scrollElm<%='<% if(_model.cleared){ %\>'%> cleared<%='<% } %\>'%><%='<% if(_model.questBattle.startStory){ %\>'%> story<%='<% } %\>'%>'>
+			<div class="questInner">
+				<div class='questNumber'>
+					<%='<% var _num = _index + ""; _.forEach(_num.split(""),function(txt){ %\>'%>
+						<span class="num<%='<%= txt %\>'%>"></span>
+						<%='<% }) %\>'%>
+				</div>
+				<%='<% if(_model.questBattle.startStory){ %\>'%>
+					<span class='storyIcon'></span>
+				<%='<% } %\>'%>
+			</div>
+			<div class="questInner">
+				<div class='questNumber'>
+					<%='<% var _num = _index + ""; _.forEach(_num.split(""),function(txt){ %\>'%>
+						<span class="num<%='<%= txt %\>'%>"></span>
+						<%='<% }) %\>'%>
+				</div>
+				<%='<% if(_model.questBattle.startStory){ %\>'%>
+					<%='<% if(_model.questBattle.parameterMap && _model.questBattle.parameterMap.CARDID){ %\>'%><img class='storyChara' src="/magica/resource/image_web/regularEvent/accomplish/common/storychara/icon_stage_chara_<%='<%= _model.questBattle.parameterMap.CARDID %\>'%>.png"/><%='<% } %\>'%>
+					<span class='storyIcon'></span>
+				<%='<% } %\>'%>
+			</div>
+		</li>
+		<%='<% }) %\>'%>
+	</ul>
+</script>
+
+
+<!-- エネミー情報 -->
+<script type="text/template" id="enemyDetailPopTemp">
+	<div id="enemyInfoList">
+		<div class="enemyInfo">
+			<div class="name">
+				<div class="attribute"><div class="<%='<%= model.align %\>'%>"></div></div><%='<%= model.name %\>'%>
+			</div>
+
+			<div class="hpArea"><span class="hp">HP</span><span class="hpText"><%='<% if(!winFlag){  %\>'%><%='<%= model.hpStart %\>'%><%='<% }else{ %\>'%>0<%='<% } %\>'%>/<%='<%= model.hp %\>'%></span></div>
+
+			<%='<% if(model.miniCharId){ var imgId = String(model.miniCharId).slice(0,4); %\>'%>
+				<%='<% if(imgId[0] == "6" || imgId[0] == "7"){ %\>'%>
+				<img class="iamge" data-nativeimgkey='enemy_<%='<%= imgId %\>'%>_l' data-src='resource/image_native/enemy_w/enemy_<%='<%= imgId %\>'%>_l.png'>
+				<%='<% }else{ %\>'%>
+				<img class="iamge mini" data-nativeimgkey='mini_<%='<%= model.miniCharId %\>'%>_s' data-src='resource/image_native/mini/image/mini_<%='<%= model.miniCharId %\>'%>_s.png'>
+				<%='<% } %\>'%>
+			<%='<% } %\>'%>
+
+			<%='<% var skillList = []; if(model.viewSkillInfo){ skillList = model.viewSkillInfo.split(","); } %\>'%>
+
+			<div class="skillTitle">使用スキル</div>
+			<div class="skillWrap">
+				<%='<% if(skillList[0]){ %\>'%><div class="skill"><%='<%= skillList[0] %\>'%></div><%='<% } %\>'%>
+				<%='<% if(skillList[1]){ %\>'%><div class="skill"><%='<%= skillList[1] %\>'%></div><%='<% } %\>'%>
+				<%='<% if(skillList[2]){ %\>'%><div class="skill"><%='<%= skillList[2] %\>'%></div><%='<% } %\>'%>
+			</div>
+
+			<div class="taiseiTitle">状態異常耐性</div>
+			<div class="taiseiList">
+				<%='<% var taiseiTemp = []; %\>'%>
+				<%='<% if(model.isPoisonInfo == true){taiseiTemp.push("POISON")} %\>'%>
+				<%='<% if(model.isBurnInfo == true){taiseiTemp.push("BURN")} %\>'%>
+				<%='<% if(model.isCurseInfo == true){taiseiTemp.push("CURSE")} %\>'%>
+				<%='<% if(model.isFogInfo == true){taiseiTemp.push("FOG")} %\>'%>
+				<%='<% if(model.isDarknessInfo == true){taiseiTemp.push("DARKNESS")} %\>'%>
+				<%='<% if(model.isBlindnessInfo == true){taiseiTemp.push("BLINDNESS")} %\>'%>
+				<%='<% if(model.isCharmInfo == true){taiseiTemp.push("CHARM")} %\>'%>
+				<%='<% if(model.isStunInfo == true){taiseiTemp.push("STUN")} %\>'%>
+				<%='<% if(model.isRestraintInfo == true){taiseiTemp.push("RESTRAINT")} %\>'%>
+				<%='<% if(model.isBanMagiaInfo == true){taiseiTemp.push("BAN_MAGIA")} %\>'%>
+				<%='<% if(model.isBanSkillInfo == true){taiseiTemp.push("BAN_SKILL")} %\>'%>
+				<%='<% if(model.isDamageUpBadNumInfo == true){taiseiTemp.push("DAMAGE_UP_BAD_NUM")} %\>'%>
+
+				<%='<% var taiseiNameList = [{"name":"毒","statuscode":"POISON","has":"×"},{"name":"魅了","statuscode":"CHARM","has":"×"},{"name":"霧","statuscode":"FOG","has":"×"},{"name":"虚弱","statuscode":"DAMAGE_UP_BAD_NUM","has":"×"},{"name":"やけど","statuscode":"BURN","has":"×"},{"name":"スタン","statuscode":"STUN","has":"×"},{"name":"暗闇","statuscode":"DARKNESS","has":"×"},{"name":"マギア不可","statuscode":"BAN_MAGIA","has":"×"},{"name":"呪い","statuscode":"CURSE","has":"×"},{"name":"拘束","statuscode":"RESTRAINT","has":"×"},{"name":"幻惑","statuscode":"BLINDNESS","has":"×"},{"name":"スキル不可","statuscode":"BAN_SKILL","has":"×"}]; %\>'%>
+
+				<%='<% var taiseiNameListLeng = taiseiNameList.length; console.log(taiseiTemp) %\>'%>
+
+				<%='<% for(var t = 0; t < taiseiNameListLeng; t++) { %\>'%>
+					<%='<% if( _.contains( taiseiTemp, taiseiNameList[t].statuscode ) ){ taiseiNameList[t].has = "〇"} %\>'%>
+					<div class="taiseiWrap">
+						<div class="title"><%='<%= taiseiNameList[t].name %\>'%></div>
+						<div class="value"><%='<%= taiseiNameList[t].has %\>'%></div>
+					</div>
+				<%='<% } %\>'%>
+			</div>
+		</div>
+	</div>
+</script>
+
+
+<script type="text/template" id="clearAnimePartsTemp">
+	<div id="ClearAnimation">
+		<div id="BlackBg"></div>
+
+		<div id="rollLightArea">
+			<div id="light01"></div>
+			<div id="light02scale"><div id="light02"></div></div>
+		</div>
+
+
+
+		<div id="centerDom">
+			<div id="rewardArea">
+				<%="<% _.forEach(rewardModels,function(txt,index){ %\>"%>
+				<div class="commonItemImgWrap">
+					<%="<%= txt %\>"%>
+				</div>
+				<%="<% }) %\>"%>
+			</div>
+		</div>
+
+		<div id="bookArea">
+			<div id="book01_l"></div><div id="book01_r"></div>
+			<div id="book02_l"></div><div id="book02_r"></div>
+			<div id="book03_l"></div><div id="book03_r"></div>
+		</div>
+
+		<div id="dotLightArea">
+			<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+			<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+		</div>
+
+		<div id="stageClearArea">
+			<div id="acp"><div></div></div>
+			<div id="textArea">
+				<div></div><div></div><div></div>
+			</div>
+			<div id="questNumberArea">
+				<%='<% var _num = (model.num + 1) + ""; _.forEach(_num.split(""),function(txt){ %\>'%>
+				<span class="num<%='<%= txt %\>'%>"></span>
+				<%='<% }) %\>'%>
+			</div>
+		</div>
+
+	</div>
+</script>
+
+<script type="text/template" id="clearAllAnimePartsTemp">
+	<div id="ClearAnimation">
+		<div id="BlackBg"></div>
+		<div id="centerDom">
+オールクリア
+			<div id="rewardArea" style="pointer-events:auto">
+				<%="<% _.forEach(rewardModels,function(txt,index){ %\>"%>
+				<div class="commonItemImgWrap">
+					<%="<%= txt %\>"%>
+				</div>
+				<%="<% }) %\>"%>
+			</div>
+		</div>
+
+	</div>
+</script>
+
+
+<script type="text/template" id="debug">
+	<ul id="inputWrap">
+		<li>displayBase：<input type="checkbox" id="displayBase" class="commonInput"  style="width:190px;height: 28px;"></li>
+		<li>displayAlignIcon：<input type="checkbox" id="displayAlignIcon" class="commonInput"  style="width:190px;height: 28px;"></li>
+		<li>X：<input type="text" id="inputX" class="commonInput" placeholder="X座標を入力" value="0"></li>
+		<li>Y：<input type="text" id="inputY" class="commonInput" placeholder="Y座標を入力" value="0"></li>
+		<li>scale：<input type="text" id="inputScale" class="commonInput" placeholder="拡縮を入力" value="1.0"></li>
+		<li>currentHp：<input type="text" id="inputHp" class="commonInput" placeholder="敵の現在HP" value=""></li>
+	</ul>
+</script>
