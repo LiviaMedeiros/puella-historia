@@ -1,0 +1,249 @@
+#Scene0StorySelectAfterFilm1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#Scene0StorySelectAfterFilm1 .mainSec {
+  width: 100%;
+  height: 100%;
+}
+
+#Scene0StorySelectAfterFilm1 .mainSec #nativeTouchWrap {
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0px;
+  left: -500px;
+  display: block;
+}
+
+#Scene0StorySelectAfterFilm1 .mainSec #changeStoryAllListBtn {
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 148px;
+  height: 34px;
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/btn_scenario_list.png") left top no-repeat;
+  z-index: 10;
+}
+
+#Scene0StorySelectAfterFilm1 .mainSec #changeStoryAllListBtn.disp {
+  display: block;
+}
+
+#Scene0StorySelectAfterFilm1 .mainSec #returnStoryListBtn {
+  display: none;
+  width: 96px;
+  height: 65px;
+  background-image: url("/magica/resource/image_web/common/global/global_back.png");
+  background-repeat: no-repeat;
+  background-position: right 9px;
+  background-size: 89px 43px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 102;
+}
+
+#Scene0StorySelectAfterFilm1 .mainSec #returnStoryListBtn.disp {
+  display: block;
+}
+
+#Scene0StorySelectAfterFilm1 .mainSec #recollectionBtn {
+  position: absolute;
+  min-width: 120px;
+  top: 12px;
+  right: 124px;
+}
+
+#Scene0StorySelectAfterFilm1 .mainSec #BtnListAfterFilm1Sec {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 90%;
+  height: 80%;
+}
+
+#Scene0StorySelectAfterFilm1 .mainSec #BtnListAfterFilm1Sec #scrollWrap {
+  width: 100%;
+  height: -webkit-calc(100%);
+  overflow: hidden;
+}
+
+#Scene0StorySelectAfterFilm1 .mainSec #BtnListAfterFilm1Sec #scrollWrap .scrollInner {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+#Scene0StorySelectAfterFilm1 .mainSec #BtnListAfterFilm1Sec #scrollWrap .scrollInner .listWrapSec {
+  padding: 0 0 20px 0;
+}
+
+#Scene0StorySelectAfterFilm1 .mainSec #BtnListAfterFilm1Sec #scrollWrap .scrollInner .listSec {
+  padding: 50px 20px 20px 20px;
+}
+
+#Scene0StorySelectAfterFilm1 .mainSec #BtnListAfterFilm1Sec #scrollWrap .scrollInner .listSec .storyBtn {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .popupInner {
+  width: 964px;
+  height: 552px;
+  top: -webkit-calc(50% - 276px);
+  left: -webkit-calc((100% - 964px) / 2);
+  padding: 28px 50px;
+  border-radius: 0px;
+  border-width: 0px;
+  -o-border-image: none;
+     border-image: none;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/popup_base_l.png") left top no-repeat;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .popupInner .closeDefault {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/btn_popup_close.png") left top no-repeat;
+  background-size: 70px 66px;
+  top: -14px;
+  right: -20px;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec {
+  position: absolute;
+  top: 32px;
+  right: 48px;
+  width: 590px;
+  height: 350px;
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/recollectionPopup/frame_recollection.png") left top no-repeat;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec .textWrap {
+  position: absolute;
+  top: 48px;
+  left: 26px;
+  width: 590px;
+  height: 350px;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec #recollectionPopupScrollWrap {
+  width: 548px;
+  height: 280px;
+  overflow: hidden;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec #recollectionPopupScrollWrap .scrollInner {
+  width: 538px;
+  height: auto;
+  min-height: 100%;
+  text-align: left;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: justify;
+  color: #5c5b53;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec .textTitle {
+  position: absolute;
+  top: 0px;
+  left: 48px;
+  width: 516px;
+  height: 38px;
+  text-align: center;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec .textTitle #titleImg {
+  display: inline-block;
+  margin: 8px 0 0 0;
+  width: 160px;
+  height: 24px;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec .textTitle #titleImg.film1 {
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/recollectionPopup/header/header_text_film01_1.png") left top no-repeat;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec .textTitle #titleImg.film2 {
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/recollectionPopup/header/header_text_film02_1.png") left top no-repeat;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec .textTitle #titleImg.film3 {
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/recollectionPopup/header/header_text_film03_1.png") left top no-repeat;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec .textTitle #titleImg.film4 {
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/recollectionPopup/header/header_text_film04_1.png") left top no-repeat;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec .textTitle #titleImg.film5 {
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/recollectionPopup/header/header_text_film05_1.png") left top no-repeat;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec .textTitle #titleImg.film6 {
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/recollectionPopup/header/header_text_film06_1.png") left top no-repeat;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec .textTitle #titleImg.film7 {
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/recollectionPopup/header/header_text_film07_1.png") left top no-repeat;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec .textTitle #titleImg.film8 {
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/recollectionPopup/header/header_text_film08_1.png") left top no-repeat;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec .textTitle #titleImg.film9 {
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/recollectionPopup/header/header_text_film09_1.png") left top no-repeat;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec .textTitle #titleImg.film10 {
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/recollectionPopup/header/header_text_film10_1.png") left top no-repeat;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec .textTitle #titleImg.film11 {
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/recollectionPopup/header/header_text_film11_1.png") left top no-repeat;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .mainTextSec .textTitle #titleImg.film12 {
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/recollectionPopup/header/header_text_film12_1.png") left top no-repeat;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .filmBtnListSec {
+  position: absolute;
+  bottom: 62px;
+  left: 288px;
+  height: 98px;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .filmBtnListSec .filmBtnList {
+  text-align: left;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .filmBtnListSec .filmBtnList .filmBtnSec {
+  width: 84px;
+  height: 40px;
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/recollectionPopup/btn_film_off.png") left top no-repeat;
+  display: inline-block;
+  padding: 9px 0 0 0;
+  margin: 0 8px 10px 0;
+  text-align: center;
+  color: #f8f7ea;
+  font-size: 62%;
+}
+
+.popupContent.typeA.scene0RecollectionPopup .recollectionPopupSec .filmBtnListSec .filmBtnList .filmBtnSec.on {
+  background: url("/magica/resource/image_web/page/quest/scene0/storySelect/recollectionPopup/btn_film_on.png") left top no-repeat;
+  color: #54700c;
+}
+
+.popupContent.typeC.scene0StoryPopup .popupTextArea {
+  font-size: 22px;
+  line-height: 1.5;
+}

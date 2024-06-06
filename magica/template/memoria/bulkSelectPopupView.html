@@ -1,0 +1,73 @@
+<div id="sortfilter" class='memoria bulkSelect'>
+	<p class='filterText'>チェックをつけた項目のみ選択します</p>
+
+	<ul id="filterListWrap" class="">
+
+		<!-- レアリティ -->
+		<li id="filterRankList" class="filterList" data-btntype="check2" data-sortid="3">
+			<div class='filterBar'>
+				<p>レアリティ</p>
+				<span class='filterBtn se_tabs ALL' data-filter="ALL"><span class='checkBox'></span>すべて選択</span>
+			</div>
+			<div class="flexBox">
+				<span class="filterBtn se_tabs" data-filter="RANK_1"><span class='checkBox'></span><span class="star"></span>1</span>
+				<span class="filterBtn se_tabs" data-filter="RANK_2"><span class='checkBox'></span><span class="star"></span>2</span>
+				<span class="filterBtn se_tabs" data-filter="RANK_3"><span class='checkBox'></span><span class="star"></span>3</span>
+				<span class="filterBtn se_tabs" data-filter="RANK_4"><span class='checkBox'></span><span class="star"></span>4</span>
+			</div>
+		</li>
+
+		<!-- ロックフィルタ -->
+		<li id="filterLockList" class="filterList" data-btntype="radio" data-sortid="5">
+			<div class='filterBar'>
+				<p>ロック</p>
+				<span class='filterBtn se_tabs ALL' data-filter="ALL"><span class='checkBox'></span>すべて選択</span>
+			</div>
+			<div class='flexBox'>
+				<span class="filterBtn se_tabs" data-filter="LOCKED"><span class='checkBox'></span>ロック中</span>
+				<span class="filterBtn se_tabs" data-filter="UNLOCKED"><span class='checkBox'></span>ロックなし</span>
+			</div>
+		</li>
+
+		<!-- アビリティ/スキル -->
+		<li id="filterAttList" class="filterList" data-btntype="check2" data-sortid="2">
+			<div class='filterBar'>
+				<p>タイプ</p>
+				<span class='filterBtn se_tabs ALL' data-filter="ALL"><span class='checkBox'></span>すべて選択</span>
+			</div>
+			<div class='flexBox'>
+				<span class="filterBtn se_tabs" data-filter="ABILITY"><span class='checkBox'></span>アビリティ</span>
+				<span class="filterBtn se_tabs" data-filter="SKILL"><span class='checkBox'></span>スキル</span>
+			</div>
+		</li>
+
+		<!-- 強化済み -->
+		<li id="filterComposeList" class="filterList" data-btntype="check2" data-sortid="9">
+			<div class='filterBar'>
+				<p>強化状態</p>
+				<span class='filterBtn se_tabs ALL' data-filter="ALL"><span class='checkBox'></span>すべて選択</span>
+			</div>
+			<div class='flexBox'>
+				<span class="filterBtn se_tabs" data-filter="LV_MAX"><span class='checkBox'></span>Lv MAX</span>
+				<span class="filterBtn se_tabs" data-filter="LB_MAX"><span class='checkBox'></span>限界突破済</span>
+				<span class="filterBtn se_tabs" data-filter="ETC"><span class='checkBox'></span>その他</span>
+			</div>
+		</li>
+
+		<!-- 特殊フィルタ -->
+		<li id="filterSpecialList" class="filterList" data-btntype="check" data-sortid="10">
+			<div class='filterBar'>
+				<p>特殊</p>
+				<span class='filterBtn se_tabs ALL' data-filter="ALL"><span class='checkBox'></span>すべて選択</span>
+			</div>
+			<div class="flexBox">
+				<span class="filterBtn se_tabs" data-filter="EVENT"><span class='checkBox'></span>イベント</span>
+			</div>
+		</li>
+	</ul>
+
+	<div id="cardSortBtnsArea">
+		<span class="btn TE b_pink se_decide sort popupCloseBtn"><span class='b_screen'></span>選択する</span>
+	</div>
+
+</div>

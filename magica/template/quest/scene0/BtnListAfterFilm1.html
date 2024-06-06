@@ -1,0 +1,19 @@
+<div id="BtnListAfterFilm1Sec">
+  <div id='scrollWrap'>
+    <ul id="btnList" class="scrollInner">
+    </ul>
+  </div>
+</div>
+
+<script type="text/template" id="tempListSec">
+  <div id="<%='<%= model.listId %\>'%>" class="commonFrame1 listSec">
+    <h2><%='<%= model.listTitle %\>'%></h2>
+    <div class="btnListSec"></div>
+  </div>
+</script>
+
+<script type="text/template" id="tempBtn">
+  <span class="btn TE <%='<%= model.btnClass %\>'%>">
+    <%='<%= model.btnText %\>'%>
+  </span>
+</script>
