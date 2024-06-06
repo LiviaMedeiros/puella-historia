@@ -1,0 +1,244 @@
+#menu, #globalBackBtn {
+  display: none;
+}
+
+#SelectableGachaCharaSelect {
+  width: 1024px;
+  height: 100%;
+  position: relative;
+}
+
+#SelectableGachaCharaSelect #mainBtn {
+  width: 112px;
+  height: 118px;
+  background: url("/magica/resource/image_web/page/memoria/equip/btn_ok.png") left top no-repeat;
+  position: absolute;
+  right: 26px;
+  bottom: 6px;
+  z-index: 100001;
+}
+
+#SelectableGachaCharaSelect #mainBtn.off {
+  background: url("/magica/resource/image_web/page/memoria/equip/btn_ok_gray.png") left top no-repeat;
+  pointer-events: none;
+}
+
+#SelectableGachaCharaSelect .detailChangeBtn {
+  width: 72px;
+  height: 72px;
+  background: url("/magica/resource/image_web/page/gacha/selectable/btn_detail.png") left top no-repeat;
+  position: absolute;
+  top: 290px;
+  left: 20px;
+  z-index: 500;
+}
+
+#SelectableGachaCharaSelect .voiceBtn {
+  width: 72px;
+  height: 72px;
+  background: url("/magica/resource/image_web/page/gacha/selectable/btn_voice.png") left top no-repeat;
+  position: absolute;
+  top: 376px;
+  left: 20px;
+  z-index: 500;
+}
+
+#SelectableGachaCharaSelect #charaDetailWrap {
+  width: 760px;
+  height: 544px;
+  background: url("/magica/resource/image_web/page/gacha/selectable/bg_circle_r_a.png") left top no-repeat;
+  position: absolute;
+  top: 0;
+  right: -160px;
+  z-index: 100;
+}
+
+#SelectableGachaCharaSelect #rare {
+  width: 100px;
+  height: 26px;
+  position: absolute;
+  top: 59px;
+  left: 160px;
+}
+
+#SelectableGachaCharaSelect #rare span {
+  width: 25px;
+  height: 26px;
+  margin: 0;
+}
+
+#SelectableGachaCharaSelect #cv {
+  height: 18px;
+  position: absolute;
+  top: 65px;
+  right: 171px;
+  line-height: 1;
+}
+
+#SelectableGachaCharaSelect .attribute {
+  width: 58px;
+  height: 58px;
+  position: absolute;
+  top: 87px;
+  left: 88px;
+  z-index: 101;
+}
+
+#SelectableGachaCharaSelect #name {
+  width: 754px;
+  height: 72px;
+  padding-top: 2px;
+  padding-left: 114px;
+  background: url("/magica/resource/image_web/page/gacha/selectable/bg_name_a.png") left top no-repeat;
+  position: absolute;
+  top: 80px;
+  right: -40px;
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 72px;
+  z-index: 100;
+}
+
+#SelectableGachaCharaSelect #title {
+  height: 20px;
+  position: absolute;
+  top: 112px;
+  left: 408px;
+  font-size: 20px;
+  line-height: 1;
+  z-index: 102;
+}
+
+#SelectableGachaCharaSelect #charaDetail, #SelectableGachaCharaSelect #charaParameter {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#SelectableGachaCharaSelect #charaDetail.show, #SelectableGachaCharaSelect #charaParameter.show {
+  display: block;
+}
+
+#SelectableGachaCharaSelect #charaDetail #serif {
+  height: 22px;
+  position: absolute;
+  top: 175px;
+  left: 131px;
+  color: #f66a99;
+  font-size: 22px;
+  line-height: 1;
+  -webkit-transform: translateZ(0);
+}
+
+#SelectableGachaCharaSelect #charaDetail #text {
+  width: 410px;
+  position: absolute;
+  top: 220px;
+  right: 192px;
+  font-size: 20px;
+  -webkit-transform: translateZ(0);
+}
+
+#SelectableGachaCharaSelect #charaParameter .dtElm {
+  width: 68px;
+  height: 24px;
+  background: #b28750;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  -webkit-border-radius: 4px 0 0 4px;
+}
+
+#SelectableGachaCharaSelect #charaParameter .dtElm.long {
+  width: 90px;
+}
+
+#SelectableGachaCharaSelect #charaParameter .hp {
+  position: absolute;
+  top: 165px;
+  left: 147px;
+}
+
+#SelectableGachaCharaSelect #charaParameter .atk {
+  position: absolute;
+  top: 165px;
+  left: 294px;
+}
+
+#SelectableGachaCharaSelect #charaParameter .def {
+  position: absolute;
+  top: 165px;
+  left: 441px;
+}
+
+#SelectableGachaCharaSelect #charaParameter .type {
+  position: absolute;
+  top: 196px;
+  left: 147px;
+}
+
+#SelectableGachaCharaSelect #charaParameter .connect {
+  position: absolute;
+  top: 255px;
+  left: 181px;
+}
+
+#SelectableGachaCharaSelect #charaParameter .magia {
+  position: absolute;
+  top: 348px;
+  left: 181px;
+}
+
+#SelectableGachaCharaSelect #charaParameter .value {
+  padding-left: 8px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+#SelectableGachaCharaSelect #charaParameter .connect .title, #SelectableGachaCharaSelect #charaParameter .magia .title {
+  padding-left: 8px;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+#SelectableGachaCharaSelect #charaParameter .connect .detail, #SelectableGachaCharaSelect #charaParameter .magia .detail {
+  padding-top: 5px;
+  padding-left: 18px;
+  width: 398px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#SelectableGachaCharaSelect #charaParameter .commandList {
+  position: absolute;
+  top: 195px;
+  right: 170px;
+}
+
+#SelectableGachaCharaSelect #charaParameter .commandList li {
+  width: 50px;
+  height: 50px;
+}
+
+#SelectableGachaCharaSelect #charaImg {
+  position: absolute;
+  top: -webkit-calc(50% - 314px);
+  left: -235px;
+  z-index: 50;
+  display: none;
+}
+
+#SelectableGachaCharaSelect #charaImg.show {
+  display: block;
+}
+
+#SelectableGachaCharaSelect #charaBg {
+  width: 566px;
+  height: 566px;
+  background: url("/magica/resource/image_web/page/gacha/selectable/bg_circle_l.png") left top no-repeat;
+  position: absolute;
+  top: -webkit-calc(50% - 288px);
+  left: 0;
+  z-index: 1;
+}

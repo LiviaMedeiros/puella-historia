@@ -1,0 +1,21 @@
+<div class="popupInner puellaHistoriaOverviewPopup">
+	<div class="bgWrap"></div>
+	<span class="closeDefault popupCloseBtn se_cancel TE"></span>
+	<p id="popupInfoDetailTitle" class="popupTitle common_title"><%= model.title %></p>
+	<div class="mainImage">
+		<img src="/magica/resource/image_web<%= model.img %>">
+	</div>
+	<div class="popupTextArea">
+		<%= model.content %>
+	</div>
+	<table class="popupBtnArea" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td>
+				<span class="TE decideBtn <%= model.decideBtnClass %> btn b_puellaHistoria <%= (model.decideLink) ? 'linkBtn se_kettei02' : 'se_decide' %>"<%= (model.decideLink) ? " data-href=" + model.decideLink : "" %>>
+					<span class='b_screen'></span>
+					<%= model.decideBtnText %>
+				</span>
+			</td>
+		</tr>
+	</table>
+</div>

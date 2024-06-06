@@ -1,0 +1,516 @@
+#charaImg {
+  display: none;
+}
+
+#charaData .expGaugeInner2, #charaData .expGaugeInner4 {
+  display: block !important;
+}
+
+#composeConfirm.compose .popupTextArea {
+  height: 200px;
+  vertical-align: top;
+}
+
+#composeConfirm.compose .popupTextArea .text {
+  padding-top: 23px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#composeConfirm.compose .popupTextArea #useItemList {
+  width: 100%;
+  height: 92px;
+  position: absolute;
+  bottom: 80px;
+  left: 13px;
+}
+
+#composeConfirm.compose .popupTextArea #useItemList #useItemScrollOuter {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#composeConfirm.compose .popupTextArea #useItemList #useItemScrollOuter .useItemScrollInner {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  padding: 20px 0 5px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#composeConfirm.compose .popupTextArea #useItemList #useItemScrollOuter .useItemScrollInner.scrollWrap {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+#composeConfirm.compose .popupTextArea #useItemList .useItem {
+  width: 52px;
+  position: relative;
+  margin-bottom: 23px;
+}
+
+#composeConfirm.compose .popupTextArea #useItemList .useItem .selectNum {
+  width: 52px;
+  height: 24px;
+  color: #fff;
+  background: #ff3b81;
+  border: 2px solid #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  -webkit-border-radius: 12px;
+  position: absolute;
+  left: -webkit-calc(50% - 26px);
+  top: -19px;
+}
+
+#composeConfirm.compose .popupTextArea #useItemList .useItem img {
+  width: 40px;
+  height: 40px;
+}
+
+#composeConfirm.compose .popupBtnArea {
+  margin-top: 7px;
+}
+
+#previewWrap {
+  width: 336px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#previewWrap > div {
+  width: 30px;
+  height: 30px;
+  background: url("/magica/resource/image_web/page/chara/bg_compose_item_null_s.png") left top no-repeat;
+}
+
+#previewWrap > div:not(:last-child) {
+  margin: 0 4px 0 0;
+}
+
+#previewWrap > div img {
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+}
+
+#CharaCompose {
+  width: 1024px;
+  height: 100%;
+  position: relative;
+  z-index: 1000;
+}
+
+#CharaCompose .commonFrame3 {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+#CharaCompose #itemTab {
+  position: absolute;
+  right: 102px;
+  top: 54px;
+  width: 364px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: flex-start;
+  -ms-flex-wrap: flex-start;
+  flex-wrap: flex-start;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#CharaCompose #itemTab li {
+  width: 146px;
+  height: 36px;
+  line-height: 36px;
+  margin-right: 2px;
+  background-size: 146px 100%;
+  position: relative;
+  font-size: 16px;
+}
+
+#CharaCompose #itemTab li:before, #CharaCompose #itemTab li:after {
+  width: 15px;
+}
+
+#CharaCompose #itemWrap {
+  width: 364px;
+  height: -webkit-calc(100% - 224px);
+  padding: 31px 6px 0 3px;
+  position: absolute;
+  top: 102px;
+  right: 102px;
+  overflow: hidden;
+}
+
+#CharaCompose #itemWrap.selectMax .itemWrapInner .item:not(.show):not(.off):before {
+  width: 70px;
+  height: 76px;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  -webkit-border-radius: 3px;
+  z-index: 100;
+}
+
+#CharaCompose #itemWrap.selectMax .itemWrapInner .item:not(.show):not(.off) img, #CharaCompose #itemWrap.selectMax .itemWrapInner .item:not(.show):not(.off) .hasNum {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-filter: grayscale(100%);
+}
+
+#CharaCompose #itemWrap #itemViewWrap {
+  height: -webkit-calc(100% - 60px);
+  padding: 7px 0 10px;
+  overflow: hidden;
+}
+
+#CharaCompose #itemWrap .episodeWrapInner {
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 25px;
+}
+
+#CharaCompose #itemWrap .episodeWrapInner.hide {
+  display: none;
+}
+
+#CharaCompose #itemWrap .episodeWrapInner .episodeWrap .item {
+  background: url(/magica/resource/image_web/page/chara/bg_gift_popup.png) left top no-repeat;
+  width: 136px;
+  height: 136px;
+  margin: 0 auto;
+}
+
+#CharaCompose #itemWrap .episodeWrapInner .episodeWrap .item img {
+  width: 100%;
+  height: 100%;
+}
+
+#CharaCompose #itemWrap .episodeWrapInner .episodeWrap .itemControllerWrap {
+  width: 340px;
+  height: 52px;
+  -webkit-border-radius: 27px;
+  border: 2px solid #ece1d3;
+  background: #fff;
+  position: absolute;
+  top: 184px;
+  left: 7px;
+  -webkit-border-radius: 27px;
+}
+
+#CharaCompose #itemWrap .episodeWrapInner .episodeWrap .itemControllerWrap .itemNum {
+  position: absolute;
+  right: 171px;
+  width: 105px;
+  line-height: 48px;
+}
+
+#CharaCompose #itemWrap .episodeWrapInner .episodeWrap .itemControllerWrap .itemNum .selectNum {
+  width: 50px;
+  text-align: right;
+}
+
+#CharaCompose #itemWrap .episodeWrapInner .episodeWrap .itemControllerWrap .itemNum .hasNum {
+  width: 50px;
+  text-align: left;
+}
+
+#CharaCompose #itemWrap .episodeWrapInner .episodeWrap .itemControllerWrap .plusBtn {
+  width: 38px;
+  height: 38px;
+  background: url("/magica/resource/image_web/page/chara/btn_plus.png") left top no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 6px;
+  left: 165px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#CharaCompose #itemWrap .episodeWrapInner .episodeWrap .itemControllerWrap .plusBtn.off {
+  -webkit-filter: grayscale(100%) brightness(70%);
+}
+
+#CharaCompose #itemWrap .episodeWrapInner .episodeWrap .itemControllerWrap .minusBtn {
+  width: 38px;
+  height: 38px;
+  background: url("/magica/resource/image_web/page/chara/btn_minus.png") left top no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 6px;
+  left: 20px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#CharaCompose #itemWrap .episodeWrapInner .episodeWrap .itemControllerWrap .minusBtn.off {
+  -webkit-filter: grayscale(100%) brightness(70%);
+}
+
+#CharaCompose #itemWrap .episodeWrapInner .episodeWrap .itemControllerWrap .maxBtn {
+  width: 102px;
+  height: 35px;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#CharaCompose #itemWrap .episodeWrapInner .episodeWrap .itemControllerWrap .maxBtn.off {
+  -webkit-filter: grayscale(100%) brightness(70%);
+}
+
+#CharaCompose #itemWrap .itemWrapInner {
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 25px;
+}
+
+#CharaCompose #itemWrap .itemWrapInner.hide {
+  display: none;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap {
+  margin: 0 0 12px 7px;
+  position: relative;
+  -webkit-justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap.bonusIcon:before {
+  width: 60px;
+  height: 32px;
+  background: url("/magica/resource/image_web/page/chara/icon_compose_bonus.png") left top no-repeat;
+  position: absolute;
+  top: -9px;
+  left: -7px;
+  content: "";
+  z-index: 1000;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap .title {
+  width: 328px;
+  height: 44px;
+  padding: 5px 6px;
+  position: absolute;
+  top: 17px;
+  left: 0;
+  z-index: 10;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap.fireWrap .title {
+  background: url("/magica/resource/image_web/page/chara/caption_fire.png") top left no-repeat;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap.waterWrap .title {
+  background: url("/magica/resource/image_web/page/chara/caption_water.png") top left no-repeat;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap.timberWrap .title {
+  background: url("/magica/resource/image_web/page/chara/caption_timber.png") top left no-repeat;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap.darkWrap .title {
+  background: url("/magica/resource/image_web/page/chara/caption_dark.png") top left no-repeat;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap.lightWrap .title {
+  background: url("/magica/resource/image_web/page/chara/caption_light.png") top left no-repeat;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap.allWrap .title {
+  background: url("/magica/resource/image_web/page/chara/caption_all.png") top left no-repeat;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap .item {
+  width: 70px;
+  height: 70px;
+  margin: 0 14px 0 0;
+  background: url("/magica/resource/image_web/page/chara/bg_compose_item_null.png") top left no-repeat;
+  background-size: contain;
+  position: relative;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 20;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap .item img {
+  width: 70px;
+  height: 70px;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap .item .hasNum {
+  width: 70px;
+  height: 18px;
+  padding: 0px 4px 0px 0px;
+  background: #b28750;
+  position: absolute;
+  bottom: -6px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+  border-radius: 0 0 5px 5px;
+  z-index: 50;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap .item .hasNum span {
+  color: #ffffff;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap .item .selectNum {
+  width: 56px;
+  height: 26px;
+  background: #e4007f;
+  display: none;
+  position: absolute;
+  top: -6px;
+  left: -12px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  border: 2px solid  #ffffff;
+  -webkit-border-radius: 13px;
+  text-shadow: 0 0;
+  z-index: 100;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap .item.show:before {
+  width: 70px;
+  height: 70px;
+  background: url("/magica/resource/image_web/page/chara/frame_compose_select.png") left top no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap .item.show .selectNum {
+  display: block;
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap .item.off {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-filter: grayscale(100%);
+}
+
+#CharaCompose #itemWrap .itemWrapInner .wrap .item.off:before {
+  width: 70px;
+  height: 76px;
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  -webkit-border-radius: 3px;
+  z-index: 100;
+}
+
+#CharaCompose #itemWrap #topWrap {
+  width: 100%;
+  height: 28px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#CharaCompose #itemWrap #topWrap:before {
+  width: 100%;
+  height: 16px;
+  background: url("/magica/resource/image_web/page/chara/text_compose.png") left top no-repeat;
+  position: absolute;
+  top: 6px;
+  left: 4px;
+  content: "";
+}
+
+#CharaCompose #itemWrap #topWrap.type2 {
+  background: #ff3b81;
+}
+
+#CharaCompose #itemWrap #topWrap.type2:before {
+  background: url("/magica/resource/image_web/page/chara/text_compose_2.png") left top no-repeat;
+}
+
+#CharaCompose #itemWrap #topWrap.typeEp:before {
+  background: url("/magica/resource/image_web/page/chara/text_episodelv.png") left top no-repeat;
+}
+
+#CharaCompose #itemWrap .bottomWrap {
+  width: 100%;
+  height: 60px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 6px 6px;
+}
+
+#CharaCompose #itemWrap .bottomWrap #mainBtn {
+  width: 137px;
+  height: 51px;
+  background: url("/magica/resource/image_web/page/chara/btn_pink.png") left top no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 51px;
+  text-align: center;
+  text-shadow: -1px -1px 2px #ff5e7c, 1px -1px 2px #ff5e7c, -1px 1px 2px #ff5e7c, 1px 1px 2px #ff5e7c, -1px -1px 2px #ff5e7c, 1px -1px 2px #ff5e7c, -1px 1px 2px #ff5e7c, 1px 1px 2px #ff5e7c;
+}
+
+#CharaCompose #itemWrap .bottomWrap #mainBtn.off {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-filter: grayscale(100%);
+}
+
+#CharaCompose #itemWrap .bottomWrap #resetBtn {
+  width: 112px;
+  position: absolute;
+  top: 8px;
+  left: 12px;
+}
+
+#CharaCompose #itemWrap.typeEp {
+  top: -webkit-calc(50% - 186px);
+  height: 352px;
+}

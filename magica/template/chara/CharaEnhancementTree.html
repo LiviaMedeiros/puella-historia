@@ -1,0 +1,165 @@
+<div id="CharaEnhancementTree">
+	<div id="coverWrap"></div>
+	<div id="touchWrap"></div>
+	<div id="wrapOpen" class="se_tabs sb_gold_02 TE hide"><span class="b_screen"></span>▲</div>
+	<div id="pointData"></div>
+	<div id="getListData">
+		<div class="getListTitle"></div>
+		<div id="getListScrollOuter"></div>
+	</div>
+	<div id="changeChara" class="linkBtn se_decide TE" data-href="#/CharaListTop"></div>
+	<div id="scaleChangePlus" class="off se_tabs TE"></div>
+	<div id="scaleChangeMinus" class="se_tabs TE"></div>
+	<div id="resetPosition" class="se_cancel TE"></div>
+	<div id="treeReset" class="se_tab TE"></div>
+	<div id="footerCount" class="ts_gold"></div>
+	<% if(window.isDebug && window.isBrowser){ %>
+	<div id="debugScrollOuter">
+		<div class="debugScrollInner">
+			<% _.each(charaEnhancementCellList,function(model){ %>
+			<% if(model.enhancementType !== "START"){ %>
+			<div class="debugBtn btn b_white TE" data-debug="<%= model.charaEnhancementCellId %>"><%= model.charaEnhancementCellId %></div>
+			<% } %>
+			<% }) %>
+		</div>
+	<% } %>
+</div>
+
+<script type="text/template" id="pointInfoTemp">
+	<%='<% if(model){ %\>'%>
+		<div class="pointTitle"></div>
+		<div class="pointDescription <%='<%= type %\>'%>">
+			<div class="descriptionTitle"><%='<%= dispName %\>'%></div>
+			<div class="pointIcon"></div>
+			<div class="descriptionText">
+				<span class="descriptionTextInner"><%='<%= description %\>'%></span>
+			</div>
+			<div class="descriptionBtn"></div>
+			<div class="descriptionParam">
+				<span class="prmVal c_red">＋<%='<%= model.effectValue %\>'%></span>
+			</div>
+			<div class="descriptionDisk">
+				<span class="prmVal c_red">＋<%='<%= ((model.effectValue / 10) | 0) %\>'%>%</span>
+			</div>
+		</div>
+		<div class="pointRequire">
+			<%='<% for(var i=1;i<7;i++){ %\>'%>
+				<%='<% var giftData = model["openGift"+i]; %\>'%>
+				<%='<% if(giftData){ %\>'%>
+					<div class="requireMaterial se_decide" data-giftidnum="<%='<%= i %\>'%>">
+						<img data-nativeimgkey='gift_a_<%="<%= giftData.id %\>"%>' data-src='resource/image_native/gift/item_gift_a_<%="<%= giftData.id %\>"%>.png' class="itemImage">
+						<div class="requireNum ts_gold"><span class="nowHas<%='<% if(!nowCell && hasGift[giftData.id] >= model["openGiftQuantity"+i]){ %\>'%> collected<%='<% } %\>'%>"><%='<% if(!nowCell){ %\>'%><%='<%= hasGift[giftData.id] %\>'%></span>/<%='<% } %\>'%><%='<% if(nowCell){ %\>'%>×<%='<% } %\>'%><%="<%= model['openGiftQuantity'+i] %\>"%></div>
+					</div>
+				<%='<% } %\>'%>
+			<%='<% } %\>'%>
+		</div>
+		<div class="pannelFooter">
+			<%='<% if(nowCell){ %\>'%>
+				<p class="needLess c_purple">能力は既に解放済みです</p>
+			<%='<% }else if(limit){ %\>'%>
+				<p class="needLess c_purple">解放可能数の上限に達しています</p>
+			<%='<% }else if(!richeCheck || !materialCheck){ %\>'%>
+				<div id="pointRelease" class="btn off TE b_pink se_decide"><div class="b_screen"></div>解放</div>
+			<%='<% }else{ %\>'%>
+			<div id="pointRelease" class="btn TE b_pink se_decide"><div class="b_screen"></div>解放</div>
+			<%='<% } %\>'%>
+		</div>
+	<%='<% } %\>'%>
+</script>
+
+<script type="text/template" id="charaDataTemp">
+<%='<% if(model.card) { %\>'%>
+	<span id="detailBtn" class="TE"><span class="b_screen"></span></span>
+	<span id="attribute"><span class='type_f <%="<%= model.card.attributeId %\>"%>'></span></span>
+
+	<span id="rare" class='<%="<%= model.card.rank %\>"%>'>
+		<%='<% var i = 0; %\>'%>
+		<%='<% var maxRare = model.maxRare || Number(model.card.rank.split("RANK_")[1]); %\>'%>
+		<%='<% while(i < maxRare) { %\>'%>
+			<span></span>
+		<%='<% 	i=(i+1)|0; %\>'%>
+		<%='<% } %\>'%>
+	</span>
+
+	<div id="name">
+		<p class="c_purple"><%='<%= model.card.cardName %\>'%></p>
+		<%='<% if(model.chara.title) { %\>'%>
+		<p class='title c_purple'>
+			<%='<%= model.chara.title %\>'%>
+		</p>
+		<%='<% } %\>'%>
+	</div>
+
+	<p id="lv">
+		<span>Lv</span>
+		<span class="before">
+			<span id="currentLv" class="c_purple"><%='<%= model.level %\>'%></span>
+			<span class="sla">/</span>
+			<span id="currentMaxLv" class="small"><%='<%= model.maxLevel %\>'%></span>
+		</span>
+		<span class="arrow hide"></span>
+		<span class="after hide">
+			<span id="afterLv" class="c_red"></span>
+			<span class="sla">/</span>
+			<span id="afterMaxLv" class="small"><%='<%= model.maxLevel %\>'%></span>
+		</span>
+		<span class='lvMaxFlag'></span>
+	</p>
+
+	<div class="expGaugeWrap">
+		<div class="expGaugeInner" style='width:<%='<%= model.expRatio %\>'%>%'></div>
+		<div class="expGaugeInner2" style='width:0%;'></div>
+
+		<div class="bg"></div>
+	</div>
+
+	<div class="status">
+		<ul class="statusList">
+			<li>
+				<span class="thStyle">HP</span><span class="tdStyle"><%='<%= model.hp %\>'%></span>
+				<%='<% if(model.addendHp && model.addendHp > 0){ %\>'%><span class="tdStyle c_pink hpAfterCount">(+<%='<%= model.addendHp %\>'%>)</span><%='<% } %\>'%>
+				<span class="tdStyle c_purple moreHpAdd"></span>
+			</li>
+			<li>
+				<span class="thStyle">ATK</span><span class="tdStyle"><%='<%= model.attack %\>'%></span>
+				<%='<% if(model.addendAttack && model.addendAttack > 0){ %\>'%><span class="tdStyle c_pink attackAfterCount">(+<%='<%= model.addendAttack %\>'%>)</span><%='<% } %\>'%>
+				<span class="tdStyle c_purple moreAtkAdd"></span>
+			</li>
+			<li>
+				<span class="thStyle">DEF</span><span class="tdStyle"><%='<%= model.defense %\>'%></span>
+				<%='<% if(model.addendDefense && model.addendDefense > 0){ %\>'%><span class="tdStyle c_pink defenseAfterCount">(+<%='<%= model.addendDefense %\>'%>)</span><%='<% } %\>'%>
+				<span class="tdStyle c_purple moreDefAdd"></span>
+			</li>
+		</ul>
+	</div>
+	<div class="moreDetailTitle"></div>
+	<div id="moreDetail" class="btn sb_gold_02 se_tabs TE"><div class="b_screen"></div>詳細表示</div>
+<%='<% } %\>'%>
+</script>
+
+<script type="text/template" id="richeTemp">
+	<dl id="riche" class="flexBox">
+		<dt>必要なCC</dt>
+		<dd class="needRiche">0</dd>
+		<dt>所持CC</dt>
+		<dd class="hasRiche"><%='<%= model.riche %\>'%></dd>
+	</dl>
+</script>
+
+<script type="text/template" id="skillWrapTemp">
+	<%='<% _.each(model,function(skill){ %\>'%>
+		<%='<% var addClass = (skill.charaEnhancementCell.emotionSkill.type === "SKILL") ? "skill" : "ability"; %\>'%>
+		<div class="getWrap <%='<%= addClass %\>'%>">
+			<img data-nativeimgkey='icon_skill_<%="<%= skill.charaEnhancementCell.emotionSkill.groupId %\>"%>' data-src='resource/image_native/art/icon_skill_<%="<%= skill.charaEnhancementCell.emotionSkill.groupId %\>"%>.png' class="artIcon">
+			<p class="skillName c_purple"><%="<%= skill.charaEnhancementCell.emotionSkill.name %\>"%></p>
+			<p class="skillDescription"><%="<%= skill.charaEnhancementCell.emotionSkill.shortDescription %\>"%></p>
+		</div>
+	<%='<% }) %\>'%>
+</script>
+
+<script type="text/template" id="multiPartsTemp">
+	<div class="requireMaterial se_decide">
+		<img data-nativeimgkey='gift_a_<%="<%= giftId %\>"%>' data-src='resource/image_native/gift/item_gift_a_<%="<%= giftId %\>"%>.png' class="itemImage">
+		<div class="requireNum ts_gold"><span class="nowHas<%='<% if(has >= needs){ %\>'%> collected<%='<% } %\>'%>"><%='<%= has %\>'%></span>/<%="<%= needs %\>"%></div>
+	</div>
+</script>

@@ -1,0 +1,177 @@
+
+<% var isStepup = (model.playedGacha && model.playedGacha.viewParameterMap && model.playedGacha.viewParameterMap.IMAGE_DETAIL) ? true : false; %>
+
+<div id="GachaResult">
+	<div class="listWrap">
+		<div id="cardWrap"></div>
+		<div class="btnWrap">
+			<span class="btn TE se_decide b_pink" id="onceMore" style='display: none;'>
+				<div class="btnBadge">
+					<div id="bageTextArea" class=""><div class="number1"></div><div class="number2"></div></div>
+					<img src="/magica/resource/image_web/page/gacha/baloon/badge_free_additional.png" alt="">
+				</div>
+				<span class="b_screen"></span>もう1回引く</span>
+			<span class="btn TE se_decide b_white linkBtn" id='backLinkBtn' data-href=""><span class="b_screen"></span>戻る</span>
+		</div>
+	</div>
+
+	<div id="hasMagicGirlNum">
+		<div class="title">所持魔法少女</div>
+		<div class="nums"><%= model.hasCardNum %></div>
+	</div>
+
+	<div id="hasMemoriaNum">
+		<div class="title">所持メモリア</div>
+		<div class="nums"><%= model.hasPieceNum %>/<%= model.pieceCapacity %></div>
+	</div>
+
+	<div id="gachaCountWrap">
+
+		<% if(model.userGachaGroup && !isStepup &&
+		  	model.playedGachaType !== "NORMAL" &&
+		  	model.playedGachaType !== "SPECIAL" &&
+		  	model.playedGachaType !== "STARTDASH" &&
+		  	model.playedGachaType !== "STARTDASH_MEMORIA" &&
+		  	model.playedGachaType !== "SELECTABLE_SPECIAL" &&
+		  	model.playedGachaType !== "SELECTABLE_TUTORIAL" &&
+		  	model.userGachaGroup.count >= 0) { %>
+			<div id='gachaGroupCountWrap' class="countWrap">
+				<p><span><%= model.userGachaGroup.count %>/100</span></p>
+			</div>
+		<% } %>
+
+		<% if(model.gachaFreebieId) { %>
+			<div id="freebieCountWrap" class="countWrap">
+					<img class="freebieImg" src="<%= model.freebieIconPath %>">
+				<p><span><%= model.freebieNum %></span></p>
+			</div>
+		<% } %>
+	</div>
+
+	<div id="saleSettingBtn" class="sb_gold_02 TE se_decide">自動設定</div>
+</div>
+
+<script type="text/template" id="gachaResultParts">
+	<%='<% var itemFlag = ""; %\>'%>
+
+	<div class="newMark<%='<% if(model.isNew){ %\>'%> on<%='<% } %\>'%>"></div>
+
+	<div class="itemWrap <%='<%= model.item %\>'%>">
+		<%='<% if(model.itemId === "LIMIT_BREAK_CHARA"){ %\>'%>
+			<img data-nativeimgkey='chara_<%="<%= model.charaId %\>"%>_h' data-src='resource/image_native/chara/chara_<%="<%= model.charaId %\>"%>_h.png' src="" alt=""/>
+		<%='<% } %\>'%>
+	</div>
+
+	<%='<% if(model.price){ %\>'%>
+	<div class="autoSale">
+		<div class="price"><%='<%= model.price %\>'%></div>
+	</div>
+	<%='<% } %\>'%>
+
+	<%='<% if(model.type === "CARD"){ %\>'%>
+		<%='<% if(model.charaId === 1042){ %\>'%>
+			<div class="specialCharaName"><%='<%= _.escape(model.dispName) %\>'%></div>
+		<%='<% } %\>'%>
+		<%='<% var cardFrame = "frame_" + model.attributeId.toLowerCase() + "_" + model.rarity.toLowerCase(); %\>'%>
+		<div data-nativebgkey="<%='<%= cardFrame %\>'%>" data-src="resource/image_native/card/frame/<%='<%= cardFrame %\>'%>.png" class="cardFrame <%='<%= model.rarity %\>'%> <%='<% model.attributeId %\>'%>"></div>
+	<%='<% } %\>'%>
+
+	<%='<% if(model.type === "ITEM"){ %\>'%>
+		<%='<% var cardFrame = "item_gem_frame0" + model.rarity.split("_")[1]; %\>'%>
+		<%='<% itemFlag = "item"; %\>'%>
+
+		<div data-nativebgkey="<%='<%= cardFrame %\>'%>" data-src="resource/image_native/item/frame/<%='<%= cardFrame %\>'%>.png" class="itemFrame"></div>
+	<%='<% } %\>'%>
+
+	<div class="typeWrap <%='<%= model.type %\>'%>"></div>
+
+	<img class="resultImage <%='<%= itemFlag %\>'%>" data-nativeimgkey='<%="<%= model.key %\>"%>' data-src='<%="<%= model.src %\>"%>' />
+
+</script>
+
+<!-- ガチャ実行ポップアップ -->
+<script id="GachaStartPop" type="text/template">
+	<%='<% var displayTitle = model.displayTitle.replace(/<br>/g, ""); %\>'%>
+
+	<%='<% if(model.needQuantity === 0) { %\>'%>
+		無料で<span class='c_pink'><%='<%= displayTitle %\>'%></span>を行います。よろしいですか？
+		<%='<% if(model.userGachaKind) { %\>'%>
+			<div class='gachaAttentionArea commonFrame3'>本日、<span class='c_pink'>残り<%='<%= model.userGachaKind.canRemainCount - model.userGachaKind.totalCount %\>'%>回無料</span>でガチャを行うことができます</div>
+		<%='<% } %\>'%>
+
+	<%='<% } else { %\>'%>
+	<span class='c_pink'><%='<%= model.userUseItem.item.name %\>'%></span>を<span class='c_pink'><%='<%= (model.userUseItem.subItemFlag) ? "1" : model.needQuantity %\>'%><%='<%= model.userUseItem.item.unit %\>'%></span>使用して<span class='c_pink'><%='<%= displayTitle %\>'%></span>を行います。<br>
+	よろしいですか？
+
+	<%='<% if(model.userUseItem.item.itemCode === "MONEY" || model.userUseItem.item.itemCode === "PURCHASED_MONEY") { %\>'%>
+		<%='<% if(model.openTermText) { %\>'%>
+			<dl class="common_dl <%='<%= model.openTermClass %\>'%>">
+				<dt>開催期間</dt>
+				<dd><%='<%= model.openTermText %\>'%></dd>
+			</dl>
+		<%='<% } %\>'%>
+		<div class="cautionText">
+			決定後、すぐにガチャが実行されマギアストーンが消費されます。<br>
+			<%='<% if(model.userUseItem.item.itemCode === "MONEY") { %\>'%>
+			<!-- 有償限定ガチャでは表示しない -->
+			マギアストーンは無償分から先に消費され、
+			<%='<% } %\>'%>
+			決定後のキャンセルはできません。
+		</div>
+		<div class="moneyNumWrap">
+			<img class='useItemIcon' src="/magica/resource/image_web/page/gacha/item/icon_money_f.png" />
+			<div class='stoneA pointFrame'>
+				合計
+				<div class="inner">
+					<span class="num"><%='<%= model.userUseItem.moneyObj.totalMoney %\>'%><span class="remain <%='<%= model.remainClassTotalMoney %\>'%>"><span class="arrow">&#9654;</span><%='<%= model.remainTotalMoney %\>'%></span></span>
+				</div>
+				</div>
+			<div class='stoneB'>
+				有償
+				<div class="inner">
+					<span class="num"><%='<%= model.userUseItem.moneyObj.userMoney %\>'%><span class="remain <%='<%= model.remainClassUserMoney %\>'%>"><span class="arrow">&#9654;</span><%='<%= model.remainUserMoney %\>'%></span></span>
+				</div>
+				</div>
+			<div class='stoneC'>
+				無償
+				<div class="inner">
+					<span class="num"><%='<%= model.userUseItem.moneyObj.presentedMoney %\>'%><span class="remain <%='<%= model.remainClassPresentedMoney %\>'%>"><span class="arrow">&#9654;</span><%='<%= model.remainPresentedMoney %\>'%></span></span>
+				</div>
+			</div>
+		</div>
+	<%='<% } else { %\>'%>
+		<img class='useItemIcon item' src="/magica/resource/image_web/page/gacha/item/icon_<%='<%= model.userUseItem.item.itemCode.toLowerCase() %\>'%>_f.png" />
+		<div class='itemNumWrap item pointFrame'>所持数<span class="num"><%='<%= model.userUseItem.quantity %\>'%><%='<%= model.userUseItem.item.unit %\>'%></div>
+	<%='<% } %\>'%>
+	<%='<% } %\>'%>
+</script>
+
+<!-- 通貨が足りないときのポップアップ -->
+<script id="GachaConfPop" type="text/template">
+	<span class='c_pink'><%='<%= model.userUseItem.item.name %\>'%></span>が<span class='c_pink'><%='<%= needPoint %\>'%><%='<%= model.userUseItem.item.unit %\>'%></span>不足しています。
+
+	<%='<% if(model.userUseItem.item.itemCode === "MONEY" || model.userUseItem.item.itemCode === "PURCHASED_MONEY") { %\>'%>
+		<img class='useItemIcon stone' src="/magica/resource/image_web/page/gacha/item/icon_money_f.png" />
+
+		<div class='itemNumWrap stoneA pointFrame'>
+			合計<span class="num"><%='<%= model.userUseItem.moneyObj.totalMoney %\>'%>
+		</div>
+		<div class='itemNumWrap stoneB'>
+			有償<span class="num"><%='<%= model.userUseItem.moneyObj.userMoney %\>'%>
+		</div>
+		<div class='itemNumWrap stoneC'>
+			無償<span class="num"><%='<%= model.userUseItem.moneyObj.presentedMoney %\>'%>
+		</div>
+	<%='<% } else { %\>'%>
+		<img class='useItemIcon item' src="/magica/resource/image_web/page/gacha/item/icon_<%='<%= model.userUseItem.item.itemCode.toLowerCase() %\>'%>_f.png" />
+		<div class='itemNumWrap item pointFrame'>所持数<span class="num"><%='<%= model.userUseItem.quantity %\>'%><%='<%= model.userUseItem.item.unit %\>'%></div>
+	<%='<% } %\>'%>
+</script>
+
+<script type="text/template" id="bonusRewardTemp">
+	<div id="bonusRewardWrap"></div>
+	<div id="bonusRewardCautionWrap" class="hide">
+		<div class="caution">※おまけは直接付与されています。</div>
+		<div class="touch_screen"></div>
+	</div>
+</script>

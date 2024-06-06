@@ -1,0 +1,802 @@
+@charset "UTF-8";
+#stillListPopup #stillListWrap {
+  overflow: hidden;
+  width: 865px;
+  height: 470px;
+  margin: 0 auto;
+}
+
+#stillListPopup #stillListWrap .scrollInner {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  padding: 16px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#stillListPopup #stillListWrap .imageWrap, #stillListPopup #stillListWrap .noImage {
+  background: url("/magica/resource/image_web/page/collection/storyCollection/thum_frame.png") left top no-repeat;
+  position: relative;
+  width: 122px;
+  height: 90px;
+  margin: 0 11px 16px 11px;
+}
+
+#stillListPopup #stillListWrap .imageWrap img, #stillListPopup #stillListWrap .noImage img {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 120px;
+  height: 88px;
+}
+
+#stillListPopup #stillListWrap .noImage {
+  background: url("/magica/resource/image_web/page/collection/storyCollection/thum_none.png") left top no-repeat;
+}
+
+#stillListPopup .arrowRight, #stillListPopup .arrowLeft {
+  width: 62px;
+  height: 76px;
+  position: absolute;
+  top: 228px;
+}
+
+#stillListPopup .arrowRight.hide, #stillListPopup .arrowLeft.hide {
+  display: none;
+}
+
+#stillListPopup .arrowRight {
+  background: url("/magica/resource/image_web/page/collection/storyCollection/arrow_r.png") left top no-repeat;
+  background-size: 62px 76px;
+  right: -12px;
+}
+
+#stillListPopup .arrowLeft {
+  background: url("/magica/resource/image_web/page/collection/storyCollection/arrow_l.png") left top no-repeat;
+  background-size: 62px 76px;
+  left: -12px;
+}
+
+#stillDetail {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 902;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.openStoryPopup .content {
+  line-height: 30px;
+}
+
+.openStoryPopup .popupInner .popupTextArea {
+  padding-bottom: 43px;
+  font-size: 24px;
+  line-height: 2;
+}
+
+.openStoryPopup .costHasNum {
+  font-size: 16px;
+  width: 214px;
+  height: 24px;
+  position: absolute;
+  text-align: right;
+  left: 300px;
+  bottom: 120px;
+}
+
+.openStoryPopup .costHasNum .pointFrame {
+  width: 252px;
+  margin-left: 6px;
+  padding-right: 15px;
+  line-height: 24px;
+  text-align: right;
+}
+
+.openStoryPopup .costHasNum:before {
+  width: 72px;
+  height: 24px;
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+  content: "所持";
+  z-index: 2;
+}
+
+.openStoryPopup .costHasNum .costIcon {
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  top: -15px;
+  left: -27px;
+  z-index: 10;
+}
+
+.openConditionPopup .openConditionDl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.openConditionPopup .openConditionDl:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.openConditionPopup .openConditionDl dt {
+  width: 42px;
+  height: 42px;
+  background: #f66a99;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 42px;
+  border-radius: 5px 0 0 5px;
+}
+
+.openConditionPopup .openConditionDl dd {
+  width: 506px;
+  height: 42px;
+  padding: 0 14px;
+  background: #ffffff;
+  font-size: 18px;
+  line-height: 38px;
+  text-align: left;
+  border-top: 2px solid #c6a882;
+  border-right: 2px solid #c6a882;
+  border-bottom: 2px solid #c6a882;
+  border-radius: 0 5px 5px 0;
+}
+
+.openConditionPopup .popupInner {
+  width: 650px;
+  height: 360px;
+  position: absolute;
+  top: -webkit-calc(50% - 180px);
+  left: -webkit-calc(50% - 325px);
+}
+
+.openConditionPopup .popupInner .popupTextArea {
+  height: 280px;
+}
+
+#StoryCollection {
+  width: 1024px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#StoryCollection #middlePlayBtn {
+  background: url("/magica/resource/image_web/page/collection/btn_restart_off.png") left top no-repeat;
+  position: absolute;
+  left: 706px;
+  top: 12px;
+  width: 82px;
+  height: 34px;
+}
+
+#StoryCollection #middlePlayBtn.on {
+  background: url("/magica/resource/image_web/page/collection/btn_restart_on.png") left top no-repeat;
+}
+
+#StoryCollection #continuousPlayBtn {
+  background: url("/magica/resource/image_web/page/collection/btn_continue_off.png") left top no-repeat;
+  position: absolute;
+  left: 800px;
+  top: 12px;
+  width: 116px;
+  height: 34px;
+}
+
+#StoryCollection #continuousPlayBtn.on {
+  background: url("/magica/resource/image_web/page/collection/btn_continue_on.png") left top no-repeat;
+}
+
+#StoryCollection #tabBtn {
+  width: 222px;
+  height: -webkit-calc(100% - 94px);
+  padding: 15px 0px 15px;
+  position: absolute;
+  top: 70px;
+  left: 85px;
+}
+
+#StoryCollection #tabBtn .btn {
+  width: 188px;
+  margin-bottom: 4px;
+  margin-left: 18px;
+  font-size: 16px;
+}
+
+#StoryCollection #tabBtn .btn.none {
+  display: none;
+}
+
+#StoryCollection #tabBtn .btn.magirepo {
+  background: url("/magica/resource/image_web/page/collection/magirepo/common/tab_magirepo.png") left top no-repeat;
+}
+
+#StoryCollection #tabBtn .btn.magirepo:before {
+  display: none;
+}
+
+#StoryCollection #tabBtn .btn.magirepo:after {
+  display: none;
+}
+
+#StoryCollection #tabBtn .batch {
+  width: auto;
+  min-width: 26px;
+  height: 26px;
+  padding: 0 3px;
+  background-color: #f42d9e;
+  display: none;
+  position: absolute;
+  top: -6px;
+  left: 4px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 13px;
+  text-shadow: none;
+}
+
+#StoryCollection #tabBtn .batch.on {
+  display: block;
+}
+
+#StoryCollection #tabBtn #storyTabScroll {
+  position: relative;
+}
+
+#StoryCollection #tabBtn #storyTabScroll .common_tab {
+  padding-top: 9px;
+  display: block;
+  min-height: 100%;
+}
+
+#StoryCollection #tabBtn #storyTabScroll .scrollIndicator {
+  width: 5px;
+  right: 9px;
+}
+
+#StoryCollection #tabBtn #storyTabScroll .scrollIndicator .scrollIndicatorInner {
+  width: 5px;
+}
+
+#StoryCollection #listWrap {
+  width: 610px;
+  height: -webkit-calc(100% - 94px);
+  padding: 30px 0 0;
+  position: absolute;
+  top: 70px;
+  left: 328px;
+}
+
+#StoryCollection #listWrap #unlockItems {
+  width: 194px;
+  height: 24px;
+  display: none;
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  text-align: right;
+  z-index: 3;
+}
+
+#StoryCollection #listWrap #unlockItems:before {
+  width: 64px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  line-height: 24px;
+  content: "所持";
+  z-index: 5;
+}
+
+#StoryCollection #listWrap #unlockItems .pointFrame {
+  width: 192px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: right;
+}
+
+#StoryCollection #listWrap #unlockItems .costIcon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: -4px;
+  left: -6px;
+  z-index: 10;
+}
+
+#StoryCollection #listWrap #main,
+#StoryCollection #listWrap #mainSecond,
+#StoryCollection #listWrap #puellaHistoria,
+#StoryCollection #listWrap #sub,
+#StoryCollection #listWrap #subSecond,
+#StoryCollection #listWrap #chara,
+#StoryCollection #listWrap #arena,
+#StoryCollection #listWrap #event,
+#StoryCollection #listWrap #special,
+#StoryCollection #listWrap #accomplish {
+  width: 600px;
+  height: -webkit-calc(100% - 50px);
+  display: none;
+  position: absolute;
+  top: 36px;
+  -webkit-overflow-scrolling: touch;
+}
+
+#StoryCollection #listWrap #main .hiddenWrap,
+#StoryCollection #listWrap #mainSecond .hiddenWrap,
+#StoryCollection #listWrap #puellaHistoria .hiddenWrap,
+#StoryCollection #listWrap #sub .hiddenWrap,
+#StoryCollection #listWrap #subSecond .hiddenWrap,
+#StoryCollection #listWrap #chara .hiddenWrap,
+#StoryCollection #listWrap #arena .hiddenWrap,
+#StoryCollection #listWrap #event .hiddenWrap,
+#StoryCollection #listWrap #special .hiddenWrap,
+#StoryCollection #listWrap #accomplish .hiddenWrap {
+  height: 100%;
+  overflow: hidden;
+}
+
+#StoryCollection #listWrap #main .hiddenWrap .scrollInner,
+#StoryCollection #listWrap #mainSecond .hiddenWrap .scrollInner,
+#StoryCollection #listWrap #puellaHistoria .hiddenWrap .scrollInner,
+#StoryCollection #listWrap #sub .hiddenWrap .scrollInner,
+#StoryCollection #listWrap #subSecond .hiddenWrap .scrollInner,
+#StoryCollection #listWrap #chara .hiddenWrap .scrollInner,
+#StoryCollection #listWrap #arena .hiddenWrap .scrollInner,
+#StoryCollection #listWrap #event .hiddenWrap .scrollInner,
+#StoryCollection #listWrap #special .hiddenWrap .scrollInner,
+#StoryCollection #listWrap #accomplish .hiddenWrap .scrollInner {
+  height: auto;
+  min-height: 100%;
+  padding-top: 17px;
+  overflow: inherit;
+}
+
+#StoryCollection #listWrap #main .hiddenWrap .scrollInner .storyCautionText,
+#StoryCollection #listWrap #mainSecond .hiddenWrap .scrollInner .storyCautionText,
+#StoryCollection #listWrap #puellaHistoria .hiddenWrap .scrollInner .storyCautionText,
+#StoryCollection #listWrap #sub .hiddenWrap .scrollInner .storyCautionText,
+#StoryCollection #listWrap #subSecond .hiddenWrap .scrollInner .storyCautionText,
+#StoryCollection #listWrap #chara .hiddenWrap .scrollInner .storyCautionText,
+#StoryCollection #listWrap #arena .hiddenWrap .scrollInner .storyCautionText,
+#StoryCollection #listWrap #event .hiddenWrap .scrollInner .storyCautionText,
+#StoryCollection #listWrap #special .hiddenWrap .scrollInner .storyCautionText,
+#StoryCollection #listWrap #accomplish .hiddenWrap .scrollInner .storyCautionText {
+  width: 350px;
+  height: 30px;
+  position: absolute;
+  top: -webkit-calc(50% - 15px);
+  left: -webkit-calc(50% - 175px);
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+#StoryCollection #listWrap.main #main {
+  display: block;
+}
+
+#StoryCollection #listWrap.mainSecond #mainSecond {
+  display: block;
+}
+
+#StoryCollection #listWrap.puellaHistoria #puellaHistoria {
+  display: block;
+}
+
+#StoryCollection #listWrap.sub #sub {
+  display: block;
+}
+
+#StoryCollection #listWrap.subSecond #subSecond {
+  display: block;
+}
+
+#StoryCollection #listWrap.chara #chara {
+  display: block;
+}
+
+#StoryCollection #listWrap.arena #arena {
+  display: block;
+}
+
+#StoryCollection #listWrap.event #unlockItems {
+  display: block;
+}
+
+#StoryCollection #listWrap.event #event {
+  display: block;
+}
+
+#StoryCollection #listWrap.accomplish #accomplish {
+  display: block;
+}
+
+#StoryCollection #listWrap.special #unlockItems {
+  display: block;
+}
+
+#StoryCollection #listWrap.special #special {
+  display: block;
+}
+
+#StoryCollection #listWrap .wrap {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  margin-left: 26px;
+  position: relative;
+}
+
+#StoryCollection #listWrap .wrap.lock:after {
+  content: "";
+  position: absolute;
+  background: url("/magica/resource/image_web/page/collection/storyCollection/icon_story_lock_f.png") left top no-repeat;
+  width: 26px;
+  height: 31px;
+  background-size: 26px 31px;
+  left: -9px;
+  top: -7px;
+  z-index: 3;
+  pointer-events: none;
+}
+
+#StoryCollection #listWrap .wrap:last-child {
+  margin-bottom: 40px;
+}
+
+#StoryCollection #listWrap .wrap .chapterTitleWrap {
+  width: 557px;
+  height: 57px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+
+#StoryCollection #listWrap .wrap .chapterTitleWrap .faceImg {
+  height: 80px;
+}
+
+#StoryCollection #listWrap .wrap .chapterTitleWrap .faceImg img {
+  height: 100%;
+  position: relative;
+  top: -webkit-calc(50% - 60px);
+  left: 10px;
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(5%, black), color-stop(95%, black), to(rgba(0, 0, 0, 0)));
+}
+
+#StoryCollection #listWrap .wrap .chapterTitleWrap .chapterNumber {
+  height: 20px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  font-size: 20px;
+}
+
+#StoryCollection #listWrap .wrap .chapterTitleWrap .chapterTitle {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 120px;
+  width: 100%;
+  font-size: 20px;
+}
+
+#StoryCollection #listWrap .wrap .chapterTitleWrap .panArrow {
+  width: 40px;
+  height: 40px;
+  background-image: url("/magica/resource/image_web/page/collection/pan_down.png");
+  background-size: 100% 100%;
+  position: absolute;
+  right: 10px;
+  bottom: -webkit-calc(50% - 20px);
+}
+
+#StoryCollection #listWrap .wrap .chapterTitleWrap .panArrow.on {
+  background-image: url("/magica/resource/image_web/page/collection/pan_up.png");
+  background-size: 100% 100%;
+}
+
+#StoryCollection #listWrap .wrap .popupGalleryBtn {
+  display: none;
+  position: absolute;
+  right: 86px;
+  top: 68px;
+  width: 200px;
+  z-index: 5;
+}
+
+#StoryCollection #listWrap .wrap .popupGalleryBtn.on {
+  display: block;
+}
+
+#StoryCollection #listWrap .wrap .sectionListWrap {
+  width: 534px;
+  min-height: 120px;
+  margin: 0 0 0 13px;
+  padding-top: 12px;
+  padding-bottom: 1px;
+  background-color: #e1d3bd;
+  display: none;
+  position: relative;
+  border-radius: 0 0 10px 10px;
+  z-index: 1;
+}
+
+#StoryCollection #listWrap .wrap .sectionListWrap.on {
+  display: block;
+}
+
+#StoryCollection #listWrap .wrap .sectionListWrap.on.gallery {
+  padding-top: 52px;
+}
+
+#StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap {
+  width: 492px;
+  height: 87px;
+  margin-bottom: 11px;
+  margin-left: 22px;
+}
+
+#StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap .sectionTitle {
+  position: absolute;
+  bottom: 15px;
+  left: 12px;
+  font-size: 18px;
+}
+
+#StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap .outline, #StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap .storyStart, #StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap .nextQuest, #StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap .lockQuest {
+  position: absolute;
+  bottom: 12px;
+}
+
+#StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap .outline {
+  right: 117px;
+}
+
+#StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap .storyStart, #StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap .nextQuest, #StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap .lockQuest {
+  padding-top: 5px;
+  display: none;
+  right: 12px;
+  font-size: 12px;
+  line-height: 10px;
+}
+
+#StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap .storyStart .buttonUpper, #StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap .nextQuest .buttonUpper, #StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap .lockQuest .buttonUpper {
+  font-size: 10px;
+}
+
+#StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap.CLEARED .storyStart {
+  display: block;
+}
+
+#StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap.NON_CLEAR .nextQuest {
+  display: block;
+}
+
+#StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap.LOCKED .lockQuest {
+  display: block;
+}
+
+#StoryCollection #listWrap .wrap .sectionListWrap .sectionWrap.mirrorBattle .storyStart {
+  padding-top: 13px;
+}
+
+#StoryCollection #listWrap #arena .chapterTitle {
+  left: 20px;
+}
+
+#StoryCollection #listWrap #accomplish .chapterTitleWrap {
+  background: url("/magica/resource/image_web/page/collection/storyCollection/bg_accomplish_title.png") left top no-repeat;
+}
+
+#StoryCollection #listWrap #accomplish .chapterTitleWrap .faceImg img {
+  left: 48px;
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(20%, black), color-stop(80%, black), to(rgba(0, 0, 0, 0)));
+}
+
+#StoryCollection #listWrap #accomplish .chapterTitleWrap .chapterTitle {
+  left: 132px;
+}
+
+#StoryCollection #listWrap #puellaHistoria .sectionListWrap, #StoryCollection #listWrap #event .sectionListWrap, #StoryCollection #listWrap #special .sectionListWrap {
+  width: 534px;
+  min-height: 100px;
+}
+
+#StoryCollection #listWrap #puellaHistoria .chapterTitle, #StoryCollection #listWrap #event .chapterTitle, #StoryCollection #listWrap #special .chapterTitle {
+  top: 0px;
+  left: 0px;
+}
+
+#StoryCollection #listWrap #puellaHistoria .eventMultiStory, #StoryCollection #listWrap #event .eventMultiStory, #StoryCollection #listWrap #special .eventMultiStory {
+  width: 510px;
+  margin: 10px 0 5px 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#StoryCollection #listWrap #puellaHistoria .eventMultiStory .btnWrap, #StoryCollection #listWrap #event .eventMultiStory .btnWrap, #StoryCollection #listWrap #special .eventMultiStory .btnWrap {
+  position: relative;
+}
+
+#StoryCollection #listWrap #puellaHistoria .eventMultiStory .btnWrap.lock .mb_white, #StoryCollection #listWrap #event .eventMultiStory .btnWrap.lock .mb_white, #StoryCollection #listWrap #special .eventMultiStory .btnWrap.lock .mb_white {
+  -webkit-filter: grayscale(100%) brightness(70%);
+  filter: grayscale(100%) brightness(70%);
+}
+
+#StoryCollection #listWrap #puellaHistoria .eventMultiStory .btnWrap.lock:after, #StoryCollection #listWrap #event .eventMultiStory .btnWrap.lock:after, #StoryCollection #listWrap #special .eventMultiStory .btnWrap.lock:after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: -11px;
+  background: url("/magica/resource/image_web/page/collection/storyCollection/icon_story_lock_f.png") left top no-repeat;
+  width: 21px;
+  height: 27px;
+  background-size: 21px 27px;
+  z-index: 5;
+}
+
+#StoryCollection #listWrap #puellaHistoria .eventMultiStory .mb_white, #StoryCollection #listWrap #event .eventMultiStory .mb_white, #StoryCollection #listWrap #special .eventMultiStory .mb_white {
+  width: auto;
+  min-width: 92px;
+  height: 53px;
+  margin: 0 10px 16px 0;
+  font-size: 20px;
+  -webkit-filter: none;
+          filter: none;
+}
+
+#StoryCollection #listWrap #puellaHistoria .wrap.BRANCH .sectionListWrap,
+#StoryCollection #listWrap #puellaHistoria .wrap.WITCH .sectionListWrap, #StoryCollection #listWrap #event .wrap.BRANCH .sectionListWrap,
+#StoryCollection #listWrap #event .wrap.WITCH .sectionListWrap, #StoryCollection #listWrap #special .wrap.BRANCH .sectionListWrap,
+#StoryCollection #listWrap #special .wrap.WITCH .sectionListWrap {
+  margin-bottom: 17px;
+  padding-bottom: 8px;
+}
+
+#StoryCollection #listWrap #puellaHistoria .wrap.BRANCH .sectionListWrap .storyWrap,
+#StoryCollection #listWrap #puellaHistoria .wrap.WITCH .sectionListWrap .storyWrap, #StoryCollection #listWrap #event .wrap.BRANCH .sectionListWrap .storyWrap,
+#StoryCollection #listWrap #event .wrap.WITCH .sectionListWrap .storyWrap, #StoryCollection #listWrap #special .wrap.BRANCH .sectionListWrap .storyWrap,
+#StoryCollection #listWrap #special .wrap.WITCH .sectionListWrap .storyWrap {
+  width: 498px;
+  height: 63px;
+  margin: 7px 0 9px 17px;
+  display: block;
+}
+
+#StoryCollection #listWrap #puellaHistoria .wrap.BRANCH .sectionListWrap .storyWrap .branchStoryChara,
+#StoryCollection #listWrap #puellaHistoria .wrap.WITCH .sectionListWrap .storyWrap .branchStoryChara, #StoryCollection #listWrap #event .wrap.BRANCH .sectionListWrap .storyWrap .branchStoryChara,
+#StoryCollection #listWrap #event .wrap.WITCH .sectionListWrap .storyWrap .branchStoryChara, #StoryCollection #listWrap #special .wrap.BRANCH .sectionListWrap .storyWrap .branchStoryChara,
+#StoryCollection #listWrap #special .wrap.WITCH .sectionListWrap .storyWrap .branchStoryChara {
+  width: 155px;
+  height: 28px;
+  position: absolute;
+  top: 15px;
+  left: -3px;
+}
+
+#StoryCollection #listWrap #puellaHistoria .wrap.BRANCH .sectionListWrap .storyWrap .branchStoryChara img,
+#StoryCollection #listWrap #puellaHistoria .wrap.WITCH .sectionListWrap .storyWrap .branchStoryChara img, #StoryCollection #listWrap #event .wrap.BRANCH .sectionListWrap .storyWrap .branchStoryChara img,
+#StoryCollection #listWrap #event .wrap.WITCH .sectionListWrap .storyWrap .branchStoryChara img, #StoryCollection #listWrap #special .wrap.BRANCH .sectionListWrap .storyWrap .branchStoryChara img,
+#StoryCollection #listWrap #special .wrap.WITCH .sectionListWrap .storyWrap .branchStoryChara img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#StoryCollection #listWrap #puellaHistoria .wrap.BRANCH .sectionListWrap .storyWrap .branchStoryChara .charaTxt,
+#StoryCollection #listWrap #puellaHistoria .wrap.WITCH .sectionListWrap .storyWrap .branchStoryChara .charaTxt, #StoryCollection #listWrap #event .wrap.BRANCH .sectionListWrap .storyWrap .branchStoryChara .charaTxt,
+#StoryCollection #listWrap #event .wrap.WITCH .sectionListWrap .storyWrap .branchStoryChara .charaTxt, #StoryCollection #listWrap #special .wrap.BRANCH .sectionListWrap .storyWrap .branchStoryChara .charaTxt,
+#StoryCollection #listWrap #special .wrap.WITCH .sectionListWrap .storyWrap .branchStoryChara .charaTxt {
+  height: 28px;
+  padding-right: 12px;
+  position: relative;
+  color: #ffffff;
+  line-height: 28px;
+  text-align: center;
+  z-index: 2;
+}
+
+#StoryCollection #listWrap #puellaHistoria .wrap.BRANCH .sectionListWrap .storyWrap .branchStoryTitle,
+#StoryCollection #listWrap #puellaHistoria .wrap.WITCH .sectionListWrap .storyWrap .branchStoryTitle, #StoryCollection #listWrap #event .wrap.BRANCH .sectionListWrap .storyWrap .branchStoryTitle,
+#StoryCollection #listWrap #event .wrap.WITCH .sectionListWrap .storyWrap .branchStoryTitle, #StoryCollection #listWrap #special .wrap.BRANCH .sectionListWrap .storyWrap .branchStoryTitle,
+#StoryCollection #listWrap #special .wrap.WITCH .sectionListWrap .storyWrap .branchStoryTitle {
+  position: absolute;
+  top: 14px;
+  left: 162px;
+  font-size: 20px;
+}
+
+#StoryCollection #listWrap #puellaHistoria .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap,
+#StoryCollection #listWrap #puellaHistoria .wrap.WITCH .sectionListWrap .storyWrap .btnWrap, #StoryCollection #listWrap #event .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap,
+#StoryCollection #listWrap #event .wrap.WITCH .sectionListWrap .storyWrap .btnWrap, #StoryCollection #listWrap #special .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap,
+#StoryCollection #listWrap #special .wrap.WITCH .sectionListWrap .storyWrap .btnWrap {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+}
+
+#StoryCollection #listWrap #puellaHistoria .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap .sb_gold_01,
+#StoryCollection #listWrap #puellaHistoria .wrap.WITCH .sectionListWrap .storyWrap .btnWrap .sb_gold_01, #StoryCollection #listWrap #event .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap .sb_gold_01,
+#StoryCollection #listWrap #event .wrap.WITCH .sectionListWrap .storyWrap .btnWrap .sb_gold_01, #StoryCollection #listWrap #special .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap .sb_gold_01,
+#StoryCollection #listWrap #special .wrap.WITCH .sectionListWrap .storyWrap .btnWrap .sb_gold_01 {
+  width: 94px;
+  height: 34px;
+  -webkit-filter: none;
+          filter: none;
+}
+
+#StoryCollection #listWrap #puellaHistoria .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01,
+#StoryCollection #listWrap #puellaHistoria .wrap.WITCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01, #StoryCollection #listWrap #event .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01,
+#StoryCollection #listWrap #event .wrap.WITCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01, #StoryCollection #listWrap #special .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01,
+#StoryCollection #listWrap #special .wrap.WITCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01 {
+  background: url("/magica/resource/image_web/page/collection/storyCollection/btn_s_gray_01_c.png") center top no-repeat;
+  color: #535353;
+}
+
+#StoryCollection #listWrap #puellaHistoria .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01:before,
+#StoryCollection #listWrap #puellaHistoria .wrap.WITCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01:before, #StoryCollection #listWrap #event .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01:before,
+#StoryCollection #listWrap #event .wrap.WITCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01:before, #StoryCollection #listWrap #special .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01:before,
+#StoryCollection #listWrap #special .wrap.WITCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01:before {
+  background: url("/magica/resource/image_web/page/collection/storyCollection/btn_s_gray_01_l.png") left top no-repeat;
+}
+
+#StoryCollection #listWrap #puellaHistoria .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01:after,
+#StoryCollection #listWrap #puellaHistoria .wrap.WITCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01:after, #StoryCollection #listWrap #event .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01:after,
+#StoryCollection #listWrap #event .wrap.WITCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01:after, #StoryCollection #listWrap #special .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01:after,
+#StoryCollection #listWrap #special .wrap.WITCH .sectionListWrap .storyWrap .btnWrap.lock .sb_gold_01:after {
+  background: url("/magica/resource/image_web/page/collection/storyCollection/btn_s_gray_01_r.png") left top no-repeat;
+}
+
+#StoryCollection #listWrap #puellaHistoria .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap.lock:after,
+#StoryCollection #listWrap #puellaHistoria .wrap.WITCH .sectionListWrap .storyWrap .btnWrap.lock:after, #StoryCollection #listWrap #event .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap.lock:after,
+#StoryCollection #listWrap #event .wrap.WITCH .sectionListWrap .storyWrap .btnWrap.lock:after, #StoryCollection #listWrap #special .wrap.BRANCH .sectionListWrap .storyWrap .btnWrap.lock:after,
+#StoryCollection #listWrap #special .wrap.WITCH .sectionListWrap .storyWrap .btnWrap.lock:after {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: -11px;
+  background: url("/magica/resource/image_web/page/collection/storyCollection/icon_story_lock_f.png") left top no-repeat;
+  width: 21px;
+  height: 27px;
+  background-size: 21px 27px;
+  z-index: 5;
+}

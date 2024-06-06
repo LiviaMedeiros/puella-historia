@@ -1,0 +1,25 @@
+<div class="popupInner">
+	<span class="closeDefault se_cancel popupCloseBtn TE"></span>
+	<p id="popupInfoDetailTitle" class="popupTitle common_title">覚醒素材セット</p>
+
+	<div class="popupTextArea">
+		<div class="bulkWrap">
+			<% _.each(model.giftList,function(gift,index){ %>
+			<div class="popupGiftWrap">
+				<p class="numWrap c_white"><span class="hasNum ts_pink"><%= gift.hasNum %></span><span class="sla ts_gold">/</span><span class="needNum ts_gold"><%= gift.needNum %></span></p>
+				<img data-nativeimgkey='gift_a_<%= gift.giftId %>' data-src='resource/image_native/gift/item_gift_a_<%= gift.giftId %>.png' class="giftImg">
+			</div>
+			<% }) %>
+		</div>
+		<div class="bulkSetText">
+			全ての素材をまとめてセットします。<br>
+			よろしいですか？
+		</div>
+	</div>
+	<table class="popupBtnArea" width="400" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+				<td><span class="cancelBtn se_cancel popupCloseBtn btn TE b_white"><span class="b_screen"></span>キャンセル</td>
+				<td><span class="decideBtn btn se_decide TE b_pink"><span class="b_screen"></span>セット</td>
+		</tr>
+	</table>
+</div>

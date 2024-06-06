@@ -1,0 +1,178 @@
+<div id="PatrolResult">
+	<!-- タップレイヤー -->
+	<div id="tapAction"></div>
+
+	<!-- リザルト表示 -->
+	<div id="ResultWrap">
+		<!-- アニメーション系:リザルトマーク -->
+		<div class="resultMarkOver win"></div>
+		<div class="resultMark win"></div>
+		<div class="resultMarkLight"></div>
+
+		<!-- リザルト表示 -->
+		<div class="ResultPopup commonFrame1 anim">
+			<div class="expWrapTitle item ts_gold">獲得報酬</div>
+			<!-- リザルト表示1ページ目:経験値系 -->
+			<div class="expWrap" id="expWrap">
+				<!-- Exp:魔法少女系 --><ul id="charaWrap"></ul>
+			</div>
+			<div class="hrWrap"></div>
+			<!-- アイテム系 -->
+			<div class="itemWrap" id="itemWrap">
+				<div class="wrapTitle clearItem">宝箱</div>
+				<div id="itemResult" class="">
+					<div class="itemScroll">
+						<ul id="getItemList">
+							<%
+								// 獲得アイテムの数だけ生成
+								_.each(getItems,function(treasure,index){
+							%>
+								<li>
+									<%
+										// 規定の宝箱の場合
+										if(treasure.chestColor == "GOLD" || treasure.chestColor == "SILVER" || treasure.chestColor == "BRONZE"){
+									%>
+										<div class="maskWrap <%= treasure.chestColor %>"></div>
+									<%
+										} else if(treasure.chestColor == "ADDED_DROP"){
+											// 追加ドロップの場合
+									%>
+										<style type='text/css'>
+											@-webkit-keyframes addedItemBoxOpen {
+												0% {
+													background-image: url('/magica/resource/image_web/common/treasure/event/<%= treasure.itemCode.toLowerCase() %>_close.png');
+													background-repeat: no-repeat!important;
+													-webkit-transform: scale(1) translateZ(0);
+												}
+												33% {
+													background-image: url('/magica/resource/image_web/common/treasure/event/<%= treasure.itemCode.toLowerCase() %>_close.png');
+													background-repeat: no-repeat!important;
+													-webkit-transform: scale(.8) translateZ(0);
+												}
+												34% {
+													background-image: url('/magica/resource/image_web/common/treasure/event/<%= treasure.itemCode.toLowerCase() %>_open.png');
+													background-repeat: no-repeat!important;
+
+													-webkit-transform: scale(1) translateZ(0);
+												}
+												50% {
+													background-image: url('/magica/resource/image_web/common/treasure/event/<%= treasure.itemCode.toLowerCase() %>_open.png');
+													background-repeat: no-repeat!important;
+													-webkit-transform: scale(1.1) translateZ(0);
+
+													opacity: 1;
+												}
+												66% {
+													background-image: url('/magica/resource/image_web/common/treasure/event/<%= treasure.itemCode.toLowerCase() %>_open.png');
+													background-repeat: no-repeat!important;
+													opacity: 1;
+												}
+												100% {
+													background-image: url('/magica/resource/image_web/common/treasure/event/<%= treasure.itemCode.toLowerCase() %>_open.png');
+													background-repeat: no-repeat!important;
+													opacity: 0;
+												}
+											}
+											#getItemList .maskWrap.addedDrop {
+												background: url('/magica/resource/image_web/common/treasure/event/<%= treasure.itemCode.toLowerCase() %>_close.png') bottom center !important;
+												background-repeat: no-repeat!important;
+												background-size: contain!important;
+											}
+											#itemResult.anim #getItemList .maskWrap.addedDrop {
+												-webkit-animation: addedItemBoxOpen .75s ease .0s 1 alternate;
+
+												-webkit-animation-fill-mode: forwards;
+											}
+										</style>
+
+										<div class="maskWrap addedDrop"></div>
+									<% } %>
+
+									<!-- ドロップアイテム画像表示 -->
+									<% if(treasure.itemCode.toLowerCase().indexOf("item_gift") > -1){ %>
+										<img data-nativeimgkey='<%= treasure.itemCode.toLowerCase() %>' data-src='resource/image_native/gift/<%= treasure.itemCode.toLowerCase() %>.png'>
+									<% }else if(treasure.itemCode.toLowerCase().indexOf("memoria_") > -1){ %>
+										<img src='/magica/resource/image_web/memoria/<%= treasure.itemCode.toLowerCase() %>.png'>
+									<% }else{ %>
+										<% var itemcode = treasure.itemCode; %>
+										<% if(itemcode.indexOf("EVENT_TRAINING_") > -1 && itemcode.split("_").length < 4){ itemcode = "EVENT_TRAINING_POTION"} %>
+										<img src='/magica/resource/image_web/item<%= treasure.imgPath %><%= itemcode.toLowerCase() %>.png' alt="">
+									<% } %>
+
+									<% if(treasure.effectFlag){ %>
+										<span class="rewardNum ts_pink">×<%= treasure.quantity %></span>
+									<% }else{ %>
+										<% if(treasure.quantity){ %>
+										<span class="rewardNum ts_gold">×<%= treasure.quantity %></span>
+										<% } %>
+									<% } %>
+
+									<!-- 宝箱開封エフェクト -->
+									<div class="effectWrap">
+										<div class="effectCircle"></div>
+										<div class="effectFlash"></div>
+										<div class="effectGlitter"></div>
+									</div>
+								</li>
+							<% }); %>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="richeWrap" id="richeWrap">
+				<div class="wrapTitle clearRiche">CC</div>
+				<span class="gold c_red" id="goldNum">+0</span>
+
+				<dl class="common_dl hasTotalRiche" id="hasTotalRiche">
+					<dt>所持合計</dt>
+					<dd><span class="c_red"><%= (gameUser.riche) %></span>&nbsp;CC</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+
+	<!-- 獲得アイテム表示 -->
+</div>
+
+<!-- キャラ表示パーツ -->
+<script type="text/template" id="unitPartTemp">
+	<div class="userCharaIcon <%='<%= model.card.rank %\>'%> <%='<%= model.card.attributeId %\>'%>">
+		<%="<% var att = 'att_' + model.card.attributeId.toLowerCase() %\>"%>
+		<%="<% var star = 'star_' + model.card.rank.toLowerCase() %\>"%>
+		<%="<% var frame = 'frame_' + model.card.rank.toLowerCase() %\>"%>
+		<%="<% var bg = 'bg_' + model.card.attributeId.toLowerCase() %\>"%>
+		<span class="att" data-nativebgkey='<%="<%= att %\>"%>' data-src='resource/image_native/card/frame/<%="<%= att %\>"%>.png'></span>
+		<span class="star" data-nativebgkey='<%="<%= star %\>"%>' data-src='resource/image_native/card/frame/<%="<%= star %\>"%>.png'></span>
+		<span class="rank" data-nativebgkey='<%="<%= frame %\>"%>' data-src='resource/image_native/card/frame/<%="<%= frame %\>"%>.png'></span>
+		<img data-nativeimgkey='card_<%="<%= model.displayCardId %\>"%>_f' data-src='resource/image_native/card/image/card_<%="<%= model.displayCardId %\>"%>_f.png'>
+		<span class="bg" data-nativebgkey='<%="<%= bg %\>"%>' data-src='resource/image_native/card/frame/<%="<%= bg %\>"%>.png'></span>
+	</div>
+
+	<div class="textUp">
+		<span class="lvup"></span>
+		<span class="epup"></span>
+	</div>
+
+	<!-- キャラ経験値 -->
+	<div class='charaLvTitle'><span class='lvTitle'></span><span class="unitLv"><%="<%= model.level %\>"%></span></div>
+	<div class="charaExWrap">
+		<div class="miniGuageWrap">
+			<div class="charaExGuage"></div>
+		</div>
+		<div class="exFlashWrap"></div>
+	</div>
+	<div class="getExNum ts_white"></div>
+
+	<!-- キャラエピソード経験値 -->
+	<div class="charaEpTitle"><span class='epTitle'></span><span class="epLvNum"></span></div>
+	<div class="charaEpWrap">
+		<div class="lvGuageWrap"></div>
+		<div class="miniGuageWrap">
+			<div class="charaEpGuage"></div>
+		</div>
+		<div class="epFlashWrap"></div>
+	</div>
+	<div class="charaEpLeftWrap c_gold">あと&nbsp;<span class="epLeft c_gold"><%='<%= model.epRequire %\>'%></span></div>
+	<div class="getEpExNum ts_white"></div>
+
+</script>

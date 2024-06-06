@@ -1,0 +1,926 @@
+@charset "UTF-8";
+#popupArea #schedulePopup table {
+  margin-top: 8px;
+  font-size: 16px;
+  border-spacing: 5px;
+  border-collapse: separate;
+}
+#popupArea #schedulePopup table th {
+  background: #a77e4a;
+  width: 400px;
+  color: #fff;
+}
+#popupArea #schedulePopup table td {
+  position: relative;
+  width: 600px;
+  height: 70px;
+  border: 1px solid #a77e4a;
+  padding: 2px 10px 2px 15px;
+  text-align: left;
+}
+#popupArea #schedulePopup table td .text {
+  width: 510px;
+  line-height: 100%;
+}
+#popupArea #schedulePopup table td .rewardList {
+  position: absolute;
+  right: 11px;
+  top: 5px;
+  height: 60px;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+#popupArea #schedulePopup table td .rewardList .rewardWrap {
+  position: relative;
+  margin-left: 4px;
+}
+#popupArea #schedulePopup table td .rewardList .rewardWrap img {
+  width: 60px;
+  height: 60px;
+}
+#popupArea #schedulePopup table td .rewardList .rewardWrap:after {
+  content: "";
+  position: absolute;
+  left: -webkit-calc(50% - 31px);
+  top: -8px;
+  width: 62px;
+  height: 20px;
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/txt_reward.png") left top no-repeat;
+  background-size: contain;
+}
+
+#popupArea #autoFormationContainer .deck, #PatrolLumpFormation #deckWrap .deck {
+  position: relative;
+  width: 960px;
+  height: 80px;
+  top: 30px;
+  left: 30px;
+  z-index: 1;
+}
+#popupArea #autoFormationContainer .deck:first-child, #PatrolLumpFormation #deckWrap .deck:first-child {
+  top: 30px;
+}
+#popupArea #autoFormationContainer .deck:nth-child(3), #PatrolLumpFormation #deckWrap .deck:nth-child(3) {
+  top: 70px;
+}
+#popupArea #autoFormationContainer .deck:last-child, #PatrolLumpFormation #deckWrap .deck:last-child {
+  top: 110px;
+}
+#popupArea #autoFormationContainer .deck > .bg, #PatrolLumpFormation #deckWrap .deck > .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#popupArea #autoFormationContainer .deck .attribute, #PatrolLumpFormation #deckWrap .deck .attribute {
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+}
+#popupArea #autoFormationContainer .deck.expedition, #PatrolLumpFormation #deckWrap .deck.expedition {
+  background: url("/magica/resource/image_web/page/patrol/text_team_onpatrol.png") left top no-repeat;
+}
+#popupArea #autoFormationContainer .deck #rewardArea, #PatrolLumpFormation #deckWrap .deck #rewardArea {
+  position: absolute;
+  top: 50px;
+  right: 215px;
+  width: 400px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #rewardTitle, #PatrolLumpFormation #deckWrap .deck #rewardArea #rewardTitle {
+  position: relative;
+  top: 5px;
+  left: 20px;
+  font-size: 20px;
+  text-shadow: 2px 0px 2px #fff, -2px 0px 2px #fff, 0px 2px 2px #fff, 0px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #rewardTitle #itemListBtn, #PatrolLumpFormation #deckWrap .deck #rewardArea #rewardTitle #itemListBtn {
+  position: absolute;
+  top: -5px;
+  left: 55px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("/magica/resource/image_web/common/icon/icon_info.png") left top no-repeat;
+  background-size: contain;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #rewardTitle #itemListBtn.touch, #PatrolLumpFormation #deckWrap .deck #rewardArea #rewardTitle #itemListBtn.touch {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+#popupArea #autoFormationContainer .deck #rewardArea #itemList, #PatrolLumpFormation #deckWrap .deck #rewardArea #itemList {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  width: 523px;
+  height: 46px;
+  padding: 0 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #itemList .commonItemImgWrap, #PatrolLumpFormation #deckWrap .deck #rewardArea #itemList .commonItemImgWrap {
+  position: relative;
+  width: 40px;
+  height: 46px;
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #itemList .commonItemImgWrap .commonItemImg, #PatrolLumpFormation #deckWrap .deck #rewardArea #itemList .commonItemImgWrap .commonItemImg {
+  height: 46px;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #itemList .commonItemImgWrap .quantity, #PatrolLumpFormation #deckWrap .deck #rewardArea #itemList .commonItemImgWrap .quantity {
+  display: none;
+  position: absolute;
+  font-size: 10px;
+  right: 0px;
+  bottom: -1px;
+  color: #fff;
+  text-shadow: -1px -1px 1px #8a5f29, 1px -1px 1px #8a5f29, -1px 1px 1px #8a5f29, 1px 1px 1px #8a5f29, -1px -1px #8a5f29, 1px -1px #8a5f29, -1px 1px #8a5f29, 1px 1px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 3px #8a5f29, 1px -1px 3px #8a5f29, -1px 1px 3px #8a5f29, 1px 1px 3px #8a5f29;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #itemList .commonItemImgWrap.LIVE2D, #PatrolLumpFormation #deckWrap .deck #rewardArea #itemList .commonItemImgWrap.LIVE2D {
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #itemList .commonItemImgWrap.LIVE2D:after, #PatrolLumpFormation #deckWrap .deck #rewardArea #itemList .commonItemImgWrap.LIVE2D:after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 32px;
+  left: 25px;
+  background: url(/magica/resource/image_web/item/main/live2d.png) left center no-repeat;
+  background-size: 40px 40px;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #itemList .commonItemImgWrap.LIVE2D .l2dIcon, #PatrolLumpFormation #deckWrap .deck #rewardArea #itemList .commonItemImgWrap.LIVE2D .l2dIcon {
+  margin: 0px auto;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #itemList .commonItemImgWrap.LIVE2D .charaIcon, #PatrolLumpFormation #deckWrap .deck #rewardArea #itemList .commonItemImgWrap.LIVE2D .charaIcon {
+  width: 90px;
+  height: 110px;
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #itemList .commonItemImgWrap.LIVE2D .charaIcon .maskWrap, #PatrolLumpFormation #deckWrap .deck #rewardArea #itemList .commonItemImgWrap.LIVE2D .charaIcon .maskWrap {
+  width: 90px;
+  height: 110px;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #itemList .commonItemImgWrap.LIVE2D .charaIcon .maskWrap img, #PatrolLumpFormation #deckWrap .deck #rewardArea #itemList .commonItemImgWrap.LIVE2D .charaIcon .maskWrap img {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  top: 3px;
+  right: -6px;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #other, #PatrolLumpFormation #deckWrap .deck #rewardArea #other {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 270px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #other #expArea, #PatrolLumpFormation #deckWrap .deck #rewardArea #other #expArea {
+  width: 160px;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #other #expArea span, #PatrolLumpFormation #deckWrap .deck #rewardArea #other #expArea span {
+  display: inline-block;
+  background: #a47122;
+  text-align: center;
+  color: #fff;
+  padding: 0px 8px;
+  margin: 3px 6px 0 0;
+  border-radius: 3px;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #other #expArea span:before, #PatrolLumpFormation #deckWrap .deck #rewardArea #other #expArea span:before {
+  content: "EXP";
+}
+#popupArea #autoFormationContainer .deck #rewardArea #other #ccArea, #PatrolLumpFormation #deckWrap .deck #rewardArea #other #ccArea {
+  width: 180px;
+}
+#popupArea #autoFormationContainer .deck #rewardArea #other #ccArea:before, #PatrolLumpFormation #deckWrap .deck #rewardArea #other #ccArea:before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 29px;
+  vertical-align: bottom;
+  margin: 0 6px 0 0;
+  background: url("/magica/resource/image_web/common/icon/icon_cursechip.png") left top no-repeat;
+}
+#popupArea #autoFormationContainer .deck .header .requiredTime, #PatrolLumpFormation #deckWrap .deck .header .requiredTime, #popupArea #autoFormationContainer .deck .header .playerPower, #PatrolLumpFormation #deckWrap .deck .header .playerPower {
+  position: absolute;
+  top: 24px;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  width: 130px;
+  text-align: right;
+}
+#popupArea #autoFormationContainer .deck .header .requiredTime:after, #PatrolLumpFormation #deckWrap .deck .header .requiredTime:after, #popupArea #autoFormationContainer .deck .header .playerPower:after, #PatrolLumpFormation #deckWrap .deck .header .playerPower:after {
+  position: absolute;
+  left: -52px;
+  top: -16px;
+  width: 100px;
+  font-size: 14px;
+}
+#popupArea #autoFormationContainer .deck .header, #PatrolLumpFormation #deckWrap .deck .header {
+  position: absolute;
+  background: url("/magica/resource/image_web/page/patrol/bg_patrolteam_collect.png") left top no-repeat;
+  left: 15px;
+  top: -2px;
+  width: 735px;
+  height: 30px;
+}
+#popupArea #autoFormationContainer .deck .header.cannotPlay, #PatrolLumpFormation #deckWrap .deck .header.cannotPlay {
+  position: absolute;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+#popupArea #autoFormationContainer .deck .header .playerPower, #PatrolLumpFormation #deckWrap .deck .header .playerPower {
+  position: absolute;
+  left: 20px;
+  top: 23px;
+  color: #fff;
+}
+#popupArea #autoFormationContainer .deck .header .playerPower:after, #PatrolLumpFormation #deckWrap .deck .header .playerPower:after {
+  content: "戦力値";
+}
+#popupArea #autoFormationContainer .deck .header .attribute, #PatrolLumpFormation #deckWrap .deck .header .attribute {
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  width: 30px;
+  height: 30px;
+}
+#popupArea #autoFormationContainer .deck .header .attribute.after, #PatrolLumpFormation #deckWrap .deck .header .attribute.after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  display: block;
+  width: 38px;
+  height: 38px;
+  background: url(/magica/resource/image_web/page/patrol/bg_typeicon.png) left top no-repeat;
+  background-size: contain;
+  z-index: 0;
+}
+#popupArea #autoFormationContainer .deck .header .forces, #PatrolLumpFormation #deckWrap .deck .header .forces {
+  position: absolute;
+  left: 20px;
+  top: 4px;
+  font-size: 14px;
+  color: #fff;
+}
+#popupArea #autoFormationContainer .deck .header .forces:after, #PatrolLumpFormation #deckWrap .deck .header .forces:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: -25px;
+  width: 22px;
+  height: 18px;
+  background: url(/magica/resource/image_web/page/patrol/icon_statusup.png) left top no-repeat;
+}
+#popupArea #autoFormationContainer .deck .header .title, #PatrolLumpFormation #deckWrap .deck .header .title {
+  position: absolute;
+  left: 120px;
+  top: 0.5px;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 0px 2px #1a1c39, -2px 0px 2px #1a1c39, 0px 2px 2px #1a1c39, 0px -2px 2px #1a1c39, 2px 2px 2px #1a1c39, -2px 2px 2px #1a1c39, 2px -2px 2px #1a1c39, -2px -2px 2px #1a1c39;
+}
+#popupArea #autoFormationContainer .deck .header .requiredTime, #PatrolLumpFormation #deckWrap .deck .header .requiredTime {
+  position: absolute;
+  top: 3.5px;
+  right: 30px;
+  width: 150px;
+  color: #fff;
+}
+#popupArea #autoFormationContainer .deck .header .requiredTime:after, #PatrolLumpFormation #deckWrap .deck .header .requiredTime:after {
+  content: "所用時間";
+  position: absolute;
+  top: 2px;
+}
+#popupArea #autoFormationContainer .deck .teamiconCollect, #PatrolLumpFormation #deckWrap .deck .teamiconCollect {
+  position: relative;
+  background: url("/magica/resource/image_web/page/patrol/bg_teamicon_collect.png") left top no-repeat;
+  top: 38px;
+  left: 16px;
+  width: 320px;
+  height: 65px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp.onPatrol, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp.onPatrol {
+  position: absolute;
+  left: 230px;
+  top: 50px;
+  width: 335px;
+  height: 40px;
+  background: url(/magica/resource/image_web/page/patrol/text_team_onpatrol.png) left top no-repeat;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp.onPatrol *, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp.onPatrol * {
+  display: none;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp.cannotPlay, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp.cannotPlay {
+  position: absolute;
+  left: 160px;
+  top: 50px;
+  width: 475px;
+  height: 40px;
+  background: url(/magica/resource/image_web/page/patrol/text_team_lock.png) left top no-repeat;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp.cannotPlay *, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp.cannotPlay * {
+  display: none;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .userCharaList, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .userCharaList {
+  position: absolute;
+  left: 10px;
+  top: 30px;
+  text-align: left;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .userCharaList .leaderIcon, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .userCharaList .leaderIcon {
+  position: absolute;
+  left: -8px;
+  top: 45px;
+  width: 24px;
+  height: 24px;
+  background: url("/magica/resource/image_web/common/icon/icon_leader.png") left top no-repeat;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .userCharaList .leaderIcon:before, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .userCharaList .leaderIcon:before {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 34px;
+  height: 8px;
+  background: url("/magica/resource/image_web/page/formation/icon_leader.png") left top no-repeat;
+  background-size: 100% 100%;
+  content: "";
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .userCharaList .userCharaIcon, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .userCharaList .userCharaIcon {
+  display: inline-block;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  margin-right: -19px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon {
+  position: absolute;
+  top: 27px;
+  left: 791px;
+  width: 30px;
+  height: 30px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase {
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  background-color: #4d4462;
+  border-radius: 5px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner {
+  width: 24px;
+  height: 24px;
+  background-color: #736080;
+  position: relative;
+  border-radius: 5px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols {
+  width: 6px;
+  height: 6px;
+  background-color: #736080;
+  position: absolute;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.on, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.on {
+  background-color: #f4e0ca;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation1, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation1, #popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation4, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation4, #popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation7, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation7 {
+  top: 16px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation2, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation2, #popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation5, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation5, #popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation8, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation8 {
+  top: 9px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation3, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation3, #popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation6, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation6, #popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation9, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation9 {
+  top: 2px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation1, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation1, #popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation2, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation2, #popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation3, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation3 {
+  left: 2px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation4, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation4, #popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation5, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation5, #popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation6, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation6 {
+  left: 9px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation7, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation7, #popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation8, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation8, #popupArea #autoFormationContainer .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation9, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationIcon .formationBase .formationInner .cols.formation9 {
+  left: 16px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .swapArrow, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .swapArrow {
+  display: none;
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_change02.png") left top no-repeat;
+  background-size: 26px;
+  position: absolute;
+  left: 288px;
+  top: 15px;
+  width: 26px;
+  height: 50px;
+  -webkit-animation: 2.5s exterminationFormationArrow linear 0s infinite both;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .copyBtn, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .copyBtn {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/btn_teamcopy.png") center center no-repeat;
+  position: absolute;
+  width: 298px;
+  height: 58px;
+  left: 491px;
+  top: 15px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .copyBtn:not(.touch), #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .copyBtn:not(.touch) {
+  -webkit-animation: 2.5s exterminationFormationCopyBtn ease-out 0s infinite both;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .formationBtn, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationBtn, #popupArea #autoFormationContainer .deck .userCharaListWarp .swapBtn, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .swapBtn, #popupArea #autoFormationContainer .deck .userCharaListWarp .cancelBtn, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .cancelBtn {
+  position: absolute;
+  right: 24px;
+  top: 18px;
+  width: 106px;
+  height: 50px;
+  background-size: contain;
+  font-size: 16px;
+  line-height: 26px;
+  min-width: 106px;
+  padding: 12px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .formationBtn:before, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationBtn:before, #popupArea #autoFormationContainer .deck .userCharaListWarp .formationBtn:after, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationBtn:after, #popupArea #autoFormationContainer .deck .userCharaListWarp .swapBtn:before, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .swapBtn:before, #popupArea #autoFormationContainer .deck .userCharaListWarp .swapBtn:after, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .swapBtn:after, #popupArea #autoFormationContainer .deck .userCharaListWarp .cancelBtn:before, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .cancelBtn:before, #popupArea #autoFormationContainer .deck .userCharaListWarp .cancelBtn:after, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .cancelBtn:after {
+  width: 15px;
+  height: 50px;
+  background-size: 28px 50px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .formationBtn:before, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationBtn:before, #popupArea #autoFormationContainer .deck .userCharaListWarp .swapBtn:before, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .swapBtn:before, #popupArea #autoFormationContainer .deck .userCharaListWarp .cancelBtn:before, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .cancelBtn:before {
+  left: 0px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .formationBtn:after, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .formationBtn:after, #popupArea #autoFormationContainer .deck .userCharaListWarp .swapBtn:after, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .swapBtn:after, #popupArea #autoFormationContainer .deck .userCharaListWarp .cancelBtn:after, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .cancelBtn:after {
+  right: 0px;
+  background-position-x: right;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .cancelBtn, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .cancelBtn {
+  display: none;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .lockWrap, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .lockWrap {
+  display: none;
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_team_list_bossmask.png") left top no-repeat;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 136px;
+  height: 74px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .lockWrap .requiredTime, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .lockWrap .requiredTime {
+  top: 20px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .rightArea, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .rightArea {
+  position: absolute;
+  top: -100px;
+  left: 758px;
+  width: 144px;
+  height: 290px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .rightArea #strengthArea, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .rightArea #strengthArea {
+  position: absolute;
+  top: 98px;
+  left: 0;
+  width: 144px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .rightArea #strengthArea #goalStrength, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .rightArea #strengthArea #goalStrength {
+  position: relative;
+  display: block;
+  width: 144px;
+  height: 90px;
+  padding: 23px 0 0;
+  text-align: center;
+  font-size: 16px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .rightArea #strengthArea #goalStrength::before, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .rightArea #strengthArea #goalStrength::before {
+  content: "";
+  display: block;
+  width: 144px;
+  height: 90px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("/magica/resource/image_web/page/patrol/bg_teampower.png") left top no-repeat;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .rightArea #strengthArea #goalStrength::after, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .rightArea #strengthArea #goalStrength::after {
+  content: "総戦力値";
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #mineStrengthNum, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #mineStrengthNum {
+  position: relative;
+  color: #5b5b5b;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #expected, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #expected {
+  position: absolute;
+  top: 66px;
+  right: 10px;
+  width: 50px;
+  height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #expected::before, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #expected::before {
+  content: "ドロップ期待度";
+  position: absolute;
+  top: -18px;
+  left: -90px;
+  display: block;
+  width: 120px;
+  color: #9148d6;
+  font-size: 13px;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #expected span, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #expected span {
+  display: block;
+  width: 16px;
+  height: 18px;
+  background: url("/magica/resource/image_web/page/patrol/icon_drop_off.png") left top no-repeat;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #expected.point1 span:nth-child(1), #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #expected.point1 span:nth-child(1) {
+  background: url("/magica/resource/image_web/page/patrol/icon_drop_on.png") left top no-repeat;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #expected.point2 span:nth-child(1), #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #expected.point2 span:nth-child(1), #popupArea #autoFormationContainer .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #expected.point2 span:nth-child(2), #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #expected.point2 span:nth-child(2) {
+  background: url("/magica/resource/image_web/page/patrol/icon_drop_on.png") left top no-repeat;
+}
+#popupArea #autoFormationContainer .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #expected.point3 span, #PatrolLumpFormation #deckWrap .deck .userCharaListWarp .rightArea #strengthArea #goalStrength #expected.point3 span {
+  background: url("/magica/resource/image_web/page/patrol/icon_drop_on.png") left top no-repeat;
+}
+
+#PatrolLumpFormation {
+  position: relative;
+}
+#PatrolLumpFormation #header {
+  background: url("/magica/resource/image_web/page/patrol/bg_patrolteam_collect_top.png") left top no-repeat;
+  position: absolute;
+  left: 112px;
+  top: 61px;
+  width: 815px;
+  height: 30px;
+  line-height: 31px;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-shadow: 2px 0px 2px #b07422, -2px 0px 2px #b07422, 0px 2px 2px #b07422, 0px -2px 2px #b07422, 2px 2px 2px #b07422, -2px 2px 2px #b07422, 2px -2px 2px #b07422, -2px -2px 2px #b07422;
+  z-index: 1;
+}
+#PatrolLumpFormation #header .caution {
+  display: none;
+  position: absolute;
+  left: 270px;
+  top: 12px;
+  color: #fcf2ba;
+}
+#PatrolLumpFormation #header .caution:after {
+  content: "";
+  background: url("/magica/resource/image_web/page/formation_2/arrow_r.png") left top no-repeat;
+  position: absolute;
+  left: -24px;
+  top: 4px;
+  width: 17px;
+  height: 32px;
+  background-size: contain;
+}
+#PatrolLumpFormation #header .common_tab.t_gold {
+  position: absolute;
+  left: 600px;
+  top: -3px;
+  width: 390px;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+}
+#PatrolLumpFormation #header .common_tab.t_gold li {
+  margin-right: 14px;
+}
+#PatrolLumpFormation #header .common_tab.t_gold li.current {
+  pointer-events: none;
+}
+#PatrolLumpFormation #header.formation .caution {
+  display: none;
+}
+#PatrolLumpFormation #header.swapSelectTarget .caution {
+  display: block;
+}
+#PatrolLumpFormation #deckWrap {
+  position: absolute;
+  left: 44px;
+  top: 75px;
+}
+#PatrolLumpFormation #deckWrap #bg {
+  position: absolute;
+  background-color: #fff;
+  width: 940px;
+  height: 380px;
+  border-radius: 15px;
+  opacity: 0.7;
+}
+#PatrolLumpFormation #deckWrap.formation .deck .swapBtn {
+  display: none;
+}
+#PatrolLumpFormation #deckWrap.swap .deck .formationBtn {
+  display: none;
+}
+#PatrolLumpFormation #deckWrap.swap .deck .copyBtn {
+  display: none;
+}
+#PatrolLumpFormation #bottomWrap {
+  position: absolute;
+  right: 0;
+  top: 536px;
+}
+#PatrolLumpFormation #bottomWrap.hide {
+  display: none;
+}
+#PatrolLumpFormation #bottomWrap #patrolLumpBtn {
+  width: 98px;
+  height: 102px;
+  background: url(/magica/resource/image_web/page/formation/btn_main.png) left top no-repeat;
+  position: absolute;
+  right: 23px;
+  bottom: -26px;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 102px;
+  text-align: center;
+  opacity: 1;
+  text-shadow: -1px -1px 2px #ff3359, 1px -1px 2px #ff3359, -1px 1px 2px #ff3359, 1px 1px 2px #ff3359, -1px -1px 2px #ff3359, 1px -1px 2px #ff3359, -1px 1px 2px #ff3359, 1px 1px 2px #ff3359;
+  -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
+  z-index: 10000;
+}
+#PatrolLumpFormation #rightArea {
+  position: absolute;
+  top: -10px;
+  left: 758px;
+  width: 144px;
+  height: 290px;
+}
+#PatrolLumpFormation #rightArea #formationBtn {
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  width: 144px;
+  height: 40px;
+  background: url(/magica/resource/image_web/page/formation_2/btn_automatic.png) left top no-repeat;
+  background-size: contain;
+}
+#PatrolLumpFormation #rightArea #formationBtn.hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+#PatrolLumpFormation #rightArea #allRemoveBtn {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  width: 144px;
+  height: 40px;
+  background: url("/magica/resource/image_web/page/patrol/btn_teareset.png") left top no-repeat;
+}
+#PatrolLumpFormation #rightArea #allRemoveBtn.hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+#PatrolLumpFormation #rightArea #strengthArea {
+  position: absolute;
+  top: 98px;
+  left: 0;
+  width: 144px;
+}
+#PatrolLumpFormation #rightArea #strengthArea #goalStrength {
+  position: relative;
+  display: block;
+  width: 144px;
+  height: 90px;
+  padding: 23px 0 0;
+  text-align: center;
+  font-size: 16px;
+}
+#PatrolLumpFormation #rightArea #strengthArea #goalStrength::before {
+  content: "";
+  display: block;
+  width: 144px;
+  height: 90px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("/magica/resource/image_web/page/patrol/bg_teampower.png") left top no-repeat;
+}
+#PatrolLumpFormation #rightArea #strengthArea #goalStrength::after {
+  content: "総戦力値";
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+#PatrolLumpFormation #rightArea #strengthArea #goalStrength #mineStrengthNum {
+  position: relative;
+  color: #5b5b5b;
+}
+#PatrolLumpFormation #rightArea #strengthArea #goalStrength #expected {
+  position: absolute;
+  top: 66px;
+  right: 10px;
+  width: 50px;
+  height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#PatrolLumpFormation #rightArea #strengthArea #goalStrength #expected::before {
+  content: "ドロップ期待度";
+  position: absolute;
+  top: -18px;
+  left: -90px;
+  display: block;
+  width: 120px;
+  color: #9148d6;
+  font-size: 13px;
+}
+#PatrolLumpFormation #rightArea #strengthArea #goalStrength #expected span {
+  display: block;
+  width: 16px;
+  height: 18px;
+  background: url("/magica/resource/image_web/page/patrol/icon_drop_off.png") left top no-repeat;
+}
+#PatrolLumpFormation #rightArea #strengthArea #goalStrength #expected.point1 span:nth-child(1) {
+  background: url("/magica/resource/image_web/page/patrol/icon_drop_on.png") left top no-repeat;
+}
+#PatrolLumpFormation #rightArea #strengthArea #goalStrength #expected.point2 span:nth-child(1), #PatrolLumpFormation #rightArea #strengthArea #goalStrength #expected.point2 span:nth-child(2) {
+  background: url("/magica/resource/image_web/page/patrol/icon_drop_on.png") left top no-repeat;
+}
+#PatrolLumpFormation #rightArea #strengthArea #goalStrength #expected.point3 span {
+  background: url("/magica/resource/image_web/page/patrol/icon_drop_on.png") left top no-repeat;
+}
+#PatrolLumpFormation #rightArea #battleBtn {
+  width: 98px;
+  height: 102px;
+  background: url(/magica/resource/image_web/page/formation/btn_main.png) left top no-repeat;
+  position: absolute;
+  left: 24px;
+  bottom: 0;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 102px;
+  text-align: center;
+  opacity: 1;
+  text-shadow: -1px -1px 2px #ff3359, 1px -1px 2px #ff3359, -1px 1px 2px #ff3359, 1px 1px 2px #ff3359, -1px -1px 2px #ff3359, 1px -1px 2px #ff3359, -1px 1px 2px #ff3359, 1px 1px 2px #ff3359;
+  -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+#PatrolLumpFormation #rightArea #battleBtn.touch {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+}
+
+#popupArea .attention {
+  color: #ff5e7c;
+}
+#popupArea #autoFormationPopup .popupInner {
+  height: 552px;
+  top: -webkit-calc(50% - 276px);
+}
+#popupArea #autoFormationPopup .popupTextArea {
+  font-size: 20px;
+  padding-top: 6px;
+}
+#popupArea #autoFormationContainer .deck {
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  margin-bottom: -12px;
+}
+#popupArea #autoFormationContainer .deck:nth-child(5) {
+  margin-bottom: 4px;
+}
+#popupArea #autoFormationContainer .deck .userCharaList .userCharaIcon {
+  margin-right: -28px;
+}
+#popupArea #autoFormationContainer .deck .copyBtn, #popupArea #autoFormationContainer .deck .swapArrow, #popupArea #autoFormationContainer .deck .formationBtn, #popupArea #autoFormationContainer .deck .swapBtn, #popupArea #autoFormationContainer .deck .detailBtn, #popupArea #autoFormationContainer .deck .resetBtn {
+  display: none;
+}
+#popupArea .popupDetail .popupTextArea {
+  height: 315px !important;
+  padding: 0 60px;
+}
+#popupArea .popupDetail #popupDetailScrollWrap {
+  width: 100%;
+  padding: 10px 0 0;
+  height: 290px;
+  border: 2px solid #eddbb8;
+  border-radius: 26px;
+  overflow: hidden;
+}
+#popupArea .popupDetail #popupDetailScrollWrap .scrollInner {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  text-align: left;
+}
+#popupArea .popupDetail #popupDetailScrollWrap .scrollInner .commonItemImgWrap {
+  position: relative;
+  display: inline-block;
+  height: 88px;
+  margin: 0 25px 25px;
+}
+#popupArea .popupDetail #popupDetailScrollWrap .scrollInner .commonItemImgWrap .commonItemImg {
+  width: 88px;
+}
+#popupArea .popupDetail #popupDetailScrollWrap .scrollInner .commonItemImgWrap .quantity {
+  display: none;
+  position: absolute;
+  right: -2px;
+  bottom: -8px;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: -1px -1px 1px #8a5f29, 1px -1px 1px #8a5f29, -1px 1px 1px #8a5f29, 1px 1px 1px #8a5f29, -1px -1px #8a5f29, 1px -1px #8a5f29, -1px 1px #8a5f29, 1px 1px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 3px #8a5f29, 1px -1px 3px #8a5f29, -1px 1px 3px #8a5f29, 1px 1px 3px #8a5f29;
+}
+#popupArea .popupDetail #popupDetailScrollWrap .scrollInner .commonItemImgWrap.bonus:after {
+  content: "BONUS";
+  display: block;
+  position: absolute;
+  top: 78px;
+  left: -5px;
+  width: 100px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81;
+}
+#popupArea .popupDetail #popupDetailScrollWrap .scrollInner .commonItemImgWrap.bonus:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 94px;
+  height: 94px;
+  border-radius: 8px;
+  border: 5px solid #ff3b81;
+}
+
+@-webkit-keyframes exterminationFormationCopyBtn {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes exterminationFormationArrow {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

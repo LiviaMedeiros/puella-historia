@@ -1,0 +1,673 @@
+#PuellaHistoriaTop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#PuellaHistoriaTop .mainSec {
+  width: 100%;
+  height: 100%;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 60px 0 0 20px;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaCommonStoryButtonWrap,
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaLastBattleButtonWrap {
+  position: absolute;
+  left: 72px;
+  bottom: 196px;
+  width: 156px;
+  height: 54px;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaCommonStoryButtonWrap #toPuellaHistoriaCommonStoryButton,
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaCommonStoryButtonWrap #toPuellaHistoriaLastBattleButton,
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaLastBattleButtonWrap #toPuellaHistoriaCommonStoryButton,
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaLastBattleButtonWrap #toPuellaHistoriaLastBattleButton {
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/tab_turquoise.png") left top repeat;
+  width: 156px;
+  height: 54px;
+  color: #ffffff;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaCommonStoryButtonWrap #toPuellaHistoriaCommonStoryButton.gray,
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaCommonStoryButtonWrap #toPuellaHistoriaLastBattleButton.gray,
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaLastBattleButtonWrap #toPuellaHistoriaCommonStoryButton.gray,
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaLastBattleButtonWrap #toPuellaHistoriaLastBattleButton.gray {
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/tab_turquoise_gray.png") left top repeat;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaCommonStoryButtonWrap span,
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaLastBattleButtonWrap span {
+  min-width: 26px;
+  height: 26px;
+  padding: 0 4px;
+  background: -webkit-linear-gradient(top, #e140a6 0%, #d12f74 100%);
+  display: none;
+  position: absolute;
+  top: -13px;
+  right: 0px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  border: 2px solid #ffffff;
+  border-radius: 13px;
+  z-index: 100;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaCommonStoryButtonWrap span.display,
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaLastBattleButtonWrap span.display {
+  display: block;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaLastBattleButtonWrap {
+  bottom: 126px;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaLastBattleButtonWrap #toPuellaHistoriaLastBattleButton {
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/tab_mapquest.png") left top repeat;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #toPuellaHistoriaLastBattleButtonWrap #toPuellaHistoriaLastBattleButton.gray {
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/tab_mapquest_off.png") left top repeat;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec {
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/event_pop.png") left top repeat;
+  background-size: cover;
+  width: 128px;
+  height: 66px;
+  position: absolute;
+  -webkit-animation: 5s fuwafuwa infinite;
+          animation: 5s fuwafuwa infinite;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec.none {
+  display: none;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec.event1, #PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec.event2, #PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec.event3, #PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec.event4, #PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec.event5, #PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec.event6 {
+  bottom: 440px;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec.event1 {
+  left: 256px;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec.event2 {
+  left: 380px;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec.event3 {
+  left: 504px;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec.event4 {
+  left: 628px;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec.event5 {
+  left: 752px;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec.event6 {
+  left: 876px;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec .dateText {
+  width: 100%;
+  text-align: center;
+  margin: 18px 0 0;
+  color: #ffffff;
+  font-size: 100%;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #eventDateSec .dateText span {
+  display: inline-block;
+  margin: 0 0 0 2px;
+  color: #ffffff;
+  font-size: 80%;
+}
+
+#PuellaHistoriaTop .mainSec .mirrorSec #nativeTouchWrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+#PuellaHistoriaTop .text {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+#PuellaHistoriaTop.iPhoneX .mainSec .mirrorSec #toPuellaHistoriaCommonStoryButtonWrap,
+#PuellaHistoriaTop.iPhoneX .mainSec .mirrorSec #toPuellaHistoriaLastBattleButtonWrap {
+  left: 52px;
+  bottom: 166px;
+}
+
+#PuellaHistoriaTop.iPhoneX .mainSec .mirrorSec #toPuellaHistoriaLastBattleButtonWrap {
+  bottom: 96px;
+}
+
+#PuellaHistoriaTop.iPhoneX .mainSec .mirrorSec #eventDateSec.event1, #PuellaHistoriaTop.iPhoneX .mainSec .mirrorSec #eventDateSec.event2, #PuellaHistoriaTop.iPhoneX .mainSec .mirrorSec #eventDateSec.event3, #PuellaHistoriaTop.iPhoneX .mainSec .mirrorSec #eventDateSec.event4, #PuellaHistoriaTop.iPhoneX .mainSec .mirrorSec #eventDateSec.event5, #PuellaHistoriaTop.iPhoneX .mainSec .mirrorSec #eventDateSec.event6 {
+  bottom: 470px;
+}
+
+#PuellaHistoriaTop.iPhoneX .mainSec .mirrorSec #eventDateSec.event1 {
+  left: 232px;
+}
+
+#PuellaHistoriaTop.iPhoneX .mainSec .mirrorSec #eventDateSec.event2 {
+  left: 362px;
+}
+
+#PuellaHistoriaTop.iPhoneX .mainSec .mirrorSec #eventDateSec.event3 {
+  left: 493px;
+}
+
+#PuellaHistoriaTop.iPhoneX .mainSec .mirrorSec #eventDateSec.event4 {
+  left: 624px;
+}
+
+#PuellaHistoriaTop.iPhoneX .mainSec .mirrorSec #eventDateSec.event5 {
+  left: 754px;
+}
+
+#PuellaHistoriaTop.iPhoneX .mainSec .mirrorSec #eventDateSec.event6 {
+  left: 886px;
+}
+
+#PuellaHistoriaTop.iPad .mainSec .mirrorSec #toPuellaHistoriaCommonStoryButtonWrap,
+#PuellaHistoriaTop.iPad .mainSec .mirrorSec #toPuellaHistoriaLastBattleButtonWrap {
+  left: 62px;
+  bottom: 208px;
+}
+
+#PuellaHistoriaTop.iPad .mainSec .mirrorSec #toPuellaHistoriaLastBattleButtonWrap {
+  bottom: 138px;
+}
+
+#PuellaHistoriaTop.iPad .mainSec .mirrorSec #eventDateSec.event1, #PuellaHistoriaTop.iPad .mainSec .mirrorSec #eventDateSec.event3, #PuellaHistoriaTop.iPad .mainSec .mirrorSec #eventDateSec.event5 {
+  bottom: 560px;
+}
+
+#PuellaHistoriaTop.iPad .mainSec .mirrorSec #eventDateSec.event2, #PuellaHistoriaTop.iPad .mainSec .mirrorSec #eventDateSec.event4, #PuellaHistoriaTop.iPad .mainSec .mirrorSec #eventDateSec.event6 {
+  bottom: 450px;
+}
+
+#PuellaHistoriaTop.iPad .mainSec .mirrorSec #eventDateSec.event1 {
+  left: 256px;
+}
+
+#PuellaHistoriaTop.iPad .mainSec .mirrorSec #eventDateSec.event2 {
+  left: 380px;
+}
+
+#PuellaHistoriaTop.iPad .mainSec .mirrorSec #eventDateSec.event3 {
+  left: 504px;
+}
+
+#PuellaHistoriaTop.iPad .mainSec .mirrorSec #eventDateSec.event4 {
+  left: 628px;
+}
+
+#PuellaHistoriaTop.iPad .mainSec .mirrorSec #eventDateSec.event5 {
+  left: 752px;
+}
+
+#PuellaHistoriaTop.iPad .mainSec .mirrorSec #eventDateSec.event6 {
+  left: 876px;
+}
+
+.popupContent.typeA .puellaHistoriaOverviewPopup.popupInner {
+  background-color: transparent;
+  -o-border-image: none;
+     border-image: none;
+  border: none;
+}
+
+.popupContent.typeA .puellaHistoriaOverviewPopup.popupInner .closeDefault {
+  right: 60px;
+  top: 0px;
+  background-image: url("/magica/resource/image_web/page/quest/puellaHistoria/top/popup_01.png");
+}
+
+.popupContent.typeA .puellaHistoriaOverviewPopup.popupInner .popupTitle {
+  margin: 10px auto 0;
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/bg_popup_title_c.png") left top repeat;
+}
+
+.popupContent.typeA .puellaHistoriaOverviewPopup.popupInner .popupTitle:before {
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/bg_popup_title_l.png") left top repeat;
+}
+
+.popupContent.typeA .puellaHistoriaOverviewPopup.popupInner .popupTitle:after {
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/bg_popup_title_r.png") left top repeat;
+}
+
+.popupContent.typeA .puellaHistoriaOverviewPopup.popupInner .mainImage {
+  position: absolute;
+  top: 70px;
+  left: 168px;
+}
+
+.popupContent.typeA .puellaHistoriaOverviewPopup.popupInner .popupTextArea {
+  width: 556px;
+  height: 70px;
+  position: absolute;
+  top: 218px;
+  left: 167px;
+  font-size: 15px;
+  line-height: 160%;
+  color: #ffffff;
+  text-align: left;
+}
+
+.popupContent.typeA .puellaHistoriaOverviewPopup .bgWrap {
+  width: 882px;
+  height: 538px;
+  background-image: url("/magica/resource/image_web/page/quest/puellaHistoria/top/popup_window_overview.png");
+  background-repeat: repeat-x;
+  position: absolute;
+  top: -70px;
+  left: -4px;
+}
+
+.popupContent.typeA .puellaHistoriaOverviewPopup .decideBtn {
+  z-index: 11;
+  position: absolute;
+  bottom: 86px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.popupContent.typeA .puellaHistoriaOverviewPopup .decideBtn.none {
+  display: none;
+}
+
+.puellaHistoriaOpenStoryPop.popupContent.typeC .popupInner .popupTitle {
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/bg_popup_title_c.png") left top repeat;
+}
+
+.puellaHistoriaOpenStoryPop.popupContent.typeC .popupInner .popupTitle:before {
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/bg_popup_title_l.png") left top repeat;
+}
+
+.puellaHistoriaOpenStoryPop.popupContent.typeC .popupInner .popupTitle:after {
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/bg_popup_title_r.png") left top repeat;
+}
+
+#tapBlock .rippleAnimationListWrap {
+  position: absolute;
+  z-index: 1000001;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0%;
+}
+
+#tapBlock .rippleAnimationListWrap .wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#tapBlock .rippleAnimationListWrap .wrap ul .ripple0 {
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  position: fixed;
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/efe_circle_01.png") center center no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  scale: 0.1;
+  opacity: 0;
+  -webkit-animation-name: rippleAnim;
+          animation-name: rippleAnim;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#tapBlock .rippleAnimationListWrap .wrap ul .ripple1 {
+  position: fixed;
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/efe_circle_01.png") center center no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  scale: 0.1;
+  opacity: 0;
+  -webkit-animation-name: rippleAnim;
+          animation-name: rippleAnim;
+  -webkit-animation-duration: 1.9s;
+          animation-duration: 1.9s;
+  -webkit-animation-delay: 0.65s;
+          animation-delay: 0.65s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#tapBlock .rippleAnimationListWrap .wrap ul .ripple2 {
+  position: fixed;
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/efe_circle_03.png") center center no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  scale: 0.1;
+  opacity: 0;
+  -webkit-animation-name: rippleAnim;
+          animation-name: rippleAnim;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 0.65s;
+          animation-delay: 0.65s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#tapBlock .rippleAnimationListWrap .wrap ul .ripple3 {
+  position: fixed;
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/efe_circle_02.png") center center no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  scale: 0.1;
+  opacity: 0;
+  -webkit-animation-name: rippleAnim;
+          animation-name: rippleAnim;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#tapBlock .rippleAnimationListWrap .wrap ul .ripple4 {
+  position: fixed;
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/efe_circle_02.png") center center no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  scale: 0.1;
+  opacity: 0;
+  -webkit-animation-name: rippleAnim;
+          animation-name: rippleAnim;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 1.0s;
+          animation-delay: 1.0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#tapBlock .rippleAnimationListWrap .wrap ul .ripple5 {
+  position: fixed;
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/efe_circle_01.png") center center no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  scale: 0.1;
+  opacity: 0;
+  -webkit-animation-name: rippleAnim;
+          animation-name: rippleAnim;
+  -webkit-animation-duration: 2.25s;
+          animation-duration: 2.25s;
+  -webkit-animation-delay: 1.0s;
+          animation-delay: 1.0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#tapBlock .rippleAnimationListWrap .wrap ul .ripple6 {
+  position: fixed;
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/efe_circle_04.png") center center no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  scale: 0.1;
+  opacity: 0;
+  -webkit-animation-name: rippleAnim;
+          animation-name: rippleAnim;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#tapBlock .rippleAnimationListWrap .wrap ul .ripple7 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  scale: 1;
+  opacity: 0;
+  background-color: white;
+  -webkit-animation-name: fadeInWhite;
+          animation-name: fadeInWhite;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes rippleAnim {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(50);
+            transform: scale(50);
+  }
+}
+
+@keyframes rippleAnim {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(50);
+            transform: scale(50);
+  }
+}
+
+@-webkit-keyframes fadeInWhite {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInWhite {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fuwafuwa {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+}
+
+@keyframes fuwafuwa {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+}
+
+#overlapContainer .puellaFadeAreaView {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+#overlapContainer .puellaFadeAreaView #puellaFadeAreaViewWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#overlapContainer .puellaFadeAreaView #puellaFadeAreaViewWrap #topFadeArea {
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0) 100%);
+  width: 2400px;
+  height: 70px;
+  top: 0px;
+  left: -webkit-calc(50% - 1000px);
+  padding-left: 0;
+  z-index: 1001;
+}
+
+#overlapContainer .puellaFadeAreaView #puellaFadeAreaViewWrap #bottomFadeArea {
+  position: absolute;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 70%, rgba(0, 0, 0, 0) 100%);
+  width: 2400px;
+  height: 97px;
+  bottom: 0px;
+  left: -webkit-calc(50% - 1000px);
+  padding-left: 0;
+  z-index: 1001;
+}
+
+.adjustSec {
+  width: 100%;
+  height: 100%;
+}
+
+.adjustSec .btn {
+  position: absolute;
+  bottom: 80px;
+  right: 30px;
+}
+
+.adjustSec .overviewSampleBtn {
+  right: 190px;
+}
+
+.adjustSec .openStorySampleBtn {
+  right: 308px;
+}
+
+.adjustSec .clearMovieSampleBtn {
+  right: 428px;
+}
+
+.adjustPopupSec.popupContent .popupInner .title,
+.clearCheckPopupSec.popupContent .popupInner .title {
+  display: inline-block;
+  margin: 0 12px 0 0;
+}
+
+.adjustPopupSec.popupContent .popupInner .number,
+.adjustPopupSec.popupContent .popupInner .text,
+.clearCheckPopupSec.popupContent .popupInner .number,
+.clearCheckPopupSec.popupContent .popupInner .text {
+  display: inline-block;
+  width: 80px;
+  height: auto;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 2px solid #c6a882;
+  color: #333;
+  margin: 0 10px 0 3px;
+}
+
+.adjustPopupSec.popupContent .popupInner .popupBtnArea,
+.clearCheckPopupSec.popupContent .popupInner .popupBtnArea {
+  margin: 20px auto 0;
+}
+
+.clearCheckPopupSec.popupContent .popupInner .title {
+  margin: 28px 12px 0 0;
+}

@@ -1,0 +1,234 @@
+#opponentPopup {
+  width: 1024px;
+  height: 530px;
+  background: url("/magica/resource/image_web/page/arena/confirm/enemy_popup_bg.png") left top no-repeat;
+  position: fixed;
+  top: calc(50% - 265px);
+  left: calc(50% - 512px);
+  z-index: 902;
+}
+
+#opponentPopup .popupStyle {
+  display: none;
+}
+
+#opponentPopup .closeBtn {
+  width: 52px;
+  height: 51px;
+  background: url("/magica/resource/image_web/common/popup/popup_close.png") left top no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: -12px;
+  right: 7px;
+  z-index: 20;
+}
+
+#opponentPopup .formationArrow {
+  width: 56px;
+  height: 198px;
+  background: url("/magica/resource/image_web/page/formation_2/formation_arrow_r_a.png") left top no-repeat;
+  position: absolute;
+  top: 167px;
+  left: 438px;
+  z-index: 5;
+}
+
+#opponentPopup #confirmFormation {
+  width: 442px;
+  height: 410px;
+  background: url("/magica/resource/image_web/page/formation_2/bg_formation_arena_l_a.png") left top no-repeat;
+  position: absolute;
+  top: 60px;
+  left: 22px;
+}
+
+#opponentPopup #confirmFormation .formationCols {
+  width: 114px;
+  height: 114px;
+  position: absolute;
+}
+
+#opponentPopup #confirmFormation .formationCols.on {
+  background: url("/magica/resource/image_web/page/arena/confirm/bg_formation_ll_on.png") left top no-repeat;
+}
+
+#opponentPopup #confirmFormation .formationCols.on .attIcon {
+  width: 32px;
+  position: absolute;
+  top: -6px;
+  right: -6px;
+}
+
+#opponentPopup #confirmFormation .formationCols.on .effective {
+  width: 114px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 4px;
+  left: 0px;
+  text-align: center;
+  -ms-flex-wrap: center;
+      flex-wrap: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#opponentPopup #confirmFormation .formationCols.on .effective img {
+  width: 50px;
+  height: 17px;
+  margin: 0;
+}
+
+#opponentPopup #confirmFormation .formationCols.on .userCharaIcon {
+  position: absolute;
+  top: 17px;
+  left: 17px;
+  z-index: 5;
+}
+
+#opponentPopup #confirmFormation .formationCols.col1, #opponentPopup #confirmFormation .formationCols.col2, #opponentPopup #confirmFormation .formationCols.col3 {
+  left: 285px;
+}
+
+#opponentPopup #confirmFormation .formationCols.col4, #opponentPopup #confirmFormation .formationCols.col5, #opponentPopup #confirmFormation .formationCols.col6 {
+  left: 164px;
+}
+
+#opponentPopup #confirmFormation .formationCols.col7, #opponentPopup #confirmFormation .formationCols.col8, #opponentPopup #confirmFormation .formationCols.col9 {
+  left: 44px;
+}
+
+#opponentPopup #confirmFormation .formationCols.col1, #opponentPopup #confirmFormation .formationCols.col4, #opponentPopup #confirmFormation .formationCols.col7 {
+  top: 29px;
+}
+
+#opponentPopup #confirmFormation .formationCols.col2, #opponentPopup #confirmFormation .formationCols.col5, #opponentPopup #confirmFormation .formationCols.col8 {
+  top: 149px;
+}
+
+#opponentPopup #confirmFormation .formationCols.col3, #opponentPopup #confirmFormation .formationCols.col6, #opponentPopup #confirmFormation .formationCols.col9 {
+  top: 270px;
+}
+
+#opponentPopup #confirmRight {
+  width: 515px;
+  height: 530px;
+  position: absolute;
+  top: 4px;
+  right: 0px;
+  overflow: hidden;
+}
+
+#opponentPopup #confirmRight .confirmHeader {
+  width: 188px;
+  height: 42px;
+  background: url("/magica/resource/image_web/page/arena/confirm/enemy_header.png") left top no-repeat;
+  position: absolute;
+  top: 66px;
+  left: 0px;
+}
+
+#opponentPopup #confirmRight .userTitle_s {
+  position: absolute;
+  top: 116px;
+  left: 22px;
+}
+
+#opponentPopup #confirmRight .confirmLvWrap {
+  width: 126px;
+  height: 33px;
+  position: absolute;
+  top: 142px;
+  left: 28px;
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  background: url("/magica/resource/image_web/event/arenaRankMatch/common/top/rankmatch_lv_base.png") bottom center no-repeat;
+  text-shadow: 3px 0px 3px #ab3c6b,  -3px 0px 3px #ab3c6b,  0px 3px 3px #ab3c6b,  0px -3px 3px #ab3c6b,  3px 3px 3px #ab3c6b,  -3px 3px 3px #ab3c6b,  3px -3px 3px #ab3c6b,  -3px -3px 3px #ab3c6b;
+}
+
+#opponentPopup #confirmRight .confirmNameWrap {
+  position: absolute;
+  top: 136px;
+  left: 170px;
+  font-size: 30px;
+  text-shadow: 3px 0px 3px #ffffff,  -3px 0px 3px #ffffff,  0px 3px 3px #ffffff,  0px -3px 3px #ffffff,  3px 3px 3px #ffffff,  -3px 3px 3px #ffffff,  3px -3px 3px #ffffff,  -3px -3px 3px #ffffff;
+  z-index: 3;
+}
+
+#opponentPopup #confirmRight .confirmPower {
+  width: 496px;
+  height: 42px;
+  padding-left: 195px;
+  background: url("/magica/resource/image_web/page/arena/confirm/enemy_team_pt_bg.png") left top no-repeat;
+  position: absolute;
+  top: 264px;
+  left: 0px;
+  font-size: 26px;
+  line-height: 42px;
+  z-index: 3;
+}
+
+#opponentPopup #confirmRight .confirmPoint {
+  width: 496px;
+  height: 42px;
+  padding-left: 195px;
+  position: absolute;
+  top: 200px;
+  left: 0px;
+  font-size: 26px;
+  line-height: 42px;
+  z-index: 3;
+  background: url("/magica/resource/image_web/event/arenaRankMatch/common/top/enemy_ranking_bg.png") left top no-repeat;
+}
+
+#opponentPopup #confirmRight .confirmFormation {
+  width: 496px;
+  height: 42px;
+  padding-left: 198px;
+  background: url("/magica/resource/image_web/page/arena/confirm/enemy_formation_bg.png") left top no-repeat;
+  position: absolute;
+  top: 330px;
+  left: 0px;
+  font-size: 21px;
+  line-height: 44px;
+  z-index: 3;
+}
+
+#opponentPopup #confirmRight #battleStartBtn {
+  width: 298px;
+  height: 90px;
+  background: url("/magica/resource/image_web/event/arenaRankMatch/common/top/btn_attack_formation.png") left top no-repeat;
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  z-index: 5;
+}
+
+#opponentPopup #confirmRight #battleStartBtn .b_screen {
+  width: 270px;
+  height: 80px;
+  top: 5px;
+  left: 14px;
+  border-radius: 70px;
+}
+
+#opponentPopup #confirmRight .leaderImage {
+  width: 484px;
+  position: absolute;
+  top: -30px;
+  right: -124px;
+  opacity: .6;
+  z-index: 1;
+  -webkit-mask: url("/magica/resource/image_web/page/arena/confirm/enemy_detail_mask.png");
+}
+
+#opponentPopup #confirmRight .leaderImage img {
+  width: 484px;
+}
+
+#opponentPopup.DeckFormation #battleStartBtn {
+  display: none;
+}

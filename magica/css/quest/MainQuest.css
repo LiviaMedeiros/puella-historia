@@ -1,0 +1,626 @@
+@charset "UTF-8";
+#QuestMap {
+  width: 1024px;
+  height: 100%;
+  position: relative;
+}
+
+#QuestMap .param {
+  display: none;
+}
+
+#QuestMap #modeToggleWrap {
+  width: 156px;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  right: 107px;
+  z-index: 100;
+}
+
+#QuestMap #modeToggleWrap .modeToggleBtn {
+  width: 156px;
+  height: 50px;
+  background: url("/magica/resource/image_web/page/quest/main/btn_challenge_a.png") left top no-repeat;
+}
+
+#QuestMap #modeToggleWrap .modeToggleBtn .b_screen {
+  border-radius: 31px;
+}
+
+#QuestMap #modeToggleWrap.challenge .modeToggleBtn {
+  background: url("/magica/resource/image_web/page/quest/main/btn_normal_a.png") left top no-repeat;
+}
+
+#QuestMap #partToggleWrap {
+  width: 250px;
+  height: 90px;
+  position: absolute;
+  left: -46px;
+  bottom: 70px;
+  z-index: 100;
+}
+
+#QuestMap #partToggleWrap #partToggle {
+  width: 160px;
+  height: 56px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: url("/magica/resource/image_web/page/quest/main/btn_second.png") left top no-repeat;
+  background-size: cover;
+}
+
+#QuestMap #partToggleWrap.none {
+  display: none;
+}
+
+#QuestMap #toPuellaHistoriaTopButtonWrap {
+  width: 160px;
+  height: 56px;
+  background: url("/magica/resource/image_web/page/quest/puellaHistoria/top/btn_main.png") left top no-repeat;
+  position: absolute;
+  left: 200px;
+  bottom: 90px;
+  z-index: 100;
+}
+
+#QuestMap #toPuellaHistoriaTopButtonWrap #toPuellaHistoriaTopButton {
+  width: 100%;
+  height: 100%;
+}
+
+#QuestMap #toPuellaHistoriaTopButtonWrap.none {
+  display: none;
+}
+
+#QuestMap #curtain {
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 1;
+}
+
+#QuestMap.curtainShow #curtain {
+  -webkit-animation: map_curtain_show .2s ease 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#QuestMap.curtainHide #curtain {
+  -webkit-animation: map_curtain_hide .2s ease 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#QuestMap #questListCloseBtn {
+  width: 77px;
+  height: 85px;
+  padding: 24px 0 0;
+  background-image: url("/magica/resource/image_web/common/global/global_sprite01.png");
+  background-repeat: no-repeat;
+  background-position: -237px -257px;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  z-index: 100000;
+}
+
+#QuestMap #chapterTitleWrap #chapterTitle {
+  position: absolute;
+  top: 68px;
+  left: 0;
+  -webkit-animation: chapter_title_show .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#QuestMap #content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#QuestMap #content #debugArea {
+  width: 772px;
+  height: 114px;
+  background: url("/magica/resource/image_web/page/quest/focus_banner_bg_a.png") left top no-repeat;
+  position: fixed;
+  top: -webkit-calc(50% - 140px);
+  right: -200px;
+  z-index: 1;
+}
+
+#QuestMap #content #questListWrap, #QuestMap #content #questListWrapSeason2 {
+  width: 1280px;
+  height: 576px;
+  position: absolute;
+  top: -webkit-calc(50% - 288px);
+  left: 0px;
+  z-index: 2;
+}
+
+#QuestMap #content #questListWrap.hide, #QuestMap #content #questListWrapSeason2.hide {
+  display: none;
+}
+
+#QuestMap #content #questListWrap #questList, #QuestMap #content #questListWrap #questListSeason2, #QuestMap #content #questListWrapSeason2 #questList, #QuestMap #content #questListWrapSeason2 #questListSeason2 {
+  -webkit-box-sizing: initial;
+  padding: 148px 0 314px 550px;
+  position: relative;
+}
+
+#QuestMap #content #questListWrap #questList.allClear:before, #QuestMap #content #questListWrap #questListSeason2.allClear:before, #QuestMap #content #questListWrapSeason2 #questList.allClear:before, #QuestMap #content #questListWrapSeason2 #questListSeason2.allClear:before {
+  display: none;
+  width: 418px;
+  height: 60px;
+  padding: 6px 0 0;
+  background: url("/magica/resource/image_web/page/quest/bg_section_newest.png") left top no-repeat;
+  position: absolute;
+  top: 62px;
+  left: 584px;
+  color: #5b3072;
+  line-height: 1.4;
+  text-align: center;
+  content: "最新までクリア済です\A次回のストーリー配信をお待ち下さい";
+  white-space: pre;
+}
+
+#QuestMap #content #questListWrap #questList.challenge .chapter:before, #QuestMap #content #questListWrap #questListSeason2.challenge .chapter:before, #QuestMap #content #questListWrapSeason2 #questList.challenge .chapter:before, #QuestMap #content #questListWrapSeason2 #questListSeason2.challenge .chapter:before {
+  width: 122px;
+  height: 34px;
+  background: url("/magica/resource/image_web/page/quest/main/icon_challenge.png") left center no-repeat;
+  position: absolute;
+  top: 4px;
+  left: 30px;
+  content: "";
+  z-index: 100;
+}
+
+#QuestMap #content #questListWrap #questList.challenge .chapter .chapterTitleWrap, #QuestMap #content #questListWrap #questListSeason2.challenge .chapter .chapterTitleWrap, #QuestMap #content #questListWrapSeason2 #questList.challenge .chapter .chapterTitleWrap, #QuestMap #content #questListWrapSeason2 #questListSeason2.challenge .chapter .chapterTitleWrap {
+  background: url("/magica/resource/image_web/page/quest/main/bg_chapter_challenge_a.png") left center no-repeat;
+}
+
+#QuestMap #content #questListWrap #questList.challenge .chapter .chapterTitle, #QuestMap #content #questListWrap #questListSeason2.challenge .chapter .chapterTitle, #QuestMap #content #questListWrapSeason2 #questList.challenge .chapter .chapterTitle, #QuestMap #content #questListWrapSeason2 #questListSeason2.challenge .chapter .chapterTitle {
+  text-shadow: -1px -1px 1px #bb1d97, 1px -1px 1px #bb1d97, -1px 1px 1px #bb1d97, 1px 1px 1px #bb1d97, -1px -1px #bb1d97, 1px -1px #bb1d97, -1px 1px #bb1d97, 1px 1px #bb1d97, -1px -1px 2px #bb1d97, 1px -1px 2px #bb1d97, -1px 1px 2px #bb1d97, 1px 1px 2px #bb1d97, -1px -1px 2px #bb1d97, 1px -1px 2px #bb1d97, -1px 1px 2px #bb1d97, 1px 1px 2px #bb1d97, -1px -1px 3px #bb1d97, 1px -1px 3px #bb1d97, -1px 1px 3px #bb1d97, 1px 1px 3px #bb1d97;
+}
+
+#QuestMap #content #questListWrap #questList.challenge .section, #QuestMap #content #questListWrap #questListSeason2.challenge .section, #QuestMap #content #questListWrapSeason2 #questList.challenge .section, #QuestMap #content #questListWrapSeason2 #questListSeason2.challenge .section {
+  background: url("/magica/resource/image_web/page/quest/main/bg_section_challenge.png") left center no-repeat;
+}
+
+#QuestMap #content #questListWrap #questList.challenge .section .sectionNo, #QuestMap #content #questListWrap #questList.challenge .section .sectionTitle, #QuestMap #content #questListWrap #questListSeason2.challenge .section .sectionNo, #QuestMap #content #questListWrap #questListSeason2.challenge .section .sectionTitle, #QuestMap #content #questListWrapSeason2 #questList.challenge .section .sectionNo, #QuestMap #content #questListWrapSeason2 #questList.challenge .section .sectionTitle, #QuestMap #content #questListWrapSeason2 #questListSeason2.challenge .section .sectionNo, #QuestMap #content #questListWrapSeason2 #questListSeason2.challenge .section .sectionTitle {
+  text-shadow: -1px -1px 1px #bb1d97, 1px -1px 1px #bb1d97, -1px 1px 1px #bb1d97, 1px 1px 1px #bb1d97, -1px -1px #bb1d97, 1px -1px #bb1d97, -1px 1px #bb1d97, 1px 1px #bb1d97, -1px -1px 2px #bb1d97, 1px -1px 2px #bb1d97, -1px 1px 2px #bb1d97, 1px 1px 2px #bb1d97, -1px -1px 2px #bb1d97, 1px -1px 2px #bb1d97, -1px 1px 2px #bb1d97, 1px 1px 2px #bb1d97, -1px -1px 3px #bb1d97, 1px -1px 3px #bb1d97, -1px 1px 3px #bb1d97, 1px 1px 3px #bb1d97;
+}
+
+#QuestMap #content #questListWrap #questList.challenge .section .treasure, #QuestMap #content #questListWrap #questListSeason2.challenge .section .treasure, #QuestMap #content #questListWrapSeason2 #questList.challenge .section .treasure, #QuestMap #content #questListWrapSeason2 #questListSeason2.challenge .section .treasure {
+  display: none;
+}
+
+#QuestMap #content #questListWrap #questList.challenge .section .questTip, #QuestMap #content #questListWrap #questListSeason2.challenge .section .questTip, #QuestMap #content #questListWrapSeason2 #questList.challenge .section .questTip, #QuestMap #content #questListWrapSeason2 #questListSeason2.challenge .section .questTip {
+  margin: 2px 0 0 279px;
+}
+
+#QuestMap #content #questListWrap #questList .section, #QuestMap #content #questListWrap #questListSeason2 .section, #QuestMap #content #questListWrapSeason2 #questList .section, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section {
+  width: 452px;
+  height: 114px;
+  background: url("/magica/resource/image_web/page/quest/main/bg_section.png") left center no-repeat;
+  position: relative;
+}
+
+#QuestMap #content #questListWrap #questList .section.off, #QuestMap #content #questListWrap #questListSeason2 .section.off, #QuestMap #content #questListWrapSeason2 #questList .section.off, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section.off {
+  display: none;
+}
+
+#QuestMap #content #questListWrap #questList .section .noChallengeText, #QuestMap #content #questListWrap #questListSeason2 .section .noChallengeText, #QuestMap #content #questListWrapSeason2 #questList .section .noChallengeText, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .noChallengeText {
+  display: none;
+  position: absolute;
+  bottom: 20px;
+  right: 80px;
+}
+
+#QuestMap #content #questListWrap #questList .section .treasure, #QuestMap #content #questListWrap #questListSeason2 .section .treasure, #QuestMap #content #questListWrapSeason2 #questList .section .treasure, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .treasure {
+  width: 64px;
+  height: 64px;
+  display: block;
+  position: absolute;
+  top: 27px;
+  right: 8px;
+}
+
+#QuestMap #content #questListWrap #questList .section .treasure .imgWrap, #QuestMap #content #questListWrap #questListSeason2 .section .treasure .imgWrap, #QuestMap #content #questListWrapSeason2 #questList .section .treasure .imgWrap, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .treasure .imgWrap {
+  width: 64px;
+  height: 64px;
+  position: relative;
+}
+
+#QuestMap #content #questListWrap #questList .section .treasure .imgWrap .charaIcon, #QuestMap #content #questListWrap #questListSeason2 .section .treasure .imgWrap .charaIcon, #QuestMap #content #questListWrapSeason2 #questList .section .treasure .imgWrap .charaIcon, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .treasure .imgWrap .charaIcon {
+  width: 45px;
+  height: 40px;
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+}
+
+#QuestMap #content #questListWrap #questList .section .treasure .imgWrap .charaIcon:before, #QuestMap #content #questListWrap #questListSeason2 .section .treasure .imgWrap .charaIcon:before, #QuestMap #content #questListWrapSeason2 #questList .section .treasure .imgWrap .charaIcon:before, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .treasure .imgWrap .charaIcon:before {
+  width: 45px;
+  height: 40px;
+  background: url("/magica/resource/image_web/common/chara/chara_frame_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 22px);
+  content: "";
+  z-index: 100;
+}
+
+#QuestMap #content #questListWrap #questList .section .treasure .imgWrap .charaIcon:after, #QuestMap #content #questListWrap #questListSeason2 .section .treasure .imgWrap .charaIcon:after, #QuestMap #content #questListWrapSeason2 #questList .section .treasure .imgWrap .charaIcon:after, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .treasure .imgWrap .charaIcon:after {
+  width: 45px;
+  height: 40px;
+  background: url("/magica/resource/image_web/common/chara/chara_base_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 22px);
+  content: "";
+  z-index: 80;
+}
+
+#QuestMap #content #questListWrap #questList .section .treasure .imgWrap .charaIcon .maskWrap, #QuestMap #content #questListWrap #questListSeason2 .section .treasure .imgWrap .charaIcon .maskWrap, #QuestMap #content #questListWrapSeason2 #questList .section .treasure .imgWrap .charaIcon .maskWrap, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .treasure .imgWrap .charaIcon .maskWrap {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 20px);
+  overflow: hidden;
+  border-radius: 20px;
+  z-index: 90;
+}
+
+#QuestMap #content #questListWrap #questList .section .treasure .imgWrap .charaIcon .maskWrap img, #QuestMap #content #questListWrap #questListSeason2 .section .treasure .imgWrap .charaIcon .maskWrap img, #QuestMap #content #questListWrapSeason2 #questList .section .treasure .imgWrap .charaIcon .maskWrap img, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .treasure .imgWrap .charaIcon .maskWrap img {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 25px);
+}
+
+#QuestMap #content #questListWrap #questList .section .treasure img, #QuestMap #content #questListWrap #questListSeason2 .section .treasure img, #QuestMap #content #questListWrapSeason2 #questList .section .treasure img, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .treasure img {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#QuestMap #content #questListWrap #questList .section .treasure .title, #QuestMap #content #questListWrap #questListSeason2 .section .treasure .title, #QuestMap #content #questListWrapSeason2 #questList .section .treasure .title, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .treasure .title {
+  width: 110px;
+  height: 22px;
+  background: url("/magica/resource/image_web/page/quest/reward.png") left center no-repeat;
+  position: absolute;
+  top: -20px;
+  left: -24px;
+  z-index: 100;
+}
+
+#QuestMap #content #questListWrap #questList .section .sectionNo, #QuestMap #content #questListWrap #questListSeason2 .section .sectionNo, #QuestMap #content #questListWrapSeason2 #questList .section .sectionNo, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .sectionNo {
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 40px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: -1px -1px 1px #915bda, 1px -1px 1px #915bda, -1px 1px 1px #915bda, 1px 1px 1px #915bda, -1px -1px #915bda, 1px -1px #915bda, -1px 1px #915bda, 1px 1px #915bda, -1px -1px 2px #915bda, 1px -1px 2px #915bda, -1px 1px 2px #915bda, 1px 1px 2px #915bda, -1px -1px 2px #915bda, 1px -1px 2px #915bda, -1px 1px 2px #915bda, 1px 1px 2px #915bda, -1px -1px 3px #915bda, 1px -1px 3px #915bda, -1px 1px 3px #915bda, 1px 1px 3px #915bda;
+}
+
+#QuestMap #content #questListWrap #questList .section .sectionTitle, #QuestMap #content #questListWrap #questListSeason2 .section .sectionTitle, #QuestMap #content #questListWrapSeason2 #questList .section .sectionTitle, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .sectionTitle {
+  margin: 32px 0 0 50px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 21px;
+  text-shadow: -1px -1px 1px #915bda, 1px -1px 1px #915bda, -1px 1px 1px #915bda, 1px 1px 1px #915bda, -1px -1px #915bda, 1px -1px #915bda, -1px 1px #915bda, 1px 1px #915bda, -1px -1px 2px #915bda, 1px -1px 2px #915bda, -1px 1px 2px #915bda, 1px 1px 2px #915bda, -1px -1px 2px #915bda, 1px -1px 2px #915bda, -1px 1px 2px #915bda, 1px 1px 2px #915bda, -1px -1px 3px #915bda, 1px -1px 3px #915bda, -1px 1px 3px #915bda, 1px 1px 3px #915bda;
+}
+
+#QuestMap #content #questListWrap #questList .section .questTip, #QuestMap #content #questListWrap #questListSeason2 .section .questTip, #QuestMap #content #questListWrapSeason2 #questList .section .questTip, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .questTip {
+  width: 160px;
+  margin: 2px 0 0 205px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#QuestMap #content #questListWrap #questList .section .questTip span, #QuestMap #content #questListWrap #questListSeason2 .section .questTip span, #QuestMap #content #questListWrapSeason2 #questList .section .questTip span, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .questTip span {
+  width: 28px;
+  height: 28px;
+  margin-right: -4px;
+  background: url("/magica/resource/image_web/page/quest/icon_notclear.png") left center no-repeat;
+  background-size: contain;
+  display: block;
+}
+
+#QuestMap #content #questListWrap #questList .section .questTip span.clear, #QuestMap #content #questListWrap #questListSeason2 .section .questTip span.clear, #QuestMap #content #questListWrapSeason2 #questList .section .questTip span.clear, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .questTip span.clear {
+  background: url("/magica/resource/image_web/page/quest/main/icon_clear.png") left center no-repeat;
+  background-size: contain;
+}
+
+#QuestMap #content #questListWrap #questList .section .questTip span.comp, #QuestMap #content #questListWrap #questListSeason2 .section .questTip span.comp, #QuestMap #content #questListWrapSeason2 #questList .section .questTip span.comp, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section .questTip span.comp {
+  background: url("/magica/resource/image_web/page/quest/icon_complete.png") left center no-repeat;
+  background-size: contain;
+}
+
+#QuestMap #content #questListWrap #questList .section.secondPartLastQuest, #QuestMap #content #questListWrap #questListSeason2 .section.secondPartLastQuest, #QuestMap #content #questListWrapSeason2 #questList .section.secondPartLastQuest, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section.secondPartLastQuest {
+  display: block;
+}
+
+#QuestMap #content #questListWrap #questList .section.secondPartLastQuest.section .questTip, #QuestMap #content #questListWrap #questListSeason2 .section.secondPartLastQuest.section .questTip, #QuestMap #content #questListWrapSeason2 #questList .section.secondPartLastQuest.section .questTip, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section.secondPartLastQuest.section .questTip {
+  display: none;
+}
+
+#QuestMap #content #questListWrap #questList .section.noChallenge, #QuestMap #content #questListWrap #questListSeason2 .section.noChallenge, #QuestMap #content #questListWrapSeason2 #questList .section.noChallenge, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section.noChallenge {
+  display: block;
+}
+
+#QuestMap #content #questListWrap #questList .section.noChallenge.section, #QuestMap #content #questListWrap #questListSeason2 .section.noChallenge.section, #QuestMap #content #questListWrapSeason2 #questList .section.noChallenge.section, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section.noChallenge.section {
+  background: url("/magica/resource/image_web/page/quest/main/bg_section_02_off.png") left center no-repeat;
+}
+
+#QuestMap #content #questListWrap #questList .section.noChallenge.section .questTip, #QuestMap #content #questListWrap #questListSeason2 .section.noChallenge.section .questTip, #QuestMap #content #questListWrapSeason2 #questList .section.noChallenge.section .questTip, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section.noChallenge.section .questTip {
+  display: none;
+}
+
+#QuestMap #content #questListWrap #questList .section.noChallenge.section .noChallengeText, #QuestMap #content #questListWrap #questListSeason2 .section.noChallenge.section .noChallengeText, #QuestMap #content #questListWrapSeason2 #questList .section.noChallenge.section .noChallengeText, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section.noChallenge.section .noChallengeText {
+  display: block;
+}
+
+#QuestMap #content #questListWrap #questList .section.noChallenge.section .sectionNo, #QuestMap #content #questListWrap #questListSeason2 .section.noChallenge.section .sectionNo, #QuestMap #content #questListWrapSeason2 #questList .section.noChallenge.section .sectionNo, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section.noChallenge.section .sectionNo {
+  display: block;
+  text-shadow: -1px -1px 1px #707070, 1px -1px 1px #707070, -1px 1px 1px #707070, 1px 1px 1px #707070, -1px -1px #707070, 1px -1px #707070, -1px 1px #707070, 1px 1px #707070, -1px -1px 2px #707070, 1px -1px 2px #707070, -1px 1px 2px #707070, 1px 1px 2px #707070, -1px -1px 2px #707070, 1px -1px 2px #707070, -1px 1px 2px #707070, 1px 1px 2px #707070, -1px -1px 3px #707070, 1px -1px 3px #707070, -1px 1px 3px #707070, 1px 1px 3px #707070;
+}
+
+#QuestMap #content #questListWrap #questList .section.noChallenge.section .sectionTitle, #QuestMap #content #questListWrap #questListSeason2 .section.noChallenge.section .sectionTitle, #QuestMap #content #questListWrapSeason2 #questList .section.noChallenge.section .sectionTitle, #QuestMap #content #questListWrapSeason2 #questListSeason2 .section.noChallenge.section .sectionTitle {
+  display: inline-block;
+  text-shadow: -1px -1px 1px #707070, 1px -1px 1px #707070, -1px 1px 1px #707070, 1px 1px 1px #707070, -1px -1px #707070, 1px -1px #707070, -1px 1px #707070, 1px 1px #707070, -1px -1px 2px #707070, 1px -1px 2px #707070, -1px 1px 2px #707070, 1px 1px 2px #707070, -1px -1px 2px #707070, 1px -1px 2px #707070, -1px 1px 2px #707070, 1px 1px 2px #707070, -1px -1px 3px #707070, 1px -1px 3px #707070, -1px 1px 3px #707070, 1px 1px 3px #707070;
+}
+
+#QuestMap #content #questListWrap #questList .chapter, #QuestMap #content #questListWrap #questListSeason2 .chapter, #QuestMap #content #questListWrapSeason2 #questList .chapter, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter {
+  width: 706px;
+  margin: 0;
+  position: relative;
+}
+
+#QuestMap #content #questListWrap #questList .chapter.halfAp .chapterTitleWrap:before, #QuestMap #content #questListWrap #questListSeason2 .chapter.halfAp .chapterTitleWrap:before, #QuestMap #content #questListWrapSeason2 #questList .chapter.halfAp .chapterTitleWrap:before, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter.halfAp .chapterTitleWrap:before {
+  content: "";
+  width: 126px;
+  height: 26px;
+  position: absolute;
+  top: 11px;
+  right: 312px;
+  z-index: 100;
+  background: url("/magica/resource/image_web/campaign/half_ap/common/icon_ap_half.png") left center no-repeat;
+}
+
+#QuestMap #content #questListWrap #questList .chapter.halfAp .section:before, #QuestMap #content #questListWrap #questListSeason2 .chapter.halfAp .section:before, #QuestMap #content #questListWrapSeason2 #questList .chapter.halfAp .section:before, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter.halfAp .section:before {
+  content: "";
+  width: 102px;
+  height: 20px;
+  position: absolute;
+  bottom: 27px;
+  left: 49px;
+  z-index: 100;
+  background: url("/magica/resource/image_web/campaign/half_ap/common/icon_ap_half_s.png") left center no-repeat;
+}
+
+#QuestMap #content #questListWrap #questList .chapter.halfAp .section.noChallenge:before, #QuestMap #content #questListWrap #questListSeason2 .chapter.halfAp .section.noChallenge:before, #QuestMap #content #questListWrapSeason2 #questList .chapter.halfAp .section.noChallenge:before, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter.halfAp .section.noChallenge:before {
+  display: none;
+}
+
+#QuestMap #content #questListWrap #questList .chapter.typeSingleRaid .chapterTitleWrap, #QuestMap #content #questListWrap #questListSeason2 .chapter.typeSingleRaid .chapterTitleWrap, #QuestMap #content #questListWrapSeason2 #questList .chapter.typeSingleRaid .chapterTitleWrap, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter.typeSingleRaid .chapterTitleWrap {
+  background: none;
+}
+
+#QuestMap #content #questListWrap #questList .chapter.typeSingleRaid .toggleBtn, #QuestMap #content #questListWrap #questListSeason2 .chapter.typeSingleRaid .toggleBtn, #QuestMap #content #questListWrapSeason2 #questList .chapter.typeSingleRaid .toggleBtn, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter.typeSingleRaid .toggleBtn {
+  display: none;
+}
+
+#QuestMap #content #questListWrap #questList .chapter .chapterTitleWrap, #QuestMap #content #questListWrap #questListSeason2 .chapter .chapterTitleWrap, #QuestMap #content #questListWrapSeason2 #questList .chapter .chapterTitleWrap, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter .chapterTitleWrap {
+  width: 706px;
+  height: 114px;
+  margin: 0 0 0;
+  padding-left: 60px;
+  background: url("/magica/resource/image_web/page/quest/main/bg_chapter_a.png") left center no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#QuestMap #content #questListWrap #questList .chapter .toggleBtn, #QuestMap #content #questListWrap #questListSeason2 .chapter .toggleBtn, #QuestMap #content #questListWrapSeason2 #questList .chapter .toggleBtn, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter .toggleBtn {
+  width: 48px;
+  height: 114px;
+  background: url("/magica/resource/image_web/page/quest/btn_list_open.png") left center no-repeat;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 398px;
+  pointer-events: none;
+}
+
+#QuestMap #content #questListWrap #questList .chapter .chapterNo, #QuestMap #content #questListWrap #questListSeason2 .chapter .chapterNo, #QuestMap #content #questListWrapSeason2 #questList .chapter .chapterNo, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter .chapterNo {
+  width: 102px;
+  height: 102px;
+  padding-top: 8px;
+  background: url("/magica/resource/image_web/page/quest/chapter_header.png") left center no-repeat;
+  position: absolute;
+  top: -2px;
+  left: -55px;
+  color: #ffffff;
+  line-height: 102px;
+  text-align: center;
+}
+
+#QuestMap #content #questListWrap #questList .chapter .chapterNo:before, #QuestMap #content #questListWrap #questListSeason2 .chapter .chapterNo:before, #QuestMap #content #questListWrapSeason2 #questList .chapter .chapterNo:before, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter .chapterNo:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: 2px;
+  left: -webkit-calc(50%);
+  z-index: 100;
+}
+
+#QuestMap #content #questListWrap #questList .chapter .chapterNo span, #QuestMap #content #questListWrap #questListSeason2 .chapter .chapterNo span, #QuestMap #content #questListWrapSeason2 #questList .chapter .chapterNo span, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter .chapterNo span {
+  padding: 0 2px;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+#QuestMap #content #questListWrap #questList .chapter.new .chapterNo:before, #QuestMap #content #questListWrap #questListSeason2 .chapter.new .chapterNo:before, #QuestMap #content #questListWrapSeason2 #questList .chapter.new .chapterNo:before, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter.new .chapterNo:before {
+  width: 84px;
+  height: 21px;
+  left: -webkit-calc(50% - 42px);
+  background: url("/magica/resource/image_web/page/quest/quest_state_new.png") left top no-repeat;
+}
+
+#QuestMap #content #questListWrap #questList .chapter.clear .chapterNo:before, #QuestMap #content #questListWrap #questListSeason2 .chapter.clear .chapterNo:before, #QuestMap #content #questListWrapSeason2 #questList .chapter.clear .chapterNo:before, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter.clear .chapterNo:before {
+  width: 60px;
+  height: 18px;
+  left: -webkit-calc(50% - 30px);
+  background: url("/magica/resource/image_web/page/quest/quest_state_clear.png") left top no-repeat;
+}
+
+#QuestMap #content #questListWrap #questList .chapter.comp .chapterNo:before, #QuestMap #content #questListWrap #questListSeason2 .chapter.comp .chapterNo:before, #QuestMap #content #questListWrapSeason2 #questList .chapter.comp .chapterNo:before, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter.comp .chapterNo:before {
+  width: 96px;
+  height: 18px;
+  left: -webkit-calc(50% - 48px);
+  background: url("/magica/resource/image_web/page/quest/quest_state_comp.png") left top no-repeat;
+}
+
+#QuestMap #content #questListWrap #questList .chapter .chapterTitle, #QuestMap #content #questListWrap #questListSeason2 .chapter .chapterTitle, #QuestMap #content #questListWrapSeason2 #questList .chapter .chapterTitle, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter .chapterTitle {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 114px;
+  text-shadow: -1px -1px 1px #915bda, 1px -1px 1px #915bda, -1px 1px 1px #915bda, 1px 1px 1px #915bda, -1px -1px #915bda, 1px -1px #915bda, -1px 1px #915bda, 1px 1px #915bda, -1px -1px 2px #915bda, 1px -1px 2px #915bda, -1px 1px 2px #915bda, 1px 1px 2px #915bda, -1px -1px 2px #915bda, 1px -1px 2px #915bda, -1px 1px 2px #915bda, 1px 1px 2px #915bda, -1px -1px 3px #915bda, 1px -1px 3px #915bda, -1px 1px 3px #915bda, 1px 1px 3px #915bda;
+}
+
+#QuestMap #content #questListWrap #questList .chapter.titleHide .chapterTitleWrap, #QuestMap #content #questListWrap #questList .chapter.titleHide .toggleBtn, #QuestMap #content #questListWrap #questList .chapter.titleHide:before, #QuestMap #content #questListWrap #questList .chapter.titleHide:after, #QuestMap #content #questListWrap #questListSeason2 .chapter.titleHide .chapterTitleWrap, #QuestMap #content #questListWrap #questListSeason2 .chapter.titleHide .toggleBtn, #QuestMap #content #questListWrap #questListSeason2 .chapter.titleHide:before, #QuestMap #content #questListWrap #questListSeason2 .chapter.titleHide:after, #QuestMap #content #questListWrapSeason2 #questList .chapter.titleHide .chapterTitleWrap, #QuestMap #content #questListWrapSeason2 #questList .chapter.titleHide .toggleBtn, #QuestMap #content #questListWrapSeason2 #questList .chapter.titleHide:before, #QuestMap #content #questListWrapSeason2 #questList .chapter.titleHide:after, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter.titleHide .chapterTitleWrap, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter.titleHide .toggleBtn, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter.titleHide:before, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter.titleHide:after {
+  display: none;
+}
+
+#QuestMap #content #questListWrap #questList .chapter.open:after, #QuestMap #content #questListWrap #questListSeason2 .chapter.open:after, #QuestMap #content #questListWrapSeason2 #questList .chapter.open:after, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter.open:after {
+  background-repeat: no-repeat;
+  background-position: -41px -254px;
+}
+
+#QuestMap #content #questListWrap #questList .chapter.open .sectionList, #QuestMap #content #questListWrap #questListSeason2 .chapter.open .sectionList, #QuestMap #content #questListWrapSeason2 #questList .chapter.open .sectionList, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter.open .sectionList {
+  display: block;
+  -webkit-animation: quest_list_show .2s ease .0s 1 alternate;
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#QuestMap #content #questListWrap #questList .chapter.open .toggleBtn, #QuestMap #content #questListWrap #questListSeason2 .chapter.open .toggleBtn, #QuestMap #content #questListWrapSeason2 #questList .chapter.open .toggleBtn, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter.open .toggleBtn {
+  background: url("/magica/resource/image_web/page/quest/btn_list_close.png") left center no-repeat;
+}
+
+#QuestMap #content #questListWrap #questList .chapter .sectionList, #QuestMap #content #questListWrap #questListSeason2 .chapter .sectionList, #QuestMap #content #questListWrapSeason2 #questList .chapter .sectionList, #QuestMap #content #questListWrapSeason2 #questListSeason2 .chapter .sectionList {
+  display: none;
+}
+
+#QuestMap.season2 #partToggleWrap #partToggle {
+  background: url("/magica/resource/image_web/page/quest/main/btn_first.png") left top no-repeat;
+  background-size: cover;
+}
+
+#QuestMap.season2 #content #questListWrapSeason2 #questListSeason2 .section {
+  background: url("/magica/resource/image_web/page/quest/main/bg_section_02.png") left center no-repeat;
+}
+
+#QuestMap.season2 #content #questListWrapSeason2 #questListSeason2 .chapter .chapterNo {
+  background: url("/magica/resource/image_web/page/quest/chapter_header_02.png") left center no-repeat;
+}
+
+#QuestMap.season2 #content #questListWrapSeason2 #questListSeason2.challenge .section {
+  background: url("/magica/resource/image_web/page/quest/main/bg_section_challenge_02.png") left center no-repeat;
+}
+
+@media screen and (min-device-height: 577px) {
+  #questListWrap {
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(3%, black), color-stop(97%, black), to(rgba(0, 0, 0, 0)));
+  }
+}
+
+@-webkit-keyframes quest_list_show {
+  0% {
+    -webkit-transform: translateX(20px) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px) translateZ(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes quest_list_hide {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes map_curtain_show {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes map_curtain_hide {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes chapter_title_show {
+  0% {
+    -webkit-transform: translateX(-155px) translateZ(0);
+    transform: translateX(-155px) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) translateZ(0);
+    transform: translateX(0) translateZ(0);
+    opacity: 1;
+  }
+}

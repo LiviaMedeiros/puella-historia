@@ -1,0 +1,109 @@
+<!-- アニメ用スタイル -->
+<style type='text/css'>
+<% 
+	var animeTime = '0s';
+	if(model.pageType == 'questResult'){
+		animeTime = '0.8s';
+	}
+%>
+	.charaId<%= model.charaId %> .circle .barR.anime {
+		animation: rotateCircleRight<%= model.charaId %> <%= animeTime %> linear forwards;
+	}
+	.charaId<%= model.charaId %> .circle .barL.anime {
+		animation: rotateCircleLeft<%= model.charaId %> <%= animeTime %> linear forwards;
+	}
+	<% if(model.currentRatio <= 50){ %>
+		@keyframes rotateCircleRight<%= model.charaId %> {
+			0% {
+				transform: rotate(<%= model.beforeRatioAngle %>deg);
+				background: #333;
+			}
+			<%= model.currentRatio %>% {
+				transform: rotate(<%= model.currentRatioAngle %>deg);
+				background: #333;
+			}
+			100% {
+				transform: rotate(<%= model.currentRatioAngle %>deg);
+				background: #333;
+			}
+		}
+	<% }else{ %>
+		<% if(model.beforeRatio < 50){ %>
+			@keyframes rotateCircleRight<%= model.charaId %> {
+				0% {
+					transform: rotate(<%= model.beforeRatioAngle %>deg);
+					background: #333;
+				}
+				50% {
+					transform: rotate(180deg);
+					background: #333;
+				}
+				50.001% {
+					transform: rotate(360deg);
+					background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_normal.png") left top no-repeat;
+					background-size: contain;
+				}
+				100% {
+					transform: rotate(360deg);
+					background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_normal.png") left top no-repeat;
+					background-size: contain;
+				}
+			}
+			@keyframes rotateCircleLeft<%= model.charaId %> {
+				0% {
+					transform: rotate(0deg);
+				}
+				49.999% {
+					transform: rotate(0deg);
+				}
+				<%= model.currentRatio %>% {
+					transform: rotate(<%= model.currentRatioAngleL %>deg);
+				}
+				100% {
+					transform: rotate(<%= model.currentRatioAngleL %>deg);
+				}
+			}
+		<% }else{ %>
+			.charaId<%= model.charaId %> .circle .barR {
+				animation: none;
+				transform: rotate(360deg);
+				background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_normal.png") left top no-repeat !important;
+				background-size: contain !important;
+			}
+			@keyframes rotateCircleLeft<%= model.charaId %> {
+				0% {
+					transform: rotate(<%= model.beforeRatioAngleL %>deg);
+				}
+				49.999% {
+					transform: rotate(<%= model.beforeRatioAngleL %>deg);
+				}
+				<%= model.currentRatio %>% {
+					transform: rotate(<%= model.currentRatioAngleL %>deg);
+				}
+				100% {
+					transform: rotate(<%= model.currentRatioAngleL %>deg);
+				}
+			}
+		<% } %>
+	<% } %>
+</style>
+<div class="bgframe1"></div>
+<div class="circle">
+	<div class="barL"></div>
+	<div class="barR"></div>
+</div>
+<div class="bgframe2"></div>
+<div class="charaImgSec">
+	<img class="charaImg" src="/magica/resource/image_web/event/eventWitch/<%= model.eventId %>/chara/gauge_chara_<%= model.charaId %>00.png" alt="">
+</div>
+<div class="iconUPSec">
+	<div class="upImg"><img src="/magica/resource/image_web/event/eventWitch/common/quest_result/anime/<%= model.iconName %>.png" alt=""></div>
+	<img class="decoImg up1" src="/magica/resource/image_web/event/eventWitch/common/quest_result/anime/gauge_nomal_ef1.png" alt="">
+	<img class="decoImg up2" src="/magica/resource/image_web/event/eventWitch/common/quest_result/anime/gauge_nomal_ring.png" alt="">
+</div>
+<div class="iconMaxSec">
+	<div class="upImg"><img src="/magica/resource/image_web/event/eventWitch/common/quest_result/anime/text_max.png" alt=""></div>
+	<img class="decoImg max1" src="/magica/resource/image_web/event/eventWitch/common/quest_result/anime/gauge_max_ef1.png" alt="">
+	<img class="decoImg max2" src="/magica/resource/image_web/event/eventWitch/common/quest_result/anime/gauge_max_ef2.png" alt="">
+	<img class="decoImg max3" src="/magica/resource/image_web/event/eventWitch/common/quest_result/anime/gauge_max_ring.png" alt="">
+</div>

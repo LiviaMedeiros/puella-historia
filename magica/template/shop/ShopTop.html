@@ -1,0 +1,254 @@
+<div id="ShopTop">
+	<div id="mainWrap" class="commonFrame1">
+		<h2 id="listTitle"></h2>
+
+		<!-- 所持通貨表示エリア -->
+		<div id="dispAmounts">
+			<div id="hasItems">
+				<img src="/magica/resource/image_web/common/icon/icon_money_f.png" class="costIcon">
+				<img src="/magica/resource/image_web/common/icon/icon_purchased.png" class="purchasedIcon">
+				<span class="pointFrame"></span>
+			</div>
+		</div>
+
+		<!-- 商品一覧表示エリア -->
+		<div id="lists"></div>
+	</div>
+
+	<!-- タブ表示エリア -->
+	<div id="btnWrap">
+		<ul class="btnScrollInner common_tab t_gold ml_tab">
+		</ul>
+	</div>
+
+	<!-- みたまさんエリア -->
+	<div id="touchWrap" data-touchwrap="ok"></div>
+</div>
+
+<!-- 一覧パーツ -->
+<script type="text/template" id="shopParts">
+	<div class="recommend"></div>
+
+	<!-- アイテム名 -->
+	<div class="itemName"><%='<%= _.escape(model.name) %\>'%></div>
+
+	<%='<% if(model.isDetailView) { %\>'%>
+	<!-- 詳細ポップアップ -->
+	<div class="itemDetailPopup"></div>
+	<div class="itemBg"></div>
+	<%='<% } %\>'%>
+
+	<!-- アイテム説明 -->
+	<div class="description"><%='<%= model.description %\>'%></div>
+
+	<!-- アイテム価格 -->
+	<div class="itemCost">
+		<%='<% if(purchasedFlg){ %\>'%>
+			<img src="/magica/resource/image_web/common/icon/icon_purchased.png" class="purchasedIcon">
+		<%='<% } %\>'%>
+		<img src="<%='<%= costImage %\>'%>" class="costIcon">
+		<span class="pointFrame"><%='<%=model.needNumber %\>'%></span>
+	</div>
+
+	<!-- 追加情報系 -->
+	<%='<% if(model.shopItemType !== "PIECE" && model.shopItemType !== "MAXPIECE"){ %\>'%>
+	<dl class="common_dl had_dl">
+		<dt>所持数</dt>
+		<dd class="itemHasNumber"></dd>
+	</dl>
+	<%='<% } %\>'%>
+	<dl class="common_dl limit_dl">
+		<dt>購入期限</dt>
+		<dd class="itemLimit"><%='<% if(model.endAt){%\>'%><%='<%= model.endAt.substr(5,11) %\>'%><%='<% }else{ %\>'%>-<%='<% } %\>'%></dd>
+	</dl>
+	<dl class="common_dl amount_dl">
+		<dt>残り回数</dt>
+		<dd class="itemAmountNumber"><%='<% if(model.limitedNumber){ %\>'%><%='<%=model.limitedNumber %\>'%>/<%='<%=model.limitedNumber %\>'%><%='<% }else{ %\>'%>-<%='<% } %\>'%></dd>
+	</dl>
+</script>
+
+<!-- 詳細ポップアップ -->
+<script type="text/template" id="shopPopupTempCard">
+	<div id="shopPopMain">
+		<div class="itemPopMiniWrap commonFrame4 <%='<%= model.needItemId %\>'%>">
+			<!-- アイテム画像 -->
+			<div class="popNameMiniWrap"><%='<%= _.escape(model.name) %\>'%></div>
+			<!-- アイテム価格 -->
+			<div class="useCost">
+				<%='<% if(purchasedFlg){ %\>'%>
+					<img src="/magica/resource/image_web/common/icon/icon_purchased.png" class="purchasedIcon">
+				<%='<% } %\>'%>
+				<img src="<%='<%= costImage %\>'%>" class="costIcon">
+				<span class="pointFrame"><%='<%= model.needNumber %\>'%></span>
+			</div>
+
+			<!-- アイテム説明 -->
+			<div class="popDescription"><%='<%= model.description %\>'%></div>
+
+			<!-- 所持数 -->
+			<%='<% console.log(model) %\>'%>
+			<%='<% if((model.shopItemType !== "SET" || (model.shopItemType === "SET" && model.rewardCode.indexOf(",") === -1 && model.rewardCode.indexOf("RICHE") === -1)) && model.shopItemType !== "PIECE" && model.shopItemType !== "MAXPIECE"){ %\>'%>
+			<div class="hasCount"><span class="hasLeft">所持数</span><span class="hasAmount"></span></div>
+			<%='<% } %\>'%>
+		</div>
+
+		<!-- 追加情報 -->
+		<div class="tradeInfo">
+			<dl class="common_dl limit_dl">
+				<dt>購入期限</dt>
+				<dd class="itemLimit"><%='<% if(model.endAt){%\>'%><%='<%= model.endAt.substr(5,11) %\>'%><%='<% }else{ %\>'%>-<%='<% } %\>'%></dd>
+			</dl>
+			<dl class="common_dl amount_dl">
+				<dt>残り回数</dt>
+				<dd class="itemAmountNumber"><%='<% if(model.limitedNumber){ %\>'%><%='<%=model.limitedNumber %\>'%>/<%='<%=model.limitedNumber %\>'%><%='<% }else{ %\>'%>-<%='<% } %\>'%></dd>
+			</dl>
+		</div>
+
+		<!-- 数量選択 -->
+		<div class="amountSelectWrap">
+			<span class="titles c_gold">購入数</span>
+			<div id="amountMinus" class="TE se_decide off"><span class='b_screen'></span></div>
+			<div id="amountPlus" class="TE se_decide<%='<% if(maxNumber < 2){%\>'%> off<%='<% }%\>'%>"><span class='b_screen'></span></div>
+			<div class="amountNums">
+				<span id="amountSelects">1</span>/<span id="amountMax"><%='<%= maxNumber %\>'%></span>
+			</div>
+			<div class="btn sb_gold_02 se_decide TE maxBtn<%='<% if(maxNumber < 2){%\>'%> off<%='<% }%\>'%>"><span class="b_screen"></span>MAX</div>
+		</div>
+
+		<!-- 価格と通貨所持数 -->
+		<div class="costWrap">
+			<div class="useCost">
+				<%='<% if(purchasedFlg){ %\>'%>
+					<img src="/magica/resource/image_web/common/icon/icon_purchased.png" class="purchasedIcon">
+				<%='<% } %\>'%>
+				<img src="<%='<%= costImage %\>'%>" class="costIcon">
+				<span class="pointFrame" id="totalCost"><%='<%= model.needNumber %\>'%></span>
+			</div>
+			<div class="costHasNum<%='<% if(setVal < model.needNumber){%\> lessNum<% } %\>'%>">
+				<%='<% if(purchasedFlg){ %\>'%>
+					<img src="/magica/resource/image_web/common/icon/icon_purchased.png" class="purchasedIcon">
+				<%='<% } %\>'%>
+				<img src="<%='<%= costImage %\>'%>" class="costIcon">
+				<span class="pointFrame"><%='<%= setVal %\>'%></span>
+			</div>
+		</div>
+
+		<div class="shopBtnWrap">
+			<span class="btn b_white popupCloseBtn se_cancel TE"><span class="b_screen"></span>キャンセル</span>
+			<span class="btn shopPopBtn se_decide TE b_pink<%='<% if(maxNumber < 1){%\>'%> off<%='<% }%\>'%>" id="purchaseDecide"><span class="b_screen"></span>購入</span>
+		</div>
+	</div>
+</script>
+
+
+<!-- 詳細ポップアップ マギアストーン用 -->
+<script type="text/template" id="shopPopupTempMoney">
+	<div id="shopPopMain">
+		<div class="itemPopMiniWrap commonFrame4 <%='<%= model.needItemId %\>'%>">
+			<!-- アイテム画像 -->
+			<div class="popNameMiniWrap"><%='<%= _.escape(model.name) %\>'%></div>
+			<!-- アイテム価格 -->
+			<div class="useCost">
+				<%='<% if(purchasedFlg){ %\>'%>
+					<img src="/magica/resource/image_web/common/icon/icon_purchased.png" class="purchasedIcon">
+				<%='<% } %\>'%>
+				<img src="<%='<%= costImage %\>'%>" class="costIcon">
+				<span class="pointFrame"><%='<%= model.needNumber %\>'%></span>
+			</div>
+
+			<!-- アイテム説明 -->
+			<div class="popDescription"><%='<%= model.description %\>'%></div>
+
+			<!-- 所持数 -->
+			<%='<% console.log(model) %\>'%>
+			<%='<% if((model.shopItemType !== "SET" || (model.shopItemType === "SET" && model.rewardCode.indexOf(",") === -1 && model.rewardCode.indexOf("RICHE") === -1)) && model.shopItemType !== "PIECE" && model.shopItemType !== "MAXPIECE"){ %\>'%>
+			<div class="hasCount"><span class="hasLeft">所持数</span><span class="hasAmount"></span></div>
+			<%='<% } %\>'%>
+		</div>
+
+		<!-- 追加情報 -->
+		<div class="tradeInfo">
+			<dl class="common_dl limit_dl">
+				<dt>購入期限</dt>
+				<dd class="itemLimit"><%='<%= termText %\>'%></dd>
+			</dl>
+			<div class="itemAmountNumber"></div>
+		</div>
+
+		<!-- 数量選択 -->
+		<div class="amountSelectWrap">
+			<div class="useCost">
+				<%='<% if(purchasedFlg){ %\>'%>
+					<img src="/magica/resource/image_web/common/icon/icon_purchased.png" class="purchasedIcon">
+				<%='<% } %\>'%>
+				<img src="<%='<%= costImage %\>'%>" class="costIcon">
+				<span class="pointFrame" id="totalCost"><%='<%= model.needNumber %\>'%></span>
+			</div>
+			<span class="titles c_gold">購入数</span>
+			<div id="amountMinus" class="TE se_decide off"><span class='b_screen'></span></div>
+			<div id="amountPlus" class="TE se_decide<%='<% if(maxNumber < 2){%\>'%> off<%='<% }%\>'%>"><span class='b_screen'></span></div>
+			<div class="amountNums">
+				<span id="amountSelects">1</span>/<span id="amountMax"><%='<%= maxNumber %\>'%></span>
+			</div>
+			<div class="btn sb_gold_02 se_decide TE maxBtn<%='<% if(maxNumber < 2){%\>'%> off<%='<% }%\>'%>"><span class="b_screen"></span>MAX</div>
+		</div>
+
+		<!-- 価格と通貨所持数 -->
+		<div class="costWrap">
+			<div class="cautionText">
+				決定後、すぐにアイテムが購入されマギアストーンが消費されます。<br>
+				<%='<% if(!purchasedFlg) { %\>'%>
+				<!-- 有償限定ガチャでは表示しない -->
+				マギアストーンは無償分から先に消費され、
+				<%='<% } %\>'%>
+				決定後のキャンセルはできません。
+			</div>
+			<div class="moneyNumWrap<%='<% if(setVal < model.needNumber){%\> lessNum<% } %\>'%>">
+				<img class='useItemIcon' src="/magica/resource/image_web/page/gacha/item/icon_money_f.png" />
+				<div class='stoneA pointFrame'>
+					合計
+					<div class="inner">
+						<span class="num" id="totalMoney"><span class="<%='<%= moneyObj.enoughClass.totalMoney %\>'%>"><%='<%= moneyObj.have.totalMoney %\>'%></span><span class="remain" id="remain_totalMoney"></span></span>
+					</div>
+				</div>
+				<div class='stoneB'>
+					有償
+					<div class="inner">
+						<span class="num"><span class="<%='<%= moneyObj.enoughClass.userMoney %\>'%>"><%='<%= moneyObj.have.userMoney %\>'%></span><span class="remain" id="remain_userMoney"></span></span>
+					</div>
+				</div>
+				<div class='stoneC'>
+					無償
+					<div class="inner">
+						<span class="num"><%='<%= moneyObj.have.presentedMoney %\>'%><span class="remain" id="remain_presentedMoney"></span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="shopBtnWrap">
+			<span class="btn b_white popupCloseBtn se_cancel TE"><span class="b_screen"></span>キャンセル</span>
+			<span class="btn shopPopBtn se_decide TE b_pink<%='<% if(maxNumber < 1){%\>'%> off<%='<% }%\>'%>" id="purchaseDecide"><span class="b_screen"></span>購入</span>
+		</div>
+	</div>
+</script>
+
+
+<!-- 購入完了ポップアップ -->
+<script type="text/template" id="completePop">
+<%='<%= _.escape(itemName) %\>'%>を<br>購入しました。<br>
+
+<div id="commonItemImgParent"></div>
+
+<!-- アイテム所持数 -->
+<%='<% if(hasNum && (model.shopItemType !== "MAXPIECE" && model.shopItemType !== "PIECE")){%\>'%>
+<span class="pointFrame completeQuantity"><%='<%= hasNum %\>'%></span>
+<%='<% } %\>'%>
+
+<!-- 魔法少女以外は直接付与 -->
+<%='<% if(model.shopItemType === "CARD"){ %\>'%>
+<br><span class="completePurchase">※プレゼントボックスよりお受け取りください。</span>
+<%='<% } else { %\>'%>
+<br><span class="completePurchase">※購入したアイテムは直接付与されています。</span>
+<%='<% } %\>'%>
+</script>

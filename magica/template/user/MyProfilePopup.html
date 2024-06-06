@@ -1,0 +1,226 @@
+<div id="myProfile">
+	<div class="popupDetailWrap">
+		<div id="followImageWrap">
+			<p class="leaderChangeBtn se_decide linkBtn TE" data-href="#/CharaListTop/<%= profile.leaderUserCard.id %>"></p>
+			<p class="bgChangeBtn se_decide linkBtn TE" data-href="#/BackgroundSet"></p>
+			<img data-nativeimgkey="card_<%= profile.leaderUserCard.displayCardId %>_l" data-src="resource/image_native/card/image/card_<%= profile.leaderUserCard.displayCardId %>_l.png" class="charaImage">
+			<div class="messageWrap">
+				<div class="messageInner"></div>
+			</div>
+			<div class="miniBtn se_decide profBtn TE"><span class="b_screen"></span>変更</div>
+		</div>
+		<div id="followerParamDetail" class="commonFrame3">
+			<div id="myProfStone"></div>
+			<div id="myProfHasRiche"><span class="pointWrap pointFrame"><%= model.riche %></span></div>
+			<div class="detailMainWrap">
+				<div class="detailWrap1">
+					<h1><%= _.escape(profile.userName) %></h1>
+					<span class="userLevel"><%= profile.userRank %></span>
+
+					<% if (profile.gameUser.reachingAccomplish) { %>
+						<span class="reachingAccomplish"><%= profile.gameUser.reachingAccomplish %></span>
+					<% } %>
+
+					<% if (model.displayTitle) { %>
+						<div class="userTitle_m <%= model.displayTitle.font %>">
+							<div id="targetTitleText" class="userTitleText"><%= model.displayTitle.name %></div>
+							<img id="targetTitleBg" class="userTitleBg" src="/magica/resource/image_web/common/grade/<%= model.displayTitle.baseImage %>.png">
+						</div>
+					<% } else { %>
+						<div class="userTitle_m">
+							<div id="targetTitleText" class="userTitleText">称号設定なし</div>
+							<img id="targetTitleBg" class="userTitleBg" src="/magica/resource/image_web/common/grade/title_00000.png">
+						</div>
+					<% } %>
+
+					<div class="titleChangeBtn profBtn se_decide TE">変更</div>
+				</div>
+				<div class="totalForcesWrap">
+					<span id="totalForces"><%= totalForces %></span>
+					<div class="totalForcesHelpBtn se_decide TE"></div>
+					<dl class="rowWrap common_dl totalForcesRanking">
+						<dt class="colName">順位</dt>
+						<dd id="totalForcesRanking"></dd>
+					</dl>
+					<div id="totalForcesRequire"></div>
+				</div>
+				<div class="friendWrap">
+					<span class="userFollow"><%= profile.followCount %></span>
+					<span class="userFollower"><%= profile.followerCount %></span>
+					<dl class="rowWrap common_dl myprofUserId">
+						<dt class="colName">プレイヤーID</dt>
+						<dd class="colValue"><%= model.inviteCode %></dd>
+					</dl>
+					<div class="userIdCopyBtn profBtn se_decide TE">コピー</div>
+				</div>
+				<div class="detailWrap2">
+					<h2>ミラーズ</h2>
+					<div class="arenaHelpBtn se_decide TE"></div>
+					<div class="markWrap freeRank"><% if(profile.userArenaBattle){ %><%= profile.userArenaBattle.currentFreeRankClass.className %><% }else{ %>第一鏡層<% } %></span></div>
+
+					<div class="arenaFreeTitle">◆果てなしのミラーズ</div>
+					<div class="arenaRankingTitle">
+						<% if(model.emblemSettingClassType == "RANKING" || !model.emblemSettingClassType){ %>
+							◆ランキング
+						<% }else if(model.emblemSettingClassType == "RANK_MATCH"){ %>
+							◆ランクマッチ
+						<% } %>
+					</div>
+
+					<div class="arenaParams">
+						<dl class="rowWrap common_dl">
+							<dt class="colName">ミラーズPt</dt>
+							<dd class="colValue"><span class="freeNum"><% if(profile.userArenaBattle){ %><%= model.freeRankArenaPoint %><% }else{ %>0<% } %></span></dd>
+						</dl>
+						<dl class="rowWrap common_dl">
+							<dt class="colName">勝利数</dt>
+							<dd class="colValue"><span class="freeNum"><% if(model.numberOfFreeRankTotalWins){ %><%= model.numberOfFreeRankTotalWins %><% }else{ %>0<% } %></span></dd>
+						</dl>
+					</div>
+
+					<% if(model.emblemSettingClassType == "RANKING" || !model.emblemSettingClassType){ %>
+						<% if(rankingRunning == 'ARENARANKING'){ %>
+							<!-- ミラーズランキング開催中 -->
+							<div class="markWrap myself myProfile ranking onGoing"></div>
+						<% }else if(profile.userArenaBattle && profile.userArenaBattle.definiteClassRank){ %>
+							<!-- ミラーズランキングを表示 -->
+							<div class="markWrap myself myProfile ranking rank<%= profile.userArenaBattle.definiteClassRank %>"></div>
+						<% }else{ %>
+							<!-- 記録なし -->
+							<div class="markWrap myself myProfile ranking"></div>
+						<% } %>
+					<% } else if(model.emblemSettingClassType == "RANK_MATCH"){ %>
+						<% if(rankingRunning == 'ARENARANKMATCH'){ %>
+							<!-- ミラーズランクマッチ開催中 -->
+							<div class="markWrap myself myProfile rankMatch onGoing"></div>
+						<% }else if(model.interimArenaRankMatchClassType){ %>
+							<!-- ミラーズランクマッチを表示 -->
+							<div class="markWrap myself myProfile rankMatch rank<%= model.interimArenaRankMatchClassType %>"></div>
+						<% }else{ %>
+							<!-- 記録なし -->
+							<div class="markWrap myself myProfile rankMatch"></div>
+						<% } %>
+					<% } %>
+
+					<span class="arenaSettingPopupBtn profBtn TE se_decide"><span class="b_screen"></span>設定</span>
+				</div>
+				<div class="helperWrap">
+					<h2>サポート</h2>
+					<ul class="helperList">
+						<%
+							var attObj = {
+								1:"ALL",
+								2:"FIRE",
+								3:"WATER",
+								4:"TIMBER",
+								5:"LIGHT",
+								6:"DARK"
+							};
+						%>
+						<% _.each(support,function(supportCard,index){ %>
+							<li class="userCharaIcon <%= supportCard.card.rank %> <%= attObj[supportCard.attNum] %>">
+								<% att = 'att_' + supportCard.card.attributeId.toLowerCase(); %>
+								<% star = 'star_' + supportCard.card.rank.toLowerCase(); %>
+								<% frame = 'frame_' + supportCard.card.rank.toLowerCase(); %>
+								<% bg = 'bg_' + supportCard.card.attributeId.toLowerCase(); %>
+								<span class="att" data-nativebgkey='<%= att %>' data-src='resource/image_native/card/frame/<%= att %>.png'></span>
+								<span class="star" data-nativebgkey='<%= star %>' data-src='resource/image_native/card/frame/<%= star %>.png'></span>
+								<span class="rank" data-nativebgkey='<%= frame %>' data-src='resource/image_native/card/frame/<%= frame %>.png'></span>
+								<img data-nativeimgkey='card_<%= supportCard.displayCardId %>_f' data-src='resource/image_native/card/image/card_<%= supportCard.displayCardId %>_f.png'>
+								<span class="lv"><span><%= supportCard.level %></span></span>
+								<span class="bg" data-nativebgkey='<%= bg %>' data-src='resource/image_native/card/frame/<%= bg %>.png'></span>
+							</li>
+						<% }); %>
+					</ul>
+					<div class="helpBtnWrap">
+						<span class="profBtn se_decide linkBtn TE" data-href="#/DeckFormation/support"><span class="b_screen"></span>変更</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="porfBgWrap"></div>
+
+<script type="text/template" id="arenaSettingTemp">
+	<div class="settingTitle">◆エンブレム公開設定</div>
+	<div class="visibleSettingWrap">
+		<div class="toggle">
+			<!-- エンブレム公開設定 -->
+			OFFにすることで、他のユーザーに対して自身の<br>エンブレムが表示されなくなります。
+			<ul class="visibleSettingCheckBoxWrap <%='<%= currentParam.visibleRankingClassType ? "on" : "off" %\>'%>" data-param="visibleRankingClassType">
+				<li class="visibleSettingCheckBoxItem">
+					<div class="visibleSettingCheckBox se_decide" data-param="on"></div>
+					<div class="visibleSettingText">ON</div>
+				</li>
+				<li class="visibleSettingCheckBoxItem">
+					<div class="visibleSettingCheckBox se_decide" data-param="off"></div>
+					<div class="visibleSettingText">OFF</div>
+				</li>
+            </ul>
+		</div>
+	</div>
+
+	<div class="settingTitle">◆エンブレム表示設定</div>
+	<div class="emblemSettingWrap">
+		<div class="emblemSettingToggle">
+			選択した項目のエンブレムが表示されるようになります。
+			<% if(model.visibleRankingClassType){
+				if(model.emblemSettingClassType){
+			%>
+					<ul class="emblemSettingCheckBoxWrap <%= model.emblemSettingClassType %>" data-param="emblemSettingClassType">
+				<% } else { %>
+					<ul class="emblemSettingCheckBoxWrap RANKING" data-param="emblemSettingClassType">
+				<% } %>
+			<% }else{ %>
+				<ul class="emblemSettingCheckBoxWrap" data-param="emblemSettingClassType">
+			<% } %>
+					<li class="emblemSettingCheckBoxItem">
+						<div class="emblemSettingCheckBox se_decide" data-param="RANKING"></div>
+						<div class="checkBoxText">ランキング</div>
+					</li>
+					<li class="emblemSettingCheckBoxItem">
+						<div class="emblemSettingCheckBox se_decide" data-param="RANK_MATCH"></div>
+						<div class="checkBoxText">ランクマッチ</div>
+					</li>
+				</ul>
+		</div>
+	</div>
+	<div class="emblemSettingWrapBlock <%='<%= !currentParam.visibleRankingClassType ? "on" : "" %\>'%>">
+		<div class="emblemSettingToggle">
+			選択した項目のエンブレムが表示されるようになります。
+			<ul class="emblemSettingCheckBoxWrap" data-param="emblemSettingClassType">
+				<li class="emblemSettingCheckBoxItem" data-param="RANKING">
+					<div class="se_decide"></div>
+					<div class="checkBoxText">ランキング</div>
+				</li>
+				<li class="emblemSettingCheckBoxItem" data-param="RANK_MATCH">
+					<div class="se_decide"></div>
+					<div class="checkBoxText">ランクマッチ</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- <div class="emblemSettingWrapBlock"></div> -->
+
+	<table class="popupBtnArea" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td><span id="settingDecideBtn" class="decideBtn se_kettei02 popupCloseBtn btn TE b_white"><span class='b_screen'></span>OK</span></td>
+		</tr>
+	</table>
+
+	<script type="text/template" id="arenaDecideTemp">
+		<table class="popupBtnArea" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+					<span id="arenaDecideBtn" class="decideBtn se_kettei02 popupCloseBtn btn TE b_white">
+						<span class='b_screen'></span>OK
+					</span>
+				</td>
+			</tr>
+		</table>
+	</script>
+
+</script>
+
+

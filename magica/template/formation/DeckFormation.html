@@ -1,0 +1,910 @@
+<div id='DeckFormation' class='<%= deckCatType %>Wrap'>
+	<% if(deckCatType === 'arenaRankMatchAttack') { %>
+	<div class="editCountDownSec">
+		残り <span id="editCountDown"></span>
+	</div>
+	<% } %>
+	<% if(deckCatType === 'arenaRankMatchAttack' || deckCatType === 'arenaRankMatchDefence'){ %>
+		<div id='arenaRankMatchSpRuleBtn' class=''></div>
+	<% } %>
+	<% if(deckCatType === 'arenaRankMatchAttack'){ %>
+		<div id='arenaRankMatchOpponentBtn' class=''></div>
+	<% } %>
+	<div id='bonusTextWrap'></div>
+	<div id='formationSheetListWrap'>
+		<div id="formationSheetListOuter">
+			<div class='formationSheetListInner'></div>
+		</div>
+		<div id="formationDetail" class="commonFrame1"></div>
+		<div class='deckCaution fsFooter'>魔法陣形を選択してください</div>
+	</div>
+
+	<div id='deckSelectWrap' class='noneDisp'>
+		<div id="deckCancelBtn" class="se_cancel TE"></div>
+		<div class="copyTitle"><span class="c_purple">編成コピー</span></div>
+		<div class='deckCaution deckFooter'>編成するチームをタッチしてください</div>
+		<div class='copyCaution deckFooter'>コピーするチームをタッチしてください</div>
+	</div>
+
+	<% if(deckCatType === 'accomplish') { %>
+	<div id='allRecoveryWrap'></div>
+	<% } %>
+
+	<div id="deckFooter">
+		<div class='bg1'></div>
+		<div class="footerInner">
+			<div class="attBox">
+				<img class="arrow" src="/magica/resource/image_web/page/formation/enemy_element_arrow_a.png" alt="">
+				<div class="att fire"></div>
+				<div class="att water"></div>
+				<div class="att timber"></div>
+				<div class="att dark"></div>
+				<div class="att light"></div>
+				<div class="att void"></div>
+			</div>
+			<div class='btns flexBox default'>
+				<div id='pieceEquipBtn' class='footerBtn se_tabs TE c_gold'></div>
+				<% if(deckCatType !== 'exterminationCopy' || deckCatType !== 'secondPartLastCopy'){ %>
+				<div id='formationSheetChangeBtn' class='footerBtn se_decide TE c_gold'></div>
+				<% } %>
+				<div id='dispModeChangeBtn' class='footerBtn se_tabs TE c_gold'></div>
+				<% if(!deckCatType || deckCatType === 'quest' || deckCatType === 'group' || deckCatType === 'groupPrepare' || deckCatType === 'dungeon' || deckCatType === 'endless' || deckCatType === 'scene0Challenge') { %>
+					<div id='deckCopyModeBtn' class='footerBtn se_tabs TE c_gold'></div>
+				<% } %>
+				<% if(deckCatType === 'group'){ %>
+					<div id="chargeCountWrap"></div>
+					<div id="simulateBaloon"></div>
+				<% } %>
+				<% if(deckCatType === 'exterminationCopy' || deckCatType === 'secondPartLastCopy'){ %>
+					<div id='exterminationCopyBtn' class=''>コピー</div>
+				<% } else { %>
+				<div id='deckRemovePopBtn' class='footerBtn se_decide TE c_gold'></div>
+				<div id='mainBtn' class='off'>決定</div>
+				<div id='nextPageBtn' class='nextPageBtn noneDisp'>開始</div>
+				<% } %>
+				<% if(questLoopStatus != "none"){ %>
+				<div id='nextPageBtnLoop' class='nextPageBtn loop noneDisp <%= questLoopStatus %>'>AUTO<br>周回</div>
+				<% } %>
+			</div>
+			<div class='btns flexBox preview noneDisp'>
+				<div class='deckCaution previewFooter'>現在編成中のチームのプレビューです</div>
+				<div id='previewCloseBtn' class='footerBtn se_decide TE c_gold'></div>
+			</div>
+			<div class='btns flexBox fs noneDisp'>
+				<div id="formationDetailBtn" class="btn b_pink se_tabs TE">陣形詳細</div>
+				<div id='formationSheetDecideBtn' class='footerBtn se_decide'>決定</div>
+			</div>
+		</div>
+		<div class='bg2'></div>
+		<div class='bg3'></div>
+	</div>
+</div>
+
+<!--  -->
+<script type="text/template" id="DeckViewTemp">
+
+	<% if(deckCatType === 'group' || deckCatType === 'groupPrepare'){ %>
+	<div id="regularEventNaviBtn" class="regularEventNaviBtn sb_gold_01 TE se_decide" data-event-type="groupBattle">攻略のヒント</div>
+	<% } %>
+
+	<% if(deckCatType !== 'dungeonInMap' &&  deckCatType !== 'extermination' && deckCatType !== 'secondPartLast' && deckCatType !== 'exterminationCopy' && deckCatType !== 'secondPartLastCopy') { %>
+		<div id="autoFormationPopBtn" class='autoFormationPopBtn TE se_decide'></div>
+	<% } %>
+	<div id='previewBtn' class='footerBtn se_decide TE c_gold'></div>
+
+	<%="<% if(!deckCatType || deckCatType === 'quest' || deckCatType === 'group' || deckCatType === 'groupPrepare' || deckCatType === 'dungeon' || deckCatType === 'dungeonInMap' || deckCatType === 'endless' || deckCatType === 'extermination' || deckCatType === 'secondPartLast' || deckCatType === 'exterminationCopy' || deckCatType === 'secondPartLastCopy' || deckCatType === 'puellaHistoriaGroupRaid' || deckCatType === 'scene0Challenge' || deckCatType === 'arenaRankMatchAttack') { %\>"%>
+		<%="<% var addClass = 'deckName se_tabs deck'+model.deckType %\>"%>
+		<%="<% if(deckCatType === 'exterminationCopy' || deckCatType === 'secondPartLastCopy') addClass += ' notEdit' %\>"%>
+		<div class='deckName <%="<%= addClass %\>"%> se_tabs'>
+			<p><%="<%= _.escape(model.name) %\>"%></p>
+		</div>
+		<%="<% if(deckCatType !== 'extermination' && deckCatType !== 'secondPartLast' && deckCatType !== 'accomplish') { %\>"%>
+			<div class='deckChangeArrow se_tabs TE arrowR'></div>
+			<div class='deckChangeArrow se_tabs TE arrowL'></div>
+			<div class='deckChangeModeBtn TE sb_gold_02 se_decide'>チーム切替</div>
+		<%="<% } %\>"%>
+	<%="<% } %\>"%>
+
+	<%="<% if(deckCatType === 'arena' || deckCatType === 'group' || deckCatType === 'groupPrepare') { %\>"%>
+		<%="<% var teamStatus = 0; %\>"%>
+		<%="<% _.each(model.posArr,function(pos,index) { %\>"%>
+			<%="<% var cardModel  = model.userCardObj['place'+pos] %\>"%>
+			<%="<% if(cardModel) { %\>"%>
+				<%="<% teamStatus += (cardModel.addHp + cardModel.addAttack + cardModel.addDefense + cardModel.addendHp + cardModel.composeAttribute.composed.HP + cardModel.addendAttack + cardModel.composeAttribute.composed.ATTACK + cardModel.addendDefense + cardModel.composeAttribute.composed.DEFENSE + cardModel.appendPoint) * cardModel.rating; %\>"%>
+			<%="<% } %\>"%>
+		<%="<% }); %\>"%>
+		<div class='teamStatus'><%="<%= parseInt(teamStatus) %\>"%></div>
+	<%="<% } %\>"%>
+
+	<%="<% if(deckCatType === 'arenaRankMatchAttack' || deckCatType === 'arenaRankMatchDefence') { //model.teamStatusがある前提 %\>"%>
+		<%="<% var _teamStatus = 0; %\>"%>
+		<%="<% if(model.teamStatus) { %\>"%>
+			<%="<% _teamStatus = model.teamStatus %\>"%>
+		<%="<% } %\>"%>
+		<div class='teamStatus'><%="<%= parseInt(_teamStatus) %\>"%></div>
+	<%="<% } %\>"%>
+
+	<div class="formationSheet">
+		<%="<% _.forEach(model.posArr,function(pos,index){ %\>"%>
+			<%="<% if(Number(pos) <= 9) { %\>"%>
+				<%="<% if(model.placeEffect && model.placeEffect['placeSkill'+pos] && deckCatType !== 'support') { %\>"%>
+					<div class='formationMass pos_<%="<%= pos %\>"%> effective'>
+						<div class="formationEffect">
+								<%="<% _.each(model.placeEffect['placeSkill'+pos],function(value,index2) { %\>"%>
+									<%="<% if(index2 == 0) { %\>"%>
+										<img class="attIcon" src='/magica/resource/image_web/common/chara/att_<%="<%= value.toLowerCase() %\>"%>.png' >
+									<%="<% } else { %\>"%>
+										<img src='/magica/resource/image_web/icon/formation/<%="<%= value %\>"%>.png' >
+									<%="<% } %\>"%>
+								<%="<% }); %\>"%>
+						</div>
+					</div>
+				<%="<% } else { %\>"%>
+					<div class='formationMass pos_<%="<%= pos %\>"%>'>
+						<div class="formationEffect">
+						</div>
+					</div>
+				<%="<% } %\>"%>
+			<%="<% } %\>"%>
+		<%="<% }) %\>"%>
+	</div>
+
+	<div class="formationHead">
+		<%="<% _.each(model.posArr,function(pos,index) { %\>"%>
+			<div class='head <%="<%= (pos > 9) ? 'sub' : '' %\>"%>'>
+				<%="<% if(pos <= 9) { %\>"%>
+					<div class="formationEffect flexBox">
+						<%="<% if(model.placeEffect && model.placeEffect['placeSkill'+pos] && deckCatType !== 'support') { %\>"%>
+							<%="<% _.each(model.placeEffect['placeSkill'+pos],function(value,index2) { %\>"%>
+								<%="<% if(index2 == 0) { %\>"%>
+									<img class="attIcon" src='/magica/resource/image_web/common/chara/att_<%="<%= value.toLowerCase() %\>"%>.png' >
+								<%="<% } else { %\>"%>
+									<img src='/magica/resource/image_web/icon/formation/<%="<%= value %\>"%>.png' >
+								<%="<% } %\>"%>
+							<%="<% }); %\>"%>
+						<%="<% } %\>"%>
+					</div>
+
+					<%="<% if(deckCatType !== 'support') { %\>"%>
+						<div class='formationMiniMap'>
+							<%="<% _.each(model.posArr,function(pos2,index3) { %\>"%>
+								<%="<% if(pos2 <= 9) { %\>"%>
+									<%="<% var key = 'pos_' + pos2 %\>"%>
+									<%="<% var classTxt = (index == index3) ? 'on' : ''; %\>"%>
+									<span class='<%="<%= key %\>"%> <%="<%= classTxt %\>"%>'></span>
+								<%="<% } %\>"%>
+							<%="<% }); %\>"%>
+						</div>
+					<%="<% } %\>"%>
+
+				<%="<% } %\>"%>
+			</div>
+		<%="<% }); %\>"%>
+	</div>
+
+	<div class="deckPartsWrap" id="deckPartsWrap">
+		<%="<% _.each(model.posArr,function(pos,index) { %\>"%>
+			<%="<% var cardModel = model.userCardObj['place'+pos] %\>"%>
+
+			<%="<% var charaId   = (cardModel && cardModel.card && !cardModel.support) ? cardModel.charaId : '' %\>"%>
+			<%="<% var charaAtt  = (cardModel && cardModel.card && !cardModel.support) ? cardModel.chara.attributeId : '' %\>"%>
+			<%="<% var charaName = (cardModel && cardModel.chara && !cardModel.support) ? cardModel.chara.name : '' %\>"%>
+			<%="<% charaName += (cardModel && cardModel.chara && cardModel.chara.title && !cardModel.support) ? ' ' + cardModel.chara.title : '' %\>"%>
+
+			<%="<% var classTxt = (cardModel && cardModel.card) ? 'on' : 'off' %\>"%>
+			<%="<% if(cardModel && cardModel.support) classTxt += ' support' %\>"%>
+			<%="<% if(deckCatType == 'support') classTxt += ' support' %\>"%>
+			<%="<% if(pos > 9) classTxt += ' sub' %\>"%>
+
+			<%="<% var isEventEffectClass = ''; %\>"%>
+			<%="<% if(cardModel && cardModel.switchCharaFlag !== void 0) { isEventEffectClass = 'boost'; } %\>"%>
+
+			<%="<% var isValidEventEffect = ''; %\>"%>
+			<%="<% if(cardModel && cardModel.switchCharaFlag === true) { classTxt += ' boost'; isValidEventEffect = 'on'; } %\>"%>
+
+			<%="<% var isLeader = ''; %\>"%>
+			<%="<% if(model.leaderPos == pos) isLeader = 'on' %\>"%>
+
+			<%="<% var eventBonusFlag = false; %\>"%>
+
+			<div class='deckParts <%="<%= classTxt %\>"%>'
+				data-charaid='<%="<%= charaId %\>"%>'
+				data-charaatt='<%="<%= charaAtt %\>"%>'
+				data-charaname='<%="<%= charaName %\>"%>'
+				data-posindex='<%="<%= pos %\>"%>'
+				data-index='<%="<%= index + 1 %\>"%>
+				'>
+
+				<div class="select"></div>
+				<div class='tapArea'></div>
+
+				<%="<% if(cardModel && cardModel.card) { %\>"%>
+					<%="<% if(cardModel.retired && deckCatType === 'dungeonInMap') { %\>"%>
+						<div class='retiredIcon'></div>
+					<%="<% } %\>"%>
+
+					<%="<% if(cardModel.isRetired) { %\>"%>
+						<div class="recoveryWrap"></div>
+					<%="<% } %\>"%>
+
+					<%="<% if(cardModel.eventFlag) { %\>"%>
+						<div class='eventTrainingIcon'></div>
+					<%="<% } %\>"%>
+					<div class="flexBox revisionIcon">
+						<%="<% var i = 0; %\>"%>
+						<%="<% var RevisionMax = 3; %\>"%>
+
+						<%="<% var onNum = (cardModel.switchCharaFlag === true) ? cardModel.switchCharaModel.revision : cardModel.revision; %\>"%>
+						<%="<% var noneNum = RevisionMax - onNum; %\>"%>
+
+						<%="<% while(i < onNum) { %\>"%>
+							<div class="on"/>
+							<%="<% i=(i+1)|0; %\>"%>
+						<%="<% }  %\>"%>
+
+						<%="<% i = 0; %\>"%>
+						<%="<% while(i < noneNum) { %\>"%>
+							<div class=""/>
+							<%="<% i=(i+1)|0; %\>"%>
+						<%="<% } %\>"%>
+					</div>
+
+					<%="<% if(cardModel.switchCharaFlag !== void 0) { %\>"%>
+						<div class='eventEffectBtn <%="<%= isValidEventEffect %\>"%>'></div>
+					<%="<% } %\>"%>
+
+					<%="<% if(!cardModel.support && deckCatType !== 'support' && pos <= 9) { %\>"%>
+						<div class='epSetBtn <%="<%= isLeader %\>"%>'></div>
+					<%="<% } %\>"%>
+
+					<%="<% cardModel = (cardModel.switchCharaFlag === true) ? cardModel.switchCharaModel : (cardModel.rentalMemoriaUse != false && cardModel.rentalFlag) ? cardModel.rentalMemoriaModel : cardModel; %\>"%>
+					<div class="maskWrap">
+						<%="<% if(cardModel.faceHidden) { %\>"%>
+							<img class="charaImg"
+								src='/magica/resource/image_web/page/formation/npc_unknown_v.png' alt=''>
+						<%="<% } else { %\>"%>
+							<%="<% if(img['card_' + cardModel.displayCardId + '_v']) { %\>"%>
+								<%="<% var _img = ''; %\>"%>
+								<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+								<%="<% _img += img['card_' + cardModel.displayCardId + '_v'] %\>"%>
+
+								<img class="charaImg" src='<%="<%= _img %\>"%>' alt=''>
+							<%="<% } else { %\>"%>
+								<img class="charaImg"
+									 data-nativeimgkey='card_<%="<%= cardModel.displayCardId %\>"%>_v'
+									 data-src='resource/image_native/card/image/card_<%="<%= cardModel.displayCardId %\>"%>_v.png' alt=''>
+							<%="<% } %\>"%>
+						<%="<% } %\>"%>
+
+						<div class="status">
+							<div id="attribute"><span class='type_f <%="<%= cardModel.chara.attributeId %\>"%>'></span></div>
+							<p id="level" class="ts_gold">Lv <%="<%= cardModel.level %\>"%></p>
+							<div id="rare" class='<%="<%= cardModel.card.rank %\>"%>'>
+								<%="<% var i = 0; %\>"%>
+								<%="<% var maxRare = cardModel.maxRare; %\>"%>
+								<%="<% while(i < maxRare) { %\>"%>
+									<span></span>
+									<%="<% i=(i+1)|0; %\>"%>
+								<%="<% } %\>"%>
+							</div>
+
+							<%="<% if(deckCatType === 'dungeonInMap') { %\>"%>
+								<dl class='charaStatus' style='display: none;'>
+									
+									<%="<% var classTxt01 = (cardModel.memoriaHp)      ? 'ts_pink02' : 'ts_brown' %\>"%>
+									<%="<% var classTxt02 = (cardModel.memoriaAttack)  ? 'c_red' : '' %\>"%>
+									<%="<% var classTxt03 = (cardModel.memoriaDefense) ? 'c_red' : '' %\>"%>
+
+									<%="<% var status01 = (cardModel.memoriaHp)      ? cardModel.addHp + cardModel.addendHp + cardModel.composeAttribute.composed.HP - cardModel.damage : cardModel.hp + cardModel.addendHp + cardModel.composeAttribute.composed.HP - cardModel.damage %\>"%>
+									<%="<% var status02 = (cardModel.memoriaAttack)  ? cardModel.addAttack + cardModel.addendAttack + cardModel.composeAttribute.composed.ATTACK : cardModel.attack + cardModel.addendAttack + cardModel.composeAttribute.composed.ATTACK %\>"%>
+									<%="<% var status03 = (cardModel.memoriaDefense) ? cardModel.addDefense + cardModel.addendDefense + cardModel.composeAttribute.composed.DEFENSE : cardModel.defense + cardModel.addendDefense + cardModel.composeAttribute.composed.DEFENSE %\>"%>
+
+									<%="<% status01 = (status01 <= 0) ? 1 : status01 %\>"%>
+
+									<%="<% var hpGauge   = (cardModel.memoriaHp) ? (cardModel.hp  + cardModel.addendHp + cardModel.composeAttribute.composed.HP - cardModel.damage) / (cardModel.addHp + cardModel.addendHp + cardModel.composeAttribute.composed.HP) * 100 : (cardModel.hp + cardModel.addendHp + cardModel.composeAttribute.composed.HP - cardModel.damage) / (cardModel.hp + cardModel.addendHp + cardModel.composeAttribute.composed.HP) * 100 %\>"%>
+									<%="<% var hpGauge2  = (cardModel.memoriaHp) ? (cardModel.addHp + cardModel.addendHp + cardModel.composeAttribute.composed.HP - cardModel.damage) / (cardModel.addHp + cardModel.addendHp + cardModel.composeAttribute.composed.HP) * 100 : 0 %\>"%>
+
+									<%="<% hpGauge  = (cardModel.retired) ? 0 : (Math.ceil(hpGauge) <= 0) ? 1 : Math.ceil(hpGauge) %\>"%>
+									<%="<% hpGauge2 = (cardModel.retired) ? 0 : (Math.ceil(hpGauge2) <= 0) ? 1 : Math.ceil(hpGauge2) %\>"%>
+									<%="<% status01 = (cardModel.retired) ? 0 : status01 %\>"%>
+
+									<dd class='gauge hpGauge'>
+										<div class='gaugeInner01'><div class='gaugeBg' style='width: <%="<%= hpGauge %\>"%>%'></div></div>
+										<div class='gaugeInner02'><div class='gaugeBg' style='width: <%="<%= hpGauge2 %\>"%>%'></div></div>
+										<p class='<%="<%= classTxt01 %\>"%>'><%="<%= status01 %\>"%></p>
+									</dd>
+
+									<dd class='mb gauge mpGauge'>
+										<%="<% cardModel.dp = (cardModel.dp) ? cardModel.dp : 0 %\>"%>
+										<div class='gaugeInner01'><div class='gaugeBg' style='width: <%="<%= cardModel.dp %\>"%>%'></div></div>
+										<div class='gaugeInner02'><div class='gaugeBg' style='width: <%="<%= cardModel.mp %\>"%>%'></div></div>
+										<p class='ts_brown'><%="<%= cardModel.dp + cardModel.mp %\>"%></p>
+									</dd>
+
+									<div class='flexBox'>
+										<dt class="c_gold">ATK</dt>
+										<dd class='<%="<%= classTxt02 %\>"%>'><%="<%= status02 %\>"%></dd>
+									</div>
+									<div class='flexBox'>
+										<dt class="c_gold">DEF</dt>
+										<dd class='<%="<%= classTxt03 %\>"%>'><%="<%= status03 %\>"%></dd>
+									</div>
+								</dl>
+							<%="<% } else if(deckCatType === 'group' || deckCatType === 'groupPrepare') { %\>"%>
+								<dl class='charaStatus' style='display: none;'>
+									<%="<% var classTxt01 = (cardModel.memoriaHp || cardModel.addendHp > 0 || cardModel.composeAttribute.composed.HP > 0)      ? 'c_red' : '' %\>"%>
+									<%="<% var classTxt02 = (cardModel.memoriaAttack || cardModel.addendAttack > 0 || cardModel.composeAttribute.composed.ATTACK > 0)  ? 'c_red' : '' %\>"%>
+									<%="<% var classTxt03 = (cardModel.memoriaDefense || cardModel.addendDefense > 0 || cardModel.composeAttribute.composed.DEFENSE > 0) ? 'c_red' : '' %\>"%>
+									<%="<% var status01 = (cardModel.memoriaHp)      ? cardModel.addHp + cardModel.addendHp + cardModel.composeAttribute.composed.HP : cardModel.hp + cardModel.addendHp + cardModel.composeAttribute.composed.HP %\>"%>
+									<%="<% var status02 = (cardModel.memoriaAttack)  ? cardModel.addAttack + cardModel.addendAttack + cardModel.composeAttribute.composed.ATTACK  : cardModel.attack + cardModel.addendAttack + cardModel.composeAttribute.composed.ATTACK %\>"%>
+									<%="<% var status03 = (cardModel.memoriaDefense) ? cardModel.addDefense + cardModel.addendDefense + cardModel.composeAttribute.composed.DEFENSE : cardModel.defense + cardModel.addendDefense + cardModel.composeAttribute.composed.DEFENSE %\>"%>
+
+									<dd class='mb gauge mpGauge'>
+										<div class='gaugeInner01'><div class='gaugeBg'></div></div>
+										<div class='gaugeInner02'><div class='gaugeBg'></div></div>
+										<p class='ts_brown'></p>
+									</dd>
+
+									<div class='flexBox'>
+										<dt class="c_gold">HP</dt>
+										<dd class='<%="<%= classTxt01 %\>"%>'><%="<%= status01 %\>"%></dd>
+									</div>
+									<div class='flexBox'>
+										<dt class="c_gold">ATK</dt>
+										<dd class='<%="<%= classTxt02 %\>"%>'><%="<%= status02 %\>"%></dd>
+									</div>
+									<div class='flexBox'>
+										<dt class="c_gold">DEF</dt>
+										<dd class='<%="<%= classTxt03 %\>"%>'><%="<%= status03 %\>"%></dd>
+									</div>
+								</dl>
+							<%="<% } else if(deckCatType === 'accomplish') { %\>"%>
+								<dl class='charaStatus' style='display: none;'>
+									<%="<% var classTxt01 = (cardModel.memoriaHp || cardModel.addendHp > 0 || cardModel.composeAttribute.composed.HP > 0)      ? 'ts_pink02' : 'ts_brown' %\>"%>
+									<%="<% var classTxt02 = (cardModel.memoriaAttack || cardModel.addendAttack > 0 || cardModel.composeAttribute.composed.ATTACK > 0)  ? 'c_red' : '' %\>"%>
+									<%="<% var classTxt03 = (cardModel.memoriaDefense || cardModel.addendDefense > 0 || cardModel.composeAttribute.composed.DEFENSE > 0) ? 'c_red' : '' %\>"%>
+
+									<%="<% var status01 = (cardModel.memoriaHp)      ? cardModel.addHp + cardModel.addendHp + cardModel.composeAttribute.composed.HP - cardModel.damage : cardModel.hp + cardModel.addendHp + cardModel.composeAttribute.composed.HP - cardModel.damage %\>"%>
+									<%="<% var status02 = (cardModel.memoriaAttack)  ? cardModel.addAttack + cardModel.addendAttack + cardModel.composeAttribute.composed.ATTACK  : cardModel.attack + cardModel.addendAttack + cardModel.composeAttribute.composed.ATTACK %\>"%>
+									<%="<% var status03 = (cardModel.memoriaDefense) ? cardModel.addDefense + cardModel.addendDefense + cardModel.composeAttribute.composed.DEFENSE : cardModel.defense + cardModel.addendDefense + cardModel.composeAttribute.composed.DEFENSE %\>"%>
+
+									<%="<% status01 = (status01 <= 0) ? 1 : status01 %\>"%>
+
+									<%="<% var hpGauge   = (cardModel.memoriaHp) ? (cardModel.hp  + cardModel.addendHp + cardModel.composeAttribute.composed.HP - cardModel.damage) / (cardModel.addHp + cardModel.addendHp + cardModel.composeAttribute.composed.HP) * 100 : (cardModel.hp + cardModel.addendHp + cardModel.composeAttribute.composed.HP - cardModel.damage) / (cardModel.hp + cardModel.addendHp + cardModel.composeAttribute.composed.HP) * 100 %\>"%>
+									<%="<% var hpGauge2  = (cardModel.memoriaHp) ? (cardModel.addHp + cardModel.addendHp + cardModel.composeAttribute.composed.HP - cardModel.damage) / (cardModel.addHp + cardModel.addendHp + cardModel.composeAttribute.composed.HP) * 100 : 0 %\>"%>
+
+									<%="<% hpGauge  = (cardModel.isRetired) ? 0 : (Math.ceil(hpGauge) <= 0) ? 1 : Math.ceil(hpGauge) %\>"%>
+									<%="<% hpGauge2 = (cardModel.isRetired) ? 0 : (Math.ceil(hpGauge2) <= 0) ? 1 : Math.ceil(hpGauge2) %\>"%>
+									<%="<% status01 = (cardModel.isRetired) ? 0 : status01 %\>"%>
+
+									<dd class='gauge hpGauge'>
+										<div class='gaugeInner01'><div class='gaugeBg' style='width: <%="<%= hpGauge %\>"%>%'></div></div>
+										<div class='gaugeInner02'><div class='gaugeBg' style='width: <%="<%= hpGauge2 %\>"%>%'></div></div>
+										<p class='<%="<%= classTxt01 %\>"%>'><%="<%= status01 %\>"%></p>
+									</dd>
+
+									<dd class='mb gauge mpGauge'>
+
+										<%="<% var dpWidth = (cardModel.dp) ? cardModel.dp*2 : 0; %\>"%>
+										<%="<% if (dpWidth > 100) dpWidth = 100; %\>"%>
+										<div class='gaugeInner01'><div class='gaugeBg' style='width: <%="<%= dpWidth %\>"%>%'></div></div>
+										<div class='gaugeInner02'><div class='gaugeBg' style='width: <%="<%= cardModel.mp %\>"%>%'></div></div>
+										<p class='ts_brown'><%="<%= cardModel.dp + cardModel.mp %\>"%></p>
+									</dd>
+
+									<div class='flexBox'>
+										<dt class="c_gold">ATK</dt>
+										<dd class='<%="<%= classTxt02 %\>"%>'><%="<%= status02 %\>"%></dd>
+									</div>
+									<div class='flexBox'>
+										<dt class="c_gold">DEF</dt>
+										<dd class='<%="<%= classTxt03 %\>"%>'><%="<%= status03 %\>"%></dd>
+									</div>
+								</dl>
+							<%="<% } else if(deckCatType === 'arenaRankMatchAttack' || deckCatType === 'arenaRankMatchDefence') { //イベント増減対応 %\>"%>
+								<dl class='charaStatus' style='display: none;'>
+									<%="<% var classTxt01 = (cardModel.memoriaHp || cardModel.addendHp > 0 || cardModel.composeAttribute.composed.HP > 0) ? 'c_red' : '' %\>"%>
+									<%="<% var classTxt02 = (cardModel.memoriaAttack || cardModel.addendAttack > 0 || cardModel.composeAttribute.composed.ATTACK > 0) ? 'c_red' : '' %\>"%>
+									<%="<% var classTxt03 = (cardModel.memoriaDefense || cardModel.addendDefense > 0 || cardModel.composeAttribute.composed.DEFENSE > 0) ? 'c_red' : '' %\>"%>
+									<dt class="c_gold">HP</dt>
+									<dd class='<%="<%= classTxt01 %\>"%>'><%="<%= cardModel.totalHp %\>"%></dd>
+									<dt class="c_gold">ATK</dt>
+									<dd class='<%="<%= classTxt02 %\>"%>'><%="<%= cardModel.totalAttack %\>"%></dd>
+									<dt class="c_gold">DEF</dt>
+									<dd class='<%="<%= classTxt03 %\>"%>'><%="<%= cardModel.totalDefense %\>"%></dd>
+								</dl>
+							<%="<% } else { %\>"%>
+								<dl class='charaStatus' style='display: none;'>
+									<%="<% var classTxt01 = (cardModel.memoriaHp || cardModel.addendHp > 0 || cardModel.composeAttribute.composed.HP > 0)      ? 'c_red' : '' %\>"%>
+									<%="<% var classTxt02 = (cardModel.memoriaAttack || cardModel.addendAttack > 0 || cardModel.composeAttribute.composed.ATTACK > 0)  ? 'c_red' : '' %\>"%>
+									<%="<% var classTxt03 = (cardModel.memoriaDefense || cardModel.addendDefense > 0 || cardModel.composeAttribute.composed.DEFENSE > 0) ? 'c_red' : '' %\>"%>
+									<%="<% var status01 = (cardModel.memoriaHp)      ? cardModel.addHp + cardModel.addendHp + cardModel.composeAttribute.composed.HP      : cardModel.hp + cardModel.addendHp + cardModel.composeAttribute.composed.HP %\>"%>
+									<%="<% var status02 = (cardModel.memoriaAttack)  ? cardModel.addAttack + cardModel.addendAttack + cardModel.composeAttribute.composed.ATTACK  : cardModel.attack + cardModel.addendAttack + cardModel.composeAttribute.composed.ATTACK %\>"%>
+									<%="<% var status03 = (cardModel.memoriaDefense) ? cardModel.addDefense + cardModel.addendDefense + cardModel.composeAttribute.composed.DEFENSE : cardModel.defense + cardModel.addendDefense + cardModel.composeAttribute.composed.DEFENSE %\>"%>
+
+									<%="<% if(deckCatType == 'puellaHistoriaGroupRaid' && cardModel.isPHLBUseItem) { //ピュエラヒストリアラストバトル対応 %\>"%>
+									<%="<% classTxt02 = 'c_red' %\>"%>
+									<%="<% classTxt03 = 'c_red' %\>"%>
+									<%="<% status02 = status02*6 %\>"%>
+									<%="<% status03 = status03*6 %\>"%>
+									<%="<% }; %\>"%>
+
+									<dt class="c_gold">HP</dt>
+									<dd class='<%="<%= classTxt01 %\>"%>'><%="<%= status01 %\>"%></dd>
+									<dt class="c_gold">ATK</dt>
+									<dd class='<%="<%= classTxt02 %\>"%>'><%="<%= status02 %\>"%></dd>
+									<dt class="c_gold">DEF</dt>
+									<dd class='<%="<%= classTxt03 %\>"%>'><%="<%= status03 %\>"%></dd>
+								</dl>
+							<%="<% } %\>"%>
+
+							<div class='disk'>
+								<ul class="commandList">
+									<li class="<%='<%= (cardModel.card.commandType1) ? cardModel.card.commandType1 : "" %\>'%>"></li>
+									<li class="<%='<%= (cardModel.card.commandType2) ? cardModel.card.commandType2 : "" %\>'%>"></li>
+									<li class="<%='<%= (cardModel.card.commandType3) ? cardModel.card.commandType3 : "" %\>'%>"></li>
+									<li class="<%='<%= (cardModel.card.commandType4) ? cardModel.card.commandType4 : "" %\>'%>"></li>
+									<li class="<%='<%= (cardModel.card.commandType5) ? cardModel.card.commandType5 : "" %\>'%>"></li>
+								</ul>
+							</div>
+
+							<div class='skill'>
+								<div class='flexBox'>
+									<%="<% var magiaClassTxt  = (cardModel.magiaLevel == 0) ? 'off'    : ''; %\>"%>
+									<%="<% var doppelClassTxt = (cardModel.doppelOpenFlag)  ? 'doppel' : ''; %\>"%>
+									<%="<% var magiaGloupId   = (cardModel.doppelOpenFlag)  ? cardModel.card.doppelCardMagia.groupId : cardModel.card.cardMagia.groupId; %\>"%>
+									<div class='magia <%="<%= magiaClassTxt %\>"%> <%="<%= doppelClassTxt %\>"%>'>
+										<%="<% if(img['icon_skill_' + magiaGloupId]) { %\>"%>
+											<%="<% var _img = ''; %\>"%>
+											<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+											<%="<% _img += img['icon_skill_' + magiaGloupId] %\>"%>
+											<img src='<%="<%= _img %\>"%>'>
+										<%="<% } else { %\>"%>
+											<img data-nativeimgkey='icon_skill_<%="<%= magiaGloupId %\>"%>'
+										     data-src='resource/image_native/art/icon_skill_<%="<%= magiaGloupId %\>"%>.png' />
+										<%="<% } %\>"%>
+									</div>
+									<div class='connect'>
+										<%="<% if(img['icon_skill_' + cardModel.card.cardSkill.groupId]) { %\>"%>
+											<%="<% var _img = ''; %\>"%>
+											<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+											<%="<% _img += img['icon_skill_' + cardModel.card.cardSkill.groupId] %\>"%>
+											<img src='<%="<%= _img %\>"%>'>
+										<%="<% } else { %\>"%>
+											<img data-nativeimgkey='icon_skill_<%="<%= cardModel.card.cardSkill.groupId %\>"%>'
+											 data-src='resource/image_native/art/icon_skill_<%="<%= cardModel.card.cardSkill.groupId %\>"%>.png'>
+										<%="<% } %\>"%>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class='memoriaSkillWrap <%="<% if(cardModel.rentalFlag != void 0) { %\>"%>rental<%="<% } %\>"%>'>
+						<%="<% var canEquipNum = cardModel.revision + 1; %\>"%>
+
+						<%="<% var i = 0; %\>"%>
+						<%="<% var maxEquipNum = 4; %\>"%>
+						<%="<% while(i < maxEquipNum) { %\>"%>
+							<%="<% var equipKey = 'equipPiece' + (i+1) %\>"%>
+							<%="<% if(cardModel && cardModel[equipKey]) { %\>"%>
+								<%="<% var pieceClass = ''; %\>"%>
+								<%="<% pieceClass = (cardModel[equipKey].invalidFlag) ? cardModel[equipKey].invalidFlag : ''; %\>"%>
+
+								<%="<% if(cardModel.supportFlag) { %\>"%>
+									<%="<% pieceClass += ' tapBlock'; %\>"%>
+								<%="<% } %\>"%>
+
+								<%="<% if(img['icon_skill_' + cardModel[equipKey].piece.pieceSkill.groupId]) { %\>"%>
+									<%="<% var _img = ''; %\>"%>
+									<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+									<%="<% _img += img['icon_skill_' + cardModel[equipKey].piece.pieceSkill.groupId] %\>"%>
+									<span class='equiped <%="<%= pieceClass %\>"%>'><img src='<%="<%= _img %\>"%>'></span>
+								<%="<% } else { %\>"%>
+									<span class='equiped <%="<%= pieceClass %\>"%>'><img data-nativeimgkey='icon_skill_<%="<%= cardModel[equipKey].piece.pieceSkill.groupId %\>"%>' data-src='resource/image_native/art/icon_skill_<%="<%= cardModel[equipKey].piece.pieceSkill.groupId %\>"%>.png'></span>
+								<%="<% } %\>"%>
+
+								<%="<% canEquipNum--; %\>"%>
+
+							<%="<% } else { %\>"%>
+								<%="<% if(cardModel.supportFlag) { %\>"%>
+									<span class='cannotEquip'></span>
+								<%="<% } else { %\>"%>
+									<%="<% if(canEquipNum <= 0) { %\>"%>
+										<span class='cannotEquip'></span>
+									<%="<% } else { %\>"%>
+										<span class='canEquip'></span>
+										<%="<% canEquipNum--; %\>"%>
+									<%="<% } %\>"%>
+								<%="<% } %\>"%>
+
+							<%="<% } %\>"%>
+
+							<%="<% i=(i+1)|0; %\>"%>
+						<%="<% } %\>"%>
+					</div>
+
+					<div class='memoriaWrap<%="<% if(cardModel.rentalFlag) { %\>"%> rental<%="<% } %\>"%>'>
+						<%="<% var canEquipNum = cardModel.revision + 1; %\>"%>
+
+						<%="<% if(!cardModel.supportFlag && deckCatType !== 'exterminationCopy' && deckCatType !== 'secondPartLastCopy') { %\>"%>
+							<div class='memoriaSetEquipBtn sb_gold_02 se_decide TE'>セット呼び出し</div>
+						<%="<% } %\>"%>
+
+						<%="<% if(cardModel.switchCharaFlag !== true && cardModel.rentalFlag && cardModel.rentalMemoriaUse) { %\>"%>
+						<div class='rentalLiftBtn sb_gold_02 se_decide TE'>レンタル解除</div>
+					<%="<% } %\>"%>
+
+						<%="<% var i = 0; %\>"%>
+						<%="<% var maxEquipNum = 4; %\>"%>
+						<%="<% while(i < maxEquipNum) { %\>"%>
+							<%="<% var equipKey = 'equipPiece' + (i+1) %\>"%>
+							<%="<% if(cardModel && cardModel[equipKey]) { %\>"%>
+
+								<%="<% var pieceClass = ''; %\>"%>
+								<%="<% pieceClass = (cardModel[equipKey].invalidFlag) ? cardModel[equipKey].invalidFlag : ''; %\>"%>
+
+								<%="<% if(img['memoria_' + cardModel[equipKey].pieceId + '_s']) { %\>"%>
+									<%="<% var _img = ''; %\>"%>
+									<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+									<%="<% _img += img['memoria_' + cardModel[equipKey].pieceId + '_s'] %\>"%>
+									<span class='equiped <%="<%= pieceClass %\>"%>'
+									 data-pieceindex='<%="<%= i+1 %\>"%>'>
+									 	<img class='pieceIcon' src='<%="<%= _img %\>"%>'>
+									 	<div class='pieceBg'></div>
+
+									 	<%="<% if(img['icon_skill_' + cardModel[equipKey].piece.pieceSkill.groupId]) { %\>"%>
+											<%="<% var _img = ''; %\>"%>
+											<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+											<%="<% _img += img['icon_skill_' + cardModel[equipKey].piece.pieceSkill.groupId] %\>"%>
+											<span class='artIcon'><img src='<%="<%= _img %\>"%>'></span>
+										<%="<% } else { %\>"%>
+											<span class='artIcon'><img data-nativeimgkey='icon_skill_<%="<%= cardModel[equipKey].piece.pieceSkill.groupId %\>"%>' data-src='resource/image_native/art/icon_skill_<%="<%= cardModel[equipKey].piece.pieceSkill.groupId %\>"%>.png'></span>
+										<%="<% } %\>"%>
+										<%="<% if(cardModel[equipKey].eventEffect || ((deckCatType === 'extermination' || deckCatType === 'secondPartLast' || deckCatType === 'exterminationCopy' || deckCatType === 'secondPartLastCopy') && cardModel[equipKey].regularEventEffect)) { %\>"%>
+											<%="<% eventBonusFlag = true; %\>"%>
+											<span class='bonusIcon'></span>
+										<%="<% } %\>"%>
+
+										<%="<% if(cardModel[equipKey].lbCount == 4) { %\>"%>
+											<span class='lbMaxIcon'></span>
+										<%="<% } %\>"%>
+
+										<p class='pieceLv'>Lv<%="<%= cardModel[equipKey].level + '/' + cardModel[equipKey].maxLevel  %\>"%></p>
+									</span>
+								<%="<% } else { %\>"%>
+									<span class='equiped <%="<%= pieceClass %\>"%>'
+									 data-pieceindex='<%="<%= i+1 %\>"%>'>
+										 <img class='pieceIcon' src='/magica/resource/image_web/memoria/memoria_<%="<%= cardModel[equipKey].pieceId %\>"%>_s.png'>
+										 <div class='pieceBg'></div>
+
+										 <%="<% if(img['icon_skill_' + cardModel[equipKey].piece.pieceSkill.groupId]) { %\>"%>
+											<%="<% var _img = ''; %\>"%>
+											<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+											<%="<% _img += img['icon_skill_' + cardModel[equipKey].piece.pieceSkill.groupId] %\>"%>
+											<span class='artIcon'><img src='<%="<%= _img %\>"%>'></span>
+										<%="<% } else { %\>"%>
+											<span class='artIcon'><img data-nativeimgkey='icon_skill_<%="<%= cardModel[equipKey].piece.pieceSkill.groupId %\>"%>' data-src='resource/image_native/art/icon_skill_<%="<%= cardModel[equipKey].piece.pieceSkill.groupId %\>"%>.png'></span>
+										<%="<% } %\>"%>
+										<%="<% if(cardModel[equipKey].eventEffect || ((deckCatType === 'extermination' || deckCatType === 'secondPartLast' || deckCatType === 'exterminationCopy' || deckCatType === 'secondPartLastCopy') && cardModel[equipKey].regularEventEffect)) { %\>"%>
+											<%="<% eventBonusFlag = true; %\>"%>
+											<span class='bonusIcon'></span>
+										<%="<% } %\>"%>
+
+										<%="<% if(cardModel[equipKey].lbCount == 4) { %\>"%>
+											<span class='lbMaxIcon'></span>
+										<%="<% } %\>"%>
+
+										<p class='pieceLv'>Lv<%="<%= cardModel[equipKey].level + '/' + cardModel[equipKey].maxLevel  %\>"%></p>
+									</span>
+
+								<%="<% } %\>"%>
+
+								<%="<% canEquipNum--; %\>"%>
+
+							<%="<% } else { %\>"%>
+								<%="<% if(cardModel.supportFlag) { %\>"%>
+									<span class='cannotEquip' data-pieceindex='<%="<%= i+1 %\>"%>'>
+										<span class='artIcon'></span>
+										<div class='pieceBg'></div>
+									</span>
+								<%="<% } else { %\>"%>
+									<%="<% if(canEquipNum <= 0) { %\>"%>
+										<span class='cannotEquip' data-pieceindex='<%="<%= i+1 %\>"%>'>
+											<span class='artIcon'></span>
+											<div class='pieceBg'></div>
+										</span>
+									<%="<% } else { %\>"%>
+										<span class='canEquip' data-pieceindex='<%="<%= i+1 %\>"%>'>
+											<span class='artIcon'></span>
+											<div class='pieceBg'></div>
+										</span>
+										<%="<% canEquipNum--; %\>"%>
+									<%="<% } %\>"%>
+								<%="<% } %\>"%>
+
+							<%="<% } %\>"%>
+
+							<%="<% i=(i+1)|0; %\>"%>
+						<%="<% } %\>"%>
+					</div>
+				<%="<% } %\>"%>
+				<%="<% if(eventBonusFlag) { %\>"%>
+					<div class='bonusIcon <%="<%= isEventEffectClass %\>"%>'></div>
+				<%="<% } %\>"%>
+				<%="<% if(cardModel && cardModel.isArenaRankMatchPrmChange == 'plus') { //ランクマッチ用プラスアイコン %\>"%>
+					<span class='prmChangeIcon plus'></span>
+				<%="<% } %\>"%>
+				<%="<% if(cardModel && cardModel.isArenaRankMatchPrmChange == 'minus') { //ランクマッチ用マイナスアイコン %\>"%>
+					<span class='prmChangeIcon minus'></span>
+				<%="<% } %\>"%>
+				<%="<% if(deckCatType == 'puellaHistoriaGroupRaid' && cardModel && cardModel.isPHLBUseItem) { //ピュエラヒストリアラストバトル対応 %\>"%>
+					<span class='bonusIcon'></span>
+				<%="<% } %\>"%>
+				<div class="bg"></div>
+			</div>
+		<%="<% }); %\>"%>
+	</div>
+</script>
+
+<script type="text/template" id="UserFormationListTemp">
+	<div class="formationMiniMap">
+		<%="<% _.forEach(model.posArr,function(pos){ %\>"%>
+			<span class='pos_<%="<%= pos %\>"%>'></span>
+		<%="<% }) %\>"%>
+	</div>
+	<%="<%= model.formationSheet.name %\>"%>
+</script>
+
+<script type="text/template" id="DeckNameChangeTemp">
+	<div class="popupInner">
+		<span class="closeDefault se_cancel popupCloseBtn TE"></span>
+		<p id="popupInfoDetailTitle" class="popupTitle">チーム名変更</p>
+
+		<div class="popupTextArea">
+			<div class="profileChange">
+				<input id="commentInput" readonly="readonly" value='<%="<%= model.name %\>"%>' maxlength="50" /><br>
+				<span class="commentNotis c_red">絵文字は使用できません</span>
+				<div class="textCount c_gold"><span id="textCount" class="c_gold"><%="<%= model.name.length %\>"%></span>/10</div>
+				<div class="btn b_pink se_decide TE" id="commentDecide"><span class="b_screen"></span>OK</div>
+			</div>
+		</div>
+	</div>
+</script>
+
+<script type="text/template" id="TeamRemovePop">
+	<div class="popupInner">
+		<span class="closeDefault se_cancel popupCloseBtn TE"></span>
+		<p id="popupInfoDetailTitle" class="popupTitle">チーム解散</p>
+
+		<div class="popupTextArea">
+			<%="<%= _.escape(model.name) %\>"%>を解散しますか？<br>※装備中のメモリアも全てはずれます
+		</div>
+
+		<table class="popupBtnArea" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td><span class="cancelBtn se_cancel popupCloseBtn btn TE b_white"><span class='b_screen'></span>キャンセル</span></td>
+				<td><span class="decideBtn se_decide btn b_pink TE"><span class='b_screen'></span>OK</span></td>
+			</tr>
+		</table>
+	</div>
+</script>
+
+<script type="text/template" id="deckChangeModeTemp">
+<%="<% _.forEach(model,function(txt){ %\>"%>
+	<%="<% if(txt.leaderCardModel) { %\>"%>
+		<%="<% var leaderId = txt.leaderCardModel.displayCardId; %\>"%>
+
+		<div class='deckSelectDetail se_tabs deck<%="<%= txt.deckType %\>"%>' data-decktype='<%="<%= txt.deckType %\>"%>'>
+			<div class="detailOverwrap"></div>
+			<div class="formationMiniMap">
+				<%="<% _.forEach(txt.posArr,function(txt){ %\>"%>
+					<span class='pos_<%="<%= txt %\>"%>'></span>
+				<%="<% }) %\>"%>
+			</div>
+
+			<div class="charaIcon">
+				<div class="frame"></div>
+				<%="<% if(img['card_' + leaderId + '_f']) { %\>"%>
+					<%="<% var _img = ''; %\>"%>
+					<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+					<%="<% _img += img['card_' + leaderId + '_f'] %\>"%>
+
+					<img class="charaImg" src='<%="<%= _img %\>"%>' alt=''>
+				<%="<% } else { %\>"%>
+					<img class="charaImg"
+						 data-nativeimgkey='card_<%="<%= leaderId %\>"%>_f'
+						 data-src='resource/image_native/card/image/card_<%="<%= leaderId %\>"%>_f.png' alt=''>
+				<%="<% } %\>"%>
+				<div class="bg"></div>
+			</div>
+			<p class="deckNameWrap ts_gold"><%="<%= _.escape(txt.name) %\>"%></p>
+		</div>
+	<%="<% } else { %\>"%>
+		<div class='deckSelectDetail se_tabs off deck<%="<%= txt.deckType %\>"%>' data-decktype='<%="<%= txt.deckType %\>"%>'>
+			<div class="detailOverwrap"></div>
+			<div class="charaIcon"></div>
+		</div>
+	<%="<% } %\>"%>
+<%="<% }) %\>"%>
+</script>
+
+<script type="text/template" id="gaugeTemp">
+	<%="<% var hpGauge  = (model.memoriaHp) ? (model.addHp + model.addendHp + model.composeAttribute.composed.HP - model.damage) / (model.addHp + model.addendHp + model.composeAttribute.composed.HP) * 100 : (model.hp + model.addendHp + model.composeAttribute.composed.HP - model.damage) / (model.hp + model.addendHp + model.composeAttribute.composed.HP) * 100 %\>"%>
+	<%="<% hpGauge      = ((deckCatType === 'dungeonInMap' && model.retired) || (deckCatType === 'accomplish' && model.isRetired)) ? 0 : Math.ceil(hpGauge) %\>"%>
+	<div class='hpGauge'>
+		<div class='gaugeInner01'><div class='gaugeBg' style='width: <%="<%= hpGauge %\>"%>%'></div></div>
+	</div>
+
+	<div class='mpGauge'>
+		<div class='gaugeInner01'><div class='gaugeBg' style='width: <%="<%= model.dp %\>"%>%'></div></div>
+		<div class='gaugeInner02'><div class='gaugeBg' style='width: <%="<%= model.mp %\>"%>%'></div></div>
+	</div>
+</script>
+
+<script type="text/template" id="teamGaugeTemp">
+	<div class='mpGauge'>
+		<div class='gaugeInner01'><div class='gaugeBg' style='width: <%="<%= model.dp %\>"%>%'></div></div>
+		<div class='gaugeInner02'><div class='gaugeBg' style='width: <%="<%= model.mp %\>"%>%'></div></div>
+	</div>
+</script>
+
+<script type="text/template" id="autoFormationTemp">
+	<div class="popupInner">
+		<span class="closeDefault se_cancel popupCloseBtn TE"></span>
+		<p id="popupInfoDetailTitle" class="popupTitle">お任せ編成</p>
+
+		<div class="popupTextArea">
+			<div class="autoText">属性と重視する項目を選択してください</div>
+			<div class='filterBar'>
+				<p>属性</p>
+				<span id="autoFilterAtt" class='filterAtt se_tabs ALL on' data-type-filter="ALL"><span class='checkBox'></span>すべて表示</span>
+			</div>
+			<div id='autoFormationAttWrap' class="flexBox">
+				<div class="attribute" data-type-filter="FIRE">
+					<span class="checkBox"></span>
+					<span class="icon se_tabs TE type_f FIRE"></span>
+				</div>
+				<div class="attribute" data-type-filter="WATER">
+					<span class="checkBox"></span>
+					<span class="icon se_tabs TE type_f WATER"></span>
+				</div>
+				<div class="attribute" data-type-filter="TIMBER">
+					<span class="checkBox"></span>
+					<span class="icon se_tabs TE type_f TIMBER"></span>
+				</div>
+				<div class="attribute" data-type-filter="LIGHT">
+					<span class="checkBox"></span>
+					<span class="icon se_tabs TE type_f LIGHT"></span>
+				</div>
+				<div class="attribute" data-type-filter="DARK">
+					<span class="checkBox"></span>
+					<span class="icon se_tabs TE type_f DARK"></span>
+				</div>
+				<div class="attribute" data-type-filter="VOID">
+					<span class="checkBox"></span>
+					<span class="icon se_tabs TE type_f VOID"></span>
+				</div>
+			</div>
+
+			<div class='typeBar'>
+				<p>お任せ編成対象</p>
+			</div>
+			<div id='autoFormationStatusWrap' class='filterWrap flexBox'>
+				<div class='se_tabs status TE on' data-status-sort="attack">
+					<span class="checkBox"></span>攻撃優先
+				</div>
+				<div class='se_tabs status TE' data-status-sort="defense">
+					<span class="checkBox"></span>防御優先
+				</div>
+				<div class='se_tabs status TE' data-status-sort="hp">
+					<span class="checkBox"></span>バランス
+				</div>
+			</div>
+
+		</div>
+
+		<table class="popupBtnArea" width="400" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td><span class="btn b_white popupCloseBtn TE se_cancel"><span class='b_screen'></span>キャンセル</span></td>
+				<td><span id="autoFormationBtn" class="btn b_pink TE se_decide"><span class='b_screen'></span>OK</span></td>
+			</tr>
+		</table>
+
+	</div>
+</script>
+
+<script type="text/template" id="autoFormationSupportTemp">
+	<div class="popupInner">
+		<span class="closeDefault se_cancel popupCloseBtn TE"></span>
+		<p id="popupInfoDetailTitle" class="popupTitle">お任せ編成</p>
+
+		<div class="popupTextArea">
+			<div class="autoText">重視する項目を選択してください</div>
+
+			<div class='typeBar'>
+				<p>お任せ編成対象</p>
+			</div>
+			<div id='autoFormationStatusWrap' class='filterWrap flexBox'>
+				<div class='se_tabs status TE on' data-status-sort="attack">
+					<span class="checkBox"></span>攻撃優先
+				</div>
+				<div class='se_tabs status TE' data-status-sort="defense">
+					<span class="checkBox"></span>防御優先
+				</div>
+				<div class='se_tabs status TE' data-status-sort="hp">
+					<span class="checkBox"></span>バランス
+				</div>
+			</div>
+		</div>
+
+		<table class="popupBtnArea" width="400" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td><span class="btn b_white popupCloseBtn TE se_cancel"><span class='b_screen'></span>キャンセル</span></td>
+				<td><span id="autoFormationBtn" class="btn b_pink TE se_decide"><span class='b_screen'></span>OK</span></td>
+			</tr>
+		</table>
+
+	</div>
+</script>
+
+<script type="text/template" id="autoFormationGroupTemp">
+	<div class="popupInner">
+		<span class="closeDefault se_cancel popupCloseBtn TE"></span>
+		<p id="popupInfoDetailTitle" class="popupTitle">お任せ編成</p>
+
+		<div class="popupTextArea">
+			<div class="autoText" style="height:auto;">
+				キモチ戦に有効な魔法少女を優先して編成します<br>
+				重視する項目を選択してください
+			</div>
+
+			<div class='typeBar'>
+				<p>お任せ編成対象</p>
+			</div>
+			<div id='autoFormationStatusWrap' class='filterWrap flexBox'>
+				<div class='se_tabs status TE on' data-status-sort="attack">
+					<span class="checkBox"></span>攻撃優先
+				</div>
+				<div class='se_tabs status TE' data-status-sort="defense">
+					<span class="checkBox"></span>防御優先
+				</div>
+			</div>
+		</div>
+
+		<table class="popupBtnArea" width="400" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td><span class="btn b_white popupCloseBtn TE se_cancel"><span class='b_screen'></span>キャンセル</span></td>
+				<td><span id="autoFormationBtn" class="btn b_pink TE se_decide"><span class='b_screen'></span>OK</span></td>
+			</tr>
+		</table>
+
+	</div>
+</script>
+
+<script type="text/template" id="formationDetailTemp">
+	<h2><%='<%= model.name %\>'%></h2>
+	<div id="formationDetailScrollWrap">
+		<div class="fromationDetailScrollInner">
+			<%='<% var lineFlg = false; %\>'%>
+			<%='<% for(var i=1;i<10;i++){ %\>'%>
+				<%='<% if(model["placeSkill"+i] && model["placeSkill"+i].art1){ %\>'%>
+					<%='<% if(lineFlg){ %\>'%>
+						<div class="cutLine common_line lc_beige"></div>
+					<%='<% } %\>'%>
+					<div class="positionWrap">
+						<div class="detailMiniMap position<%='<%= i %\>'%>">
+						</div>
+						<div class="skillImg">
+							<img data-nativeimgkey='icon_skill_<%="<%= model['placeSkill'+i].groupId %\>"%>' data-src='resource/image_native/art/icon_skill_<%="<%= model['placeSkill'+i].groupId %\>"%>.png'>
+						</div>
+						<div class="detailText">
+							<%="<%= model['placeSkill'+i].shortDescription %\>"%>
+						</div>
+					</div>
+					<%='<% lineFlg = true; %\>'%>
+				<%='<% } %\>'%>
+			<%='<% } %\>'%>
+		</div>
+	</div>
+</script>

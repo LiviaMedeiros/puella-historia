@@ -1,0 +1,768 @@
+@charset "UTF-8";
+.popupDetail .popupTextArea {
+  height: 315px !important;
+  padding: 0 60px;
+}
+
+.popupDetail #popupDetailScrollWrap {
+  width: 100%;
+  padding: 10px 0 0;
+  height: 290px;
+  border: 2px solid #eddbb8;
+  border-radius: 26px;
+  overflow: hidden;
+}
+
+.popupDetail #popupDetailScrollWrap .scrollInner {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  text-align: left;
+}
+
+.popupDetail #popupDetailScrollWrap .scrollInner .commonItemImgWrap {
+  position: relative;
+  display: inline-block;
+  height: 88px;
+  margin: 0 25px 25px;
+}
+
+.popupDetail #popupDetailScrollWrap .scrollInner .commonItemImgWrap .commonItemImg {
+  width: 88px;
+}
+
+.popupDetail #popupDetailScrollWrap .scrollInner .commonItemImgWrap .quantity {
+  display: none;
+  position: absolute;
+  right: -2px;
+  bottom: -8px;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: -1px -1px 1px #8a5f29, 1px -1px 1px #8a5f29, -1px 1px 1px #8a5f29, 1px 1px 1px #8a5f29, -1px -1px #8a5f29, 1px -1px #8a5f29, -1px 1px #8a5f29, 1px 1px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 3px #8a5f29, 1px -1px 3px #8a5f29, -1px 1px 3px #8a5f29, 1px 1px 3px #8a5f29;
+}
+
+.popupDetail #popupDetailScrollWrap .scrollInner .commonItemImgWrap.bonus:after {
+  content: "BONUS";
+  display: block;
+  position: absolute;
+  top: 78px;
+  left: -5px;
+  width: 100px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81, 0px 0px 4px #ff3b81;
+}
+
+.popupDetail #popupDetailScrollWrap .scrollInner .commonItemImgWrap.bonus:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 94px;
+  height: 94px;
+  border-radius: 8px;
+  border: 5px solid #ff3b81;
+}
+
+#overlapContainer {
+  width: 100%;
+  height: 100%;
+}
+
+#areaList, .logo {
+  display: none !important;
+}
+
+#overlapContainer #curtain {
+  display: block;
+  opacity: 0.4;
+}
+
+#overlapContainer #PatrolDeck {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-56%) translateX(-50%);
+  -ms-transform: translateY(-56%) translateX(-50%);
+  transform: translateY(-56%) translateX(-50%);
+  width: 950px;
+  height: 390px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  z-index: 902;
+  -webkit-transform-origin: 50%;
+  -ms-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: show 0.5s ease-in-out 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+#overlapContainer #PatrolDeck .closeBtn {
+  width: 85px;
+  height: 85px;
+  background-image: url(/magica/resource/image_web/common/popup/popup_close.png);
+  background-position: 29px 6px;
+  background-size: 52px 51px;
+  display: inline-block;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  z-index: 20;
+}
+
+#overlapContainer #PatrolDeck #titleArea {
+  position: absolute;
+  top: -12px;
+  left: 0px;
+  width: 950px;
+  height: 40px;
+  background: url("/magica/resource/image_web/page/patrol/bg_patrolteam_title.png") left top no-repeat;
+}
+
+#overlapContainer #PatrolDeck #titleArea #title {
+  position: absolute;
+  top: 1px;
+  left: 40px;
+  font-size: 26px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: 2px 0px 2px #261474, -2px 0px 2px #261474, 0px 2px 2px #261474, 0px -2px 2px #261474, 2px 2px 2px #261474, -2px 2px 2px #261474, 2px -2px 2px #261474, -2px -2px 2px #261474;
+}
+
+#overlapContainer #PatrolDeck #titleArea #duration {
+  position: absolute;
+  top: 6px;
+  right: 30px;
+  font-size: 17px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-shadow: -1px -1px 1px #7f44b6, 1px -1px 1px #7f44b6, -1px 1px 1px #7f44b6, 1px 1px 1px #7f44b6, -1px -1px #7f44b6, 1px -1px #7f44b6, -1px 1px #7f44b6, 1px 1px #7f44b6, -1px -1px 1px #7f44b6, 1px -1px 1px #7f44b6, -1px 1px 1px #7f44b6, 1px 1px 1px #7f44b6, -1px -1px #7f44b6, 1px -1px #7f44b6, -1px 1px #7f44b6, 1px 1px #7f44b6;
+}
+
+#overlapContainer #PatrolDeck #rewardArea {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  width: 910px;
+  height: 46px;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #rewardTitle {
+  position: relative;
+  top: 8px;
+  font-size: 20px;
+  text-shadow: 2px 0px 2px #fff, -2px 0px 2px #fff, 0px 2px 2px #fff, 0px -2px 2px #fff, 2px 2px 2px #fff, -2px 2px 2px #fff, 2px -2px 2px #fff, -2px -2px 2px #fff;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #rewardTitle #itemListBtn {
+  position: absolute;
+  top: -4px;
+  left: 50px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("/magica/resource/image_web/common/icon/icon_info.png") left top no-repeat;
+  background-size: contain;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #rewardTitle #itemListBtn.touch {
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+#overlapContainer #PatrolDeck #rewardArea #itemList {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  width: 523px;
+  height: 46px;
+  border-left: 2px solid #a47122;
+  border-right: 2px solid #a47122;
+  padding: 0 10px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #itemList .commonItemImgWrap {
+  position: relative;
+  width: 40px;
+  height: 46px;
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #itemList .commonItemImgWrap .commonItemImg {
+  height: 46px;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #itemList .commonItemImgWrap .quantity {
+  display: none;
+  position: absolute;
+  font-size: 10px;
+  right: 0px;
+  bottom: -1px;
+  color: #fff;
+  text-shadow: -1px -1px 1px #8a5f29, 1px -1px 1px #8a5f29, -1px 1px 1px #8a5f29, 1px 1px 1px #8a5f29, -1px -1px #8a5f29, 1px -1px #8a5f29, -1px 1px #8a5f29, 1px 1px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 3px #8a5f29, 1px -1px 3px #8a5f29, -1px 1px 3px #8a5f29, 1px 1px 3px #8a5f29;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #itemList .commonItemImgWrap.LIVE2D {
+  width: 60px;
+  height: 60px;
+  z-index: 1;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #itemList .commonItemImgWrap.LIVE2D:after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 32px;
+  left: 25px;
+  background: url(/magica/resource/image_web/item/main/live2d.png) left center no-repeat;
+  background-size: 40px 40px;
+  width: 40px;
+  height: 40px;
+  z-index: 1;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #itemList .commonItemImgWrap.LIVE2D .l2dIcon {
+  margin: 0px auto;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #itemList .commonItemImgWrap.LIVE2D .charaIcon {
+  width: 90px;
+  height: 110px;
+  position: absolute;
+  right: 10px;
+  bottom: -20px;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #itemList .commonItemImgWrap.LIVE2D .charaIcon .maskWrap {
+  width: 90px;
+  height: 110px;
+  position: absolute;
+  top: 0px;
+  overflow: hidden;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #itemList .commonItemImgWrap.LIVE2D .charaIcon .maskWrap img {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  top: 3px;
+  right: -6px;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #other {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  width: 270px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #other #expArea {
+  width: 160px;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #other #expArea span {
+  display: inline-block;
+  background: #a47122;
+  text-align: center;
+  color: #fff;
+  padding: 0px 8px;
+  margin: 3px 6px 0 0;
+  border-radius: 3px;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #other #expArea span:before {
+  content: "EXP";
+}
+
+#overlapContainer #PatrolDeck #rewardArea #other #ccArea {
+  width: 180px;
+}
+
+#overlapContainer #PatrolDeck #rewardArea #other #ccArea:before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 29px;
+  vertical-align: bottom;
+  margin: 0 6px 0 0;
+  background: url("/magica/resource/image_web/common/icon/icon_cursechip.png") left top no-repeat;
+}
+
+#overlapContainer #PatrolDeck #deckArea {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  width: 910px;
+  height: 290px;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckTitle {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  width: 716px;
+  height: 40px;
+  -webkit-border-image: url("/magica/resource/image_web/page/patrol/bg_teamedit_top.png") 30 23 stretch;
+  -o-border-image: url("/magica/resource/image_web/page/patrol/bg_teamedit_top.png") 30 23 stretch;
+  border-image: url("/magica/resource/image_web/page/patrol/bg_teamedit_top.png") 30 23 stretch;
+  border-width: 30px 23px 0;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckTitle #attribute {
+  position: absolute;
+  top: -30px;
+  left: -44px;
+  width: 30px;
+  height: 30px;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckTitle #attribute span {
+  position: relative;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckTitle #attribute:before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  display: block;
+  width: 38px;
+  height: 38px;
+  background: url("/magica/resource/image_web/page/patrol/bg_typeicon.png") left top no-repeat;
+  background-size: contain;
+  z-index: 0;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckTitle .leftText {
+  position: absolute;
+  top: -27px;
+  left: 0px;
+  color: #fff;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckTitle .leftText::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: -25px;
+  width: 22px;
+  height: 18px;
+  background: url("/magica/resource/image_web/page/patrol/icon_statusup.png") left top no-repeat;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckTitle .centerText {
+  position: absolute;
+  top: -30px;
+  left: 260px;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 2px 0px 2px #7e561b, -2px 0px 2px #7e561b, 0px 2px 2px #7e561b, 0px -2px 2px #7e561b, 2px 2px 2px #7e561b, -2px 2px 2px #7e561b, 2px -2px 2px #7e561b, -2px -2px 2px #7e561b;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList {
+  position: absolute;
+  top: 40px;
+  left: 0px;
+  width: 740px;
+  height: 240px;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li {
+  position: relative;
+  width: 142px;
+  height: 235px;
+  background: -webkit-linear-gradient(bottom, #e9d7c5 0%, #fffdf3 100%);
+  border-radius: 7px 7px 25px 25px;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .deckParts {
+  width: 100%;
+  height: 100%;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .deckParts.select:before {
+  position: absolute;
+  top: -1px;
+  left: -2px;
+  display: block;
+  width: 102%;
+  height: 102%;
+  border-width: 48px;
+  border-style: solid;
+  -webkit-border-image: url("/magica/resource/image_web/page/patrol/deck_wrap_select.png") 60 stretch;
+  -o-border-image: url("/magica/resource/image_web/page/patrol/deck_wrap_select.png") 60 stretch;
+  border-image: url("/magica/resource/image_web/page/patrol/deck_wrap_select.png") 60 stretch;
+  pointer-events: none;
+  content: "";
+  pointer-events: none;
+  z-index: 1000;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .deckParts.select:after {
+  width: 132px;
+  height: 28px;
+  background: url("/magica/resource/image_web/page/patrol/btn_team_off.png") left bottom no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  content: "";
+  pointer-events: none;
+  z-index: 1000;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .deckParts.off:after {
+  width: 75px;
+  height: 79px;
+  background: url(/magica/resource/image_web/page/formation/icon_deck_wrap_off.png) left bottom no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: -webkit-calc(50% - 60px);
+  left: -webkit-calc(50% - 37px);
+  text-align: center;
+  content: "";
+  pointer-events: none;
+  z-index: 1000;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .deckParts.started .maskWrap .charaImg, #overlapContainer #PatrolDeck #deckArea #deckList ul li .deckParts.started .maskWrap .status {
+  -webkit-filter: brightness(0.7);
+  filter: brightness(0.7);
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .deckParts.started .maskWrap:after {
+  width: 80px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  top: 162px;
+  left: 30px;
+  content: "";
+  z-index: 100;
+  background: url("/magica/resource/image_web/page/formation/icon_chara_list_entry_3.png") left top no-repeat;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .maskWrap {
+  width: 142px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-mask: url(/magica/resource/image_web/page/formation/bg_deck_wrap_mask_top.png) left top no-repeat, url(/magica/resource/image_web/page/formation/bg_deck_wrap_mask_bottom.png) left bottom no-repeat, -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(0.03, rgba(0, 0, 0, 0)), color-stop(0.03, black), color-stop(0.97, black), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  mask: url(/magica/resource/image_web/page/formation/bg_deck_wrap_mask_top.png) left top no-repeat, url(/magica/resource/image_web/page/formation/bg_deck_wrap_mask_bottom.png) left bottom no-repeat, -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(0.03, rgba(0, 0, 0, 0)), color-stop(0.03, black), color-stop(0.97, black), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  pointer-events: none;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .maskWrap .charaImg {
+  width: 142px;
+  position: absolute;
+  top: -20px;
+  left: -webkit-calc(50% - 71px);
+  pointer-events: none;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .status {
+  width: 138px;
+  height: 178px;
+  padding: 40px 20px 0;
+  background: url("/magica/resource/image_web/page/patrol/bg_deck_wrap_status.png") left -2px top 47px no-repeat;
+  background-size: 104%;
+  position: absolute;
+  bottom: 2px;
+  left: 2px;
+  pointer-events: none;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .status #attribute {
+  position: absolute;
+  top: 53px;
+  left: 48px;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .status #level {
+  position: absolute;
+  top: 88px;
+  left: 30px;
+  width: 80px;
+  text-align: center;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .status #rare {
+  position: absolute;
+  top: 105px;
+  left: 0px;
+  width: 140px;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .status .charaStatus {
+  position: absolute;
+  top: 130px;
+  left: 10px;
+  width: 120px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .status .charaStatus .strength {
+  border-bottom: 2px solid #a47122;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .status .charaStatus .strength span:nth-child(2) {
+  display: inline-block;
+  width: 61px;
+  margin: 0 0 0 5px;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .status .charaStatus .episodeLevel span:nth-child(2) {
+  display: inline-block;
+  width: 12px;
+  margin: 0 0 0 5px;
+}
+
+#overlapContainer #PatrolDeck #deckArea #deckList ul li .bg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-width: 48px;
+  border-style: solid;
+  -webkit-border-image: url("/magica/resource/image_web/page/patrol/bg_deck_wrap_off.png") 60 stretch;
+  -o-border-image: url("/magica/resource/image_web/page/patrol/bg_deck_wrap_off.png") 60 stretch;
+  border-image: url("/magica/resource/image_web/page/patrol/bg_deck_wrap_off.png") 60 stretch;
+  pointer-events: none;
+}
+
+#overlapContainer #PatrolDeck #rightArea {
+  position: absolute;
+  top: -10px;
+  left: 758px;
+  width: 144px;
+  height: 290px;
+}
+
+#overlapContainer #PatrolDeck #rightArea #formationBtn {
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  width: 144px;
+  height: 40px;
+  background: url(/magica/resource/image_web/page/formation_2/btn_automatic.png) left top no-repeat;
+  background-size: contain;
+}
+
+#overlapContainer #PatrolDeck #rightArea #formationBtn.hover {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+#overlapContainer #PatrolDeck #rightArea #allRemoveBtn {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  width: 144px;
+  height: 40px;
+  background: url("/magica/resource/image_web/page/patrol/btn_teareset.png") left top no-repeat;
+}
+
+#overlapContainer #PatrolDeck #rightArea #allRemoveBtn.hover {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
+}
+
+#overlapContainer #PatrolDeck #rightArea #strengthArea {
+  position: absolute;
+  top: 98px;
+  left: 0;
+  width: 144px;
+}
+
+#overlapContainer #PatrolDeck #rightArea #strengthArea #goalStrength {
+  position: relative;
+  display: block;
+  width: 144px;
+  height: 90px;
+  padding: 23px 0 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+#overlapContainer #PatrolDeck #rightArea #strengthArea #goalStrength::before {
+  content: "";
+  display: block;
+  width: 144px;
+  height: 90px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url("/magica/resource/image_web/page/patrol/bg_teampower.png") left top no-repeat;
+}
+
+#overlapContainer #PatrolDeck #rightArea #strengthArea #goalStrength::after {
+  content: "総戦力値";
+  display: block;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+#overlapContainer #PatrolDeck #rightArea #strengthArea #goalStrength #mineStrengthNum {
+  position: relative;
+  color: #5b5b5b;
+}
+
+#overlapContainer #PatrolDeck #rightArea #strengthArea #goalStrength #expected {
+  position: absolute;
+  top: 66px;
+  right: 10px;
+  width: 50px;
+  height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+#overlapContainer #PatrolDeck #rightArea #strengthArea #goalStrength #expected::before {
+  content: "ドロップ期待度";
+  position: absolute;
+  top: -18px;
+  left: -90px;
+  display: block;
+  width: 120px;
+  color: #9148d6;
+  font-size: 13px;
+}
+
+#overlapContainer #PatrolDeck #rightArea #strengthArea #goalStrength #expected span {
+  display: block;
+  width: 16px;
+  height: 18px;
+  background: url("/magica/resource/image_web/page/patrol/icon_drop_off.png") left top no-repeat;
+}
+
+#overlapContainer #PatrolDeck #rightArea #strengthArea #goalStrength #expected.point1 span:nth-child(1) {
+  background: url("/magica/resource/image_web/page/patrol/icon_drop_on.png") left top no-repeat;
+}
+
+#overlapContainer #PatrolDeck #rightArea #strengthArea #goalStrength #expected.point2 span:nth-child(1), #overlapContainer #PatrolDeck #rightArea #strengthArea #goalStrength #expected.point2 span:nth-child(2) {
+  background: url("/magica/resource/image_web/page/patrol/icon_drop_on.png") left top no-repeat;
+}
+
+#overlapContainer #PatrolDeck #rightArea #strengthArea #goalStrength #expected.point3 span {
+  background: url("/magica/resource/image_web/page/patrol/icon_drop_on.png") left top no-repeat;
+}
+
+#overlapContainer #PatrolDeck #rightArea #battleBtn {
+  width: 98px;
+  height: 102px;
+  background: url(/magica/resource/image_web/page/formation/btn_main.png) left top no-repeat;
+  position: absolute;
+  left: 24px;
+  bottom: 0;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 102px;
+  text-align: center;
+  opacity: 1;
+  text-shadow: -1px -1px 2px #ff3359, 1px -1px 2px #ff3359, -1px 1px 2px #ff3359, 1px 1px 2px #ff3359, -1px -1px 2px #ff3359, 1px -1px 2px #ff3359, -1px 1px 2px #ff3359, 1px 1px 2px #ff3359;
+  -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+#overlapContainer #PatrolDeck #rightArea #battleBtn.touch {
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+}
+
+#overlapContainer #PatrolDeck #charaArea {
+  position: relative;
+  -webkit-transform: translateY(800px);
+  -ms-transform: translateY(800px);
+  transform: translateY(800px);
+}
+
+#overlapContainer #PatrolDeck #charaArea.on {
+  -webkit-transform: translateY(380px);
+  -ms-transform: translateY(380px);
+  transform: translateY(380px);
+}
+
+#overlapContainer #PatrolDeck #charaArea #charaListWrap {
+  position: absolute;
+  right: -40px;
+  bottom: -116px;
+}
+
+#overlapContainer #PatrolDeck #charaArea .formationCurrent {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -2;
+  order: -2;
+  display: block !important;
+}
+
+#overlapContainer #PatrolDeck #charaArea .startedPatrol {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+#overlapContainer #PatrolDeck #charaArea .formationRemove {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -3;
+  order: -3;
+}
+
+@-webkit-keyframes show {
+  0% {
+    -webkit-transform: translateY(-64%) translateX(-50%);
+    transform: translateY(-64%) translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-60%) translateX(-50%);
+    transform: translateY(-60%) translateX(-50%);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,120 @@
+<div id='SelectableGachaCharaSelect'>
+
+	<div id='mainBtn' class='se_decide TE'></div>
+
+	<div class='detailChangeBtn se_tabs TE'></div>
+	<div class='voiceBtn TE'></div>
+
+	<div id='charaDetailWrap'>
+		<% console.log('model',model) %>
+		<% if(model.defaultCard) { %>
+			<div id='rare' class='<%= model.defaultCard.rank %>'>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<div id='cv'>cv:<%= model.voiceActor %></div>
+			<div class='attribute'>
+				<span class='<%= model.defaultCard.attributeId %> type_f'></span>
+			</div>
+			<div id='name' class='ts_pink'><%= model.defaultCard.cardName %></div>
+			<div id='title' class='ts_pink'><%= model.title %></div>
+
+			<div id='charaDetail'>
+				<div id='serif'>「<%= model.charaMessageList[0].message %>」</div>
+				<div id='text' class='ts_white'><%= model.description.replace(/＠/g, '') %></div>
+			</div>
+			<div id='charaParameter'>
+				<div class='hp flexBox'>
+					<div class='dtElm'>HP</div>
+					<p class='value'><%= model.defaultCard.hp %></p>
+				</div>
+				<div class='atk flexBox'>
+					<div class="dtElm">ATK</div>
+					<p class='value'><%= model.defaultCard.attack %></p>
+				</div>
+				<div class='def flexBox'>
+					<div class="dtElm">DEF</div>
+					<p class='value'><%= model.defaultCard.defense %></p>
+				</div>
+				<div class='type flexBox'>
+					<div class="dtElm">タイプ</div>
+					<%
+						var typeText = {
+							'BALANCE' : 'バランス',
+							'ATTACK'  : 'アタック',
+							'DEFENSE' : 'ディフェンス',
+							'MAGIA'   : 'マギア',
+							'HEAL'    : 'ヒール',
+							'SUPPORT' : 'サポート',
+							'ULTIMATE': 'アルティメット',
+							'CIRCLE_MAGIA' : '円環マギア',
+							'CIRCLE_SUPPORT' : '円環サポート',
+							'EXCEED'  : 'エクシード',
+							'AKUMA'  : 'あくま',
+							'ARUTEMETTO'  : 'あるてぃめっと',
+							'INFINITE'  : 'インフィニット',
+							'MUGENDAI':'むげんだい',
+							'MYSTIC':'ミスティック',
+							'DEVIL':'悪魔',
+							'LASTCONNECT':'ラストコネクト',
+						}
+					%>
+					<p class='value'><%= typeText[model.initialType] %></p>
+				</div>
+				<ul class="commandList">
+					<li class='<%= model.defaultCard.commandType1 %>'></li>
+					<li class='<%= model.defaultCard.commandType2 %>'></li>
+					<li class='<%= model.defaultCard.commandType3 %>'></li>
+					<li class='<%= model.defaultCard.commandType4 %>'></li>
+					<li class='<%= model.defaultCard.commandType5 %>'></li>
+				</ul>
+				<div class='connect'>
+					<div class="flexBox">
+						<div class="dtElm long">コネクト</div>
+						<p class='title c_purple'><%= model.defaultCard.cardSkill.name %></p>
+					</div>
+					<p class='detail ts_white'><%= model.defaultCard.cardSkill.shortDescription %></p>
+				</div>
+				<div class='magia'>
+					<div class="flexBox">
+						<div class="dtElm long">マギア</div>
+						<p class='title c_purple'><%= model.defaultCard.cardMagia.name %></p>
+					</div>
+					<p class='detail ts_white'><%= model.defaultCard.cardMagia.shortDescription %></p>
+				</div>
+			</div>
+		<% } %>
+
+	</div>
+	<% if(model.defaultCard) { %>
+		<div id='charaImg'>
+			<img data-nativeimgkey='card_<%= model.defaultCard.cardId %>_l' data-src='resource/image_native/card/image/card_<%= model.defaultCard.cardId %>_l.png'>
+		</div>
+	<% } %>
+	<div id='charaBg'></div>
+</div>
+
+<script type="text/template" id="charaListTemp">
+	<div id="charaList">
+		<div id="charaListScrollWrap">
+			<ul id="charaListElms" class='list'></ul>
+		</div>
+	</div>
+</script>
+
+<script type="text/template" id="charaListParts">
+	<%="<% cardId = model.defaultCard.cardId %\>"%>
+	<%="<% att = 'att_' + model.defaultCard.attributeId.toLowerCase() %\>"%>
+	<%="<% star = 'star_' + model.defaultCard.rank.toLowerCase() %\>"%>
+	<%="<% frame = 'frame_' + model.defaultCard.rank.toLowerCase() %\>"%>
+	<%="<% bg = 'bg_' + model.defaultCard.attributeId.toLowerCase() %\>"%>
+
+	<span class='att' data-nativebgkey='<%="<%= att %\>"%>' data-src='resource/image_native/card/frame/<%="<%= att %\>"%>.png'></span>
+	<span class='star' data-nativebgkey='<%="<%= star %\>"%>' data-src='resource/image_native/card/frame/<%="<%= star %\>"%>.png'></span>
+	<span class='rank' data-nativebgkey='<%="<%= frame %\>"%>' data-src='resource/image_native/card/frame/<%="<%= frame %\>"%>.png'></span>
+	<img data-nativeimgkey='card_<%="<%= cardId %\>"%>_f' data-src='resource/image_native/card/image/card_<%="<%= cardId %\>"%>_f.png'>
+	<span class='bg' data-nativebgkey='<%="<%= bg %\>"%>' data-src='resource/image_native/card/frame/<%="<%= bg %\>"%>.png'></span>
+</script>

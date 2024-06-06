@@ -1,0 +1,83 @@
+<div class="getBonusWrap">
+	<% _.each(loginBonus[gameUser.loginBonusCount - 1].rewardList,function(items,index){
+		if(index < 1){ %>
+	<div class="loginBonusFrame">
+		<div class="dailyFrameTitle">ログインボーナス</div>
+		<p class="dailyListDays">Day<%= gameUser.loginBonusCount %></span></p>
+		<% if(period){ %>
+			<p class="dailyLimitDays"><%= period %></p>
+		<% } %>
+		<%
+			var type = (items.presentType === "GIFT") ? "gift" :
+					   (items.presentType.indexOf("PIECE") > -1) ? "piece" : "main";
+			var itemname = (items.presentType === "GIFT")  ? "item_gift_" + items.gift.id :
+					   	   (items.presentType === "RICHE") ? "riche" :
+					   	   (items.presentType === "ITEM") ? items.itemId.toLowerCase() :
+					   	   "memoria_"+items.piece.pieceId+"_s.png";
+		%>
+		<% if(type === "piece"){ %>
+			<img class="dailyItemImage" src='/magica/resource/image_web/memoria/<%= itemname %>'>
+		<% } else if(type === "gift"){ %>
+			<img class="dailyItemImage" data-nativeimgkey="<%= itemname %>" data-src="resource/image_native/gift/<%= itemname %>.png">
+		<% } else { %>
+			<img class="dailyItemImage" src="/magica/resource/image_web/item/<%= type %>/<%= itemname %>.png">
+		<% } %>
+		<span class="dailyQuantity ts_gold">×<%= items.quantity %></span>
+		<span class="dailyGetItem"><%= items.displayName %></span>
+		<div class="loginBonusArrow"></div>
+	</div>
+	<% }
+	}); %>
+	<% if(supportPoint !== null){ %>
+		<div class="loginBonusFrame supportFrame <%= helperAtt%>">
+			<div class="mostAttWrap"></div>
+			<div class="dailyFrameTitle">サポートボーナス</div>
+			<img class="dailyItemImage" src="/magica/resource/image_web/item/main/yell.png">
+			<span class="dailyQuantity ts_gold"><%= supportPoint %>Pt</span>
+			<span class="dailyGetItem">サポートPt</span>
+		</div>
+	<% } %>
+	<% if(gameUser.passportExpiredAt && Date.parse(currentTime) < Date.parse(gameUser.passportExpiredAt)){ %>
+		<div class="loginBonusFrame">
+			<div class="dailyFrameTitle">マギアパスポート</div>
+			<%
+				var left = Math.floor((Date.parse(gameUser.passportExpiredAt) - Date.parse(currentTime)) / 1000 / 60 / 60 / 24);
+			%>
+			<p class="dailyPassPort">残り<%= left %>日</span></p>
+			<img class="dailyItemImage" src="/magica/resource/image_web/item/main/money.png">
+			<span class="dailyQuantity ts_gold">×5</span>
+			<span class="dailyGetItem">マギアストーン</span>
+		</div>
+	<% } %>
+</div>
+<ul id="loginBonusItemWrap">
+	<% _.each(loginBonus,function(model,index){ %>
+		<li class="commonFrame3<% if(model.day <= gameUser.loginBonusCount){ %> recieved<% } %>">
+			<p class="listDays">Day<%= model.day %></span></p>
+			<% _.each(model.rewardList,function(reward,index2){
+				if(index2 < 1){ %>
+					<%
+						var dailyType = (reward.presentType === "GIFT") ? "gift" :
+								   (reward.presentType.indexOf("PIECE") > -1) ? "piece" : "main";
+						var dailyItemname = (reward.presentType === "GIFT")  ? "item_gift_" + reward.gift.id :
+								   	   (reward.presentType === "RICHE") ? "riche" :
+								   	   (reward.presentType === "ITEM") ? reward.itemId.toLowerCase() :
+								   	   "memoria_"+reward.piece.pieceId+"_s.png";
+					%>
+					<div class="loginRewardBox">
+						<% if(dailyType === "piece"){ %>
+							<img src='/magica/resource/image_web/memoria/<%= dailyItemname %>'>
+						<% } else if(dailyType === "gift"){ %>
+							<img data-nativeimgkey="<%= dailyItemname %>" data-src="resource/image_native/gift/<%= dailyItemname %>.png">
+						<% } else { %>
+							<img src="/magica/resource/image_web/item/<%= dailyType %>/<%= dailyItemname %>.png">
+						<% } %>
+						<span class="rewardQuantity ts_gold">×<%= reward.quantity %></span>
+					</div>
+				<% }
+			}); %>
+		</li>
+	<% }); %>
+</ul>
+<p class="loginBonusDescription c_gold">Day1から7日間経過すると次のログインボーナスに切り替わります</p>
+<div class="loginMessageWrap">ログインボーナスで貰ったアイテムは直接付与されます</div>

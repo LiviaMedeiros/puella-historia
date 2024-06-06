@@ -1,0 +1,113 @@
+<div id='PatrolDeck'>
+	<span class="closeBtn se_cancel TE"></span>
+	
+	<div id="titleArea">
+		<span id="title"><%= model.patrolArea.areaName %></span>
+		<%
+			var duration = model.patrolArea.duration;
+			var time = duration.substr(0,2)-0 + ":" + duration.substr(2,2) + ":" + duration.substr(4,2);
+		%>
+		<span id="duration">所要時間 <%= time %></span>
+	</div>
+
+	<div id="rewardArea">
+		<span id="rewardTitle" class="c_gold">報酬<span id="itemListBtn" class="TE se_decide"></span></span>
+		<div id="itemList">
+			<% _.forEach(rewardArr,function(txt,index){ %>
+				<% if(index < 8){ %>
+				<div class="commonItemImgWrap">
+					<%= txt %>
+				</div>
+				<% } %>
+			<% }) %>
+		</div>
+		<div id="other">
+			<span id="expArea"><span></span><%= model.patrolArea.cardExp %></span>
+			<span id="ccArea"><%= model.patrolArea.riche %></span>
+		</div>
+	</div>
+
+	<div id="deckArea">
+		<div id="deckTitle">
+			<span id="attribute"><span class="<%= model.patrolArea.forcesBonusAttributeId %>"></span></span>
+			<span class="leftText">戦力値</span>
+			<span class="centerText">パトロール編成</span>
+		</div>
+
+		<div id="deckList">
+			<ul id="deckDom">
+			</ul>
+		</div>
+
+		<div id="rightArea">
+			<span id="formationBtn" class="TE se_decide"></span>
+			<span id="allRemoveBtn" class="TE se_decide"></span>
+			<div id="strengthArea">
+				<span id="goalStrength">
+					<span id="mineStrengthNum"></span>
+					<span id="expected" class="point0"><span></span><span></span><span></span></span>
+				</span>
+			</div>
+			<span id="battleBtn" class="TE se_decide">決定</span>
+		</div>
+	</div>
+
+	<div id="charaArea">
+		
+	</div>
+
+</div>
+
+<!-- デッキ -->
+<script type="text/template" id="DeckTemp">
+
+	<%="<% if(typeof model !== 'undefined'){ %\>"%>
+	<div class='deckParts on charaClass<%="<%= model.charaId %\>"%>' data-charaid="<%="<%= model.charaId %\>"%>" data-charaatt="<%="<%= model.card.attributeId %\>"%>" data-index="<%="<%= index %\>"%>">
+	<%="<% }else{ %\>"%>
+	<div class="deckParts off" data-charaid="" data-charaatt="" data-index="<%="<%= index %\>"%>">
+	<%="<% } %\>"%>
+
+		<%="<% if(typeof model !== 'undefined'){ %\>"%>
+		<div class="maskWrap">
+			<%="<% if(img['card_' + model.displayCardId + '_v']) { %\>"%>
+			<%="<% var _img = ''; %\>"%>
+			<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+			<%="<% _img += img['card_' + model.displayCardId + '_v'] %\>"%>
+				<img class="charaImg" src='<%="<%= _img %\>"%>' alt=''>
+			<%="<% } else { %\>"%>
+				<img class="charaImg"
+					data-nativeimgkey='card_<%="<%= model.displayCardId %\>"%>_v'
+					data-src='resource/image_native/card/image/card_<%="<%= model.displayCardId %\>"%>_v.png' alt=''>
+			<%="<% } %\>"%>
+		
+			<div class="status">
+				<div id="attribute">
+					<span class="type_f <%="<%= model.card.attributeId %\>"%>"></span>
+				</div>
+		
+				<p id="level" class="ts_gold">Lv <%="<%= model.level %\>"%></p>
+		
+				<div id="rare" class="<%="<%= model.card.rank %\>"%>">
+					<%="<% var i = 0; %\>"%>
+					<%="<% var maxRare = model.maxRare || Number(model.card.rank.split('RANK_')[1]); %\>"%>
+					<%="<% while(i < maxRare) { %\>"%>
+						<span></span>
+					<%="<% 	i=(i+1)|0; %\>"%>
+					<%="<% } %\>"%>
+				</div>
+		
+				<div class="charaStatus">
+					<div class="strength"><span class="c_gold">戦力値</span><span class='<%="<% if(model.advantage){ %\>"%>c_red<%="<% } %\>"%>'><%="<%= model.patrolStrength %\>"%></span></div>
+					<div class="episodeLevel"><span class="c_gold">エピソードLv</span><span class=""><%="<%= model.episodeLevel %\>"%></span></div>
+				</div>
+		
+			</div>
+		</div>
+		<%="<% } %\>"%>
+
+		<div class="bg"></div>
+
+		<div class="bonusIcon "></div>
+
+	</div>
+</script>

@@ -1,0 +1,53 @@
+
+<% if(type === "CARD") { %>
+	<div class='userCharaIcon <%= model.card.rank %> <%= model.card.attributeId %>'>
+		<% att = 'att_' + model.card.attributeId.toLowerCase() %>
+		<% star = 'star_' + model.card.rank.toLowerCase() %>
+		<% frame = 'frame_' + model.card.rank.toLowerCase() %>
+		<% bg = 'bg_' + model.card.attributeId.toLowerCase() %>
+
+		<span class="att"
+		 data-nativebgkey='<%= att %>'
+		 data-src='resource/image_native/card/frame/<%= att %>.png'></span>
+
+		<span class="star"
+		 data-nativebgkey='<%= star %>'
+		 data-src='resource/image_native/card/frame/<%= star %>.png'></span>
+
+		<span class="rank"
+		 data-nativebgkey='<%= frame  %>'
+		 data-src='resource/image_native/card/frame/<%= frame  %>.png'></span>
+
+		<img data-nativeimgkey='card_<%= model.card.cardId  %>_f'
+		 data-src='resource/image_native/card/image/card_<%= model.card.cardId %>_f.png'>
+
+		<span class="bg"
+		 data-nativebgkey='<%= bg  %>'
+		 data-src='resource/image_native/card/frame/<%= bg %>.png'></span>
+	</div>
+<% } else if(type === "LIVE2D" || type === "DOPPEL") { %>
+	<div class="charaIcon">
+		<div class="maskWrap">
+			<img data-nativeimgkey="<%= model.nativeimgkey %>" data-src="<%= model.imagePath %>">
+		</div>
+	</div>
+<% } else if(type === "FORMATION_SHEET"){ %>
+	<% var sheet = model.formationSheet; %>
+	<div class="formationBase">
+		<div class="formationInner">
+			<% for(var i=1;i<10;i++){ %>
+			<div class="formation<%= i %> cols<% if(sheet["placeSkill"+i]){ %> on<% } %>"></div>
+			<% } %>
+		</div>
+	</div>
+<% } else { %>
+	<% if(model.nativeimgkey) { %>
+		<img class="commonItemImg" data-nativeimgkey="<%= model.nativeimgkey %>" data-src="<%= model.imagePath %>">
+	<% } else { %>
+	<img class="commonItemImg" src="<%= model.imagePath %>">
+	<% } %>
+
+	<% if(!isHideQuantity) { %>
+	<p class="quantity">×<%= model.quantity %></p>
+	<% } %>
+<% } %>

@@ -1,0 +1,55 @@
+<div id="PurchaseTop">
+	<div class="purchaseScrollOuter" id="purchaseScrollX">
+		マギアストーンの販売は終了いたしました。<br>
+		詳しくは以下のお知らせをご確認ください。<br>
+		<div class="cautionText">
+		・【重要】サービス終了のお知らせ<br>
+		・【重要】「有償マギアストーン」の払戻し手続きのお知らせ
+		</div>
+		<div id="PurchaseListWrap" class="purchaseScrollInner">
+		</div>
+	</div>
+	<span class="purchaseLawBtn se_decide sb_gold_01 TE"><span class="b_screen"></span>特定商取引法・資金決済法に関して</span>
+	<div class="purchasePopStoneWrap">
+		<span class="titleWrapStone ts_gold">合計</span>
+		<span id="purchasePopNum" class="pointWrap pointFrame"><%= money.totalMoney %></span>
+	</div>
+	<div class="purchasePopStoneWrap2">
+		<span class="titleWrapStone c_gold">有償</span>
+		<span id="stonePoint2"><%= money.userMoney %></span>
+	</div>
+	<div class="purchasePopFreeStoneWrap">
+		<span class="titleWrapStone c_gold">無償</span>
+		<span id="freeStonePoint"><%= money.presentedMoney %></span>
+	</div>
+</div>
+
+<script type="text/template" id="purchaseParts">
+	<%='<% var commonMoney = model.commonMoney; %\>'%>
+	<%='<% var addClass = ""; var addClass2 = ""; %\>'%>
+	<%='<% if(commonMoney.commonMoneyType === "ONCE"){%\>'%>
+		<%='<% if(commonMoney.startAt && commonMoney.endAt) { %\>'%>
+			<%='<% addClass = " ONCE2 small"; %\>'%>
+			<%='<% addClass2 = " LIMITED"; %\>'%>
+		<%='<% } else { %\>'%>
+			<%='<% addClass = " ONCE"; %\>'%>
+		<%='<% } %\>'%>
+	<%='<% }else if(commonMoney.commonMoneyType === "DAILY"){%\>'%>
+		<%='<% addClass = " " + commonMoney.commonMoneyType %\>'%>
+		<%='<% if(commonMoney.startAt && commonMoney.endAt) { %\>'%>
+			<%='<% addClass += " small"; %\>'%>
+			<%='<% addClass2 = " LIMITED"; %\>'%>
+		<%='<% } %\>'%>
+	<%='<% }else{ %\>'%>
+		<%='<% addClass = " " + commonMoney.commonMoneyType %\>'%>
+	<%='<% } %\>'%>
+	<div class="ribbonWrap<%='<%= addClass %\>'%>"></div>
+	<%='<% if(addClass2) { %\>'%>
+	<div class="ribbonWrap pos2 small<%='<%= addClass2 %\>'%>"></div>
+	<%='<% } %\>'%>
+	<div class="itemWrap"><img src="<%='<%= commonMoney.imagePath %\>'%>"></div>
+	<div class="nameWrap"><%='<%= commonMoney.name %\>'%></div>
+	<div class="descWrap c_gold"><%='<%= commonMoney.description %\>'%></div>
+	<div class="priceWrap"><p class="pointFrame">価格</p><br><%='<%= commonMoney.prefixUnit %\>'%><%='<%= dispNum %\>'%><span class="pointPostfix"><%='<%= commonMoney.postfixUnit %\>'%></span></div>
+	<div class="mb_pink purchaseConfirmBtn se_decide TE <%='<%= model.purchaseStatus %\>'%>"><span class="b_screen"></span>購入</div>
+</script>

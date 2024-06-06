@@ -1,0 +1,1378 @@
+@charset "UTF-8";
+#CharaEnhancementTree {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#CharaEnhancementTree.opening #pointData {
+  display: none !important;
+}
+
+#CharaEnhancementTree #debugScrollOuter {
+  width: 420px;
+  height: 490px;
+  overflow: hidden;
+  position: absolute;
+  top: 55px;
+  left: 300px;
+  z-index: 5;
+}
+
+#CharaEnhancementTree #debugScrollOuter .debugScrollInner {
+  width: 420px;
+  height: auto;
+  min-height: auto;
+}
+
+#CharaEnhancementTree #touchWrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 1;
+}
+
+#CharaEnhancementTree #changeChara {
+  width: 66px;
+  height: 66px;
+  background: url("/magica/resource/image_web/page/chara/tree/btn_chara_top.png") left top no-repeat;
+  position: absolute;
+  right: 12px;
+  bottom: 258px;
+  z-index: 2;
+}
+
+#CharaEnhancementTree #getListData {
+  position: absolute;
+  top: 64px;
+  right: -8px;
+  width: 614px;
+  height: 448px;
+  -webkit-box-sizing: border-box;
+  background-color: inherit;
+  border-color: inherit;
+  display: none;
+  text-align: center;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 0px;
+  -webkit-border-image: url("/magica/resource/image_web/page/chara/tree/bg_emotion_window.png") 10 stretch;
+  -o-border-image: url("/magica/resource/image_web/page/chara/tree/bg_emotion_window.png") 10 stretch;
+  border-image: url("/magica/resource/image_web/page/chara/tree/bg_emotion_window.png") 10 fill stretch;
+  text-shadow: none;
+  z-index: 902;
+}
+
+#CharaEnhancementTree #getListData.show {
+  display: block;
+  -webkit-animation: getListShow .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+}
+
+#CharaEnhancementTree #getListData.hide {
+  display: block;
+  -webkit-animation: getListHide .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+}
+
+#CharaEnhancementTree #getListData .getListTitle {
+  width: 265px;
+  height: 31px;
+  background: url("/magica/resource/image_web/page/chara/tree/title_emotion_02.png") left top no-repeat;
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+#CharaEnhancementTree #getListData #getListScrollOuter {
+  width: 572px;
+  height: 348px;
+  position: absolute;
+  top: 63px;
+  left: 10px;
+  overflow: hidden;
+}
+
+#CharaEnhancementTree #getListData #getListScrollOuter .getListScrollInner {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  padding-left: 8px;
+  position: relative;
+}
+
+#CharaEnhancementTree #getListData #getListScrollOuter .getListScrollInner .getWrap {
+  width: 564px;
+  height: 104px;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+#CharaEnhancementTree #getListData #getListScrollOuter .getListScrollInner .getWrap.skill {
+  background: url("/magica/resource/image_web/page/chara/tree/bg_skill.png") left top no-repeat;
+}
+
+#CharaEnhancementTree #getListData #getListScrollOuter .getListScrollInner .getWrap.ability {
+  background: url("/magica/resource/image_web/page/chara/tree/bg_ability.png") left top no-repeat;
+}
+
+#CharaEnhancementTree #getListData #getListScrollOuter .getListScrollInner .getWrap .artIcon {
+  width: 68px;
+  height: 68px;
+  position: absolute;
+  top: 18px;
+  left: 140px;
+}
+
+#CharaEnhancementTree #getListData #getListScrollOuter .getListScrollInner .getWrap .skillName {
+  width: 308px;
+  position: absolute;
+  top: 14px;
+  left: 220px;
+  text-align: left;
+  overflow: hidden;
+}
+
+#CharaEnhancementTree #getListData #getListScrollOuter .getListScrollInner .getWrap .skillDescription {
+  width: 308px;
+  height: 42px;
+  position: absolute;
+  bottom: 14px;
+  left: 220px;
+  text-align: left;
+  font-size: 15px;
+  overflow: hidden;
+}
+
+#CharaEnhancementTree #scaleChangePlus {
+  width: 70px;
+  height: 62px;
+  background: url("/magica/resource/image_web/page/chara/tree/btn_big_on.png") left top no-repeat;
+  position: absolute;
+  right: 10px;
+  bottom: 188px;
+  z-index: 2;
+}
+
+#CharaEnhancementTree #scaleChangePlus.off {
+  background: url("/magica/resource/image_web/page/chara/tree/btn_big_off.png") left top no-repeat;
+}
+
+#CharaEnhancementTree #scaleChangeMinus {
+  width: 70px;
+  height: 62px;
+  background: url("/magica/resource/image_web/page/chara/tree/btn_small_on.png") left top no-repeat;
+  position: absolute;
+  right: 10px;
+  bottom: 118px;
+  z-index: 2;
+}
+
+#CharaEnhancementTree #scaleChangeMinus.off {
+  background: url("/magica/resource/image_web/page/chara/tree/btn_small_off.png") left top no-repeat;
+}
+
+#CharaEnhancementTree #resetPosition {
+  width: 70px;
+  height: 62px;
+  background: url("/magica/resource/image_web/page/chara/tree/btn_navi.png") left top no-repeat;
+  position: absolute;
+  right: 10px;
+  bottom: 48px;
+  z-index: 2;
+}
+
+#CharaEnhancementTree #changeChara,
+#CharaEnhancementTree #scaleChangePlus,
+#CharaEnhancementTree #scaleChangeMinus,
+#CharaEnhancementTree #resetPosition {
+  -webkit-animation: pointWrapShow .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+}
+
+#CharaEnhancementTree #changeChara.hide,
+#CharaEnhancementTree #scaleChangePlus.hide,
+#CharaEnhancementTree #scaleChangeMinus.hide,
+#CharaEnhancementTree #resetPosition.hide {
+  -webkit-animation: pointWrapHide .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+}
+
+#CharaEnhancementTree #wrapOpen {
+  position: absolute;
+  -webkit-animation: wrapBtnOn .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+  top: 190px;
+  left: -38px;
+  z-index: 10;
+}
+
+#CharaEnhancementTree #wrapOpen.hide {
+  display: none;
+}
+
+#treeReset {
+  width: 100px;
+  height: 34px;
+  position: absolute;
+  bottom: 11px;
+  left: 15px;
+  background: url("/magica/resource/image_web/page/chara/tree/btn_reset_on.png") left top no-repeat;
+  z-index: 11;
+}
+
+#treeReset.off {
+  background: url("/magica/resource/image_web/page/chara/tree/btn_reset_off.png") left top no-repeat;
+}
+
+#treeReset.off:before {
+  width: 32px;
+  height: 42px;
+  position: absolute;
+  top: -4px;
+  left: 34px;
+  background: url("/magica/resource/image_web/page/chara/tree/icon_rock.png") left top no-repeat;
+  content: "";
+}
+
+#CharaEnhancementTree #footerCount {
+  width: 449px;
+  height: 36px;
+  position: absolute;
+  bottom: 0px;
+  right: -200px;
+  background: url("/magica/resource/image_web/page/chara/tree/footer_emotion_bg_a.png") left top no-repeat;
+  text-align: left;
+  line-height: 36px;
+  padding-left: 170px;
+  z-index: 10;
+}
+
+#CharaEnhancementTree #pointData {
+  width: 350px;
+  height: 476px;
+  position: absolute;
+  top: -webkit-calc(50% - 230px);
+  right: 0px;
+  background: url("/magica/resource/image_web/page/chara/tree/bg_emotion_window.png") left top no-repeat;
+  display: none;
+  z-index: 10;
+}
+
+#CharaEnhancementTree #pointData.show {
+  display: block;
+  -webkit-animation: pointWrapShow .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+}
+
+#CharaEnhancementTree #pointData.hide {
+  display: block;
+  -webkit-animation: pointWrapHide .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+}
+
+#CharaEnhancementTree #pointData .pointTitle {
+  background: url("/magica/resource/image_web/page/chara/tree/text_emotion.png") left top no-repeat;
+  width: 339px;
+  height: 26px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+#CharaEnhancementTree #pointData .pointDescription {
+  width: 321px;
+  height: 107px;
+  position: absolute;
+  left: 18px;
+  top: 46px;
+  z-index: 10;
+  background: url("/magica/resource/image_web/page/chara/tree/bg_window_title_c.png") left 50px no-repeat;
+  background-size: 321px -webkit-calc(100% - 55px);
+  -webkit-transition: height 0.3s 0s ease-in-out;
+  -o-transition: height 0.3s 0s ease-in-out;
+  transition: height 0.3s 0s ease-in-out;
+}
+
+#CharaEnhancementTree #pointData .pointDescription:before {
+  content: '';
+  background: url("/magica/resource/image_web/page/chara/tree/bg_window_title_t.png") left top no-repeat;
+  position: absolute;
+  top: 0;
+  width: 321px;
+  height: 50px;
+}
+
+#CharaEnhancementTree #pointData .pointDescription:after {
+  content: '';
+  background: url("/magica/resource/image_web/page/chara/tree/bg_window_title_b.png") left top no-repeat;
+  position: absolute;
+  bottom: 0;
+  width: 321px;
+  height: 10px;
+}
+
+#CharaEnhancementTree #pointData .pointDescription .descriptionTitle {
+  width: 223px;
+  text-align: center;
+  position: absolute;
+  top: 15px;
+  left: 71px;
+  color: #fff;
+}
+
+#CharaEnhancementTree #pointData .pointDescription .pointIcon {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 6px;
+  left: 4px;
+}
+
+#CharaEnhancementTree #pointData .pointDescription .descriptionText {
+  width: 216px;
+  height: 46px;
+  position: absolute;
+  top: 48px;
+  left: 84px;
+  overflow: hidden;
+  display: -webkit-box;
+  word-break: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  -webkit-transition: height 0.3s 0s ease-in-out;
+  -o-transition: height 0.3s 0s ease-in-out;
+  transition: height 0.3s 0s ease-in-out;
+}
+
+#CharaEnhancementTree #pointData .pointDescription .descriptionBtn.show {
+  width: 70px;
+  height: 40px;
+  background: url("/magica/resource/image_web/page/chara/tree/btn_frame_close.png") center center no-repeat;
+  position: absolute;
+  bottom: -25px;
+  right: 0px;
+  z-index: 1;
+}
+
+#CharaEnhancementTree #pointData .pointDescription .descriptionBtn.show.open {
+  background-image: url("/magica/resource/image_web/page/chara/tree/btn_frame_open.png");
+}
+
+#CharaEnhancementTree #pointData .pointDescription .descriptionParam {
+  width: 200px;
+  height: 22px;
+  line-height: 22px;
+  padding-left: 68px;
+  position: absolute;
+  top: 58px;
+  left: 90px;
+}
+
+#CharaEnhancementTree #pointData .pointDescription .descriptionParam:before {
+  width: 60px;
+  height: 20px;
+  padding: 0px 4px;
+  background-color: #b28750;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#CharaEnhancementTree #pointData .pointDescription .descriptionParam .prmVal {
+  font-size: 21px;
+  position: relative;
+}
+
+#CharaEnhancementTree #pointData .pointDescription .descriptionParam .prmVal:after {
+  width: 23px;
+  height: 18px;
+  position: absolute;
+  top: 2px;
+  right: -28px;
+  background: url("/magica/resource/image_web/page/chara/tree/arrow_02.png") left top no-repeat;
+  background-size: 23px 18px;
+  content: "";
+}
+
+#CharaEnhancementTree #pointData .pointDescription .descriptionDisk {
+  width: 200px;
+  height: 38px;
+  padding-left: 52px;
+  line-height: 38px;
+  position: absolute;
+  top: 53px;
+  left: 90px;
+}
+
+#CharaEnhancementTree #pointData .pointDescription .descriptionDisk:before {
+  width: 38px;
+  height: 38px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  content: '';
+}
+
+#CharaEnhancementTree #pointData .pointDescription .descriptionDisk .prmVal {
+  font-size: 21px;
+  position: relative;
+}
+
+#CharaEnhancementTree #pointData .pointDescription .descriptionDisk .prmVal:after {
+  width: 23px;
+  height: 18px;
+  position: absolute;
+  top: 2px;
+  right: -28px;
+  background: url("/magica/resource/image_web/page/chara/tree/arrow_02.png") left top no-repeat;
+  background-size: 23px 18px;
+  content: "";
+}
+
+#CharaEnhancementTree #pointData .pointDescription.hp .descriptionText,
+#CharaEnhancementTree #pointData .pointDescription.hp .descriptionDisk, #CharaEnhancementTree #pointData .pointDescription.atk .descriptionText,
+#CharaEnhancementTree #pointData .pointDescription.atk .descriptionDisk, #CharaEnhancementTree #pointData .pointDescription.def .descriptionText,
+#CharaEnhancementTree #pointData .pointDescription.def .descriptionDisk {
+  display: none;
+}
+
+#CharaEnhancementTree #pointData .pointDescription.accele .descriptionText,
+#CharaEnhancementTree #pointData .pointDescription.accele .descriptionParam, #CharaEnhancementTree #pointData .pointDescription.blast .descriptionText,
+#CharaEnhancementTree #pointData .pointDescription.blast .descriptionParam, #CharaEnhancementTree #pointData .pointDescription.charge .descriptionText,
+#CharaEnhancementTree #pointData .pointDescription.charge .descriptionParam {
+  display: none;
+}
+
+#CharaEnhancementTree #pointData .pointDescription.skill .descriptionParam,
+#CharaEnhancementTree #pointData .pointDescription.skill .descriptionDisk, #CharaEnhancementTree #pointData .pointDescription.ability .descriptionParam,
+#CharaEnhancementTree #pointData .pointDescription.ability .descriptionDisk {
+  display: none;
+}
+
+#CharaEnhancementTree #pointData .pointDescription.ability .pointIcon {
+  background: url("/magica/resource/image_web/page/chara/tree/icon_ability.png") left top no-repeat;
+}
+
+#CharaEnhancementTree #pointData .pointDescription.skill .pointIcon {
+  background: url("/magica/resource/image_web/page/chara/tree/icon_skill.png") left top no-repeat;
+}
+
+#CharaEnhancementTree #pointData .pointDescription.accele .pointIcon {
+  background: url("/magica/resource/image_web/page/chara/tree/icon_accele.png") left top no-repeat;
+}
+
+#CharaEnhancementTree #pointData .pointDescription.accele .descriptionDisk:before {
+  background: url("/magica/resource/image_web/common/chara/command_accele.png") left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#CharaEnhancementTree #pointData .pointDescription.blast .pointIcon {
+  background: url("/magica/resource/image_web/page/chara/tree/icon_blast.png") left top no-repeat;
+}
+
+#CharaEnhancementTree #pointData .pointDescription.blast .descriptionDisk:before {
+  background: url("/magica/resource/image_web/common/chara/command_blast.png") left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#CharaEnhancementTree #pointData .pointDescription.charge .pointIcon {
+  background: url("/magica/resource/image_web/page/chara/tree/icon_charge.png") left top no-repeat;
+}
+
+#CharaEnhancementTree #pointData .pointDescription.charge .descriptionDisk:before {
+  background: url("/magica/resource/image_web/common/chara/command_charge.png") left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#CharaEnhancementTree #pointData .pointDescription.hp .pointIcon {
+  background: url("/magica/resource/image_web/page/chara/tree/icon_hp.png") left top no-repeat;
+}
+
+#CharaEnhancementTree #pointData .pointDescription.hp .descriptionParam:before {
+  content: "HP";
+}
+
+#CharaEnhancementTree #pointData .pointDescription.atk .pointIcon {
+  background: url("/magica/resource/image_web/page/chara/tree/icon_atk.png") left top no-repeat;
+}
+
+#CharaEnhancementTree #pointData .pointDescription.atk .descriptionParam:before {
+  content: "ATK";
+}
+
+#CharaEnhancementTree #pointData .pointDescription.def .pointIcon {
+  background: url("/magica/resource/image_web/page/chara/tree/icon_def.png") left top no-repeat;
+}
+
+#CharaEnhancementTree #pointData .pointDescription.def .descriptionParam:before {
+  content: "DEF";
+}
+
+#CharaEnhancementTree #pointData .pointDescription.detail {
+  height: 156px;
+}
+
+#CharaEnhancementTree #pointData .pointDescription.detail .descriptionText {
+  display: block;
+  height: 96px;
+}
+
+#CharaEnhancementTree #pointData .pointRequire {
+  width: 270px;
+  height: 227px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  top: 160px;
+  left: 40px;
+}
+
+#CharaEnhancementTree #pointData .pointRequire .requireMaterial {
+  width: 78px;
+  height: 103px;
+  background: url("/magica/resource/image_web/page/chara/tree/bg_emotion_material.png") left top no-repeat;
+  margin: 0 6px 7px;
+  position: relative;
+}
+
+#CharaEnhancementTree #pointData .pointRequire .requireMaterial .itemImage {
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  top: 14px;
+  left: 12px;
+}
+
+#CharaEnhancementTree #pointData .pointRequire .requireMaterial .requireNum {
+  width: 88px;
+  height: 20px;
+  font-size: 14px;
+  position: absolute;
+  left: -5px;
+  bottom: 10px;
+  text-align: center;
+}
+
+#CharaEnhancementTree #pointData .pointRequire .requireMaterial .requireNum .nowHas {
+  font-size: 16px;
+  color: #fff;
+}
+
+#CharaEnhancementTree #pointData .pointRequire .requireMaterial .requireNum .nowHas.collected {
+  text-shadow: -1px -1px 1px #fa5181,
+ 1px -1px 1px #fa5181,
+ -1px 1px 1px #fa5181,
+ 1px 1px 1px #fa5181,
+ -1px -1px #fa5181,
+ 1px -1px #fa5181,
+ -1px 1px #fa5181,
+ 1px 1px #fa5181,
+ -1px -1px 2px #fa5181,
+ 1px -1px 2px #fa5181,
+ -1px 1px 2px #fa5181,
+ 1px 1px 2px #fa5181,
+ -1px -1px 2px #fa5181,
+ 1px -1px 2px #fa5181,
+ -1px 1px 2px #fa5181,
+ 1px 1px 2px #fa5181,
+ -1px -1px 3px #fa5181,
+ 1px -1px 3px #fa5181,
+ -1px 1px 3px #fa5181,
+ 1px 1px 3px #fa5181;
+}
+
+#CharaEnhancementTree #pointData .pannelFooter {
+  width: 341px;
+  height: 78px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: url("/magica/resource/image_web/page/chara/tree/bg_emotion_footer.png") left top no-repeat;
+}
+
+#CharaEnhancementTree #pointData .pannelFooter .needLess {
+  width: 100%;
+  height: 78px;
+  line-height: 78px;
+  text-align: center;
+}
+
+#CharaEnhancementTree #pointData .pannelFooter #pointRelease {
+  position: absolute;
+  bottom: 6px;
+  left: 82px;
+}
+
+#treeCharaData {
+  width: 252px;
+  height: 382px;
+  padding: 62px 0 0;
+  background: url("/magica/resource/image_web/page/chara/tree/bg_chara_data_emotion.png") left top no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1001;
+  -webkit-filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+}
+
+#treeCharaData.opening {
+  display: none !important;
+}
+
+#treeCharaData.showPopup {
+  z-index: 10010;
+}
+
+#treeCharaData.show {
+  -webkit-animation: chara_data_slide_in .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+}
+
+#treeCharaData.close {
+  -webkit-animation: chara_data_slide_out .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+}
+
+#treeCharaData.hide {
+  display: none !important;
+}
+
+#treeCharaData.equip .equipWrap {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#treeCharaData.equip .magiaLvWrap {
+  display: none;
+}
+
+#treeCharaData.popupOpen {
+  z-index: 10000;
+}
+
+#treeCharaData.equipIconShow .equipWrap .icon.on {
+  display: block;
+}
+
+#treeCharaData #wrapClose {
+  position: absolute;
+  top: -webkit-calc(50% - -3px);
+  right: -46px;
+  -webkit-transform: rotate(90deg);
+}
+
+#treeCharaData #wrapClose.hide {
+  display: none;
+}
+
+#treeCharaData .status {
+  position: absolute;
+  top: 232px;
+  left: 22px;
+}
+
+#treeCharaData .status li {
+  height: 20px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#treeCharaData .status li:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+#treeCharaData .status .thStyle,
+#treeCharaData .status .tdStyle {
+  font-size: 14px;
+  line-height: 20px;
+  text-shadow: 0 0;
+}
+
+#treeCharaData .status .thStyle {
+  width: 60px;
+  height: 20px;
+  background: #b28750;
+  color: #ffffff;
+  text-align: center;
+  -webkit-border-radius: 5px 0 0 5px;
+}
+
+#treeCharaData .status .tdStyle {
+  padding: 0 0 0 6px;
+}
+
+#treeCharaData .arrow {
+  width: 16px;
+  height: 20px;
+  margin: 0;
+  background: url("/magica/resource/image_web/page/chara/arrow.png") left top no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+}
+
+#treeCharaData #rare {
+  margin: 7px 0 8px -2px;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#treeCharaData #rare span {
+  width: 19px;
+  height: 19px;
+  margin: 0 -1px;
+}
+
+#treeCharaData #name {
+  height: 44px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  -webkit-flex-direction: column;
+  /* Safari */
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#treeCharaData #name .title {
+  font-size: 16px;
+}
+
+#treeCharaData #detailBtn {
+  width: 43px;
+  height: 36px;
+  background: url("/magica/resource/image_web/page/chara/tree/btn_chara_data.png") left top no-repeat;
+  display: block;
+  position: absolute;
+  top: 97px;
+  right: 0;
+}
+
+#treeCharaData #attribute {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 0;
+  display: block;
+  -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+#treeCharaData #attribute span {
+  width: 36px;
+  height: 36px;
+  background-size: 36px 36px;
+}
+
+#treeCharaData #lv {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 172px;
+  left: 22px;
+  -webkit-justify-content: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#treeCharaData #lv .before {
+  margin-left: 5px;
+}
+
+#treeCharaData #lv .sla {
+  margin: 0 -5px;
+}
+
+#treeCharaData #lv .arrow {
+  margin: 0 15px;
+}
+
+#treeCharaData #lv #currentLv,
+#treeCharaData #lv #afterLv {
+  font-size: 22px;
+}
+
+#treeCharaData #lv .hide {
+  display: none;
+}
+
+#treeCharaData #lv .lvMaxFlag {
+  width: 74px;
+  height: 22px;
+  margin-left: 40px;
+  background: url("/magica/resource/image_web/common/chara/lv_max.png") left top no-repeat;
+  display: none;
+}
+
+#treeCharaData #lv .lvMaxFlag.on {
+  display: inline-block;
+}
+
+#treeCharaData .expGaugeWrap {
+  position: absolute;
+  top: 204px;
+  left: 22px;
+}
+
+#treeCharaData .expGaugeWrap .expGaugeInner2 {
+  display: none;
+}
+
+#treeCharaData .revisionWrap,
+#treeCharaData .magiaLvWrap {
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#treeCharaData .revisionWrap .title,
+#treeCharaData .magiaLvWrap .title {
+  width: 85px;
+}
+
+#treeCharaData .moreDetailTitle {
+  width: 230px;
+  height: 27px;
+  background: url("/magica/resource/image_web/page/chara/tree/title_emotion_01.png") left top no-repeat;
+  position: absolute;
+  bottom: 51px;
+  left: 11px;
+}
+
+#treeCharaData #moreDetail {
+  width: 112px;
+  position: absolute;
+  bottom: 12px;
+  left: 74px;
+}
+
+/*------
+    richeWrap
+------*/
+#richeWrap {
+  width: 256px;
+  padding: 5px 10px 2px 4px;
+  position: fixed;
+  top: 390px;
+  left: -8px;
+  z-index: 1001;
+  display: none;
+}
+
+#richeWrap.opening {
+  display: none !important;
+}
+
+#richeWrap.show {
+  display: block;
+  -webkit-animation: chara_data_slide_in .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+}
+
+#richeWrap.onPopup {
+  display: none !important;
+}
+
+#richeWrap #riche {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#richeWrap #riche dt {
+  width: 97px;
+  height: 24px;
+  margin: 0 0 3px;
+  background: url("/magica/resource/image_web/page/chara/bg_riche.png") left top no-repeat;
+  color: #ffffff;
+  text-align: center;
+}
+
+#richeWrap #riche dd {
+  width: 140px;
+  height: 24px;
+  margin: 0 0 3px;
+  position: relative;
+  text-align: right;
+}
+
+#richeWrap #riche dd:before {
+  width: 22px;
+  height: 22px;
+  background: url("/magica/resource/image_web/page/chara/icon_cc.png") left top no-repeat;
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  content: "";
+}
+
+@-webkit-keyframes wrapBtnOn {
+  0% {
+    -webkit-transform: translate3d(-252px, 0, 0) rotate(90deg);
+    opacity: .3;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(90deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes chara_data_slide_in {
+  0% {
+    -webkit-transform: translate3d(-300px, 0, 0);
+    opacity: .3;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes chara_data_slide_out {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(-300px, 0, 0);
+    opacity: .0;
+  }
+}
+
+@-webkit-keyframes pointWrapShow {
+  0% {
+    -webkit-transform: translate3d(400px, 0, 0);
+    opacity: .3;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pointWrapHide {
+  0% {
+    -webkit-transform: translate3d(0px, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(400px, 0, 0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes getListShow {
+  0% {
+    -webkit-transform: translate3d(660px, 0, 0);
+    opacity: .3;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes getListHide {
+  0% {
+    -webkit-transform: translate3d(0px, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(660px, 0, 0);
+    opacity: 0;
+  }
+}
+
+#releaseConfirmMultiple .popupTextArea {
+  height: 260px !important;
+}
+
+#releaseConfirmMultiple #requireScroll {
+  width: 100%;
+  height: 118px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+#releaseConfirmMultiple #requireScroll .pointRequire {
+  min-height: 100%;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#releaseConfirmMultiple .multiCaution {
+  margin-top: 8px;
+  font-size: 16px;
+}
+
+#releaseConfirm .popupInner, #releaseConfirmMultiple .popupInner {
+  position: absolute;
+}
+
+#releaseConfirm .popupTitle, #releaseConfirmMultiple .popupTitle {
+  width: 370px;
+}
+
+#releaseConfirm .popupTextArea, #releaseConfirmMultiple .popupTextArea {
+  width: 450px;
+  height: 200px;
+  font-size: 20px;
+}
+
+#releaseConfirm .popupContent .popupInner .popupBtnArea td, #releaseConfirmMultiple .popupContent .popupInner .popupBtnArea td {
+  padding: 0 14px;
+}
+
+#releaseConfirm .pointRequire, #releaseConfirmMultiple .pointRequire {
+  width: 100%;
+  height: auto;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+#releaseConfirm .pointRequire .requireMaterial, #releaseConfirmMultiple .pointRequire .requireMaterial {
+  width: 60px;
+  height: 92px;
+  background: url("/magica/resource/image_web/page/chara/tree/bg_emotion_material.png") left top no-repeat;
+  background-size: 60px 92px;
+  margin: 0 7px 8px;
+  position: relative;
+}
+
+#releaseConfirm .pointRequire .requireMaterial .itemImage, #releaseConfirmMultiple .pointRequire .requireMaterial .itemImage {
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  top: 10px;
+  left: 3px;
+}
+
+#releaseConfirm .pointRequire .requireMaterial .requireNum, #releaseConfirmMultiple .pointRequire .requireMaterial .requireNum {
+  width: 76px;
+  height: 18px;
+  font-size: 14px;
+  position: absolute;
+  left: -8px;
+  bottom: 4px;
+  text-align: center;
+}
+
+#releaseConfirm .pointRequire .requireMaterial .requireNum .nowHas, #releaseConfirmMultiple .pointRequire .requireMaterial .requireNum .nowHas {
+  font-size: 14px;
+  color: #fff;
+}
+
+#releaseConfirm .pointRequire .requireMaterial .requireNum .nowHas.collected, #releaseConfirmMultiple .pointRequire .requireMaterial .requireNum .nowHas.collected {
+  text-shadow: -1px -1px 1px #fa5181,
+ 1px -1px 1px #fa5181,
+ -1px 1px 1px #fa5181,
+ 1px 1px 1px #fa5181,
+ -1px -1px #fa5181,
+ 1px -1px #fa5181,
+ -1px 1px #fa5181,
+ 1px 1px #fa5181,
+ -1px -1px 2px #fa5181,
+ 1px -1px 2px #fa5181,
+ -1px 1px 2px #fa5181,
+ 1px 1px 2px #fa5181,
+ -1px -1px 2px #fa5181,
+ 1px -1px 2px #fa5181,
+ -1px 1px 2px #fa5181,
+ 1px 1px 2px #fa5181,
+ -1px -1px 3px #fa5181,
+ 1px -1px 3px #fa5181,
+ -1px 1px 3px #fa5181,
+ 1px 1px 3px #fa5181;
+}
+
+.materialPopup .popupGiftWrap {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 0;
+  background: url("/magica/resource/image_web/page/chara/bg_gift_popup.png") left top no-repeat;
+  background-size: 80px 80px;
+  position: relative;
+}
+
+.materialPopup .popupGiftWrap .numWrap {
+  width: 100%;
+  position: absolute;
+  top: -10px;
+  font-size: 18px;
+  z-index: 10;
+}
+
+.materialPopup .popupGiftWrap .numWrap .ts_pink {
+  font-size: 20px;
+}
+
+.materialPopup .popupGiftWrap .giftImg {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -webkit-calc(50% - 40px);
+  left: -webkit-calc(50% - 40px);
+  z-index: 1;
+}
+
+.materialPopup .giftName {
+  margin: 8px 0 10px;
+  font-size: 20px;
+}
+
+.materialPopup .cantSetCaution {
+  font-size: 20px;
+}
+
+.materialPopup .popupBonusWrap {
+  height: 30px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.materialPopup .thStyle {
+  width: 112px;
+  height: 30px;
+  margin-right: 18px;
+  background: #b28750;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 30px;
+  -webkit-border-radius: 5px 0 0 5px;
+}
+
+#materialConfirm .popupInner {
+  position: absolute;
+}
+
+#materialConfirm .popupTitle {
+  width: 370px;
+}
+
+#materialConfirm .popupTextArea {
+  width: 450px;
+  height: 200px;
+  font-size: 20px;
+}
+
+#materialConfirm .popupContent .popupInner .popupBtnArea td {
+  padding: 0 14px;
+}
+
+#materialConfirm #giftWrapInner {
+  height: 92px;
+  margin: 0 0 15px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#materialConfirm #giftWrapInner .magiaCaution {
+  display: none;
+}
+
+#materialConfirm #giftWrapInner .giftWrap {
+  width: 60px;
+  height: 92px;
+  margin: 0 5px;
+  position: relative;
+}
+
+#materialConfirm #giftWrapInner .giftWrap .bg {
+  width: 100%;
+  height: 100%;
+  background: url("/magica/resource/image_web/page/chara/bg_magia_material.png") center center no-repeat;
+  background-size: 100% 100%;
+}
+
+#materialConfirm #giftWrapInner .giftWrap .hasNum,
+#materialConfirm #giftWrapInner .giftWrap .sla,
+#materialConfirm #giftWrapInner .giftWrap .needNum {
+  font-size: 18px;
+}
+
+#materialConfirm #giftWrapInner .giftWrap.off .bg,
+#materialConfirm #giftWrapInner .giftWrap.off .bonusWrap,
+#materialConfirm #giftWrapInner .giftWrap.off img {
+  opacity: .5;
+  -webkit-filter: grayscale(100%);
+}
+
+#materialConfirm #giftWrapInner .giftWrap img {
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  top: -webkit-calc(50% - 35px);
+  left: -webkit-calc(50% - 27px);
+  z-index: 1;
+}
+
+#materialConfirm #giftWrapInner .giftWrap .numWrap {
+  width: 100%;
+  position: absolute;
+  bottom: 5px;
+  text-align: center;
+  z-index: 10;
+}
+
+#materialConfirm #giftWrapInner .giftWrap .numWrap .ts_gold {
+  font-size: 14px;
+}
+
+#materialConfirm #giftWrapInner .giftWrap .numWrap .ts_pink {
+  font-size: 16px;
+}
+
+#materialConfirm #giftWrapInner .giftWrap .numWrap,
+#materialConfirm #giftWrapInner .giftWrap .numWrap span {
+  color: #ffffff;
+}
+
+#baseContainer.fadeout #treeCharaData, #baseContainer.fadeout #richeWrap {
+  display: none;
+}
+
+#popupConfirmCurtain {
+  width: 1500px;
+  height: -webkit-calc(100% + 200px);
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 750px);
+  z-index: 10000;
+}
+
+#popupConfirmCurtain.show {
+  display: block;
+}
+
+#globalMenuContainer {
+  width: 100%;
+  position: absolute;
+  z-index: 1005 !important;
+}
+
+.popupEnhanceReset .popupTextArea .resetCaution {
+  font-size: 18px;
+}
+
+.popupEnhanceReset .popupTextArea .resetItem {
+  position: absolute;
+  bottom: 120px;
+  width: 200px;
+  font-size: 18px;
+  left: 312px;
+  text-align: left;
+}
+
+.popupEnhanceReset .popupTextArea .resetItem .hasIcons:before {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 80px;
+  height: 24px;
+  padding-left: 40px;
+  line-height: 24px;
+  content: "所持";
+  color: #fff;
+  display: block;
+}
+
+.popupEnhanceReset .popupTextArea .resetItem .hasIcons img {
+  position: absolute;
+  left: 3px;
+  top: -8px;
+  width: 36px;
+  height: 36px;
+}
+
+.popupEnhanceReset .popupTextArea .resetItem .itemCount {
+  width: 108px;
+  height: 24px;
+  line-height: 24px;
+  text-align: right;
+  position: absolute;
+  top: 0px;
+  left: 80px;
+}

@@ -1,0 +1,73 @@
+<%
+	var deck = [];
+	var _deck = model.userDeck;
+	var _card = model.userCardList;
+	for(var i=1;i<10;i++){
+		var searchName1 = "questPositionId"+i;
+		var searchName2 = "userCardId"+i;
+		var position    = _deck[searchName1];
+		var card        = _.findWhere(_card,{id:_deck[searchName2]});
+		if(position && card){
+			deck[position] = card;
+		}
+	}
+%>
+<%
+	var battleType = "arenaRankMatch";
+%>
+<div id="opponentPopup" class="<%= battleType %> <%= model.pageType %>">
+	<style class="popupStyle"></style>
+	<div class="closeBtn se_cancel TE"><span class="b_screen"></span></div>
+	<div id="confirmFormation">
+		<% for(var i=1;i<10;i++){ %>
+			<% if(model.userDeck.formationSheet["placeSkill"+i]){ %>
+		<div class="formationCols col<%= i %> on">
+			<% if(deck[i]){ %>
+				<% var cardData = deck[i]; %>
+				<div class="userCharaIcon <%= cardData.card.rank %> <%= cardData.card.attributeId %>">
+					<% att = 'att_' + cardData.card.attributeId.toLowerCase(); %>
+					<% star = 'star_' + cardData.card.rank.toLowerCase(); %>
+					<% frame = 'frame_' + cardData.card.rank.toLowerCase(); %>
+					<% bg = 'bg_' + cardData.card.attributeId.toLowerCase(); %>
+					<span class="att" data-nativebgkey='<%= att %>' data-src='resource/image_native/card/frame/<%= att %>.png'></span>
+					<span class="star" data-nativebgkey='<%= star %>' data-src='resource/image_native/card/frame/<%= star %>.png'></span>
+					<span class="rank" data-nativebgkey='<%= frame %>' data-src='resource/image_native/card/frame/<%= frame %>.png'></span>
+					<img data-nativeimgkey='card_<%= cardData.displayCardId %>_f' data-src='resource/image_native/card/image/card_<%= cardData.displayCardId %>_f.png'>
+					<span class="lv"><span><%= cardData.level %></span></span>
+					<span class="bg" data-nativebgkey='<%= bg %>' data-src='resource/image_native/card/frame/<%= bg %>.png'></span>
+				</div>
+			<% } %>
+			<% var effectArr = []; %>
+			<div class="formationEffect">
+				<% effectArr[i] = model.userDeck.formationSheet['placeSkill'+i]; %>
+				<% if(effectArr[i].art1) { %>
+					<% formationAtt = effectArr[i].viewAttributeId.toLowerCase(); %>
+					<img class="attIcon" src='/magica/resource/image_web/common/chara/att_<%= formationAtt %>.png' >
+					<div class="effective">
+					</div>
+				<% } %>
+			</div>
+		</div>
+			<% } %>
+		<% } %>
+	</div>
+	<div class="formationArrow"></div>
+	<div id="confirmRight">
+		<div class="confirmHeader"></div>
+		<%if (model.displayTitle) { %>
+			<div class="userTitle_s <%= model.displayTitle.font %>">
+				<div id="targetTitleText" class="userTitleText"><%= model.displayTitle.name %></div>
+				<img id="targetTitleBg" class="userTitleBg" src="/magica/resource/image_web/common/grade/<%= model.displayTitle.baseImage %>.png">
+			</div>
+		<% } %>
+		<div class="confirmLvWrap">Rank<%= model.userRank %></div>
+		<div class="confirmNameWrap arenaColor"><%= _.escape(model.userName) %></div>
+		<div class="confirmPoint arenaColor ranking"><%= model.rankMatchRank %>位</div>
+		<div class="confirmPower arenaColor"><%= model.userRatingPoint %></div>
+		<div class="confirmFormation arenaColor"><%= model.userDeck.formationSheet.name %></div>
+		<div id="battleStartBtn" class="se_kettei02 TE"><span class="b_screen"></span></div>
+		<div class="leaderImage">
+			<img data-nativeimgkey='card_<%= model.leaderUserCard.displayCardId %>_m' data-src='resource/image_native/card/image/card_<%= model.leaderUserCard.displayCardId %>_m.png'>
+		</div>
+	</div>
+</div>

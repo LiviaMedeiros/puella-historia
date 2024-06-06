@@ -1,0 +1,174 @@
+<div class="announceList">
+
+	<div id="announceBannerArea" class="announceScroll1">
+		<div class="scrollBar">
+		<%
+			// スタートダッシュキャンペーン
+			if(addShow.startDashCampaign){
+		%>
+			<div class="pickUpEvent TE startDashCp titleList se_decide" data-newsId="<%= addShow.startDashCampaignContent.campaignNewsId %>">
+				<div class="bannerText pointFrame">▼&nbsp;開催期限：<%= addShow.startDashCampaignContent.endDate %>まで&nbsp;▼</div>
+				<!-- <img src="addShow.startDashCampaignContent.bannerImgPath"> -->
+				<img src="/magica/resource/image_web/banner/announce/banner_0500_m.png">
+			</div>
+		<% } %>
+		<% _.forEach(banner,function(model,index){ %>
+			<%
+				var endAt   = model.endAt.replace(/-/g,"\/");
+				var startAt = model.startAt.replace(/-/g,"\/");
+				if(model.showAnnounce && Date.parse(endAt) > Date.parse(currentTime) && Date.parse(startAt) < Date.parse(currentTime)){
+			%>
+			<div class="pickUpEvent <% if(model.bannerLink && readDay < Infinity){ %> popupCloseBtn TE bannerLinkBtn se_decide<% }else if(model.announcementId){ %> bannerAnnounce TE se_decide<% }else if(model.outerBannerLink){ %>outerLink TE se_decide<% } %>"<% if(model.bannerLink){ %> data-href="<%= model.bannerLink %>"<% }else if(model.announcementId){ %> data-newsId="<%= model.announcementId %>"<% }else if(model.outerBannerLink){ %> data-outlink="<%= model.outerBannerLink %>"<% } %>>
+				<% if(model.bannerText){ %><div class="bannerText pointFrame">▼&nbsp;<%= model.bannerText %>&nbsp;▼</div><% } %>
+				<img src="<%= model.imagePath %>_m.png">
+			</div>
+			<% } %>
+		<% }); %>
+		<% if(addShow.startDashGacha) { %>
+			<div class="pickUpEvent TE linkBtn se_decide" data-href="#/GachaTop/STARTDASH">
+				<img src="/magica/resource/image_web/banner/announce/banner_0119_m.png">
+			</div>
+		<% } if(addShow.startDashGachaMemoria) { %>
+			<div class="pickUpEvent TE linkBtn se_decide" data-href="#/GachaTop/STARTDASH_MEMORIA">
+				<img src="/magica/resource/image_web/banner/gacha/gachabanner_0730_m.png">
+			</div>
+		<% } if(addShow.passport) { %>
+			<div class="pickUpEvent TE announcePassport se_decide">
+				<img src="/magica/resource/image_web/banner/common/banner_purchase_001_1_a.png">
+			</div>
+		<%
+			}
+		%>
+		</div>
+	</div>
+	<ul id="announceTab" class="common_tab t_pink">
+		<li class="TE se_tabs announceBtn NEW<% if(newFlg.indexOf("NEW") > -1){ %> newIcon<% } %>" data-category="NEW"><span>お知らせ</span><div class="newMark"></div></li>
+		<li class="TE se_tabs announceBtn MNT<% if(newFlg.indexOf("MNT") > -1){ %> newIcon<% } %>" data-category="MNT"><span>メンテナンス</span><div class="newMark"></div></li>
+		<li class="TE se_tabs announceBtn UPD<% if(newFlg.indexOf("UPD") > -1){ %> newIcon<% } %>" data-category="UPD"><span>アップデート</span><div class="newMark"></div></li>
+	</ul>
+	<div class="announceScroll2" id="newsScrollWarp">
+		<ul class="announceTitle scrollBar">
+		<%
+			// 負荷軽減用変数
+			var moreDispFlg  = false;
+			var countN = countM = countU = countF = 0;
+
+			_.forEach(model,function(txt,index){
+				if(!txt.subject) return;
+
+				// 端末限定お知らせかチェック
+				if(txt.displayOs && txt.displayOs !== "ALL"){
+					if(txt.displayOs !== userAgent) return;
+				}
+
+				// iOS対策
+				var endAt   = txt.endAt.replace(/-/g,"\/");
+				var startAt = txt.startAt.replace(/-/g,"\/");
+
+				//比較用にパース
+				var parseCurrent = Date.parse(currentTime);
+				var parseEndAt   = Date.parse(endAt);
+				var parseStartAt = Date.parse(startAt);
+
+				// 掲載期間中か判断
+				if(parseEndAt < parseCurrent || parseStartAt > parseCurrent) return;
+
+				// 3ヶ月前まで表示
+				if(parseStartAt + 7776000000 < parseCurrent) return;
+
+				// 日付表示用
+				var dispDate = txt.startAt.split("-");
+
+				// iOS用DOM多すぎ対策
+				var addClass = "";
+				switch(txt.category){
+					case "NEW" :
+						countN++;
+						if(countN === 31){
+							moreDispFlg = true;
+						}
+						if(countN >= 31){
+							addClass = " notFirstView";
+						}
+						break;
+					case "MNT" :
+						countM++;
+						if(countM === 31){
+							moreDispFlg = true;
+						}
+						if(countM >= 31){
+							addClass = " notFirstView";
+						}
+						break;
+					case "UPD" :
+						countU++;
+						if(countU === 31){
+							moreDispFlg = true;
+						}
+						if(countU >= 31){
+							addClass = " notFirstView";
+						}
+						break;
+				}
+		%>
+			<li class="commonFrame4 se_decide titleList <%= txt.category %><%= addClass %><% if(Date.parse(startAt) > readDay){ %> newIcon<% } %>" data-newsId="<%= txt.id %>">
+				<span class="announceDate">
+					<div class="newMark"></div>
+					<span class="dates c_gold"><%= Number(dispDate[1]) %>/<%= Number(dispDate[2].split(" ")[0]) %></span>
+				</span>
+				<span class="announceMultiLine"><%= txt.subject%></span>
+			</li>
+			<%
+				// 続き表示ボタン
+				if(moreDispFlg){
+					moreDispFlg = false;
+			%>
+				<li class="commonFrame4 se_decide andMoreBtn more<%= txt.category %>">
+					<span>さらに続きを表示</span>
+				</li>
+			<% 	} %>
+		<%
+			})
+		%>
+		</ul>
+	</div>
+	<div class="announceRightBg commonFrame2"></div>
+</div>
+
+<div class="announceText none">
+	<div class="announceScroll3">
+		<div id="scrollTextWrap">
+			<ul class="newsField scrollBar">
+				<li class="newsTitle announceTextsTitle commonFrame4" id="announceTitle">
+					<span id="categoryBanner"></span>
+					<span class="announceMultiLine"></span>
+					<span id="innerDate" class="c_gold"></span>
+				</li>
+				<li class="newsTextField serifFont"></li>
+				<li><span class="newsClose btn b_white TE se_cancel"><span class="b_screen"></span>戻る</span></li>
+			</ul>
+		</div>
+	</div>
+	<div id="announceLeftImage"></div>
+	<div id="announceRightImage"></div>
+</div>
+
+<% if (window.isBrowser) { %>
+<div class="debugBtn sb_gold_01 TE se_decide" style="position:absolute;left:0px;top:0px;z-index:10;">debug</div>
+<div class="announceDebug none">
+	<textarea id="taTitle" placeholder="題名" class="commonFrame3" style="height: 10px;width: 900px;margin-top: 40px;font-size: 16px;"></textarea><br>
+	<textarea id="taText" placeholder="本文" class="commonFrame3" style="height: 330px;width: 900px;margin-top: 10px;font-size: 16px;"></textarea><br>
+
+	<span class="TE debugCloseBtn btn b_white se_decide">
+		<span class="b_screen"></span>
+		キャンセル
+	</span>
+
+	<span class="TE debugOpenBtn btn b_pink se_decide" style="margin-left: 30px;">
+		<span class="b_screen"></span>
+		OK
+	</span>
+
+	<span class="TE debugClearBtn sb_gold_01 se_decide" style="position: absolute;right: 50px;">クリア</span>
+</div>
+<% } %>

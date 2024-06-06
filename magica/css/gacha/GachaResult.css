@@ -1,0 +1,1004 @@
+#globalBackBtn {
+  display: none;
+}
+
+.bonusRewardWrap {
+  position: relative;
+  width: 1024px;
+  height: 100%;
+  z-index: 1000;
+}
+
+.bonusRewardWrap.iPhoneX {
+  width: 1280px;
+}
+
+.bonusRewardWrap.hide {
+  display: none;
+}
+
+.bonusRewardWrap #bonusRewardWrap {
+  width: 730px;
+  height: 246px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -webkit-calc(50% - 123px);
+  left: -webkit-calc(50% - 365px);
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-animation: bonusRewardWrapOpen .5s ease 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.bonusRewardWrap #bonusRewardWrap .commonItemImgWrap {
+  position: relative;
+  margin: 10px;
+}
+
+.bonusRewardWrap #bonusRewardWrap .commonItemImgWrap img {
+  width: 120px;
+}
+
+.bonusRewardWrap #bonusRewardWrap .commonItemImgWrap .quantity {
+  position: absolute;
+  color: #fff;
+  bottom: 0;
+  font-size: 20px;
+  right: 5px;
+  text-shadow: 1px 0px 2px #504432, -1px 0px 2px #504432, 0px 1px 2px #504432, 0px -1px 2px #504432, 1px 1px 2px #504432, -1px 1px 2px #504432, 1px -1px 2px #504432, -1px -1px 2px #504432;
+}
+
+.bonusRewardWrap.close #bonusRewardWrap {
+  -webkit-animation: bonusRewardWrapClose .5s ease 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.bonusRewardWrap #bonusRewardCautionWrap {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.bonusRewardWrap #bonusRewardCautionWrap.hide {
+  display: none;
+}
+
+.bonusRewardWrap #bonusRewardCautionWrap .caution {
+  position: absolute;
+  bottom: 114px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.bonusRewardWrap #bonusRewardCautionWrap .touch_screen {
+  width: 242px;
+  height: 32px;
+  background: url("/magica/resource/image_web/page/arena/result/touch_screen.png") left top no-repeat;
+  position: absolute;
+  bottom: 44px;
+  left: -webkit-calc(50% - 121px);
+  -webkit-animation: tocuhScreen 1.333s ease 0s infinite normal;
+  opacity: 0;
+}
+
+@-webkit-keyframes bonusRewardWrapOpen {
+  0% {
+    -webkit-transform: scale(1, 0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bonusRewardWrapClose {
+  0% {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes tocuhScreen {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#GachaResult {
+  height: 100%;
+  padding-top: 88px;
+}
+
+#GachaResult #gachaCountWrap {
+  position: absolute;
+  bottom: 18px;
+  left: 0;
+  min-height: 64px;
+  z-index: 100;
+}
+
+#GachaResult #gachaCountWrap .countWrap {
+  position: relative;
+  margin-top: 5px;
+  display: -webkit-flex-grow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+#GachaResult #gachaCountWrap .countWrap p {
+  padding-right: 15px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: right;
+  width: 100%;
+}
+
+#GachaResult #gachaCountWrap .countWrap img {
+  position: absolute;
+  left: 4px;
+  top: -1px;
+}
+
+#GachaResult #gachaCountWrap #gachaGroupCountWrap {
+  width: 271px;
+  height: 43px;
+  background: url("/magica/resource/image_web/page/gacha/bg_gacha_fixed_02.png") left top no-repeat;
+}
+
+#GachaResult #gachaCountWrap #gachaGroupCountWrap p {
+  padding-top: 15px;
+}
+
+#GachaResult #gachaCountWrap #freebieCountWrap {
+  width: 270px;
+  height: 28px;
+  background: url("/magica/resource/image_web/page/gacha/gacha_coin_wrap.png") left top no-repeat;
+}
+
+#GachaResult #headWrapper {
+  position: absolute;
+  z-index: 1000;
+}
+
+#GachaResult #hasMemoriaNum {
+  width: 258px;
+  height: 28px;
+  background: url("/magica/resource/image_web/page/gacha/total_memoria_base.png");
+  position: fixed;
+  right: 0px;
+  bottom: 17px;
+}
+
+#GachaResult #hasMagicGirlNum {
+  width: 258px;
+  height: 28px;
+  background: url("/magica/resource/image_web/page/gacha/total_chara_base.png");
+  position: fixed;
+  right: 0px;
+  bottom: 50px;
+}
+
+#GachaResult #hasMemoriaNum .title, #GachaResult #hasMagicGirlNum .title {
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  color: #ffffff;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+#GachaResult #hasMemoriaNum .nums, #GachaResult #hasMagicGirlNum .nums {
+  position: absolute;
+  top: 0px;
+  right: 13px;
+  line-height: 28px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+#GachaResult .listWrap {
+  width: 100%;
+  height: 576px;
+  padding-bottom: 20px;
+  position: absolute;
+  top: -webkit-calc(50% - 218px);
+  left: 0;
+  z-index: 2;
+}
+
+#GachaResult .listWrap #cardWrap {
+  width: 716px;
+  height: 410px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild {
+  width: 120px;
+  height: 182px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap {
+  width: 56px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet {
+  background: url("/magica/resource/image_web/item/main/item_bg.png") left center no-repeat;
+  background-size: 56px 56px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  background-color: #4d4462;
+  position: absolute;
+  top: -webkit-calc(50% - 25px);
+  left: -webkit-calc(50% - 25px);
+  border-radius: 5px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner {
+  width: 40px;
+  height: 40px;
+  background-color: #736080;
+  position: relative;
+  border-radius: 5px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols {
+  width: 10px;
+  height: 10px;
+  background-color: #736080;
+  position: absolute;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.on {
+  background-color: #f4e0ca;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation1, #GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation4, #GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation7 {
+  top: 27px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation2, #GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation5, #GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation8 {
+  top: 15px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation3, #GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation6, #GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation9 {
+  top: 3px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation1, #GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation2, #GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation3 {
+  left: 3px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation4, #GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation5, #GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation6 {
+  left: 15px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation7, #GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation8, #GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation9 {
+  left: 27px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.live2d {
+  background: url("/magica/resource/image_web/item/main/live2d.png") left center no-repeat;
+  background-size: 56px 56px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap.doppel {
+  background: url("/magica/resource/image_web/item/main/doppel.png") left center no-repeat;
+  background-size: 56px 56px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap .commonItemImg {
+  width: 56px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap .quantity {
+  position: absolute;
+  color: #fff;
+  text-shadow: -1px -1px 1px #8a5f29, 1px -1px 1px #8a5f29, -1px 1px 1px #8a5f29, 1px 1px 1px #8a5f29, -1px -1px #8a5f29, 1px -1px #8a5f29, -1px 1px #8a5f29, 1px 1px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 3px #8a5f29, 1px -1px 3px #8a5f29, -1px 1px 3px #8a5f29, 1px 1px 3px #8a5f29;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap .charaIcon {
+  width: 58px;
+  height: 52px;
+  position: absolute;
+  bottom: 5px;
+  right: -12px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap .charaIcon:before {
+  width: 58px;
+  height: 52px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 29px);
+  background: url("/magica/resource/image_web/common/chara/chara_frame_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  z-index: 100;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap .charaIcon:after {
+  width: 58px;
+  height: 52px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 29px);
+  background: url("/magica/resource/image_web/common/chara/chara_base_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  z-index: 80;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap .charaIcon .maskWrap {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 26px);
+  z-index: 90;
+  overflow: hidden;
+  border-radius: 26px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap .charaIcon .maskWrap img {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 30px);
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap {
+  top: initial;
+  left: initial;
+  height: 56px;
+  right: -10px;
+  bottom: 1px;
+  z-index: 105;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .commonItemImgWrap .quantity {
+  bottom: -3px;
+  right: 0;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .resultImage:not(.item) {
+  width: 120px;
+  height: 182px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .resultImage.item {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -webkit-calc(50% - 40px);
+  left: -webkit-calc(50% - 40px);
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .typeWrap {
+  width: 128px;
+  height: 26px;
+  position: absolute;
+  top: 169px;
+  left: -4px;
+  z-index: 105;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .typeWrap.PIECE {
+  background: url("/magica/resource/image_web/page/gacha/tag_memoria_s.png");
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .typeWrap.CARD {
+  background: url("/magica/resource/image_web/page/gacha/tag_chara_s.png");
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .typeWrap.ITEM {
+  background: url("/magica/resource/image_web/page/gacha/tag_jem_s.png");
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .itemWrap {
+  width: 75px;
+  height: 82px;
+  display: none;
+  position: absolute;
+  right: -22px;
+  bottom: 0;
+  z-index: 106;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .itemWrap img {
+  width: 75px;
+  height: 82px;
+  -webkit-animation: brightAnim 3s linear 0s infinite normal;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .itemWrap.on {
+  display: block;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .itemWrap.up {
+  bottom: 52px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .itemFrame {
+  width: 120px;
+  height: 182px;
+  background-size: 120px 182px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .autoSale {
+  background: url("/magica/resource/image_web/page/gacha/gacha_result_auto_sell.png") left center no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 101;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .autoSale .price {
+  position: absolute;
+  left: 50px;
+  top: 93px;
+  font-size: 16px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .autoSale .price:after {
+  content: "";
+  background: url("/magica/resource/image_web/common/icon/icon_cursechip.png") left center no-repeat;
+  background-size: 22px 20px;
+  position: absolute;
+  left: -30px;
+  top: 2px;
+  width: 22px;
+  height: 20px;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .newMark.on {
+  width: 57.6px;
+  height: 20.8px;
+  background-image: url("/magica/resource/image_web/page/gacha/gacha_new.png");
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  -webkit-animation: brightAnim 4s linear 0s infinite normal;
+  z-index: 102;
+}
+
+#GachaResult .listWrap #cardWrap .cardChild .specialCharaName {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  color: #fff;
+  font-size: 10px;
+  bottom: 11px;
+  opacity: 0.6;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .specialCharaName {
+  font-size: 14px;
+  opacity: 0.6;
+  bottom: 26px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild {
+  width: 237px;
+  height: 360px;
+  margin-top: 25px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .autoSale .price {
+  left: 112px;
+  top: 190px;
+  font-size: 18px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .autoSale .price:after {
+  content: "";
+  background: url("/magica/resource/image_web/common/icon/icon_cursechip.png") left center no-repeat;
+  background-size: 30px 29px;
+  position: absolute;
+  left: -38px;
+  top: -2px;
+  width: 30px;
+  height: 29px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap {
+  width: 56px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-justify-content: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet {
+  background: url("/magica/resource/image_web/item/main/item_bg.png") left center no-repeat;
+  background-size: 56px 56px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  background-color: #4d4462;
+  position: absolute;
+  top: -webkit-calc(50% - 25px);
+  left: -webkit-calc(50% - 25px);
+  border-radius: 5px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner {
+  width: 40px;
+  height: 40px;
+  background-color: #736080;
+  position: relative;
+  border-radius: 5px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols {
+  width: 10px;
+  height: 10px;
+  background-color: #736080;
+  position: absolute;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.on {
+  background-color: #f4e0ca;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation1, #GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation4, #GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation7 {
+  top: 27px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation2, #GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation5, #GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation8 {
+  top: 15px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation3, #GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation6, #GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation9 {
+  top: 3px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation1, #GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation2, #GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation3 {
+  left: 3px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation4, #GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation5, #GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation6 {
+  left: 15px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation7, #GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation8, #GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation9 {
+  left: 27px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.live2d {
+  background: url("/magica/resource/image_web/item/main/live2d.png") left center no-repeat;
+  background-size: 56px 56px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap.doppel {
+  background: url("/magica/resource/image_web/item/main/doppel.png") left center no-repeat;
+  background-size: 56px 56px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap .commonItemImg {
+  width: 56px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap .quantity {
+  position: absolute;
+  color: #fff;
+  text-shadow: -1px -1px 1px #8a5f29, 1px -1px 1px #8a5f29, -1px 1px 1px #8a5f29, 1px 1px 1px #8a5f29, -1px -1px #8a5f29, 1px -1px #8a5f29, -1px 1px #8a5f29, 1px 1px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 3px #8a5f29, 1px -1px 3px #8a5f29, -1px 1px 3px #8a5f29, 1px 1px 3px #8a5f29;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap .charaIcon {
+  width: 58px;
+  height: 52px;
+  position: absolute;
+  bottom: 5px;
+  right: -12px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap .charaIcon:before {
+  width: 58px;
+  height: 52px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 29px);
+  background: url("/magica/resource/image_web/common/chara/chara_frame_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  z-index: 100;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap .charaIcon:after {
+  width: 58px;
+  height: 52px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 29px);
+  background: url("/magica/resource/image_web/common/chara/chara_base_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  z-index: 80;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap .charaIcon .maskWrap {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 26px);
+  z-index: 90;
+  overflow: hidden;
+  border-radius: 26px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap .charaIcon .maskWrap img {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 30px);
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap {
+  top: initial;
+  left: initial;
+  height: 56px;
+  right: -12px;
+  bottom: 14px;
+  z-index: 105;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .commonItemImgWrap .quantity {
+  bottom: -3px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .newMark.on {
+  width: 72px;
+  height: 26px;
+  background-image: url("/magica/resource/image_web/page/gacha/gacha_new.png");
+  display: block;
+  position: absolute;
+  top: -13px;
+  right: -15px;
+  z-index: 102;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .itemWrap {
+  width: 75px;
+  height: 82px;
+  display: none;
+  position: absolute;
+  right: -22px;
+  bottom: -12px;
+  z-index: 106;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .itemWrap img {
+  width: 75px;
+  height: 82px;
+  -webkit-animation: brightAnim 3s linear 0s infinite normal;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .itemWrap.on {
+  display: block;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .itemWrap.up {
+  bottom: 68px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .itemFrame {
+  width: 237px;
+  height: 360px;
+  background-size: 237px 360px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .resultImage:not(.item) {
+  width: 237px;
+  height: 360px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .resultImage.item {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -webkit-calc(50% - 75px);
+  left: -webkit-calc(50% - 75px);
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .typeWrap {
+  width: 244px;
+  height: 38px;
+  position: absolute;
+  top: 330px;
+  left: -3.5px;
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .typeWrap.PIECE {
+  background: url("/magica/resource/image_web/page/gacha/tag_memoria.png");
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .typeWrap.CARD {
+  background: url("/magica/resource/image_web/page/gacha/tag_chara.png");
+}
+
+#GachaResult .listWrap #cardWrap.cardOne .cardChild .typeWrap.ITEM {
+  background: url("/magica/resource/image_web/page/gacha/tag_jem.png");
+}
+
+#GachaResult .listWrap #cardWrap .itemChild {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+  border: 1px solid #cc0000;
+}
+
+#GachaResult .listWrap #onceMore {
+  margin-right: 36px;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge {
+  display: none;
+  width: 162px;
+  height: 50px;
+  position: absolute;
+  top: -27px;
+  right: -37px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea {
+  position: absolute;
+  top: 18px;
+  left: 65px;
+  width: 21px;
+  height: 18px;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea .num0 {
+  width: 14px;
+  height: 18px;
+  background: url("/magica/resource/image_web/common/number/num_0.png") left top no-repeat;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea .num1 {
+  width: 14px;
+  height: 18px;
+  background: url("/magica/resource/image_web/common/number/num_1.png") left top no-repeat;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea .num2 {
+  width: 14px;
+  height: 18px;
+  background: url("/magica/resource/image_web/common/number/num_2.png") left top no-repeat;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea .num3 {
+  width: 14px;
+  height: 18px;
+  background: url("/magica/resource/image_web/common/number/num_3.png") left top no-repeat;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea .num4 {
+  width: 14px;
+  height: 18px;
+  background: url("/magica/resource/image_web/common/number/num_4.png") left top no-repeat;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea .num5 {
+  width: 14px;
+  height: 18px;
+  background: url("/magica/resource/image_web/common/number/num_5.png") left top no-repeat;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea .num6 {
+  width: 14px;
+  height: 18px;
+  background: url("/magica/resource/image_web/common/number/num_6.png") left top no-repeat;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea .num7 {
+  width: 14px;
+  height: 18px;
+  background: url("/magica/resource/image_web/common/number/num_7.png") left top no-repeat;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea .num8 {
+  width: 14px;
+  height: 18px;
+  background: url("/magica/resource/image_web/common/number/num_8.png") left top no-repeat;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea .num9 {
+  width: 14px;
+  height: 18px;
+  background: url("/magica/resource/image_web/common/number/num_9.png") left top no-repeat;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea .number2 {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea.doubledigit {
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  width: 28px;
+  left: 61px;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea.doubledigit .number1 {
+  position: absolute;
+  top: 0;
+  left: 2px;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea.doubledigit .number2 {
+  position: absolute;
+  top: 0;
+  left: 14px;
+}
+
+#GachaResult .listWrap #onceMore .btnBadge #bageTextArea .none {
+  display: none;
+}
+
+#GachaResult .listWrap #onceMore.freeBtn .btnBadge {
+  display: block;
+}
+
+#GachaResult .listWrap .btnWrap {
+  width: 500px;
+  margin: 16px auto 0;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#GachaResult .listWrap #itemWrap {
+  width: 860px;
+  margin: 5px auto;
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  -ms-flex-flow: wrap;
+  flex-flow: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+#GachaResult .listWrap #itemWrap .itemChild {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 15px;
+  border: 1px solid #cc0000;
+}
+
+#GachaResult #saleSettingBtn {
+  position: absolute;
+  width: 130px;
+  right: 12px;
+  bottom: 100px;
+  z-index: 5;
+}
+
+@-webkit-keyframes brightAnim {
+  0%, 40%, 60%, 100% {
+    -webkit-filter: brightness(100%);
+  }
+  50% {
+    -webkit-filter: brightness(300%);
+  }
+}

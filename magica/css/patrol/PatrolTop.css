@@ -1,0 +1,386 @@
+#PatrolTop {
+  width: 1024px;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+#PatrolTop .logo {
+  background: url("/magica/resource/image_web/page/patrol/bg_patrol_title.png") center top no-repeat;
+  position: absolute;
+  left: 31px;
+  top: 69px;
+  width: 380px;
+  height: 42px;
+  line-height: 42px;
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 0.2em;
+  padding-left: 56px;
+  text-shadow: 2px 0px 2px #3a4480, -2px 0px 2px #3a4480, 0px 2px 2px #3a4480, 0px -2px 2px #3a4480, 2px 2px 2px #3a4480, -2px 2px 2px #3a4480, 2px -2px 2px #3a4480, -2px -2px 2px #3a4480;
+}
+#PatrolTop #lumpExpeditionBtn {
+  position: absolute;
+  right: 220px;
+  bottom: 20px;
+  z-index: 3;
+  width: 167px;
+  height: 43px;
+  background-image: url("/magica/resource/image_web/page/patrol/btn_start_all.png");
+  background-repeat: no-repeat;
+  -webkit-filter: brightness(100%);
+}
+#PatrolTop #lumpExpeditionBtn.off {
+  background-image: url("/magica/resource/image_web/page/patrol/btn_start_all_off.png");
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+#PatrolTop #lumpResultBtn {
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  z-index: 3;
+  width: 167px;
+  height: 43px;
+  background-image: url("/magica/resource/image_web/page/patrol/btn_finish_all.png");
+  background-repeat: no-repeat;
+  -webkit-filter: brightness(100%);
+}
+#PatrolTop #lumpResultBtn.off {
+  background-image: url("/magica/resource/image_web/page/patrol/btn_finish_all_off.png");
+  background-repeat: no-repeat;
+  pointer-events: none;
+}
+#PatrolTop #areaList {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+#PatrolTop #areaList .area {
+  position: absolute;
+  width: 310px;
+  height: 364px;
+}
+#PatrolTop #areaList .area.pos1 {
+  left: 26px;
+  bottom: 82px;
+}
+#PatrolTop #areaList .area.pos2 {
+  left: -webkit-calc(50% - 155px);
+  top: 70px;
+}
+#PatrolTop #areaList .area.pos3 {
+  right: 26px;
+  bottom: 102px;
+}
+#PatrolTop #areaList .area .iconWrap .bg {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 310px;
+  height: 364px;
+}
+#PatrolTop #areaList .area .iconWrap .bg img {
+  width: 96%;
+  height: 96%;
+}
+#PatrolTop #areaList .area .charaList .chara {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+}
+#PatrolTop #areaList .area .charaList .chara.pos1 {
+  -webkit-animation: patrolTopCharaAnim 5.4s linear 0s infinite both;
+  left: 75px;
+  top: 136px;
+}
+#PatrolTop #areaList .area .charaList .chara.pos1.rove {
+  -webkit-animation: patrolTopCharaAnimRove 2 steps(2, jump-none) 0.8s;
+}
+#PatrolTop #areaList .area .charaList .chara.pos2 {
+  -webkit-animation: patrolTopCharaAnim 5.4s linear 2.16s infinite both;
+  left: 38px;
+  top: 30px;
+}
+#PatrolTop #areaList .area .charaList .chara.pos2.rove {
+  -webkit-animation: patrolTopCharaAnimRove 2 steps(2, jump-none) 0.8s;
+}
+#PatrolTop #areaList .area .charaList .chara.pos3 {
+  -webkit-animation: patrolTopCharaAnim 5.4s linear 4.32s infinite both;
+  left: 128px;
+  top: 30px;
+}
+#PatrolTop #areaList .area .charaList .chara.pos3.rove {
+  -webkit-animation: patrolTopCharaAnimRove 2 steps(2, jump-none) 0.8s;
+}
+#PatrolTop #areaList .area .charaList .chara.pos4 {
+  -webkit-animation: patrolTopCharaAnim 5.4s linear 6.48s infinite both;
+  left: -6px;
+  top: 115px;
+}
+#PatrolTop #areaList .area .charaList .chara.pos4.rove {
+  -webkit-animation: patrolTopCharaAnimRove 2 steps(2, jump-none) 0.8s;
+}
+#PatrolTop #areaList .area .charaList .chara.pos5 {
+  -webkit-animation: patrolTopCharaAnim 5.4s linear 8.64s infinite both;
+  left: 158px;
+  top: 115px;
+}
+#PatrolTop #areaList .area .charaList .chara.pos5.rove {
+  -webkit-animation: patrolTopCharaAnimRove 2 steps(2, jump-none) 0.8s;
+}
+#PatrolTop #areaList .area.shake .iconWrap {
+  -webkit-animation: patrolTopAreaShake 0.5s linear 0s 1 both;
+}
+#PatrolTop #areaList .area .rewardWrap {
+  background: url("/magica/resource/image_web/page/patrol/bg_up_item.png") center top no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 110px;
+  height: 90px;
+  -webkit-animation: patrolTopRewardFloat 3.5s linear 0s infinite both;
+}
+#PatrolTop #areaList .area .rewardWrap .rewardImg {
+  position: absolute;
+  left: 30px;
+  top: 12px;
+  width: 50px;
+  height: 50px;
+}
+#PatrolTop #areaList .area .areaNameWrap {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  width: 300px;
+  text-align: center;
+}
+#PatrolTop #areaList .area .areaNameWrap .name {
+  position: absolute;
+  top: -2px;
+  width: 100%;
+  line-height: 42px;
+  font-size: 16px;
+  color: #fff;
+}
+#PatrolTop #areaList .area .areaNameWrap .bg {
+  position: absolute;
+  right: 0px;
+  width: 100%;
+}
+#PatrolTop #areaList .area .timerWrap {
+  position: absolute;
+  left: -webkit-calc(50% - 150px);
+  bottom: -16px;
+  width: 300px;
+  height: 42px;
+}
+#PatrolTop #areaList .area .timerWrap .bg {
+  background: url("/magica/resource/image_web/page/patrol/bg_area_02.png") center top no-repeat;
+  width: 100%;
+  height: 100%;
+}
+#PatrolTop #areaList .area .timerWrap .timer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  line-height: 42px;
+  text-align: center;
+  color: #fff;
+}
+#PatrolTop #areaList .area .timerWrap .timer span {
+  font-size: 14px;
+  color: #fff;
+  margin-right: 10px;
+}
+#PatrolTop #areaList .area .timerWrap .attribute {
+  position: absolute;
+  left: 22px;
+  top: 5px;
+  width: 32px;
+  height: 32px;
+}
+#PatrolTop #areaList .area .timerWrap.expendition .bg {
+  background: url("/magica/resource/image_web/page/patrol/bg_area_01.png") center top no-repeat;
+}
+#PatrolTop #areaList .area .timerWrap.complete .bg {
+  background: url("/magica/resource/image_web/page/patrol/bg_area_03.png") center top no-repeat;
+}
+#PatrolTop #areaList .area.off {
+  -webkit-filter: grayscale(100%);
+}
+#PatrolTop #areaList .area.off .rewardWrap, #PatrolTop #areaList .area.off .timerWrap .attribute {
+  display: none;
+}
+
+@-webkit-keyframes patrolTopCharaAnim {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  53% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  56% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  59% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  62% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  65% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  68% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@-webkit-keyframes patrolTopCharaAnimRove {
+  0% {
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes patrolTopCharaAnimRove2 {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+  }
+}
+@-webkit-keyframes patrolTopCharaAnimReverse {
+  0% {
+    -webkit-transform: translateY(0) scale(-1, 1);
+            transform: translateY(0) scale(-1, 1);
+  }
+  50% {
+    -webkit-transform: translateY(0) scale(-1, 1);
+            transform: translateY(0) scale(-1, 1);
+  }
+  53% {
+    -webkit-transform: translateY(0) scale(-1, 1);
+            transform: translateY(0) scale(-1, 1);
+  }
+  56% {
+    -webkit-transform: translateY(-5px) scale(-1, 1);
+            transform: translateY(-5px) scale(-1, 1);
+  }
+  59% {
+    -webkit-transform: translateY(0) scale(-1, 1);
+            transform: translateY(0) scale(-1, 1);
+  }
+  62% {
+    -webkit-transform: translateY(-10px) scale(-1, 1);
+            transform: translateY(-10px) scale(-1, 1);
+  }
+  65% {
+    -webkit-transform: translateY(0) scale(-1, 1);
+            transform: translateY(0) scale(-1, 1);
+  }
+  68% {
+    -webkit-transform: translateY(0) scale(-1, 1);
+            transform: translateY(0) scale(-1, 1);
+  }
+  100% {
+    -webkit-transform: translateY(0) scale(-1, 1);
+            transform: translateY(0) scale(-1, 1);
+  }
+}
+@-webkit-keyframes patrolTopAreaShake {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  10% {
+    -webkit-transform: translate(3px, 0);
+            transform: translate(3px, 0);
+  }
+  30% {
+    -webkit-transform: translate(-3px, 0);
+            transform: translate(-3px, 0);
+  }
+  40% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(5px, 0);
+            transform: translate(5px, 0);
+  }
+  70% {
+    -webkit-transform: translate(-5px, 0);
+            transform: translate(-5px, 0);
+  }
+  80% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes patrolTopAreaFloat {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(-5px, 0);
+            transform: translate(-5px, 0);
+  }
+  75% {
+    -webkit-transform: translate(5px, 0);
+            transform: translate(5px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes patrolTopRewardFloat {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  25% {
+    -webkit-transform: translate(0, -3px);
+            transform: translate(0, -3px);
+  }
+  75% {
+    -webkit-transform: translate(0, 3px);
+            transform: translate(0, 3px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}

@@ -1,0 +1,935 @@
+@charset "UTF-8";
+input[type=range] {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  -webkit-transform: translateZ(0);
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  background-color: #bdb19a;
+  -webkit-transform: translateZ(0);
+  border-radius: 10px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  width: 38px;
+  height: 38px;
+  margin-top: -14px;
+  background-image: url("/magica/resource/image_web/page/config/icon_slider_tab.png");
+  -webkit-transform: translateZ(0);
+  border-width: 0px !important;
+  border-radius: 39px;
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb:hover, input[type=range]::-webkit-slider-thumb:active {
+  background-color: transparent;
+  -webkit-transform: translateZ(0);
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.param {
+  display: none;
+}
+
+#btnArea .touch {
+  -webkit-transform: scale(1);
+  -webkit-filter: brightness(120%);
+}
+
+#baseContainer.fadein #charaData, #baseContainer.fadein #richeWrap {
+  display: block;
+  -webkit-animation: readyFadeIn .2s ease-in;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#baseContainer.fadeout #charaData, #baseContainer.fadeout #richeWrap {
+  display: none;
+  display: none !important;
+}
+
+#composeConfirm .popupInner, #magiaComposeConfirm .popupInner, #useComposeItem .popupInner {
+  position: absolute;
+}
+
+#magiaComposeConfirm .popupTitle {
+  width: 370px;
+}
+
+#magiaComposeConfirm .popupTextArea {
+  width: 450px;
+  height: 200px;
+  font-size: 20px;
+}
+
+#magiaComposeConfirm .popupBtnArea td {
+  padding: 0 14px !important;
+}
+
+#composeConfirm .popupTitle {
+  width: 370px;
+}
+
+#composeConfirm .popupTextArea {
+  height: 200px;
+  font-size: 20px;
+}
+
+#composeConfirm .popupBtnArea td {
+  padding: 0 14px !important;
+}
+
+#useComposeItem .popupTitle {
+  width: 526px;
+}
+
+#useComposeItem .popupTextArea {
+  width: 100%;
+  height: 253px;
+  display: block;
+  position: relative;
+  font-size: 20px;
+}
+
+#useComposeItem .popupTextArea #useItemControllerWrap {
+  width: 590px;
+  height: 72px;
+  background: #dfdedb;
+  position: absolute;
+  bottom: 20px;
+  left: -webkit-calc(50% - 295px);
+  -webkit-border-radius: 5px;
+}
+
+#useComposeItem .popupTextArea #useItemControllerWrap .slider {
+  width: 342px;
+  position: absolute;
+  top: 31px;
+  left: 76px;
+}
+
+#useComposeItem .popupTextArea #useItemControllerWrap .plusBtn {
+  width: 50px;
+  height: 50px;
+  background: url("/magica/resource/image_web/page/chara/btn_plus.png") left top no-repeat;
+  position: absolute;
+  top: 11px;
+  right: 116px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#useComposeItem .popupTextArea #useItemControllerWrap .plusBtn.off {
+  -webkit-filter: grayscale(100%) brightness(70%);
+}
+
+#useComposeItem .popupTextArea #useItemControllerWrap .minusBtn {
+  width: 50px;
+  height: 50px;
+  background: url("/magica/resource/image_web/page/chara/btn_minus.png") left top no-repeat;
+  position: absolute;
+  top: 11px;
+  left: 20px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#useComposeItem .popupTextArea #useItemControllerWrap .minusBtn.off {
+  -webkit-filter: grayscale(100%) brightness(70%);
+}
+
+#useComposeItem .popupTextArea #useItemControllerWrap .maxBtn {
+  width: 80px;
+  height: 50px;
+  background: url("/magica/resource/image_web/page/chara/btn_max.png") left top no-repeat;
+  position: absolute;
+  top: 11px;
+  right: 20px;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+#useComposeItem .popupTextArea #useItemControllerWrap .maxBtn.off {
+  -webkit-filter: grayscale(100%) brightness(70%);
+}
+
+#useComposeItem .popupTextArea .item {
+  width: 90px;
+  height: 90px;
+  margin: 0 14px 0 0;
+  background: url("/magica/resource/image_web/page/chara/bg_compose_item_null.png") top left no-repeat;
+  position: absolute;
+  top: 28px;
+  left: -webkit-calc(50% - 45px);
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 20;
+}
+
+#useComposeItem .popupTextArea .item img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  z-index: 60;
+}
+
+#useComposeItem .popupTextArea .item .hasNum {
+  width: 90px;
+  height: 26px;
+  padding: 4px 4px 0px 0px;
+  background: #b28750;
+  position: absolute;
+  bottom: -22px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: right;
+  border-radius: 0 0 5px 5px;
+  z-index: 50;
+}
+
+#useComposeItem .popupTextArea .item .hasNum span {
+  color: #ffffff;
+}
+
+#useComposeItem .popupTextArea .item .selectNum {
+  width: 56px;
+  height: 26px;
+  background: #e4007f;
+  display: block;
+  position: absolute;
+  top: -6px;
+  left: -12px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  border: 2px solid  #ffffff;
+  -webkit-border-radius: 13px;
+  text-shadow: 0 0;
+  z-index: 100;
+}
+
+.bonusResultWrap {
+  width: 200px;
+  display: none;
+  position: absolute;
+  top: 90px;
+  left: 303px;
+  opacity: 0;
+}
+
+.bonusResultWrap.anim {
+  display: block;
+  -webkit-animation: set_bonus .7s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.bonusResultWrap .text {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  color: #fa5181;
+  font-size: 22px;
+  text-align: center;
+  text-shadow: -1px -1px 1px #ffffff, 1px -1px 1px #ffffff, -1px 1px 1px #ffffff, 1px 1px 1px #ffffff, -1px -1px #ffffff, 1px -1px #ffffff, -1px 1px #ffffff, 1px 1px #ffffff, -1px -1px 2px #ffffff, 1px -1px 2px #ffffff, -1px 1px 2px #ffffff, 1px 1px 2px #ffffff, -1px -1px 2px #ffffff, 1px -1px 2px #ffffff, -1px 1px 2px #ffffff, 1px 1px 2px #ffffff, -1px -1px 3px #ffffff, 1px -1px 3px #ffffff, -1px 1px 3px #ffffff, 1px 1px 3px #ffffff;
+  z-index: 10;
+}
+
+.bonusResultWrap .bg {
+  width: 130px;
+  height: 54px;
+  background: url("/magica/resource/image_web/page/chara/bg_customize_text.png") left top no-repeat;
+  position: absolute;
+  top: -5px;
+  left: -webkit-calc(50% - 65px);
+  z-index: 1;
+}
+
+#richeWrap {
+  width: 256px;
+  padding: 5px 10px 2px 4px;
+  position: fixed;
+  top: 390px;
+  left: -8px;
+  z-index: 10010;
+}
+
+#richeWrap.hide {
+  display: none !important;
+}
+
+#richeWrap #riche {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#richeWrap #riche dt {
+  width: 97px;
+  height: 24px;
+  margin: 0 0 3px;
+  background: url("/magica/resource/image_web/page/chara/bg_riche.png") left top no-repeat;
+  color: #ffffff;
+  text-align: center;
+}
+
+#richeWrap #riche dd {
+  width: 140px;
+  height: 24px;
+  margin: 0 0 3px;
+  position: relative;
+  text-align: right;
+}
+
+#richeWrap #riche dd:before {
+  width: 22px;
+  height: 22px;
+  background: url("/magica/resource/image_web/page/chara/icon_cc.png") left top no-repeat;
+  position: absolute;
+  top: 1px;
+  left: 5px;
+  content: "";
+}
+
+.confirmPopupCurtain {
+  width: 200%;
+  height: 150%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -25%;
+  z-index: 10000;
+}
+
+.confirmPopupCurtain.show {
+  display: block;
+}
+
+.confirmPopupCurtain.hide {
+  display: none;
+}
+
+#btnArea {
+  width: 313px;
+  height: 403px;
+  position: absolute;
+  top: -webkit-calc(50% - 234px);
+  right: 14px;
+  -webkit-transition-timing-function: ease-in-out;
+       -o-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+  -webkit-transition-duration: .1s;
+       -o-transition-duration: .1s;
+          transition-duration: .1s;
+  -webkit-transition-property: -webkit-filter;
+  transition-property: -webkit-filter;
+  -o-transition-property: filter;
+  transition-property: filter;
+  transition-property: filter, -webkit-filter;
+  z-index: 10000;
+}
+
+#btnArea.offLink {
+  pointer-events: none;
+  -webkit-filter: brightness(80%);
+}
+
+#btnArea.top ul li {
+  -webkit-clip-path: polygon(44% 0%, 56% 0%, 100% 44%, 100% 56%, 56% 100%, 44% 100%, 0% 56%, 0% 44%);
+  clip-path: polygon(44% 0%, 56% 0%, 100% 44%, 100% 56%, 56% 100%, 44% 100%, 0% 56%, 0% 44%);
+  -webkit-transform: translateZ(0);
+  width: 142px;
+  height: 195px;
+  position: absolute;
+}
+
+#btnArea.top ul li span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-clip-path: polygon(44% 0%, 56% 0%, 100% 44%, 100% 56%, 56% 100%, 44% 100%, 0% 56%, 0% 44%);
+  clip-path: polygon(44% 0%, 56% 0%, 100% 44%, 100% 56%, 56% 100%, 44% 100%, 0% 56%, 0% 44%);
+  -webkit-transform: translateZ(0);
+}
+
+#btnArea.top ul li.compose {
+  background: url("/magica/resource/image_web/page/chara/btn_top_compose_a.png") center top no-repeat;
+  background-size: contain;
+  top: -22px;
+  left: -5px;
+}
+
+#btnArea.top ul li.compose.off {
+  pointer-events: none;
+  background: url("/magica/resource/image_web/page/chara/btn_top_emotion_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#btnArea.top ul li.composeMagia {
+  background: url("/magica/resource/image_web/page/chara/btn_top_magia_a.png") center top no-repeat;
+  background-size: contain;
+  top: -22px;
+  right: 20px;
+}
+
+#btnArea.top ul li.composeMagia.off {
+  pointer-events: none;
+  background: url("/magica/resource/image_web/page/chara/btn_top_emotion_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#btnArea.top ul li.customize {
+  background: url("/magica/resource/image_web/page/chara/btn_top_customize_a.png") center top no-repeat;
+  background-size: contain;
+  bottom: 36px;
+  left: -5px;
+}
+
+#btnArea.top ul li.customize.off {
+  pointer-events: none;
+  background: url("/magica/resource/image_web/page/chara/btn_top_emotion_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#btnArea.top ul li.equip {
+  background: url("/magica/resource/image_web/page/chara/btn_top_limitbreak_a.png") center top no-repeat;
+  background-size: contain;
+  bottom: 36px;
+  right: 20px;
+}
+
+#btnArea.top ul li.equip.off {
+  pointer-events: none;
+  background: url("/magica/resource/image_web/page/chara/btn_top_emotion_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#btnArea.top ul li.enhance {
+  background: url("/magica/resource/image_web/page/chara/btn_top_emotion.png") center top no-repeat;
+  background-size: contain;
+  top: 72px;
+  right: 98px;
+}
+
+#btnArea.top ul li.enhance.off {
+  pointer-events: none;
+  background: url("/magica/resource/image_web/page/chara/btn_top_emotion_off.png") center top no-repeat;
+  background-size: contain;
+}
+
+#btnArea.top ul li.composeAttribute {
+  top: 269px;
+  right: 119px;
+  width: 100px;
+  height: 152px;
+}
+
+#btnArea.top ul li.composeAttribute.fire {
+  background: url("/magica/resource/image_web/page/chara/top/btn_top_attribute_fire.png") center top no-repeat;
+  background-size: contain;
+}
+
+#btnArea.top ul li.composeAttribute.water {
+  background: url("/magica/resource/image_web/page/chara/top/btn_top_attribute_water.png") center top no-repeat;
+  background-size: contain;
+}
+
+#btnArea.top ul li.composeAttribute.timber {
+  background: url("/magica/resource/image_web/page/chara/top/btn_top_attribute_timber.png") center top no-repeat;
+  background-size: contain;
+}
+
+#btnArea.top ul li.composeAttribute.light {
+  background: url("/magica/resource/image_web/page/chara/top/btn_top_attribute_light.png") center top no-repeat;
+  background-size: contain;
+}
+
+#btnArea.top ul li.composeAttribute.dark {
+  background: url("/magica/resource/image_web/page/chara/top/btn_top_attribute_dark.png") center top no-repeat;
+  background-size: contain;
+}
+
+#btnArea.top ul li.composeAttribute.void {
+  background: url("/magica/resource/image_web/page/chara/top/btn_top_attribute_void.png") center top no-repeat;
+  background-size: contain;
+}
+
+#btnArea.charaDetail {
+  width: 98px;
+  top: 54px;
+  right: 0;
+}
+
+#btnArea.charaDetail li {
+  width: 98px;
+  height: 66px;
+  position: absolute;
+}
+
+#btnArea.charaDetail li span {
+  -webkit-clip-path: none;
+  clip-path: none;
+}
+
+#btnArea.charaDetail li.charaBtn {
+  padding-left: 24px;
+  background: url("/magica/resource/image_web/page/chara/common/btn_chara_off_c.png") left top no-repeat;
+  background-size: contain;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  text-shadow: -1px -1px 2px #ff5e7c, 1px -1px 2px #ff5e7c, -1px 1px 2px #ff5e7c, 1px 1px 2px #ff5e7c, -1px -1px 2px #ff5e7c, 1px -1px 2px #ff5e7c, -1px 1px 2px #ff5e7c, 1px 1px 2px #ff5e7c;
+}
+
+#btnArea.charaDetail li.charaBtn span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#btnArea.charaDetail li::before {
+  position: absolute;
+  top: calc(50% + 0px);
+  left: calc(50% + 4px);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: "";
+  white-space: pre;
+  pointer-events: none;
+}
+
+#btnArea.charaDetail li.compose {
+  top: 0px;
+  right: -4px;
+}
+
+#btnArea.charaDetail li.compose::before {
+  content: "魔力\a強化";
+}
+
+#btnArea.charaDetail li.composeMagia {
+  top: 68px;
+  right: -4px;
+}
+
+#btnArea.charaDetail li.composeMagia::before {
+  content: "マギア\a強化";
+}
+
+#btnArea.charaDetail li.customize {
+  top: 136px;
+  right: -4px;
+}
+
+#btnArea.charaDetail li.customize::before {
+  content: "覚醒";
+}
+
+#btnArea.charaDetail li.equip {
+  top: 204px;
+  right: -4px;
+}
+
+#btnArea.charaDetail li.equip::before {
+  content: "魔力\a解放";
+}
+
+#btnArea.charaDetail li.enhance {
+  top: 272px;
+  right: -4px;
+}
+
+#btnArea.charaDetail li.enhance::before {
+  content: "精神\a強化";
+}
+
+#btnArea.charaDetail li.composeAttribute {
+  top: 340px;
+  right: -4px;
+}
+
+#btnArea.charaDetail li.composeAttribute::before {
+  content: "属性\a強化";
+}
+
+#btnArea.charaDetail li.current {
+  background: url("/magica/resource/image_web/page/chara/common/btn_chara_on_c.png") left top no-repeat;
+  background-size: contain;
+  color: #ff5e7c;
+  text-shadow: 0 0;
+}
+
+.miniCharaWrap {
+  width: 282px;
+  height: 320px;
+  display: block;
+  position: absolute;
+  top: -webkit-calc(50% - 170px);
+  left: 260px;
+  z-index: 1000;
+}
+
+#charaImg {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+#charaImg .imgL {
+  width: 680px;
+  height: 510px;
+  position: absolute;
+  top: -webkit-calc(50% - 268px);
+  left: 314px;
+  -webkit-animation: chara_L_frame_in .4s ease-out .5s 1 alternate;
+  opacity: 0;
+  z-index: 10;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#charaImg .imgL img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 680px;
+  height: 510px;
+  opacity: .6;
+  -webkit-mask-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(30%, rgba(0, 0, 0, 0)), color-stop(45%, black), color-stop(65%, black), to(rgba(0, 0, 0, 0)));
+}
+
+@-webkit-keyframes chara_data_slide_in {
+  0% {
+    -webkit-transform: translate3d(-252px, 0, 0);
+    opacity: .3;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+#charaData {
+  width: 252px;
+  height: 382px;
+  padding: 62px 0 0;
+  background: url("/magica/resource/image_web/page/chara/bg_chara_data.png") left top no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 1000;
+  -webkit-filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.5));
+}
+
+#charaData.show {
+  -webkit-animation: chara_data_slide_in .25s ease-out .3s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#charaData.hide {
+  display: none !important;
+}
+
+#charaData.equip .equipWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#charaData.equip .magiaLvWrap {
+  display: none;
+}
+
+#charaData.popupOpen {
+  z-index: 10000;
+}
+
+#charaData.equipIconShow .equipWrap .icon.on {
+  display: block;
+}
+
+#charaData .status {
+  position: absolute;
+  top: 222px;
+  left: 22px;
+}
+
+#charaData .status li {
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#charaData .status li:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+#charaData .status .thStyle, #charaData .status .tdStyle {
+  font-size: 14px;
+  line-height: 20px;
+  text-shadow: 0 0;
+}
+
+#charaData .status .thStyle {
+  width: 60px;
+  height: 20px;
+  background: #b28750;
+  color: #ffffff;
+  text-align: center;
+  -webkit-border-radius: 5px 0 0 5px;
+}
+
+#charaData .status .tdStyle {
+  padding: 0 0 0 6px;
+}
+
+#charaData .arrow {
+  width: 16px;
+  height: 20px;
+  margin: 0;
+  background: url("/magica/resource/image_web/page/chara/arrow.png") left top no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+}
+
+#charaData #rare {
+  margin: 7px 0 2px -2px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#charaData #rare span {
+  width: 19px;
+  height: 19px;
+  margin: 0 -1px;
+}
+
+#charaData #name {
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  /* Safari */
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#charaData #name p {
+  width: 100%;
+}
+
+#charaData #name .title {
+  font-size: 16px;
+}
+
+#charaData #detailBtn {
+  width: 43px;
+  height: 34px;
+  background: url("/magica/resource/image_web/common/btn/btn_common_mini.png") left top no-repeat;
+  display: block;
+  position: absolute;
+  top: 97px;
+  right: 0;
+}
+
+#charaData #attribute {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 0;
+  display: block;
+  -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.5));
+}
+
+#charaData #attribute span {
+  width: 36px;
+  height: 36px;
+  background-size: 36px 36px;
+}
+
+#charaData #lv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 168px;
+  left: 22px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#charaData #lv .before {
+  margin-left: 5px;
+}
+
+#charaData #lv .sla {
+  margin: 0 -5px;
+}
+
+#charaData #lv .arrow {
+  margin: 0 15px;
+}
+
+#charaData #lv #currentLv, #charaData #lv #afterLv {
+  font-size: 22px;
+}
+
+#charaData #lv .hide {
+  display: none;
+}
+
+#charaData #lv .lvMaxFlag {
+  width: 74px;
+  height: 22px;
+  margin-left: 40px;
+  background: url("/magica/resource/image_web/common/chara/lv_max.png") left top no-repeat;
+  display: none;
+}
+
+#charaData #lv .lvMaxFlag.on {
+  display: inline-block;
+}
+
+#charaData .expGaugeWrap {
+  position: absolute;
+  top: 198px;
+  left: 22px;
+}
+
+#charaData .expGaugeWrap .expGaugeInner2, #charaData .expGaugeWrap .expGaugeInner4 {
+  display: none;
+}
+
+#charaData .expGaugeWrap.episode {
+  left: 90px;
+  top: 354px;
+  width: 140px;
+}
+
+#charaData .revisionWrap, #charaData .magiaLvWrap, #charaData .episodeLvWrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#charaData .revisionWrap .title, #charaData .magiaLvWrap .title, #charaData .episodeLvWrap .title {
+  font-size: 14px;
+  width: 85px;
+}
+
+#charaData .revisionWrap {
+  position: absolute;
+  top: 288px;
+  left: 24px;
+}
+
+#charaData .magiaLvWrap, #charaData .equipWrap {
+  position: absolute;
+  top: 310px;
+  left: 24px;
+}
+
+#charaData .episodeLvWrap {
+  position: absolute;
+  top: 332px;
+  left: 24px;
+}
+
+#charaData .episodeLvWrap .bondsTotalPt {
+  margin-left: 19px;
+  font-size: 14px;
+  text-align: right;
+  width: 86px;
+}
+
+#charaData .episodeLvWrap .episodeLvMaxFlag {
+  width: 62px;
+  height: 18px;
+  margin-left: 40px;
+  background: url("/magica/resource/image_web/common/chara/lv_max.png") left top no-repeat;
+  background-size: contain;
+  display: none;
+}
+
+#charaData .episodeLvWrap .episodeLvMaxFlag.on {
+  display: inline-block;
+}
+
+#charaData .equipWrap {
+  display: none;
+}
+
+#charaData .equipWrap p {
+  margin-right: 8px;
+}
+
+#charaData .equipWrap .icon {
+  width: 20px;
+  height: 20px;
+  margin: 2px 2px 0 0;
+  background: url("/magica/resource/image_web/common/chara/result_icon_equip_b.png") left top no-repeat;
+  background-size: 20px 20px;
+  display: block;
+  position: relative;
+}
+
+#charaData .equipWrap .icon.on {
+  background: url("/magica/resource/image_web/common/chara/result_icon_equip.png") left top no-repeat;
+  background-size: 20px 20px;
+  display: none;
+}
+
+#charaData .equipWrap .icon.on:after {
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 23px;
+  color: #e52c66;
+  font-size: 16px;
+  line-height: 20px;
+  content: "+1";
+  text-shadow: 0 0;
+}
+
+@-webkit-keyframes chara_L_frame_in {
+  0% {
+    -webkit-transform: translateX(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    opacity: 1;
+  }
+}
