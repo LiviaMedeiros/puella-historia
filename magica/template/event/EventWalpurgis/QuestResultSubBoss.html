@@ -1,0 +1,76 @@
+<div id="EventWalpurgisQuestResultSubBoss">
+  <!-- グループレイド取巻用クエスト結果ページ<br><br><br><br>
+  <p class="btn b_purple TE toTopBtn">
+    グループレイドに戻る
+  </p> -->
+  <div id="touchScreen"></div>
+
+	<div class="mainWrap">
+		<div class="flowWrap">
+
+			<div class="rippleObjWrap">
+				<div class="rippleObj_1"></div>
+				<div class="rippleObj_2"></div>
+				<div class="rippleObj_3"></div>
+			</div>
+
+			<div class="resultTitleWrap">
+				<div class="resultTitle"></div>
+				<div class="resultTitleBase"></div>
+				<div class="resultTitleDecoLeft"></div>
+				<div class="resultTitleDecoRight"></div>
+			</div>
+
+			<div class="resultStringWrap">
+				<div class="resultString CLEAR"></div>
+				<div class="resultStringAdd"></div>
+			</div>
+
+			<div class="rewardDPWrap">
+				<div class="rewardDPBase"></div>
+				<div class="rewardDPBeforeBase"></div>
+				<div class="rewardDPBeforeText">獲得DP</div>
+				<div class="rewardDPBeforeNum">
+					<% _.forEach(this.model.dpInfo.beforeDPNumText,function(val,txt,index){ %>
+						<% if(val == ",") { %>
+							<img src="/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_comma.png" class="rewardBeforeCommaImg">
+						<% } else { %>
+							<img src="/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_<%= val %>.png" class="rewardBeforeNumImg">
+						<% } %>
+					<% }); %>
+				</div>
+				<div class="rewardDPArrow"></div>
+				<div class="rewardDPAfterBase"></div>
+				<div class="rewardDPAfterText">合計DP</div>
+				<div class="rewardDPAfterNum">
+					<% _.forEach(this.model.dpInfo.afterDPNumText,function(val,txt,index){ %>
+						<% if(val == ",") { %>
+							<img src="/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_comma.png" class="rewardAfterCommaImg">
+						<% } else { %>
+							<img src="/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_<%= val %>.png" class="rewardAfterNumImg">
+						<% } %>
+					<% }); %>
+				</div>
+			</div>
+
+			<div class="rewardItemWrap">
+				<div class="rewardItemInner">
+					<% for(var i=1; i<=model.rewardItemNum; i++){ %>
+						<div class="rewardItemBox">
+							<div class="rewardItemBaseRhombus"></div>
+							<div class="rewardItemBaseCircle"></div>
+							<div class="rewardItemTitle"></div>
+							<div class="rewardItemContent">
+								<img src="/magica/resource/image_web/item/event/event_raid_1217_exchange_1.png">
+								<span class="rewardItemNum ts_gold">×<%= model.bossUseItemQuantity %></span>
+							</div>
+						</div>
+					<% } %>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="touch_screen"></div>
+	<div id="retryBtn" class="retryBtn se_decide TE <%= model.retryBtnClass %>"></div>
+</div>

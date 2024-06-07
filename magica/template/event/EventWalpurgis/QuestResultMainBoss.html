@@ -1,0 +1,73 @@
+<div id="EventWalpurgisQuestResultMainBoss">
+  <div id="touchScreen"></div>
+
+	<div class="mainWrap">
+		<div class="flowWrap">
+			<div class="rippleObjWrap">
+				<div class="rippleObj_1"></div>
+				<div class="rippleObj_2"></div>
+				<div class="rippleObj_3"></div>
+			</div>
+
+			<div class="resultTitleWrap">
+				<div class="resultTitle"></div>
+				<div class="resultTitleBase"></div>
+				<div class="resultTitleDecoLeft"></div>
+				<div class="resultTitleDecoRight"></div>
+			</div>
+
+			<div class="resultStringWrap">
+				<div class="resultString FINISH"></div>
+				<div class="resultStringAdd"></div>
+			</div>
+
+			<div class="damageWrap">
+				<div class="damageTitle"></div>
+				<div class="damageBase"></div>
+				<div class="damageText"></div>
+
+				<div class="damageNumWrap" id="count" data-resultNum="<%= model.damage.damageNumText %>">
+					<% _.forEach(model.damage.damageNumText,function(val,txt,index){ %>
+						<% if(val == ",") { %>
+							<img src="/magica/resource/image_web/event/eventWalpurgis/result/_number/p_num_comma.png" class="damageCommaImg">
+						<% } else { %>
+							<img src="/magica/resource/image_web/event/eventWalpurgis/result/_number/p_num_0.png" class="damageNumImg" data-num="0" data-index=<%= val %>>
+						<% } %>
+					<% }); %>
+				</div>
+
+				<div class="damageArrowLeft"></div>
+				<div class="damageArrowRight"></div>
+			</div>
+
+			<div class="rewardWrap">
+				<div class="rewardBase"></div>
+				<div class="rewardBeforeBase"></div>
+				<div class="rewardBeforeText">獲得DP</div>
+				<div class="rewardBeforeNum">
+					<% _.forEach(this.model.dpInfo.beforeDPNumText,function(val,txt,index){ %>
+						<% if(val == ",") { %>
+							<img src="/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_comma.png" class="rewardBeforeCommaImg">
+						<% } else { %>
+							<img src="/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_<%= val %>.png" class="rewardBeforeNumImg">
+						<% } %>
+					<% }); %>
+				</div>
+				<div class="rewardArrow"></div>
+				<div class="rewardAfterBase"></div>
+				<div class="rewardAfterText">合計DP</div>
+				<div class="rewardAfterNum">
+					<% _.forEach(this.model.dpInfo.afterDPNumText,function(val,txt,index){ %>
+						<% if(val == ",") { %>
+							<img src="/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_comma.png" class="rewardAfterCommaImg">
+						<% } else { %>
+							<img src="/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_<%= val %>.png" class="rewardAfterNumImg">
+						<% } %>
+					<% }); %>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="touch_screen"></div>
+</div>

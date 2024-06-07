@@ -1,0 +1,586 @@
+#EventWalpurgisQuestResultMainBoss {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 300px 0 0 0;
+}
+
+#EventWalpurgisQuestResultMainBoss #touchScreen {
+  position: fixed;
+  width: 1024px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 9;
+  display: none;
+}
+
+#EventWalpurgisQuestResultMainBoss #touchScreen.on {
+  display: block;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap {
+  width: 1090px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 5;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap {
+  width: 1090px;
+  height: 576px;
+  position: absolute;
+  top: -webkit-calc(50% - 288px);
+  left: 0;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rippleObjWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rippleObjWrap .rippleObj_1 {
+  position: fixed;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/efe_result_circle01.png") left top no-repeat;
+  width: 756px;
+  height: 756px;
+  -webkit-transform: scale(0);
+  -webkit-animation: rippleObjScaleAnimation 1.3s linear 0.666s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rippleObjWrap .rippleObj_1.rotate {
+  opacity: 1;
+  -webkit-animation: rippleObjRotateAnimation 5s linear 0s infinite normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rippleObjWrap .rippleObj_2 {
+  position: fixed;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/efe_result_circle02.png") left top no-repeat;
+  width: 558px;
+  height: 558px;
+  -webkit-transform: scale(0);
+  -webkit-animation: rippleObjScaleAnimation2 1.3s linear 0.866s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rippleObjWrap .rippleObj_2.rotate {
+  opacity: 0;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rippleObjWrap .rippleObj_3 {
+  position: fixed;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/efe_result_circle03.png") left top no-repeat;
+  width: 340px;
+  height: 339px;
+  -webkit-transform: scale(0);
+  -webkit-animation: rippleObjScaleAnimation2 1.3s linear 1.066s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rippleObjWrap .rippleObj_3.rotate {
+  opacity: 0;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .resultTitleWrap {
+  position: absolute;
+  top: 90px;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .resultTitleWrap .resultTitle {
+  position: absolute;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/text_boss_title.png") left top no-repeat;
+  width: 322px;
+  height: 34px;
+  left: 350px;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transform: scaleX(0);
+  -webkit-animation: resultTitleAnimation 1.0s ease 2.066s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .resultTitleWrap .resultTitleBase {
+  position: absolute;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/efe_title.png") left top no-repeat;
+  width: 618px;
+  height: 62px;
+  top: -15px;
+  left: 230px;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  opacity: 1;
+  -webkit-transform: scaleY(0);
+  -webkit-animation: resultTitleBaseAnimation 1.4s ease 1.666s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .resultTitleWrap .resultTitleDecoLeft {
+  position: absolute;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/icon_boss_title.png") no-repeat;
+  width: 41px;
+  height: 29px;
+  top: 0px;
+  left: 290px;
+  scale: 1;
+  opacity: 0;
+  -webkit-animation: resultTitleDecoAnimation 1.2s ease 2.666s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .resultTitleWrap .resultTitleDecoRight {
+  position: absolute;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/icon_boss_title.png") no-repeat;
+  width: 41px;
+  height: 29px;
+  top: 1px;
+  right: -740px;
+  scale: 1;
+  opacity: 0;
+  rotate: 180deg;
+  -webkit-animation: resultTitleDecoAnimation 1.2s ease 2.666s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .resultStringWrap {
+  position: absolute;
+  width: 100%;
+  top: -80px;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .resultStringWrap .resultString {
+  position: absolute;
+  width: 107px;
+  height: 96px;
+  top: 200px;
+  opacity: 1;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .resultStringWrap .resultString.FINISH {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/text_finish.png") left top no-repeat;
+  width: 442px;
+  left: 290px;
+  opacity: 0;
+  -webkit-animation: resultStringFinishAnimation 0.8s ease 3.066s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .resultStringWrap .resultStringAdd {
+  position: absolute;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/text_finish_efe.png") left top no-repeat;
+  width: 442px;
+  height: 92px;
+  top: 201px;
+  left: 290px;
+  z-index: 2;
+  opacity: 0;
+  -webkit-animation: resultStringFinishAddAnimation 0.666s ease-in-out 3.486s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .damageWrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -6px;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .damageWrap .damageBase {
+  position: absolute;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/efe_damage_bg.png") left top no-repeat;
+  width: 549px;
+  height: 136px;
+  top: 230px;
+  left: 230px;
+  -webkit-transform: scaleX(0);
+  -webkit-animation: damageBaseAnimation 0.666s ease-in-out 4.066s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .damageWrap .damageText {
+  position: absolute;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/text_damage.png") left top no-repeat;
+  width: 110px;
+  height: 142px;
+  top: 240px;
+  left: 460px;
+  -webkit-transform-origin: center top;
+      -ms-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transform: scaleY(0);
+  -webkit-animation: damageTextAnimation 0.666s ease-in-out 4.266s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .damageWrap .damageNumWrap {
+  position: absolute;
+  width: 450px;
+  height: 142px;
+  top: 265px;
+  left: 290px;
+  font-size: 40px;
+  text-align: center;
+  -webkit-transform-origin: center top;
+      -ms-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-transform: scaleY(0);
+  -webkit-animation: damageNumAnimation 0.566s ease-in-out 4.466s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .damageWrap .damageNumWrap .damageCommaImg {
+  margin: 0 -10px;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .damageWrap .damageNumWrap .damageNumImg {
+  margin: 0 -5px;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .damageWrap #normal {
+  display: none;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .damageWrap #normal.show {
+  display: block;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .damageWrap #count {
+  display: none;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .damageWrap #count.show {
+  display: block;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .damageWrap .damageArrowLeft {
+  position: absolute;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/efe_damage_arrow.png") left top no-repeat;
+  width: 110px;
+  height: 142px;
+  top: 255px;
+  left: 230px;
+  opacity: 0;
+  -webkit-animation: damageArrowAnimation 0.666s ease-in-out 4.266s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .damageWrap .damageArrowRight {
+  position: absolute;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/efe_damage_arrow.png") left top no-repeat;
+  width: 110px;
+  height: 142px;
+  top: 200px;
+  left: 680px;
+  opacity: 0;
+  -webkit-transform: rotate(180deg);
+  -webkit-animation: damageArrowAnimation 0.666s ease-in-out 4.266s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rewardWrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rewardWrap .rewardBase {
+  position: absolute;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/bg_reward_dp.png") left top no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 760px;
+  height: 82px;
+  top: 394px;
+  left: 140px;
+  opacity: 0;
+  -webkit-animation: rewardBaseAnimation 0.6s ease-in-out 4.666s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rewardWrap .rewardBeforeBase {
+  position: absolute;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/bg_dptitle_01.png") left top no-repeat;
+  width: 110px;
+  height: 27px;
+  top: 422px;
+  left: 170px;
+  opacity: 0;
+  -webkit-animation: rewardFadeAnimation 0.466s ease-in-out 5.066s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rewardWrap .rewardBeforeText {
+  position: absolute;
+  top: 422px;
+  left: 200px;
+  color: #ffff;
+  opacity: 0;
+  -webkit-animation: rewardFadeAnimation 0.466s ease-in-out 5.066s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rewardWrap .rewardBeforeNum {
+  position: absolute;
+  width: 130px;
+  height: 27px;
+  top: 422px;
+  left: 320px;
+  opacity: 0;
+  -webkit-animation: rewardFadeAnimation 0.466s ease-in-out 5.066s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rewardWrap .rewardBeforeNum .rewardBeforeCommaImg {
+  margin-left: -3px;
+  margin-right: -8px;
+  padding-bottom: 5px;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rewardWrap .rewardBeforeNum .rewardBeforeNumImg {
+  margin: 0 -3px;
+  padding-bottom: 5px;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rewardWrap .rewardArrow {
+  position: absolute;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/icon_arrow.png") left top no-repeat;
+  width: 110px;
+  height: 142px;
+  top: 417px;
+  left: 500px;
+  opacity: 0;
+  -webkit-animation: rewardFadeAnimation 0.466s ease-in-out 5.266s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rewardWrap .rewardAfterBase {
+  position: absolute;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/bg_dptitle_02.png") left top no-repeat;
+  width: 115px;
+  height: 27px;
+  top: 422px;
+  left: 560px;
+  opacity: 0;
+  -webkit-animation: rewardFadeAnimation 0.466s ease-in-out 5.466s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rewardWrap .rewardAfterText {
+  position: absolute;
+  top: 422px;
+  left: 590px;
+  color: #ffff;
+  opacity: 0;
+  -webkit-animation: rewardFadeAnimation 0.466s ease-in-out 5.466s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rewardWrap .rewardAfterNum {
+  position: absolute;
+  width: 130px;
+  height: 27px;
+  top: 422px;
+  left: 700px;
+  opacity: 0;
+  -webkit-animation: rewardFadeAnimation 0.466s ease-in-out 5.466s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rewardWrap .rewardAfterNum .rewardAfterCommaImg {
+  margin-left: -3px;
+  margin-right: -8px;
+  padding-bottom: 5px;
+}
+
+#EventWalpurgisQuestResultMainBoss .mainWrap .flowWrap .rewardWrap .rewardAfterNum .rewardAfterNumImg {
+  margin: 0 -3px;
+  padding-bottom: 5px;
+}
+
+#EventWalpurgisQuestResultMainBoss .touch_screen {
+  position: absolute;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_anime/touch.png") left top no-repeat;
+  width: 240px;
+  height: 27px;
+  bottom: 30px;
+  left: 400px;
+  opacity: 0;
+  -webkit-animation: touchScreen 0.666s ease 0s infinite normal;
+  display: none;
+}
+
+#EventWalpurgisQuestResultMainBoss .touch_screen.on {
+  display: block;
+}
+
+@-webkit-keyframes rippleObjScaleAnimation {
+  0% {
+    -webkit-transform: rotate(0) scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(180deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rippleObjScaleAnimation2 {
+  0% {
+    -webkit-transform: rotate(0) scale(0);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(180deg) scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rippleObjRotateAnimation {
+  0% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes resultTitleAnimation {
+  0% {
+    -webkit-transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes resultTitleBaseAnimation {
+  0% {
+    -webkit-transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
+
+@-webkit-keyframes resultTitleDecoAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes resultStringFinishAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes resultStringFinishAddAnimation {
+  0% {
+    display: block;
+    opacity: 1;
+  }
+  100% {
+    display: none;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes damageBaseAnimation {
+  0% {
+    -webkit-transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes damageTextAnimation {
+  0% {
+    -webkit-transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes damageNumAnimation {
+  0% {
+    -webkit-transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes damageArrowAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rewardBaseAnimation {
+  0% {
+    -webkit-transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rewardFadeAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes touchScreen {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
