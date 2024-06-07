@@ -1,0 +1,30 @@
+<div class="bossImg">
+  <img src="/magica/resource/image_web/event/eventWalpurgis/quest/boss_l.png">
+</div>
+<div class="questSec">
+  <div class="bossName">舞台装置の魔女</div>
+  <p class="difficultyLevelSec pointFrame">
+    <span class="title">難易度</span>
+    <span class="num"><%= model.questInfo.questBattle.difficulty %></span>
+  </p>
+  <div class="itemSec">
+    <p class="haveInfo pointFrame">
+      <span class="title">所持数</span>
+      <span class="num"><%= model.bossUseItem.quantity %></span>
+    </p><br>
+    <img class="img" src="/magica/resource/image_web/common/icon/event/icon_event_raid_1217_exchange_1_f.png">
+    <div class="useCheckSec">
+      <div id="checkBox" class="<%= model.checkBoxClass %> checked"></div>
+      <div class="text">希望の羽を使用する</div>
+      <div class="num"><span><%= model.bossUseItem.quantity %></span>/100</div>
+    </div>
+  </div>
+  <p class="apSec pointFrame">
+    <span class="title">消費AP</span>
+    <span class="num"><%= model.questInfo.questBattle.ap %></span>
+  </p>
+  <div class="TE decideBtn btn b_pink se_decide">
+    <span class="b_screen"></span>
+    戦う
+  </div>
+</div>

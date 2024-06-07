@@ -1,0 +1,23 @@
+<div class="bossNameSec">
+  舞台装置の魔女の手下
+</div><br>
+<p class="difficultyLevelSec pointFrame">
+  <span class="title">難易度</span>
+  <span class="num"><%= model.questBattle.difficulty %></span>
+</p><br>
+<div class="rewardSec">
+  <div class="title">獲得報酬</div>
+  <div class="line"></div>
+  <div class="img">
+    <img src="/magica/resource/image_web/item/event/event_raid_1217_exchange_1.png">
+    <div class="num ts_gold">×<%= model.bossUseItemQuantity %></div>
+  </div>
+</div><br>
+<p class="apSec pointFrame">
+  <span class="title">消費AP</span>
+  <span class="num"><%= model.questBattle.ap %></span>
+</p><br>
+<div class="TE decideBtn btn b_pink se_decide">
+  <span class="b_screen"></span>
+  戦う
+</div>

@@ -1,0 +1,29 @@
+<div id="EventWalpurgisGroupRaid" class="<%= model.terminalClass %>">
+	<div id="mainSec" class="mainSec">
+	</div>
+	<div class="returnMapBtn"></div>
+	<div class="DPSec">
+		<div class="DPText">獲得DP</div>
+		<div id="DPNum" class="DPNum"></div>
+		<div c id="toMissionBtn" class="toMissionBtn sb_gold_01 se_decide TE">
+			<span class="b_screen"></span> ミッション 
+		</div>
+	</div>
+	<div id="groupRaidHelp" class="mb_white se_tabs TE">
+		<span class="b_screen"></span>
+		遊び方
+	</div>
+	<% if (window.isBrowser) { %>
+		<div class="forBrowserSec">
+		</div>
+	<% } %>
+	<div id="stampSec" class="stampSec"></div>
+</div>
+
+<!-- ブラウザ用ボタン -->
+<script type="text/template" id="tempForBrowserBtn">
+	<div id="pointBtn" class="btn b_purple TE pointBtn" data-type="<%='<%= model.type %\>'%>">
+		<span class="b_screen"></span>
+		<%='<%= model.btnName %\>'%>
+	</div>
+</script>

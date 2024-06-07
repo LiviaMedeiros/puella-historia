@@ -92,7 +92,7 @@
 	<% } %>
 	<div id='previewBtn' class='footerBtn se_decide TE c_gold'></div>
 
-	<%="<% if(!deckCatType || deckCatType === 'quest' || deckCatType === 'group' || deckCatType === 'groupPrepare' || deckCatType === 'dungeon' || deckCatType === 'dungeonInMap' || deckCatType === 'endless' || deckCatType === 'extermination' || deckCatType === 'secondPartLast' || deckCatType === 'exterminationCopy' || deckCatType === 'secondPartLastCopy' || deckCatType === 'puellaHistoriaGroupRaid' || deckCatType === 'scene0Challenge' || deckCatType === 'arenaRankMatchAttack') { %\>"%>
+	<%="<% if(!deckCatType || deckCatType === 'quest' || deckCatType === 'group' || deckCatType === 'groupPrepare' || deckCatType === 'dungeon' || deckCatType === 'dungeonInMap' || deckCatType === 'endless' || deckCatType === 'extermination' || deckCatType === 'secondPartLast' || deckCatType === 'exterminationCopy' || deckCatType === 'secondPartLastCopy' || deckCatType === 'puellaHistoriaGroupRaid' || deckCatType === 'EventWalpurgisRaid' || deckCatType === 'scene0Challenge' || deckCatType === 'arenaRankMatchAttack') { %\>"%>
 		<%="<% var addClass = 'deckName se_tabs deck'+model.deckType %\>"%>
 		<%="<% if(deckCatType === 'exterminationCopy' || deckCatType === 'secondPartLastCopy') addClass += ' notEdit' %\>"%>
 		<div class='deckName <%="<%= addClass %\>"%> se_tabs'>
@@ -429,6 +429,13 @@
 									<%="<% status03 = status03*6 %\>"%>
 									<%="<% }; %\>"%>
 
+									<%="<% if(deckCatType == 'EventWalpurgisRaid' && cardModel.isEventWalpurgisRaidUseItem) { //ワルプルイベント対応 %\>"%>
+									<%="<% classTxt02 = 'c_red' %\>"%>
+									<%="<% classTxt03 = 'c_red' %\>"%>
+									<%="<% status02 = status02*6 %\>"%>
+									<%="<% status03 = status03*6 %\>"%>
+									<%="<% }; %\>"%>
+
 									<dt class="c_gold">HP</dt>
 									<dd class='<%="<%= classTxt01 %\>"%>'><%="<%= status01 %\>"%></dd>
 									<dt class="c_gold">ATK</dt>
@@ -639,6 +646,9 @@
 					<span class='prmChangeIcon minus'></span>
 				<%="<% } %\>"%>
 				<%="<% if(deckCatType == 'puellaHistoriaGroupRaid' && cardModel && cardModel.isPHLBUseItem) { //ピュエラヒストリアラストバトル対応 %\>"%>
+					<span class='bonusIcon'></span>
+				<%="<% } %\>"%>
+				<%="<% if(deckCatType == 'EventWalpurgisRaid' && cardModel && cardModel.isEventWalpurgisRaidUseItem) { //ワルプルイベント対応 %\>"%>
 					<span class='bonusIcon'></span>
 				<%="<% } %\>"%>
 				<div class="bg"></div>

@@ -1,0 +1,792 @@
+#EventWalpurgisGroupRaid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#EventWalpurgisGroupRaid .mainSec {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#EventWalpurgisGroupRaid .mainSec #nativeTouchWrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+#EventWalpurgisGroupRaid .stampSec {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#EventWalpurgisGroupRaid .stampSec .stampBtn {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+  width: 80px;
+  height: 72px;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/top/btn_stamp.png") left top no-repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid .DPSec {
+  position: absolute;
+  top: 80px;
+  right: 100px;
+  width: 198px;
+  height: 34px;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/top/dp_point_bg.png") left top no-repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPText {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPNum {
+  position: absolute;
+  top: 6px;
+  right: 14px;
+  width: 200px;
+  height: auto;
+  text-align: right;
+  margin: 1px 0 0 0;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPNum .numImg {
+  width: 12px;
+  height: 21px;
+  display: inline-block;
+  margin: 0 0 0;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPNum .numImg.num0 {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_0.png") left top no-repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPNum .numImg.num1 {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_1.png") left top no-repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPNum .numImg.num2 {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_2.png") left top no-repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPNum .numImg.num3 {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_3.png") left top no-repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPNum .numImg.num4 {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_4.png") left top no-repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPNum .numImg.num5 {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_5.png") left top no-repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPNum .numImg.num6 {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_6.png") left top no-repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPNum .numImg.num7 {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_7.png") left top no-repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPNum .numImg.num8 {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_8.png") left top no-repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPNum .numImg.num9 {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_9.png") left top no-repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPNum .numImg.numcomma {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/result/_number/y_num_comma.png") left top no-repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPNum .numImg.numcomma {
+  margin: 0 -4px 0 0;
+}
+
+#EventWalpurgisGroupRaid .DPSec .DPNum .numImg.num1 {
+  margin: 0 -2px 0;
+}
+
+#EventWalpurgisGroupRaid .DPSec .toMissionBtn {
+  position: absolute;
+  top: 0px;
+  right: -88px;
+}
+
+#EventWalpurgisGroupRaid .toSingleRaidBtn {
+  position: absolute;
+  top: 80px;
+  left: 10px;
+}
+
+#EventWalpurgisGroupRaid #groupRaidHelp {
+  width: 116px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 654px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+#EventWalpurgisGroupRaid #stampListSec {
+  width: 600px;
+  height: 500px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f0efed), to(white));
+  background: linear-gradient(bottom, #f0efed 0%, white 100%);
+  display: none;
+  padding: 14px 20px;
+  border: 3px solid #c0a98b;
+}
+
+#EventWalpurgisGroupRaid #stampListSec::after {
+  display: none;
+}
+
+#EventWalpurgisGroupRaid #stampListSec.show {
+  display: block;
+  -webkit-animation: stampWrapShow .25s ease-in-out 0s 1 alternate;
+          animation: stampWrapShow .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#EventWalpurgisGroupRaid #stampListSec.hide {
+  display: block;
+  -webkit-animation: stampWrapHide .25s ease-in-out 0s 1 alternate;
+          animation: stampWrapHide .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#EventWalpurgisGroupRaid #stampListSec .closeBtn {
+  width: 85px;
+  height: 85px;
+  right: -20px;
+  top: -20px;
+  background-image: url(/magica/resource/image_web/common/popup/popup_close.png);
+  background-position: 29px 6px;
+  background-size: 52px 51px;
+  display: inline-block;
+  position: absolute;
+}
+
+#EventWalpurgisGroupRaid #stampListSec .title {
+  margin: 10px auto 0;
+  background: url(/magica/resource/image_web/common/popup/bg_popup_title_c.png) left top repeat;
+  width: 470px;
+  position: relative;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 43px;
+  text-align: center;
+}
+
+#EventWalpurgisGroupRaid #stampListSec .title::before {
+  width: 40px;
+  height: 43px;
+  position: absolute;
+  top: 0;
+  left: -38px;
+  content: "";
+  background: url(/magica/resource/image_web/common/popup/bg_popup_title_l.png) left top repeat;
+}
+
+#EventWalpurgisGroupRaid #stampListSec .title::after {
+  width: 40px;
+  height: 43px;
+  position: absolute;
+  top: 0;
+  right: -38px;
+  content: "";
+  background: url(/magica/resource/image_web/common/popup/bg_popup_title_r.png) left top repeat;
+}
+
+#EventWalpurgisGroupRaid #stampListSec .btnListSec {
+  text-align: center;
+  margin: 14px 0 0 0;
+}
+
+#EventWalpurgisGroupRaid #stampListSec .btnListSec .typeBtn {
+  display: inline-block;
+  margin: 0 40px;
+  background: url(/magica/resource/image_web/event/eventWalpurgis/stamp/tab_turquoise_off_b_c.png) left top repeat-x;
+  background-size: 1px 100%;
+  width: 180px;
+  position: relative;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 36px;
+  text-align: center;
+}
+
+#EventWalpurgisGroupRaid #stampListSec .btnListSec .typeBtn::before, #EventWalpurgisGroupRaid #stampListSec .btnListSec .typeBtn::after {
+  width: 20px;
+  height: 36px;
+  position: absolute;
+  top: 0;
+  content: "";
+  background: url(/magica/resource/image_web/event/eventWalpurgis/stamp/tab_turquoise_off_b_l.png) left top repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid #stampListSec .btnListSec .typeBtn::before {
+  left: -19px;
+}
+
+#EventWalpurgisGroupRaid #stampListSec .btnListSec .typeBtn::after {
+  right: -19px;
+  background: url(/magica/resource/image_web/event/eventWalpurgis/stamp/tab_turquoise_off_b_r.png) left top repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid #stampListSec .btnListSec .typeBtn.on {
+  background: url(/magica/resource/image_web/event/eventWalpurgis/stamp/tab_s_turquoise_on_c.png) left top repeat;
+  background-size: 1px 100%;
+}
+
+#EventWalpurgisGroupRaid #stampListSec .btnListSec .typeBtn.on::before {
+  background: url(/magica/resource/image_web/event/eventWalpurgis/stamp/tab_s_turquoise_on_l.png) left top repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid #stampListSec .btnListSec .typeBtn.on::after {
+  background: url(/magica/resource/image_web/event/eventWalpurgis/stamp/tab_s_turquoise_on_r.png) left top repeat;
+  background-size: 100%;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec {
+  position: relative;
+  width: 580px;
+  height: 260px;
+  overflow: hidden;
+  margin: 12px 0 0 6px;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec .scrollIndicator {
+  right: 12px;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec .stampListAllSec,
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec .stampListUsedSec {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 0 0 0;
+  display: none;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec .stampListAllSec .stampImgSec,
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec .stampListUsedSec .stampImgSec {
+  display: block;
+  position: relative;
+  margin: 4px 10px 12px 0;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec .stampListAllSec .stampImgSec .img,
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec .stampListUsedSec .stampImgSec .img {
+  width: 100px;
+  height: 100px;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec .stampListAllSec .stampImgSec .selectSec,
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec .stampListUsedSec .stampImgSec .selectSec {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec .stampListAllSec .stampImgSec .selectSec.selected,
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec .stampListUsedSec .stampImgSec .selectSec.selected {
+  width: 104px;
+  height: 104px;
+  top: -2px;
+  left: -2px;
+  border: 4px solid #ff3b81;
+  border-radius: 10px;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec .stampListAllSec .noItem,
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec .stampListUsedSec .noItem {
+  position: absolute;
+  top: 100px;
+  left: 154px;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec.onAll .stampListAllSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #stampListMainWrapSec.onUsed .stampListUsedSec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #commentSec {
+  position: absolute;
+  bottom: 38px;
+  left: 26px;
+  width: 300px;
+  height: 40px;
+  border: 3px solid #b28750;
+  border-radius: 10px;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #commentSec .commentSelect,
+#EventWalpurgisGroupRaid #stampListSec #commentSec #dispSelected {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  opacity: 0;
+  color: #b28750;
+  padding: 4px 0 0 0;
+  font-size: 110%;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #commentSec #dispSelected {
+  opacity: 1;
+  pointer-events: none;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #sendBtn {
+  position: absolute;
+  bottom: 26px;
+  right: 26px;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #sendBtn span {
+  position: relative;
+  width: auto;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #sendBtn .cdText,
+#EventWalpurgisGroupRaid #stampListSec #sendBtn .countdown {
+  display: none;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #sendBtn.off .cdText,
+#EventWalpurgisGroupRaid #stampListSec #sendBtn.off .countdown {
+  display: inline-block;
+}
+
+#EventWalpurgisGroupRaid #stampListSec #sendBtn.off.passTime .cdText,
+#EventWalpurgisGroupRaid #stampListSec #sendBtn.off.passTime .countdown {
+  display: none;
+}
+
+#EventWalpurgisGroupRaid .forBrowserSec {
+  position: absolute;
+  width: 300px;
+  height: 180px;
+  top: 100px;
+  left: 100px;
+}
+
+#EventWalpurgisGroupRaid .forBrowserSec .pointBtn {
+  display: inline-block;
+  margin: 0 0 20px 0;
+}
+
+#EventWalpurgisGroupRaid #changeNativeData {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  z-index: 1;
+}
+
+.popupContent.typeB.SubBossPopup .popupInner .closeDefault {
+  background-image: url("/magica/resource/image_web/common/popup/popup_close.png");
+}
+
+.popupContent.typeB.SubBossPopup .popupInner .popupTitle {
+  background: url("/magica/resource/image_web/common/popup/bg_popup_title_c.png") left top repeat;
+}
+
+.popupContent.typeB.SubBossPopup .popupInner .popupTitle:before {
+  background: url("/magica/resource/image_web/common/popup/bg_popup_title_l.png") left top repeat;
+}
+
+.popupContent.typeB.SubBossPopup .popupInner .popupTitle:after {
+  background: url("/magica/resource/image_web/common/popup/bg_popup_title_r.png") left top repeat;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec {
+  margin: 16px 0 0;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec li {
+  display: inline-block;
+  text-align: center;
+  border: 2px solid #c0a98b;
+  border-radius: 16px;
+  padding: 14px 0 22px 0;
+  width: 290px;
+  margin: 12px 12px 0;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec li .bossNameSec {
+  display: inline-block;
+  margin: 0 0 6px 0;
+  font-size: 90%;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec li .bossNameSec span {
+  font-size: 90%;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec li .difficultyLevelSec,
+.popupContent.typeB.SubBossPopup .questSelectSec li .apSec {
+  display: inline-block;
+  position: relative;
+  font-size: 65%;
+  width: 140px;
+  padding: 1px 12px;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec li .difficultyLevelSec .title,
+.popupContent.typeB.SubBossPopup .questSelectSec li .apSec .title {
+  position: absolute;
+  left: 18px;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec li .difficultyLevelSec .num,
+.popupContent.typeB.SubBossPopup .questSelectSec li .apSec .num {
+  position: absolute;
+  right: 18px;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec li .difficultyLevelSec {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/quest/point_frame_t_bg.png") center top no-repeat;
+  background-size: -webkit-calc(100% - 20px) 100%;
+  width: 200px;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec li .difficultyLevelSec:before {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/quest/point_frame_t_l.png") left top repeat;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec li .difficultyLevelSec:after {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/quest/point_frame_t_r.png") left top repeat;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec li .rewardSec {
+  display: inline-block;
+  border: 2px solid #c0a98b;
+  border-radius: 14px;
+  width: 200px;
+  padding: 6px 0 16px;
+  margin: 12px 0 8px 0;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec li .rewardSec .title {
+  font-size: 70%;
+  color: #c0a98b;
+  margin: 0 0 -15px 0;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec li .rewardSec .line {
+  display: inline-block;
+  width: 174px;
+  height: 10px;
+  margin: 0 0 0 0;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/quest/turquoise_line.png") left top no-repeat;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec li .rewardSec .img {
+  display: inline-block;
+  position: relative;
+  margin: -4px 0 0 0;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec li .rewardSec .img .num {
+  position: absolute;
+  bottom: -10px;
+  right: -6px;
+  font-size: 80%;
+}
+
+.popupContent.typeB.SubBossPopup .questSelectSec li .decideBtn {
+  margin: 16px 0 0 0;
+}
+
+.popupContent.typeA.MainBossPopup .popupInner .closeDefault {
+  background-image: url("/magica/resource/image_web/common/popup/popup_close.png");
+}
+
+.popupContent.typeA.MainBossPopup .popupInner .popupTitle {
+  width: 740px;
+  background: url("/magica/resource/image_web/common/popup/bg_popup_title_c.png") left top repeat;
+}
+
+.popupContent.typeA.MainBossPopup .popupInner .popupTitle:before {
+  background: url("/magica/resource/image_web/common/popup/bg_popup_title_l.png") left top repeat;
+}
+
+.popupContent.typeA.MainBossPopup .popupInner .popupTitle:after {
+  background: url("/magica/resource/image_web/common/popup/bg_popup_title_r.png") left top repeat;
+}
+
+.popupContent.typeA.MainBossPopup .popupTextArea {
+  position: relative;
+  height: 380px;
+}
+
+.popupContent.typeA.MainBossPopup .bossImg {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+}
+
+.popupContent.typeA.MainBossPopup .questSec {
+  position: absolute;
+  top: 20px;
+  left: 450px;
+  text-align: left;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .bossName {
+  font-size: 120%;
+  margin: 0 0 10px 0;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .difficultyLevelSec,
+.popupContent.typeA.MainBossPopup .questSec .apSec {
+  position: relative;
+  font-size: 65%;
+  width: 140px;
+  padding: 1px 12px;
+  margin: 46px 0 0 0;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .difficultyLevelSec .title,
+.popupContent.typeA.MainBossPopup .questSec .apSec .title {
+  position: absolute;
+  left: 18px;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .difficultyLevelSec .num,
+.popupContent.typeA.MainBossPopup .questSec .apSec .num {
+  position: absolute;
+  right: 18px;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .difficultyLevelSec {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/quest/point_frame_t_bg.png") center top no-repeat;
+  background-size: -webkit-calc(100% - 20px) 100%;
+  width: 360px;
+  margin: 0 0 90px 0;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .difficultyLevelSec:before {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/quest/point_frame_t_l.png") left top repeat;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .difficultyLevelSec:after {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/quest/point_frame_t_r.png") left top repeat;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec {
+  position: relative;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec .haveInfo {
+  position: relative;
+  font-size: 90%;
+  width: 360px;
+  height: 30px;
+  background: url("/magica/resource/image_web/event/eventWalpurgis/quest/point_frame_bg.png") center top no-repeat;
+  background-size: -webkit-calc(100% - 26px) 100%;
+  margin: 0 0 10px 0;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec .haveInfo:before {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/quest/point_frame_l.png") left top no-repeat;
+  width: 14px;
+  height: 30px;
+  left: 0px;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec .haveInfo:after {
+  background: url("/magica/resource/image_web/event/eventWalpurgis/quest/point_frame_r.png") left top no-repeat;
+  width: 14px;
+  height: 30px;
+  right: 0px;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec .haveInfo .title {
+  position: absolute;
+  left: 18px;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec .haveInfo .num {
+  position: absolute;
+  right: 18px;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec .img {
+  position: absolute;
+  display: block;
+  width: 58px;
+  height: auto;
+  top: -14px;
+  left: 98px;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec .useCheckSec {
+  position: relative;
+  width: 360px;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec .useCheckSec .text,
+.popupContent.typeA.MainBossPopup .questSec .itemSec .useCheckSec .num {
+  display: inline-block;
+  font-size: 70%;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec .useCheckSec .text {
+  margin: 0 0 0 -4px;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec .useCheckSec .num {
+  position: absolute;
+  top: 7px;
+  right: 2px;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec .useCheckSec .num span {
+  color: #ff4f9e;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec .useCheckSec .checkBox,
+.popupContent.typeA.MainBossPopup .questSec .itemSec .useCheckSec .checkBoxOff {
+  margin: 0 0 -8px 0;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-image: url("/magica/resource/image_web/common/icon/icon_checkbox.png");
+  background-size: 32px 32px;
+  position: relative;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec .useCheckSec .checkBox.checked:before,
+.popupContent.typeA.MainBossPopup .questSec .itemSec .useCheckSec .checkBoxOff.checked:before {
+  width: 27px;
+  height: 21px;
+  background-image: url("/magica/resource/image_web/common/icon/icon_checkbox_check.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  content: "";
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec .useCheckSec .checkBoxOff {
+  background-color: rgba(0, 0, 0, 0.255);
+  -webkit-filter: brightness(75%);
+          filter: brightness(75%);
+}
+
+.popupContent.typeA.MainBossPopup .questSec .itemSec .useCheckSec .checkBoxOff.checked:before {
+  display: none;
+}
+
+.popupContent.typeA.MainBossPopup .questSec .decideBtn {
+  position: absolute;
+  bottom: -12px;
+  right: 0px;
+}
+
+@-webkit-keyframes stampWrapShow {
+  0% {
+    -webkit-transform: translate3d(-650px, 0, 0);
+            transform: translate3d(-650px, 0, 0);
+    opacity: .3;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes stampWrapShow {
+  0% {
+    -webkit-transform: translate3d(-650px, 0, 0);
+            transform: translate3d(-650px, 0, 0);
+    opacity: .3;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes stampWrapHide {
+  0% {
+    -webkit-transform: translate3d(0px, 0, 0);
+            transform: translate3d(0px, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(-650px, 0, 0);
+            transform: translate3d(-650px, 0, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes stampWrapHide {
+  0% {
+    -webkit-transform: translate3d(0px, 0, 0);
+            transform: translate3d(0px, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(-650px, 0, 0);
+            transform: translate3d(-650px, 0, 0);
+    opacity: 0;
+  }
+}

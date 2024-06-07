@@ -1,0 +1,33 @@
+<div id="stampBtn" class="stampBtn"></div>
+
+<!-- スタンプリスト -->
+<script type="text/template" id="tempStampList">
+	<div id="stampListSec" class="commonFrame2 show">
+		<div id="closeBtn" class="closeBtn se_cancel TE"></div>
+		<div class="title">スタンプ</div>
+		<div class="btnListSec">
+			<div id="usedStampBtn" class="typeBtn se_tabs b_pink"><span>最近使ったスタンプ</span></div>
+			<div id="allStampBtn" class="typeBtn se_tabs b_pink"><span>全部</span></div>
+		</div>
+		<div id="stampListMainWrapSec" class="">
+			<ul class="stampListUsedSec">
+				<li class="noItem">表示できるスタンプはありません</li>
+			</ul>
+			<ul class="stampListAllSec"></ul>
+		</div>
+		<div id="commentSec">
+			<select class="commentSelect"></select>
+			<div id="dispSelected">▼ コメントを選ぶ</div>
+		</div>
+		<div id="sendBtn" class="TE btn b_pink se_decide off">
+			<span class="b_screen"></span>
+			<span>送信</span><span class="cdText">まで</span><span class="countdown"></span><span class="cdText">秒</span>
+		</div>
+	</div>
+</script>
+
+<!-- スタンプアイテム -->
+<script type="text/template" id="tempStampItem">
+	<img class="img" src="/magica/resource/image_web/page/collection/sticker/event_dailytower_<%='<%= model.img %\>'%>_s.png">
+	<span class="selectSec" data-id="<%='<%= model.img %\>'%>"></span>
+</script>
