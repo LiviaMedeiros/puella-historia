@@ -1,0 +1,294 @@
+<style type="text/css">
+	#DeckFormation #deckFooter .btns #pieceEquipBtn {
+		background: url('/magica/resource/image_web/page/formation_2/btn_memoria_view.png') left top no-repeat!important;
+	}
+	#DeckFormation #deckFooter .btns #pieceEquipBtn.on {
+		background: url('/magica/resource/image_web/page/formation_2/btn_chara_view.png') left top no-repeat!important;
+	}
+</style>
+
+<div id="DeckFormation" class='supportWrap'>
+	<div id='deckSelectWrap' class='noneDisp'>
+		<div class='deckCaution deckFooter'>編成するチームをタッチしてください</div>
+	</div>
+
+	<div id="deckFooter">
+		<div class='bg1'></div>
+		<div class="footerInner">
+			<div class="attBox">
+				<img class="arrow" src="/magica/resource/image_web/page/formation/enemy_element_arrow_a.png" alt="">
+				<div class="att fire"></div>
+				<div class="att water"></div>
+				<div class="att timber"></div>
+				<div class="att dark"></div>
+				<div class="att light"></div>
+				<div class="att void"></div>
+			</div>
+			<div class='btns flexBox default'>
+				<div id='pieceEquipBtn'           class='footerBtn se_decide TE c_gold'></div>
+				<div id='dispModeChangeBtn'       class='footerBtn se_decide TE c_gold'></div>
+			</div>
+		</div>
+		<div class='bg2'></div>
+	</div>
+</div>
+
+<script type="text/template" id="DeckViewTemp">
+	<div class="formationHead">
+		<%="<% _.each(model.posArr,function(pos,index) { %\>"%>
+			<div class='head'>
+				<div class="formationEffect flexBox"></div>
+			</div>
+		<%="<% }); %\>"%>
+	</div>
+
+	<div class="deckPartsWrap">
+		<%="<% _.each(model.posArr,function(pos,index) { %\>"%>
+			<%="<% var cardModel = model.userCardObj['place'+pos] %\>"%>
+			<%="<% var pieceArr  = model.userPieceObj['place'+pos] %\>"%>
+			<%="<% var charaId   = (cardModel && cardModel.card && !cardModel.support) ? cardModel.charaId : '' %\>"%>
+			<%="<% var charaAtt  = (cardModel && cardModel.card && !cardModel.support) ? cardModel.chara.attributeId : '' %\>"%>
+			<%="<% var charaName = (cardModel && cardModel.chara && !cardModel.support) ? cardModel.chara.name : '' %\>"%>
+			<%="<% charaName += (cardModel && cardModel.chara && cardModel.chara.title && !cardModel.support) ? ' ' + cardModel.chara.title : '' %\>"%>
+
+			<%="<% var classTxt = (cardModel && cardModel.card) ? 'on' : 'off' %\>"%>
+			<%="<% var isLeader = ''; %\>"%>
+			<%="<% if(model.leaderPos == pos) isLeader = ' on' %\>"%>
+
+			<%="<% var eventFlag = false; %\>"%>
+
+			<div class='deckParts support <%="<%= classTxt %\>"%>'
+				data-charaid='<%="<%= charaId %\>"%>'
+				data-charaatt='<%="<%= charaAtt %\>"%>'
+				data-charaname='<%="<%= charaName %\>"%>'
+				data-posindex='<%="<%= pos %\>"%>'>
+
+				<div class='tapArea'></div>
+
+				<%="<% if(cardModel && cardModel.card) { %\>"%>
+
+					<div class="flexBox revisionIcon">
+						<%="<% var i = 0; %\>"%>
+						<%="<% var RevisionMax = 3; %\>"%>
+
+						<%="<% var onNum = cardModel.revision; %\>"%>
+						<%="<% var noneNum = RevisionMax - onNum; %\>"%>
+
+						<%="<% while(i < onNum) { %\>"%>
+							<div class="on"/>
+							<%="<% i=(i+1)|0; %\>"%>
+						<%="<% }  %\>"%>
+
+						<%="<% i = 0; %\>"%>
+						<%="<% while(i < noneNum) { %\>"%>
+							<div class=""/>
+							<%="<% i=(i+1)|0; %\>"%>
+						<%="<% } %\>"%>
+					</div>
+
+					<div class="maskWrap">
+						<%="<% if(img['card_' + cardModel.displayCardId + '_v']) { %\>"%>
+							<%="<% var _img = ''; %\>"%>
+							<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+							<%="<% _img += img['card_' + cardModel.displayCardId + '_v'] %\>"%>
+
+							<img class="charaImg" src='<%="<%= _img %\>"%>' alt=''>
+						<%="<% } else { %\>"%>
+							<img class="charaImg"
+								 data-nativeimgkey='card_<%="<%= cardModel.displayCardId %\>"%>_v'
+								 data-src='resource/image_native/card/image/card_<%="<%= cardModel.displayCardId %\>"%>_v.png' alt=''>
+						<%="<% } %\>"%>
+
+						<div class="status">
+							<div id="attribute"><span class='type_f <%="<%= cardModel.chara.attributeId %\>"%>'></span></div>
+							<p id="level" class="ts_gold">Lv <%="<%= cardModel.level %\>"%></p>
+							<div id="rare" class='<%="<%= cardModel.card.rank %\>"%>'>
+								<%="<% var i = 0; %\>"%>
+								<%="<% var maxRare = cardModel.maxRare; %\>"%>
+								<%="<% while(i < maxRare) { %\>"%>
+									<span></span>
+									<%="<% i=(i+1)|0; %\>"%>
+								<%="<% } %\>"%>
+							</div>
+							<dl class='charaStatus' style='display: none;'>
+								<%="<% var classTxt01 = (cardModel.memoriaHp || cardModel.addendHp > 0 || cardModel.composeAttribute.composed.HP > 0)      ? 'c_red' : '' %\>"%>
+								<%="<% var classTxt02 = (cardModel.memoriaAttack || cardModel.addendAttack > 0 || cardModel.composeAttribute.composed.ATTACK > 0)  ? 'c_red' : '' %\>"%>
+								<%="<% var classTxt03 = (cardModel.memoriaDefense || cardModel.addendDefense > 0 || cardModel.composeAttribute.composed.DEFENSE > 0) ? 'c_red' : '' %\>"%>
+
+								<%="<% var status01 = (cardModel.memoriaHp)      ? cardModel.addHp + cardModel.addendHp + cardModel.composeAttribute.composed.HP      : cardModel.hp + cardModel.addendHp + cardModel.composeAttribute.composed.HP %\>"%>
+								<%="<% var status02 = (cardModel.memoriaAttack)  ? cardModel.addAttack + cardModel.addendAttack + cardModel.composeAttribute.composed.ATTACK : cardModel.attack + cardModel.addendAttack + cardModel.composeAttribute.composed.ATTACK %\>"%>
+								<%="<% var status03 = (cardModel.memoriaDefense) ? cardModel.addDefense + cardModel.addendDefense + cardModel.composeAttribute.composed.DEFENSE : cardModel.defense + cardModel.addendDefense + cardModel.composeAttribute.composed.DEFENSE %\>"%>
+
+								<dt class="c_gold">HP</dt>
+								<dd class='<%="<%= classTxt01 %\>"%>'><%="<%= status01 %\>"%></dd>
+								<dt class="c_gold">ATK</dt>
+								<dd class='<%="<%= classTxt02 %\>"%>'><%="<%= status02 %\>"%></dd>
+								<dt class="c_gold">DEF</dt>
+								<dd class='<%="<%= classTxt03 %\>"%>'><%="<%= status03 %\>"%></dd>
+							</dl>
+
+							<div class='disk'>
+								<ul class="commandList">
+									<li class="<%='<%= (cardModel.card.commandType1) ? cardModel.card.commandType1 : "" %\>'%>"></li>
+									<li class="<%='<%= (cardModel.card.commandType2) ? cardModel.card.commandType2 : "" %\>'%>"></li>
+									<li class="<%='<%= (cardModel.card.commandType3) ? cardModel.card.commandType3 : "" %\>'%>"></li>
+									<li class="<%='<%= (cardModel.card.commandType4) ? cardModel.card.commandType4 : "" %\>'%>"></li>
+									<li class="<%='<%= (cardModel.card.commandType5) ? cardModel.card.commandType5 : "" %\>'%>"></li>
+								</ul>
+							</div>
+
+							<div class='skill'>
+								<div class='flexBox'>
+									<%="<% var magiaClassTxt  = (cardModel.magiaLevel == 0) ? 'off'    : ''; %\>"%>
+									<%="<% var doppelClassTxt = (cardModel.doppelOpenFlag)  ? 'doppel' : ''; %\>"%>
+									<%="<% var groupId        = (cardModel.doppelOpenFlag)  ? cardModel.card.doppelCardMagia.groupId : cardModel.card.cardMagia.groupId; %\>"%>
+									<div class='magia <%="<%= magiaClassTxt %\>"%> <%="<%= doppelClassTxt %\>"%>'>
+										<%="<% if(img['icon_skill_' + groupId]) { %\>"%>
+											<%="<% var _img = ''; %\>"%>
+											<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+											<%="<% _img += img['icon_skill_' + groupId] %\>"%>
+											<img src='<%="<%= _img %\>"%>'>
+										<%="<% } else { %\>"%>
+											<img data-nativeimgkey='icon_skill_<%="<%= groupId %\>"%>'
+										     data-src='resource/image_native/art/icon_skill_<%="<%= groupId %\>"%>.png' />
+										<%="<% } %\>"%>
+									</div>
+									<div class='connect'>
+										<%="<% if(img['icon_skill_' + cardModel.card.cardSkill.groupId]) { %\>"%>
+											<%="<% var _img = ''; %\>"%>
+											<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+											<%="<% _img += img['icon_skill_' + cardModel.card.cardSkill.groupId] %\>"%>
+											<img src='<%="<%= _img %\>"%>'>
+										<%="<% } else { %\>"%>
+											<img data-nativeimgkey='icon_skill_<%="<%= cardModel.card.cardSkill.groupId %\>"%>'
+											 data-src='resource/image_native/art/icon_skill_<%="<%= cardModel.card.cardSkill.groupId %\>"%>.png'>
+										<%="<% } %\>"%>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class='memoriaSkillWrap'>
+						<%="<% var canEquipNum = cardModel.revision + 1; %\>"%>
+
+						<%="<% var i = 0; %\>"%>
+						<%="<% var maxEquipNum = 4; %\>"%>
+						<%="<% while(i < maxEquipNum) { %\>"%>
+							<%="<% var equipKey = 'equipPiece' + (i+1) %\>"%>
+							<%="<% if(cardModel && cardModel[equipKey]) { %\>"%>
+								<%="<% var pieceClass = ''; %\>"%>
+								<%="<% pieceClass = (cardModel[equipKey].invalidFlag) ? cardModel[equipKey].invalidFlag : ''; %\>"%>
+
+								<%="<% if(cardModel.supportFlag) { %\>"%>
+									<%="<% pieceClass += ' tapBlock'; %\>"%>
+								<%="<% } %\>"%>
+
+								<%="<% if(img['icon_skill_' + cardModel[equipKey].piece.pieceSkill.groupId]) { %\>"%>
+									<%="<% var _img = ''; %\>"%>
+									<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+									<%="<% _img += img['icon_skill_' + cardModel[equipKey].piece.pieceSkill.groupId] %\>"%>
+									<span class='equiped <%="<%= pieceClass %\>"%>'><img src='<%="<%= _img %\>"%>'></span>
+								<%="<% } else { %\>"%>
+									<span class='equiped <%="<%= pieceClass %\>"%>'><img data-nativeimgkey='icon_skill_<%="<%= cardModel[equipKey].piece.pieceSkill.groupId %\>"%>' data-src='resource/image_native/art/icon_skill_<%="<%= cardModel[equipKey].piece.pieceSkill.groupId %\>"%>.png'></span>
+								<%="<% } %\>"%>
+
+								<%="<% if(!cardModel[equipKey].invalidFlag) canEquipNum--; %\>"%>
+
+							<%="<% } else { %\>"%>
+								<span class='cannotEquip'></span>
+							<%="<% } %\>"%>
+
+							<%="<% i=(i+1)|0; %\>"%>
+						<%="<% } %\>"%>
+					</div>
+
+					<div class='memoriaWrap'>
+						<%="<% var canEquipNum = cardModel.revision + 1; %\>"%>
+
+						<%="<% var i = 0; %\>"%>
+						<%="<% var maxEquipNum = 4; %\>"%>
+						<%="<% while(i < maxEquipNum) { %\>"%>
+							<%="<% var equipKey = 'equipPiece' + (i+1) %\>"%>
+							<%="<% if(cardModel && cardModel[equipKey]) { %\>"%>
+								<%="<% var pieceClass = ''; %\>"%>
+								<%="<% pieceClass = (cardModel[equipKey].invalidFlag) ? cardModel[equipKey].invalidFlag : ''; %\>"%>
+
+								<%="<% if(img['memoria_' + cardModel[equipKey].pieceId + '_s']) { %\>"%>
+									<%="<% var _img = ''; %\>"%>
+									<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+									<%="<% _img += img['memoria_' + cardModel[equipKey].pieceId + '_s'] %\>"%>
+									<span class='equiped <%="<%= pieceClass %\>"%>'
+									 data-pieceindex='<%="<%= i+1 %\>"%>'>
+									 	<img class='pieceIcon' src='<%="<%= _img %\>"%>'>
+									 	<div class='pieceBg'></div>
+
+									 	<%="<% if(img['icon_skill_' + cardModel[equipKey].piece.pieceSkill.groupId]) { %\>"%>
+											<%="<% var _img = ''; %\>"%>
+											<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+											<%="<% _img += img['icon_skill_' + cardModel[equipKey].piece.pieceSkill.groupId] %\>"%>
+											<span class='artIcon'><img src='<%="<%= _img %\>"%>'></span>
+										<%="<% } else { %\>"%>
+											<span class='artIcon'><img data-nativeimgkey='icon_skill_<%="<%= cardModel[equipKey].piece.pieceSkill.groupId %\>"%>' data-src='resource/image_native/art/icon_skill_<%="<%= cardModel[equipKey].piece.pieceSkill.groupId %\>"%>.png'></span>
+										<%="<% } %\>"%>
+										<%="<% if(cardModel[equipKey].eventEffect) { %\>"%>
+											<%="<% eventFlag = true; %\>"%>
+											<span class='bonusIcon'></span>
+										<%="<% } %\>"%>
+
+										<%="<% if(cardModel[equipKey].lbCount == 4) { %\>"%>
+											<span class='lbMaxIcon'></span>
+										<%="<% } %\>"%>
+
+										<p class='pieceLv'>Lv<%="<%= cardModel[equipKey].level + '/' + cardModel[equipKey].maxLevel  %\>"%></p>
+									</span>
+								<%="<% } else { %\>"%>
+									<span class='equiped <%="<%= pieceClass %\>"%>'
+									 data-pieceindex='<%="<%= i+1 %\>"%>'>
+										 <img class='pieceIcon' src='/magica/resource/image_web/memoria/memoria_<%="<%= cardModel[equipKey].pieceId %\>"%>_s.png'>
+										 <div class='pieceBg'></div>
+
+										 <%="<% if(img['icon_skill_' + cardModel[equipKey].piece.pieceSkill.groupId]) { %\>"%>
+											<%="<% var _img = ''; %\>"%>
+											<%="<% if(!window.isBrowser) _img += 'data:image/png;base64,' %\>"%>
+											<%="<% _img += img['icon_skill_' + cardModel[equipKey].piece.pieceSkill.groupId] %\>"%>
+											<span class='artIcon'><img src='<%="<%= _img %\>"%>'></span>
+										<%="<% } else { %\>"%>
+											<span class='artIcon'><img data-nativeimgkey='icon_skill_<%="<%= cardModel[equipKey].piece.pieceSkill.groupId %\>"%>' data-src='resource/image_native/art/icon_skill_<%="<%= cardModel[equipKey].piece.pieceSkill.groupId %\>"%>.png'></span>
+										<%="<% } %\>"%>
+										<%="<% if(cardModel[equipKey].eventEffect) { %\>"%>
+											<%="<% eventFlag = true; %\>"%>
+											<span class='bonusIcon'></span>
+										<%="<% } %\>"%>
+
+										<%="<% if(cardModel[equipKey].lbCount == 4) { %\>"%>
+											<span class='lbMaxIcon'></span>
+										<%="<% } %\>"%>
+
+										<p class='pieceLv'>Lv<%="<%= cardModel[equipKey].level + '/' + cardModel[equipKey].maxLevel  %\>"%></p>
+									</span>
+
+								<%="<% } %\>"%>
+
+								<%="<% if(!cardModel[equipKey].invalidFlag) canEquipNum--; %\>"%>
+							<%="<% } else { %\>"%>
+								<span class='cannotEquip' data-pieceindex='<%="<%= i+1 %\>"%>'>
+									<span class='artIcon'></span>
+									<div class='pieceBg'></div>
+								</span>
+
+							<%="<% } %\>"%>
+
+							<%="<% i=(i+1)|0; %\>"%>
+						<%="<% } %\>"%>
+					</div>
+				<%="<% } %\>"%>
+
+				<%="<% if(eventFlag) { %\>"%>
+					<div class='bonusIcon'></div>
+				<%="<% } %\>"%>
+				<div class="bg"></div>
+			</div>
+		<%="<% }); %\>"%>
+	</div>
+</script>

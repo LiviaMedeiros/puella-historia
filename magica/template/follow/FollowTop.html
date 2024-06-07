@@ -1,0 +1,102 @@
+<div id="FriendList">
+	<div id="tabBtn" class="commonFrame2">
+		<ul class="common_tab t_gold">
+			<li class="btn se_tabs TE follow" data-wrap="follow">フォロー</li>
+			<li class="btn se_tabs TE follower" data-wrap="follower">フォロワー</li>
+			<li class="btn se_tabs TE find" data-wrap="find"><span>プレイヤー検索</span></li>
+		</ul>
+	</div>
+	<div id="countFollowWrap" class="pointFrame"></div>
+	<div id="countFollowerWrap" class="pointFrame"><%= followers %></div>
+	<div id="countBlockWrap" class="pointFrame"><%= blocked %></div>
+	<ul id="followSearchTab" class="common_tab t_gold">
+		<li class="searchTabBtn se_tabs TE recommend current" data-wrap="recommend"><span>おすすめ</span></li>
+		<li class="searchTabBtn se_tabs TE playerName" data-wrap="playerName"><span>プレイヤー名</span></li>
+		<li class="searchTabBtn se_tabs TE playerId" data-wrap="playerId"><span>プレイヤーID</span></li>
+	</ul>
+	<input type="text" id="searchInput" readonly="readonly" placeholder="">
+	<div id="followSortWrap">
+		<select id="followSort">
+			<option value="rank-asc">ランク:昇順</option>
+			<option value="rank-desc">ランク:降順</option>
+			<option value="login-asc">ログイン時間:昇順</option>
+			<option value="login-desc">ログイン時間:降順</option>
+			<option value="followdate-asc">フォローした順:昇順</option>
+			<option value="followdate-desc">フォローした順:降順</option>
+		</select>
+		<div class="triangleArrow"></div>
+	</div>
+	<div id="followRefresh" class="sb_gold_01 se_decide">更新</div>
+	<div id="rankSearchWrap">
+		<select id="rankSelect">
+			<option selected="selected" value="0">指定無し</option>
+			<option value="1">Rank1〜</option>
+			<option value="10">Rank10〜</option>
+			<option value="20">Rank20〜</option>
+			<option value="40">Rank40〜</option>
+			<option value="60">Rank60〜</option>
+			<option value="80">Rank80〜</option>
+			<option value="100">Rank100〜</option>
+		</select>
+		<div class="triangleArrow"></div>
+	</div>
+	<div id="searchRefresh" class="sb_gold_01 se_decide">更新</div>
+	<div id="listWrap" class="commonFrame1">
+		<h2 id="listTitle"></h2>
+		<div class="hiddenWrap" id="scrollOuter">
+			<div id="followListWrap" class="followInner"></div>
+			<div id="followerListWrap" class="followerInner"></div>
+			<div id="blockListWrap" class="blockInner"></div>
+			<div id="findListWrap" class="searchInner"></div>
+		</div>
+
+		<div id="pagingWrap">
+		</div>
+		<div id="anotherPagingWrap">
+		</div>
+	</div>
+</div>
+
+<script type="text/template" id="userParts">
+	<div class="wrap infoWrap se_decide">
+		<%="<% if(model.visibleRankingClassType !== false){ %\>"%>
+		<%="<% if(model.emblemSettingClassType && model.emblemSettingClassType == 'RANK_MATCH' && model.currentRankMatchDefiniteClassRank){ %\>"%>
+			<div class="rankMatchEmblem rank<%='<%= model.currentRankMatchDefiniteClassRank %\>'%>"></div>
+		<%="<% } else if(model.definiteClassRank) { %\>"%>
+			<div class="rankingEmblem rank<%='<%= model.definiteClassRank %\>'%>"></div>
+		<%="<% } %\>"%>
+		<%="<% } %\>"%>
+		<div class="userCharaIcon <%="<%= model.cardRank %\>"%> <%="<%= model.attributeId %\>"%>">
+			<%="<% att = 'att_' + model.attributeId.toLowerCase(); %\>"%>
+			<%="<% star = 'star_' + model.cardRank.toLowerCase(); %\>"%>
+			<%="<% frame = 'frame_' + model.cardRank.toLowerCase(); %\>"%>
+			<%="<% bg = 'bg_' + model.attributeId.toLowerCase(); %\>"%>
+			<span class="att" data-nativebgkey='<%="<%= att %\>"%>' data-src='resource/image_native/card/frame/<%="<%= att %\>"%>.png'></span>
+			<span class="star" data-nativebgkey='<%="<%= star %\>"%>' data-src='resource/image_native/card/frame/<%="<%= star %\>"%>.png'></span>
+			<span class="rank" data-nativebgkey='<%="<%= frame %\>"%>' data-src='resource/image_native/card/frame/<%="<%= frame %\>"%>.png'></span>
+			<img data-nativeimgkey='card_<%="<%= model.displayCardId %\>"%>_f' data-src='resource/image_native/card/image/card_<%="<%= model.displayCardId %\>"%>_f.png'>
+			<span class="lv"><span><%="<%= model.level %\>"%></span></span>
+			<span class="bg" data-nativebgkey='<%="<%= bg %\>"%>' data-src='resource/image_native/card/frame/<%="<%= bg %\>"%>.png'></span>
+		</div>
+		<div class="infoWrap">
+			<%="<% if(model.displayTitle) { %\>"%>
+				<div class="userTitle_s frame <%="<%= model.displayTitle.font %\>"%>">
+					<div id="targetTitleText" class="userTitleText"><%="<%= model.displayTitle.name %\>"%></div>
+					<img id="targetTitleBg" class="userTitleBg" src="/magica/resource/image_web/common/grade/<%="<%= model.displayTitle.baseImage %\>"%>.png">
+				</div>
+			<%="<% } %\>"%>
+			<span class="userLevel">Rank<%="<%=model.userRank%\>"%></span>
+			<span class="userName"><%="<%=_.escape(model.userName)%\>"%></span><br>
+
+			<span class="leaderName c_purple"><%="<%= _.escape(model.charaName) %\>"%></span>
+			<span class="loginTime c_gold">最終ログイン&nbsp;<%= "<%= model.loginTimeLag %\>" %></span>
+			<div class="iconWrap">
+				<span class="followIcon<%="<% if(model.follow){ %\> on<% } %\>"%>"></span>
+				<span class="followerIcon<%="<% if(model.follower){ %\> on<% } %\>"%>"></span>
+			</div>
+			<p class="supportCheckBtn sb_gold_02 se_tabs"><span class="c_gold">サポート確認</span></p>
+			<div class="messageWrap"></div>
+			<div class="se_decide followBtn mb_pink<%="<% if(model.follow){ %\>"%> already<%="<% } %\>"%>">フォロー</div>
+		</div>
+	</div>
+</script>
