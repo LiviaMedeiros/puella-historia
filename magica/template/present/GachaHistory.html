@@ -1,0 +1,85 @@
+<div id="GachaHistory">
+	<div id="historyBaseWrap" class="commonFrame1">
+		<div id="gachaWrap">
+			<p class="gachaCnt c_gold">ガチャ履歴件数<span id="gachaCnt" class="c_gold"></span>件</p>
+			<p class='gachaCaution c_gold'>※直近10日間のガチャ履歴が表示されます</p>
+			<div id="gachaScrollWrap">
+				<div id="gachaInner" class="gachaScrollInner">
+				</div>
+			</div>
+			<div id="pagingWrap">
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/template" id="gachaParts">
+	<div class="wrap">
+		<p class="gachaDate c_gold"><%="<%= model.createdAt %\>"%></p>
+		<p class="gachaName c_purple">
+			<%="<% var name = ''; %\>"%>
+			<%="<% _.forEach(model.gachaSchedule.gachaKindList,function(txt){ %\>"%>
+				<%="<% if(name == '' && model.gachaBeanKind == txt.beanKind) name = txt.name; %\>"%>
+			<%="<% }) %\>"%>
+			<%="<%= name %\>"%>
+		</p>
+
+		<%="<% if(model.gachaSchedule.gachaType === 'STARTDASH') { %\>"%>
+			<img class='gachaBanner announce' src='/magica/resource/image_web/banner/announce/banner_0119_m.png'>
+		<%="<% } else if(model.gachaSchedule.gachaType === 'STARTDASH_MEMORIA') { %\>"%>
+			<img class='gachaBanner announce' src='/magica/resource/image_web/banner/gacha/gachabanner_0730_m.png'>
+		<%="<% } else if(model.gachaSchedule.gachaType === 'SELECTABLE_TUTORIAL') { %\>"%>
+			<img class='gachaBanner tutorial' src='/magica/resource/image_web/gacha/gacha_049_banner_s.png'>
+		<%="<% } else if(model.gachaSchedule.id == 818) { %\>"%>
+			<img class='gachaBanner announce' src='/magica/resource/image_web/banner/gacha/gachabanner_818_m_a.png'>
+		<%="<% } else if(model.gachaSchedule.gachaType === 'RARE' || model.gachaSchedule.gachaType === 'NORMAL') { %\>"%>
+
+			<%="<% if(model.gachaSchedule.imageBanner) { %\>"%>
+				<%="<% var imagePath = '/magica/resource/image_web/gacha/' + model.gachaSchedule.imageBanner + '_s.png' %\>"%>
+				<img class='gachaBanner' src='<%="<%= imagePath %\>"%>'>
+			<%="<% } %\>"%>
+		<%="<% } else { %\>"%>
+
+			<%="<% var gachaId = model.gachaSchedule.imageBanner ? parseInt(model.gachaSchedule.imageBanner.split('_')[1]) : model.gachaSchedule.id; %\>"%>
+			<%="<% gachaId = (gachaId < 100) ? '00'+gachaId : (gachaId < 1000) ? '0'+gachaId: gachaId; %\>"%>
+			<img class='gachaBanner announce' src='/magica/resource/image_web/banner/gacha/gachabanner_<%="<%= gachaId %\>"%>_m.png'>
+		<%="<% } %\>"%>
+	</div>
+</script>
+
+<!-- ガチャ結果ポップアップ -->
+<script type="text/template" id="ResultPopTemp">
+	<div class="popupInner">
+		<span class="closeDefault se_cancel popupCloseBtn TE"></span>
+		<p id="popupInfoDetailTitle" class="popupTitle common_title"><%="<%= model.title %\>"%></p>
+
+		<div class="popupTextArea gachaResultWrap <%='<%= model.type %\>'%>">
+			<%="<% _.forEach(model.gachaAnimation.gachaResultList,function(txt,index){ %\>"%>
+				<%='<% var itemFlag = ""; %\>'%>
+				<div class='partsWrap' >
+					<%='<% if(txt.type === "CARD"){ %\>'%>
+					<%='<% if(txt.charaId === 1042){ %\>'%>
+						<div class="specialCharaName"><%='<%= _.escape(txt.displayName) %\>'%></div>
+					<%='<% } %\>'%>
+						<%='<% var cardFrame = "frame_" + txt.attributeId.toLowerCase() + "_" + txt.rarity.toLowerCase(); %\>'%>
+						<div data-nativebgkey="<%='<%= cardFrame %\>'%>" data-src="resource/image_native/card/frame/<%='<%= cardFrame %\>'%>.png" class="cardFrame <%='<%= txt.rarity %\>'%> <%='<% txt.attributeId %\>'%>"></div>
+					<%='<% } %\>'%>
+
+					<%='<% if(txt.type === "ITEM"){ %\>'%>
+						<%='<% var cardFrame = "item_gem_frame0" + txt.rarity.split("_")[1]; %\>'%>
+						<%='<% itemFlag = "item"; %\>'%>
+
+						<div data-nativebgkey="<%='<%= cardFrame %\>'%>" data-src="resource/image_native/item/frame/<%='<%= cardFrame %\>'%>.png" class="itemFrame"></div>
+					<%='<% } %\>'%>
+
+					<div class="typeWrap <%='<%= txt.type %\>'%>"></div>
+					<img class="resultImage <%='<%= itemFlag %\>'%>" data-nativeimgkey='<%="<%= txt.key %\>"%>' data-src='<%="<%= txt.src %\>"%>' />
+				</div>
+
+			<%="<% }) %\>"%>
+		</div>
+
+		<p class='popCaution'>※デスティニージェム・交換チケット・各種おまけは、履歴では表示されません。</p>
+	</div>
+
+</script>
