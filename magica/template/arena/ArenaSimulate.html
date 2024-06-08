@@ -1,0 +1,133 @@
+<div id="ArenaSimulate">
+	<div id="friendLinkBtn" class="linkBtn TE se_decide" data-href="#/FollowTop"></div>
+	<div id="codeMatchingBtn" class="se_decide TE"></div>
+
+	<!-- ユーザー情報 -->
+	<div id="userInfoWrap">
+		<!-- ユーザー名 -->
+		<div class="rankNameWrap">
+			<p class="userRank">Rank<%= model.gameUser.level %></p>
+			<p class="userName arenaColor"><%= _.escape(model.user.loginName) %></p>
+		</div>
+
+		<!-- アリーナデッキリーダー画像 -->
+		<div class="userLeader">
+			<%
+				var arenaDeck = _.findWhere(model.userDeckList,{"deckType":21});
+				var leaderCard = _.findWhere(model.userCardList,{"id":(arenaDeck.questEpisodeUserCardId)});
+			%>
+			<img data-nativeimgkey='card_<%= leaderCard.displayCardId %>_l' data-src='resource/image_native/card/image/card_<%= leaderCard.displayCardId %>_l.png'>
+		</div>
+
+		<!-- アリーナデッキ -->
+		<div class="userArenaDeck">
+			<% for(var i=1;i<6;i++){
+				if(arenaDeck["userCardId"+i] && arenaDeck["userCardId"+i] !== arenaDeck.questEpisodeUserCardId){
+					var deckCard = _.findWhere(model.userCardList,{"id":arenaDeck["userCardId"+i]});
+					if(deckCard){ %>
+			<div class="deckIcons">
+				<img data-nativeimgkey='card_<%= deckCard.displayCardId %>_f' data-src='resource/image_native/card/image/card_<%= deckCard.displayCardId %>_f.png'>
+				<div class="deckFrame"></div>
+				<div class="deckBase"></div>
+			</div>
+				<%	}else{ %>
+			<div class="deckIcons">
+				<div class="deckFrame"></div>
+				<div class="deckBase"></div>
+			</div>
+			<%		}
+				}else if(arenaDeck["userCardId"+i] !== arenaDeck.questEpisodeUserCardId){ %>
+			<div class="deckIcons">
+				<div class="deckFrame"></div>
+				<div class="deckBase"></div>
+			</div>
+			<% }
+			}
+			%>
+		</div>
+
+		<!-- チーム力とミラーズポイント -->
+		<div class="userPointInfo">
+			<div class="teamPower arenaColor"><%= model.userArenaBattleMatch.userRatingPoint %></div>
+		</div>
+
+		<div class="vsMark"></div>
+
+		<!-- フッター -->
+		<div id="userInfoBottom">
+			<div class="formationBtn linkBtn se_decide TE" data-href="#/DeckFormation/arena"><span class="b_screen"></span></div>
+		</div>
+	</div>
+
+	<!-- 対戦相手表示 -->
+	<div class="enemySelect">
+		<div id="listSortBtn" class="se_tabs sb_gold_02 TE">
+			<span class="b_screen"></span>
+			ランク順
+		</div>
+		<div id="listAscBtn" class="desc TE se_decide"></div>
+	</div>
+	<div id="matchingWrap">
+		<ul id="matchingList" class="scrollInner"></ul>
+	</div>
+
+	<!-- BPゲージ -->
+	<div id="bpGuageFreeRank" class="bpGuageWrap"></div>
+
+	<!-- グラデーション背景 -->
+	<div class="arenaGradationBg"></div>
+</div>
+
+
+<!-- 対戦相手パーツ -->
+<script type="text/template" id="arenaParts">
+	<%="<% if(model.displayTitle) { %\>"%>
+		<div class="userTitle_s <%="<%= model.displayTitle.name %\>"%>">
+			<div id="targetTitleText" class="userTitleText"><%="<%= model.displayTitle.name %\>"%></div>
+			<img id="targetTitleBg" class="userTitleBg" src="/magica/resource/image_web/common/grade/<%="<%= model.displayTitle.baseImage %\>"%>.png">
+		</div>
+	<%="<% } %\>"%>
+	<p class="enemyRank">Rank<%='<%= model.userRank%\>'%></p>
+	<p class="matchingUserName arenaColor"><%='<%= _.escape(model.userName) %\>'%></p>
+	<p class="arenaRateing arenaColor"><%='<%= model.userRatingPoint %\>'%></p>
+	<div class="enemyInfoBg"></div>
+	<div class="matchingLeader">
+		<img data-nativeimgkey='card_<%="<%= model.leaderUserCard.displayCardId %\>"%>_s' data-src='resource/image_native/card/image/card_<%="<%= model.leaderUserCard.displayCardId %\>"%>_s.png'>
+	</div>
+	<div class="iconWrap">
+		<span class="followIcon<%='<% if(!model.follow){ %\>'%> off<%='<% } %\>'%>"></span>
+		<span class="followerIcon<%='<% if(!model.follower){ %\>'%> off<%='<% } %\>'%>"></span>
+	</div>
+	<%="<% if(!isRanking && model.visibleRankingClassType !== false){ %\>"%>
+	<%="<% if(model.gameUser && model.gameUser.emblemSettingClassType && model.gameUser.emblemSettingClassType == 'RANK_MATCH' && model.gameUser.interimArenaRankMatchClassType){ %\>"%>
+		<div class="rankMatchEmblem rank<%='<%= model.gameUser.interimArenaRankMatchClassType %\>'%>"></div>
+	<%="<% } else if(model.userArenaBattle && model.userArenaBattle.definiteClassRank) { %\>"%>
+		<div class="rankingEmblem rank<%='<%= model.userArenaBattle.definiteClassRank %\>'%>"></div>
+	<%="<% } %\>"%>
+	<%="<% } %\>"%>
+</script>
+
+<script type="text/template" id="codeMachingPopParts">
+	演習で対戦するプレイヤーのミラーズIDを入力してください。<br>
+
+	<span id="codeMachingInputTitle" class="c_gold">ミラーズID</span>
+	<input id='codeMachingInput' class='commonFrame3' type='text' value='' />
+	<span id="codeBattleStartBtn" class="TE btn b_pink se_decide"><span class="b_screen"></span>OK</span>
+	<span id="createOnetimeCodeBtn" class="TE btn b_pink se_decide"><span class="b_screen"></span>ミラーズID発行</span>
+	<p id="codeMachingPopCaution">
+		ミラーズIDは、発行後1時間有効です。<br>
+		<span class="c_red">※ミラーズID発行中は、再発行はできません。有効期限終了後から再発行が可能です。</span><br>
+		<span class="c_red">※対戦を行ったプレイヤーとは10分間は再戦を行うことができません。</span>
+	</p>
+</script>
+
+<script type="text/template" id="createCodePopParts">
+	<dl class="colWrap common_dl">
+		<dt class="colLeft">ミラーズID</dt>
+		<dd class="colRight"><span class="black"><%='<%= gameUser.arenaOnetimeCode %\>'%></span><span class="btn rightPosition se_decide sb_gold_01 TE " id="codeCopy"><span class="b_screen"></span>コピー</span></dd>
+	</dl>
+	<dl class="colWrap common_dl">
+		<dt class="colLeft">有効期限</dt>
+		<dd class="colRight"><span class="black"><%='<%= gameUser.arenaOnetimeCodeExpiredAt %\>'%></span></dd>
+	</dl>
+</script>
