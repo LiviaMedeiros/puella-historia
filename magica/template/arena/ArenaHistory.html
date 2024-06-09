@@ -1,0 +1,132 @@
+<% 
+	var isDefence = (mode === "defence") 
+	var isReplay = (mode === "replay") 
+%>
+<div id="ArenaHistory">
+	<div id="arenaHistoryWrap">
+		<div class="historyTitle <%= mode %>"></div>
+		<% if(mode === "replay") { %>
+		<div id="replayIdPlayBtn" class="se_decide TE"></div>
+		<% } %>
+		<ul id="historyTab">
+			<% var tabList = ["attack","defence","replay"]; %>
+			<% _.each(tabList,function(tab,index){ %>
+			<li class="<% if(mode===tab){ %>current <% } %>se_decide historyChange <%= tab %>" data-screen="<%= tab %>"></li>
+			<% }) %>
+		</ul>
+		<div id="historyScroll" class="<%= mode %>">
+			<div class="listScrollInner">
+				<% 
+					if(history.length > 0){
+						_.each(history,function(_model,index){
+							if(_model.arenaBattleStatus !== "CREATED"){
+								var detail = _model.opponentUserArenaBattleInfo;
+								var _arenaBattleTypeClass = '';
+								if(
+									_model.arenaBattleType === "RANKING"
+								){
+									_arenaBattleTypeClass = 'ranking'; 
+								}else if(
+									_model.arenaBattleType === "CODE_MATCH" || 
+									_model.arenaBattleType === "SIMULATE"
+								){
+									_arenaBattleTypeClass = 'simulate';
+								}else if(
+									_model.arenaBattleType === "ARENA_RANK_MATCH" 
+								){
+									_arenaBattleTypeClass = 'rankMatch';
+								}
+				%>
+					<div class="historyList <%= _arenaBattleTypeClass %>">
+					<% var cardIds    = (!isDefence) ? _model.arenaDeckCardIds.split(",") : _model.oppCardIds.split(","); %>
+					<% var oppCardIds = (!isDefence) ? _model.oppCardIds.split(",") : _model.arenaDeckCardIds.split(","); %>
+					<% var formation  = (!isDefence) ? _model.oppFormationSheet : _model.arenaDeckFormationSheet; %>
+					<div class="oppDeckCards">
+						<% _.each(oppCardIds,function(cardid,index){ %>
+							<% var card = (!isDefence) ? _.findWhere(_model.oppCardList,{cardId:(cardid | 0)}) : _.findWhere(_model.arenaDeckCardList,{cardId:(cardid | 0)}); %>
+							<div class="userCharaIcon <%=card.rank %> <%=card.attributeId %>">
+							<% att = "att_" +card.attributeId.toLowerCase() %>
+							<% star = "star_" +card.rank.toLowerCase() %>
+							<% frame = "frame_" +card.rank.toLowerCase() %>
+							<% bg = "bg_" +card.attributeId.toLowerCase() %>
+							<span class="att" data-nativebgkey="<%= att %>" data-src="resource/image_native/card/frame/<%= att %>.png"></span>
+							<span class="star" data-nativebgkey="<%= star %>" data-src="resource/image_native/card/frame/<%= star %>.png"></span>
+							<span class="rank" data-nativebgkey="<%= frame %>" data-src="resource/image_native/card/frame/<%= frame %>.png"></span>
+							<img data-nativeimgkey="card_<%= card.cardId %>_f" data-src='resource/image_native/card/image/card_<%= card.cardId %>_f.png'>
+							<span class="bg" data-nativebgkey="<%= bg %>" data-src="resource/image_native/card/frame/<%= bg %>.png"></span>
+						</div>
+						<% }) %>
+					</div>
+					<div class="infoWrap">
+						<span class="userLevel">Rank<%= detail.userRank %></span>
+						<span class="userName"><%= _.escape(detail.userName) %></span><br>
+					</div>
+					<div class="battleType"></div>
+					<div class="resultMark<% if(_model.arenaBattleStatus !== "WIN"){%> lose<% } %>"></div>
+					<div class="rightWrap">
+						<% if(mode !== "replay") { %>
+						<div class="formationMiniMap">
+							<% for(var i=0;i<10;i++){ %>
+								<% if(formation["placeSkillId"+i]){ %>
+									<span class="pos_<%= i %>"></span>
+								<% } %>
+							<% } %>
+						</div>
+						<div class="formationName arenaColor"><%= formation.name %></div>
+						<% } %>
+						<div class="battleTime arenaColor"><%= _model.createdAt.substr(5,11) %></div>
+						<% 
+							//防御履歴・リプレイの時はポイントを表示しない
+							if(isDefence || isReplay) { 
+						%>
+							<div class="pointWrap arenaColor"> --- </div>
+						<% }else{ %>
+							<div class="pointWrap arenaColor">＋ <%= _model.point %> Pt</div>
+						<% } %>
+					</div>
+					<div class="userDecks">
+						<% _.each(cardIds,function(cardid,index){ %>
+							<% var card = (isDefence) ? _.findWhere(_model.oppCardList,{cardId:(cardid | 0)}) : _.findWhere(_model.arenaDeckCardList,{cardId:(cardid | 0)}); %>
+							<div class="userCharaIcon <%= card.rank %> <%= card.attributeId %>">
+							<% att = "att_" +card.attributeId.toLowerCase() %>
+							<% star = "star_" +card.rank.toLowerCase() %>
+							<% frame = "frame_" +card.rank.toLowerCase() %>
+							<% bg = "bg_" +card.attributeId.toLowerCase() %>
+							<span class="att" data-nativebgkey="<%= att %>" data-src="resource/image_native/card/frame/<%= att %>.png"></span>
+							<span class="star" data-nativebgkey="<%= star %>" data-src="resource/image_native/card/frame/<%= star %>.png"></span>
+							<span class="rank" data-nativebgkey="<%= frame %>" data-src="resource/image_native/card/frame/<%= frame %>.png"></span>
+							<img data-nativeimgkey="card_<%= card.cardId %>_f" data-src='resource/image_native/card/image/card_<%= card.cardId %>_f.png'>
+							<span class="bg" data-nativebgkey="<%= bg %>" data-src="resource/image_native/card/frame/<%= bg %>.png"></span>
+						</div>
+						<% }) %>
+					</div>
+					<% if(mode === "replay") { %>
+						<div class="copyReplayBtn se_decide TE" data-replay-id="<%= _model.replayId %>"></div>
+						<div class="playReplayBtn se_decide TE" data-replay-id="<%= _model.replayId %>"></div>
+					<% } %>
+				</div>
+				<% 
+							}
+						});
+				  }else{ 
+				%>
+						<% if(mode === "replay") { %>
+						<p class="noneHistory">リプレイがありません</p>
+						<% } else { %>
+						<p class="noneHistory">対戦履歴がありません</p>
+						<% } %>
+				<% } %>
+			</div>
+		</div>
+	</div>
+	<div class="arenaGradationBg"></div>
+</div>
+
+<script type="text/template" id="replayPopParts">
+	再生するリプレイのIDを入力してください。<br><br><br><br>
+
+	<span id="replayInputTitle" class="c_gold">リプレイID</span>
+	<input id='replayInput' class='commonFrame3' type='text' value='' />
+	<!-- div id="replayInputPasteBtn" class="TE sb_gold_01 se_cancel">貼り付け</div -->
+	<div id="replayInputClearBtn" class="TE sb_gold_01 se_cancel">クリア</div>
+</script>
