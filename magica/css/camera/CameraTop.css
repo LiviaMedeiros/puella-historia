@@ -1,0 +1,393 @@
+#CameraTop #cameraRun {
+  width: 186px;
+  height: 66px;
+  background: url("/magica/resource/image_web/page/camera/btn_camera_start.png") top left no-repeat;
+  position: fixed;
+  bottom: 24px;
+  left: 25px;
+  z-index: 1001;
+}
+
+#CameraTop #cameraRun .b_screen {
+  border-radius: 30px;
+}
+
+#CameraTop #shutter {
+  width: 98px;
+  height: 98px;
+  background: url("/magica/resource/image_web/page/camera/btn_capture.png") top left no-repeat;
+  position: fixed;
+  top: -webkit-calc(50% - 49px);
+  left: 13px;
+  z-index: 1001;
+  display: none;
+  -webkit-animation: bgFadeIn .3s ease 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#CameraTop #shutter .b_screen {
+  border-radius: 49px;
+}
+
+#CameraTop #posToggle {
+  width: 88px;
+  height: 78px;
+  background: url("/magica/resource/image_web/page/camera/btn_position.png") top left no-repeat;
+  position: fixed;
+  bottom: 202px;
+  right: 15px;
+  z-index: 1001;
+}
+
+#CameraTop #posToggle.off {
+  -webkit-filter: grayscale(100%);
+}
+
+#CameraTop #posToggle .b_screen {
+  width: 78px;
+  border-radius: 39px;
+  left: 5px;
+}
+
+#CameraTop #charaChange {
+  width: 88px;
+  height: 78px;
+  background: url("/magica/resource/image_web/page/camera/btn_chara.png") top left no-repeat;
+  position: fixed;
+  bottom: 110px;
+  right: 15px;
+  z-index: 1001;
+}
+
+#CameraTop #charaChange .b_screen {
+  width: 78px;
+  border-radius: 39px;
+  left: 5px;
+}
+
+#CameraTop #changeDecide {
+  display: none;
+  position: fixed;
+  right: 21px;
+  bottom: 135px;
+  z-index: 1001;
+}
+
+#CameraTop #wearChange {
+  width: 88px;
+  height: 78px;
+  background: url("/magica/resource/image_web/page/mypage/btn_live2d_02.png") top left no-repeat;
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+  z-index: 1001;
+}
+
+#CameraTop #wearChange .b_screen {
+  width: 78px;
+  border-radius: 39px;
+  left: 5px;
+}
+
+#CameraTop .live2dArea {
+  width: 824px;
+  height: -webkit-calc(100% - 60px);
+  position: absolute;
+  bottom: 0;
+  left: 100px;
+  z-index: 1000;
+}
+
+#CameraTop #startTimer {
+  width: 88px;
+  height: 78px;
+  background: url("/magica/resource/image_web/page/camera/btn_timer.png") top left no-repeat;
+  position: fixed;
+  bottom: 102px;
+  left: 18px;
+  z-index: 1001;
+  display: none;
+  -webkit-animation: bgFadeIn .3s ease 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#CameraTop #startTimer .b_screen {
+  width: 78px;
+  border-radius: 39px;
+  left: 5px;
+}
+
+#CameraTop #CameraPageBackLinkBtn {
+  width: 96px;
+  height: 65px;
+  background-image: url("/magica/resource/image_web/common/global/global_back.png");
+  background-repeat: no-repeat;
+  background-position: right 9px;
+  background-size: 89px 43px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 101;
+  -webkit-transform: translateZ(0);
+}
+
+#CameraTop #CameraPageBackLinkBtn.off {
+  -webkit-filter: grayscale(100%);
+}
+
+#CameraTop #cameraHelp {
+  width: 36px;
+  height: 36px;
+  background-image: url("/magica/resource/image_web/common/icon/icon_help.png");
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 36px;
+  z-index: 10000;
+}
+
+#CameraTop #uiBg {
+  width: 124px;
+  height: 100%;
+  position: fixed;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-animation: bgFadeIn .3s ease 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#CameraTop.cameraActive #shutter,
+#CameraTop.cameraActive #startTimer,
+#CameraTop.cameraActive #touchArea,
+#CameraTop.cameraActive #uiBg {
+  display: block;
+}
+
+#CameraTop.cameraActive #CameraPageBackLinkBtn {
+  display: none !important;
+}
+
+#CameraTop.cameraActive #cameraRun {
+  width: 144px;
+  height: 55px;
+  background: url("/magica/resource/image_web/page/camera/btn_camera_end.png") top left no-repeat;
+  position: fixed;
+  left: 0;
+  -webkit-animation: bgFadeIn .3s ease 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#CameraTop.cameraActive #cameraRun .b_screen {
+  border-radius: 0 26px 26px 0;
+  height: 52px;
+}
+
+#CameraTop.shuttering #cameraRun,
+#CameraTop.shuttering #shutter,
+#CameraTop.shuttering #startTimer,
+#CameraTop.shuttering #wearChange,
+#CameraTop.shuttering #posToggle,
+#CameraTop.shuttering #CameraPageBackLinkBtn,
+#CameraTop.shuttering #cameraHelp,
+#CameraTop.shuttering #posToggle2,
+#CameraTop.shuttering #charaChange,
+#CameraTop.shuttering .live2dArea,
+#CameraTop.shuttering #uiBg {
+  display: none !important;
+}
+
+#CameraTop.wearing #touchArea,
+#CameraTop.wearing #cameraRun,
+#CameraTop.wearing #shutter,
+#CameraTop.wearing #startTimer,
+#CameraTop.wearing #wearChange,
+#CameraTop.wearing #CameraPageBackLinkBtn,
+#CameraTop.wearing #cameraHelp,
+#CameraTop.wearing #posToggle,
+#CameraTop.wearing #posToggle2,
+#CameraTop.wearing #charaChange,
+#CameraTop.wearing .live2dArea,
+#CameraTop.wearing #uiBg {
+  display: none !important;
+}
+
+#CameraTop.changing #touchArea,
+#CameraTop.changing #cameraRun,
+#CameraTop.changing #shutter,
+#CameraTop.changing #startTimer,
+#CameraTop.changing #wearChange,
+#CameraTop.changing #posToggle,
+#CameraTop.changing #posToggle2,
+#CameraTop.changing #charaChange,
+#CameraTop.changing .live2dArea,
+#CameraTop.changing #uiBg {
+  display: none !important;
+}
+
+#CameraTop.changing #changeDecide {
+  display: block;
+}
+
+#CameraTop #chara {
+  width: 1024px;
+  height: 108px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  -webkit-animation: listFadeIn .3s ease-in-out 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#CameraTop #chara.off {
+  -webkit-animation: listFadeOut .3s ease-in-out 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#CameraTop #chara.forceOff {
+  display: none;
+}
+
+#CameraTop #touchArea {
+  width: 1024px;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#CameraTop #wearWrap {
+  width: 442px;
+  height: -webkit-calc(100% - 140px);
+  background: linear-gradient(rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.65) 100%);
+  position: absolute;
+  top: 70px;
+  right: 17px;
+  z-index: 12000;
+  -webkit-animation: wearWrapFadeIn 0.3s ease 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#CameraTop #wearWrap.off {
+  display: none;
+}
+
+#CameraTop #wearWrap.block {
+  pointer-events: none;
+}
+
+#CameraTop #wearWrap.block #mainBtn {
+  -webkit-filter: grayscale(100%);
+}
+
+#CameraTop #wearWrap #listTitle {
+  width: -webkit-calc(100% - 10px);
+  padding-left: 25px;
+  background: url("/magica/resource/image_web/common/frame/frame_title.png") left top no-repeat;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  line-height: 32px;
+  -webkit-border-radius: 15px 15px 0 0;
+}
+
+#CameraTop #wearWrap #scrollOuter {
+  width: 413px;
+  height: -webkit-calc(100% - 144px);
+  position: absolute;
+  top: 50px;
+  left: 17px;
+}
+
+#CameraTop #wearWrap #scrollOuter .scrollInner {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  padding: 3px 0 53px 10px;
+}
+
+#CameraTop #wearWrap #scrollOuter .scrollInner .wrap {
+  width: 384px;
+  height: 52px;
+  margin-bottom: 14px;
+  padding-left: 56px;
+  color: #864d16;
+  font-size: 20px;
+  line-height: 48px;
+}
+
+#CameraTop #wearWrap #scrollOuter .scrollInner .wrap:before {
+  width: 34px;
+  height: 34px;
+  background: url("/magica/resource/image_web/common/chara/icon_live2d.png") left top no-repeat;
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  content: "";
+}
+
+#CameraTop #wearWrap #scrollOuter .scrollInner .wrap.current {
+  box-shadow: 0 0 0 4px #ff3b81, 0 0 5px #e1c08d inset !important;
+}
+
+#CameraTop #wearWrap #mainBtn {
+  width: 190px;
+  min-width: 190px;
+  position: absolute;
+  bottom: 14px;
+  left: -webkit-calc(50% - 95px);
+  z-index: 100;
+  -webkit-transform: translateZ(0);
+}
+
+#CameraTop #wearWrap .bg {
+  width: 100%;
+  height: 44px;
+  background: #ffffff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-border-radius: 0 0 30px 30px;
+}
+
+@-webkit-keyframes listFadeOut {
+  0% {
+    transform: translateY(0) translateZ(0);
+  }
+  100% {
+    transform: translateY(300px) translateZ(0);
+  }
+}
+
+@-webkit-keyframes listFadeIn {
+  0% {
+    transform: translateY(300px) translateZ(0);
+  }
+  100% {
+    transform: translateY(0px) translateZ(0);
+  }
+}
+
+@-webkit-keyframes bgFadeIn {
+  0% {
+    transform: translateX(-100px) translateZ(0);
+  }
+  100% {
+    transform: translateX(0px) translateZ(0);
+  }
+}
+
+@-webkit-keyframes wearWrapFadeIn {
+  0% {
+    transform: translateX(300px) translateZ(0);
+  }
+  100% {
+    transform: translateX(0px) translateZ(0);
+  }
+}
