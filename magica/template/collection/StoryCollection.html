@@ -379,3 +379,22 @@
 	<div class="arrowRight arrow se_tabs TE"></div>
 	<%="<% } %\>"%>
 </script>
+
+<script type="text/template" id="AccomplishStoryTemp">
+	<div class='chapterTitleWrap commonFrame4 se_tabs' data-chapter='Accomplish<%="<%= model.eventId %\>"%>'>
+		<div class="faceImg">
+			<img data-nativeimgkey='card_<%="<%= model.displayCardId %\>"%>_f' data-src='resource/image_native/card/image/card_<%="<%= model.displayCardId %\>"%>_f.png' alt="">
+		</div>
+		<div class="chapterTitle"><%="<%= model.title %\>"%></div>
+		<div class='panArrow chapterIdPanAccomplish<%="<%= model.eventId %\>"%>'></div>
+	</div>
+	<div class='sectionListWrap chapterIdAccomplish<%="<%= model.eventId %\>"%>'>
+		<div class="eventMultiStory">
+			<%="<% _.forEach(model.storyList,function(txt,index){ %\>"%>
+			<div class="btnWrap <%='<% if (txt.isOpen === false) { %\>'%>lock<%='<% } %\>'%>">
+				<span class="mb_white TE se_decide eventStoryStart" data-ids="<%='<%= txt.storyIds %\>'%>"><span class="b_screen"></span><%="<%= txt.storyTitle %\>"%></span>
+			</div>
+			<%="<% }) %\>"%>
+		</div>
+	</div>
+</script>
