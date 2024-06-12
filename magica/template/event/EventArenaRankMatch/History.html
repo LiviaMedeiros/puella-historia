@@ -1,0 +1,48 @@
+<div id="RankMatchHistory">
+	<div id="arenaHistoryWrap">
+		<div class="historyTitle"></div>
+		<div id="historyScroll">
+			<div class="listScrollInner">
+				<% 
+					if(history.length > 0){
+						_.each(history,function(_model,index){
+				%>
+				<div class="historyList">
+					<div class="rightWrap">
+						<div class="eventTitle"><%= _model.regularEvent.name %></div>
+						<span class="pointTitle">順位</span>
+						<% if(_model.rank != 0){ %>
+							<div class="pointWrap arenaColor"><%= _model.rank %>位</div>
+						<% }else{ %>
+							<div class="pointWrap arenaColor">---</div>
+						<% } %>
+						<span class="battleTimeTitle">開催期間</span>
+						<%
+						//開催期間
+							var startAt = _model.regularEvent.startAt.split(" ")[0].split("/");
+							var endAt   = _model.regularEvent.endAt.split(" ")[0].split("/");
+						%>
+						<div class="battleTime arenaColor">
+							<%= startAt[0] %>.<%= Number(startAt[1]) %>.<%= Number(startAt[2]) %>&nbsp;〜&nbsp;<%= endAt[0] %>.<%= Number(endAt[1]) %>.<%= Number(endAt[2]) %>
+						</div>
+						<% if(_model.definiteClassRank && _model.rank != 0){ %>
+							<div class="rankingEmblem rank<%= _model.definiteClassRank %>"></div>
+						<% }else{ %>
+							<div class="rankingEmblem"></div>
+						<% } %>
+					</div>
+				</div>
+				<% 
+						}); 
+					}else{ 
+				%>
+					<p class="noneHistory">戦績がありません</p>
+				<% } %>
+			</div>
+		</div>
+		<div class="btnSec">
+			<div class="toRankingBtn TE" id="toRankingBtn"></div>
+			<div class="toRankMatchBtn TE selected" id="toRankMatchBtn"></div>
+		</div>
+	</div>
+</div>
