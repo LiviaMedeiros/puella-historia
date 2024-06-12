@@ -1,5 +1,5 @@
 # Puella Historia
 
-Collected 9805 records from 54 installations.
+Collected 9911 records from 54 installations.
 
 <p align="right"><img src="https://xn--80aalyho.xn--p1ai/magireco/NAgitan/img/kagome.png" /></p>

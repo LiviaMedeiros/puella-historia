@@ -1,0 +1,1086 @@
+@charset "UTF-8";
+.schedulePopup .popupInner .text {
+  font-size: 21px;
+  line-height: 60px;
+}
+
+.schedulePopup #popScrollOuter {
+  width: 883px;
+  height: 344px;
+  margin-left: 40px;
+  overflow: hidden;
+}
+
+.schedulePopup #popScrollOuter .popScrollInner {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  padding-top: 4px;
+  padding-bottom: 10px;
+}
+
+.schedulePopup #popScrollOuter .popScrollInner img {
+  display: block;
+}
+
+.schedulePopup #scheduleData {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 870px;
+  border-collapse: separate;
+  border-spacing: 3px 4px;
+}
+
+.schedulePopup #scheduleData .date {
+  width: inherit;
+}
+
+.schedulePopup #scheduleData .openDay {
+  width: 82px;
+  background: #caa375;
+  border-radius: 8px 0 0 8px;
+  color: #fff;
+  padding: 26px 0;
+}
+
+.schedulePopup #scheduleData .innerArea {
+  position: relative;
+  width: 140px;
+  border: 2px solid #ebcba5;
+  text-align: left;
+}
+
+.schedulePopup #scheduleData .innerArea div {
+  display: inline-block;
+  width: 50%;
+}
+
+.schedulePopup #scheduleData .innerArea .textArea {
+  text-align: left;
+  margin: 10px;
+  vertical-align: middle;
+  line-height: 1.2em;
+}
+
+.schedulePopup #scheduleData .innerArea .commonItemImgWrap {
+  position: relative;
+  width: 60px;
+  height: 100%;
+  margin: 10px 0;
+  vertical-align: middle;
+}
+
+.schedulePopup #scheduleData .innerArea .commonItemImgWrap .commonItemImg {
+  width: 60px;
+}
+
+.schedulePopup #scheduleData .innerArea .commonItemImgWrap .quantity {
+  position: absolute;
+  font-size: 16px;
+  right: -5px;
+  bottom: -10px;
+  color: #fff;
+  text-shadow: -1px -1px 1px #8a5f29, 1px -1px 1px #8a5f29, -1px 1px 1px #8a5f29, 1px 1px 1px #8a5f29, -1px -1px #8a5f29, 1px -1px #8a5f29, -1px 1px #8a5f29, 1px 1px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 3px #8a5f29, 1px -1px 3px #8a5f29, -1px 1px 3px #8a5f29, 1px 1px 3px #8a5f29;
+}
+
+.schedulePopup #scheduleData .innerArea .commonItemImgWrap.LIVE2D {
+  width: 60px;
+  height: 60px;
+  background: url("/magica/resource/image_web/item/main/live2d.png") left center no-repeat;
+  background-size: 60px;
+}
+
+.schedulePopup #scheduleData .innerArea .commonItemImgWrap.LIVE2D .charaIcon {
+  width: 40px;
+  height: 36px;
+  position: absolute;
+  bottom: -15px;
+  right: -17px;
+}
+
+.schedulePopup #scheduleData .innerArea .commonItemImgWrap.LIVE2D .charaIcon:before {
+  width: 40px;
+  height: 36px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 29px);
+  background: url("/magica/resource/image_web/common/chara/chara_frame_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  z-index: 100;
+}
+
+.schedulePopup #scheduleData .innerArea .commonItemImgWrap.LIVE2D .charaIcon:after {
+  width: 40px;
+  height: 36px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 29px);
+  background: url("/magica/resource/image_web/common/chara/chara_base_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  z-index: 80;
+}
+
+.schedulePopup #scheduleData .innerArea .commonItemImgWrap.LIVE2D .charaIcon .maskWrap {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 21px);
+  z-index: 90;
+  overflow: hidden;
+  border-radius: 26px;
+}
+
+.schedulePopup #scheduleData .innerArea .commonItemImgWrap.LIVE2D .charaIcon .maskWrap img {
+  width: 42px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 30px);
+}
+
+.schedulePopup #scheduleData .innerArea.empty {
+  background: #f1e4d7;
+}
+
+.schedulePopup.tab4 #scheduleData {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  width: 870px;
+  border-collapse: separate;
+  border-spacing: 3px 4px;
+}
+
+.schedulePopup.tab4 #scheduleData .date {
+  width: inherit;
+}
+
+.schedulePopup.tab4 #scheduleData .openDay {
+  width: 70px;
+  background: #caa375;
+  border-radius: 8px 0 0 8px;
+}
+
+.schedulePopup.tab4 #scheduleData .innerArea {
+  width: 190px;
+  border: 2px solid #ebcba5;
+}
+
+#EventDailyTower.EventDailyTowerTop {
+  width: 1024px;
+  height: 100%;
+  position: relative;
+}
+
+#EventDailyTower.EventDailyTowerTop .touch {
+  -webkit-transform: scale(0.95) translateZ(0);
+}
+
+#EventDailyTower.EventDailyTowerTop .charaSerif {
+  width: 448px;
+  height: 160px;
+  padding: 45px 40px 0 50px;
+  background: url("/magica/resource/image_web/page/quest/questBattle/bg_serif.png") left top no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 7px;
+  left: -3px;
+  font-size: 22px;
+  line-height: 1.3;
+  -webkit-border-radius: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#EventDailyTower.EventDailyTowerTop .charaSerif .charaName {
+  width: 208px;
+  height: 20px;
+  position: absolute;
+  top: 29px;
+  left: 190px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+}
+
+#EventDailyTower.EventDailyTowerTop .charaSerif .serifFont {
+  width: 358px;
+  display: block;
+  color: #5a5a5a;
+  font-size: 20px;
+  line-height: 1.3;
+  white-space: normal;
+  word-wrap: break-word;
+  text-shadow: 0 0 0;
+}
+
+#EventDailyTower.EventDailyTowerTop #scrollOuter {
+  width: 100%;
+  height: -webkit-calc(100% - 23px);
+  overflow: hidden;
+}
+
+#EventDailyTower.EventDailyTowerTop #scrollOuter .scrollInner {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  padding-top: 14px;
+  padding-bottom: 100px;
+}
+
+#EventDailyTower.EventDailyTowerTop #eventLogo {
+  position: absolute;
+  top: 52px;
+  left: 0;
+}
+
+#EventDailyTower.EventDailyTowerTop #eventLogo img {
+  display: block;
+}
+
+#EventDailyTower.EventDailyTowerTop #eventLogo .puellaHistoriaTopBtn {
+  display: none;
+}
+
+#EventDailyTower.EventDailyTowerTop #missionLinkBtn {
+  width: 114px;
+  height: 120px;
+  padding-top: 45px;
+  background: url("/magica/resource/image_web/common/btn/btn_circle_pink.png") left top no-repeat;
+  background-size: 114px 120px;
+  position: absolute;
+  bottom: 140px;
+  left: 335px;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  z-index: 10;
+}
+
+#EventDailyTower.EventDailyTowerTop #helpBtn {
+  width: 100px;
+  position: absolute;
+  top: 13px;
+  right: 276px;
+  z-index: 10000;
+}
+
+#EventDailyTower.EventDailyTowerTop #archiveBtn {
+  width: 120px;
+  position: absolute;
+  top: 13px;
+  right: 144px;
+  z-index: 10000;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap {
+  width: 570px;
+  height: 60px;
+  position: absolute;
+  top: 68px;
+  right: 0px;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .normal, #EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .challenge, #EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .exchallenge, #EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .endlesschallenge {
+  width: 168px;
+  height: 60px;
+  display: block;
+  position: relative;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 60px;
+  text-align: center;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .normal.current, #EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .challenge.current, #EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .exchallenge.current, #EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .endlesschallenge.current {
+  text-shadow: 0 0 !important;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns.tab4 .normal, #EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns.tab4 .challenge, #EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns.tab4 .exchallenge, #EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns.tab4 .endlesschallenge {
+  width: 141px;
+  height: 48px;
+  font-size: 15px;
+  line-height: 48px;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .normal {
+  background: url("/magica/resource/image_web/event/dailytower/common/tab_normal_off_a.png") center top no-repeat;
+  background-size: contain;
+  margin-right: 1px;
+  text-shadow: -1px -1px 2px #e03d54, 1px -1px 2px #e03d54, -1px 1px 2px #e03d54, 1px 1px 2px #e03d54, -1px -1px 2px #e03d54, 1px -1px 2px #e03d54, -1px 1px 2px #e03d54, 1px 1px 2px #e03d54;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .normal.current {
+  background: url("/magica/resource/image_web/event/dailytower/common/tab_normal_on_a.png") center top no-repeat;
+  background-size: contain;
+  color: #e03d54;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .challengeWrap {
+  position: relative;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .challengeWrap .challenge {
+  background: url("/magica/resource/image_web/event/dailytower/common/tab_challenge_off_a.png") center top no-repeat;
+  background-size: contain;
+  margin-right: 1px;
+  text-shadow: -1px -1px 2px #1f54c2, 1px -1px 2px #1f54c2, -1px 1px 2px #1f54c2, 1px 1px 2px #1f54c2, -1px -1px 2px #1f54c2, 1px -1px 2px #1f54c2, -1px 1px 2px #1f54c2, 1px 1px 2px #1f54c2;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .challengeWrap .challenge.current {
+  background: url("/magica/resource/image_web/event/dailytower/common/tab_challenge_on_a.png") center top no-repeat;
+  background-size: contain;
+  color: #1f54c2;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .challengeWrap.off {
+  pointer-events: none;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .challengeWrap.off .btnWrap {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-filter: grayscale(100%) brightness(80%);
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .exchallengeWrap {
+  position: relative;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .exchallengeWrap .exchallenge {
+  background: url("/magica/resource/image_web/event/dailytower/common/tab_exchallenge_off_a.png") center top no-repeat;
+  background-size: contain;
+  margin-right: 1px;
+  text-shadow: -1px -1px 2px #e26a00, 1px -1px 2px #e26a00, -1px 1px 2px #e26a00, 1px 1px 2px #e26a00, -1px -1px 2px #e26a00, 1px -1px 2px #e26a00, -1px 1px 2px #e26a00, 1px 1px 2px #e26a00;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .exchallengeWrap .exchallenge.current {
+  background: url("/magica/resource/image_web/event/dailytower/common/tab_exchallenge_on_a.png") center top no-repeat;
+  background-size: contain;
+  color: #e26a00;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .exchallengeWrap.off {
+  pointer-events: none;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .exchallengeWrap.off .btnWrap {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-filter: grayscale(100%) brightness(80%);
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .endlesschallengeWrap {
+  position: relative;
+  font-size: 14px;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .endlesschallengeWrap .endlesschallenge {
+  background: url("/magica/resource/image_web/event/dailytower/common/tab_endlesschallenge_off.png") center top no-repeat;
+  background-size: contain;
+  margin-right: 4px;
+  text-shadow: -1px -1px 2px #7c33df, 1px -1px 2px #7c33df, -1px 1px 2px #7c33df, 1px 1px 2px #7c33df, -1px -1px 2px #7c33df, 1px -1px 2px #7c33df, -1px 1px 2px #7c33df, 1px 1px 2px #7c33df;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .endlesschallengeWrap .endlesschallenge.current {
+  background: url("/magica/resource/image_web/event/dailytower/common/tab_endlesschallenge_on.png") center top no-repeat;
+  background-size: contain;
+  color: #7c33df;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .endlesschallengeWrap.off {
+  pointer-events: none;
+}
+
+#EventDailyTower.EventDailyTowerTop #btnWrap #tabBtns .endlesschallengeWrap.off .btnWrap {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-filter: grayscale(100%) brightness(80%);
+}
+
+#EventDailyTower.EventDailyTowerTop #questWrap {
+  width: 560px;
+  height: -webkit-calc(100% - 146px);
+  padding: 46px 10px 0 26px;
+  position: absolute;
+  top: 136px;
+  right: 8px;
+}
+
+#EventDailyTower.EventDailyTowerTop #questWrap h2 {
+  width: 556px;
+  padding: 0 20px;
+  background: linear-gradient(45deg, transparent 0, #ffffff 0), linear-gradient(135deg, transparent 0, #ffffff 0), linear-gradient(225deg, transparent 9px, #ffffff 10px), linear-gradient(495deg, transparent 9px, #ffffff 10px) !important;
+  background-repeat: no-repeat !important;
+  background-position: bottom left, bottom right, top right, top left !important;
+  background-size: 52% 52% !important;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  font-size: 19px;
+  line-height: 44px;
+  z-index: 1;
+}
+
+#EventDailyTower.EventDailyTowerTop #normalQuest, #EventDailyTower.EventDailyTowerTop #challengeQuest, #EventDailyTower.EventDailyTowerTop #exchallengeQuest, #EventDailyTower.EventDailyTowerTop #endlesschallengeQuest {
+  display: none;
+}
+
+#EventDailyTower.EventDailyTowerTop .normal h2 {
+  color: #e03d54;
+}
+
+#EventDailyTower.EventDailyTowerTop .normal #normalQuest {
+  display: block;
+}
+
+#EventDailyTower.EventDailyTowerTop .normal #normalQuest .questTitle, #EventDailyTower.EventDailyTowerTop .normal #normalQuest .secondView li {
+  color: #ffffff;
+  text-shadow: -1px -1px 1px #e03d54, 1px -1px 1px #e03d54, -1px 1px 1px #e03d54, 1px 1px 1px #e03d54, -1px -1px #e03d54, 1px -1px #e03d54, -1px 1px #e03d54, 1px 1px #e03d54, -1px -1px 2px #e03d54, 1px -1px 2px #e03d54, -1px 1px 2px #e03d54, 1px 1px 2px #e03d54, -1px -1px 2px #e03d54, 1px -1px 2px #e03d54, -1px 1px 2px #e03d54, 1px 1px 2px #e03d54, -1px -1px 3px #e03d54, 1px -1px 3px #e03d54, -1px 1px 3px #e03d54, 1px 1px 3px #e03d54;
+}
+
+#EventDailyTower.EventDailyTowerTop .normal #normalQuest .quest {
+  background: url("/magica/resource/image_web/event/dailytower/common/bg_quest_n.png") left top no-repeat;
+}
+
+#EventDailyTower.EventDailyTowerTop .challenge h2 {
+  color: #1f54c2;
+}
+
+#EventDailyTower.EventDailyTowerTop .challenge #challengeQuest {
+  display: block;
+}
+
+#EventDailyTower.EventDailyTowerTop .challenge #challengeQuest .questTitle, #EventDailyTower.EventDailyTowerTop .challenge #challengeQuest .secondView li {
+  color: #ffffff;
+  text-shadow: -1px -1px 1px #1f54c2, 1px -1px 1px #1f54c2, -1px 1px 1px #1f54c2, 1px 1px 1px #1f54c2, -1px -1px #1f54c2, 1px -1px #1f54c2, -1px 1px #1f54c2, 1px 1px #1f54c2, -1px -1px 2px #1f54c2, 1px -1px 2px #1f54c2, -1px 1px 2px #1f54c2, 1px 1px 2px #1f54c2, -1px -1px 2px #1f54c2, 1px -1px 2px #1f54c2, -1px 1px 2px #1f54c2, 1px 1px 2px #1f54c2, -1px -1px 3px #1f54c2, 1px -1px 3px #1f54c2, -1px 1px 3px #1f54c2, 1px 1px 3px #1f54c2;
+}
+
+#EventDailyTower.EventDailyTowerTop .challenge #challengeQuest .quest {
+  background: url("/magica/resource/image_web/event/dailytower/common/bg_quest_c.png") left top no-repeat;
+}
+
+#EventDailyTower.EventDailyTowerTop .exchallenge h2 {
+  color: #e26a00;
+}
+
+#EventDailyTower.EventDailyTowerTop .exchallenge #exchallengeQuest {
+  display: block;
+}
+
+#EventDailyTower.EventDailyTowerTop .exchallenge #exchallengeQuest .questTitle, #EventDailyTower.EventDailyTowerTop .exchallenge #exchallengeQuest .secondView li {
+  color: #ffffff;
+  text-shadow: -1px -1px 1px #e26a00, 1px -1px 1px #e26a00, -1px 1px 1px #e26a00, 1px 1px 1px #e26a00, -1px -1px #e26a00, 1px -1px #e26a00, -1px 1px #e26a00, 1px 1px #e26a00, -1px -1px 2px #e26a00, 1px -1px 2px #e26a00, -1px 1px 2px #e26a00, 1px 1px 2px #e26a00, -1px -1px 2px #e26a00, 1px -1px 2px #e26a00, -1px 1px 2px #e26a00, 1px 1px 2px #e26a00, -1px -1px 3px #e26a00, 1px -1px 3px #e26a00, -1px 1px 3px #e26a00, 1px 1px 3px #e26a00;
+}
+
+#EventDailyTower.EventDailyTowerTop .exchallenge #exchallengeQuest .quest {
+  background: url("/magica/resource/image_web/event/dailytower/common/bg_quest_ex.png") left top no-repeat;
+}
+
+#EventDailyTower.EventDailyTowerTop .exchallenge #exchallengeQuest .quest .questState.comp:before {
+  width: 46px;
+  height: 46px;
+  background: url("/magica/resource/image_web/event/dailytower/common/quest_state_ex_comp.png");
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: -27px;
+  content: "";
+  z-index: 1000;
+}
+
+#EventDailyTower.EventDailyTowerTop .endlesschallenge h2 {
+  color: #7c33df;
+}
+
+#EventDailyTower.EventDailyTowerTop .endlesschallenge #endlesschallengeQuest {
+  display: block;
+}
+
+#EventDailyTower.EventDailyTowerTop .endlesschallenge #endlesschallengeQuest .questTitle, #EventDailyTower.EventDailyTowerTop .endlesschallenge #endlesschallengeQuest .secondView li {
+  color: #ffffff;
+  text-shadow: -1px -1px 1px #7c33df, 1px -1px 1px #7c33df, -1px 1px 1px #7c33df, 1px 1px 1px #7c33df, -1px -1px #7c33df, 1px -1px #7c33df, -1px 1px #7c33df, 1px 1px #7c33df, -1px -1px 2px #7c33df, 1px -1px 2px #7c33df, -1px 1px 2px #7c33df, 1px 1px 2px #7c33df, -1px -1px 2px #7c33df, 1px -1px 2px #7c33df, -1px 1px 2px #7c33df, 1px 1px 2px #7c33df, -1px -1px 3px #7c33df, 1px -1px 3px #7c33df, -1px 1px 3px #7c33df, 1px 1px 3px #7c33df;
+}
+
+#EventDailyTower.EventDailyTowerTop .endlesschallenge #endlesschallengeQuest .quest {
+  background: url("/magica/resource/image_web/event/dailytower/common/bg_quest_e.png") left top no-repeat;
+}
+
+#EventDailyTower.EventDailyTowerTop .endlesschallenge #endlesschallengeQuest .quest .questState.comp:before {
+  width: 46px;
+  height: 46px;
+  background: url("/magica/resource/image_web/event/dailytower/common/quest_state_ex_comp.png");
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: -27px;
+  content: "";
+  z-index: 1000;
+}
+
+#EventDailyTower.EventDailyTowerTop .questItemNumWrap {
+  position: absolute;
+  top: 140px;
+  right: 154px;
+  z-index: 1000;
+}
+
+#EventDailyTower.EventDailyTowerTop .questItemNumWrap, #EventDailyTower.EventDailyTowerTop .questItemNumWrap .num {
+  color: #a47122;
+  font-size: 18px;
+  line-height: 44px;
+}
+
+#EventDailyTower.EventDailyTowerTop .questItemNumWrap .apItemImg {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: 4px;
+  left: -38px;
+}
+
+#EventDailyTower.EventDailyTowerTop .missionBtn {
+  width: 122px;
+  position: absolute;
+  top: 143px;
+  right: 22px;
+  z-index: 1000;
+}
+
+#EventDailyTower.EventDailyTowerTop .logBtnWrap {
+  display: none;
+  position: absolute;
+  bottom: 5px;
+  right: 2px;
+  width: 556px;
+  height: 44px;
+  padding: 5px 22px 5px 0;
+  z-index: 1000;
+  text-align: right;
+}
+
+#EventDailyTower.EventDailyTowerTop .logBtnWrap .logBtn {
+  width: 116px;
+}
+
+#EventDailyTower.EventDailyTowerTop #eventShopWrap {
+  position: absolute;
+  bottom: 192px;
+  left: 16px;
+  z-index: 10;
+}
+
+#EventDailyTower.EventDailyTowerTop #eventShopWrap .itemNumWrap {
+  width: 86px;
+  height: 116px;
+  margin: 0 0 0 15px;
+  background: url("/magica/resource/image_web/event/dailytower/common/event_item_bg_w.png") left top no-repeat;
+  position: relative;
+}
+
+#EventDailyTower.EventDailyTowerTop #eventShopWrap .shopItemImg {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 11px;
+  left: 11px;
+}
+
+#EventDailyTower.EventDailyTowerTop #eventShopWrap .numWrap {
+  width: 100%;
+  position: absolute;
+  bottom: 13px;
+  left: 0;
+  line-height: 28px;
+  text-align: center;
+}
+
+#EventDailyTower.EventDailyTowerTop #eventShopWrap .anotherLinkBtn {
+  width: 116px;
+  height: 40px;
+  margin-top: -1px;
+  position: relative;
+}
+
+#EventDailyTower.EventDailyTowerTop #eventShopWrap .shopLinkBtn {
+  width: 116px;
+  height: 40px;
+  margin-top: -1px;
+  background: url("/magica/resource/image_web/page/quest/week/btn_shop.png") left top no-repeat;
+  position: relative;
+}
+
+#EventDailyTower.EventDailyTowerTop #schedulePopBtn {
+  width: 116px;
+  height: 40px;
+  position: absolute;
+  bottom: 138px;
+  left: 16px;
+  z-index: 1000;
+  background: url("/magica/resource/image_web/event/dailytower/common/btn_eve_schedule.png") left top no-repeat;
+}
+
+#EventDailyTower.EventDailyTowerTop .firstView, #EventDailyTower.EventDailyTowerTop .secondView {
+  display: none;
+}
+
+#EventDailyTower.EventDailyTowerTop .first .firstView {
+  display: block;
+}
+
+#EventDailyTower.EventDailyTowerTop .second .secondView {
+  display: block;
+}
+
+#EventDailyTower.EventDailyTowerTop .secondView {
+  padding: 15px 0 0 45px;
+}
+
+#EventDailyTower.EventDailyTowerTop .secondView li {
+  padding-left: 25px;
+  position: relative;
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+#EventDailyTower.EventDailyTowerTop .secondView li:before {
+  width: 20px;
+  height: 20px;
+  background: url("/magica/resource/image_web/page/quest/questBattle/mission_star_s_off.png") left top no-repeat;
+  background-size: 20px 20px;
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: 0;
+  content: "";
+}
+
+#EventDailyTower.EventDailyTowerTop .secondView li.cleared:before {
+  background: url("/magica/resource/image_web/page/quest/questBattle/mission_star_s_on.png") left top no-repeat;
+  background-size: 20px 20px;
+}
+
+#EventDailyTower.EventDailyTowerTop .allClear {
+  width: 560px;
+  height: 88px;
+  display: none;
+}
+
+#EventDailyTower.EventDailyTowerTop .allClear.show {
+  display: block;
+}
+
+#EventDailyTower.EventDailyTowerTop .allClear:before {
+  width: 418px;
+  height: 60px;
+  margin: 14px 0 0 44px;
+  padding: 6px 0 0;
+  background: url("/magica/resource/image_web/page/quest/bg_section_newest.png") left top no-repeat;
+  display: block;
+  color: #5b3072;
+  line-height: 1.4;
+  text-align: center;
+  content: "次のクエストは未解放です\A解放日時までお待ち下さい";
+  white-space: pre;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest {
+  width: 456px;
+  height: 88px;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest.charaBtn .questTitle {
+  margin: 29px 0 0 50px;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest.charaBtn .mission {
+  right: 45px;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .charaImg {
+  width: 188px;
+  height: 70px;
+  position: absolute;
+  top: 9px;
+  left: 184px;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .pointFrame {
+  width: 118px;
+  position: relative;
+  font-size: 15px;
+  line-height: 24px;
+  z-index: 100;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .pointFrame.apFrame, #EventDailyTower.EventDailyTowerTop .quest .pointFrame.apItemFrame, #EventDailyTower.EventDailyTowerTop .quest .pointFrame.difficultyFrame {
+  position: absolute;
+  bottom: -12px;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .pointFrame.apFrame, #EventDailyTower.EventDailyTowerTop .quest .pointFrame.apItemFrame {
+  right: 54px;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .pointFrame.apItemFrame {
+  padding-left: 30px;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .pointFrame.difficultyFrame {
+  right: 172px;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .pointFrame span {
+  width: 30px;
+  display: inline-block;
+  text-align: right;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .pointFrame .apItemImg {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -3px;
+  left: 4px;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .questState {
+  position: absolute;
+  top: -8px;
+  left: 26px;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .questTitle {
+  margin: 29px 0 0 60px;
+  display: inline-block;
+  position: relative;
+  font-size: 20px;
+  z-index: 100;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .mission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 55px;
+  bottom: 25px;
+  z-index: 100;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .mission li {
+  width: 38px;
+  height: 38px;
+  margin: 0 0 0 -5px;
+  background: url("/magica/resource/image_web/page/quest/questBattle/mission_star_l_off.png") left top no-repeat;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .mission li.cleared {
+  background: url("/magica/resource/image_web/page/quest/questBattle/mission_star_l_on.png") left top no-repeat;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .treasure {
+  width: 96px;
+  height: 96px;
+  background: url("/magica/resource/image_web/page/quest/questBattle/bg_reward.png") left top no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: -39px;
+  bottom: -7px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .treasure .title {
+  width: 116px;
+  height: 22px;
+  background: url("/magica/resource/image_web/page/quest/questBattle/mission.png") left top no-repeat;
+  position: absolute;
+  top: -4px;
+  left: -10px;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .treasure .title.clear {
+  background: url("/magica/resource/image_web/page/quest/questBattle/complete.png") left top no-repeat;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .treasure .itemImg {
+  width: 47px;
+  height: 47px;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .treasure .treasureImg {
+  width: 60px;
+  height: 60px;
+}
+
+#EventDailyTower.EventDailyTowerTop .quest .touchObj {
+  width: 402px;
+  height: 88px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 105;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #eventLogo {
+  top: 32px;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #eventLogo .puellaHistoriaTopBtn {
+  display: block;
+  position: absolute;
+  background: url("/magica/resource/image_web/event/dailytower/common/puellaHistoria/btn_eve_puellaHistoria.png") center top no-repeat;
+  background-size: contain;
+  width: 116px;
+  height: 34px;
+  bottom: -8px;
+  left: 18px;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #btnWrap #tabBtns .normal {
+  color: #ffffff;
+  background: url("/magica/resource/image_web/event/dailytower/common/puellaHistoria/tab_normal_off.png") center top no-repeat;
+  background-size: contain;
+  text-shadow: -1px -1px 2px #e03d54, 1px -1px 2px #e03d54, -1px 1px 2px #e03d54, 1px 1px 2px #e03d54, -1px -1px 2px #e03d54, 1px -1px 2px #e03d54, -1px 1px 2px #e03d54, 1px 1px 2px #e03d54;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #btnWrap #tabBtns .normal.current {
+  background: url("/magica/resource/image_web/event/dailytower/common/puellaHistoria/tab_normal_on.png") center top no-repeat;
+  background-size: contain;
+  color: #971417;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #btnWrap #tabBtns .challenge {
+  color: #ffffff;
+  background: url("/magica/resource/image_web/event/dailytower/common/puellaHistoria/tab_challenge_off.png") center top no-repeat;
+  background-size: contain;
+  text-shadow: -1px -1px 2px #1f54c2, 1px -1px 2px #1f54c2, -1px 1px 2px #1f54c2, 1px 1px 2px #1f54c2, -1px -1px 2px #1f54c2, 1px -1px 2px #1f54c2, -1px 1px 2px #1f54c2, 1px 1px 2px #1f54c2;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #btnWrap #tabBtns .challenge.current {
+  background: url("/magica/resource/image_web/event/dailytower/common/puellaHistoria/tab_challenge_on.png") center top no-repeat;
+  background-size: contain;
+  color: #1f54c2;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #btnWrap #tabBtns .exchallenge {
+  color: #ffffff;
+  background: url("/magica/resource/image_web/event/dailytower/common/puellaHistoria/tab_exchallenge_off.png") center top no-repeat;
+  background-size: contain;
+  text-shadow: -1px -1px 2px #e26a00, 1px -1px 2px #e26a00, -1px 1px 2px #e26a00, 1px 1px 2px #e26a00, -1px -1px 2px #e26a00, 1px -1px 2px #e26a00, -1px 1px 2px #e26a00, 1px 1px 2px #e26a00;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #btnWrap #tabBtns .exchallenge.current {
+  background: url("/magica/resource/image_web/event/dailytower/common/puellaHistoria/tab_exchallenge_on.png") center top no-repeat;
+  background-size: contain;
+  color: #e26a00;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #btnWrap #tabBtns .endlesschallenge {
+  color: #ffffff;
+  background: url("/magica/resource/image_web/event/dailytower/common/puellaHistoria/tab_endlesschallenge_off.png") center top no-repeat;
+  background-size: contain;
+  text-shadow: -1px -1px 2px #7c33df, 1px -1px 2px #7c33df, -1px 1px 2px #7c33df, 1px 1px 2px #7c33df, -1px -1px 2px #7c33df, 1px -1px 2px #7c33df, -1px 1px 2px #7c33df, 1px 1px 2px #7c33df;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #btnWrap #tabBtns .endlesschallenge.current {
+  background: url("/magica/resource/image_web/event/dailytower/common/puellaHistoria/tab_endlesschallenge_on.png") center top no-repeat;
+  background-size: contain;
+  color: #7c33df;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #questWrap.commonFrame2:after {
+  -o-border-image: url("/magica/resource/image_web/event/dailytower/common/puellaHistoria/common_frame.png") 22 stretch;
+     border-image: url("/magica/resource/image_web/event/dailytower/common/puellaHistoria/common_frame.png") 22 fill stretch;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #questWrap.commonFrame2 h2 {
+  background: linear-gradient(45deg, transparent 0, #7b5f41 0), linear-gradient(135deg, transparent 0, #7b5f41 0), linear-gradient(225deg, transparent 9px, #7b5f41 10px), linear-gradient(495deg, transparent 9px, #7b5f41 10px) !important;
+  background-repeat: no-repeat !important;
+  background-position: bottom left, bottom right, top right, top left !important;
+  background-size: 52% 52% !important;
+  color: #ffffff;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #questWrap.commonFrame2.normal h2 {
+  color: #ffe5e5;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #questWrap.commonFrame2.normal #normalQuest .quest {
+  background: url("/magica/resource/image_web/event/dailytower/common/puellaHistoria/bg_quest_normal.png") left top no-repeat;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #questWrap.commonFrame2.challenge h2 {
+  color: #d2e4ff;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #questWrap.commonFrame2.challenge #challengeQuest .quest {
+  background: url("/magica/resource/image_web/event/dailytower/common/puellaHistoria/bg_quest_challenge.png") left top no-repeat;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #questWrap.commonFrame2.exchallenge h2 {
+  color: #ffe5ce;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #questWrap.commonFrame2.exchallenge #exchallengeQuest .quest {
+  background: url("/magica/resource/image_web/event/dailytower/common/puellaHistoria/bg_quest_exchallenge.png") left top no-repeat;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #questWrap.commonFrame2.endlesschallenge h2 {
+  color: #ccaef5;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria #questWrap.commonFrame2.endlesschallenge #endlesschallengeQuest .quest {
+  background: url("/magica/resource/image_web/event/dailytower/common/puellaHistoria/bg_quest_endlesschallenge.png") left top no-repeat;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria .questItemNumWrap {
+  color: #ffffff;
+}
+
+#EventDailyTower.EventDailyTowerTop.puellaHistoria .questItemNumWrap .num {
+  color: #ffffff;
+}
+
+#logPopup .popupInner {
+  position: absolute;
+  width: 834px !important;
+  height: 538px !important;
+  left: -webkit-calc(50% - 834px/2);
+  top: -webkit-calc(50% - 538px/2);
+}
+
+#logPopup .header {
+  background: url("/magica/resource/image_web/event/dailytower/1108/battle_log_header.png") left top no-repeat;
+  position: absolute;
+  left: 100px;
+  top: 60px;
+  width: 600px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 17px;
+  text-shadow: -1px -1px 2px #7c33df, 1px -1px 2px #7c33df, -1px 1px 2px #7c33df, 1px 1px 2px #7c33df, -1px -1px 2px #7c33df, 1px -1px 2px #7c33df, -1px 1px 2px #7c33df, 1px 1px 2px #7c33df;
+}
+
+#logPopup #battleLogListWrap {
+  position: absolute;
+  left: 80px;
+  top: 112px;
+  width: 628px;
+  height: 398px;
+  overflow: hidden;
+}
+
+#logPopup #battleLogListWrap .logList {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+#logPopup #battleLogListWrap .noLog {
+  width: 100%;
+  position: absolute;
+  top: -webkit-calc(50% - 10px);
+  font-size: 20px;
+  text-align: center;
+}
+
+#logPopup #battleLogListWrap .noLog.hide {
+  display: none;
+}
+
+#logPopup #battleLogListWrap .log {
+  background: url("/magica/resource/image_web/event/dailytower/1108/bg_battle_log.png") left top no-repeat;
+  background-size: contain;
+  width: 628px;
+  height: 100px;
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  position: relative;
+}
+
+#logPopup #battleLogListWrap .log .title {
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  width: 221px;
+  line-height: 32px;
+  text-shadow: -1px -1px 2px #7c33df, 1px -1px 2px #7c33df, -1px 1px 2px #7c33df, 1px 1px 2px #7c33df, -1px -1px 2px #7c33df, 1px -1px 2px #7c33df, -1px 1px 2px #7c33df, 1px 1px 2px #7c33df;
+}
+
+#logPopup #battleLogListWrap .log .turn {
+  position: absolute;
+  left: 10px;
+  top: 48px;
+  width: 221px;
+  line-height: 40px;
+  border: 2px solid #8c50c3;
+  border-radius: 6px;
+}
+
+#logPopup #battleLogListWrap .log .turn dt {
+  background: #8c50c3;
+  width: 128px;
+  font-size: 18px;
+  letter-spacing: -0.035em;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+#logPopup #battleLogListWrap .log .turn dd {
+  color: #5b5b5b;
+  width: 82px;
+  font-size: 28px;
+  text-align: right;
+}
+
+#logPopup #battleLogListWrap .log .battleCharaList {
+  position: absolute;
+  left: 214px;
+  top: 12px;
+  width: 500px;
+  height: 40px;
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  text-align: left;
+}
+
+#logPopup #battleLogListWrap .log .battleCharaList .userCharaIcon {
+  display: inline-block;
+  margin: 0 1px;
+}

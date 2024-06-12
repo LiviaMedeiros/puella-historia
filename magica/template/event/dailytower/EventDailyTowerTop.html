@@ -1,0 +1,304 @@
+<%
+	var eventId = model.eventMaster.eventId;
+	var shopId  = model.eventMaster.shopId;
+	var existExchallenge = model.eventMaster.parameterMap.EXCHALLENGESECTIONID ? true :false;
+	var existEndlesschallenge = model.eventMaster.parameterMap.ENDLESSCHALLENGESECTIONID ? true :false;
+	var anotherLink = (model.eventMaster.viewParameterMap.BUTTON_LINK) ? model.eventMaster.viewParameterMap.BUTTON_LINK : false;
+%>
+
+<div id='EventDailyTower' class='EventDailyTowerTop <%= model.puellaHistoriaClass %>'>
+	<div id='eventLogo'>
+		<img src="/magica/resource/image_web/event/dailytower/<%= eventId %>/logo.png" alt="">
+		<div id='puellaHistoriaTopBtn' class='puellaHistoriaTopBtn TE se_decide'></div>
+	</div>
+
+	<div id='missionLinkBtn' class='ts_pink TE se_decide linkBtn' data-href="#/MissionTop/<%= eventId %>">
+		期間限定<br>ミッション
+	</div>
+
+	<div id='helpBtn' class='se_decide TE sb_gold_02' data-eventid="<%= eventId %>">遊び方</div>
+	
+<% if(model.puellaHistoriaClass == "puellaHistoria") { %>
+	<div id='archiveBtn' class='se_decide TE sb_gold_02 linkBtn' data-href="#/StoryCollection/puellaHistoria">アーカイブ</div>
+<% }else{ %>
+	<div id='archiveBtn' class='se_decide TE sb_gold_02 linkBtn' data-href="#/StoryCollection/<%= eventId %>">アーカイブ</div>
+<% } %>
+
+	<div id="eventShopWrap">
+		<div class="itemNumWrap">
+			<img class="shopItemImg" src="/magica/resource/image_web/item/event/event_dailytower_<%= eventId %>_exchange_1.png">
+			<p class="numWrap c_gold">×<span class='num c_gold'>-</span></p>
+		</div>
+		<% if(anotherLink){ %>
+		<div class="anotherLinkBtn se_decide TE linkBtn" data-href="#/<%= anotherLink %>" style='background: url("/magica/resource/image_web/event/dailytower/<%= eventId %>/btn_otherlink.png")'></div>
+		<% }else{ %>
+		<div class="shopLinkBtn se_decide TE linkBtn" data-href="#/ShopTop/<%= shopId %>"></div>
+		<% } %>
+	</div>
+
+	<div id='schedulePopBtn' class='btn TE se_decide'></div>
+
+
+	<style type='text/css'>
+	<% if(model.eventMaster.parameterMap.ORIGINALDESIGN){ %>
+		#tabBtns .normal {
+			background: url("/magica/resource/image_web/event/dailytower/<%= eventId %>/tab_normal_off.png") left top no-repeat;
+		}
+		#tabBtns .normal.current {
+			background: url("/magica/resource/image_web/event/dailytower/<%= eventId %>/tab_normal_on.png") left top no-repeat;
+		}
+		#tabBtns .challenge {
+			background: url("/magica/resource/image_web/event/dailytower/<%= eventId %>/tab_challenge_off.png") left top no-repeat;
+		}
+		#tabBtns .challenge.current {
+			background: url("/magica/resource/image_web/event/dailytower/<%= eventId %>/tab_challenge_on.png") left top no-repeat;
+		}
+		<% if(existExchallenge){ %>
+		#tabBtns .exchallenge {
+			background: url("/magica/resource/image_web/event/dailytower/<%= eventId %>/tab_exchallenge_off.png") left top no-repeat;
+		}
+		#tabBtns .exchallenge.current {
+			background: url("/magica/resource/image_web/event/dailytower/<%= eventId %>/tab_exchallenge_on.png") left top no-repeat;
+		}
+		<% } %>
+		<% if(existEndlesschallenge){ %>
+		#tabBtns .endlesschallenge {
+			background: url("/magica/resource/image_web/event/dailytower/<%= eventId %>/tab_endlesschallenge_off.png") left top no-repeat;
+		}
+		#tabBtns .endlesschallenge.current {
+			background: url("/magica/resource/image_web/event/dailytower/<%= eventId %>/tab_endlesschallenge_on.png") left top no-repeat;
+		}
+		<% } %>
+	<% } %>
+	</style>
+	<div id='btnWrap'>
+		<div id='tabBtns' class="<% if(existEndlesschallenge){ %>tab4<% } %>">
+			<span class='tab normal se_tabs TE' data-id='normal'>ストーリー</span>
+			<span class='challengeWrap se_tabs TE'>
+				<span class='tab challenge btnWrap' data-id='challenge'>チャレンジ</span>
+				<span class='offIcon'></span>
+			</span>
+			<% if(existExchallenge){ %>
+			<span class='exchallengeWrap se_tabs TE'>
+				<span class='tab exchallenge btnWrap' data-id='exchallenge'>EXチャレンジ</span>
+				<span class='offIcon'></span>
+			</span>
+			<% } %>
+			<% if(existEndlesschallenge){ %>
+			<span class='endlesschallengeWrap se_tabs TE'>
+				<span class='tab endlesschallenge btnWrap' data-id='endlesschallenge'>百禍チャレンジ</span>
+				<span class='offIcon'></span>
+			</span>
+			<% } %>
+		</div>
+	</div>
+
+	<% if(model.questConsumeType !== "NORMAL") { %>
+	<div class='questItemNumWrap'>
+		<img class="apItemImg" src="/magica/resource/image_web/item/event/event_dailytower_<%= eventId %>_key.png">
+		×<span class='num'>-</span>
+	</div>
+	<% } %>
+	<span class="btn sb_gold_01 se_tabs missionBtn TE"><span class="b_screen"></span>ミッション</span>
+	<div id='questWrap' class='commonFrame2'>
+		<h2 id='questWrapTitle' class=''>◆ クエスト</h2>
+
+		<div id="scrollOuter">
+			<div class="scrollInner first">
+
+				<div class='allClear'></div>
+
+				<style type='text/css'>
+				<% if(model.eventMaster.parameterMap.ORIGINALDESIGN){ %>
+					#normalQuest .quest {
+						background: url("/magica/resource/image_web/event/dailytower/<%= eventId %>/bg_quest_n.png") left top no-repeat;
+					}
+					#challengeQuest .quest {
+						background: url("/magica/resource/image_web/event/dailytower/<%= eventId %>/bg_quest_c.png") left top no-repeat;
+					}
+					#exchallengeQuest .quest {
+						background: url("/magica/resource/image_web/event/dailytower/<%= eventId %>/bg_quest_ex.png") left top no-repeat;
+					}
+					#endlesschallengeQuest .quest {
+						background: url("/magica/resource/image_web/event/dailytower/<%= eventId %>/bg_quest_e.png") left top no-repeat;
+					}
+				<% } %>
+				</style>
+
+				<div id='normalQuest'></div>
+
+				<div id='challengeQuest'></div>
+
+				<div id='exchallengeQuest'></div>
+
+				<div id='endlesschallengeQuest'></div>
+			</div>
+		</div>
+		<div class="logBtnWrap">
+			<span class="btn sb_gold_01 se_tabs logBtn TE"><span class="b_screen"></span>バトルログ</span>
+		</div>
+	</div>
+
+	<div class="charaSerif">
+		<span class="charaName"></span>
+		<p class="serifFont"></p>
+	</div>
+</div>
+
+<!--  -->
+<script type="text/template" id="ScheduleTemp">
+	<div class="popupInner">
+		<span class="closeDefault popupCloseBtn se_cancel TE"></span>
+		<p id="popupInfoDetailTitle" class="popupTitle common_title">クエスト解放スケジュール</p>
+		<p class='text'>解放されていく枠内のクエストを全てクリアすることで特別な報酬が入手できます。</p>
+		<img src='/magica/resource/image_web/event/dailytower/common/<%="<%= model.data.headerPath %\>"%>schedule_header_<%="<%= model.data.questLeng %\>"%>.png' />
+		<div id='popScrollOuter'>
+			<div class='popScrollInner'>
+				<table id="scheduleData">
+
+					<%="<% for(var i = 0; i < model.data.scheduleData.data.length; i++){ %\>"%>
+						<%="<% var j = 0; %\>"%>
+						<%="<% for(var r = 0; r < model.data.scheduleData.rowNum[i]; r++){ %\>"%>
+						<tr class="date">
+							<%="<% if(r == 0){ %\>"%>
+							<td class="openDay" rowspan='<%="<%= model.data.scheduleData.rowNum[i] %\>"%>'><%="<%= model.data.dayList[i] %\>"%></td>
+							<%="<% } %\>"%>
+							
+								<%="<% for(var o = 0; o < model.data.questLeng; o++){ %\>"%>
+									<%="<%  if(model.data.scheduleData.data[i][j] != ''){ %\>"%>
+									<td class="innerArea">
+										<div class="textArea"><%="<%= model.data.scheduleData.data[i][j].quest %\>"%><br />を解放</div>
+										<div class="commonItemImgWrap <%="<%= model.data.scheduleData.data[i][j].rewardType %\>"%>">
+											<%="<%= model.data.scheduleData.data[i][j].rewardCode %\>"%>
+										</div>
+									</td>
+									<%="<% }else{ %\>"%>
+									<td class="innerArea empty"></td>
+									<%="<% } %\>"%>
+								<%="<% j = j + 1; } %\>"%>
+							
+						</tr>
+						<%="<% } %\>"%>
+					
+					<%="<% } %\>"%>
+					
+
+				</table>
+			</div>
+		</div>
+	</div>
+</script>
+
+<!-- クエストパーツ -->
+<script type="text/template" id="QuestListParts">
+
+	<%="<% var mission1 = (model.missionStatus1 === 'CLEARED') ? 'cleared' : null %\>"%>
+	<%="<% var mission2 = (model.missionStatus2 === 'CLEARED') ? 'cleared' : null %\>"%>
+	<%="<% var mission3 = (model.missionStatus3 === 'CLEARED') ? 'cleared' : null %\>"%>
+
+	<%="<% var questState = (model.cleared) ? 'clear' : 'new' %\>"%>
+	<%="<%     questState = (mission1 && mission2 && mission3) ? 'comp' : questState %\>"%>
+
+	<%="<% var questConsumeType = model.questBattle.consumeType %\>"%>
+
+	<%="<% if(questConsumeType == 'NORMAL') { %\>"%>
+		<p class="pointFrame apFrame">
+			消費AP<span><%="<%= model.questBattle.ap %\>"%></span>
+		</p>
+	<%="<% } else { %\>"%>
+		<p class="pointFrame apItemFrame">
+			<img class="apItemImg" src="/magica/resource/image_web/common/icon/event/icon_event_dailytower_<%= eventId %>_key_f.png"">
+			消費<span><%="<%= model.questBattle.needItemNum %\>"%></span>
+		</p>
+	<%="<% } %\>"%>
+
+	<p class="pointFrame difficultyFrame">
+		難易度 <span><%="<%= model.questBattle.difficulty %\>"%></span>
+	</p>
+
+	<span class='questState <%="<%= questState %\>"%>'></span>
+	<div class="firstView">
+		<span class="questTitle c_white"><%="<%= model.questTitle %\>"%></span>
+		<ul class="mission">
+			<li class='<%="<%= mission1 %\>"%>'></li>
+			<li class='<%="<%= mission2 %\>"%>'></li>
+			<li class='<%="<%= mission3 %\>"%>'></li>
+		</ul>
+	</div>
+
+	<ul class="secondView">
+		<li class='<%="<%= mission1 %\>"%>'><%="<%= model.questBattle.missionMaster1.description %\>"%></li>
+		<li class='<%="<%= mission2 %\>"%>'><%="<%= model.questBattle.missionMaster2.description %\>"%></li>
+		<li class='<%="<%= mission3 %\>"%>'><%="<%= model.questBattle.missionMaster3.description %\>"%></li>
+	</ul>
+
+	<span class="treasure">
+		<%="<% if(questState === 'comp') { %\>"%>
+			<%="<% var itemCode = model.missionRewardCode.itemCode.toLowerCase(); %\>"%>
+			<div class="title clear"></div>
+			<%="<% if(itemCode.indexOf('gift') !== -1) { %\>"%>
+				<img data-nativeimgkey='<%="<%= itemCode %\>"%>' data-src='resource/image_native/gift/<%="<%= itemCode %\>"%>.png' class="itemImg">
+			<%="<% } else if(itemCode.indexOf('event') !== -1) { %\>"%>
+				<img class="itemImg" src='/magica/resource/image_web/item/event/<%="<%= itemCode %\>"%>.png' alt=''>
+			<%="<% } else { %\>"%>
+				<img class="itemImg" src='/magica/resource/image_web/item/main/<%="<%= itemCode %\>"%>.png' alt=''>
+
+			<%="<% } %\>"%>
+		<%="<% } else { %\>"%>
+			<div class="title"></div>
+			<img class="treasureImg" src='/magica/resource/image_web/common/treasure/<%="<%= model.chestColor.toLowerCase() %\>"%>.png' alt=''>
+		<%="<% } %\>"%>
+	</span>
+
+	<span class="touchObj"></span>
+
+	<span class="params">
+		<span class="sectionId" data-sectionid='<%="<%= model.questBattle.sectionId %\>"%>'></span>
+		<span class="questType" data-questtype='<%="<%= model.questType %\>"%>'></span>
+		<span class="questIndex" data-questindex='<%="<%= model.questBattle.sectionIndex %\>"%>'></span>
+	</span>
+</script>
+
+<script type="text/template" id="LogPartsTemp">
+	<div class="header c_white">百禍チャレンジ</div>
+	<div id="battleLogListWrap">
+		<div id="battleLogList" class="logList">
+			<%="<% if (bestRecordList.length > 0) { %\>"%>
+
+			<%="<% _.each(bestRecordList, function(model) { %\>"%>
+			<div class="log">
+
+				<div class="title c_white"><%="<%= String(model.title) %\>"%></div>
+
+				<dl class="turn flexBox">
+					<dt class="c_white">クリアターン数</dt>
+					<dd><%="<%= model.turn %\>"%></dd>
+				</dl>
+				<div class="battleCharaList">
+					<%="<% var cardArr = model.deckCardIds.split(','); %\>"%>
+					<%="<% for(var i=0;i<cardArr.length;i++){ %\>"%>
+						<%="<% var card = cardArr[i].split('_'); %\>"%>
+						<%="<% var cardId = card[1]; %\>"%>
+						<%="<% var cardAtt = card[0].toLowerCase(); %\>"%>
+						<%="<% var cardRank = cardId.slice(-1); %\>"%>
+						<div class="userCharaIcon">
+							<%="<% var att = 'att_' + cardAtt %\>"%>
+							<%="<% var star = 'star_rank_' + cardRank %\>"%>
+							<%="<% var frame = 'frame_rank_' + cardRank %\>"%>
+							<%="<% var bg = 'bg_' + cardAtt %\>"%>
+							<span class="att" data-nativebgkey='<%="<%= att %\>"%>' data-src='resource/image_native/card/frame/<%="<%= att %\>"%>.png'></span>
+							<span class="star" data-nativebgkey='<%="<%= star %\>"%>' data-src='resource/image_native/card/frame/<%="<%= star %\>"%>.png'></span>
+							<span class="rank" data-nativebgkey='<%="<%= frame %\>"%>' data-src='resource/image_native/card/frame/<%="<%= frame %\>"%>.png'></span>
+							<img data-nativeimgkey='card_<%="<%= cardId %\>"%>_f' data-src='resource/image_native/card/image/card_<%="<%= cardId %\>"%>_f.png'>
+							<span class="bg" data-nativebgkey='<%="<%= bg %\>"%>' data-src='resource/image_native/card/frame/<%="<%= bg %\>"%>.png'></span>
+						</div>
+					<%="<% } %\>"%>
+					</div>
+				</div>
+				<%="<% }) %\>"%>
+			<%="<% } else { %\>"%>
+				<div class="noLog">該当するログはありません</div>
+			<%="<% } %\>"%>
+		</div>
+	</div>
+</script>
