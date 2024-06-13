@@ -2,7 +2,7 @@
 1001: true
 1002: true
 1003: true
-1004: false
+1004: true
 1005: true
 1006: false
 1007: true
@@ -92,14 +92,14 @@
 1502: false
 1601: false
 1701: false
-1801: false
-2001: false
+1801: true
+2001: true
 2002: false
 2003: true
 2004: false
 2005: false
 2006: false
-2007: false
+2007: true
 2009: true
 2100: false
 2101: false
@@ -136,7 +136,7 @@
 3008: true
 3009: true
 3010: true
-3011: false
+3011: true
 3012: true
 3013: true
 3014: false
@@ -193,7 +193,7 @@
 3900: false
 3901: true
 3902: false
-4001: false
+4001: true
 4002: false
 4003: true
 4004: false
