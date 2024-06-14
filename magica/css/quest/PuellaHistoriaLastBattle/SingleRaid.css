@@ -1,0 +1,314 @@
+#PuellaHistoriaSingleRaid {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#PuellaHistoriaSingleRaid .mainSec {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#PuellaHistoriaSingleRaid .mainSec #nativeTouchWrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+#PuellaHistoriaSingleRaid #singleRaidHelp {
+  width: 116px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  left: 654px;
+  font-size: 16px;
+  line-height: 1;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec {
+  width: 350px;
+  height: 400px;
+  position: absolute;
+  top: calc(50% - 210px);
+  right: 0px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f0efed), to(white));
+  background: linear-gradient(bottom, #f0efed 0%, white 100%);
+  display: none;
+  padding: 14px 20px;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec.show {
+  display: block;
+  -webkit-animation: pointWrapShow .25s ease-in-out 0s 1 alternate;
+          animation: pointWrapShow .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec.hide {
+  display: block;
+  -webkit-animation: pointWrapHide .25s ease-in-out 0s 1 alternate;
+          animation: pointWrapHide .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .title {
+  font-size: 150%;
+  margin: 0 0 10px 0;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .common_dl {
+  margin: 0 0 10px 0;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .common_dl dt {
+  width: 90px;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .common_dl dd {
+  text-align: center;
+  width: 80px;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .needAPSec {
+  margin: 0 0 16px 0;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .missionSec {
+  margin: 0 0 4px 0;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .missionSec dt {
+  width: 260px;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .treasure {
+  width: 96px;
+  height: 96px;
+  background: url("/magica/resource/image_web/page/quest/questBattle/bg_reward.png") left top no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 74px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .treasure .title {
+  width: 116px;
+  height: 22px;
+  background: url("/magica/resource/image_web/page/quest/questBattle/mission.png") left top no-repeat;
+  position: absolute;
+  top: -4px;
+  left: -10px;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .treasure .title.clear {
+  background: url("/magica/resource/image_web/page/quest/questBattle/complete.png") left top no-repeat;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .treasure .itemImg {
+  width: 47px;
+  height: 47px;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .treasure .treasureImg {
+  width: 60px;
+  height: 60px;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .treasure .charaIcon {
+  width: 38px;
+  height: 36px;
+  position: absolute;
+  bottom: 11px;
+  right: 12px;
+  z-index: 10;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .treasure .charaIcon:before {
+  content: "";
+  width: 38px;
+  height: 36px;
+  display: block;
+  background: url("/magica/resource/image_web/common/chara/chara_frame_S.png");
+  background-size: 38px 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .treasure .charaIcon .charaMaskWrap {
+  width: 34px;
+  height: 34px;
+  overflow: hidden;
+  border-radius: 17px;
+  position: absolute;
+  left: 2px;
+  top: 1px;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .treasure .charaIcon .charaMaskWrap img {
+  width: 40px;
+  height: 44px;
+  position: relative;
+  left: -4px;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .missionDetailSec {
+  margin: 0 0 0 0;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .missionDetailSec li {
+  padding-left: 32px;
+  position: relative;
+  font-size: 18px;
+  line-height: 38px;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .missionDetailSec li:before {
+  width: 38px;
+  height: 38px;
+  background: url("/magica/resource/image_web/page/quest/questBattle/mission_star_s_off.png") left top no-repeat;
+  background-size: 38px 38px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -4px;
+  content: "";
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .missionDetailSec li.cleared:before {
+  background: url("/magica/resource/image_web/page/quest/questBattle/mission_star_s_on.png") left top no-repeat;
+  background-size: 38px 38px;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .battleBtnSec {
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+
+#PuellaHistoriaSingleRaid #battleInfoSec .battleBtnSec .battleBtn {
+  display: inline-block;
+}
+
+#PuellaHistoriaSingleRaid #scaleChangePlus {
+  width: 70px;
+  height: 62px;
+  background: url("/magica/resource/image_web/page/chara/tree/btn_big_on.png") center center no-repeat;
+  position: absolute;
+  right: 70px;
+  bottom: 4px;
+  background-size: 80%;
+}
+
+#PuellaHistoriaSingleRaid #scaleChangePlus.off {
+  background: url("/magica/resource/image_web/page/chara/tree/btn_big_off.png") center center no-repeat;
+  background-size: 80%;
+}
+
+#PuellaHistoriaSingleRaid #scaleChangeMinus {
+  width: 70px;
+  height: 62px;
+  background: url("/magica/resource/image_web/page/chara/tree/btn_small_on.png") center center no-repeat;
+  position: absolute;
+  right: 140px;
+  bottom: 4px;
+  background-size: 80%;
+}
+
+#PuellaHistoriaSingleRaid #scaleChangeMinus.off {
+  background: url("/magica/resource/image_web/page/chara/tree/btn_small_off.png") center center no-repeat;
+  background-size: 80%;
+}
+
+#PuellaHistoriaSingleRaid #resetPosition {
+  width: 70px;
+  height: 62px;
+  background: url("/magica/resource/image_web/page/chara/tree/btn_navi.png") center center no-repeat;
+  position: absolute;
+  right: 210px;
+  bottom: 4px;
+  background-size: 80%;
+}
+
+#PuellaHistoriaSingleRaid .forBrowserSec {
+  position: absolute;
+  width: 50%;
+  height: 0px;
+  top: 100px;
+  left: 100px;
+}
+
+#PuellaHistoriaSingleRaid .forBrowserSec .pointBtnSec {
+  display: inline-block;
+}
+
+#PuellaHistoriaSingleRaid .forBrowserSec .pointBtn {
+  display: inline-block;
+  margin: 0 0 20px 20px;
+}
+
+@-webkit-keyframes pointWrapShow {
+  0% {
+    -webkit-transform: translate3d(400px, 0, 0);
+            transform: translate3d(400px, 0, 0);
+    opacity: .3;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes pointWrapShow {
+  0% {
+    -webkit-transform: translate3d(400px, 0, 0);
+            transform: translate3d(400px, 0, 0);
+    opacity: .3;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pointWrapHide {
+  0% {
+    -webkit-transform: translate3d(0px, 0, 0);
+            transform: translate3d(0px, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(400px, 0, 0);
+            transform: translate3d(400px, 0, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes pointWrapHide {
+  0% {
+    -webkit-transform: translate3d(0px, 0, 0);
+            transform: translate3d(0px, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(400px, 0, 0);
+            transform: translate3d(400px, 0, 0);
+    opacity: 0;
+  }
+}

@@ -1,0 +1,75 @@
+<div id="PuellaHistoriaSingleRaid" class="<%= model.terminalClass %>">
+	<div id="mainSec" class="mainSec"></div>
+	<div id="scaleChangePlus" class="se_tabs TE"></div>
+	<div id="scaleChangeMinus" class="se_tabs TE"></div>
+	<!-- リセットボタンはいったん使わない
+	<div id="resetPosition" class="se_cancel TE"></div>
+	 -->
+	<% if (window.isBrowser) { %>
+		<div class="forBrowserSec">
+		</div>
+	<% } %>
+</div>
+
+<!-- ブラウザ用ボタン -->
+<script type="text/template" id="tempForBrowserBtn">
+	<div id="pointBtn" class="btn b_purple TE pointBtn" data-btnno="<%='<%= model.btnNo %\>'%>">
+		<span class="b_screen"></span>
+		<%='<%= model.btnName %\>'%>
+	</div>
+</script>
+
+<!-- バトル情報 -->
+<script type="text/template" id="tempBattleInfo">
+	<%="<% var mission1 = (model.missionStatus1 === 'CLEARED') ? 'cleared' : null %\>"%>
+	<%="<% var mission2 = (model.missionStatus2 === 'CLEARED') ? 'cleared' : null %\>"%>
+	<%="<% var mission3 = (model.missionStatus3 === 'CLEARED') ? 'cleared' : null %\>"%>
+	<%="<% var questState = (model.cleared) ? 'clear' : 'new' %\>"%>
+	<%="<%     questState = (mission1 && mission2 && mission3) ? 'comp' : questState %\>"%>
+	<div id="battleInfoSec" class="commonFrame2 show">
+		<h3 class="title">BATTLE <%="<%= model.battleNo %\>"%></h3>
+		<dl class="common_dl difficultyLevelSec">
+			<dt>難易度</dt>
+			<dd><%="<%= model.questBattle.difficulty %\>"%></dd>
+		</dl>
+		<dl class="common_dl needAPSec">
+			<dt>消費AP</dt>
+			<dd><%="<%= (model.campaignFreeAtNotClear) ? 0 : (model.halfAp) ? model.halfAp : model.questBattle.ap %\>"%></dd>
+		</dl>
+		<dl class="common_dl missionSec">
+			<dt>ミッション</dt>
+		</dl>
+		<div class="treasure">
+			<%="<% if(questState === 'comp') { %\>"%>
+				<%="<% var itemCode = model.missionRewardCode.itemCode.toLowerCase(); %\>"%>
+				<div class="title clear"></div>
+				<%="<% if(model.missionRewardCode.rewardType === 'GIFT') { %\>"%>
+					<img data-nativeimgkey='<%="<%= itemCode %\>"%>' data-src='resource/image_native/gift/<%="<%= itemCode %\>"%>.png' class="itemImg">
+				<%="<% } else if(model.missionRewardCode.rewardType === 'LIVE2D') { %\>"%>
+					<div class="charaIcon">
+						<div class="charaMaskWrap">
+							<img data-nativeimgkey='mini_<%="<%= model.missionRewardCode.itemCode %\>"%>00_d' data-src='resource/image_native/mini/image/mini_<%="<%= model.missionRewardCode.itemCode %\>"%>00_d.png'>
+						</div>
+					</div>
+					<img class='itemImg' src='/magica/resource/image_web/item/main/live2d.png'>
+				<%="<% } else { %\>"%>
+					<img class="itemImg" src='/magica/resource/image_web/item/main/<%="<%= itemCode %\>"%>.png' alt=''>
+				<%="<% } %\>"%>
+			<%="<% } else { %\>"%>
+				<div class="title"></div>
+				<img class="treasureImg" src='/magica/resource/image_web/common/treasure/<%="<%= model.chestColor.toLowerCase() %\>"%>.png' alt=''>
+			<%="<% } %\>"%>
+		</div>
+		<ul class="missionDetailSec">
+			<li class='<%="<%= mission1 %\>"%>'><%="<%= model.questBattle.missionMaster1.description.replace(/userName/g,userName) %\>"%></li>
+			<li class='<%="<%= mission2 %\>"%>'><%="<%= model.questBattle.missionMaster2.description.replace(/userName/g,userName) %\>"%></li>
+			<li class='<%="<%= mission3 %\>"%>'><%="<%= model.questBattle.missionMaster3.description.replace(/userName/g,userName) %\>"%></li>
+		</ul>
+		<div class="battleBtnSec">
+			<div class="battleBtn btn b_puellaHistoria TE se_decide">
+				<span class='b_screen'></span>
+				戦う
+			</div>
+		</div>
+	</div>
+</script>
