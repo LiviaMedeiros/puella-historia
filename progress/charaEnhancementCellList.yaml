@@ -94,7 +94,7 @@
 1701: true
 1801: true
 2001: true
-2002: false
+2002: true
 2003: true
 2004: true
 2005: true
@@ -114,9 +114,9 @@
 2203: true
 2300: true
 2301: true
-2400: false
+2400: true
 2401: true
-2402: false
+2402: true
 2500: true
 2501: true
 2502: true

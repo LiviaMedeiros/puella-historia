@@ -1,0 +1,53 @@
+#MainQuestBranch {
+  width: 1024px;
+  height: 100%;
+  position: relative;
+}
+
+#MainQuestBranch .allClear {
+  width: 378px;
+  height: 48px;
+  background: url("/magica/resource/image_web/page/quest/main/singleraid/section_newest.png");
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: -webkit-calc(50% - 189px);
+}
+
+#MainQuestBranch .allClear.show {
+  display: block;
+}
+
+#MainQuestBranch #mapWrap {
+  width: 1024px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#MainQuestBranch #bg {
+  width: 1024px;
+  height: 100%;
+  pointer-events: none;
+}
+
+#MainQuestBranch #bg.challengeMode:before {
+  content: "";
+  width: 122px;
+  height: 34px;
+  background: url("/magica/resource/image_web/page/quest/main/icon_challenge.png") left top no-repeat;
+  position: absolute;
+  top: 67px;
+  left: 118px;
+}
+
+#MainQuestBranch #title {
+  width: 390px;
+  height: 272px;
+  position: absolute;
+  top: 68px;
+  left: 0;
+  pointer-events: none;
+}
