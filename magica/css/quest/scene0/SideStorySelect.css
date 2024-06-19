@@ -1,0 +1,367 @@
+#Scene0SideStorySelect {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#Scene0SideStorySelect .mainSec {
+  width: 100%;
+  height: 100%;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec {
+  position: absolute;
+  top: 66px;
+  left: 20px;
+  width: 776px;
+  height: 100%;
+  padding: 40px 10px 10px 10px;
+  background: rgba(255, 255, 255, 0.4) url("/magica/resource/image_web/page/quest/scene0/sideStorySelect/btn_battle.png") left top no-repeat;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec .mainTitle {
+  position: absolute;
+  font-size: 120%;
+  top: 8px;
+  left: 20px;
+  color: #ffffff;
+  text-shadow: -1px -1px 2px #68a006, 1px -1px 2px #68a006, -1px 1px 2px #68a006, 1px 1px 2px #68a006, -1px -1px 2px #68a006, 1px -1px 2px #68a006, -1px 1px 2px #68a006, 1px 1px 2px #68a006;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap {
+  width: 100%;
+  height: -webkit-calc(100%);
+  overflow: hidden;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec {
+  position: relative;
+  width: 754px;
+  margin: 10px 0 0 2px;
+  padding: 30px 10px 32px 10px;
+  background: url("/magica/resource/image_web/page/quest/scene0/sideStorySelect/btn_sidestory_collection.png") left top no-repeat;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec:last-child {
+  padding: 30px 10px 80px 10px;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .title {
+  position: absolute;
+  top: 12px;
+  left: 30px;
+  font-size: 160%;
+  color: #ffffff;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .titleCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 754px;
+  height: 62px;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .titleCover .toggleBtn {
+  position: absolute;
+  background: url("/magica/resource/image_web/page/quest/scene0/sideStorySelect/btn_down.png") left top no-repeat;
+  top: 9px;
+  right: 14px;
+  width: 42px;
+  height: 42px;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .titleCover .toggleBtn.up {
+  background: url("/magica/resource/image_web/page/quest/scene0/sideStorySelect/btn_up.png") left top no-repeat;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec {
+  margin: 44px 0 0 10px;
+  display: none;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec.open {
+  display: block;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtnWrap {
+  display: inline-block;
+  margin: 0 12px 16px 0;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn {
+  position: relative;
+  display: inline-block;
+  background: #d8d8d6;
+  border: #898989 solid 2px;
+  padding: 12px 0px;
+  text-align: center;
+  min-width: 78px;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn .effectWrap {
+  display: block;
+  opacity: 1;
+  position: absolute;
+  z-index: 10;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn .effectWrap .effect {
+  background: url("/magica/resource/image_web/page/quest/scene0/sideStorySelect/animation/sidestory_efect.png") left top no-repeat;
+  width: 102px;
+  height: 100px;
+  position: relative;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  top: -66px;
+  left: -10px;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn .effectWrap .effect.on {
+  opacity: 0;
+  display: block;
+  -webkit-animation: effectAnimation 0.5s linear 0.6s 1 normal;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn .effectWrap .effect2 {
+  background: url("/magica/resource/image_web/page/quest/scene0/sideStorySelect/animation/sidestory_efect3.png") left top no-repeat;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  top: -160px;
+  left: 0px;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn .effectWrap .effect2.on {
+  opacity: 0;
+  display: block;
+  -webkit-animation: effectAnimation 0.5s linear 0.6s 1 normal;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn.chara_1.on {
+  -webkit-animation: greenAnimation 1s linear 0s 1 normal;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn.chara_1.finish {
+  background: #cbe68e;
+  border: #3e7123 solid 2px;
+  color: #3e7123;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn.chara_2.on {
+  -webkit-animation: pinkAnimation 1s linear 0s 1 normal;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn.chara_2.finish {
+  background: #f4c1e2;
+  border: #bb649c solid 2px;
+  color: #bb649c;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn.chara_3.on {
+  -webkit-animation: purpleAnimation 1s linear 0s 1 normal;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn.chara_3.finish {
+  background: #c9b7e8;
+  border: #7f5fb8 solid 2px;
+  color: #7f5fb8;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn.chara_4.on {
+  -webkit-animation: blueAnimation 1s linear 0s 1 normal;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn.chara_4.finish {
+  background: #bad9ef;
+  border: #4b7fa4 solid 2px;
+  color: #4b7fa4;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn.chara_5.on {
+  -webkit-animation: redAnimation 1s linear 0s 1 normal;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn.chara_5.finish {
+  background: #e8bebe;
+  border: #be6f6f solid 2px;
+  color: #be6f6f;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn.chara_6.on {
+  -webkit-animation: yellowAnimation 1s linear 0s 1 normal;
+}
+
+#Scene0SideStorySelect .mainSec #storyListSec #scrollWrap .scrollInner .listWrapSec .listSec .storyBtn.chara_6.finish {
+  background: #f0eca7;
+  border: #868016 solid 2px;
+  color: #868016;
+}
+
+#Scene0SideStorySelect .mainSec #playBtnSec {
+  position: absolute;
+  background: url("/magica/resource/image_web/page/quest/scene0/sideStorySelect/bg_sidestory_main.png") left top no-repeat;
+  top: 70px;
+  right: 0px;
+  width: 220px;
+  height: 400px;
+}
+
+#Scene0SideStorySelect .mainSec #playBtnSec .textSec {
+  position: absolute;
+  width: 160px;
+  top: 120px;
+  left: 24px;
+  font-size: 95%;
+  text-align: center;
+}
+
+#Scene0SideStorySelect .mainSec #playBtnSec .itemSec {
+  position: absolute;
+  bottom: 136px;
+  right: 56px;
+  text-align: right;
+  text-shadow: -1px -1px 2px #ffffff, 1px -1px 2px #ffffff, -1px 1px 2px #ffffff, 1px 1px 2px #ffffff, -1px -1px 2px #ffffff, 1px -1px 2px #ffffff, -1px 1px 2px #ffffff, 1px 1px 2px #ffffff;
+}
+
+#Scene0SideStorySelect .mainSec #playBtnSec #playBtn {
+  position: absolute;
+  bottom: 58px;
+  left: 25px;
+}
+
+#Scene0SideStorySelect .mainSec #playBtnSec #playBtn.off {
+  pointer-events: none;
+}
+
+@-webkit-keyframes greenAnimation {
+  49% {
+    background-color: #fff;
+    border-color: #fff;
+    color: #fff;
+  }
+  61% {
+    background-color: #FFFF9E;
+    border-color: #3e7123;
+    color: #FFFF9E;
+  }
+  100% {
+    background-color: #cbe68e;
+    border-color: #3e7123;
+    color: #3e7123;
+  }
+}
+
+@-webkit-keyframes purpleAnimation {
+  49% {
+    background-color: #fff;
+    border-color: #fff;
+    color: #fff;
+  }
+  61% {
+    background-color: #FFFF9E;
+    border-color: #FFFF9E;
+    color: #FFFF9E;
+  }
+  100% {
+    background-color: #c9b7e8;
+    border-color: #7f5fb8;
+    color: #7f5fb8;
+  }
+}
+
+@-webkit-keyframes pinkAnimation {
+  49% {
+    background-color: #fff;
+    border-color: #fff;
+    color: #fff;
+  }
+  61% {
+    background-color: #FFFF9E;
+    border-color: #FFFF9E;
+    color: #FFFF9E;
+  }
+  100% {
+    background-color: #f4c1e2;
+    border-color: #bb649c;
+    color: #bb649c;
+  }
+}
+
+@-webkit-keyframes redAnimation {
+  49% {
+    background-color: #fff;
+    border-color: #fff;
+    color: #fff;
+  }
+  61% {
+    background-color: #FFFF9E;
+    border-color: #FFFF9E;
+    color: #FFFF9E;
+  }
+  100% {
+    background-color: #e8bebe;
+    border-color: #be6f6f;
+    color: #be6f6f;
+  }
+}
+
+@-webkit-keyframes yellowAnimation {
+  49% {
+    background-color: #fff;
+    border-color: #fff;
+    color: #fff;
+  }
+  61% {
+    background-color: #FFFF9E;
+    border-color: #FFFF9E;
+    color: #FFFF9E;
+  }
+  100% {
+    background-color: #f0eca7;
+    border-color: #868016;
+    color: #868016;
+  }
+}
+
+@-webkit-keyframes blueAnimation {
+  49% {
+    background-color: #fff;
+    border-color: #fff;
+    color: #fff;
+  }
+  61% {
+    background-color: #FFFF9E;
+    border-color: #FFFF9E;
+    color: #FFFF9E;
+  }
+  100% {
+    background-color: #bad9ef;
+    border-color: #4b7fa4;
+    color: #4b7fa4;
+  }
+}
+
+@-webkit-keyframes effectAnimation {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(5);
+    opacity: 0;
+  }
+}

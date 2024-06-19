@@ -1,0 +1,25 @@
+<div id="Scene0SideStorySelect" class="">
+	<div id="mainSec" class="mainSec">
+		<div id="storyListSec" class="commonFrame1">
+			<div class="mainTitle">サイドストーリー アーカイブ</div>
+			<div id='scrollWrap'>
+				<ul id="storyList" class="scrollInner">
+				</ul>
+			</div>
+		</div>
+		<div id="playBtnSec" class="">
+			<div class="textSec">
+				新しい<br>
+				サイドストーリーを<br>
+				ランダムに再生します
+			</div>
+			<div class="itemSec">
+				<span class="<%= model.itemInfoSide.quantityClass %>"><%= model.itemInfoSide.quantity %></span>/<%= model.questNeedItemNum %>
+			</div>
+			<div id="playBtn" class="btn b_scene0 <%= model.playBtnClass %>">
+				<span class="b_screen"></span>
+				再生する
+			</div>
+		</div>
+	</div>
+</div>
