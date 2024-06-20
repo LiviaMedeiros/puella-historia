@@ -1,0 +1,14 @@
+---
+hour:
+  apps: 4
+  records: 552
+day:
+  apps: 19
+  records: 8679
+week:
+  apps: 39
+  records: 27380
+totes:
+  apps: 87
+  records: 39104
+...
