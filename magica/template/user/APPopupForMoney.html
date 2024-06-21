@@ -1,0 +1,42 @@
+	<div class="APPopWrap">
+		<div class="confirmText"><%= item.itemName %>を使ってAPを回復します。<br>よろしいですか？</div>
+		<div class="confirmSP">
+			<div class="pointFrame">
+				<span class="title">AP</span>
+				<div class="beforeWrap"><%= item.nowACP %>/<%= item.nowMAX %></div>
+				<span class="arrow" id="APArrow">&#9654;</span>
+				<div class="afterWrap"><span class="afterText" id="APAfterText"><%= item.after %></span>/<%= item.nowMAX %></div>
+			</div>
+		</div>
+		<div class="confirmMoney">
+			<div class="cautionText">
+				決定後、すぐにアイテムが購入されマギアストーンが消費されます。<br>
+				マギアストーンは無償分から先に消費され、決定後のキャンセルはできません。
+			</div>
+			<div class="moneyNumWrap">
+				<img class='useItemIcon' src="/magica/resource/image_web/page/gacha/item/icon_money_f.png" />
+				<div class='stoneA pointFrame'>
+					合計
+					<div class="inner">
+						<span class="num" id="totalMoney"><%= item.moneyObj.totalMoney %><span class="remain" id="remain_totalMoney"><span class="arrow">&#9654;</span><%= item.remainStone.totalMoney %></span></span>
+					</div>
+				</div>
+				<div class='stoneB'>
+					有償
+					<div class="inner">
+						<span class="num"><%= item.moneyObj.userMoney %><span class="remain" id="remain_userMoney"><span class="arrow">&#9654;</span><%= item.remainStone.userMoney %></span></span>
+					</div>
+				</div>
+				<div class='stoneC'>
+					無償
+					<div class="inner">
+						<span class="num"><%= item.moneyObj.presentedMoney %><span class="remain" id="remain_presentedMoney"><span class="arrow">&#9654;</span><%= item.remainStone.presentedMoney %></span></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="confirmBtns">
+			<div class="btn se_cancel cancel b_white TE" data-action="cancel"><span class="b_screen"></span>キャンセル</div>
+			<div class="btn se_decide useDecide b_pink TE" data-action="use"><span class="b_screen"></span>回復する</div>
+		</div>
+	</div>
