@@ -1,0 +1,13 @@
+<div class="btnListSec">
+  <ul id="btnList" class="<%= model.currentLevel %>">
+  </ul>
+</div>
+
+<script type="text/template" id="tempDifficultyLevelBtn">
+  <li class="changeBtnSec level<%='<%= model.btnId %\>'%>">
+    <div class="checkIcon"></div>
+    <div class="changeBtn TE se_decide" data-id="<%='<%= model.btnId %\>'%>">
+      <%='<%= model.btnText %\>'%>
+    </div>
+  </li>
+</script>

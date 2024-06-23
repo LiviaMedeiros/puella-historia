@@ -1,0 +1,55 @@
+<% 
+  var mission1 = (model.questInfo.missionStatus1 === 'CLEARED') ? 'cleared' : null
+  var mission2 = (model.questInfo.missionStatus2 === 'CLEARED') ? 'cleared' : null
+  var mission3 = (model.questInfo.missionStatus3 === 'CLEARED') ? 'cleared' : null
+  var questState = (model.questInfo.cleared) ? 'clear' : 'new'
+  questState = (mission1 && mission2 && mission3) ? 'comp' : questState
+%>
+<div class="bossSec">
+  <div class="bossImg">
+    <img src="/magica/resource/image_web/page/quest/scene0/battleSelect/battle_detail/boss/img_boss_battle<%= model.id %>.png">
+  </div>
+  <div class="bossInfo">
+    <div class="bossName"><%= model.bossName %></div>
+  </div>
+</div>
+<div class="questSec">
+  <div class="missionSec">
+    <div class="missionTitle"></div>
+    <div class="treasure">
+			<% if(questState === 'comp') { %>
+				<% var itemCode = model.questInfo.missionRewardCode.itemCode.toLowerCase(); %>
+				<div class="title clear"></div>
+				<% if(model.questInfo.missionRewardCode.rewardType === 'GIFT') { %>
+					<img data-nativeimgkey='<%= itemCode %>' data-src='resource/image_native/gift/<%= itemCode %>.png' class="itemImg">
+				<% } else if(model.questInfo.missionRewardCode.rewardType === 'LIVE2D') { %>
+					<div class="charaIcon">
+						<div class="charaMaskWrap">
+							<img data-nativeimgkey='mini_<%= model.questInfo.missionRewardCode.itemCode %>00_d' data-src='resource/image_native/mini/image/mini_<%= model.questInfo.missionRewardCode.itemCode %>00_d.png'>
+						</div>
+					</div>
+					<img class='itemImg' src='/magica/resource/image_web/item/main/live2d.png'>
+				<% } else { %>
+					<img class="itemImg" src='/magica/resource/image_web/item/main/<%= itemCode %>.png' alt=''>
+				<% } %>
+			<% } else { %>
+				<div class="title"></div>
+				<img class="treasureImg" src='/magica/resource/image_web/common/treasure/<%= model.questInfo.chestColor.toLowerCase() %>.png' alt=''>
+			<% } %>
+		</div>
+    <ul class="missionList">
+      <li class='<%= mission1 %>'><%= model.questInfo.questBattle.missionMaster1.description %></li>
+      <li class='<%= mission2 %>'><%= model.questInfo.questBattle.missionMaster2.description %></li>
+      <li class='<%= mission3 %>'><%= model.questInfo.questBattle.missionMaster3.description %></li>
+    </ul>
+  </div>
+  <div class="rewardSec">
+    <div class="rewardTitle"></div>
+    <div class="rewardItemList"></div>
+  </div>
+  <p class="apSec">
+    <span class="title">消費AP</span>
+    <span class="num"><%= model.questInfo.questBattle.ap %></span>
+  </p>
+  <div class="TE decideBtn se_decide"></div>
+</div>

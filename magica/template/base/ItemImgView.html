@@ -1,0 +1,9 @@
+<% var itemCode = model.itemCode.toLowerCase(); %>
+<% if(model.rewardType === 'GIFT') { %>
+	<img data-nativeimgkey='<%= itemCode %>' data-src='resource/image_native/gift/<%= itemCode %>.png' class="itemImg">
+<% } else { %>
+	<img class="itemImg" src='/magica/resource/image_web/item/main/<%= itemCode %>.png' alt=''>
+<% } %>
+<% if(model.isFirstClear) { %>
+	<img class="firstClearIcon" src='/magica/resource/image_web/page/quest/scene0/battleSelect/battle_detail/badge_first_reward.png' alt=''>
+<% } %>

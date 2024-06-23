@@ -1,0 +1,759 @@
+#Scene0BattleSelect {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#Scene0BattleSelect .mainSec {
+  width: 100%;
+  height: 100%;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec {
+  position: absolute;
+  top: calc(50% - 240px);
+  left: -10px;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec #changeDifficultyLevelBtn {
+  position: absolute;
+  top: 20px;
+  right: 33px;
+  min-width: 76px;
+  z-index: 10;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec {
+  width: 1044px;
+  height: 520px;
+  padding: 30px 0 0 60px;
+  position: relative;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn {
+  position: absolute;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn .tapSec {
+  position: absolute;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn .badge {
+  display: none;
+  position: absolute;
+  width: 100px;
+  height: 38px;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.new .badge {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/badge_battle_new.png") left top no-repeat;
+  display: block;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.clear .badge {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/badge_battle_clear.png") left top no-repeat;
+  display: block;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.complete .badge {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/badge_battle_complete.png") left top no-repeat;
+  display: block;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle1 {
+  width: 212px;
+  height: 186px;
+  top: 26px;
+  left: 53px;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/thumbnail/thumb_battle1.png") left top no-repeat;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle1 .badge {
+  top: 6px;
+  left: 50px;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle1 .tapSec {
+  width: 110px;
+  height: 160px;
+  top: 10px;
+  left: 54px;
+  -webkit-transform: rotate(79deg);
+      -ms-transform: rotate(79deg);
+          transform: rotate(79deg);
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle2 {
+  width: 180px;
+  height: 194px;
+  top: 72px;
+  left: 248px;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/thumbnail/thumb_battle2.png") left top no-repeat;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle2 .badge {
+  top: -9px;
+  left: 51px;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle2 .tapSec {
+  width: 120px;
+  height: 160px;
+  top: 15px;
+  left: 29px;
+  -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle3 {
+  width: 216px;
+  height: 208px;
+  top: 22px;
+  left: 420px;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/thumbnail/thumb_battle3.png") left top no-repeat;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle3 .badge {
+  top: 24px;
+  left: 60px;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle3 .tapSec {
+  width: 150px;
+  height: 112px;
+  top: 43px;
+  left: 28px;
+  -webkit-transform: rotate(-22deg);
+      -ms-transform: rotate(-22deg);
+          transform: rotate(-22deg);
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle4 {
+  width: 188px;
+  height: 170px;
+  top: 78px;
+  left: 612px;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/thumbnail/thumb_battle4.png") left top no-repeat;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle4 .badge {
+  top: -6px;
+  left: 58px;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle4 .tapSec {
+  width: 162px;
+  height: 112px;
+  top: 28px;
+  left: 8px;
+  -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle5 {
+  width: 200px;
+  height: 210px;
+  top: 86px;
+  left: 792px;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/thumbnail/thumb_battle5.png") left top no-repeat;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle5 .badge {
+  top: 4px;
+  left: 72px;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle5 .tapSec {
+  width: 142px;
+  height: 149px;
+  top: 28px;
+  left: 29px;
+  -webkit-transform: rotate(17deg);
+      -ms-transform: rotate(17deg);
+          transform: rotate(17deg);
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle6 {
+  width: 198px;
+  height: 208px;
+  top: 260px;
+  left: 50px;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/thumbnail/thumb_battle6.png") left top no-repeat;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle6 .badge {
+  top: 8px;
+  left: 52px;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle6 .tapSec {
+  width: 138px;
+  height: 150px;
+  top: 28px;
+  left: 35px;
+  -webkit-transform: rotate(-12deg);
+      -ms-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle7 {
+  width: 210px;
+  height: 202px;
+  top: 274px;
+  left: 258px;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/thumbnail/thumb_battle7.png") left top no-repeat;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle7 .badge {
+  top: 6px;
+  left: 68px;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle7 .tapSec {
+  width: 155px;
+  height: 112px;
+  top: 47px;
+  left: 23px;
+  -webkit-transform: rotate(18deg);
+      -ms-transform: rotate(18deg);
+          transform: rotate(18deg);
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle8 {
+  width: 172px;
+  height: 184px;
+  top: 264px;
+  left: 453px;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/thumbnail/thumb_battle8.png") left top no-repeat;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle8 .badge {
+  top: -13px;
+  left: 51px;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle8 .tapSec {
+  width: 128px;
+  height: 152px;
+  top: 23px;
+  left: 23px;
+  -webkit-transform: rotate(4deg);
+      -ms-transform: rotate(4deg);
+          transform: rotate(4deg);
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle9 {
+  width: 210px;
+  height: 206px;
+  top: 270px;
+  left: 624px;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/thumbnail/thumb_battle9.png") left top no-repeat;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle9 .badge {
+  top: 14px;
+  left: 52px;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle9 .tapSec {
+  width: 128px;
+  height: 146px;
+  top: 31px;
+  left: 40px;
+  -webkit-transform: rotate(-19deg);
+      -ms-transform: rotate(-19deg);
+          transform: rotate(-19deg);
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle10 {
+  width: 174px;
+  height: 192px;
+  top: 285px;
+  left: 814px;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/thumbnail/thumb_battle10.png") left top no-repeat;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle10 .badge {
+  top: 5px;
+  left: 53px;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec .listSec .battleBtnSec #battleBtn.battle10 .tapSec {
+  width: 130px;
+  height: 155px;
+  top: 24px;
+  left: 21px;
+  -webkit-transform: rotate(6deg);
+      -ms-transform: rotate(6deg);
+          transform: rotate(6deg);
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec #BattleLevel1 {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/battle_top_base_01.png") left top no-repeat;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec #BattleLevel2 {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/battle_top_base_02.png") left top no-repeat;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec #BattleLevel3 {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/battle_top_base_03.png") left top no-repeat;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec #BattleLevel1,
+#Scene0BattleSelect .mainSec #QuestMainSec #BattleLevel2,
+#Scene0BattleSelect .mainSec #QuestMainSec #BattleLevel3 {
+  display: none;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec.level1 #BattleLevel1 {
+  display: block;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec.level2 #BattleLevel2 {
+  display: block;
+}
+
+#Scene0BattleSelect .mainSec #QuestMainSec.level3 #BattleLevel3 {
+  display: block;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner {
+  width: 964px;
+  height: 552px;
+  top: -webkit-calc(50% - 276px);
+  left: -webkit-calc((100% - 964px) / 2);
+  padding: 28px 50px;
+  border-radius: 0px;
+  border-width: 0px;
+  -o-border-image: none;
+     border-image: none;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/popup_base_l_splash.png") left top no-repeat, url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/popup_base_l.png") left top no-repeat;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .closeDefault {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/btn_popup_close.png") left top no-repeat;
+  background-size: 70px 66px;
+  top: -14px;
+  right: -20px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle {
+  width: 866px;
+  height: 44px;
+  color: #5b5b5b;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/title_frame_l.png") left top no-repeat;
+  text-align: center;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle:before, .popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle:after {
+  background: none;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle .badgeDifficultyLevel {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_detail/badge_battle_challenge01.png") center top no-repeat;
+  width: 110px;
+  height: 26px;
+  position: absolute;
+  top: 9px;
+  left: 112px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle .badgeDifficultyLevel.level2 {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_detail/badge_battle_challenge02.png") center top no-repeat;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle .badgeDifficultyLevel.level3 {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_detail/badge_battle_challenge03.png") center top no-repeat;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle .battleTitle {
+  display: inline-block;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/header/header_text_battle1.png") center top no-repeat;
+  width: 160px;
+  height: 24px;
+  margin: 10px 0 0 0;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle .battleTitle.battle2 {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/header/header_text_battle2.png") center top no-repeat;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle .battleTitle.battle3 {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/header/header_text_battle3.png") center top no-repeat;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle .battleTitle.battle4 {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/header/header_text_battle4.png") center top no-repeat;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle .battleTitle.battle5 {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/header/header_text_battle5.png") center top no-repeat;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle .battleTitle.battle6 {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/header/header_text_battle6.png") center top no-repeat;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle .battleTitle.battle7 {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/header/header_text_battle7.png") center top no-repeat;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle .battleTitle.battle8 {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/header/header_text_battle8.png") center top no-repeat;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle .battleTitle.battle9 {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/header/header_text_battle9.png") center top no-repeat;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupInner .popupTitle .battleTitle.battle10 {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/header/header_text_battle10.png") center top no-repeat;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .popupTextArea {
+  position: relative;
+  width: 870px;
+  height: 420px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .bossSec .bossImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .bossSec .bossInfo {
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  width: 344px;
+  height: 136px;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_detail/film_boss.png") center top no-repeat;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .bossSec .bossInfo .bossName {
+  position: absolute;
+  bottom: 64px;
+  left: 0px;
+  font-size: 88%;
+  width: 344px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec {
+  position: absolute;
+  top: 0px;
+  left: 350px;
+  width: 504px;
+  height: 420px;
+  text-align: left;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .missionSec .treasure {
+  width: 66px;
+  height: 66px;
+  background: url("/magica/resource/image_web/page/quest/questBattle/bg_reward.png") left top no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 2px;
+  top: 9px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .missionSec .treasure .title {
+  width: 88px;
+  height: 20px;
+  background: url("/magica/resource/image_web/page/quest/questBattle/mission.png") left top no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -4px;
+  left: -10px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .missionSec .treasure .title.clear {
+  background: url("/magica/resource/image_web/page/quest/questBattle/complete.png") left top no-repeat;
+  background-size: contain;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .missionSec .treasure .itemImg {
+  width: 34px;
+  height: 34px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .missionSec .treasure .treasureImg {
+  width: 42px;
+  height: 42px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .missionSec .treasure .charaIcon {
+  width: 38px;
+  height: 36px;
+  position: absolute;
+  bottom: 11px;
+  right: 12px;
+  z-index: 10;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .missionSec .treasure .charaIcon:before {
+  content: "";
+  width: 38px;
+  height: 36px;
+  display: block;
+  background: url("/magica/resource/image_web/common/chara/chara_frame_S.png");
+  background-size: 38px 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .missionSec .treasure .charaIcon .charaMaskWrap {
+  width: 34px;
+  height: 34px;
+  overflow: hidden;
+  border-radius: 17px;
+  position: absolute;
+  left: 2px;
+  top: 1px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .missionSec .treasure .charaIcon .charaMaskWrap img {
+  width: 40px;
+  height: 44px;
+  position: relative;
+  left: -4px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .missionSec .missionTitle {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_detail/header_mission.png") left top no-repeat;
+  position: absolute;
+  width: 502px;
+  height: 30px;
+  top: 34px;
+  left: 12px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .missionSec .missionList {
+  position: absolute;
+  top: 74px;
+  left: 12px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .missionSec .missionList li {
+  padding: 7px 0 7px 54px;
+  text-align: left;
+  position: relative;
+  border-radius: 26px;
+  font-size: 18px;
+  margin: 0 0 8px 0;
+  background-color: #cccaba;
+  color: #5c5b53;
+  width: 498px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .missionSec .missionList li:before {
+  width: 36px;
+  height: 36px;
+  background: url("/magica/resource/image_web/page/quest/questBattle/mission_star_l_off.png") left top no-repeat;
+  background-size: 36px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 12px;
+  content: "";
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .missionSec .missionList li.cleared:before {
+  background: url("/magica/resource/image_web/page/quest/questBattle/mission_star_l_on.png") left top no-repeat;
+  background-size: 36px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .rewardSec {
+  position: absolute;
+  top: 190px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .rewardSec .rewardTitle {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_detail/header_reward.png") left top no-repeat;
+  position: absolute;
+  width: 502px;
+  height: 30px;
+  top: 34px;
+  left: 12px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .rewardSec .rewardItemList {
+  position: absolute;
+  width: 480px;
+  height: 100px;
+  top: 72px;
+  left: 24px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .rewardSec .rewardItemList .itemImgWrap {
+  display: inline-block;
+  margin: 0 12px 0 0;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .rewardSec .rewardItemList .itemImgWrap .itemImg {
+  width: 80px;
+  height: 80px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .rewardSec .rewardItemList .itemImgWrap .firstClearIcon {
+  position: absolute;
+  bottom: 8px;
+  left: -6px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .apSec {
+  position: absolute;
+  bottom: 22px;
+  left: 110px;
+  width: 120px;
+  height: 26px;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_detail/ap_base.png") left top no-repeat;
+  background-size: 100%;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .apSec span {
+  position: absolute;
+  top: 3px;
+  left: 14px;
+  font-size: 60%;
+  color: #ffffff;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .apSec span.num {
+  text-align: right;
+  left: 85px;
+}
+
+.popupContent.typeA.scene0BattleSelectBossPopup .questSec .decideBtn {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 262px;
+  height: 62px;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_detail/btn_battle.png") left top no-repeat;
+  background-size: 100%;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupInner {
+  width: 530px;
+  height: 400px;
+  top: -webkit-calc(50% - 200px);
+  left: -webkit-calc((100% - 530px) / 2);
+  padding: 44px 58px;
+  border-radius: 0px;
+  border-width: 0px;
+  -o-border-image: none;
+     border-image: none;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/popup_base_s_splash.png") left top no-repeat, url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/popup_base_s.png") left top no-repeat;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupInner .closeDefault {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/btn_popup_close.png") left top no-repeat;
+  background-size: 70px 66px;
+  top: 0px;
+  right: -30px;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupInner .popupTitle {
+  width: 427px;
+  color: #5b5b5b;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/title_frame_s.png") left top no-repeat;
+  padding: 5px 0 0 0;
+  text-align: center;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupInner .popupTitle:before, .popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupInner .popupTitle:after {
+  background: none;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupInner .popupTitle .titleImg {
+  display: inline-block;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/popup/header/header_text_difficulty_change.png") left top no-repeat;
+  width: 160px;
+  height: 24px;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupTextArea {
+  position: relative;
+  height: 278px;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupTextArea .btnListSec {
+  margin: -8px 0 0 0;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupTextArea #btnList .changeBtnSec {
+  position: relative;
+  display: inline-block;
+  margin: 14px 0 14px -32px;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupTextArea #btnList .checkIcon {
+  display: inline-block;
+  visibility: hidden;
+  width: 34px;
+  height: 26px;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/icon_check.png") left top no-repeat;
+  background-size: 100%;
+  margin: 0 0 -4px 0;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupTextArea #btnList .changeBtn {
+  display: inline-block;
+  width: 226px;
+  height: 56px;
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/btn_green_off.png") left top no-repeat;
+  background-size: 100%;
+  text-align: center;
+  padding: 12px 0;
+  color: #ffffff;
+  font-size: 90%;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupTextArea #btnList.level1 .changeBtnSec.level1 .checkIcon {
+  visibility: visible;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupTextArea #btnList.level1 .changeBtnSec.level1 .changeBtn {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/btn_green_on.png") left top no-repeat;
+  background-size: 100%;
+  color: #628b23;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupTextArea #btnList.level2 .changeBtnSec.level2 .checkIcon {
+  visibility: visible;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupTextArea #btnList.level2 .changeBtnSec.level2 .changeBtn {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/btn_green_on.png") left top no-repeat;
+  background-size: 100%;
+  color: #628b23;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupTextArea #btnList.level3 .changeBtnSec.level3 .checkIcon {
+  visibility: visible;
+}
+
+.popupContent.typeC.scene0BattleSelectChangeDifficultyLevelPopup .popupTextArea #btnList.level3 .changeBtnSec.level3 .changeBtn {
+  background: url("/magica/resource/image_web/page/quest/scene0/battleSelect/battle_top/btn_green_on.png") left top no-repeat;
+  background-size: 100%;
+  color: #628b23;
+}
