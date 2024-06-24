@@ -1,0 +1,91 @@
+<div id="RegularEventExterminationFormation">
+
+	<div id="header">
+		チーム編成一覧
+		<div class="caution">入れ替えるチームを選択してくだい</div>
+		<ul id="tabBtnList" class="common_tab t_gold">
+			<li id="formationModeBtn" class="TE btn se_tabs current" data-mode="formation">チーム編成</li>
+			<li id="swapModeBtn" class="TE btn se_tabs" data-mode="swap">入れ替え</li>
+		</ul>
+	</div>
+
+	<div id="deckWrap" class="formation"></div>
+
+	<div id="bottomWrap">
+		<div id="allClearBtn" class="TE"></div>
+		<div id="autoFormationBtn" class="TE"></div>
+	</div>
+
+</div>
+
+
+<!-- deckパーツ -->
+<script type="text/template" id="deckPartsTemp">
+		<div class="bg"></div>
+
+		<img class="enemyImg" data-nativeimgkey="enemy_<%='<%= enemyModel.enemyId %\>'%>_s" data-src="resource/image_native/enemy_w/enemy_<%='<%= enemyModel.enemyId %\>'%>_s.png">
+		<div class="enemyPower"><%='<%= enemyModel.forces %\>'%></div>
+
+		<%="<% if(Object.keys(deckModel.userCardObj).length) { %\>"%>
+			<div class="userCharaList">
+				<%="<% var teamStatus = 0; %\>"%>
+				<%="<% _.each(deckModel.posArr,function(pos,index) { %\>"%>
+					<%="<% var cardModel = deckModel.userCardObj['place'+pos] %\>"%>
+					<%="<% if (cardModel && cardModel.chara) { %\>"%>
+					<div class="userCharaIcon">
+						<%="<% var cardId = String(cardModel.displayCardId); %\>"%>
+						<%="<% var cardRank = String(cardId).slice(-1); %\>"%>
+						<%="<% var attributeId = cardModel.chara.attributeId.toLowerCase(); %\>"%>
+						<%="<% var att = 'att_' + attributeId %\>"%>
+						<%="<% var star = 'star_rank_' + cardRank %\>"%>
+						<%="<% var frame = 'frame_rank_' + cardRank %\>"%>
+						<%="<% var bg = 'bg_' + attributeId %\>"%>
+						<span class="att" data-nativebgkey='<%="<%= att %\>"%>' data-src='resource/image_native/card/frame/<%="<%= att %\>"%>.png'></span>
+						<span class="star" data-nativebgkey='<%="<%= star %\>"%>' data-src='resource/image_native/card/frame/<%="<%= star %\>"%>.png'></span>
+						<span class="rank" data-nativebgkey='<%="<%= frame %\>"%>' data-src='resource/image_native/card/frame/<%="<%= frame %\>"%>.png'></span>
+						<img data-nativeimgkey='card_<%="<%= cardId %\>"%>_f' data-src='resource/image_native/card/image/card_<%="<%= cardId %\>"%>_f.png'>
+						<span class="bg" data-nativebgkey='<%="<%= bg %\>"%>' data-src='resource/image_native/card/frame/<%="<%= bg %\>"%>.png'></span>
+						<%="<% teamStatus += (cardModel.addHp + cardModel.addAttack + cardModel.addDefense + cardModel.addendHp + cardModel.addendAttack + cardModel.addendDefense + cardModel.composeAttribute.composed.HP + cardModel.composeAttribute.composed.ATTACK + cardModel.composeAttribute.composed.DEFENSE + cardModel.appendPoint) * cardModel.rating; %\>"%>
+					</div>
+					<%="<% } %\>"%>
+				<%="<% }); %\>"%>
+				<div class="leaderIcon"></div>
+			</div>
+			<div class="playerPower"><%="<%= teamStatus > 0 ? parseInt(teamStatus) : '-' %\>"%></div>
+
+			<%="<% var sheet = deckModel.formationSheet; %\>"%>
+			<div class="formationIcon">
+				<div class="formationBase">
+					<div class="formationInner">
+						<%="<% for(var i=1;i<10;i++){ %\>"%>
+						<div class="formation<%="<%= i %\>"%> cols<%="<% if(sheet['placeSkill'+i]){ %\>"%> on<%="<% } %\>"%>"></div>
+						<%="<% } %\>"%>
+					</div>
+				</div>
+			</div>
+		<%="<% } else { %\>"%>
+			<div class="playerPower">-</div>
+			<div class="copyBtn TE se_decide"></div>
+		<%="<% } %\>"%>
+
+		<div class="swapArrow"></div>
+
+		<div class="formationBtn btn b_white se_decide TE">編成</div>
+		<div class="swapBtn btn b_white se_decide TE">入れ替え</div>
+		<div class="cancelBtn btn b_white se_cancel TE">キャンセル</div>
+
+		<%="<% if(battleStatus === 'CONQUERED') { %\>"%>
+		<div class="conqueredWrap">
+			<div class="resetBtn TE se_decide"></div>
+		</div>
+		<%="<% } %\>"%>
+
+		<div class="lockWrap">
+			<div class="enemyPower">？？？</div>
+		</div>
+
+		<div class="detailBtn TE"></div>
+
+		<div class="attribute"><span class="<%='<%= enemyModel.attribute %\>'%>"></span></div>
+		<div class="title"><%='<%= enemyModel.name %\>'%></div>
+</script>

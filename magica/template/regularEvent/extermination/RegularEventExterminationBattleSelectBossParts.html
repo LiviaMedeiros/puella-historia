@@ -1,0 +1,9 @@
+	<div class="bg"></div>
+	<div class="enemyImg <%= model.cleared %>">
+		<img data-nativeimgkey='enemy_<%= model.enemyId %>_s' data-src='resource/image_native/enemy_w/enemy_<%= model.enemyId %>_s.png'>
+	</div>
+	<div class="name"><%= model.areaname %></div>
+	<div class="attribute <%= model.cleared %>"><div class="<%= model.enemyAttribute %>"></div></div>
+	<div class="detailBtn se_decide TE <%= model.cleared %>"></div>
+	<div class="rewardWap <% if (model.questModel.clearCount > 0) { %>CONQUERED<% } %>">
+	</div>

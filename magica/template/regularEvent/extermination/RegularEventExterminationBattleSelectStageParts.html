@@ -1,0 +1,45 @@
+
+	<div class="bg <%= model.bossStatus %>">
+		<% if(model.battleStatus != "LOCK") {%>
+		<div class="moya1"></div>
+		<div class="moya2"></div>
+		<div class="moya3"></div>
+		<div class="moya4"></div>
+		<div class="moya5"></div>
+		<div class="moya6"></div>
+		<div class="moya7"></div>
+		<div class="stoneArea">
+			<div class="stone1"></div>
+			<div class="stone2"></div>
+			<div class="stone3"></div>
+			<div class="stone4"></div>
+		</div>
+		<div class="blackCircle1"></div>
+		<div class="blackCircle2"></div>
+		<% } %>
+	</div>
+
+	<div class="iconArea">
+		<!-- <% if( model.index != 5) {%>
+			<img class="enemyImg" data-nativeimgkey='enemy_<%= model.enemyId %>_s' data-src='resource/image_native/enemy_w/enemy_<%= model.enemyId %>_s.png'>
+		<% } %> -->
+			<img class="icon num<%= model.index %>" src='/magica/resource/image_web/regularEvent/extermination/common/emblem/<%= model.areaImage %>.png'>
+		<% if( model.index == 5 && model.bossStatus != "opened") {%>
+			<div class="centerBoss">
+				<img class="bossMoya" src='/magica/resource/image_web/regularEvent/extermination/common/icon_lock_boss_01.png'>
+				<img class="bossMoya2" src='/magica/resource/image_web/regularEvent/extermination/common/icon_lock_boss_02.png'>
+				<img class="lockIcon" src='/magica/resource/image_web/regularEvent/extermination/common/icon_lock.png'>
+			</div>
+		<% } %>
+	</div>
+	<div class="name"><%= model.areaname %><span></span></div>
+	<div class="clearIcon"></div>
+	<% if( model.deck && model.battleStatus == "CONQUERED") {%>
+		<div class="charaArea">
+			<% if( model.deck.cardList[1]) {%><img class="clearChara1" data-nativeimgkey='mini_<%= model.deck.cardList[1].card.miniCharaNo %>_s' data-src='resource/image_native/mini/image/mini_<%= model.deck.cardList[1].card.miniCharaNo %>_s.png'><% } %>
+			<% if( model.deck.cardList[4]) {%><img class="clearChara4" data-nativeimgkey='mini_<%= model.deck.cardList[4].card.miniCharaNo %>_s' data-src='resource/image_native/mini/image/mini_<%= model.deck.cardList[4].card.miniCharaNo %>_s.png'><% } %>
+			<% if( model.deck.cardList[2]) {%><img class="clearChara2" data-nativeimgkey='mini_<%= model.deck.cardList[2].card.miniCharaNo %>_s' data-src='resource/image_native/mini/image/mini_<%= model.deck.cardList[2].card.miniCharaNo %>_s.png'><% } %>
+			<% if( model.deck.cardList[3]) {%><img class="clearChara3" data-nativeimgkey='mini_<%= model.deck.cardList[3].card.miniCharaNo %>_s' data-src='resource/image_native/mini/image/mini_<%= model.deck.cardList[3].card.miniCharaNo %>_s.png'><% } %>
+			<img class="clearChara" data-nativeimgkey='mini_<%= model.deck.cardList[0].card.miniCharaNo %>_s' data-src='resource/image_native/mini/image/mini_<%= model.deck.cardList[0].card.miniCharaNo %>_s.png'>
+		</div>
+	<% } %>

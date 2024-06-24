@@ -1,0 +1,71 @@
+
+	<%
+		var length = 1;
+		while (1) {
+			if (!difficultyModel["enemyName"+length]) {
+				break;
+			}
+			length++;
+		}
+		var areaname = ["第一の結界","第二の結界","第三の結界","第四の結界","終の結界"];
+	%>
+
+	<div id="tabBtnList">
+		<% for(var i = 1; i < length; i++) { %>
+		<div class="tabBtn se_tabs TE <%= statusModel['battle'+i+'Status'] %> <% if(current == i){ %>current<%  } %>" data-index="<%= i %>"><span>
+			<%= areaname[i-1] %>
+		</span></div>
+		<% } %>
+	</div>
+
+	<div id="enemyInfoList">
+		<% for(var i = 1; i < length; i++) { %>
+		<div class="enemyInfo " data-index="<%= i %>">
+			<div class="name"><div class="attribute"><div class="<%= difficultyModel['enemyAttributeId' + i] %>"></div></div><%= difficultyModel["enemyName" + i] %></div>
+			<img class="iamge" data-nativeimgkey='enemy_<%= difficultyModel["enemyId" + i] %>_l' data-src='resource/image_native/enemy_w/enemy_<%= difficultyModel["enemyId" + i] %>_l.png'>
+
+			<div class="power">推奨戦力<span><%= difficultyModel["enemyForces" + i] %></span></div>
+			<%
+				var skillList = difficultyModel["enemySkillInfo" + i].split(',');
+			%>
+
+			<div class="skillTitle">使用スキル</div>
+			<div class="skillWrap">
+				<% if(skillList[0]){ %><div class="skill"><%= skillList[0] %></div><% } %>
+				<% if(skillList[1]){ %><div class="skill"><%= skillList[1] %></div><% } %>
+				<% if(skillList[2]){ %><div class="skill"><%= skillList[2] %></div><% } %>
+			</div>
+
+			<div class="taiseiTitle">状態異常耐性</div>
+			<div class="taiseiList">
+				<% 
+					var taiseiTemp = difficultyModel["enemyValidAbnormals" + i].split(',');
+					
+					var taiseiNameList = [
+						{"name":"毒","statuscode":"POISON","has":"×"},
+						{"name":"魅了","statuscode":"CHARM","has":"×"},
+						{"name":"霧","statuscode":"FOG","has":"×"},
+						{"name":"虚弱","statuscode":"DAMAGE_UP_BAD_NUM","has":"×"},
+						{"name":"やけど","statuscode":"BURN","has":"×"},
+						{"name":"スタン","statuscode":"STUN","has":"×"},
+						{"name":"暗闇","statuscode":"DARKNESS","has":"×"},
+						{"name":"マギア不可","statuscode":"BAN_MAGIA","has":"×"},
+						{"name":"呪い","statuscode":"CURSE","has":"×"},
+						{"name":"拘束","statuscode":"RESTRAINT","has":"×"},
+						{"name":"幻惑","statuscode":"BLINDNESS","has":"×"},
+						{"name":"スキル不可","statuscode":"BAN_SKILL","has":"×"}
+					];
+					var taiseiNameListLeng = taiseiNameList.length;
+				%>
+
+				<% for(var t = 0; t < taiseiNameListLeng; t++) { %>
+					<% if( _.contains( taiseiTemp, taiseiNameList[t].statuscode ) ){ taiseiNameList[t].has = "〇"} %>
+					<div class="taiseiWrap">
+						<div class="title"><%= taiseiNameList[t].name %></div>
+						<div class="value"><%= taiseiNameList[t].has %></div>
+					</div>
+				<% } %>
+			</div>
+		</div>
+		<% } %>
+	</div>

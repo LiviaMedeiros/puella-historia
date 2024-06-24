@@ -1,0 +1,132 @@
+<div id="RegularEventExterminationBattleSelect">
+	<%
+	var _eventData = eventMaster.regularEventExtermination;
+	%>
+	<div id="logo">
+		<img src="/magica/resource/image_web/regularEvent/extermination/<%= eventMaster.regularEventId %>/logo.png" alt="">
+	</div>
+
+	<% if (isAllClear) { %>
+	<div id="stageRetireBtn" class="se_decide TE"></div>
+	<% } %>
+
+	<div id='helpBtn' class='se_decide TE sb_gold_02' data-eventid="<%= eventMaster.regularEventId %>">遊び方</div>
+
+	<div class="caution">制圧中の結界名をタップすることで制圧状態を解除できます</div>
+
+	<div id="bossList" class="difficulty<%= difficultyId %>">
+		<!-- bossリスト -->
+	</div>
+
+	<div id="stageList">
+		<!-- stageリスト -->
+	</div>
+
+	<div id="scheduleWrap">
+		<div class="text">開催：<%= eventMaster.endAt.slice(5,16) %>まで</div>
+		<div id="scheduleBtn" class="TE se_decide"></div>
+	</div>
+
+	<div id="linkFormationtBtn" class="btn b_pink se_decide TE linkBtn" data-href="#/RegularEventExterminationFormation">チーム編成一覧</div>
+</div>
+
+
+<!-- グループバトル参加不可ポップアップ -->
+<script type="text/template" id="bossPartsTemp">
+	<div class="bossWrap <%='<%= model.status %\>'%>">
+		<div class="attribute <%='<%= model.attribute %\>'%>"></div>
+		<div class="name"><%='<%= model.name %\>'%></div>
+		<img  class="" src="/magica/resource/image_web/regularEvent/senmetsu/common/icon_top_0<%='<%= model.index %\>'%>.png" alt="">
+		<div class="detailBtn"></div>
+		<div class="rewardWap">
+			<img src="" alt="">
+		</div>
+	</div>
+</script>
+
+<!-- クリアアニメ -->
+<script type="text/template" id="clearAnimePartsTemp">
+	<div id="ClearAnimation">
+		<div id="BlackBg"></div>
+		<div id="centerDom">
+			<div id="gear"></div>
+			<div id="BattleClear_eng"></div>
+			<div id="mainLight"></div>
+			<div id="rotationLight"></div>
+			<div id="magicCircle" class="BattleClearAnimation"></div>
+
+			<div id="BattleClear_occup" class='num<%="<%= model.index %\>"%>'></div>
+			<div id="BattleClear_text"></div>
+			<div id="BattleClear_line"></div>
+
+			<div id="rewardArea">
+
+			</div>
+		</div>
+	</div>
+</script>
+
+<!-- オールクリアアニメ -->
+<script type="text/template" id="AllClearAnimePartsTemp">
+
+	<div id="allClearAnimation">
+		<div id="allBlackBg"></div>
+		<div id="allCenterDom">
+
+			<div id="gear"></div>
+
+			<div id="AllKekkai_bg" class='num<%="<%= model.difficultyId %\>"%>'></div>
+
+			<div id="AllmainLight"></div>
+			<div id="AllrotationLight"></div>
+
+			<div id="BattleClear_jp"></div>
+			<div id="AllBattleClear_occup" class='num<%="<%= model.difficultyId %\>"%>'></div>
+
+			<div id="AllMagicCircle" class="BattleClearAnimation"></div>
+
+			<div id="AllLightArea">
+				<div id="AllClearLight"></div>
+				<div id="AllClearLight2"></div>
+			</div>
+
+			<div id="rewardArea">
+
+			</div>
+
+			<div id="AllKekkai_flont" class='num<%="<%= model.difficultyId %\>"%>'></div>
+
+		</div>
+	</div>
+</script>
+
+<!-- スケジュールPop -->
+<script type="text/template" id="schedulePopupTemp">
+	<table>
+		<% _.forEach(eventMaster.regularEventExtermination.difficultyList,function(txt,index){ %>
+		<tr>
+			<% if (index == 0) { %>
+			<th rowspan="3"><%= txt.openDate ? txt.openDate.slice(0,10) : eventMaster.startAt.slice(0,10) %> 17:00～</th>
+			<% } else if (index>=3) { %>
+			<th><%= txt.openDate.slice(0,16) %>～</th>
+			<% } %>
+
+			<td>
+				<%= txt.name %>解放
+
+				<div class="rewardList flexBox">
+					<% _.forEach(txt.rewardModels,function(txt2,index){ %>
+						<div class="rewardWrap">
+							<% if(txt2.nativeimgkey) { %>
+								<img class="rewardImg" data-nativeimgkey='<%= txt2.nativeimgkey %>' data-src='resource/image_native/<%= txt2.imagePath %>.png'>
+							<% } else { %>
+								<img class="rewardImg" src='/magica/resource/image_web/item/<%= txt2.imagePath %>.png'>
+							<% } %>
+						</div>
+					<% }) %>
+				</div>
+			</td>
+		</tr>
+		<% }) %>
+	</table>
+</script>

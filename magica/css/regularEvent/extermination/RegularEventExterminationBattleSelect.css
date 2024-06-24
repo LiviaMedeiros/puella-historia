@@ -1,0 +1,2096 @@
+#popupArea #schedulePopup table {
+  margin-top: 8px;
+  font-size: 16px;
+  border-spacing: 5px;
+  border-collapse: separate;
+}
+
+#popupArea #schedulePopup table th {
+  background: #a77e4a;
+  width: 400px;
+  color: #fff;
+}
+
+#popupArea #schedulePopup table td {
+  position: relative;
+  width: 600px;
+  height: 70px;
+  border: 1px solid #a77e4a;
+  padding: 2px 10px 2px 15px;
+  text-align: left;
+}
+
+#popupArea #schedulePopup table td .text {
+  width: 510px;
+  line-height: 100%;
+}
+
+#popupArea #schedulePopup table td .rewardList {
+  position: absolute;
+  right: 11px;
+  top: 5px;
+  height: 60px;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+}
+
+#popupArea #schedulePopup table td .rewardList .rewardWrap {
+  position: relative;
+  margin-left: 4px;
+}
+
+#popupArea #schedulePopup table td .rewardList .rewardWrap img {
+  width: 60px;
+  height: 60px;
+}
+
+#popupArea #schedulePopup table td .rewardList .rewardWrap:after {
+  content: "";
+  position: absolute;
+  left: -webkit-calc(50% - 31px);
+  top: -8px;
+  width: 62px;
+  height: 20px;
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/txt_reward.png") left top no-repeat;
+  background-size: contain;
+}
+
+#popupArea .attention {
+  color: #ff5e7c;
+}
+
+#RegularEventExterminationBattleSelect {
+  position: relative;
+}
+
+#RegularEventExterminationBattleSelect.dontTap {
+  pointer-events: none;
+}
+
+#RegularEventExterminationBattleSelect #logo {
+  position: absolute;
+  left: 12px;
+  top: 58px;
+}
+
+#RegularEventExterminationBattleSelect #logo img {
+  width: 180px;
+}
+
+#RegularEventExterminationBattleSelect #stageRetireBtn {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/btn_leave.png") left top no-repeat;
+  position: absolute;
+  top: 13px;
+  right: 154px;
+  width: 100px;
+  height: 34px;
+  z-index: 10000;
+}
+
+#RegularEventExterminationBattleSelect #bossList {
+  position: absolute;
+  left: 18px;
+  top: 227px;
+}
+
+#RegularEventExterminationBattleSelect #bossList:before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: -34px;
+  width: 190px;
+  height: 44px;
+}
+
+#RegularEventExterminationBattleSelect #bossList.difficulty1:before {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/txt_rank_easy.png") left top no-repeat;
+}
+
+#RegularEventExterminationBattleSelect #bossList.difficulty2:before {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/txt_rank_normal.png") left top no-repeat;
+}
+
+#RegularEventExterminationBattleSelect #bossList.difficulty3:before {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/txt_rank_hard.png") left top no-repeat;
+}
+
+#RegularEventExterminationBattleSelect #bossList.difficulty4:before {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/txt_rank_challenge.png") left top no-repeat;
+}
+
+#RegularEventExterminationBattleSelect #bossList.difficulty5:before {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/txt_rank_exchallenge.png") left top no-repeat;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap {
+  position: relative;
+  width: 190px;
+  height: 90px;
+  margin-bottom: -24px;
+  overflow: hidden;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .bg {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_map_enemy.png") left top no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .attribute {
+  position: absolute;
+  left: 7px;
+  top: 19px;
+  width: 18px;
+  height: 18px;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .attribute > div {
+  width: 100%;
+  height: 100%;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .name {
+  position: absolute;
+  top: 14px;
+  left: 27px;
+  font-size: 14px;
+  color: #eee;
+  text-shadow: 2px 0px 2px #b59754, -2px 0px 2px #b59754, 0px 2px 2px #b59754, 0px -2px 2px #b59754, 2px 2px 2px #b59754, -2px 2px 2px #b59754, 2px -2px 2px #b59754, -2px -2px 2px #b59754;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .enemyImg {
+  position: absolute;
+  left: 0px;
+  top: 20px;
+  width: 130px;
+  height: 55px;
+  overflow: hidden;
+  -webkit-mask: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(20%, black), to(black));
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .enemyImg img {
+  height: 110%;
+  margin-left: 7px;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .enemyImg.CONQUERED:after {
+  content: "";
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_map_enemy_mask.png") left top no-repeat;
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: -2px;
+  width: 149px;
+  height: 75px;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .enemyImg.LOCK {
+  -webkit-mask: none;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .enemyImg.LOCK img {
+  display: none;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .enemyImg.LOCK:after {
+  content: "";
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_map_enemy_off.png") left top no-repeat;
+  display: block;
+  position: absolute;
+  top: -18px;
+  left: -8px;
+  width: 190px;
+  height: 90px;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .detailBtn {
+  background: url("/magica/resource/image_web/common/btn/btn_info_s.png") center center no-repeat;
+  position: absolute;
+  top: 44px;
+  left: 82px;
+  width: 36px;
+  height: 36px;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .detailBtn.LOCK {
+  pointer-events: none;
+  -webkit-filter: brightness(50%) grayscale(50%);
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .rewardWap {
+  position: absolute;
+  left: 122px;
+  top: 28px;
+  width: 40px;
+  height: 40px;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .rewardWap .quantity {
+  display: none;
+  position: absolute;
+  font-size: 14px;
+  right: -5px;
+  bottom: -5px;
+  color: #fff;
+  text-shadow: 2px 0px 2px #b28850, -2px 0px 2px #b28850, 0px 2px 2px #b28850, 0px -2px 2px #b28850, 2px 2px 2px #b28850, -2px 2px 2px #b28850, 2px -2px 2px #b28850, -2px -2px 2px #b28850;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .rewardWap img {
+  width: 100%;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .rewardWap.CONQUERED:before {
+  content: "";
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_clear.png") left top no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: -8px;
+  left: -28px;
+  width: 95px;
+  height: 80px;
+  pointer-events: none;
+}
+
+#RegularEventExterminationBattleSelect #bossList .bossWrap .difficultyText {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  text-shadow: 2px 0px 2px #b28850, -2px 0px 2px #b28850, 0px 2px 2px #b28850, 0px -2px 2px #b28850, 2px 2px 2px #b28850, -2px 2px 2px #b28850, 2px -2px 2px #b28850, -2px -2px 2px #b28850;
+}
+
+#RegularEventExterminationBattleSelect #bossList .lockText {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_top_label.png") left top no-repeat;
+  position: absolute;
+  left: -10px;
+  bottom: -16px;
+  width: 220px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 15px;
+  color: #efe880;
+}
+
+#RegularEventExterminationBattleSelect #bossList.lock .difficulty {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+#RegularEventExterminationBattleSelect #bossList.lock:after {
+  content: "";
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_lock.png") left top no-repeat;
+  position: absolute;
+  left: 68px;
+  top: 62px;
+  width: 62px;
+  height: 62px;
+}
+
+#RegularEventExterminationBattleSelect #stageList {
+  position: absolute;
+  left: 220px;
+  top: -webkit-calc(50% - 200px);
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap {
+  position: absolute;
+  width: 170px;
+  height: 200px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg {
+  position: relative;
+  width: 170px;
+  height: 200px;
+  pointer-events: none;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg div {
+  display: block;
+  position: absolute;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg .moya1 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_moya_01.png") left top no-repeat;
+  background-size: contain;
+  width: 461px;
+  height: 241px;
+  top: -60px;
+  left: -60px;
+  -webkit-animation: 6s moya01  ease-in-out 0.5s infinite reverse;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg .moya2 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_moya_02.png") left top no-repeat;
+  background-size: contain;
+  width: 348px;
+  height: 173px;
+  top: 40px;
+  left: -90px;
+  -webkit-animation: 8s moya01  ease-in-out 0s infinite reverse;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg .moya3 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_moya_03.png") left top no-repeat;
+  background-size: contain;
+  width: 363px;
+  height: 77px;
+  top: 110px;
+  left: -120px;
+  -webkit-animation: 12s kuro01  ease-in-out 1s infinite reverse;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg .moya4 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_moya_04.png") left top no-repeat;
+  background-size: contain;
+  width: 343px;
+  height: 70px;
+  top: 60px;
+  left: -40px;
+  -webkit-animation: 6s kuro01  ease-in-out 0s infinite reverse;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg .moya5 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_moya_05.png") left top no-repeat;
+  background-size: contain;
+  width: 176px;
+  height: 62px;
+  top: -20px;
+  left: -50px;
+  -webkit-animation: 12s moya01  ease-in-out 0s infinite reverse;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg .moya6 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_moya_06.png") left top no-repeat;
+  background-size: contain;
+  width: 160px;
+  height: 46px;
+  top: 80px;
+  left: 120px;
+  -webkit-animation: 12s moya01  ease-in-out 0s infinite reverse;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg .moya7 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_moya_01.png") left top no-repeat;
+  background-size: contain;
+  width: 460px;
+  height: 241px;
+  top: -45px;
+  left: -180px;
+  -webkit-animation: 12s moya02  ease-in-out 0s infinite reverse;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg .stoneArea {
+  width: 240px;
+  height: 240px;
+  top: -30px;
+  left: -30px;
+  opacity: 0;
+  -webkit-animation: 1s appear linear 0s 1 forwards,24s stoneArea01 linear 1.5s infinite normal;
+  z-index: 1;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg .stone1, #RegularEventExterminationBattleSelect #stageList .stageWrap .bg .stone2, #RegularEventExterminationBattleSelect #stageList .stageWrap .bg .stone3, #RegularEventExterminationBattleSelect #stageList .stageWrap .bg .stone4 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_kekkai03.png") left top no-repeat;
+  background-size: contain;
+  width: 240px;
+  height: 240px;
+  top: 0px;
+  left: 0px;
+  opacity: 1;
+  -webkit-animation: 12s stone01 linear 0s infinite normal;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg .stone2 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_kekkai04.png") left top no-repeat;
+  background-size: contain;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: 12s stone02 linear 0s infinite normal;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg .stone3 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_kekkai05.png") left top no-repeat;
+  background-size: contain;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: 16s stone01 linear 0s infinite normal;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg .stone4 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_kekkai06.png") left top no-repeat;
+  background-size: contain;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: 16s stone02 linear 0s infinite normal;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg .blackCircle1 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_kekkai01.png") left top no-repeat;
+  background-size: contain;
+  width: 240px;
+  height: 240px;
+  top: -26px;
+  left: -42px;
+  opacity: 0;
+  -webkit-animation: 1s appear linear 0.5s 1 forwards,24s blackCircle02 linear 2s infinite normal;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg .blackCircle2 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_kekkai02.png") left top no-repeat;
+  background-size: contain;
+  width: 240px;
+  height: 240px;
+  top: -26px;
+  left: -42px;
+  opacity: 0;
+  -webkit-animation: 1s appear linear 0.5s 1 forwards,24s blackCircle01 linear 2s infinite normal;
+  -webkit-transform-origin: center center 0;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .bg.open {
+  display: none;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .iconArea {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 170px;
+  height: 200px;
+  -webkit-animation: 1s appear linear 0.5s 1 forwards;
+  opacity: 0;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .iconArea .enemyImg {
+  width: 70%;
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .iconArea .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 160px;
+  -webkit-animation: 2s iconUpDown01 ease-in-out 1s infinite alternate;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .name {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_map_title.png") left top no-repeat;
+  position: absolute;
+  left: 10px;
+  bottom: 30px;
+  width: 142px;
+  height: 40px;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  z-index: 1;
+  text-shadow: 2px 0px 2px #4c2140, -2px 0px 2px #4c2140, 0px 2px 2px #4c2140, 0px -2px 2px #4c2140, 2px 2px 2px #4c2140, -2px 2px 2px #4c2140, 2px -2px 2px #4c2140, -2px -2px 2px #4c2140;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .clearIcon {
+  display: none;
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_map_clear.png") left top no-repeat;
+  position: absolute;
+  left: 40px;
+  top: 164px;
+  width: 80px;
+  height: 16px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap:nth-child(1) {
+  left: 90px;
+  top: -20px;
+  z-index: 2;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap:nth-child(2) {
+  left: 560px;
+  top: -20px;
+  z-index: 2;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap:nth-child(3) {
+  left: 90px;
+  top: 220px;
+  z-index: 1;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap:nth-child(4) {
+  left: 560px;
+  top: 220px;
+  z-index: 1;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap:nth-child(5) {
+  left: 330px;
+  top: 140px;
+  z-index: 0;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CLEAR .bg {
+  display: none;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.number5 .icon {
+  position: absolute;
+  top: -55px;
+  left: -38px;
+  width: 240px;
+  -webkit-animation: 5s iconUpDown01 ease-in-out 0s infinite alternate;
+  pointer-events: none;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.number5 .moya1 {
+  top: -100px;
+  left: -60px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.number5 .moya5 {
+  top: -80px;
+  left: -40px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.number5 .moya7 {
+  top: -65px;
+  left: -200px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.number5 .bossMoya, #RegularEventExterminationBattleSelect #stageList .stageWrap.number5 .bossMoya2 {
+  position: absolute;
+  top: -100px;
+  left: -91px;
+  width: 340px;
+  height: 340px;
+  -webkit-animation: 5s kodou01 ease-in-out 0s infinite normal;
+  pointer-events: none;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.number5 .bossMoya2 {
+  -webkit-animation: 24s blackCircle01 linear 0s infinite normal;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.number5 .stoneArea {
+  width: 300px;
+  height: 300px;
+  top: -90px;
+  left: -70px;
+  opacity: 0;
+  -webkit-animation: 1s appear linear 0s 1 forwards,24s stoneArea01 linear 1.5s infinite normal;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.number5 .stoneArea .stone1, #RegularEventExterminationBattleSelect #stageList .stageWrap.number5 .stoneArea .stone2, #RegularEventExterminationBattleSelect #stageList .stageWrap.number5 .stoneArea .stone3, #RegularEventExterminationBattleSelect #stageList .stageWrap.number5 .stoneArea .stone4 {
+  width: 300px;
+  height: 300px;
+  top: 0px;
+  left: 0px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.number5 .blackCircle1 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_kekkai01.png") left top no-repeat;
+  background-size: contain;
+  width: 320px;
+  height: 320px;
+  top: -82px;
+  left: -82px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.number5 .blackCircle2 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_kekkai02.png") left top no-repeat;
+  background-size: contain;
+  width: 320px;
+  height: 320px;
+  top: -82px;
+  left: -82px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.number5 .lockIcon {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 43px;
+  width: 62px;
+  height: 62px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .charaArea {
+  z-index: -1;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 150px;
+  height: 180px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .charaArea .clearChara {
+  display: none;
+  opacity: 0;
+  width: 170px;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .charaArea .clearChara1, #RegularEventExterminationBattleSelect #stageList .stageWrap .charaArea .clearChara2, #RegularEventExterminationBattleSelect #stageList .stageWrap .charaArea .clearChara3, #RegularEventExterminationBattleSelect #stageList .stageWrap .charaArea .clearChara4 {
+  display: none;
+  opacity: 0;
+  width: 170px;
+  position: absolute;
+  bottom: 70px;
+  left: -80px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .charaArea .clearChara2 {
+  bottom: 45px;
+  left: -40px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .charaArea .clearChara3 {
+  bottom: 45px;
+  left: 40px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap .charaArea .clearChara4 {
+  bottom: 70px;
+  left: 80px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CANPLAY.rebone .bg .moya1 {
+  -webkit-animation: 1s rebonemoyaRight  ease-in-out 0s 1 forwards, 6s moya01  ease-in-out 1.5s infinite reverse !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CANPLAY.rebone .bg .moya2 {
+  -webkit-animation: 1s rebonemoyaLeft  ease-in-out 0s 1 forwards, 8s moya01  ease-in-out 1s infinite reverse !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CANPLAY.rebone .bg .moya3 {
+  -webkit-animation: 1s rebonemoyaLeft  ease-in-out 0s 1 forwards, 12s kuro01  ease-in-out 1s infinite reverse !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CANPLAY.rebone .bg .moya4 {
+  -webkit-animation: 1s rebonemoyaRight  ease-in-out 0s 1 forwards, 6s kuro01  ease-in-out 1s infinite reverse !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CANPLAY.rebone .bg .moya5 {
+  -webkit-animation: 1s rebonemoyaLeft  ease-in-out 0s 1 forwards, 12s moya01  ease-in-out 1s infinite reverse !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CANPLAY.rebone .bg .moya6 {
+  -webkit-animation: 1s rebonemoyaRight  ease-in-out 0s 1 forwards, 12s moya01  ease-in-out 1s infinite reverse !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CANPLAY.rebone .bg .moya7 {
+  -webkit-animation: 1s rebonemoyaLeft  ease-in-out 0s 1 forwards, 12s moya02  ease-in-out 1s infinite reverse !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CANPLAY.rebone .bg .stoneArea {
+  -webkit-animation: 1s rebone linear 1s 1 forwards,24s stoneArea01 linear 2s infinite normal;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CANPLAY.rebone .bg .blackCircle1 {
+  -webkit-animation: 0.5s rebone linear 1s 1 forwards,24s blackCircle02 linear 2s infinite normal forwards !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CANPLAY.rebone .bg .blackCircle2 {
+  -webkit-animation: 0.5s rebone linear 1s 1 forwards,24s blackCircle01 linear 2s infinite normal forwards !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CANPLAY.rebone .iconArea {
+  opacity: 0;
+  -webkit-animation: 0.5s rebone linear 1s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.LOCK .iconArea {
+  -webkit-animation: 1.5s appear linear 0s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.LOCK .num5 {
+  display: none;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED .name span {
+  display: block;
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  width: 184px;
+  height: 80px;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED .name span:before, #RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED .name span:after {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_battlereset.png") left top no-repeat;
+  content: "";
+  display: block;
+  width: 184px;
+  height: 80px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: 3.5s ringAppear1 linear 0s infinite forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED .name span:after {
+  -webkit-animation: 3.5s ringAppear2 linear 0s infinite forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED .bg, #RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED .iconArea {
+  display: none;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED .clearIcon {
+  display: block;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED .clearChara, #RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED .clearChara1, #RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED .clearChara2, #RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED .clearChara3, #RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED .clearChara4 {
+  display: block;
+  opacity: 1;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .bg {
+  display: block;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .bg .moya1 {
+  -webkit-animation: 1s moyaRight  ease-in-out 0s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .bg .moya2 {
+  -webkit-animation: 1s moyaLeft  ease-in-out 0s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .bg .moya3 {
+  -webkit-animation: 1s moyaLeft  ease-in-out 0s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .bg .moya4 {
+  -webkit-animation: 1s moyaRight  ease-in-out 0s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .bg .moya5 {
+  -webkit-animation: 1s moyaLeft  ease-in-out 0s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .bg .moya6 {
+  -webkit-animation: 1s moyaRight  ease-in-out 0s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .bg .moya7 {
+  -webkit-animation: 1s moyaLeft  ease-in-out 0s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .bg .stoneArea {
+  -webkit-animation: 1s disappear linear 0s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .bg .stone1, #RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .bg .stone2, #RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .bg .stone3, #RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .bg .stone4 {
+  -webkit-animation: 1s disappear linear 0s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .bg .blackCircle1 {
+  -webkit-animation: 1s disappear linear 0s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .bg .blackCircle2 {
+  -webkit-animation: 1s disappear linear 0s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .clearChara {
+  display: block;
+  opacity: 0;
+  -webkit-animation: 1s charaIn ease-in-out 0.2s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .clearChara1, #RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .clearChara2, #RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .clearChara3, #RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .clearChara4 {
+  display: block;
+  opacity: 0;
+  -webkit-animation: 1.2s charaIn2 ease-in-out 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .iconArea {
+  display: block;
+  -webkit-animation: 1s disappear linear 0s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start .iconArea .icon {
+  -webkit-animation: none;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start.number5 .centerBoss {
+  display: none;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.CONQUERED.start.number5 .iconArea {
+  display: block;
+  opacity: 1;
+  -webkit-animation: 1s disappearBoss linear 0s 1 forwards;
+  -webkit-transform-origin: 50% 40%;
+  -ms-transform-origin: 50% 40%;
+  transform-origin: 50% 40%;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .bg.open {
+  display: block;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .bg.open .moya1 {
+  -webkit-animation: 2s rebonemoyaRight  ease-in-out 0s 1 forwards !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .bg.open .moya2 {
+  -webkit-animation: 2s rebonemoyaLeft  ease-in-out 0s 1 forwards !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .bg.open .moya3 {
+  -webkit-animation: 2s rebonemoyaLeft  ease-in-out 0s 1 forwards !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .bg.open .moya4 {
+  -webkit-animation: 2s rebonemoyaRight  ease-in-out 0s 1 forwards !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .bg.open .moya5 {
+  -webkit-animation: 2s rebonemoyaLeft  ease-in-out 0s 1 forwards !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .bg.open .moya6 {
+  -webkit-animation: 2s rebonemoyaRight  ease-in-out 0s 1 forwards !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .bg.open .moya7 {
+  -webkit-animation: 2s rebonemoyaLeft  ease-in-out 0s 1 forwards !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .bg.open .stoneArea {
+  -webkit-animation: 2s rebone linear 1s 1 forwards,24s stoneArea01 linear 3s infinite normal;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .bg.open .blackCircle1 {
+  -webkit-animation: 1s rebone linear 1s 1 forwards,24s blackCircle02 linear 3s infinite normal !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .bg.open .blackCircle2 {
+  -webkit-animation: 1s rebone linear 1s 1 forwards,24s blackCircle01 linear 3s infinite normal !important;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .iconArea {
+  opacity: 0;
+  -webkit-animation: 1.5s appear linear 1s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .num5 {
+  opacity: 0;
+  -webkit-animation: 1s rebone linear 2s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .centerBoss .lockIcon {
+  -webkit-animation: 1s disappearIcon linear 0s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .centerBoss .bossMoya, #RegularEventExterminationBattleSelect #stageList .stageWrap.showBoss .centerBoss .bossMoya2 {
+  -webkit-animation: 1s shrinkAnm linear 0.5s 1 forwards;
+}
+
+#RegularEventExterminationBattleSelect .caution {
+  position: absolute;
+  right: -5px;
+  bottom: 9px;
+  width: 870px;
+  height: 40px;
+  color: #fff;
+  padding: 0 100px 0 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(108, 46, 122, 0)), color-stop(20%, rgba(53, 23, 59, 0.6)), color-stop(50%, rgba(53, 23, 59, 0.7)), color-stop(80%, rgba(53, 23, 59, 0.6)), to(rgba(108, 46, 122, 0)));
+  background: -webkit-linear-gradient(left, rgba(108, 46, 122, 0) 0%, rgba(53, 23, 59, 0.6) 20%, rgba(53, 23, 59, 0.7) 50%, rgba(53, 23, 59, 0.6) 80%, rgba(108, 46, 122, 0) 100%);
+  background: -o-linear-gradient(left, rgba(108, 46, 122, 0) 0%, rgba(53, 23, 59, 0.6) 20%, rgba(53, 23, 59, 0.7) 50%, rgba(53, 23, 59, 0.6) 80%, rgba(108, 46, 122, 0) 100%);
+  background: linear-gradient(90deg, rgba(108, 46, 122, 0) 0%, rgba(53, 23, 59, 0.6) 20%, rgba(53, 23, 59, 0.7) 50%, rgba(53, 23, 59, 0.6) 80%, rgba(108, 46, 122, 0) 100%);
+  text-align: center;
+  line-height: 2.5;
+}
+
+#RegularEventExterminationBattleSelect #linkFormationtBtn {
+  position: absolute;
+  right: 65px;
+  bottom: 0px;
+  width: 200px;
+  font-size: 18px;
+  z-index: 1;
+}
+
+#RegularEventExterminationBattleSelect #difficultyList {
+  position: absolute;
+  top: -webkit-calc(50% - 85px);
+  text-align: center;
+}
+
+#RegularEventExterminationBattleSelect #scheduleWrap {
+  position: absolute;
+  left: -webkit-calc(50% - 507px);
+  top: 150px;
+}
+
+#RegularEventExterminationBattleSelect #scheduleWrap:before {
+  content: "";
+  display: block;
+  width: 194px;
+  height: 28px;
+  background: #c26be0;
+  -webkit-clip-path: polygon(4% 0%, 96% 0%, 100% 50%, 96% 100%, 4% 100%, 0% 50%);
+  clip-path: polygon(4% 0%, 96% 0%, 100% 50%, 96% 100%, 4% 100%, 0% 50%);
+}
+
+#RegularEventExterminationBattleSelect #scheduleWrap .text {
+  position: absolute;
+  top: 3px;
+  left: 12px;
+  font-size: 14px;
+  color: #fff;
+}
+
+#RegularEventExterminationBattleSelect #scheduleWrap #scheduleBtn {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/btn_schedule.png") center center no-repeat;
+  position: absolute;
+  right: -18px;
+  top: -10px;
+  width: 48px;
+  height: 48px;
+}
+
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rebonemoyaLeft {
+  0% {
+    -webkit-transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rebonemoyaRight {
+  0% {
+    -webkit-transform: translateX(200px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rebone {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  90% {
+    -webkit-transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes moyaLeft {
+  0% {
+    -webkit-transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes moyaRight {
+  0% {
+    -webkit-transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(200px);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes shrinkAnm {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  99% {
+    -webkit-transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes disappear {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes disappearBoss {
+  0% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  30% {
+    -webkit-transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes moya01 {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-35px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes moya02 {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(35px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes kuro01 {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  60% {
+    -webkit-transform: translateX(-15px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes blackCircle01 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes blackCircle02 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes iconUpDown01 {
+  0% {
+    -webkit-transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+  }
+}
+
+@-webkit-keyframes kodou01 {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.05);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-webkit-keyframes stoneArea01 {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes stone01 {
+  0% {
+    opacity: 1;
+  }
+  10% {
+    opacity: 1;
+  }
+  11% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  21% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  31% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  51% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  71% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  81% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  91% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes stone02 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  21% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  31% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  41% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  61% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  81% {
+    opacity: 0;
+  }
+  96% {
+    opacity: 0;
+  }
+  97% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes charaIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(30px, -180px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(30px, -60px);
+  }
+  52% {
+    opacity: 1;
+    -webkit-transform: translate(30px, -58px);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: translate(5px, -70px);
+  }
+  90% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes charaIn2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -30px);
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes disappearIcon {
+  0% {
+    opacity: 1;
+    -webkit-filter: brightness(100%);
+  }
+  60% {
+    opacity: 1;
+    -webkit-filter: brightness(140%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-filter: brightness(100%);
+  }
+}
+
+@-webkit-keyframes ringAppear1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(0.4);
+  }
+  70% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+  }
+}
+
+@-webkit-keyframes ringAppear2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.9);
+  }
+}
+
+#ClearAnimation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+#ClearAnimation:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#ClearAnimation #centerDom {
+  position: relative;
+  width: 1024px;
+  height: 100%;
+  margin: 0px auto;
+  opacity: 1 !important;
+}
+
+#ClearAnimation div {
+  opacity: 0;
+}
+
+#ClearAnimation div.commonItemImgWrap {
+  opacity: 1;
+}
+
+#ClearAnimation #BlackBg {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/bg_dark.png") center center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: 1s clearMaskFadeIn ease-in-out 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+}
+
+#ClearAnimation #BattleClear_eng {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text02.png") center center;
+  position: absolute;
+  top: -webkit-calc(50% - 109px);
+  left: 346px;
+  width: 344px;
+  height: 52px;
+  z-index: 6;
+}
+
+#ClearAnimation #mainLight, #ClearAnimation #rotationLight {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_01.png") center center;
+  position: absolute;
+  top: -webkit-calc(50% - 270px);
+  left: 266px;
+  width: 512px;
+  height: 512px;
+  -webkit-animation: 3s mainlightScale linear 0.5s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #rotationLight {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_02.png") center center;
+  -webkit-animation: 2s rotationLightScale linear 0.5s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #magicCircle {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_circle.png") center center;
+  position: absolute;
+  top: -webkit-calc(50% - 210px);
+  left: 260px;
+  width: 520px;
+  height: 390px;
+  -webkit-animation: .667s magicCircleRotate linear .667s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #BattleClear_line {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_line.png") center center;
+  position: absolute;
+  top: -webkit-calc(50% - -84px);
+  left: 368px;
+  width: 311px;
+  height: 40px;
+  -webkit-animation: 1s ShowAnim linear 1s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #BattleClear_occup {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text03.png") center center;
+  position: absolute;
+  top: -webkit-calc(50% - -30px);
+  left: 416px;
+  width: 210px;
+  height: 130px;
+}
+
+#ClearAnimation #BattleClear_occup.num2 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text04.png") center center;
+}
+
+#ClearAnimation #BattleClear_occup.num3 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text05.png") center center;
+}
+
+#ClearAnimation #BattleClear_occup.num4 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text06.png") center center;
+}
+
+#ClearAnimation #BattleClear_occup.num5 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text07.png") center center;
+}
+
+#ClearAnimation #BattleClear_text {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text01.png") center center;
+  position: absolute;
+  top: -webkit-calc(50% - 148px);
+  left: 385px;
+  width: 270px;
+  height: 55px;
+  -webkit-animation: 1s battleCleartextDown linear 0.5s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation #gear {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_circle03_b.png") center center;
+  position: absolute;
+  top: -webkit-calc(50% - 80px);
+  left: 454px;
+  width: 135px;
+  height: 135px;
+}
+
+#ClearAnimation #rewardArea {
+  position: absolute;
+  top: -webkit-calc(50% - 44px);
+  left: 487px;
+  width: 70px;
+  height: 70px;
+}
+
+#ClearAnimation #rewardArea .quantity {
+  display: none;
+  position: absolute;
+  font-size: 20px;
+  right: -5px;
+  bottom: -5px;
+  color: #fff;
+  text-shadow: 2px 0px 2px #b28850, -2px 0px 2px #b28850, 0px 2px 2px #b28850, 0px -2px 2px #b28850, 2px 2px 2px #b28850, -2px 2px 2px #b28850, 2px -2px 2px #b28850, -2px -2px 2px #b28850;
+}
+
+#ClearAnimation #rewardArea img {
+  width: 100%;
+}
+
+#ClearAnimation #rewardArea:before {
+  content: "";
+  background: url(/magica/resource/image_web/page/quest/animation/square_light.png);
+  background-size: contain;
+  position: absolute;
+  top: -11px;
+  left: -10px;
+  width: 90px;
+  height: 90px;
+  z-index: -1;
+}
+
+#ClearAnimation #rewardArea:after {
+  content: "";
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/txt_reward.png") center center;
+  display: block;
+  position: absolute;
+  top: -17px;
+  left: -5px;
+  width: 80px;
+  height: 26px;
+}
+
+#ClearAnimation #rewardArea.get:after {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/get.png") left top no-repeat;
+  width: 96px;
+  height: 26px;
+  top: -20px;
+  left: -14px;
+}
+
+#ClearAnimation.next #BattleClear_occup {
+  -webkit-animation: 1s ShowAnim linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation.next #BattleClear_eng {
+  -webkit-animation: 1s BattleClearEngShow linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation.final #rewardArea {
+  -webkit-animation: 0.5s rewardAreaShow linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation.final #rotationLight {
+  -webkit-animation: 9s rotationLightloop linear 0s infinite normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation.final #gear {
+  -webkit-animation: 0.5s ShowAnim linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation.final #centerDom:after {
+  content: "";
+  display: block;
+  background: url(/magica/resource/image_web/page/questresult/result_touchscreen.png) no-repeat;
+  background-position: 395px -webkit-calc(100% - 70px);
+  position: fixed;
+  top: -10px;
+  left: -webkit-calc(50% - 495px);
+  width: 100%;
+  height: 100%;
+  -webkit-animation: touchScreen 1s ease-in-out 0s infinite normal;
+}
+
+#ClearAnimation.lastStep #magicCircle {
+  -webkit-animation: .167s finishCircle linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation.lastStep #itemLight, #ClearAnimation.lastStep #sectionItemIcon {
+  -webkit-animation: .167s finishItem linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation.lastStep #sectionClear_b2, #ClearAnimation.lastStep #sectionClear_s, #ClearAnimation.lastStep #sectionClear_base, #ClearAnimation.lastStep #clearMask {
+  -webkit-animation: .167s finishCommon linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#ClearAnimation.lastStep #clearBgMask {
+  -webkit-animation: .167s simpleFadeOut linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes clearMaskFadeIn {
+  0% {
+    -webkit-transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes magicCircleRotate {
+  0% {
+    -webkit-transform: scaleX(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes engFadeIn {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes battleCleartextDown {
+  0% {
+    -webkit-transform: translate(0, -200px);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: translate(0, 0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes mainlightScale {
+  0% {
+    -webkit-transform: scale(3);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: scale(1.5);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotationLightScale {
+  0% {
+    -webkit-transform: scale(3) rotate(0deg);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: scale(1) rotate(40deg);
+    opacity: 1;
+  }
+  41% {
+    -webkit-transform: scale(1) rotate(40deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(120deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotationLightloop {
+  0% {
+    -webkit-transform: scale(1) rotate(110deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(470deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes ShowAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes BattleClearEngShow {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rewardAreaShow {
+  0% {
+    -webkit-transform: scale(0.5);
+    opacity: 0.5;
+  }
+  30% {
+    -webkit-transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes touchScreen {
+  0%, 100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: .5;
+  }
+  50% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+#allClearAnimation {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+#allClearAnimation:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#allClearAnimation #allCenterDom {
+  width: 1024px;
+  height: 100%;
+  margin: 0px auto;
+  position: relative;
+  opacity: 1 !important;
+}
+
+#allClearAnimation div {
+  opacity: 0;
+}
+
+#allClearAnimation div.commonItemImgWrap {
+  opacity: 1;
+}
+
+#allClearAnimation #allBlackBg {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/bg_dark.png") center center;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+#allClearAnimation #BattleClear_jp {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text00.png") center center;
+  position: absolute;
+  top: -webkit-calc(50% - 120px);
+  left: 354px;
+  width: 330px;
+  height: 76px;
+  z-index: 6;
+  -webkit-animation: 0.5s fadeInAnime linear 1s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#allClearAnimation #AllmainLight {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_01.png") center center;
+  position: absolute;
+  top: -webkit-calc(50% - 250px);
+  left: 256px;
+  width: 512px;
+  height: 512px;
+  -webkit-animation: 1s fadeInAnime linear 0.5s 1 normal,8s rotationRight linear 1s infinite normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#allClearAnimation #AllrotationLight {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_02.png") center center;
+  position: absolute;
+  top: -webkit-calc(50% - 250px);
+  left: 256px;
+  width: 512px;
+  height: 512px;
+  -webkit-animation: 1s fadeInAnime linear 0.5s 1 normal,8s rotationLeft linear 1s infinite normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#allClearAnimation #AllMagicCircle {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_circle.png") center center;
+  position: absolute;
+  top: -webkit-calc(50% - 210px);
+  left: 260px;
+  width: 520px;
+  height: 390px;
+  -webkit-animation: .667s magicCircleRotate linear .667s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#allClearAnimation #AllBattleClear_occup {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text10.png") center center;
+  position: absolute;
+  top: -webkit-calc(50% - 50px);
+  left: 395px;
+  width: 260px;
+  height: 81px;
+  -webkit-animation: 1s fadeInAnime linear 2s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#allClearAnimation #AllBattleClear_occup.num2 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text11.png") center center;
+}
+
+#allClearAnimation #AllBattleClear_occup.num3 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text12.png") center center;
+}
+
+#allClearAnimation #AllBattleClear_occup.num4 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text13.png") center center;
+}
+
+#allClearAnimation #AllBattleClear_occup.num5 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text14.png") center center;
+}
+
+#allClearAnimation #AllLightArea {
+  position: absolute;
+  top: -webkit-calc(50% - 220px);
+  left: 320px;
+  width: 400px;
+  height: 400px;
+  -webkit-animation: 2s fadeInAnime linear 0s 1 normal, 4s scaleAnim linear 2s infinite normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#allClearAnimation #AllLightArea #AllClearLight {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_allclear_01.png") center center;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  width: 152px;
+  height: 200px;
+  -webkit-animation: 0.5s rotationRight linear 0s infinite normal;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-transform-origin: right bottom;
+  -ms-transform-origin: right bottom;
+  transform-origin: right bottom;
+  opacity: 1;
+}
+
+#allClearAnimation #AllLightArea #AllClearLight2 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_allclear_01.png") center center;
+  position: absolute;
+  top: 210px;
+  left: 200px;
+  width: 152px;
+  height: 200px;
+  -webkit-animation: 0.5s rotationRight linear 0s infinite normal;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  opacity: 1;
+}
+
+#allClearAnimation #AllKekkai_bg, #allClearAnimation #AllKekkai_flont {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_emblem_01.png") center center;
+  position: absolute;
+  top: -webkit-calc(50% - 163px);
+  left: 369px;
+  width: 300px;
+  height: 300px;
+}
+
+#allClearAnimation #AllKekkai_bg.num2, #allClearAnimation #AllKekkai_flont.num2 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_emblem_02.png") center center;
+}
+
+#allClearAnimation #AllKekkai_bg.num3, #allClearAnimation #AllKekkai_flont.num3 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_emblem_03.png") center center;
+}
+
+#allClearAnimation #AllKekkai_bg.num4, #allClearAnimation #AllKekkai_flont.num4 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_emblem_04.png") center center;
+}
+
+#allClearAnimation #AllKekkai_bg.num5, #allClearAnimation #AllKekkai_flont.num5 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_emblem_05.png") center center;
+}
+
+#allClearAnimation #AllKekkai_bg {
+  -webkit-animation: 1s fadeInAnime linear 0s infinite alternate;
+}
+
+#allClearAnimation #AllKekkai_flont {
+  -webkit-animation: 2s nextPageAnime linear 3.5s 1 normal;
+}
+
+#allClearAnimation #gear {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_circle03_b.png") center center;
+  position: absolute;
+  top: -webkit-calc(50% - -10px);
+  left: 454px;
+  width: 135px;
+  height: 135px;
+}
+
+#allClearAnimation #rewardArea {
+  position: absolute;
+  top: -webkit-calc(50% - -46px);
+  left: 487px;
+  width: 70px;
+  height: 70px;
+}
+
+#allClearAnimation #rewardArea img {
+  width: 100%;
+}
+
+#allClearAnimation #rewardArea .quantity {
+  display: none;
+  position: absolute;
+  font-size: 20px;
+  right: -5px;
+  bottom: -5px;
+  color: #fff;
+  text-shadow: 2px 0px 2px #b28850, -2px 0px 2px #b28850, 0px 2px 2px #b28850, 0px -2px 2px #b28850, 2px 2px 2px #b28850, -2px 2px 2px #b28850, 2px -2px 2px #b28850, -2px -2px 2px #b28850;
+}
+
+#allClearAnimation #rewardArea:before {
+  content: "";
+  background: url(/magica/resource/image_web/page/quest/animation/square_light.png);
+  background-size: contain;
+  position: absolute;
+  top: -11px;
+  left: -10px;
+  width: 90px;
+  height: 90px;
+  z-index: -1;
+}
+
+#allClearAnimation #rewardArea:after {
+  content: "";
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/txt_reward.png") center center;
+  display: block;
+  position: absolute;
+  top: -17px;
+  left: -5px;
+  width: 80px;
+  height: 26px;
+}
+
+#allClearAnimation #rewardArea.get:after {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/get.png") left top no-repeat;
+  width: 96px;
+  height: 26px;
+  top: -20px;
+  left: -14px;
+}
+
+#allClearAnimation.next #gear {
+  -webkit-animation: 0.5s ShowAnim linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#allClearAnimation.next #rewardArea {
+  -webkit-animation: 0.5s rewardAreaShow linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes rotationRight {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotationLeft {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes fadeInAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes nextPageAnime {
+  0% {
+    -webkit-transform: scale(2.5);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: scale(1.5);
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes scaleAnim {
+  0% {
+    -webkit-transform: scale(3);
+    opacity: 1;
+  }
+  20% {
+    -webkit-transform: scale(1);
+    opacity: 0.4;
+  }
+  40% {
+    -webkit-transform: scale(1);
+    opacity: 0.8;
+  }
+  60% {
+    -webkit-transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: scale(3);
+    opacity: 1;
+  }
+}

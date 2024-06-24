@@ -1,0 +1,541 @@
+@charset "UTF-8";
+#popupArea #schedulePopup table {
+  margin-top: 8px;
+  font-size: 16px;
+  border-spacing: 5px;
+  border-collapse: separate;
+}
+
+#popupArea #schedulePopup table th {
+  background: #a77e4a;
+  width: 400px;
+  color: #fff;
+}
+
+#popupArea #schedulePopup table td {
+  position: relative;
+  width: 600px;
+  height: 70px;
+  border: 1px solid #a77e4a;
+  padding: 2px 10px 2px 15px;
+  text-align: left;
+}
+
+#popupArea #schedulePopup table td .text {
+  width: 510px;
+  line-height: 100%;
+}
+
+#popupArea #schedulePopup table td .rewardList {
+  position: absolute;
+  right: 11px;
+  top: 5px;
+  height: 60px;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+}
+
+#popupArea #schedulePopup table td .rewardList .rewardWrap {
+  position: relative;
+  margin-left: 4px;
+}
+
+#popupArea #schedulePopup table td .rewardList .rewardWrap img {
+  width: 60px;
+  height: 60px;
+}
+
+#popupArea #schedulePopup table td .rewardList .rewardWrap:after {
+  content: "";
+  position: absolute;
+  left: -webkit-calc(50% - 31px);
+  top: -8px;
+  width: 62px;
+  height: 20px;
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/txt_reward.png") left top no-repeat;
+  background-size: contain;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck, #popupArea #autoFormationContainer .deck {
+  position: relative;
+  width: 960px;
+  height: 80px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck:nth-child(5), #popupArea #autoFormationContainer .deck:nth-child(5) {
+  height: 78px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck > .bg, #popupArea #autoFormationContainer .deck > .bg {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_team_list.png") left top no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .attribute, #popupArea #autoFormationContainer .deck .attribute {
+  position: absolute;
+  left: 5px;
+  top: 4px;
+  width: 18px;
+  height: 18px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .title, #popupArea #autoFormationContainer .deck .title {
+  position: absolute;
+  left: 30px;
+  top: 0px;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 0px 2px #b07422, -2px 0px 2px #b07422, 0px 2px 2px #b07422, 0px -2px 2px #b07422, 2px 2px 2px #b07422, -2px 2px 2px #b07422, 2px -2px 2px #b07422, -2px -2px 2px #b07422;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .enemyImg, #popupArea #autoFormationContainer .deck .enemyImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 95px;
+  height: 78px;
+  -webkit-mask: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(90%, black), to(rgba(0, 0, 0, 0)));
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .detailBtn, #popupArea #autoFormationContainer .deck .detailBtn {
+  background: url("/magica/resource/image_web/common/btn/btn_info_s.png") left top no-repeat;
+  background-size: 26px;
+  position: absolute;
+  left: 94px;
+  top: 47px;
+  width: 26px;
+  height: 26px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .enemyPower, #popupArea #autoFormationContainer .deck .enemyPower, #RegularEventExterminationFormation #deckWrap .deck .playerPower, #popupArea #autoFormationContainer .deck .playerPower {
+  position: absolute;
+  top: 24px;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  width: 130px;
+  text-align: right;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .enemyPower:after, #popupArea #autoFormationContainer .deck .enemyPower:after, #RegularEventExterminationFormation #deckWrap .deck .playerPower:after, #popupArea #autoFormationContainer .deck .playerPower:after {
+  position: absolute;
+  left: -52px;
+  top: -16px;
+  width: 100px;
+  font-size: 14px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .enemyPower, #popupArea #autoFormationContainer .deck .enemyPower {
+  left: 155px;
+  color: #f9e5b4;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .enemyPower:after, #popupArea #autoFormationContainer .deck .enemyPower:after {
+  content: "推奨戦力";
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .playerPower, #popupArea #autoFormationContainer .deck .playerPower {
+  left: 333px;
+  color: #91773e;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .playerPower:after, #popupArea #autoFormationContainer .deck .playerPower:after {
+  content: "戦力値";
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .userCharaList, #popupArea #autoFormationContainer .deck .userCharaList {
+  position: absolute;
+  left: 485px;
+  top: 5px;
+  text-align: left;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .userCharaList .leaderIcon, #popupArea #autoFormationContainer .deck .userCharaList .leaderIcon {
+  position: absolute;
+  left: -8px;
+  top: 45px;
+  width: 24px;
+  height: 24px;
+  background: url("/magica/resource/image_web/common/icon/icon_leader.png") left top no-repeat;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .userCharaList .leaderIcon:before, #popupArea #autoFormationContainer .deck .userCharaList .leaderIcon:before {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 34px;
+  height: 8px;
+  background: url("/magica/resource/image_web/page/formation/icon_leader.png") left top no-repeat;
+  background-size: 100% 100%;
+  content: "";
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .userCharaList .userCharaIcon, #popupArea #autoFormationContainer .deck .userCharaList .userCharaIcon {
+  display: inline-block;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  margin-right: -25px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .formationIcon, #popupArea #autoFormationContainer .deck .formationIcon {
+  position: absolute;
+  top: 27px;
+  left: 791px;
+  width: 30px;
+  height: 30px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase, #popupArea #autoFormationContainer .deck .formationIcon .formationBase {
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  background-color: #4d4462;
+  border-radius: 5px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner {
+  width: 24px;
+  height: 24px;
+  background-color: #736080;
+  position: relative;
+  border-radius: 5px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols {
+  width: 6px;
+  height: 6px;
+  background-color: #736080;
+  position: absolute;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.on, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.on {
+  background-color: #f4e0ca;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation1, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation1, #RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation4, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation4, #RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation7, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation7 {
+  top: 16px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation2, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation2, #RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation5, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation5, #RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation8, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation8 {
+  top: 9px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation3, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation3, #RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation6, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation6, #RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation9, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation9 {
+  top: 2px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation1, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation1, #RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation2, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation2, #RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation3, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation3 {
+  left: 2px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation4, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation4, #RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation5, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation5, #RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation6, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation6 {
+  left: 9px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation7, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation7, #RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation8, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation8, #RegularEventExterminationFormation #deckWrap .deck .formationIcon .formationBase .formationInner .cols.formation9, #popupArea #autoFormationContainer .deck .formationIcon .formationBase .formationInner .cols.formation9 {
+  left: 16px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .swapArrow, #popupArea #autoFormationContainer .deck .swapArrow {
+  display: none;
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_change02.png") left top no-repeat;
+  background-size: 26px;
+  position: absolute;
+  left: 288px;
+  top: 15px;
+  width: 26px;
+  height: 50px;
+  -webkit-animation: 2.5s exterminationFormationArrow linear 0s infinite both;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .copyBtn, #popupArea #autoFormationContainer .deck .copyBtn {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/btn_teamcopy.png") center center no-repeat;
+  position: absolute;
+  width: 298px;
+  height: 58px;
+  left: 491px;
+  top: 15px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .copyBtn:not(.touch), #popupArea #autoFormationContainer .deck .copyBtn:not(.touch) {
+  -webkit-animation: 2.5s exterminationFormationCopyBtn ease-out 0s infinite both;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .formationBtn, #popupArea #autoFormationContainer .deck .formationBtn, #RegularEventExterminationFormation #deckWrap .deck .swapBtn, #popupArea #autoFormationContainer .deck .swapBtn, #RegularEventExterminationFormation #deckWrap .deck .cancelBtn, #popupArea #autoFormationContainer .deck .cancelBtn {
+  position: absolute;
+  right: 24px;
+  top: 18px;
+  width: 106px;
+  height: 50px;
+  background-size: contain;
+  font-size: 16px;
+  line-height: 26px;
+  min-width: 106px;
+  padding: 12px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .formationBtn:before, #popupArea #autoFormationContainer .deck .formationBtn:before, #RegularEventExterminationFormation #deckWrap .deck .formationBtn:after, #popupArea #autoFormationContainer .deck .formationBtn:after, #RegularEventExterminationFormation #deckWrap .deck .swapBtn:before, #popupArea #autoFormationContainer .deck .swapBtn:before, #RegularEventExterminationFormation #deckWrap .deck .swapBtn:after, #popupArea #autoFormationContainer .deck .swapBtn:after, #RegularEventExterminationFormation #deckWrap .deck .cancelBtn:before, #popupArea #autoFormationContainer .deck .cancelBtn:before, #RegularEventExterminationFormation #deckWrap .deck .cancelBtn:after, #popupArea #autoFormationContainer .deck .cancelBtn:after {
+  width: 15px;
+  height: 50px;
+  background-size: 28px 50px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .formationBtn:before, #popupArea #autoFormationContainer .deck .formationBtn:before, #RegularEventExterminationFormation #deckWrap .deck .swapBtn:before, #popupArea #autoFormationContainer .deck .swapBtn:before, #RegularEventExterminationFormation #deckWrap .deck .cancelBtn:before, #popupArea #autoFormationContainer .deck .cancelBtn:before {
+  left: 0px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .formationBtn:after, #popupArea #autoFormationContainer .deck .formationBtn:after, #RegularEventExterminationFormation #deckWrap .deck .swapBtn:after, #popupArea #autoFormationContainer .deck .swapBtn:after, #RegularEventExterminationFormation #deckWrap .deck .cancelBtn:after, #popupArea #autoFormationContainer .deck .cancelBtn:after {
+  right: 0px;
+  background-position-x: right;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .cancelBtn, #popupArea #autoFormationContainer .deck .cancelBtn {
+  display: none;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .lockWrap, #popupArea #autoFormationContainer .deck .lockWrap {
+  display: none;
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_team_list_bossmask.png") left top no-repeat;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 136px;
+  height: 74px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck .lockWrap .enemyPower, #popupArea #autoFormationContainer .deck .lockWrap .enemyPower {
+  top: 20px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck.base:after, #popupArea #autoFormationContainer .deck.base:after {
+  content: "";
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_team_list_effect.png") left top no-repeat;
+  position: absolute;
+  right: -5px;
+  top: -3px;
+  width: 680px;
+  height: 100px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck.base .cancelBtn, #popupArea #autoFormationContainer .deck.base .cancelBtn {
+  display: block;
+  z-index: 10;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck.target .swapArrow, #popupArea #autoFormationContainer .deck.target .swapArrow {
+  display: block;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck.target .swapBtn, #popupArea #autoFormationContainer .deck.target .swapBtn {
+  font-size: 13px;
+  letter-spacing: -0.055em;
+  line-height: 1.1;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck.CONQUERED .conqueredWrap, #popupArea #autoFormationContainer .deck.CONQUERED .conqueredWrap {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_team_list_mask.png") left top no-repeat, url("/magica/resource/image_web/regularEvent/extermination/common/bg_team_list_bossmask.png") left 4px no-repeat;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck.CONQUERED .conqueredWrap .resetBtn, #popupArea #autoFormationContainer .deck.CONQUERED .conqueredWrap .resetBtn {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_list_label.png") left top no-repeat;
+  position: absolute;
+  left: 195px;
+  top: 30px;
+  width: 188px;
+  height: 30px;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck.LOCK .enemyImg, #popupArea #autoFormationContainer .deck.LOCK .enemyImg, #RegularEventExterminationFormation #deckWrap .deck.LOCK .detailBtn, #popupArea #autoFormationContainer .deck.LOCK .detailBtn, #RegularEventExterminationFormation #deckWrap .deck.LOCK > .enemyPower, #popupArea #autoFormationContainer .deck.LOCK > .enemyPower {
+  display: none;
+}
+
+#RegularEventExterminationFormation #deckWrap .deck.LOCK .lockWrap, #popupArea #autoFormationContainer .deck.LOCK .lockWrap {
+  display: block;
+}
+
+#RegularEventExterminationFormation {
+  position: relative;
+}
+
+#RegularEventExterminationFormation #header {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_deck_top.png") left top no-repeat;
+  position: absolute;
+  left: 32px;
+  top: 61px;
+  width: 962px;
+  height: 54px;
+  padding: 12px 35px;
+  line-height: 31px;
+  font-size: 18px;
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+
+#RegularEventExterminationFormation #header .caution {
+  display: none;
+  position: absolute;
+  left: 270px;
+  top: 12px;
+  color: #fcf2ba;
+}
+
+#RegularEventExterminationFormation #header .caution:after {
+  content: "";
+  background: url("/magica/resource/image_web/page/formation_2/arrow_r.png") left top no-repeat;
+  position: absolute;
+  left: -24px;
+  top: 4px;
+  width: 17px;
+  height: 32px;
+  background-size: contain;
+}
+
+#RegularEventExterminationFormation #header .common_tab.t_gold {
+  position: absolute;
+  left: 600px;
+  top: -3px;
+  width: 390px;
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+}
+
+#RegularEventExterminationFormation #header .common_tab.t_gold li {
+  margin-right: 14px;
+}
+
+#RegularEventExterminationFormation #header .common_tab.t_gold li.current {
+  pointer-events: none;
+}
+
+#RegularEventExterminationFormation #header.formation .caution {
+  display: none;
+}
+
+#RegularEventExterminationFormation #header.swapSelectTarget .caution {
+  display: block;
+}
+
+#RegularEventExterminationFormation #deckWrap {
+  position: absolute;
+  left: 44px;
+  top: 125px;
+}
+
+#RegularEventExterminationFormation #deckWrap.formation .deck .swapBtn {
+  display: none;
+}
+
+#RegularEventExterminationFormation #deckWrap.swap .deck .formationBtn {
+  display: none;
+}
+
+#RegularEventExterminationFormation #deckWrap.swap .deck .copyBtn {
+  display: none;
+}
+
+#RegularEventExterminationFormation #bottomWrap #autoFormationBtn, #RegularEventExterminationFormation #bottomWrap #allClearBtn {
+  position: absolute;
+  top: 0;
+  width: 162px;
+  height: 26px;
+  line-height: 0px;
+  font-size: 11px;
+}
+
+#RegularEventExterminationFormation #bottomWrap {
+  position: absolute;
+  right: 0;
+  top: 536px;
+}
+
+#RegularEventExterminationFormation #bottomWrap.hide {
+  display: none;
+}
+
+#RegularEventExterminationFormation #bottomWrap #autoFormationBtn {
+  right: 35px;
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/btn_selected.png") left top no-repeat;
+}
+
+#RegularEventExterminationFormation #bottomWrap #allClearBtn {
+  right: 216px;
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/btn_rescission.png") left top no-repeat;
+}
+
+#popupArea .attention {
+  color: #ff5e7c;
+}
+
+#popupArea #autoFormationPopup .popupInner {
+  height: 552px;
+  top: -webkit-calc(50% - 276px);
+}
+
+#popupArea #autoFormationPopup .popupTextArea {
+  font-size: 20px;
+  padding-top: 6px;
+}
+
+#popupArea #autoFormationContainer .deck {
+  -webkit-transform: scale(0.85);
+  -ms-transform: scale(0.85);
+  transform: scale(0.85);
+  margin-bottom: -12px;
+}
+
+#popupArea #autoFormationContainer .deck:nth-child(5) {
+  margin-bottom: 4px;
+}
+
+#popupArea #autoFormationContainer .deck .userCharaList .userCharaIcon {
+  margin-right: -28px;
+}
+
+#popupArea #autoFormationContainer .deck .copyBtn, #popupArea #autoFormationContainer .deck .swapArrow, #popupArea #autoFormationContainer .deck .formationBtn, #popupArea #autoFormationContainer .deck .swapBtn, #popupArea #autoFormationContainer .deck .detailBtn, #popupArea #autoFormationContainer .deck .resetBtn {
+  display: none;
+}
+
+@-webkit-keyframes exterminationFormationCopyBtn {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes exterminationFormationArrow {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

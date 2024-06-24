@@ -1,0 +1,511 @@
+@charset "UTF-8";
+#difficultyPopup {
+  position: relative;
+}
+
+#difficultyPopup .popupTitle {
+  width: 742px;
+}
+
+#difficultyPopup #tabBtnList {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  left: -webkit-calc(50% - 410px);
+  top: 55px;
+  width: 800px;
+  z-index: 10;
+}
+
+#difficultyPopup #tabBtnList div {
+  position: relative;
+  min-width: 160px;
+  height: 35px;
+  padding: 0 10px;
+  text-align: center;
+}
+
+#difficultyPopup #tabBtnList div span {
+  position: relative;
+  display: block;
+  width: inherit;
+  height: inherit;
+  margin: 0 -8px 0 0;
+  font-size: 15px;
+  line-height: 35px;
+  background: url("/magica/resource/image_web/common/btn/tab_s_gold_off_c.png") center top no-repeat;
+  background-size: -webkit-calc(100% - 35px) 100%;
+  color: #ffffff;
+  text-shadow: -1px -1px 6px #b07422, 1px -1px 6px #b07422, -1px 1px 6px #b07422, 1px 1px 6px #b07422, -1px -1px 6px #b07422, 1px -1px 6px #b07422, -1px 1px 6px #b07422, 1px 1px 6px #b07422;
+}
+
+#difficultyPopup #tabBtnList div span:before, #difficultyPopup #tabBtnList div span:after {
+  width: 20px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  content: "";
+}
+
+#difficultyPopup #tabBtnList div span:before {
+  left: 0;
+  background: url("/magica/resource/image_web/common/btn/tab_s_gold_off_l.png") left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#difficultyPopup #tabBtnList div span:after {
+  right: 0;
+  background: url("/magica/resource/image_web/common/btn/tab_s_gold_off_r.png") left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#difficultyPopup #tabBtnList div.current span {
+  background: url("/magica/resource/image_web/common/btn/tab_s_gold_on_c.png") center top no-repeat;
+  background-size: -webkit-calc(100% - 40px) 100%;
+  color: #b07422;
+  text-shadow: 0 0;
+}
+
+#difficultyPopup #tabBtnList div.current span:before {
+  background: url("/magica/resource/image_web/common/btn/tab_s_gold_on_l.png") left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#difficultyPopup #tabBtnList div.current span:after {
+  background: url("/magica/resource/image_web/common/btn/tab_s_gold_on_r.png") left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#difficultyPopup #tabBtnList div.LOCK {
+  pointer-events: none;
+}
+
+#difficultyPopup #tabBtnList div.LOCK:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_lock.png") left top no-repeat;
+  background-size: contain;
+}
+
+#difficultyPopup #tabBtnList div.LOCK span {
+  padding: 0 0 0 10px;
+  -webkit-filter: brightness(50%) grayscale(50%);
+}
+
+#difficultyPopup #enemyInfoList {
+  width: 826px;
+  height: 320px;
+  margin: 60px 0 0;
+  border: 1px solid #c2a56d;
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo {
+  width: inherit;
+  height: inherit;
+  display: none;
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo.current {
+  display: block;
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo .name {
+  position: absolute;
+  top: 140px;
+  left: 260px;
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo .name .attribute {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_type.png") left top no-repeat;
+  position: absolute;
+  top: 5px;
+  left: -32px;
+  width: 30px;
+  height: 30px;
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo .name .attribute div {
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo img {
+  position: absolute;
+  top: 140px;
+  left: 20px;
+  width: 210px;
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo .power {
+  position: absolute;
+  top: 110px;
+  right: 10px;
+  background: #c4a46b;
+  width: 250px;
+  font-size: 16px;
+  text-align: left;
+  padding: 6px;
+  color: #fff;
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo .power span {
+  position: absolute;
+  right: 10px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1em;
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo .skillTitle {
+  position: absolute;
+  top: 180px;
+  left: 230px;
+  width: 590px;
+  height: 26px;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #fff;
+  background: #c26be0;
+  -webkit-clip-path: polygon(2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%, 0% 50%);
+  clip-path: polygon(2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%, 0% 50%);
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo .skillWrap {
+  position: absolute;
+  top: 208px;
+  left: 240px;
+  width: 540px;
+  text-align: left;
+  font-size: 18px;
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo .skillWrap .skill {
+  line-height: 1.6em;
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo .skillWrap .skill:before {
+  content: "◆";
+  color: #c26be0;
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo .taiseiTitle {
+  position: absolute;
+  top: 300px;
+  left: 230px;
+  width: 590px;
+  height: 26px;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #fff;
+  background: #c26be0;
+  -webkit-clip-path: polygon(2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%, 0% 50%);
+  clip-path: polygon(2% 0%, 98% 0%, 100% 50%, 98% 100%, 2% 100%, 0% 50%);
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo .taiseiList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 330px;
+  left: 250px;
+  width: 560px;
+  height: 84px;
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo .taiseiList .taiseiWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 140px;
+  font-size: 20px;
+  margin: 1px 0;
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo .taiseiList .taiseiWrap .title {
+  text-align: left;
+  width: 110px;
+  background: #b7b4ab;
+  color: #fff;
+  font-size: 16px;
+  padding: 1px 0 0 6px;
+}
+
+#difficultyPopup #enemyInfoList .enemyInfo .taiseiList .taiseiWrap .value {
+  font-weight: bold;
+  width: 30px;
+  font-size: 18px;
+}
+
+#difficultyPopup #difficultyList {
+  position: absolute;
+  top: -webkit-calc(50% - 85px);
+  text-align: center;
+}
+
+#difficultyPopup #difficultyList .difficultyWrap {
+  position: relative;
+}
+
+#difficultyPopup #difficultyList .difficultyWrap .difficulty .bg {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_top_area.png") left top no-repeat;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 240px;
+}
+
+#difficultyPopup #difficultyList .difficultyWrap .difficulty .icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#difficultyPopup #difficultyList .difficultyWrap .difficulty .rewardImg {
+  background: blue;
+  position: absolute;
+  left: 73px;
+  top: 166px;
+  width: 46px;
+  height: 46px;
+}
+
+#difficultyPopup #difficultyList .difficultyWrap .difficulty .difficultyText {
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  text-shadow: 2px 0px 2px #b28850, -2px 0px 2px #b28850, 0px 2px 2px #b28850, 0px -2px 2px #b28850, 2px 2px 2px #b28850, -2px 2px 2px #b28850, 2px -2px 2px #b28850, -2px -2px 2px #b28850;
+}
+
+#difficultyPopup #difficultyList .difficultyWrap .lockText {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_top_label.png") left top no-repeat;
+  position: absolute;
+  left: -10px;
+  bottom: -16px;
+  width: 220px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 15px;
+  color: #efe880;
+}
+
+#difficultyPopup #difficultyList .difficultyWrap.cleared .difficulty {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+#difficultyPopup #difficultyList .difficultyWrap.lock .difficulty {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+#difficultyPopup #difficultyList .difficultyWrap.lock:after {
+  content: "";
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_lock.png") left top no-repeat;
+  position: absolute;
+  left: 68px;
+  top: 62px;
+  width: 62px;
+  height: 62px;
+}
+
+#difficultyPopup #difficultyList .difficultyWrap:nth-child(1):not(.lock) .icon {
+  -webkit-animation: regularEventExterminationTopIcon 2s linear -0.5s infinite both;
+}
+
+#difficultyPopup #difficultyList .difficultyWrap:nth-child(2):not(.lock) .icon {
+  -webkit-animation: regularEventExterminationTopIcon 2s linear -1s infinite both;
+}
+
+#difficultyPopup #difficultyList .difficultyWrap:nth-child(3):not(.lock) .icon {
+  -webkit-animation: regularEventExterminationTopIcon 2s linear -1.5s infinite both;
+}
+
+#difficultyPopup #difficultyList .difficultyWrap:nth-child(4):not(.lock) .icon {
+  -webkit-animation: regularEventExterminationTopIcon 2s linear -2s infinite both;
+}
+
+#difficultyPopup #difficultyList .difficultyWrap:nth-child(5):not(.lock) .icon {
+  -webkit-animation: regularEventExterminationTopIcon 2s linear -2.5s infinite both;
+}
+
+#difficultyPopup #scheduleWrap {
+  background: #d6c69a;
+  position: absolute;
+  left: -webkit-calc(50% - 272px);
+  bottom: 23px;
+  width: 544px;
+  height: 59px;
+  border: solid 2px #b48c55;
+  border-radius: 10px;
+}
+
+#difficultyPopup #scheduleWrap .text {
+  padding-left: 30px;
+  font-size: 16px;
+  color: #fff;
+  text-shadow: -1px -1px 1px #950688, 1px -1px 1px #950688, -1px 1px 1px #950688, 1px 1px 1px #950688, -1px -1px #950688, 1px -1px #950688, -1px 1px #950688, 1px 1px #950688, -1px -1px 1px #950688, 1px -1px 1px #950688, -1px 1px 1px #950688, 1px 1px 1px #950688, -1px -1px #950688, 1px -1px #950688, -1px 1px #950688, 1px 1px #950688;
+  line-height: 55px;
+}
+
+#difficultyPopup #scheduleWrap #scheduleBtn {
+  position: absolute;
+  right: 10px;
+  top: 4px;
+  width: 212px;
+  height: 46px;
+}
+
+#overlapContainer #clearCutinContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#overlapContainer #clearCutinContainer .bg_white {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-animation: 9.33333s regularEventExterminationTopClearCutinCurtain linear 0s 1 both;
+}
+
+#overlapContainer #clearCutinContainer .bg_dark {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_dark.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 628px);
+  top: -webkit-calc(50% - 290px);
+  width: 1256px;
+  height: 580px;
+}
+
+#overlapContainer #clearCutinContainer .efe_clear_circle02 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_clear_circle02.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 249.5px);
+  top: -webkit-calc(50% - 196px);
+  width: 499px;
+  height: 392px;
+}
+
+#overlapContainer #clearCutinContainer .efe_clear_circle03 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_clear_circle03.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 78px);
+  top: -webkit-calc(50% - 78px);
+  width: 156px;
+  height: 156px;
+}
+
+#overlapContainer #clearCutinContainer .efe_clear_03 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_clear_03.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 457.5px);
+  top: -webkit-calc(50% - 143.5px);
+  width: 915px;
+  height: 287px;
+}
+
+#overlapContainer #clearCutinContainer .text02 {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
+#overlapContainer #clearCutinContainer .bg_white02 {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-animation: 9.33333s regularEventExterminationTopClearCutinCurtain linear 0s 1 both;
+}
+
+#overlapContainer #clearCutinContainer .efe_clear_line02 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_clear_line02.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 325.5px);
+  top: -webkit-calc(50% - 78px);
+  width: 651px;
+  height: 9px;
+}
+
+#overlapContainer #clearCutinContainer .efe_clear_text21 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_clear_text21.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 163.5px);
+  top: -webkit-calc(50% - 47px);
+  width: 327px;
+  height: 94px;
+}
+
+#overlapContainer #clearCutinContainer .efe_clear_04 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/efe_clear_04.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 125px);
+  top: -webkit-calc(50% - 125px);
+  width: 250px;
+  height: 250px;
+}
+
+@-webkit-keyframes regularEventExterminationTopIcon {
+  0% {
+    -webkit-transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-12px);
+  }
+  75% {
+    -webkit-transform: translateY(12px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes regularEventExterminationTopClearCutinCurtain {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
