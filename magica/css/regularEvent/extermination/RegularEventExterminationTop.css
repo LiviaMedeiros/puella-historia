@@ -1,0 +1,1046 @@
+#popupArea #schedulePopup table {
+  margin-top: 8px;
+  font-size: 16px;
+  border-spacing: 5px;
+  border-collapse: separate;
+}
+
+#popupArea #schedulePopup table th {
+  background: #a77e4a;
+  width: 400px;
+  color: #fff;
+}
+
+#popupArea #schedulePopup table td {
+  position: relative;
+  width: 600px;
+  height: 70px;
+  border: 1px solid #a77e4a;
+  padding: 2px 10px 2px 15px;
+  text-align: left;
+}
+
+#popupArea #schedulePopup table td .text {
+  width: 510px;
+  line-height: 100%;
+}
+
+#popupArea #schedulePopup table td .rewardList {
+  position: absolute;
+  right: 11px;
+  top: 5px;
+  height: 60px;
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+}
+
+#popupArea #schedulePopup table td .rewardList .rewardWrap {
+  position: relative;
+  margin-left: 4px;
+}
+
+#popupArea #schedulePopup table td .rewardList .rewardWrap img {
+  width: 60px;
+  height: 60px;
+}
+
+#popupArea #schedulePopup table td .rewardList .rewardWrap:after {
+  content: "";
+  position: absolute;
+  left: -webkit-calc(50% - 31px);
+  top: -8px;
+  width: 62px;
+  height: 20px;
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/txt_reward.png") left top no-repeat;
+  background-size: contain;
+}
+
+#RegularEventExterminationTop {
+  position: relative;
+}
+
+#RegularEventExterminationTop #logo {
+  position: absolute;
+  left: -webkit-calc(50% - 110.5px);
+  top: 70px;
+  width: 230px;
+  height: 116px;
+}
+
+#RegularEventExterminationTop #difficultyList {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap {
+  position: absolute;
+  pointer-events: none;
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap .difficulty .bg {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_top_sub.png") left top no-repeat;
+  position: relative;
+  left: 0;
+  top: 56px;
+  width: 175px;
+  height: 128px;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap .difficulty .icon {
+  position: absolute;
+  left: -webkit-calc(50% - 90px);
+  top: 0;
+  width: 180px;
+  height: 180px;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap .difficulty .icon.type1 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_top_01.png") left top no-repeat;
+  background-size: contain;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap .difficulty .icon.type2 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_top_02.png") left top no-repeat;
+  background-size: contain;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap .difficulty .icon.type3 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_top_03.png") left top no-repeat;
+  background-size: contain;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap .difficulty .icon.type4 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_top_04.png") left top no-repeat;
+  background-size: contain;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap .difficulty .icon.type5 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_top_05.png") left top no-repeat;
+  background-size: contain;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap .difficulty .rewardList {
+  display: none;
+  position: absolute;
+  left: -webkit-calc(50% - 111px);
+  top: 155px;
+  width: 222px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap .difficulty .rewardList:after {
+  content: "";
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/txt_reward.png") left top no-repeat;
+  position: absolute;
+  left: 75px;
+  top: -4px;
+  width: 68px;
+  height: 22px;
+  background-size: contain;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap .difficulty .rewardList .rewardWrap {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_top_main_reward.png") left top no-repeat;
+  position: relative;
+  width: 68px;
+  height: 68px;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap .difficulty .rewardList .rewardWrap .rewardImg {
+  position: absolute;
+  left: -webkit-calc(50% - 20px);
+  top: -webkit-calc(50% - 20px);
+  width: 40px;
+  height: 40px;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap .difficulty .name {
+  position: absolute;
+  left: -webkit-calc(50% - 100px);
+  top: 174px;
+  width: 200px;
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 0px 2px #b28850, -2px 0px 2px #b28850, 0px 2px 2px #b28850, 0px -2px 2px #b28850, 2px 2px 2px #b28850, -2px 2px 2px #b28850, 2px -2px 2px #b28850, -2px -2px 2px #b28850;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap .lockText {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_icon_label.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 61px);
+  top: 116px;
+  width: 124px;
+  height: 42px;
+  line-height: 15px;
+  font-size: 13px;
+  color: #493822;
+  padding-top: 6px;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap.cleared .difficulty .bg, #RegularEventExterminationTop #difficultyList .difficultyWrap.cleared .difficulty .name, #RegularEventExterminationTop #difficultyList .difficultyWrap.cleared .difficulty .rewardList {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap.cleared .difficulty .icon.type1 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_top_off_01.png") left top no-repeat;
+  background-size: contain;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap.cleared .difficulty .icon.type2 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_top_off_02.png") left top no-repeat;
+  background-size: contain;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap.cleared .difficulty .icon.type3 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_top_off_03.png") left top no-repeat;
+  background-size: contain;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap.cleared .difficulty .icon.type4 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_top_off_04.png") left top no-repeat;
+  background-size: contain;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap.cleared .difficulty .icon.type5 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_top_off_05.png") left top no-repeat;
+  background-size: contain;
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap.lock .difficulty {
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+#RegularEventExterminationTop #difficultyList .difficultyWrap.lock:after {
+  content: "";
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_lock.png") center bottom no-repeat, url("/magica/resource/image_web/regularEvent/extermination/common/chain.png") left top no-repeat;
+  position: absolute;
+  left: 22px;
+  top: 44px;
+  width: 134px;
+  height: 72px;
+}
+
+#RegularEventExterminationTop .allClearInfo {
+  display: none;
+  position: absolute;
+  left: -webkit-calc(50% - 450px);
+  bottom: 9px;
+  width: 900px;
+  height: 40px;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(108, 46, 122, 0)), color-stop(20%, rgba(53, 23, 59, 0.6)), color-stop(50%, rgba(53, 23, 59, 0.7)), color-stop(80%, rgba(53, 23, 59, 0.6)), to(rgba(108, 46, 122, 0)));
+  background: -webkit-linear-gradient(left, rgba(108, 46, 122, 0) 0%, rgba(53, 23, 59, 0.6) 20%, rgba(53, 23, 59, 0.7) 50%, rgba(53, 23, 59, 0.6) 80%, rgba(108, 46, 122, 0) 100%);
+  background: -o-linear-gradient(left, rgba(108, 46, 122, 0) 0%, rgba(53, 23, 59, 0.6) 20%, rgba(53, 23, 59, 0.7) 50%, rgba(53, 23, 59, 0.6) 80%, rgba(108, 46, 122, 0) 100%);
+  background: linear-gradient(90deg, rgba(108, 46, 122, 0) 0%, rgba(53, 23, 59, 0.6) 20%, rgba(53, 23, 59, 0.7) 50%, rgba(53, 23, 59, 0.6) 80%, rgba(108, 46, 122, 0) 100%);
+  text-align: center;
+  line-height: 2.5;
+  color: #fff;
+}
+
+#RegularEventExterminationTop #scheduleWrap {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_top_schedule.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 212px);
+  bottom: 23px;
+  width: 424px;
+  height: 24px;
+}
+
+#RegularEventExterminationTop #scheduleWrap .text {
+  padding-left: 42px;
+  font-size: 13px;
+  color: #fff;
+  line-height: 24px;
+  letter-spacing: 0.15em;
+}
+
+#RegularEventExterminationTop #scheduleWrap #scheduleBtn {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/btn_schedule.png") center center no-repeat;
+  position: absolute;
+  right: 26px;
+  top: -17px;
+  width: 58px;
+  height: 58px;
+}
+
+#RegularEventExterminationTop:not(.allClear) #difficultyList .difficultyWrap:nth-child(1) {
+  left: -webkit-calc(50% - 112px);
+  top: -webkit-calc(50% - 18px);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+#RegularEventExterminationTop:not(.allClear) #difficultyList .difficultyWrap:nth-child(1) .difficulty .bg {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_top_main.png") left top no-repeat;
+  top: 0;
+  width: 224px;
+  height: 224px;
+}
+
+#RegularEventExterminationTop:not(.allClear) #difficultyList .difficultyWrap:nth-child(1) .difficulty .icon {
+  left: -webkit-calc(50% - 112px);
+  top: -74px;
+  width: 224px;
+  height: 224px;
+}
+
+#RegularEventExterminationTop:not(.allClear) #difficultyList .difficultyWrap:nth-child(1) .difficulty .name {
+  top: 123px;
+}
+
+#RegularEventExterminationTop:not(.allClear) #difficultyList .difficultyWrap:nth-child(1) .difficulty .rewardList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#RegularEventExterminationTop:not(.allClear) #difficultyList .difficultyWrap:nth-child(1) .lockText {
+  top: 72px;
+}
+
+#RegularEventExterminationTop:not(.allClear) #difficultyList .difficultyWrap:nth-child(1).lock:after {
+  left: 46px;
+  top: -6px;
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+#RegularEventExterminationTop:not(.allClear) #difficultyList .difficultyWrap:nth-child(1).cleared:after {
+  content: "";
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_clear.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 46px);
+  top: 162px;
+  width: 92px;
+  height: 50px;
+}
+
+#RegularEventExterminationTop:not(.allClear) #difficultyList .difficultyWrap:nth-child(1):not(.cleared):not(.lock) .icon {
+  -webkit-animation: eventExterminationTopIcon 2s linear -0.5s infinite both;
+}
+
+#RegularEventExterminationTop:not(.allClear) #difficultyList .difficultyWrap:nth-child(2) {
+  left: -webkit-calc(10% - 87.5px);
+  top: -webkit-calc(40% - 43px);
+}
+
+#RegularEventExterminationTop:not(.allClear) #difficultyList .difficultyWrap:nth-child(3) {
+  left: -webkit-calc(30% - 87.5px);
+  top: -webkit-calc(45% - 43px);
+}
+
+#RegularEventExterminationTop:not(.allClear) #difficultyList .difficultyWrap:nth-child(4) {
+  left: -webkit-calc(70% - 87.5px);
+  top: -webkit-calc(45% - 43px);
+}
+
+#RegularEventExterminationTop:not(.allClear) #difficultyList .difficultyWrap:nth-child(5) {
+  left: -webkit-calc(90% - 87.5px);
+  top: -webkit-calc(40% - 43px);
+}
+
+#RegularEventExterminationTop.allClear #difficultyList .difficultyWrap {
+  pointer-events: auto;
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
+  top: 200px;
+}
+
+#RegularEventExterminationTop.allClear #difficultyList .difficultyWrap .difficulty .bg {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/bg_top_clear.png") left top no-repeat;
+}
+
+#RegularEventExterminationTop.allClear #difficultyList .difficultyWrap.cleared .difficulty .bg, #RegularEventExterminationTop.allClear #difficultyList .difficultyWrap.cleared .difficulty .name, #RegularEventExterminationTop.allClear #difficultyList .difficultyWrap.cleared .difficulty .rewardList {
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+}
+
+#RegularEventExterminationTop.allClear #difficultyList .difficultyWrap.cleared .icon.type1 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_top_01.png") left top no-repeat;
+  background-size: contain;
+  -webkit-animation: eventExterminationTopIcon 5s linear -0.5s infinite both;
+}
+
+#RegularEventExterminationTop.allClear #difficultyList .difficultyWrap.cleared .icon.type2 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_top_02.png") left top no-repeat;
+  background-size: contain;
+  -webkit-animation: eventExterminationTopIcon 5s linear -1s infinite both;
+}
+
+#RegularEventExterminationTop.allClear #difficultyList .difficultyWrap.cleared .icon.type3 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_top_03.png") left top no-repeat;
+  background-size: contain;
+  -webkit-animation: eventExterminationTopIcon 5s linear -1.5s infinite both;
+}
+
+#RegularEventExterminationTop.allClear #difficultyList .difficultyWrap.cleared .icon.type4 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_top_04.png") left top no-repeat;
+  background-size: contain;
+  -webkit-animation: eventExterminationTopIcon 5s linear -2s infinite both;
+}
+
+#RegularEventExterminationTop.allClear #difficultyList .difficultyWrap.cleared .icon.type5 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/icon_top_05.png") left top no-repeat;
+  background-size: contain;
+  -webkit-animation: eventExterminationTopIcon 5s linear -2.5s infinite both;
+}
+
+#RegularEventExterminationTop.allClear #difficultyList .difficultyWrap:nth-child(1) {
+  left: 808px;
+}
+
+#RegularEventExterminationTop.allClear #difficultyList .difficultyWrap:nth-child(2) {
+  left: 48px;
+}
+
+#RegularEventExterminationTop.allClear #difficultyList .difficultyWrap:nth-child(3) {
+  left: 238px;
+}
+
+#RegularEventExterminationTop.allClear #difficultyList .difficultyWrap:nth-child(4) {
+  left: 428px;
+}
+
+#RegularEventExterminationTop.allClear #difficultyList .difficultyWrap:nth-child(5) {
+  left: 618px;
+}
+
+#RegularEventExterminationTop.allClear #scheduleWrap {
+  bottom: 96px;
+}
+
+#RegularEventExterminationTop.allClear .allClearInfo {
+  display: block;
+}
+
+#overlapContainer #clearCutinContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#overlapContainer #clearCutinContainer .bg_white {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-animation: 5s exterminationTopClearCutinCurtain linear 0s 1 both;
+}
+
+#overlapContainer #clearCutinContainer .bg_dark {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/bg_dark.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 628px);
+  top: -webkit-calc(50% - 290px);
+  width: 1256px;
+  height: 580px;
+  -webkit-animation: 5.3s exterminationTopClearCutinBgDark linear 0s 1 both;
+}
+
+#overlapContainer #clearCutinContainer .efe_clear_circle02 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_circle02.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 249.5px);
+  top: -webkit-calc(50% - 196px);
+  width: 499px;
+  height: 392px;
+  -webkit-animation: 5.25s exterminationTopClearCutinEfeCircle linear 0s 1 both;
+}
+
+#overlapContainer #clearCutinContainer .efe_clear_circle03 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_circle03.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 78px);
+  top: -webkit-calc(50% - 78px);
+  width: 156px;
+  height: 156px;
+  -webkit-animation: 5.25s exterminationTopClearCutinEfeCircle linear 0s 1 both;
+}
+
+#overlapContainer #clearCutinContainer .efe_clear_03 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_03.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 457.5px);
+  top: -webkit-calc(50% - 143.5px);
+  width: 915px;
+  height: 287px;
+  -webkit-animation: 1.96667s exterminationTopClearCutinEfeClear03 linear 0s 1 both;
+}
+
+#overlapContainer #clearCutinContainer .efe_clear_03.delay {
+  -webkit-animation: 1.96667s exterminationTopClearCutinEfeClear03 linear 0.16667s 1 both;
+}
+
+#overlapContainer #clearCutinContainer .efe_clear_text11 {
+  position: absolute;
+  left: -webkit-calc(50% - 130px);
+  top: -webkit-calc(50% - 43px);
+  width: 260px;
+  height: 81px;
+  text-align: center;
+  -webkit-animation: 5s exterminationTopClearCutinText11 linear 0s 1 both;
+}
+
+#overlapContainer #clearCutinContainer .bg_white02 {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-animation: 5s exterminationTopClearCutinCurtain linear 0s 1 both;
+}
+
+#overlapContainer #clearCutinContainer .efe_clear_line02 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_line02.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 375.5px);
+  top: -webkit-calc(50% - 108px);
+  width: 651px;
+  height: 9px;
+  -webkit-animation: 5s exterminationTopClearCutinEfeLine02 linear 0s 1 both;
+}
+
+#overlapContainer #clearCutinContainer .efe_clear_text21 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text21.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 163.5px);
+  top: -webkit-calc(50% - 172px);
+  width: 327px;
+  height: 94px;
+  -webkit-animation: 5s exterminationTopClearCutinText21 linear 0s 1 both;
+}
+
+#overlapContainer #clearCutinContainer .efe_clear_04 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_04.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 125px);
+  top: -webkit-calc(50% - 125px);
+  width: 250px;
+  height: 250px;
+  -webkit-animation: 1.88333s exterminationTopClearCutinEfeClear04 linear 0s 1 both;
+}
+
+#overlapContainer #allClearCutinContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#overlapContainer #allClearCutinContainer.fadeOut {
+  -webkit-animation: 0.3s common_fade_out linear 0s 1 both;
+}
+
+#overlapContainer #allClearCutinContainer .bg_white {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-animation: 6.41667s exterminationTopAllClearCutinCurtain linear 0s 1 both;
+}
+
+#overlapContainer #allClearCutinContainer .bg_dark {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/bg_dark.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 628px);
+  top: -webkit-calc(50% - 290px);
+  width: 1256px;
+  height: 580px;
+  -webkit-animation: 5.3s exterminationTopClearCutinBgDark linear 0s 1 both;
+}
+
+#overlapContainer #allClearCutinContainer .efe_clear_circle02 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_circle02.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 249.5px);
+  top: -webkit-calc(50% - 196px);
+  width: 499px;
+  height: 392px;
+}
+
+#overlapContainer #allClearCutinContainer .efe_clear_circle03 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_circle03.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 66px);
+  top: -webkit-calc(50% - 5px);
+  width: 132px;
+  height: 132px;
+  background-size: 100%;
+  -webkit-animation: 0.6s exterminationTopClearFadeIn linear 2.88333s 1 both;
+}
+
+#overlapContainer #allClearCutinContainer .efe_clear_circle04 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_circle04.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 320px);
+  top: -webkit-calc(50% - 320px);
+  width: 620px;
+  height: 620px;
+  -webkit-animation: 7.73333s exterminationTopAllClearCutinEfeCircle04 linear 0s 1 both;
+}
+
+#overlapContainer #allClearCutinContainer .efe_clear_03 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_03.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 457.5px);
+  top: -webkit-calc(50% - 143.5px);
+  width: 915px;
+  height: 287px;
+  -webkit-animation: 1.96667s exterminationTopClearCutinEfeClear03 linear 0s 1 both;
+}
+
+#overlapContainer #allClearCutinContainer .efe_clear_line02 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_line02.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 375.5px);
+  top: -webkit-calc(50% - 20.5px);
+  width: 651px;
+  height: 9px;
+  -webkit-animation: 1.13333s exterminationTopClearCutinEfeLine02 linear 2.8s 1 both;
+}
+
+#overlapContainer #allClearCutinContainer .efe_clear_text22 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text22.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 170px);
+  top: -webkit-calc(50% - 157px);
+  width: 340px;
+  height: 180px;
+  -webkit-animation: 1.96667s exterminationTopClearCutinText22 linear 1.33333s 1 both;
+}
+
+#overlapContainer #allClearCutinContainer .efe_clear_04 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_04.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 125px);
+  top: -webkit-calc(50% - 125px);
+  width: 250px;
+  height: 250px;
+  -webkit-animation: 1.88333s exterminationTopClearCutinEfeClear04 linear 0s 1 both;
+}
+
+#overlapContainer #allClearCutinContainer .efe_flare_01 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_flare_01.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 150px);
+  top: -webkit-calc(50% - 150px);
+  width: 300px;
+  height: 300px;
+  -webkit-animation: 1.88333s exterminationTopClearFadeIn linear 1.06667s 1 both;
+}
+
+#overlapContainer #allClearCutinContainer .rewardImg {
+  position: absolute;
+  left: -webkit-calc(50% - 37.5px);
+  top: -webkit-calc(50% + 25px);
+  width: 75px;
+  height: 75px;
+  -webkit-animation: 0.86667s exterminationTopClearFadeIn linear 2.4s 1 both;
+}
+
+#overlapContainer #changeAllClearCutinContainer {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+#overlapContainer #changeAllClearCutinContainer.fadeOut {
+  -webkit-animation: 0.3s common_fade_out linear 0s 1 both;
+}
+
+#overlapContainer #changeAllClearCutinContainer .bg_white {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-animation: 1.66667s exterminationTopClearFadeIn linear 0s 1 both;
+}
+
+#overlapContainer #changeAllClearCutinContainer #changeAllClearInfo {
+  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#overlapContainer #changeAllClearCutinContainer #changeAllClearInfo.show {
+  display: block;
+  -webkit-animation: 0.5s exterminationTopClearInfoOpen linear 0s 1 both;
+}
+
+#overlapContainer #changeAllClearCutinContainer #changeAllClearInfo .bg {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/bg_tips.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 400px);
+  top: -webkit-calc(50% - 125px);
+  width: 800px;
+  height: 240px;
+}
+
+#overlapContainer #changeAllClearCutinContainer #changeAllClearInfo .text1 {
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/txt_clear_continue.png") left top no-repeat;
+  position: absolute;
+  left: -webkit-calc(50% - 118px);
+  top: -webkit-calc(50% - 70px);
+  width: 236px;
+  height: 32px;
+}
+
+#overlapContainer #changeAllClearCutinContainer #changeAllClearInfo .text2 {
+  position: absolute;
+  left: 0;
+  top: -webkit-calc(50% + 30px);
+  width: 100%;
+  height: 32px;
+  text-align: center;
+  color: #fff;
+}
+
+#overlapContainer #changeAllClearCutinContainer #changeAllClearTouchScreen {
+  width: 242px;
+  height: 32px;
+  background: url("/magica/resource/image_web/regularEvent/extermination/common/clearanime/touch_screen.png") center top no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 40px;
+  left: -webkit-calc(50% - 121px);
+  opacity: 0;
+}
+
+#overlapContainer #changeAllClearCutinContainer #changeAllClearTouchScreen.show {
+  -webkit-animation: exterminationTopClearTocuhScreen 1.333s ease 0s infinite normal;
+}
+
+@-webkit-keyframes eventExterminationTopIcon {
+  0% {
+    -webkit-transform: translateY(0px);
+  }
+  25% {
+    -webkit-transform: translateY(-12px);
+  }
+  75% {
+    -webkit-transform: translateY(12px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes exterminationTopClearCutinCurtain {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes exterminationTopClearCutinText11 {
+  0% {
+    opacity: 0;
+  }
+  9.33% {
+    opacity: 1;
+  }
+  73.67% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes exterminationTopClearCutinText21 {
+  0% {
+    -webkit-transform: translateY(-358px);
+    opacity: 0;
+  }
+  3.86% {
+    -webkit-transform: translateY(-358px);
+    opacity: 0.46;
+  }
+  7.41% {
+    -webkit-transform: translateY(-250.4px);
+    opacity: 1;
+  }
+  9.80% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+  86.94% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes exterminationTopClearCutinEfeLine02 {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  3.66% {
+    -webkit-transform: scale(0.028, 1);
+    opacity: 0.77;
+  }
+  8.73% {
+    -webkit-transform: scale(0.444, 1);
+    opacity: 1;
+  }
+  14.08% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  88.73% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes exterminationTopClearCutinEfeClear03 {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0;
+  }
+  18.64% {
+    -webkit-transform: scale(0);
+    opacity: 0.65;
+  }
+  27.97% {
+    -webkit-transform: scale(0.553);
+    opacity: 1;
+  }
+  53.39% {
+    -webkit-transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes exterminationTopAllClearCutinEfeCircle02 {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 0.0;
+  }
+  22.68% {
+    -webkit-transform: scale(0.926);
+    opacity: 0;
+  }
+  47.42% {
+    -webkit-transform: scale(2);
+    opacity: 0.54;
+  }
+  69.07% {
+    -webkit-transform: scale(1.563);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes exterminationTopAllClearCutinEfeCircle03 {
+  0% {
+    -webkit-transform: scale(0) rotate(0);
+    opacity: 0.19;
+  }
+  5.17% {
+    -webkit-transform: scale(0) rotate(0);
+    opacity: 0.3;
+  }
+  6.90% {
+    -webkit-transform: scale(0.139) rotate(0);
+    opacity: 0.33;
+  }
+  9.91% {
+    -webkit-transform: scale(0.536) rotate(7.4deg);
+    opacity: 0.4;
+  }
+  14.44% {
+    -webkit-transform: scale(1) rotate(18.9deg);
+    opacity: 0.61;
+  }
+  22.84% {
+    -webkit-transform: scale(1) rotate(40.4deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(237.6deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes exterminationTopAllClearCutinEfeCircle04 {
+  0% {
+    -webkit-transform: scale(0) rotate(0);
+    opacity: 0.19;
+  }
+  5.17% {
+    -webkit-transform: scale(0) rotate(0);
+    opacity: 0.3;
+  }
+  6.90% {
+    -webkit-transform: scale(0.139) rotate(0);
+    opacity: 0.33;
+  }
+  9.91% {
+    -webkit-transform: scale(0.536) rotate(7.4deg);
+    opacity: 0.4;
+  }
+  14.44% {
+    -webkit-transform: scale(1) rotate(18.9deg);
+    opacity: 0.61;
+  }
+  22.84% {
+    -webkit-transform: scale(1) rotate(40.4deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(237.6deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes exterminationTopClearCutinEfeCircle {
+  0% {
+    -webkit-transform: scale(0, 1);
+    opacity: 1;
+  }
+  14.29% {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+  89.52% {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes exterminationTopClearCutinBgDark {
+  0% {
+    opacity: 0;
+  }
+  10.06% {
+    opacity: 0.5;
+  }
+  86.80% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes exterminationTopClearCutinText22 {
+  0% {
+    -webkit-transform: translateY(67px);
+    opacity: 0;
+  }
+  29.66% {
+    -webkit-transform: translateY(67px);
+    opacity: 1;
+  }
+  65.25% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes exterminationTopAllClearCutinCurtain {
+  0% {
+    opacity: 0;
+  }
+  25.78% {
+    opacity: 0.5;
+  }
+  92.32% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes exterminationTopClearFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes exterminationTopClearInfoOpen {
+  0% {
+    -webkit-transform: scale(0, 1);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes exterminationTopClearTocuhScreen {
+  0% {
+    -webkit-transform: translateZ(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translateZ(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    opacity: 0;
+  }
+}

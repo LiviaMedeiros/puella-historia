@@ -1,0 +1,133 @@
+<div id="RegularEventExterminationTop" class="">
+
+	<% if (window.isDebug) { %>
+	<div class="debugBtnList" style="position: absolute;left: 0;top: 70px;z-index:1000;">
+		<div class="debugBtn mb_white TE" data-type="clearCutin">難易度解放</div>
+		<div class="debugBtn mb_white TE" data-type="allClearCutin">全クリア</div>
+	</div>
+	<% } %>
+
+	<div id="logo">
+		<img src="/magica/resource/image_web/regularEvent/extermination/<%= eventMaster.regularEventId %>/logo.png" alt="">
+	</div>
+
+	<div id='helpBtn' class='se_decide TE sb_gold_02' data-eventid="<%= eventMaster.regularEventId %>">遊び方</div>
+
+	<div id="difficultyList" class="flexBox"></div>
+
+	<div class="allClearInfo">クリア済みのステージに再度挑戦できます</div>
+
+	<div id="scheduleWrap">
+		<div class="text">開催期間　<%= eventMaster.startAt.slice(0,10) %>～<%= eventMaster.endAt.slice(0,10) %></div>
+		<div id="scheduleBtn" class="TE se_decide"></div>
+	</div>
+</div>
+
+
+<!-- 難易度パーツ -->
+<script type="text/template" id="difficultyPartsTemp">
+	<div class="difficulty">
+		<div class="bg"></div>
+
+		<div class="icon type<%='<%= model.difficultyId %\>'%>">
+
+		</div>
+		<div class="rewardList">
+			<%="<% _.forEach(model.rewardModels,function(txt,index){ %\>"%>
+			<div class="rewardWrap">
+				<%="<% if(txt.nativeimgkey) { %\>"%>
+					<img class="rewardImg" data-nativeimgkey='<%="<%= txt.nativeimgkey %\>"%>' data-src='resource/image_native/<%="<%= txt.imagePath %\>"%>.png'>
+				<%="<% } else { %\>"%>
+					<img class="rewardImg" src='/magica/resource/image_web/item/<%="<%= txt.imagePath %\>"%>.png'>
+				<%="<% } %\>"%>
+			</div>
+			<%="<% }) %\>"%>
+		</div>
+
+		<div class="name"><%='<%= model.name %\>'%></div>
+	</div>
+	<%='<% if(model.lockText) { %\>'%>
+	<div class="lockText"><%='<%= model.lockText %\>'%></div>
+	</div>
+	<%='<% } %\>'%>
+</script>
+
+
+<!-- 難易度解放アニメ -->
+<script type="text/template" id="clearCutinPartsTemp">
+	<div class="bg_white animationEnd"></div>
+	<div class="bg_dark"></div>
+	<div class="efe_clear_circle02"></div>
+	<div class="efe_clear_circle03"></div>
+	<div class="efe_clear_03"></div>
+	<div class="efe_clear_03 delay"></div>
+	<div class="efe_clear_text11">
+		<img src='/magica/resource/image_web/regularEvent/extermination/common/clearanime/efe_clear_text1<%="<%= model.difficultyId - 1 %\>"%>.png' />
+	</div>
+	<div class="bg_white_2"></div>
+	<div class="efe_clear_line02"></div>
+	<div class="efe_clear_text21"></div>
+	<div class="efe_clear_04"></div>
+</script>
+
+<!--全クリアニメ -->
+<script type="text/template" id="allClearCutinPartsTemp">
+	<div class="bg_white animationEnd"></div>
+	<div class="bg_dark"></div>
+	<div class="efe_clear_03"></div>
+	<div class="efe_flare_01"></div>
+	<div class="efe_clear_circle04"></div>
+	<div class="efe_clear_circle03"></div>
+	<div class="efe_clear_circle02"></div>
+	<div class="bg_white_2"></div>
+	<div class="efe_clear_04"></div>
+	<div class="efe_clear_line02"></div>
+	<div class="efe_clear_text22"></div>
+	<%="<% if(rewardModel.nativeimgkey) { %\>"%>
+		<img class="rewardImg" data-nativeimgkey='<%="<%= rewardModel.nativeimgkey %\>"%>' data-src='resource/image_native/<%="<%= rewardModel.imagePath %\>"%>.png'>
+	<%="<% } else { %\>"%>
+		<img class="rewardImg" src='/magica/resource/image_web/item/<%="<%= rewardModel.imagePath %\>"%>.png'>
+	<%="<% } %\>"%>
+</script>
+
+<script type="text/template" id="changeAllClearCutinPartsTemp">
+	<div class="bg_white animationEnd"></div>
+
+	<div id="changeAllClearInfo" class="animationEnd">
+		<div class="bg"></div>
+		<div class="text1"></div>
+		<div class="text2">クリア済みのステージにもう一度挑戦できるようになりました</div>
+		<div id="changeAllClearTouchScreen"></div>
+	</div>
+</script>
+
+<!-- スケジュールPop -->
+<script type="text/template" id="schedulePopupTemp">
+	<table>
+		<% _.forEach(eventMaster.regularEventExtermination.difficultyList,function(txt,index){ %>
+		<tr>
+			<% if (index == 0) { %>
+			<th rowspan="3"><%= txt.openDate ? txt.openDate.slice(0,10) : eventMaster.startAt.slice(0,10) %> 17:00～</th>
+			<% } else if (index>=3) { %>
+			<th><%= txt.openDate.slice(0,16) %>～</th>
+			<% } %>
+
+			<td>
+				<%= txt.name %>解放
+
+				<div class="rewardList flexBox">
+					<% _.forEach(txt.rewardModels,function(txt2,index){ %>
+						<div class="rewardWrap">
+							<% if(txt2.nativeimgkey) { %>
+								<img class="rewardImg" data-nativeimgkey='<%= txt2.nativeimgkey %>' data-src='resource/image_native/<%= txt2.imagePath %>.png'>
+							<% } else { %>
+								<img class="rewardImg" src='/magica/resource/image_web/item/<%= txt2.imagePath %>.png'>
+							<% } %>
+						</div>
+					<% }) %>
+				</div>
+			</td>
+		</tr>
+		<% }) %>
+	</table>
+</script>
