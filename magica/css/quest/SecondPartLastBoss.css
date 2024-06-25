@@ -1,0 +1,200 @@
+#SecondPartLastBoss {
+  position: relative;
+}
+
+#SecondPartLastBoss .bossBg {
+  position: absolute;
+  -webkit-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  top: 60px;
+  left: 50%;
+}
+
+#SecondPartLastBoss #lastBossBattleBtn {
+  position: absolute;
+  width: 220px;
+  height: 174px;
+  -webkit-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
+  top: 270px;
+  left: 50%;
+}
+
+#SecondPartLastBoss #lastBossBattleBtn:before {
+  pointer-events: none;
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/ui_lastbattle_2_center_over.png") left top no-repeat;
+  content: "";
+  display: block;
+  width: 220px;
+  height: 174px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: 3.5s fixHandFadeOut linear 0s infinite forwards;
+          animation: 3.5s fixHandFadeOut linear 0s infinite forwards;
+}
+
+#SecondPartLastBoss #lastBossBattleBtn:after {
+  pointer-events: none;
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/efe_circle_white_2.png") left top no-repeat;
+  content: "";
+  display: block;
+  width: 356px;
+  height: 356px;
+  position: absolute;
+  top: -94px;
+  left: -68px;
+  -webkit-animation: 3.5s ringFadeOut linear 0s infinite forwards;
+          animation: 3.5s ringFadeOut linear 0s infinite forwards;
+}
+
+#SecondPartLastBoss #lastBossBattleBtn .effect:before, #SecondPartLastBoss #lastBossBattleBtn .effect:after {
+  pointer-events: none;
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/efe_circle_niji.png") left top no-repeat;
+  content: "";
+  display: block;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  -webkit-animation: 3.5s fuwafuwa2 linear 0s infinite forwards;
+          animation: 3.5s fuwafuwa2 linear 0s infinite forwards;
+}
+
+#SecondPartLastBoss #lastBossBattleBtn .effect:after {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/efe_circle_white.png") left top no-repeat;
+}
+
+#SecondPartLastBoss #lastBossBattleBtn .attributeIcon {
+  pointer-events: none;
+  z-index: 1;
+  position: absolute;
+  top: 65px;
+  left: 16px;
+  width: 30px;
+  height: 30px;
+}
+
+#SecondPartLastBoss #lastBossBattleBtn .attributeIcon.ALL {
+  background: url(/magica/resource/image_web/common/chara/att_all_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastBoss #lastBossBattleBtn .attributeIcon.FIRE {
+  background: url(/magica/resource/image_web/common/chara/att_fire_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastBoss #lastBossBattleBtn .attributeIcon.WATER {
+  background: url(/magica/resource/image_web/common/chara/att_water_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastBoss #lastBossBattleBtn .attributeIcon.TIMBER {
+  background: url(/magica/resource/image_web/common/chara/att_timber_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastBoss #lastBossBattleBtn .attributeIcon.LIGHT {
+  background: url(/magica/resource/image_web/common/chara/att_light_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastBoss #lastBossBattleBtn .attributeIcon.DARK {
+  background: url(/magica/resource/image_web/common/chara/att_dark_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastBoss #lastBossBattleBtn .attributeIcon.VOID {
+  background: url(/magica/resource/image_web/common/chara/att_void_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+@-webkit-keyframes fixHandFadeOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fixHandFadeOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes ringFadeOut {
+  0% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0;
+  }
+}
+
+@keyframes ringFadeOut {
+  0% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fuwafuwa2 {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+  100% {
+    opacity: 0.2;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fuwafuwa2 {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+  100% {
+    opacity: 0.2;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
