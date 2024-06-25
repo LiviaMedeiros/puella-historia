@@ -1,0 +1,69 @@
+{
+  "secondPartLastInfo": {
+		"sectionId": 103305,
+		"storyInfo": {
+			"storyIdList": {
+				"beforeMirrorBattle":"103305-1_eP5wU",
+				"afterMirrorBattle":"103305-3_eP5wU",
+				"armAllClear":"103305-12_eP5wU"
+			}
+		},
+    "enemyInfo": {
+      "name": "ラストバトル",
+			"list":[
+				{
+					"enemyImage": "arm1",
+      		"enemyForces": 100000,
+      		"enemyName": "鏡の魔女の腕１",
+					"enemyNameShorthand": "鏡の魔女の腕１",
+      		"enemyAttributeId": "FIRE",
+      		"enemySkillInfo": "[状態異常] やけど,[バフ] 攻撃力 & 防御力 & 状態異常耐性UP",
+      		"enemyValidAbnormals": "POISON,FOG,DAMAGE_UP_BAD_NUM,BURN,DARKNESS,BAN_MAGIA,CURSE,BLINDNESS",
+					"rewardImg": "main/presented_money"
+				},
+				{
+					"enemyImage": "arm2",
+      		"enemyForces": 100000,
+      		"enemyName": "鏡の魔女の腕２",
+					"enemyNameShorthand": "鏡の魔女の腕２",
+      		"enemyAttributeId": "WATER",
+      		"enemySkillInfo": "[状態強化] 状態異常時ダメージアップ,[状態異常] 暗闇 & 幻惑 & 強化毒 & やけど,[状態異常] 呪い & 虚弱 & HP回復禁止 & MP回復禁止",
+      		"enemyValidAbnormals": "POISON,FOG,DAMAGE_UP_BAD_NUM,BURN,DARKNESS,BAN_MAGIA,CURSE,BLINDNESS",
+					"rewardImg": "main/presented_money"
+				},
+				{
+					"enemyImage": "arm3",
+      		"enemyForces": 100000,
+      		"enemyName": "鏡の魔女の腕３",
+					"enemyNameShorthand": "鏡の魔女の腕３",
+      		"enemyAttributeId": "TIMBER",
+      		"enemySkillInfo": "[状態強化] クリティカル & マギアダメージカット,[バフ] 攻撃力UP",
+      		"enemyValidAbnormals": "POISON,FOG,DAMAGE_UP_BAD_NUM,BURN,DARKNESS,BAN_MAGIA,CURSE,BLINDNESS",
+					"rewardImg": "main/presented_money"
+				},
+				{
+					"enemyImage": "arm4",
+      		"enemyForces": 100000,
+      		"enemyName": "鏡の魔女の腕４",
+					"enemyNameShorthand": "鏡の魔女の腕４",
+      		"enemyAttributeId": "DARK",
+      		"enemySkillInfo": "[状態強化] ダメージアップ状態,[状態異常] HP回復禁止,[特殊] 回避無効 & デバフ無効",
+      		"enemyValidAbnormals": "POISON,FOG,DAMAGE_UP_BAD_NUM,BURN,DARKNESS,BAN_MAGIA,CURSE,BLINDNESS",
+					"rewardImg": "main/presented_money"
+				},
+				{
+					"enemyImage": "head",
+      		"enemyForces": 120000,
+      		"enemyName": "鏡の魔女の頭",
+					"enemyNameShorthand": "鏡の魔女の頭",
+      		"enemyId": 6407,
+      		"enemyAttributeId": "VOID",
+      		"enemySkillInfo": "[状態強化] MP自動回復,[状態強化] ダメージカット無視 & 防御無視,[バフ] 攻撃力UP",
+      		"enemyValidAbnormals": "POISON,FOG,DAMAGE_UP_BAD_NUM,BURN,DARKNESS,CURSE,BLINDNESS",
+					"rewardImg": "main/presented_money"
+				}
+			],
+      "clearRewardCodes": "ITEM_PRESENTED_MONEY_5"
+    }
+  }
+}
