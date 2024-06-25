@@ -1,0 +1,2031 @@
+#SecondPartLastTop {
+  position: relative;
+}
+
+#SecondPartLastTop #linkFormationtBtn {
+  position: absolute;
+  bottom: 0px;
+  right: 65px;
+}
+
+#SecondPartLastTop #helpBtn {
+  width: 100px;
+  position: absolute;
+  top: 13px;
+  right: 276px;
+}
+
+#SecondPartLastTop #helpBtn.hide {
+  display: none;
+}
+
+#SecondPartLastTop #stageList .stageWrap {
+  position: absolute;
+  width: 200px;
+  height: 0px;
+}
+
+#SecondPartLastTop #stageList .stageWrap .stageBtn {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  width: 168px;
+  height: 130px;
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/bg_map_title.png") left top no-repeat;
+}
+
+#SecondPartLastTop #stageList .stageWrap .stageBtn .nameImg {
+  position: absolute;
+  top: 50px;
+  left: 28px;
+  width: 116px;
+  height: 22px;
+}
+
+#SecondPartLastTop #stageList .stageWrap .stageBtn:before, #SecondPartLastTop #stageList .stageWrap .stageBtn:after {
+  pointer-events: none;
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/efe_circle_white.png") left top no-repeat;
+  content: "";
+  display: block;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: -30px;
+  left: 0px;
+  -webkit-animation: 3.5s fuwafuwa1 linear 0s infinite forwards;
+          animation: 3.5s fuwafuwa1 linear 0s infinite forwards;
+}
+
+#SecondPartLastTop #stageList .stageWrap .stageBtn:after {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/efe_circle_niji.png") left top no-repeat;
+}
+
+#SecondPartLastTop #stageList .stageWrap .bossStageBtn {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 219px;
+  height: 173px;
+}
+
+#SecondPartLastTop #stageList .stageWrap .bossStageBtn .onImg {
+  display: none;
+}
+
+#SecondPartLastTop #stageList .stageWrap .detailLock {
+  display: none;
+}
+
+#SecondPartLastTop #stageList .stageWrap .attributeIcon {
+  pointer-events: none;
+  position: absolute;
+  top: 146px;
+  left: -14px;
+  width: 30px;
+  height: 30px;
+}
+
+#SecondPartLastTop #stageList .stageWrap .attributeIcon.ALL {
+  background: url(/magica/resource/image_web/common/chara/att_all_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastTop #stageList .stageWrap .attributeIcon.FIRE {
+  background: url(/magica/resource/image_web/common/chara/att_fire_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastTop #stageList .stageWrap .attributeIcon.WATER {
+  background: url(/magica/resource/image_web/common/chara/att_water_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastTop #stageList .stageWrap .attributeIcon.TIMBER {
+  background: url(/magica/resource/image_web/common/chara/att_timber_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastTop #stageList .stageWrap .attributeIcon.LIGHT {
+  background: url(/magica/resource/image_web/common/chara/att_light_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastTop #stageList .stageWrap .attributeIcon.DARK {
+  background: url(/magica/resource/image_web/common/chara/att_dark_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastTop #stageList .stageWrap .attributeIcon.VOID {
+  background: url(/magica/resource/image_web/common/chara/att_void_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastTop #stageList .stageWrap .clearIcon {
+  display: none;
+  pointer-events: none;
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/bg_map_clear.png") left top no-repeat;
+  position: absolute;
+  left: 40px;
+  top: 180px;
+  width: 80px;
+  height: 16px;
+}
+
+#SecondPartLastTop #stageList .stageWrap .detailBtn {
+  position: absolute;
+  top: 145px;
+  left: 155px;
+  width: 35px;
+  height: 35px;
+}
+
+#SecondPartLastTop #stageList .stageWrap .detailBtn:after {
+  content: "";
+  display: block;
+  background: url("/magica/resource/image_web/common/btn/btn_info_s.png") left top no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 35px;
+  height: 35px;
+}
+
+#SecondPartLastTop #stageList .stageWrap .charaArea {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 180px;
+}
+
+#SecondPartLastTop #stageList .stageWrap .charaArea .clearChara {
+  display: none;
+  opacity: 0;
+  width: 170px;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+}
+
+#SecondPartLastTop #stageList .stageWrap .charaArea .clearChara1, #SecondPartLastTop #stageList .stageWrap .charaArea .clearChara2, #SecondPartLastTop #stageList .stageWrap .charaArea .clearChara3, #SecondPartLastTop #stageList .stageWrap .charaArea .clearChara4 {
+  display: none;
+  opacity: 0;
+  width: 170px;
+  position: absolute;
+  bottom: 70px;
+  left: -80px;
+}
+
+#SecondPartLastTop #stageList .stageWrap .charaArea .clearChara2 {
+  bottom: 45px;
+  left: -40px;
+}
+
+#SecondPartLastTop #stageList .stageWrap .charaArea .clearChara3 {
+  bottom: 45px;
+  left: 40px;
+}
+
+#SecondPartLastTop #stageList .stageWrap .charaArea .clearChara4 {
+  bottom: 70px;
+  left: 80px;
+}
+
+#SecondPartLastTop #stageList .stageWrap.stage1 {
+  top: 10px;
+  left: 60px;
+}
+
+#SecondPartLastTop #stageList .stageWrap.stage1 .bossStageBtn {
+  display: none;
+}
+
+#SecondPartLastTop #stageList .stageWrap.stage2 {
+  top: 10px;
+  right: 60px;
+}
+
+#SecondPartLastTop #stageList .stageWrap.stage2 .bossStageBtn {
+  display: none;
+}
+
+#SecondPartLastTop #stageList .stageWrap.stage3 {
+  top: 220px;
+  left: 60px;
+}
+
+#SecondPartLastTop #stageList .stageWrap.stage3 .bossStageBtn {
+  display: none;
+}
+
+#SecondPartLastTop #stageList .stageWrap.stage4 {
+  top: 220px;
+  right: 60px;
+}
+
+#SecondPartLastTop #stageList .stageWrap.stage4 .bossStageBtn {
+  display: none;
+}
+
+#SecondPartLastTop #stageList .stageWrap.stage5 {
+  top: 270px;
+  left: 402px;
+}
+
+#SecondPartLastTop #stageList .stageWrap.stage5 .stageBtn {
+  display: none;
+}
+
+#SecondPartLastTop #stageList .stageWrap.stage5 .bossStageBtn {
+  display: block;
+}
+
+#SecondPartLastTop #stageList .stageWrap.stage5 .attributeIcon {
+  display: none;
+  top: 66px;
+  left: 4px;
+}
+
+#SecondPartLastTop #stageList .stageWrap.stage5 .detailBtn {
+  display: none;
+}
+
+#SecondPartLastTop #stageList .stageWrap.stage5 .detailLock {
+  display: block;
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/icon_lock.png") left top no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 65px;
+  left: 2px;
+  width: 30px;
+  height: 30px;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CONQUERED.stage1 .stageBtn:before, #SecondPartLastTop #stageList .stageWrap.CONQUERED.stage1 .stageBtn:after, #SecondPartLastTop #stageList .stageWrap.CONQUERED.stage2 .stageBtn:before, #SecondPartLastTop #stageList .stageWrap.CONQUERED.stage2 .stageBtn:after, #SecondPartLastTop #stageList .stageWrap.CONQUERED.stage3 .stageBtn:before, #SecondPartLastTop #stageList .stageWrap.CONQUERED.stage3 .stageBtn:after, #SecondPartLastTop #stageList .stageWrap.CONQUERED.stage4 .stageBtn:before, #SecondPartLastTop #stageList .stageWrap.CONQUERED.stage4 .stageBtn:after {
+  display: none;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CONQUERED.stage1 {
+  top: 40px;
+  left: 150px;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CONQUERED.stage2 {
+  top: 40px;
+  right: 150px;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CONQUERED.stage3 {
+  top: 230px;
+  left: 60px;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CONQUERED.stage4 {
+  top: 230px;
+  right: 60px;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CONQUERED .effect {
+  pointer-events: none;
+  display: block;
+  position: absolute;
+  top: 120px;
+  left: -10px;
+  width: 184px;
+  height: 80px;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CONQUERED .effect:before, #SecondPartLastTop #stageList .stageWrap.CONQUERED .effect:after {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/efe_battlereset.png") left top no-repeat;
+  content: "";
+  display: block;
+  width: 184px;
+  height: 80px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: 3.5s ringAppear1 linear 0s infinite forwards;
+          animation: 3.5s ringAppear1 linear 0s infinite forwards;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CONQUERED .effect:after {
+  -webkit-animation: 3.5s ringAppear2 linear 0s infinite forwards;
+          animation: 3.5s ringAppear2 linear 0s infinite forwards;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CONQUERED .clearChara, #SecondPartLastTop #stageList .stageWrap.CONQUERED .clearChara1, #SecondPartLastTop #stageList .stageWrap.CONQUERED .clearChara2, #SecondPartLastTop #stageList .stageWrap.CONQUERED .clearChara3, #SecondPartLastTop #stageList .stageWrap.CONQUERED .clearChara4 {
+  display: block;
+  opacity: 1;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CONQUERED .clearIcon {
+  display: block;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CONQUERED.start .clearChara {
+  display: block;
+  opacity: 0;
+  -webkit-animation: 1s charaIn ease-in-out 0.2s 1 normal;
+          animation: 1s charaIn ease-in-out 0.2s 1 normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CONQUERED.start .clearChara1, #SecondPartLastTop #stageList .stageWrap.CONQUERED.start .clearChara2, #SecondPartLastTop #stageList .stageWrap.CONQUERED.start .clearChara3, #SecondPartLastTop #stageList .stageWrap.CONQUERED.start .clearChara4 {
+  display: block;
+  opacity: 0;
+  -webkit-animation: 1.2s charaIn2 ease-in-out 0s 1 normal;
+          animation: 1.2s charaIn2 ease-in-out 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CONQUERED.start .iconArea {
+  display: block;
+  -webkit-animation: 1s disappear linear 0s 1 forwards;
+          animation: 1s disappear linear 0s 1 forwards;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CONQUERED.start .iconArea .icon {
+  -webkit-animation: none;
+          animation: none;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CANPLAY.stage5 .bossStageBtn:after {
+  pointer-events: none;
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/ui_lastbattle_center_over.png") left top no-repeat;
+  content: "";
+  display: block;
+  width: 219px;
+  height: 173px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-animation: 3.5s fixHandFadeOut linear 0s infinite forwards;
+          animation: 3.5s fixHandFadeOut linear 0s infinite forwards;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CANPLAY.stage5 .bossStageBtn:before,
+#SecondPartLastTop #stageList .stageWrap.CANPLAY.stage5 .bossStageBtn .effect {
+  pointer-events: none;
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/efe_circle_niji.png") left top no-repeat;
+  content: "";
+  display: block;
+  width: 180px;
+  height: 180px;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  -webkit-animation: 3.5s fuwafuwa2 linear 0s infinite forwards;
+          animation: 3.5s fuwafuwa2 linear 0s infinite forwards;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CANPLAY.stage5 .bossStageBtn .effect {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/efe_circle_white.png") left top no-repeat;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CANPLAY.stage5 .bossStageBtn .onImg {
+  display: block;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CANPLAY.stage5 .bossStageBtn .offImg {
+  display: none;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CANPLAY.stage5 .detailBtn {
+  display: block;
+  top: 64px;
+  left: 186px;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CANPLAY.stage5 .detailLock {
+  display: none;
+}
+
+#SecondPartLastTop #stageList .stageWrap.CANPLAY.stage5 .attributeIcon {
+  display: block;
+}
+
+#SecondPartLastTop .bg #boss {
+  position: absolute;
+  left: 248px;
+  top: 60px;
+  -webkit-animation: 2s iconUpDown01 ease-in-out 1s infinite alternate;
+          animation: 2s iconUpDown01 ease-in-out 1s infinite alternate;
+}
+
+#SecondPartLastTop .bg #boss .bossIcon {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#SecondPartLastTop .bg #boss .topLeftArm {
+  position: absolute;
+}
+
+#SecondPartLastTop .bg #boss .topLeftArm .topLeftArm1 {
+  position: absolute;
+  top: 195px;
+  left: 40px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation: 10s topLeftArm1 ease-in-out 1s infinite alternate;
+          animation: 10s topLeftArm1 ease-in-out 1s infinite alternate;
+}
+
+#SecondPartLastTop .bg #boss .topLeftArm .topLeftArm1 .topLeftArm2 {
+  position: absolute;
+  top: -10px;
+  right: 120px;
+  -webkit-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  -webkit-animation: 10s topLeftArm2 ease-in-out 1s infinite alternate;
+          animation: 10s topLeftArm2 ease-in-out 1s infinite alternate;
+}
+
+#SecondPartLastTop .bg #boss .topLeftArm .topLeftArm1 .topLeftArm2 .topLeftHand {
+  position: absolute;
+  top: -20px;
+  left: -48px;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-animation: 10s topLeftHand ease-in-out 1s infinite alternate;
+          animation: 10s topLeftHand ease-in-out 1s infinite alternate;
+}
+
+#SecondPartLastTop .bg #boss .topRightArm {
+  position: absolute;
+  -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+#SecondPartLastTop .bg #boss .topRightArm .topRightArm1 {
+  position: absolute;
+  top: 195px;
+  right: 170px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation: 10s topRightArm1 ease-in-out 1s infinite alternate;
+          animation: 10s topRightArm1 ease-in-out 1s infinite alternate;
+}
+
+#SecondPartLastTop .bg #boss .topRightArm .topRightArm1 .topRightArm2 {
+  position: absolute;
+  top: -10px;
+  right: 120px;
+  -webkit-transform: rotate(-30deg);
+      -ms-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  -webkit-animation: 10s topRightArm2 ease-in-out 1s infinite alternate;
+          animation: 10s topRightArm2 ease-in-out 1s infinite alternate;
+}
+
+#SecondPartLastTop .bg #boss .topRightArm .topRightArm1 .topRightArm2 .topRightHand {
+  position: absolute;
+  top: -20px;
+  left: -48px;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-animation: 10s topRightHand ease-in-out 1s infinite alternate;
+          animation: 10s topRightHand ease-in-out 1s infinite alternate;
+}
+
+#SecondPartLastTop .bg #boss .bottomLeftArm {
+  position: absolute;
+}
+
+#SecondPartLastTop .bg #boss .bottomLeftArm .bottomLeftArm1 {
+  position: absolute;
+  top: 195px;
+  left: 40px;
+  -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+  -webkit-animation: 10s bottomLeftArm1 ease-in-out 1s infinite alternate;
+          animation: 10s bottomLeftArm1 ease-in-out 1s infinite alternate;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+#SecondPartLastTop .bg #boss .bottomLeftArm .bottomLeftArm1 .bottomLeftArm2 {
+  position: absolute;
+  top: -10px;
+  right: 120px;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-animation: 10s bottomLeftArm2 ease-in-out 1s infinite alternate;
+          animation: 10s bottomLeftArm2 ease-in-out 1s infinite alternate;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+#SecondPartLastTop .bg #boss .bottomLeftArm .bottomLeftArm1 .bottomLeftArm2 .bottomLeftHand {
+  position: absolute;
+  top: -20px;
+  left: -48px;
+  -webkit-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-animation: 10s bottomLeftHand ease-in-out 1s infinite alternate;
+          animation: 10s bottomLeftHand ease-in-out 1s infinite alternate;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+#SecondPartLastTop .bg #boss .bottomRightArm {
+  position: absolute;
+  -webkit-transform: scale(-1, 1);
+      -ms-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+#SecondPartLastTop .bg #boss .bottomRightArm .bottomRightArm1 {
+  position: absolute;
+  top: 195px;
+  right: 170px;
+  -webkit-transform: rotate(5deg);
+      -ms-transform: rotate(5deg);
+          transform: rotate(5deg);
+  -webkit-animation: 10s bottomRightArm1 ease-in-out 1s infinite alternate;
+          animation: 10s bottomRightArm1 ease-in-out 1s infinite alternate;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+#SecondPartLastTop .bg #boss .bottomRightArm .bottomRightArm1 .bottomRightArm2 {
+  position: absolute;
+  top: -10px;
+  right: 120px;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-animation: 10s bottomRightArm2 ease-in-out 1s infinite alternate;
+          animation: 10s bottomRightArm2 ease-in-out 1s infinite alternate;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+#SecondPartLastTop .bg #boss .bottomRightArm .bottomRightArm1 .bottomRightArm2 .bottomRightHand {
+  position: absolute;
+  top: -20px;
+  left: -48px;
+  -webkit-transform: rotate(-20deg);
+      -ms-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  -webkit-animation: 10s bottomRightHand ease-in-out 1s infinite alternate;
+          animation: 10s bottomRightHand ease-in-out 1s infinite alternate;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+#SecondPartLastTop .bg #boss.stage1CONQUERED .topLeftArm .topLeftArm1 {
+  display: none;
+}
+
+#SecondPartLastTop .bg #boss.stage2CONQUERED .topRightArm .topRightArm1 {
+  display: none;
+}
+
+#SecondPartLastTop .bg #boss.stage3CONQUERED .bottomLeftArm .bottomLeftArm1 {
+  display: none;
+}
+
+#SecondPartLastTop .bg #boss.stage4CONQUERED .bottomRightArm .bottomRightArm1 {
+  display: none;
+}
+
+#SecondPartLastTop .bg #crashSec {
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#SecondPartLastTop .bg #crashSec .topLeftArmCrash {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: -340px;
+  -webkit-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+#SecondPartLastTop .bg #crashSec .topRightArmCrash {
+  display: none;
+  position: absolute;
+  top: 40px;
+  right: -340px;
+  -webkit-transform: scale(-1, 1) rotate(-10deg);
+      -ms-transform: scale(-1, 1) rotate(-10deg);
+          transform: scale(-1, 1) rotate(-10deg);
+}
+
+#SecondPartLastTop .bg #crashSec .bottomLeftArmCrash {
+  display: none;
+  position: absolute;
+  top: 164px;
+  left: -360px;
+  -webkit-transform: rotate(-50deg);
+      -ms-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+}
+
+#SecondPartLastTop .bg #crashSec .bottomRightArmCrash {
+  display: none;
+  position: absolute;
+  top: 164px;
+  right: -360px;
+  -webkit-transform: scale(-1, 1) rotate(-50deg);
+      -ms-transform: scale(-1, 1) rotate(-50deg);
+          transform: scale(-1, 1) rotate(-50deg);
+}
+
+#SecondPartLastTop .bg #crashSec.stage1CONQUERED .topLeftArmCrash {
+  display: block;
+}
+
+#SecondPartLastTop .bg #crashSec.stage2CONQUERED .topRightArmCrash {
+  display: block;
+}
+
+#SecondPartLastTop .bg #crashSec.stage3CONQUERED .bottomLeftArmCrash {
+  display: block;
+}
+
+#SecondPartLastTop .bg #crashSec.stage4CONQUERED .bottomRightArmCrash {
+  display: block;
+}
+
+#SecondPartLastTop .caution {
+  position: absolute;
+  right: -5px;
+  bottom: 9px;
+  width: 870px;
+  height: 40px;
+  color: #fff;
+  padding: 0 100px 0 0;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(44, 48, 47, 0)), color-stop(20%, rgba(44, 48, 47, 0.6)), color-stop(50%, rgba(44, 48, 47, 0.7)), color-stop(80%, rgba(44, 48, 47, 0.6)), to(rgba(44, 48, 47, 0)));
+  background: -o-linear-gradient(left, rgba(44, 48, 47, 0) 0%, rgba(44, 48, 47, 0.6) 20%, rgba(44, 48, 47, 0.7) 50%, rgba(44, 48, 47, 0.6) 80%, rgba(44, 48, 47, 0) 100%);
+  background: linear-gradient(90deg, rgba(44, 48, 47, 0) 0%, rgba(44, 48, 47, 0.6) 20%, rgba(44, 48, 47, 0.7) 50%, rgba(44, 48, 47, 0.6) 80%, rgba(44, 48, 47, 0) 100%);
+  text-align: center;
+  line-height: 2.5;
+}
+
+#ClearAnimation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+#ClearAnimation:before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#ClearAnimation #centerDom {
+  position: relative;
+  width: 1024px;
+  height: 100%;
+  margin: 0px auto;
+  opacity: 1 !important;
+}
+
+#ClearAnimation div {
+  opacity: 0;
+}
+
+#ClearAnimation div.commonItemImgWrap {
+  opacity: 1;
+}
+
+#ClearAnimation #BlackBg {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/clearanime/bg_dark.png") center center no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: 1s clearMaskFadeIn ease-in-out 0s 1 normal;
+          animation: 1s clearMaskFadeIn ease-in-out 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#ClearAnimation #BattleClear_eng {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/clearanime/efe_clear_text02.png") center center no-repeat;
+  position: absolute;
+  top: calc(50% - 109px);
+  left: 346px;
+  width: 344px;
+  height: 52px;
+  z-index: 6;
+}
+
+#ClearAnimation #mainLight, #ClearAnimation #rotationLight {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/clearanime/efe_clear_01.png") center center no-repeat;
+  position: absolute;
+  top: calc(50% - 270px);
+  left: 266px;
+  width: 512px;
+  height: 512px;
+  -webkit-animation: 3s mainlightScale linear 0.5s 1 normal;
+          animation: 3s mainlightScale linear 0.5s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#ClearAnimation #rotationLight {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/clearanime/efe_clear_02.png") center center no-repeat;
+  -webkit-animation: 2s rotationLightScale linear 0.5s 1 normal;
+          animation: 2s rotationLightScale linear 0.5s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#ClearAnimation #magicCircle {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/clearanime/efe_clear_circle.png") center center no-repeat;
+  position: absolute;
+  top: calc(50% - 210px);
+  left: 260px;
+  width: 520px;
+  height: 390px;
+  -webkit-animation: .667s magicCircleRotate linear .667s 1 normal;
+          animation: .667s magicCircleRotate linear .667s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#ClearAnimation #BattleClear_line {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/clearanime/efe_clear_line.png") center center no-repeat;
+  position: absolute;
+  top: calc(50% - -84px);
+  left: 368px;
+  width: 311px;
+  height: 40px;
+  -webkit-animation: 1s ShowAnim linear 1s 1 normal;
+          animation: 1s ShowAnim linear 1s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#ClearAnimation #BattleClear_occup {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/clearanime/efe_clear_text03.png") center center no-repeat;
+  position: absolute;
+  top: calc(50% - -30px);
+  left: 416px;
+  width: 210px;
+  height: 130px;
+}
+
+#ClearAnimation #BattleClear_occup.num2 {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/clearanime/efe_clear_text03.png") center center no-repeat;
+}
+
+#ClearAnimation #BattleClear_occup.num3 {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/clearanime/efe_clear_text03.png") center center no-repeat;
+}
+
+#ClearAnimation #BattleClear_occup.num4 {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/clearanime/efe_clear_text03.png") center center no-repeat;
+}
+
+#ClearAnimation #BattleClear_occup.num5 {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/clearanime/efe_clear_text03.png") center center no-repeat;
+}
+
+#ClearAnimation #BattleClear_text {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/clearanime/efe_clear_text01.png") center center no-repeat;
+  position: absolute;
+  top: calc(50% - 148px);
+  left: 385px;
+  width: 270px;
+  height: 55px;
+  -webkit-animation: 1s battleCleartextDown linear 0.5s 1 normal;
+          animation: 1s battleCleartextDown linear 0.5s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#ClearAnimation #gear {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/clearanime/efe_clear_circle03_b.png") center center no-repeat;
+  position: absolute;
+  top: calc(50% - 80px);
+  left: 454px;
+  width: 135px;
+  height: 135px;
+}
+
+#ClearAnimation #rewardArea {
+  position: absolute;
+  top: calc(50% - 44px);
+  left: 487px;
+  width: 70px;
+  height: 70px;
+}
+
+#ClearAnimation #rewardArea .quantity {
+  display: none;
+  position: absolute;
+  font-size: 20px;
+  right: -5px;
+  bottom: -5px;
+  color: #fff;
+  text-shadow: 2px 0px 2px #b28850, -2px 0px 2px #b28850, 0px 2px 2px #b28850, 0px -2px 2px #b28850, 2px 2px 2px #b28850, -2px 2px 2px #b28850, 2px -2px 2px #b28850, -2px -2px 2px #b28850;
+}
+
+#ClearAnimation #rewardArea img {
+  width: 100%;
+}
+
+#ClearAnimation #rewardArea:before {
+  content: "";
+  background: url(/magica/resource/image_web/page/quest/animation/square_light.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -11px;
+  left: -10px;
+  width: 90px;
+  height: 90px;
+  z-index: -1;
+}
+
+#ClearAnimation #rewardArea:after {
+  content: "";
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/clearanime/txt_reward.png") center center no-repeat;
+  display: block;
+  position: absolute;
+  top: -17px;
+  left: -5px;
+  width: 80px;
+  height: 26px;
+}
+
+#ClearAnimation #rewardArea.get:after {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/clearanime/get.png") left top no-repeat;
+  width: 96px;
+  height: 26px;
+  top: -20px;
+  left: -14px;
+}
+
+#ClearAnimation.next #BattleClear_occup {
+  -webkit-animation: 1s ShowAnim linear 0s 1 normal;
+          animation: 1s ShowAnim linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#ClearAnimation.next #BattleClear_eng {
+  -webkit-animation: 1s BattleClearEngShow linear 0s 1 normal;
+          animation: 1s BattleClearEngShow linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#ClearAnimation.final #rewardArea {
+  -webkit-animation: 0.5s rewardAreaShow linear 0s 1 normal;
+          animation: 0.5s rewardAreaShow linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#ClearAnimation.final #rotationLight {
+  -webkit-animation: 9s rotationLightloop linear 0s infinite normal;
+          animation: 9s rotationLightloop linear 0s infinite normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#ClearAnimation.final #gear {
+  -webkit-animation: 0.5s ShowAnim linear 0s 1 normal;
+          animation: 0.5s ShowAnim linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#ClearAnimation.final #centerDom:after {
+  content: "";
+  display: block;
+  background: url(/magica/resource/image_web/page/questresult/result_touchscreen.png) no-repeat;
+  background-position: 395px calc(100% - 70px);
+  position: fixed;
+  top: -10px;
+  left: calc(50% - 495px);
+  width: 100%;
+  height: 100%;
+  -webkit-animation: touchScreen 1s ease-in-out 0s infinite normal;
+          animation: touchScreen 1s ease-in-out 0s infinite normal;
+}
+
+#ClearAnimation.lastStep #magicCircle {
+  -webkit-animation: .167s finishCircle linear 0s 1 normal;
+          animation: .167s finishCircle linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#ClearAnimation.lastStep #itemLight, #ClearAnimation.lastStep #sectionItemIcon {
+  -webkit-animation: .167s finishItem linear 0s 1 normal;
+          animation: .167s finishItem linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#ClearAnimation.lastStep #sectionClear_b2, #ClearAnimation.lastStep #sectionClear_s, #ClearAnimation.lastStep #sectionClear_base, #ClearAnimation.lastStep #clearMask {
+  -webkit-animation: .167s finishCommon linear 0s 1 normal;
+          animation: .167s finishCommon linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#ClearAnimation.lastStep #clearBgMask {
+  -webkit-animation: .167s simpleFadeOut linear 0s 1 normal;
+          animation: .167s simpleFadeOut linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+#tapBlock.whiteOut {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #FFFFFF !important;
+  -webkit-animation: 2s whiteFadeOut linear 0s 1 normal;
+          animation: 2s whiteFadeOut linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes whiteFadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes whiteFadeOut {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#tapBlock.whiteIn {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #FFFFFF !important;
+  -webkit-animation: 2s whiteFadeIn linear 0s 1 normal;
+          animation: 2s whiteFadeIn linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes whiteFadeIn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes whiteFadeIn {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes clearMaskFadeIn {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes clearMaskFadeIn {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes magicCircleRotate {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes magicCircleRotate {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes engFadeIn {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes engFadeIn {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes battleCleartextDown {
+  0% {
+    -webkit-transform: translate(0, -200px);
+            transform: translate(0, -200px);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+    opacity: 1;
+  }
+}
+
+@keyframes battleCleartextDown {
+  0% {
+    -webkit-transform: translate(0, -200px);
+            transform: translate(0, -200px);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes mainlightScale {
+  0% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes mainlightScale {
+  0% {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+    opacity: 0;
+  }
+  30% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 1;
+  }
+  60% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotationLightScale {
+  0% {
+    -webkit-transform: scale(3) rotate(0deg);
+            transform: scale(3) rotate(0deg);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: scale(1) rotate(40deg);
+            transform: scale(1) rotate(40deg);
+    opacity: 1;
+  }
+  41% {
+    -webkit-transform: scale(1) rotate(40deg);
+            transform: scale(1) rotate(40deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(120deg);
+            transform: scale(1) rotate(120deg);
+    opacity: 1;
+  }
+}
+
+@keyframes rotationLightScale {
+  0% {
+    -webkit-transform: scale(3) rotate(0deg);
+            transform: scale(3) rotate(0deg);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: scale(1) rotate(40deg);
+            transform: scale(1) rotate(40deg);
+    opacity: 1;
+  }
+  41% {
+    -webkit-transform: scale(1) rotate(40deg);
+            transform: scale(1) rotate(40deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(120deg);
+            transform: scale(1) rotate(120deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotationLightloop {
+  0% {
+    -webkit-transform: scale(1) rotate(110deg);
+            transform: scale(1) rotate(110deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(470deg);
+            transform: scale(1) rotate(470deg);
+    opacity: 1;
+  }
+}
+
+@keyframes rotationLightloop {
+  0% {
+    -webkit-transform: scale(1) rotate(110deg);
+            transform: scale(1) rotate(110deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) rotate(470deg);
+            transform: scale(1) rotate(470deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes ShowAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes ShowAnim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes BattleClearEngShow {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes BattleClearEngShow {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rewardAreaShow {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0.5;
+  }
+  30% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes rewardAreaShow {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 0.5;
+  }
+  30% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes touchScreen {
+  0%, 100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: .5;
+  }
+  50% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes touchScreen {
+  0%, 100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: .5;
+  }
+  50% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes charaIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(30px, -180px);
+            transform: translate(30px, -180px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(30px, -60px);
+            transform: translate(30px, -60px);
+  }
+  52% {
+    opacity: 1;
+    -webkit-transform: translate(30px, -58px);
+            transform: translate(30px, -58px);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: translate(5px, -70px);
+            transform: translate(5px, -70px);
+  }
+  90% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes charaIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(30px, -180px);
+            transform: translate(30px, -180px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(30px, -60px);
+            transform: translate(30px, -60px);
+  }
+  52% {
+    opacity: 1;
+    -webkit-transform: translate(30px, -58px);
+            transform: translate(30px, -58px);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: translate(5px, -70px);
+            transform: translate(5px, -70px);
+  }
+  90% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes charaIn2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -30px);
+            transform: translate(0px, -30px);
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -30px);
+            transform: translate(0px, -30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@keyframes charaIn2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -30px);
+            transform: translate(0px, -30px);
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -30px);
+            transform: translate(0px, -30px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+  }
+}
+
+@-webkit-keyframes iconUpDown01 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@keyframes iconUpDown01 {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+}
+
+@-webkit-keyframes topLeftArm1 {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+}
+
+@keyframes topLeftArm1 {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+}
+
+@-webkit-keyframes topLeftArm2 {
+  0% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  50% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+}
+
+@keyframes topLeftArm2 {
+  0% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  50% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+}
+
+@-webkit-keyframes topLeftHand {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@keyframes topLeftHand {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@-webkit-keyframes topRightArm1 {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+}
+
+@keyframes topRightArm1 {
+  0% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  100% {
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg);
+  }
+}
+
+@-webkit-keyframes topRightArm2 {
+  0% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  50% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+}
+
+@keyframes topRightArm2 {
+  0% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+  50% {
+    -webkit-transform: rotate(-40deg);
+            transform: rotate(-40deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+}
+
+@-webkit-keyframes topRightHand {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@keyframes topRightHand {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@-webkit-keyframes bottomLeftArm1 {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes bottomLeftArm1 {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes bottomLeftArm2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@keyframes bottomLeftArm2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@-webkit-keyframes bottomLeftHand {
+  0% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+}
+
+@keyframes bottomLeftHand {
+  0% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+}
+
+@-webkit-keyframes bottomRightArm1 {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes bottomRightArm1 {
+  0% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes bottomRightArm2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@keyframes bottomRightArm2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+}
+
+@-webkit-keyframes bottomRightHand {
+  0% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+}
+
+@keyframes bottomRightHand {
+  0% {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+}
+
+@-webkit-keyframes fixHandFadeOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fixHandFadeOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fuwafuwa1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.4;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+@keyframes fuwafuwa1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.4;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+@-webkit-keyframes fuwafuwa2 {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+  100% {
+    opacity: 0.2;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes fuwafuwa2 {
+  0% {
+    opacity: 0.2;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
+  }
+  100% {
+    opacity: 0.2;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes ringAppear1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  70% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes ringAppear1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+  }
+  70% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes ringAppear2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.9);
+            transform: scale(1.9);
+  }
+}
+
+@keyframes ringAppear2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  60% {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  70% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1.9);
+            transform: scale(1.9);
+  }
+}

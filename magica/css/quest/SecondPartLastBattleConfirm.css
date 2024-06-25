@@ -1,0 +1,485 @@
+@charset "UTF-8";
+#status {
+  display: none;
+}
+
+#SecondPartLastBattleConfirm {
+  position: relative;
+}
+
+#SecondPartLastBattleConfirm #archiveBtn {
+  width: 120px;
+  position: absolute;
+  top: 13px;
+  right: 144px;
+  z-index: 10000;
+}
+
+#SecondPartLastBattleConfirm #bossArea {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/bg_vs_enemy_01.png") left top no-repeat;
+  position: absolute;
+  top: -webkit-calc(50% - 260px);
+  left: 33px;
+  width: 400px;
+  height: 528px;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossImageArea {
+  position: absolute;
+  top: 16px;
+  left: 14px;
+  width: 360px;
+  height: 358px;
+  overflow: hidden;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossImageArea img {
+  width: 110%;
+  position: absolute;
+  top: -30px;
+  left: -16px;
+  opacity: 0;
+  -webkit-animation: 1s bossShow linear 0.4s 1 normal forwards;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/bg_vs_enemy_02.png") left top no-repeat;
+  position: absolute;
+  top: 310px;
+  left: 0px;
+  width: 388px;
+  height: 132px;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea #name {
+  position: absolute;
+  top: 93px;
+  left: 96px;
+  font-size: 22px;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 0px 2px #000000, -2px 0px 2px #000000, 0px 2px 2px #000000, 0px -2px 2px #000000, 2px 2px 2px #000000, -2px 2px 2px #000000, 2px -2px 2px #000000, -2px -2px 2px #000000;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea .attribute {
+  position: absolute;
+  top: 96px;
+  left: 59px;
+  width: 24px;
+  height: 24px;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea .attribute div {
+  width: 100%;
+  height: 100%;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea #bossParam {
+  position: absolute;
+  top: 48px;
+  left: 45px;
+  width: 295px;
+  height: 26px;
+  font-size: 18px;
+  color: #fff;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea #bossParam #bossParamNum {
+  position: absolute;
+  right: 0px;
+  top: 3px;
+  width: 190px;
+  text-align: right;
+  color: #fff;
+  line-height: 1em;
+  font-size: 20px;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea .attributeIcon {
+  pointer-events: none;
+  position: absolute;
+  top: 95px;
+  left: 56px;
+  width: 30px;
+  height: 30px;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea .attributeIcon.ALL {
+  background: url(/magica/resource/image_web/common/chara/att_all_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea .attributeIcon.FIRE {
+  background: url(/magica/resource/image_web/common/chara/att_fire_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea .attributeIcon.WATER {
+  background: url(/magica/resource/image_web/common/chara/att_water_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea .attributeIcon.TIMBER {
+  background: url(/magica/resource/image_web/common/chara/att_timber_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea .attributeIcon.LIGHT {
+  background: url(/magica/resource/image_web/common/chara/att_light_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea .attributeIcon.DARK {
+  background: url(/magica/resource/image_web/common/chara/att_dark_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea .attributeIcon.VOID {
+  background: url(/magica/resource/image_web/common/chara/att_void_f.png) left top no-repeat;
+  background-size: 100% 100%;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea .detailBtn {
+  position: absolute;
+  top: 68px;
+  left: 353px;
+  width: 35px;
+  height: 35px;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea .detailBtn:before {
+  content: "";
+  display: block;
+  background: #000000;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 37px;
+  height: 37px;
+  border-radius: 39px;
+}
+
+#SecondPartLastBattleConfirm #bossArea #bossParamArea .detailBtn:after {
+  content: "";
+  display: block;
+  background: url("/magica/resource/image_web/common/btn/btn_info_s.png") left top no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 35px;
+  height: 35px;
+}
+
+#SecondPartLastBattleConfirm #bossArea #kekkaiImageArea {
+  z-index: 1;
+  position: absolute;
+  top: -webkit-calc(50% - 355px);
+  left: -webkit-calc(50% - 300px);
+  width: 600px;
+  height: 600px;
+  -webkit-animation: 1s kekkaihide linear 0s 1 normal forwards;
+  pointer-events: none;
+}
+
+#SecondPartLastBattleConfirm #bossArea #kekkaiImageArea img {
+  width: 100%;
+}
+
+#SecondPartLastBattleConfirm #vsIcon {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/icon_vs.png") left top no-repeat;
+  position: absolute;
+  top: -webkit-calc(50% - 105px);
+  left: 426px;
+  width: 180px;
+  height: 180px;
+}
+
+#SecondPartLastBattleConfirm #deckListArea {
+  position: absolute;
+  top: -webkit-calc(50% - 261px);
+  left: 596px;
+  width: 414px;
+  height: 414px;
+}
+
+#SecondPartLastBattleConfirm #deckListArea .deckArea {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/bg_vs_player_01.png") left top no-repeat;
+  width: 414px;
+  height: 414px;
+}
+
+#SecondPartLastBattleConfirm #deckListArea .leaderArea {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 360px;
+  height: 350px;
+  overflow: hidden;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  opacity: 0;
+  -webkit-animation: 1s fadeInAnime linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#SecondPartLastBattleConfirm #deckListArea .leaderArea img {
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  width: 360px;
+  height: initial;
+}
+
+#SecondPartLastBattleConfirm #deckListArea .otherUnitArea {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/bg_vs_player_02.png") left top no-repeat;
+  position: absolute;
+  top: 239px;
+  left: 3px;
+  width: 404px;
+  height: 162px;
+}
+
+#SecondPartLastBattleConfirm #deckListArea .otherUnitArea .attribute {
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  width: 22px;
+  height: 22px;
+}
+
+#SecondPartLastBattleConfirm #deckListArea .otherUnitArea .attribute div {
+  width: 100%;
+  height: 100%;
+}
+
+#SecondPartLastBattleConfirm #deckListArea .otherUnitArea #deckList {
+  position: absolute;
+  top: 24px;
+  left: 36px;
+  width: 337px;
+  height: 84px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-animation: 1s fadeInAnime linear 0s 1 normal;
+  -webkit-animation-fill-mode: forwards;
+}
+
+#SecondPartLastBattleConfirm #deckListArea .otherUnitArea #deckList .unitList {
+  position: relative;
+  width: 84px;
+  height: 90px;
+}
+
+#SecondPartLastBattleConfirm #deckListArea .otherUnitArea #deckList .unitList .attribute {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/bg_type.png") left top no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 4px;
+  left: -11px;
+  width: 26px;
+  height: 26px;
+}
+
+#SecondPartLastBattleConfirm #deckListArea .otherUnitArea #deckList .unitList .attribute div {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 68%;
+  height: 68%;
+}
+
+#SecondPartLastBattleConfirm #deckListArea .otherUnitArea #deckList .unitList .unitImg {
+  position: absolute;
+  top: 9px;
+  left: 2px;
+  width: 79px;
+  height: 79px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+
+#SecondPartLastBattleConfirm #deckListArea .otherUnitArea #deckList .unitList .unitImg img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+#SecondPartLastBattleConfirm #deckListArea .deckParamArea {
+  position: absolute;
+  top: 120px;
+  left: 56px;
+  width: 298px;
+  height: 24px;
+  color: #fff;
+  font-size: 18px;
+}
+
+#SecondPartLastBattleConfirm #deckListArea .deckParamArea .deckParamNum {
+  position: absolute;
+  right: 0px;
+  top: 3px;
+  width: 190px;
+  height: inherit;
+  text-align: right;
+  color: #fff;
+  line-height: 1em;
+  font-size: 20px;
+}
+
+#SecondPartLastBattleConfirm #deckListArea.off .deckArea {
+  -webkit-filter: brightness(40%);
+}
+
+#SecondPartLastBattleConfirm #deckListArea.off:after {
+  display: block;
+  content: "参加済";
+  position: absolute;
+  top: 166px;
+  left: 28px;
+  width: 360px;
+  height: 40px;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 0px 2px #b28850, -2px 0px 2px #b28850, 0px 2px 2px #b28850, 0px -2px 2px #b28850, 2px 2px 2px #b28850, -2px 2px 2px #b28850, 2px -2px 2px #b28850, -2px -2px 2px #b28850;
+}
+
+#SecondPartLastBattleConfirm #deckListArea.nonDeck:after {
+  content: "";
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/bg_vs_player_nodate.png") left top no-repeat;
+  position: absolute;
+  top: 13px;
+  left: -2px;
+  width: 414px;
+  height: 400px;
+}
+
+#SecondPartLastBattleConfirm #deckListArea.touch {
+  -webkit-transform: scale(1) !important;
+      -ms-transform: scale(1) !important;
+          transform: scale(1) !important;
+  -webkit-filter: brightness(105%);
+}
+
+#SecondPartLastBattleConfirm #deckChangeArea {
+  position: absolute;
+  top: -webkit-calc(50% - -47px);
+  left: 595px;
+  width: 435px;
+  height: 50px;
+}
+
+#SecondPartLastBattleConfirm #deckChangeArea .backBtn {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/arrow_01.png") left top no-repeat;
+  -webkit-transform: scale(-1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 38px;
+  height: 46px;
+}
+
+#SecondPartLastBattleConfirm #deckChangeArea .nextBtn {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/arrow_01.png") left top no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 22px;
+  width: 38px;
+  height: 48px;
+}
+
+#SecondPartLastBattleConfirm #footerBtnArea {
+  background: url("/magica/resource/image_web/page/quest/secondPartLast/bg_vs_footer.png") left top no-repeat;
+  position: absolute;
+  bottom: 0px;
+  right: -200px;
+  width: 730px;
+  height: 147px;
+}
+
+#SecondPartLastBattleConfirm #footerBtnArea #linkFormationtBtn {
+  position: absolute;
+  top: 46px;
+  left: 150px;
+  -webkit-transform: scale(0.85);
+}
+
+#SecondPartLastBattleConfirm #footerBtnArea #linkFormationtBtn.touch {
+  -webkit-transform: scale(0.8) !important;
+}
+
+#SecondPartLastBattleConfirm #footerBtnArea #linkBattleBtn {
+  background: url(/magica/resource/image_web/page/formation/btn_main.png) left top no-repeat;
+  position: absolute;
+  top: 26px;
+  left: 400px;
+  width: 98px;
+  height: 102px;
+  color: #ffffff;
+  text-shadow: -1px -1px 2px #ff3359, 1px -1px 2px #ff3359, -1px 1px 2px #ff3359, 1px 1px 2px #ff3359, -1px -1px 2px #ff3359, 1px -1px 2px #ff3359, -1px 1px 2px #ff3359, 1px 1px 2px #ff3359;
+  font-size: 20px;
+  line-height: 102px;
+  text-align: center;
+  opacity: 1;
+  -webkit-filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.25));
+}
+
+#SecondPartLastBattleConfirm #footerBtnArea #linkBattleBtn.off {
+  pointer-events: none;
+  -webkit-filter: brightness(70%);
+}
+
+@-webkit-keyframes fadeInAnime {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes kekkaihide {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes bossShow {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  40% {
+    opacity: 0;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}

@@ -1,0 +1,61 @@
+<div id="SecondPartLastBattleConfirm">
+	<% 
+		var _eventData = battleConfirmModel;
+	%>
+
+	<div id="bossArea">
+		<div id="bossImageArea">
+			<img src='/magica/resource/image_web/page/quest/secondPartLast/enemyMain/<%= _eventData.enemyImage %>.png'>
+		</div>
+		
+		<div id="bossParamArea">
+			<div id="name"><%= _eventData.enemyName %></div>
+			<div class="attribute"><div class="<%= _eventData.enemyAttribute %>"></div></div>
+			<div id="bossParam">推奨戦力<span id="bossParamNum"><%= _eventData.enemyForces %></span></div>
+			<div class="attributeIcon <%= _eventData.enemyAttributeId %>"></div>
+			<div class="detailBtn se_decide TE"></div>
+		</div>
+
+		<div id="kekkaiImageArea">
+			<img class="kekkai" src='/magica/resource/image_web/page/quest/secondPartLast/enemyMain/<%= _eventData.enemyImage %>.png'>
+		</div>
+	
+	</div>
+
+	<div id="vsIcon" class=""></div>
+
+	<div id="deckListArea" data-index="<%= _eventData.index %>" class="se_decide TE">
+	</div>
+
+	<div id="footerBtnArea">
+		<div id="linkFormationtBtn" class="btn b_white se_decide TE">チーム編成一覧</div>
+		<div id="linkBattleBtn" class="se_decide TE">開始</div>
+	</div>
+
+</div>
+
+<!-- ユニットデッキエリア -->
+<script type="text/template" id="unitListTemp">
+	<div class="leaderArea">
+		<%="<% if(model.cardList && model.cardList.length != 0){ %\>"%>
+			<img data-nativeimgkey='card_<%="<%= model.cardList[0].cardId %\>"%>_m' data-src='resource/image_native/card/image/card_<%="<%= model.cardList[0].cardId %\>"%>_m.png'>
+		<%="<% } %\>"%>
+	</div>
+
+	<div class="otherUnitArea">
+		<%="<% if(model.cardList && model.cardList.length != 0){ %\>"%>
+			<div class="attribute"><div class='<%="<%= model.cardList[0].card.attributeId %\>"%>'></div></div>
+		<%="<% } %\>"%>
+
+		<div id="deckList">
+			<%="<% if(model.cardList && model.cardList.length != 0){ _.each(model.cardList, function(mtl,index){ if(index == 0){return;}%\>"%>
+			<div class="unitList">
+				<div class="unitImg"><img data-nativeimgkey='card_<%="<%= mtl.cardId %\>"%>_F' data-src='resource/image_native/card/image/card_<%="<%= mtl.cardId %\>"%>_f.png'></div>
+				<div class="attribute"><div class='<%="<%= mtl.card.attributeId %\>"%>'></div></div>
+			</div>
+			<%="<% }); } %\>"%>
+		</div>
+
+		<div class="deckParamArea">戦力値<span class="deckParamNum"><%="<%= model.recommendedStrength %\>"%></span></div>
+	</div>
+</script>

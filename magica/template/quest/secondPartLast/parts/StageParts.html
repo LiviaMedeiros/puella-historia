@@ -1,0 +1,23 @@
+	<div class="bg"></div>
+	<% if( model.deckInfo && model.battleStatus == "CONQUERED") {%>
+		<div class="charaArea">
+			<% if( model.deckInfo.cardList[1]) {%><img class="clearChara1" data-nativeimgkey='mini_<%= model.deckInfo.cardList[1].card.miniCharaNo %>_s' data-src='resource/image_native/mini/image/mini_<%= model.deckInfo.cardList[1].card.miniCharaNo %>_s.png'><% } %>
+			<% if( model.deckInfo.cardList[4]) {%><img class="clearChara4" data-nativeimgkey='mini_<%= model.deckInfo.cardList[4].card.miniCharaNo %>_s' data-src='resource/image_native/mini/image/mini_<%= model.deckInfo.cardList[4].card.miniCharaNo %>_s.png'><% } %>
+			<% if( model.deckInfo.cardList[2]) {%><img class="clearChara2" data-nativeimgkey='mini_<%= model.deckInfo.cardList[2].card.miniCharaNo %>_s' data-src='resource/image_native/mini/image/mini_<%= model.deckInfo.cardList[2].card.miniCharaNo %>_s.png'><% } %>
+			<% if( model.deckInfo.cardList[3]) {%><img class="clearChara3" data-nativeimgkey='mini_<%= model.deckInfo.cardList[3].card.miniCharaNo %>_s' data-src='resource/image_native/mini/image/mini_<%= model.deckInfo.cardList[3].card.miniCharaNo %>_s.png'><% } %>
+			<img class="clearChara" data-nativeimgkey='mini_<%= model.deckInfo.cardList[0].card.miniCharaNo %>_s' data-src='resource/image_native/mini/image/mini_<%= model.deckInfo.cardList[0].card.miniCharaNo %>_s.png'>
+		</div>
+	<% } %>
+	<div class="stageBtn se_decide TE">
+		<img src="/magica/resource/image_web/page/quest/secondPartLast/text_map_title_<%= model.index %>.png" class="nameImg" alt="">
+	</div>
+	<div class="bossStageBtn se_decide TE">
+		<img src="/magica/resource/image_web/page/quest/secondPartLast/boss_map_title_off.png" class="offImg" alt="">
+		<img src="/magica/resource/image_web/page/quest/secondPartLast/ui_lastbattle_center_on.png" class="onImg" alt="">
+		<div class="effect"></div>
+	</div>
+	<div class="clearIcon"></div>
+	<div class="detailBtn se_decide TE"></div>
+	<div class="detailLock"></div>
+	<div class="attributeIcon <%= model.enemyAttributeId %>"></div>
+	<div class="effect"></div>
