@@ -675,15 +675,15 @@
 10200353: '[MAIN/1/NORMAL/HARD] 浅き夢の暁 (第10章) / ここにあなたと…'
 10200354: '[MAIN/1/NORMAL/HARD] 浅き夢の暁 (第10章) / ここにあなたと…'
 10200355: '[MAIN/1/NORMAL/HARD] 浅き夢の暁 (第10章) / ここにあなたと…'
-1020041: '[MAIN/1/NORMAL/NORMAL] 浅き夢の暁 (第10章) / 黙示の災典'
-1020042: '[MAIN/1/NORMAL/NORMAL] 浅き夢の暁 (第10章) / 黙示の災典'
-1020043: '[MAIN/1/NORMAL/NORMAL] 浅き夢の暁 (第10章) / 黙示の災典'
+1020041: true
+1020042: true
+1020043: true
 10200451: '[MAIN/1/NORMAL/HARD] 浅き夢の暁 (第10章) / 黙示の災典'
 10200452: '[MAIN/1/NORMAL/HARD] 浅き夢の暁 (第10章) / 黙示の災典'
 10200453: '[MAIN/1/NORMAL/HARD] 浅き夢の暁 (第10章) / 黙示の災典'
-1020051: '[MAIN/1/NORMAL/NORMAL] 浅き夢の暁 (第10章) / LastMagia'
-1020052: '[MAIN/1/NORMAL/NORMAL] 浅き夢の暁 (第10章) / LastMagia'
-1020053: '[MAIN/1/NORMAL/NORMAL] 浅き夢の暁 (第10章) / LastMagia'
+1020051: true
+1020052: true
+1020053: true
 1020054: '[MAIN/1/NORMAL/NORMAL] 浅き夢の暁 (第10章) / LastMagia'
 1020055: '[MAIN/1/NORMAL/NORMAL] 浅き夢の暁 (第10章) / LastMagia'
 1020056: '[MAIN/1/NORMAL/NORMAL] 浅き夢の暁 (第10章) / LastMagia'
@@ -829,15 +829,15 @@
 10230358: '[MAIN/2/NORMAL/HARD] 微笑みと火花 (第2章) / 第三の矢'
 10230359: '[MAIN/2/NORMAL/HARD] 微笑みと火花 (第2章) / 第三の矢'
 102303510: '[MAIN/2/NORMAL/HARD] 微笑みと火花 (第2章) / 第三の矢'
-1023041: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / 父を探して…'
-1023042: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / 父を探して…'
-1023043: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / 父を探して…'
-1023044: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / 父を探して…'
-1023045: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / 父を探して…'
-1023046: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / 父を探して…'
-1023047: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / 父を探して…'
-1023048: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / 父を探して…'
-1023049: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / 父を探して…'
+1023041: true
+1023042: true
+1023043: true
+1023044: true
+1023045: true
+1023046: true
+1023047: true
+1023048: true
+1023049: true
 10230451: '[MAIN/2/NORMAL/HARD] 微笑みと火花 (第2章) / 父を探して…'
 10230452: '[MAIN/2/NORMAL/HARD] 微笑みと火花 (第2章) / 父を探して…'
 10230453: '[MAIN/2/NORMAL/HARD] 微笑みと火花 (第2章) / 父を探して…'
@@ -847,12 +847,12 @@
 10230457: '[MAIN/2/NORMAL/HARD] 微笑みと火花 (第2章) / 父を探して…'
 10230458: '[MAIN/2/NORMAL/HARD] 微笑みと火花 (第2章) / 父を探して…'
 10230459: '[MAIN/2/NORMAL/HARD] 微笑みと火花 (第2章) / 父を探して…'
-1024011: '[MAIN/2/NORMAL/NORMAL] 内なる常夜の夜明け (第3章) / 手がかりは交差して'
-1024012: '[MAIN/2/NORMAL/NORMAL] 内なる常夜の夜明け (第3章) / 手がかりは交差して'
-1024013: '[MAIN/2/NORMAL/NORMAL] 内なる常夜の夜明け (第3章) / 手がかりは交差して'
-1024014: '[MAIN/2/NORMAL/NORMAL] 内なる常夜の夜明け (第3章) / 手がかりは交差して'
-1024015: '[MAIN/2/NORMAL/NORMAL] 内なる常夜の夜明け (第3章) / 手がかりは交差して'
-1024016: '[MAIN/2/NORMAL/NORMAL] 内なる常夜の夜明け (第3章) / 手がかりは交差して'
+1024011: true
+1024012: true
+1024013: true
+1024014: true
+1024015: true
+1024016: true
 1024017: '[MAIN/2/NORMAL/NORMAL] 内なる常夜の夜明け (第3章) / 手がかりは交差して'
 1024018: '[MAIN/2/NORMAL/NORMAL] 内なる常夜の夜明け (第3章) / 手がかりは交差して'
 1024019: '[MAIN/2/NORMAL/NORMAL] 内なる常夜の夜明け (第3章) / 手がかりは交差して'
@@ -4905,10 +4905,10 @@
 3403511: true
 3403512: true
 3403513: true
-3403521: '[CHARA] 苦しい共感'
-3403522: '[CHARA] 苦しい共感'
-3403523: '[CHARA] 苦しい共感'
-3403531: '[CHARA] 誰も知らない妹の罰'
+3403521: true
+3403522: true
+3403523: true
+3403531: true
 3403532: '[CHARA] 誰も知らない妹の罰'
 3403533: '[CHARA] 誰も知らない妹の罰'
 3403541: '[CHARA] 遥香のドッペル'
