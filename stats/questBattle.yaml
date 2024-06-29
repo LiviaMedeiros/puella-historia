@@ -1,18 +1,18 @@
 ---
 continueNum: 9
-murderNum: 68730
+murderNum: 69046
 deadNum: 756
-connectNum: 4024
-totesDamageByFire: 138981564
-totesDamageByWater: 314072811
+connectNum: 4026
+totesDamageByFire: 139146249
+totesDamageByWater: 314854844
 totesDamageByTimber: 102646909
-totesDamageByLight: 317899519
-totesDamageByDark: 797602922
-totesDamageByVoid: 165622940
-totesDamage: 75438269
-totesTurn: 26412
+totesDamageByLight: 319310678
+totesDamageByDark: 799260620
+totesDamageByVoid: 166626561
+totesDamage: 75505556
+totesTurn: 26502
 results:
-  SUCCESSFUL: 6928
+  SUCCESSFUL: 6951
   FAILED: 121
-sufferingInflicted: 501069
+sufferingInflicted: 502498
 ...
