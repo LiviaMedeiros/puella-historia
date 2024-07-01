@@ -1,0 +1,1724 @@
+.resultWrap {
+  width: 1024px;
+  height: 100%;
+  z-index: 1000;
+}
+
+.resultWrap.hide {
+  display: none;
+}
+
+.resultWrap .boxRemainWrap {
+  width: 258px;
+  height: 28px;
+  background: url("/magica/resource/image_web/campaign/box_gacha/common/box_remain_base.png") left top no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -webkit-calc(50% + 201px);
+  right: 0px;
+  pointer-events: none;
+  opacity: 0;
+  z-index: 10;
+}
+
+.resultWrap .boxRemainWrap.show {
+  -webkit-animation: rightLeftSlide 0.25s linear 0.88s 1 alternate;
+  pointer-events: auto;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap .boxRemainWrap .title {
+  width: 153px;
+  height: 28px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.resultWrap .boxRemainWrap .remainNum {
+  width: 105px;
+  height: 28px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.resultWrap .resultBtnWrap {
+  width: 416px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -webkit-calc(50% + 183px);
+  left: -webkit-calc(50% - 208px);
+  pointer-events: none;
+  z-index: 10;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.resultWrap .resultBtnWrap #resultCloseBtn, .resultWrap .resultBtnWrap #resultOnceBtn {
+  opacity: 0;
+}
+
+.resultWrap .resultBtnWrap.show {
+  pointer-events: auto;
+}
+
+.resultWrap .resultBtnWrap.show #resultCloseBtn {
+  -webkit-animation: rightLeftSlide 0.25s linear 0.88s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap .resultBtnWrap.show #resultOnceBtn {
+  -webkit-animation: leftRightSlide 0.25s linear 0.88s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap .resultBtnWrap.singleBtn {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.resultWrap .resultBtnWrap.singleBtn #resultOnceBtn {
+  display: none;
+}
+
+.resultWrap .rainforcedApper {
+  width: 1024px;
+  height: 100%;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+}
+
+.resultWrap .rainforcedApper.disp {
+  display: block;
+}
+
+.resultWrap .rainforcedApper.singleDraw .drawItemWrap {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resultWrap .rainforcedApper.singleDraw .drawItemWrap .drawItem {
+  margin: 0;
+}
+
+.resultWrap .rainforcedApper .preloader {
+  display: none;
+}
+
+.resultWrap .rainforcedApper .bg02 {
+  width: 420px;
+  height: 420px;
+  background: url("/magica/resource/image_web/campaign/box_gacha/animation/magic_team_a.png") left top no-repeat;
+  position: absolute;
+  top: -webkit-calc(50% - 210px);
+  left: -webkit-calc(50% - 210px);
+  pointer-events: none;
+  -webkit-animation: bg02Anim 0.66s linear .5s 1 alternate;
+  opacity: 0;
+  z-index: 2;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap .rainforcedApper .bg01 {
+  width: 1424px;
+  height: 768px;
+  background: rgba(0, 0, 0, 0.7) url("/magica/resource/image_web/campaign/box_gacha/animation/bg_gradation.png") left top no-repeat;
+  position: absolute;
+  top: -webkit-calc(50% - 384px);
+  left: -200px;
+  pointer-events: none;
+  -webkit-animation: bg01Anim 0.7s ease 0s 1 alternate;
+  z-index: 1;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap .drawItemWrap {
+  width: 628px;
+  height: 246px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: -webkit-calc(50% - 123px);
+  left: -webkit-calc(50% - 314px);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.resultWrap .drawItemWrap .rainforcedDrawItem {
+  width: 202px !important;
+  height: 202px !important;
+  margin-bottom: 0px !important;
+  margin-left: 32px;
+}
+
+.resultWrap .drawItemWrap .rainforcedDrawItem .drawChest {
+  top: 46px !important;
+  left: 40px !important;
+}
+
+.resultWrap .drawItemWrap .drawItem, .resultWrap .drawItemWrap .rainforcedDrawItem {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 46px;
+  position: relative;
+}
+
+.resultWrap .drawItemWrap .drawItem *, .resultWrap .drawItemWrap .rainforcedDrawItem * {
+  pointer-events: none;
+}
+
+.resultWrap .drawItemWrap .drawItem:not(:nth-child(5n)), .resultWrap .drawItemWrap .rainforcedDrawItem:not(:nth-child(5n)) {
+  margin-right: 32px;
+}
+
+.resultWrap .drawItemWrap .drawItem.isNew .newIcon, .resultWrap .drawItemWrap .rainforcedDrawItem.isNew .newIcon {
+  position: absolute;
+  top: -21px;
+  right: -10px;
+}
+
+.resultWrap .drawItemWrap .drawItem.isNew .newIcon, .resultWrap .drawItemWrap .drawItem.isNew .newIcon:before, .resultWrap .drawItemWrap .rainforcedDrawItem.isNew .newIcon, .resultWrap .drawItemWrap .rainforcedDrawItem.isNew .newIcon:before {
+  width: 58px;
+  height: 21px;
+  background: url("/magica/resource/image_web/campaign/box_gacha/animation/gacha_new.png") left top no-repeat;
+  background-size: 58px 21px;
+}
+
+.resultWrap .drawItemWrap .drawItem.isNew .newIcon:before, .resultWrap .drawItemWrap .rainforcedDrawItem.isNew .newIcon:before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: "";
+  -webkit-animation: newIconAnim 2s linear 0s infinite;
+  mix-blend-mode: color-dodge;
+}
+
+.resultWrap .drawItemWrap .drawItem .isLbIcon, .resultWrap .drawItemWrap .rainforcedDrawItem .isLbIcon {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -21px;
+  right: -10px;
+  background: url("/magica/resource/image_web/campaign/box_gacha/animation/destiny_jem.png") left top no-repeat;
+  z-index: 100003;
+}
+
+.resultWrap .drawItemWrap .drawItem .ef05, .resultWrap .drawItemWrap .rainforcedDrawItem .ef05 {
+  width: 512px;
+  height: 512px;
+  background: url("/magica/resource/image_web/campaign/box_gacha/animation/section_clear_light.png") left top no-repeat;
+  background-size: 512px 512px;
+  position: absolute;
+  top: -webkit-calc(50% - 256px);
+  left: -webkit-calc(50% - 256px);
+  opacity: 0;
+  z-index: 100007;
+}
+
+.resultWrap .drawItemWrap .drawItem .ef04, .resultWrap .drawItemWrap .rainforcedDrawItem .ef04 {
+  width: 390px;
+  height: 390px;
+  background: url("/magica/resource/image_web/campaign/box_gacha/animation/ef_treasure.png") left top no-repeat;
+  background-size: 390px 390px;
+  position: absolute;
+  top: -webkit-calc(50% - 195px);
+  left: -webkit-calc(50% - 195px);
+  opacity: 0;
+  z-index: 100006;
+}
+
+.resultWrap .drawItemWrap .drawItem .ef03, .resultWrap .drawItemWrap .rainforcedDrawItem .ef03 {
+  width: 180px;
+  height: 180px;
+  background: url("/magica/resource/image_web/campaign/box_gacha/animation/ef_item_glitter.png") left top no-repeat;
+  background-size: 180px 180px;
+  position: absolute;
+  top: -webkit-calc(50% - 90px);
+  left: -webkit-calc(50% - 90px);
+  opacity: 0;
+  z-index: 100005;
+  mix-blend-mode: overlay;
+}
+
+.resultWrap .drawItemWrap .drawItem .ef02, .resultWrap .drawItemWrap .rainforcedDrawItem .ef02 {
+  width: 186px;
+  height: 186px;
+  background: url("/magica/resource/image_web/campaign/box_gacha/animation/ef_item_circle.png") left top no-repeat;
+  background-size: 186px 186px;
+  position: absolute;
+  top: -webkit-calc(50% - 93px);
+  left: -webkit-calc(50% - 93px);
+  opacity: 0;
+  z-index: 100004;
+  mix-blend-mode: overlay;
+}
+
+.resultWrap .drawItemWrap .drawItem .ef01, .resultWrap .drawItemWrap .rainforcedDrawItem .ef01 {
+  width: 170px;
+  height: 170px;
+  background: url("/magica/resource/image_web/campaign/box_gacha/animation/ef_item_flash.png") left top no-repeat;
+  background-size: 170px 170px;
+  position: absolute;
+  top: -webkit-calc(50% - 85px);
+  left: -webkit-calc(50% - 85px);
+  opacity: 0;
+  z-index: 100003;
+  mix-blend-mode: screen;
+}
+
+.resultWrap .drawItemWrap .drawItem .itemWrap, .resultWrap .drawItemWrap .rainforcedDrawItem .itemWrap {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  opacity: 0;
+  z-index: 100002;
+}
+
+.resultWrap .drawItemWrap .drawItem .itemWrap .quantity, .resultWrap .drawItemWrap .rainforcedDrawItem .itemWrap .quantity {
+  position: absolute;
+  right: -2px;
+  bottom: -14px;
+  font-size: 20px;
+  z-index: 100;
+}
+
+.resultWrap .drawItemWrap .drawItem .itemWrap .userCharaIcon, .resultWrap .drawItemWrap .drawItem .itemWrap .userCharaIcon .att, .resultWrap .drawItemWrap .drawItem .itemWrap .userCharaIcon .star, .resultWrap .drawItemWrap .drawItem .itemWrap .userCharaIcon .rank, .resultWrap .drawItemWrap .drawItem .itemWrap .userCharaIcon .bg, .resultWrap .drawItemWrap .rainforcedDrawItem .itemWrap .userCharaIcon, .resultWrap .drawItemWrap .rainforcedDrawItem .itemWrap .userCharaIcon .att, .resultWrap .drawItemWrap .rainforcedDrawItem .itemWrap .userCharaIcon .star, .resultWrap .drawItemWrap .rainforcedDrawItem .itemWrap .userCharaIcon .rank, .resultWrap .drawItemWrap .rainforcedDrawItem .itemWrap .userCharaIcon .bg {
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+}
+
+.resultWrap .drawItemWrap .drawItem .itemWrap .userCharaIcon img, .resultWrap .drawItemWrap .rainforcedDrawItem .itemWrap .userCharaIcon img {
+  width: 96px;
+  height: 96px;
+  -webkit-border-radius: 49px;
+}
+
+.resultWrap .drawItemWrap .drawItem .itemWrap .pieceImg, .resultWrap .drawItemWrap .rainforcedDrawItem .itemWrap .pieceImg {
+  width: 100px;
+  height: 100px;
+}
+
+.resultWrap .drawItemWrap .drawItem .drawChest, .resultWrap .drawItemWrap .rainforcedDrawItem .drawChest {
+  width: 128px;
+  height: 120px;
+  position: absolute;
+  top: -20px;
+  left: -14px;
+}
+
+.resultWrap .drawItemWrap .drawItem .drawChest_open, .resultWrap .drawItemWrap .rainforcedDrawItem .drawChest_open {
+  opacity: 0;
+  z-index: 100001;
+}
+
+.resultWrap .drawItemWrap .drawItem .drawChest_open img, .resultWrap .drawItemWrap .rainforcedDrawItem .drawChest_open img {
+  width: 100%;
+  height: 100%;
+}
+
+.resultWrap .drawItemWrap .drawItem .drawChest_close, .resultWrap .drawItemWrap .rainforcedDrawItem .drawChest_close {
+  -webkit-animation: chestDrop .58s ease .5s 1 alternate;
+  opacity: 0;
+  z-index: 100000;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap .drawItemWrap .drawItem .drawChest_close img, .resultWrap .drawItemWrap .rainforcedDrawItem .drawChest_close img {
+  width: 100%;
+  height: 100%;
+}
+
+.resultWrap .drawItemWrap .drawItem.open.bonus .ef05, .resultWrap .drawItemWrap .rainforcedDrawItem.open.bonus .ef05 {
+  -webkit-animation: chestOpen_ef05 0.88s linear 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap .drawItemWrap .drawItem.open.bonus .ef04, .resultWrap .drawItemWrap .rainforcedDrawItem.open.bonus .ef04 {
+  -webkit-animation: chestOpen_ef04 0.88s linear 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap .drawItemWrap .drawItem.open .ef03, .resultWrap .drawItemWrap .rainforcedDrawItem.open .ef03 {
+  -webkit-animation: chestOpen_ef03 0.88s ease-in 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap .drawItemWrap .drawItem.open .ef02, .resultWrap .drawItemWrap .rainforcedDrawItem.open .ef02 {
+  -webkit-animation: chestOpen_ef02 0.88s ease-in 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap .drawItemWrap .drawItem.open .ef01, .resultWrap .drawItemWrap .rainforcedDrawItem.open .ef01 {
+  -webkit-animation: chestOpen_ef01 0.88s linear 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap .drawItemWrap .drawItem.open .itemWrap, .resultWrap .drawItemWrap .rainforcedDrawItem.open .itemWrap {
+  -webkit-animation: chestOpen_item 0.88s linear 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap .drawItemWrap .drawItem.open .drawChest_open, .resultWrap .drawItemWrap .rainforcedDrawItem.open .drawChest_open {
+  -webkit-animation: chestOpen_open 0.88s linear 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap .drawItemWrap .drawItem.open .drawChest_close, .resultWrap .drawItemWrap .rainforcedDrawItem.open .drawChest_close {
+  -webkit-animation: chestOpen_close 0.88s linear 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap.singleDraw .drawItemWrap {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.resultWrap.singleDraw .drawItemWrap .drawItem {
+  margin: 0;
+}
+
+.resultWrap .backEffect {
+  width: 204px;
+  height: 204px;
+  position: absolute;
+  top: -webkit-calc(50% - 102px);
+  left: -webkit-calc(50% - 102px);
+  z-index: 10000;
+}
+
+.resultWrap .backEffect .back_ef02 {
+  width: 204px;
+  height: 204px;
+  background: url("/magica/resource/image_web/campaign/box_gacha/animation/ef_item_flash.png") left top no-repeat;
+  background-size: 204px 204px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 10000;
+  mix-blend-mode: overlay;
+}
+
+.resultWrap .backEffect .back_ef01 {
+  width: 204px;
+  height: 204px;
+  background: url("/magica/resource/image_web/campaign/box_gacha/animation/ef_item_flash.png") left top no-repeat;
+  background-size: 204px 204px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 10000;
+  mix-blend-mode: overlay;
+}
+
+.resultWrap .backEffect.anim .back_ef02 {
+  -webkit-animation: back_ef02 1.66s linear 0s infinite;
+}
+
+.resultWrap .backEffect.anim .back_ef01 {
+  -webkit-animation: back_ef01 1.66s linear 0s infinite;
+}
+
+.resultWrap .bg02 {
+  width: 420px;
+  height: 420px;
+  background: url("/magica/resource/image_web/campaign/box_gacha/animation/magic_team_a.png") left top no-repeat;
+  position: absolute;
+  top: -webkit-calc(50% - 210px);
+  left: -webkit-calc(50% - 210px);
+  pointer-events: none;
+  -webkit-animation: bg02Anim 0.66s linear .5s 1 alternate;
+  opacity: 0;
+  z-index: 2;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap .bg01 {
+  width: 1424px;
+  height: 768px;
+  background: rgba(0, 0, 0, 0.7) url("/magica/resource/image_web/campaign/box_gacha/animation/bg_gradation.png") left top no-repeat;
+  background-size: 100% auto;
+  position: absolute;
+  top: -webkit-calc(50% - 384px);
+  left: 0;
+  pointer-events: none;
+  -webkit-animation: bg01Anim 0.7s ease 0s 1 alternate;
+  z-index: 1;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap.iPhoneX {
+  width: 1280px;
+}
+
+.resultWrap.animSkip #baseDrawList .bonus .back_ef02 {
+  -webkit-animation: back_ef02 1.66s linear 0s infinite;
+}
+
+.resultWrap.animSkip #baseDrawList .bonus .back_ef01 {
+  -webkit-animation: back_ef01 1.66s linear 0s infinite;
+}
+
+.resultWrap.animSkip #baseDrawList .show {
+  pointer-events: auto;
+}
+
+.resultWrap.animSkip #baseDrawList .show #resultCloseBtn {
+  -webkit-animation: rightLeftSlide 0.25s linear 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap.animSkip #baseDrawList .show #resultOnceBtn {
+  -webkit-animation: leftRightSlide 0.25s linear 0s 1 alternate;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap.animSkip #baseDrawList .show.boxRemainWrap {
+  -webkit-animation: rightLeftSlide 0.25s linear 0s 1 alternate;
+  pointer-events: auto;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.resultWrap.animSkip #baseDrawList .ef05 {
+  -webkit-animation: none !important;
+}
+
+.resultWrap.animSkip #baseDrawList .ef04 {
+  -webkit-animation: none !important;
+}
+
+.resultWrap.animSkip #baseDrawList .ef03 {
+  -webkit-animation: none !important;
+}
+
+.resultWrap.animSkip #baseDrawList .ef02 {
+  -webkit-animation: none !important;
+}
+
+.resultWrap.animSkip #baseDrawList .ef01 {
+  -webkit-animation: none !important;
+}
+
+.resultWrap.animSkip #baseDrawList .itemWrap {
+  opacity: 1 !important;
+  -webkit-animation: none !important;
+}
+
+.resultWrap.animSkip #baseDrawList .drawChest_open {
+  -webkit-animation: none !important;
+}
+
+.resultWrap.animSkip #baseDrawList .drawChest_close {
+  -webkit-animation: none !important;
+}
+
+.resultWrap.animSkip #baseDrawList .bg02 {
+  opacity: 1;
+  -webkit-animation: none !important;
+}
+
+.resultWrap.animSkip #baseDrawList .bg01 {
+  opacity: 1;
+  -webkit-animation: none !important;
+}
+
+.resultWrap.animSkip #baseDrawList .boxRemainWrap {
+  opacity: 1;
+  -webkit-animation: none !important;
+}
+
+.resultWrap.animSkip #resultCloseBtn, .resultWrap.animSkip #resultOnceBtn {
+  opacity: 1;
+  -webkit-animation: none !important;
+}
+
+@-webkit-keyframes newIconAnim {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes chestOpen_ef05 {
+  0% {
+    -webkit-transform: scale(0.3) translate3d(0, 0, 0);
+    opacity: 0;
+  }
+  43.18% {
+    -webkit-transform: scale(0.3) translate3d(0, 0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  71.59% {
+    -webkit-transform: scale() translate3d(0, 0, 0) rotate();
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) translate3d(0, 0, 0) rotate(100deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes chestOpen_ef04 {
+  0% {
+    -webkit-transform: scale(0) translate3d(0, 0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  43.18% {
+    -webkit-transform: scale(0) translate3d(0, 0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  71.59% {
+    -webkit-transform: scale() translate3d(0, 0, 0) rotate();
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1) translate3d(0, 0, 0) rotate(100deg);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes chestOpen_ef03 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+    opacity: 0;
+  }
+  28.40% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+    opacity: 0;
+  }
+  43.18% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+    opacity: 0;
+  }
+  71.59% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1.3);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes chestOpen_ef02 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.3);
+    opacity: 0;
+  }
+  28.40% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.3);
+    opacity: 0;
+  }
+  56.81% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  85.22% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes chestOpen_ef01 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1.2);
+    opacity: 0;
+  }
+  28.40% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1.2);
+    opacity: 0;
+  }
+  56.81% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  85.22% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1.5);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes chestOpen_item {
+  0% {
+    -webkit-transform: translate3d(0, -26px, 0);
+    opacity: 0;
+  }
+  28.40% {
+    -webkit-transform: translate3d(0, -26px, 0);
+    opacity: 0;
+  }
+  43.18% {
+    -webkit-transform: translate3d(0, -26px, 0);
+    opacity: 0;
+  }
+  56.81% {
+    -webkit-transform: translate3d(0, -26px, 0);
+    opacity: 0;
+  }
+  71.59% {
+    -webkit-transform: translate3d(0, -26px, 0);
+    opacity: 0;
+  }
+  85.22% {
+    -webkit-transform: translate3d(0, -26px, 0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes chestOpen_open {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+    opacity: 0;
+  }
+  28.40% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+    opacity: 0;
+  }
+  43.18% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1.1);
+    opacity: 0;
+  }
+  56.81% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+  71.59% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+  }
+  85.22% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes chestOpen_close {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+  28.40% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.8);
+    opacity: 1;
+  }
+  43.18% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+  56.81% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0;
+  }
+  71.59% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0;
+  }
+  85.22% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes back_ef02 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+    opacity: .5;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-360deg);
+    opacity: .5;
+  }
+}
+
+@-webkit-keyframes back_ef01 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes chestDrop {
+  0% {
+    -webkit-transform: translate3d(0, -69px, 0) rotate(47deg);
+    opacity: 0;
+  }
+  43.10% {
+    -webkit-transform: translate3d(0, -19px, 0) rotate(47deg);
+    opacity: 1;
+  }
+  56.89% {
+    -webkit-transform: translate3d(0, -41px, 0) rotate(22deg);
+    opacity: 1;
+  }
+  70.68% {
+    -webkit-transform: translate3d(0, -7px, 0) rotate(-20deg);
+    opacity: 1;
+  }
+  86.20% {
+    -webkit-transform: translate3d(0, -21px, 0) rotate(-5deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bg02Anim {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0, 1);
+    opacity: 1;
+  }
+  24.24% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1, 1);
+    opacity: 1;
+  }
+  60.60% {
+    -webkit-transform: translate3d(0, 0, 0) scale(0, 1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0) scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bg01Anim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes leftRightSlide {
+  0% {
+    -webkit-transform: translate3d(-50px, 0, 0);
+    opacity: 0;
+  }
+  28.57% {
+    -webkit-transform: translate3d(-50px, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rightLeftSlide {
+  0% {
+    -webkit-transform: translate3d(50px, 0, 0);
+    opacity: 0;
+  }
+  28.57% {
+    -webkit-transform: translate3d(50px, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.boxContentsPop.popupContent .popupInner .popupTextArea {
+  width: 100%;
+  height: 456px;
+  display: block;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.boxContentsPop.popupContent .popupInner .popupTextArea .text {
+  font-size: 22px;
+  line-height: 61px;
+}
+
+.boxContentsPop.popupContent .popupInner .popupTextArea .arrowRight, .boxContentsPop.popupContent .popupInner .popupTextArea .arrowLeft {
+  width: 62px;
+  height: 76px;
+  position: absolute;
+  top: 265px;
+}
+
+.boxContentsPop.popupContent .popupInner .popupTextArea .arrowRight.hide, .boxContentsPop.popupContent .popupInner .popupTextArea .arrowLeft.hide {
+  display: none;
+}
+
+.boxContentsPop.popupContent .popupInner .popupTextArea .arrowRight {
+  background: url("/magica/resource/image_web/campaign/box_gacha/common/navi_arrow_r.png") left top no-repeat;
+  background-size: 62px 76px;
+  right: 25px;
+}
+
+.boxContentsPop.popupContent .popupInner .popupTextArea .arrowLeft {
+  background: url("/magica/resource/image_web/campaign/box_gacha/common/navi_arrow_l.png") left top no-repeat;
+  background-size: 62px 76px;
+  left: 25px;
+}
+
+.boxContentsPop.popupContent .popupInner .popupTextArea .boxTitleWrap {
+  width: 776px;
+  height: 38px;
+  margin: 0 auto 8px;
+  padding: 0 40px 0 26px;
+  background: url("/magica/resource/image_web/campaign/box_gacha/common/header_box.png") left top no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.boxContentsPop.popupContent .popupInner .popupTextArea .boxTitleWrap .boxTitle {
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.boxContentsPop.popupContent .popupInner .popupTextArea .boxTitleWrap .remainNum {
+  width: 90px;
+}
+
+.boxContentsPop.popupContent .popupInner .popupTextArea .boxTitleWrap .gachaRemain, .boxContentsPop.popupContent .popupInner .popupTextArea .boxTitleWrap .remainNum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.boxContentsPop.popupContent .popupInner .popupTextArea .boxTitleWrap .gachaRemain .title, .boxContentsPop.popupContent .popupInner .popupTextArea .boxTitleWrap .remainNum .title {
+  width: 44px;
+  text-align: left;
+}
+
+.boxContentsPop.popupContent .popupInner .popupTextArea .boxTitleWrap .gachaRemain * {
+  font-size: 18px;
+  line-height: 38px;
+}
+
+#popScrollOuter {
+  width: 724px;
+  height: 349px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#popScrollOuter .popScrollInner {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  padding-top: 2px;
+  padding-bottom: 20px;
+  padding-left: 44px;
+}
+
+.boxWrap {
+  width: 654px;
+  height: 100px;
+  margin-bottom: 8px;
+  margin-left: 4px;
+  position: relative;
+}
+
+.boxWrap.bonus:before {
+  width: 62px;
+  height: 62px;
+  background: url("/magica/resource/image_web/campaign/box_gacha/common/icon_pickup.png") left top no-repeat;
+  position: absolute;
+  top: -webkit-calc(50% - 31px);
+  left: -47px;
+  content: "";
+  z-index: 10000;
+}
+
+.boxWrap.bonus.off:before {
+  background: url("/magica/resource/image_web/campaign/box_gacha/common/icon_pickup_gray.png") left top no-repeat;
+}
+
+.boxWrap.off {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-filter: brightness(70%);
+  filter: brightness(70%);
+}
+
+.boxWrap.off:not(.bonus):before {
+  content: '';
+  display: block;
+  width: 57px;
+  height: 60px;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  z-index: 100000;
+  background: url("/magica/resource/image_web/campaign/box_gacha/common/icon_purchased.png") left top no-repeat;
+}
+
+.boxWrap .itemIcon {
+  width: 78px;
+  height: 78px;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.boxWrap .itemIcon .quantity {
+  position: absolute;
+  right: -4px;
+  bottom: -8px;
+  font-size: 20px;
+  font-size: 16px;
+  z-index: 100;
+}
+
+.boxWrap .itemIcon .charaIcon {
+  width: 58px;
+  height: 52px;
+  position: absolute;
+  right: -8px;
+  bottom: -8px;
+}
+
+.boxWrap .itemIcon .charaIcon img {
+  max-width: 100%;
+}
+
+.boxWrap .itemIcon .charaIcon:before {
+  width: 58px;
+  height: 52px;
+  background: url("/magica/resource/image_web/common/chara/chara_frame_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 29px);
+  content: "";
+  z-index: 100;
+}
+
+.boxWrap .itemIcon .charaIcon:after {
+  width: 58px;
+  height: 52px;
+  background: url("/magica/resource/image_web/common/chara/chara_base_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 29px);
+  content: "";
+  z-index: 80;
+}
+
+.boxWrap .itemIcon .charaIcon .maskWrap {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 26px);
+  overflow: hidden;
+  border-radius: 26px;
+  z-index: 90;
+}
+
+.boxWrap .itemIcon .charaIcon .maskWrap img {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 30px);
+}
+
+.boxWrap .itemName {
+  width: 535px;
+  max-width: 535px;
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: 105px;
+  overflow: hidden;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.boxWrap .description {
+  width: 434px;
+  position: absolute;
+  top: 39px;
+  left: 105px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+}
+
+.boxWrap .amount_dl {
+  height: 25px;
+  position: absolute;
+  right: 7px;
+  bottom: 7px;
+}
+
+.boxWrap .amount_dl dt, .boxWrap .amount_dl dd {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.boxWrap .amount_dl dt {
+  width: 80px;
+  padding: 0 5px;
+  background-color: #f86688;
+  border-color: #f86688;
+}
+
+.boxWrap .amount_dl dd {
+  width: 130px;
+  background-color: #ffffff;
+  text-align: right;
+}
+
+.boxWrap .itemImage {
+  width: 78px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.boxWrap .userCharaIcon {
+  width: 78px;
+  height: 78px;
+}
+
+.gachaPop #debugBtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gachaPop.popupContent .popupInner .popupTextArea {
+  height: 231px;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.gachaPop.popupContent .popupInner .popupBtnArea {
+  margin-top: 58px;
+}
+
+.gachaPop.cautionPop.popupContent .popupInner .popupTextArea {
+  height: 165px;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.gachaPop.cautionPop.popupContent .popupInner .popupTextArea .caution {
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 185px;
+  left: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.gachaPop.cautionPop.popupContent .popupInner .popupBtnArea {
+  margin-top: 124px;
+}
+
+.gachaPop .useItemIcon {
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  bottom: 107px;
+  z-index: 10;
+}
+
+.gachaPop .useItemIcon.item {
+  left: 276px;
+}
+
+.gachaPop .useItemIcon.stone {
+  left: 203px;
+}
+
+.gachaPop .itemNumWrap {
+  height: 24px;
+  position: absolute;
+  bottom: 122px;
+  line-height: 24px;
+  text-align: left;
+  z-index: 5;
+}
+
+.gachaPop .itemNumWrap .num {
+  position: absolute;
+}
+
+.gachaPop .itemNumWrap.item {
+  width: 248px;
+  padding-left: 40px;
+  left: -webkit-calc(50% - 124px);
+  font-size: 16px;
+}
+
+.gachaPop .itemNumWrap.item .num {
+  right: 18px;
+}
+
+.gachaTxtPop.popupContent .popupInner .popupTextArea {
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.gachaResetPop.popupContent.typeA .popupInner .popupTextArea {
+  height: 231px;
+  font-size: 24px;
+  line-height: 42px;
+}
+
+.gachaResetPop.popupContent.typeA .popupInner .caution {
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 115px;
+  left: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.gachaResetPop.popupContent.typeA .popupInner .popupBtnArea {
+  margin-top: 58px;
+}
+
+#CampaignBoxGachaTop {
+  width: 1024px;
+  height: 100%;
+  position: relative;
+}
+
+#CampaignBoxGachaTop #helpBtn {
+  width: 100px;
+  position: absolute;
+  top: 13px;
+  right: 276px;
+  z-index: 10000;
+}
+
+#CampaignBoxGachaTop .live2dArea {
+  width: 390px;
+  height: -webkit-calc(100% - 60px);
+  position: absolute;
+  bottom: 0px;
+  left: 12px;
+  z-index: 1;
+}
+
+#CampaignBoxGachaTop .titleImg {
+  width: 666px;
+  height: 300px;
+  position: absolute;
+  top: -webkit-calc(50% - 280px);
+  right: 0;
+}
+
+#CampaignBoxGachaTop #gachaWrap {
+  width: 648px;
+  height: 260px;
+  position: absolute;
+  top: -webkit-calc(50% + 20px);
+  right: 10px;
+}
+
+#CampaignBoxGachaTop #gachaWrap .commonFrame2 {
+  padding: 0;
+}
+
+#CampaignBoxGachaTop #gachaHeader {
+  width: 642px;
+  height: 52px;
+  background: url("/magica/resource/image_web/event/eventWitch/common/box_gacha/bg_header.png") left top no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+
+#CampaignBoxGachaTop #gachaHeader #gachaNum {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  color: #ffffff;
+  font-size: 24px;
+  text-shadow: 2px 0px 2px #008554, -2px 0px 2px #008554, 0px 2px 2px #008554, 0px -2px 2px #008554, 2px 2px 2px #008554, -2px 2px 2px #008554, 2px -2px 2px #008554, -2px -2px 2px #008554;
+}
+
+#CampaignBoxGachaTop #gachaHeader #gachaRemain {
+  width: 160px;
+  position: absolute;
+  top: 12px;
+  left: 152px;
+  padding: 3px 8px 1px 0;
+  background-color: #ffffff;
+  border-radius: 15px;
+  text-align: right;
+}
+
+#CampaignBoxGachaTop #gachaHeader #gachaRemain .title {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+  font-size: 110%;
+}
+
+#CampaignBoxGachaTop #gachaHeader #gachaRemain .remainNum {
+  display: inline-block;
+  font-size: 120%;
+}
+
+#CampaignBoxGachaTop #gachaHeader .nextGachaBtn {
+  width: 172px;
+  height: 36px;
+  background: url("/magica/resource/image_web/event/eventWitch/common/box_gacha/btn_box_change.png") left top no-repeat;
+  position: absolute;
+  right: 14px;
+  bottom: 6px;
+}
+
+#CampaignBoxGachaTop #gachaHeader .nextGachaBtn.off {
+  background: url("/magica/resource/image_web/event/eventWitch/common/box_gacha/btn_box_change_gray.png") left top no-repeat;
+  pointer-events: none;
+}
+
+#CampaignBoxGachaTop #gachaBtnWrap {
+  width: 648px;
+  height: 134px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 72px;
+  left: 0px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#CampaignBoxGachaTop #gachaBtnWrap .gachaBtn,
+#CampaignBoxGachaTop #gachaBtnWrap .gachaAllBtn {
+  width: 192px;
+  height: 102px;
+  margin: 0 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("/magica/resource/image_web/event/eventWitch/common/box_gacha/gacha_btn_box_2.png") left top no-repeat;
+}
+
+#CampaignBoxGachaTop #gachaBtnWrap .gachaBtn .btnText,
+#CampaignBoxGachaTop #gachaBtnWrap .gachaAllBtn .btnText {
+  width: 100%;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 2px 0px 2px #276848, -2px 0px 2px #276848, 0px 2px 2px #276848, 0px -2px 2px #276848, 2px 2px 2px #276848, -2px 2px 2px #276848, 2px -2px 2px #276848, -2px -2px 2px #276848;
+}
+
+#CampaignBoxGachaTop #gachaBtnWrap .gachaBtn .pointFrame,
+#CampaignBoxGachaTop #gachaBtnWrap .gachaAllBtn .pointFrame {
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: -3px;
+  left: -webkit-calc(50% - 75px);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#CampaignBoxGachaTop #gachaBtnWrap .gachaBtn .pointFrame .useItem,
+#CampaignBoxGachaTop #gachaBtnWrap .gachaAllBtn .pointFrame .useItem {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -webkit-calc(50% - 19px);
+  left: 8px;
+}
+
+#CampaignBoxGachaTop #gachaBtnWrap .gachaBtn .pointFrame .hasNum,
+#CampaignBoxGachaTop #gachaBtnWrap .gachaAllBtn .pointFrame .hasNum {
+  position: relative;
+  top: 1px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+#CampaignBoxGachaTop #gachaBtnWrap .gachaBtn.off,
+#CampaignBoxGachaTop #gachaBtnWrap .gachaAllBtn.off {
+  pointer-events: none;
+  background: url("/magica/resource/image_web/event/eventWitch/common/box_gacha/gacha_btn_box_gray2.png") left top no-repeat;
+}
+
+#CampaignBoxGachaTop #gachaBtnWrap .gachaBtn.off .btnText,
+#CampaignBoxGachaTop #gachaBtnWrap .gachaAllBtn.off .btnText {
+  color: #cacaca !important;
+  text-shadow: none !important;
+}
+
+#CampaignBoxGachaTop #gachaBtnWrap .gachaBtn.btnType2,
+#CampaignBoxGachaTop #gachaBtnWrap .gachaAllBtn.btnType2 {
+  width: 240px;
+  margin: 0 20px;
+  background: url("/magica/resource/image_web/event/eventWitch/common/box_gacha/gacha_btn_box.png") left top no-repeat;
+}
+
+#CampaignBoxGachaTop #gachaBtnWrap .gachaBtn.btnType2.off,
+#CampaignBoxGachaTop #gachaBtnWrap .gachaAllBtn.btnType2.off {
+  background: url("/magica/resource/image_web/event/eventWitch/common/box_gacha/gacha_btn_box_gray.png") left top no-repeat;
+}
+
+#CampaignBoxGachaTop #gachaBtnWrap .gachaAllBtn {
+  background: url("/magica/resource/image_web/event/eventWitch/common/box_gacha/gacha_btn_box_3.png") left top no-repeat;
+}
+
+#CampaignBoxGachaTop #gachaBtnWrap .gachaAllBtn .btnText {
+  text-shadow: 2px 0px 2px #528d1b, -2px 0px 2px #528d1b, 0px 2px 2px #528d1b, 0px -2px 2px #528d1b, 2px 2px 2px #528d1b, -2px 2px 2px #528d1b, 2px -2px 2px #528d1b, -2px -2px 2px #528d1b;
+}
+
+#CampaignBoxGachaTop #gachaBtnWrap .gachaAllBtn.allGet {
+  background: url("/magica/resource/image_web/event/eventWitch/common/box_gacha/gacha_btn_box_4.png") left top no-repeat;
+}
+
+#CampaignBoxGachaTop #gachaBtnWrap .gachaAllBtn.allGet .btnText {
+  text-shadow: 2px 0px 2px #b45b0e, -2px 0px 2px #b45b0e, 0px 2px 2px #b45b0e, 0px -2px 2px #b45b0e, 2px 2px 2px #b45b0e, -2px 2px 2px #b45b0e, 2px -2px 2px #b45b0e, -2px -2px 2px #b45b0e;
+}
+
+#CampaignBoxGachaTop #hasItemNumWrap {
+  width: 236px;
+  height: 28px;
+  background: url("/magica/resource/image_web/event/eventWitch/common/box_gacha/bg_cost.png") left top no-repeat;
+  position: absolute;
+  bottom: 24px;
+  left: 22px;
+}
+
+#CampaignBoxGachaTop #hasItemNumWrap .useItem {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -6px;
+  left: 6px;
+}
+
+#CampaignBoxGachaTop #hasItemNumWrap .title {
+  width: 140px;
+  height: 34px;
+  padding-right: 39px;
+  position: absolute;
+  top: -3px;
+  left: 0;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 34px;
+  text-align: right;
+}
+
+#CampaignBoxGachaTop #hasItemNumWrap .hasNum {
+  width: 140px;
+  height: 34px;
+  padding-right: 12px;
+  position: absolute;
+  top: -3px;
+  right: 0;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: right;
+}
+
+#CampaignBoxGachaTop .gachaContentsBtn {
+  width: 130px;
+  height: 42px;
+  background: url("/magica/resource/image_web/event/eventWitch/common/box_gacha/btn_box_detail.png") left top no-repeat;
+  position: absolute;
+  right: 24px;
+  bottom: 20px;
+}
+
+#CampaignBoxGachaTop .outerLinkBtn {
+  display: block;
+  width: 114px;
+  height: 120px;
+  position: absolute;
+  bottom: 101px;
+  left: 23px;
+  z-index: 2;
+}
+
+#CampaignBoxGachaTop #ToExchangeTopBtn {
+  width: 180px;
+  height: 66px;
+  background: url("/magica/resource/image_web/event/eventWitch/common/box_gacha/btn_alina_request_a.png") left top no-repeat;
+  position: absolute;
+  left: 80px;
+  bottom: 30px;
+  z-index: 2;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea {
+  height: 315px;
+  padding: 0 60px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap {
+  width: 100%;
+  padding-top: 20px;
+  height: 290px;
+  border: 2px solid #eddbb8;
+  border-radius: 26px;
+  overflow: hidden;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap.alignLeft {
+  text-align: left;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .scrollInner {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap {
+  width: 88px;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet {
+  background: url("/magica/resource/image_web/item/main/item_bg.png") left center no-repeat;
+  background-size: 88px 88px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase {
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  background-color: #4d4462;
+  position: absolute;
+  top: -webkit-calc(50% - 25px);
+  left: -webkit-calc(50% - 25px);
+  border-radius: 5px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner {
+  width: 40px;
+  height: 40px;
+  background-color: #736080;
+  position: relative;
+  border-radius: 5px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols {
+  width: 10px;
+  height: 10px;
+  background-color: #736080;
+  position: absolute;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.on {
+  background-color: #f4e0ca;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation1, .popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation4, .popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation7 {
+  top: 27px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation2, .popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation5, .popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation8 {
+  top: 15px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation3, .popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation6, .popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation9 {
+  top: 3px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation1, .popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation2, .popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation3 {
+  left: 3px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation4, .popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation5, .popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation6 {
+  left: 15px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation7, .popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation8, .popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.formation_sheet .formationBase .formationInner .cols.formation9 {
+  left: 27px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.live2d {
+  background: url("/magica/resource/image_web/item/main/live2d.png") left center no-repeat;
+  background-size: 88px 88px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap.doppel {
+  background: url("/magica/resource/image_web/item/main/doppel.png") left center no-repeat;
+  background-size: 88px 88px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap .commonItemImg {
+  width: 88px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap .quantity {
+  position: absolute;
+  color: #fff;
+  text-shadow: -1px -1px 1px #8a5f29, 1px -1px 1px #8a5f29, -1px 1px 1px #8a5f29, 1px 1px 1px #8a5f29, -1px -1px #8a5f29, 1px -1px #8a5f29, -1px 1px #8a5f29, 1px 1px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 2px #8a5f29, 1px -1px 2px #8a5f29, -1px 1px 2px #8a5f29, 1px 1px 2px #8a5f29, -1px -1px 3px #8a5f29, 1px -1px 3px #8a5f29, -1px 1px 3px #8a5f29, 1px 1px 3px #8a5f29;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap .charaIcon {
+  width: 58px;
+  height: 52px;
+  position: absolute;
+  bottom: 5px;
+  right: -12px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap .charaIcon:before {
+  width: 58px;
+  height: 52px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 29px);
+  background: url("/magica/resource/image_web/common/chara/chara_frame_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  z-index: 100;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap .charaIcon:after {
+  width: 58px;
+  height: 52px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 29px);
+  background: url("/magica/resource/image_web/common/chara/chara_base_S.png") left top no-repeat;
+  background-size: 100% 100%;
+  z-index: 80;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap .charaIcon .maskWrap {
+  width: 52px;
+  height: 52px;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 26px);
+  z-index: 90;
+  overflow: hidden;
+  border-radius: 26px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap .charaIcon .maskWrap img {
+  width: 60px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: -webkit-calc(50% - 30px);
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap {
+  position: relative;
+  display: inline-block;
+  height: 88px;
+  margin: 0 25px 25px;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap .commonItemImg {
+  position: absolute;
+  left: 0;
+}
+
+.popupContent.typeA.popupDetail .popupInner .popupTextArea #popupDetailScrollWrap .commonItemImgWrap .quantity {
+  position: absolute;
+  font-size: 20px;
+  right: -5px;
+  bottom: 0;
+  color: #fff;
+}
+
+.popupContent.typeA.popupDetail .popupInner .detailImg {
+  padding-top: 35px;
+}
