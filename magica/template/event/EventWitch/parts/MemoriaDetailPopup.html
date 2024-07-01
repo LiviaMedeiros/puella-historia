@@ -1,0 +1,30 @@
+<div class="pickUpDetail MEMORIA <%= model.pieceType %>">
+	<div class="pickUpCard">
+		<% if(model.isExchanged){ %>
+		<img class="pickUpCardImage" data-nativeimgkey="memoria_<%= model.pieceId %>_c" data-src="resource/image_native/memoria/memoria_<%= model.pieceId %>_c.png" style="">
+		<% }else{ %>
+		<img class="pickUpCardImage" src="/magica/resource/image_web/event/eventWitch/common/alina_request/memoria_back_c.png" alt="">
+		<% } %>
+	</div>
+	<div class="detailWrap">
+		<div class="memoriaTypeIcon"></div>
+		<div class="memoriaTypeName"></div>
+		<div class="rarity <%= model.rank %>">
+			<span class="stars star1"></span>
+			<span class="stars star2"></span>
+			<span class="stars star3"></span>
+			<span class="stars star4"></span>
+			<span class="stars star5"></span>
+		</div>
+		<div class="memoriaName"><%= model.displayName %></div>
+		<div class="memoriaStatus">
+			<dl class="common_dl"><dt>MAX HP</dt><dd><%= model.hp %></dd></dl>
+			<dl class="common_dl"><dt>MAX ATK</dt><dd><%= model.attack %></dd></dl>
+			<dl class="common_dl"><dt>MAX DEF</dt><dd><%= model.defense %></dd></dl>
+		</div>
+		<div class="description">
+			<dl class="common_dl"><dt></dt><dd><%= model.pieceSkill.name %></dd></dl>
+			<div class="memoriaDetail"><%= model.pieceSkill.shortDescription %></div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,688 @@
+@charset "UTF-8";
+#EventWitchExchangeTop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#EventWitchExchangeTop .mainSec {
+  width: 100%;
+  height: 100%;
+}
+
+#EventWitchExchangeTop .mainSec .live2dArea {
+  width: 280px;
+  height: -webkit-calc(100% - 60px);
+  position: absolute;
+  bottom: 0px;
+  left: 12px;
+  z-index: 1;
+}
+
+#EventWitchExchangeTop .mainSec #ToTopBtn {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+#EventWitchExchangeTop .mainSec #subItemSec {
+  position: absolute;
+  width: 230px;
+  height: 124px;
+  bottom: 20px;
+  left: 20px;
+  z-index: 2;
+  background-color: rgba(248, 241, 227, 0.45);
+}
+
+#EventWitchExchangeTop .mainSec #subItemSec .ToBoxGachaTopBtn {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 180px;
+  height: 58px;
+  background: url("/magica/resource/image_web/event/eventWitch/common/alina_request/btn_box_gacha_a.png") left top no-repeat;
+}
+
+#EventWitchExchangeTop .mainSec #subItemSec .subItem {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  width: 230px;
+  text-align: center;
+}
+
+#EventWitchExchangeTop .mainSec #subItemSec .subItem .icon, #EventWitchExchangeTop .mainSec #subItemSec .subItem .text {
+  display: inline-block;
+}
+
+#EventWitchExchangeTop .mainSec #subItemSec .subItem .icon {
+  margin: -8px 0px 0px 0px;
+}
+
+#EventWitchExchangeTop .mainSec #subItemSec .subItem .text {
+  color: #fff;
+  margin: 4px 0px 0px -2px;
+  text-shadow: -1px -1px 1px #5e584d,  1px -1px 1px #5e584d,  -1px 1px 1px #5e584d,  1px 1px 1px #5e584d,  -1px -1px #5e584d,  1px -1px #5e584d,  -1px 1px #5e584d,  1px 1px #5e584d,  -1px -1px 2px #5e584d,  1px -1px 2px #5e584d,  -1px 1px 2px #5e584d,  1px 1px 2px #5e584d,  -1px -1px 2px #5e584d,  1px -1px 2px #5e584d,  -1px 1px 2px #5e584d,  1px 1px 2px #5e584d,  -1px -1px 3px #5e584d,  1px -1px 3px #5e584d,  -1px 1px 3px #5e584d,  1px 1px 3px #5e584d;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec {
+  position: absolute;
+  top: calc(50% - 234px);
+  right: 0px;
+  width: 752px;
+  height: 516px;
+  background: url(/magica/resource/image_web/event/eventWitch/common/alina_request/bg_memoria_list.png) left top no-repeat;
+  padding: 114px 0 0 0;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .getTermTextSec {
+  position: absolute;
+  top: 67px;
+  left: 242px;
+  width: 276px;
+  height: 30px;
+  text-align: center;
+  color: #c4c8b0;
+  font-size: 110%;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .getTermTextSec .termText {
+  color: #c4c8b0;
+  display: inline-block;
+  margin: 0 0 0 8px;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 180px;
+  height: 192px;
+  background: url(/magica/resource/image_web/event/eventWitch/common/alina_request/base_paper.png) left top no-repeat;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .memoriaDetailBtn {
+  background: url(/magica/resource/image_web/event/eventWitch/common/alina_request/btn_info_s.png) left top no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 66px;
+  right: 22px;
+  width: 36px;
+  height: 36px;
+  z-index: 1;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .ExchangeBtn {
+  background: url(/magica/resource/image_web/event/eventWitch/common/alina_request/btn_majo_draw.png) left top no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: 41px;
+  left: 24px;
+  width: 134px;
+  height: 42px;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .ExchangeBtn.noChange {
+  background: url(/magica/resource/image_web/event/eventWitch/common/alina_request/btn_majo_draw_gray.png) left top no-repeat;
+  background-size: contain;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .charaText {
+  position: absolute;
+  bottom: 16px;
+  left: 2px;
+  width: 180px;
+  text-align: center;
+  font-size: 90%;
+  color: #5f5447;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec {
+  display: inline-block;
+  margin: 10px 30px;
+  margin: 2px 7px;
+  width: 58px;
+  height: 58px;
+  position: relative;
+  position: absolute;
+  top: -6px;
+  left: -12px;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .charaImgSec {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .charaImgSec .charaImg {
+  width: 44px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .bgframe1,
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .bgframe2 {
+  width: 58px;
+  height: 58px;
+  background-size: 58px 58px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_frame.png") left top no-repeat;
+  background-size: contain;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .bgframe2 {
+  width: 46px;
+  height: 46px;
+  background-size: 46px 46px;
+  background: #403c3f;
+  top: 6px;
+  left: 6px;
+  border-radius: 50%;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .circle {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_normal.png") left top no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  isolation: isolate;
+  top: 2px;
+  left: 2px;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .circle .barR {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 27px;
+  width: 54px;
+  height: 54px;
+  background: #403c3f;
+  -webkit-transform-origin: left 27px;
+      -ms-transform-origin: left 27px;
+          transform-origin: left 27px;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .circle .barL {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -27px;
+  width: 54px;
+  height: 54px;
+  background: #403c3f;
+  -webkit-transform-origin: right 27px;
+      -ms-transform-origin: right 27px;
+          transform-origin: right 27px;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .circle.animeMax {
+  -webkit-animation: changeMax 0.3s linear forwards;
+          animation: changeMax 0.3s linear forwards;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .circle.animeMax .barL, #EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .circle.animeMax .barR {
+  display: none;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .circle.max {
+  background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_max.png") left top no-repeat;
+  background-size: contain;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .circle.max .barL, #EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .circle.max .barR {
+  opacity: 0;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconUPSec,
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconMaxSec {
+  display: none;
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  top: 0px;
+  left: 0px;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconUPSec .upImg,
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconMaxSec .upImg {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconUPSec .decoImg,
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconMaxSec .decoImg {
+  position: absolute;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconUPSec .decoImg.up1, #EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconUPSec .decoImg.max1,
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconMaxSec .decoImg.up1,
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconMaxSec .decoImg.max1 {
+  width: 122px;
+  height: 122px;
+  top: -32px;
+  left: -32px;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconUPSec .decoImg.up2, #EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconUPSec .decoImg.max3,
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconMaxSec .decoImg.up2,
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconMaxSec .decoImg.max3 {
+  width: 146px;
+  height: 146px;
+  top: -44px;
+  left: -44px;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconUPSec .decoImg.max2,
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconMaxSec .decoImg.max2 {
+  width: 186px;
+  height: 186px;
+  top: -64px;
+  left: -64px;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconUPSec.anime,
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconMaxSec.anime {
+  display: block;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconUPSec.anime .upImg,
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconMaxSec.anime .upImg {
+  -webkit-animation: upAnime 0.8s ease 0s 1 normal;
+          animation: upAnime 0.8s ease 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconUPSec.anime .decoImg,
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconMaxSec.anime .decoImg {
+  -webkit-animation: decoAnime 0.8s ease 0s 1 normal;
+          animation: decoAnime 0.8s ease 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .IconCharaGaugeSec .iconMaxSec .upImg {
+  left: 18px;
+}
+
+@-webkit-keyframes upAnime {
+  0% {
+    -webkit-transform: translateY(12px) translateZ(0);
+            transform: translateY(12px) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateZ(0);
+            transform: translateY(0px) translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes upAnime {
+  0% {
+    -webkit-transform: translateY(12px) translateZ(0);
+            transform: translateY(12px) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateZ(0);
+            transform: translateY(0px) translateZ(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes decoAnime {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@keyframes decoAnime {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes changeMax {
+  0% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_normal.png") left top no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+  49% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_normal.png") left top no-repeat;
+    background-size: contain;
+    opacity: 0;
+  }
+  50% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_max.png") left top no-repeat;
+    background-size: contain;
+    opacity: 0;
+  }
+  100% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_max.png") left top no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+}
+
+@keyframes changeMax {
+  0% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_normal.png") left top no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+  49% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_normal.png") left top no-repeat;
+    background-size: contain;
+    opacity: 0;
+  }
+  50% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_max.png") left top no-repeat;
+    background-size: contain;
+    opacity: 0;
+  }
+  100% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_max.png") left top no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .memoriaImg {
+  position: absolute;
+  top: 17px;
+  left: 59px;
+  width: 78px;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .exchangedImg {
+  position: absolute;
+  top: 105px;
+  left: 14px;
+  display: none;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec .ExchangeMemoriaMain .exchangedImg.exchanged {
+  display: block;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec #MemoriaList {
+  width: 90%;
+  margin: 0 0 0 64px;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec #MemoriaList .ExchangeMemoriaMain:nth-of-type(4) {
+  margin: 0 10px 0 76px;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec #MemoriaList.chara7 {
+  width: 100%;
+  margin: 0 0 0 6px;
+  text-align: center;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec #MemoriaList.chara7 .ExchangeMemoriaMain {
+  margin: 0 2px 0 0;
+}
+
+#EventWitchExchangeTop .mainSec #MemoriaListSec #MemoriaList.chara7 .ExchangeMemoriaMain:nth-of-type(5) {
+  margin: 0 2px 0 -10px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea {
+  position: relative;
+  height: 304px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail {
+  width: 100%;
+  margin: 20px 0px 10px;
+  position: relative;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail * {
+  font-family: "motoya",sans-serif;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail .pickUpCard {
+  width: 264px;
+  height: 100%;
+  margin: 0 0 0 26px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail .detailWrap {
+  width: 482px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 16px;
+  text-align: left;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail .rarity {
+  width: 120px;
+  height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail .limitedIcon {
+  width: 94px;
+  height: 24px;
+  margin: 0px 0px -3px 20px;
+  background: url("/magica/resource/image_web/page/announce/icon_limited_announce.png") no-repeat;
+  display: inline-block;
+  position: relative;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA {
+  height: 282px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .memoriaTypeIcon {
+  width: 48px;
+  height: 49px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .memoriaName {
+  width: 100%;
+  position: absolute;
+  top: 56px;
+  left: 0px;
+  font-size: 26px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .pickUpCard .pickUpCardImage {
+  width: 185px;
+  height: 100%;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .memoriaTypeName {
+  width: 150px;
+  position: absolute;
+  top: 12px;
+  left: 58px;
+  font-size: 18px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA.SKILL .memoriaTypeIcon {
+  background: url("/magica/resource/image_web/page/memoria/memoria_pop_skill.png");
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA.SKILL .memoriaTypeName:before {
+  color: #ef638b;
+  content: "スキルタイプ";
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA.SKILL .description .common_dl dt {
+  width: 120px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA.SKILL .description .common_dl dt:before {
+  content: "スキル";
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA.ABILITY .memoriaTypeIcon {
+  background: url("/magica/resource/image_web/page/memoria/memoria_pop_ability.png");
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA.ABILITY .memoriaTypeName {
+  letter-spacing: -1px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA.ABILITY .memoriaTypeName:before {
+  color: #3a9abd;
+  content: "アビリティタイプ";
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA.ABILITY .description .common_dl dt {
+  width: 120px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA.ABILITY .description .common_dl dt:before {
+  content: "アビリティ";
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .rarity .stars {
+  width: 25px;
+  height: 26px;
+  background: url("/magica/resource/image_web/page/announce/announce_memoria_rarity.png");
+  display: block;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .rarity.RANK_1 .star2, .EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .rarity.RANK_1 .star3, .EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .rarity.RANK_1 .star4, .EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .rarity.RANK_1 .star5 {
+  display: none;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .rarity.RANK_2 .star3, .EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .rarity.RANK_2 .star4, .EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .rarity.RANK_2 .star5 {
+  display: none;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .rarity.RANK_3 .star4, .EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .rarity.RANK_3 .star5 {
+  display: none;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .rarity.RANK_4 .star5 {
+  display: none;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .common_dl {
+  width: 100%;
+  height: 25px;
+  margin-bottom: 4px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .common_dl dt, .EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .common_dl dd {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .common_dl dt {
+  width: 120px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .common_dl dd {
+  border: 0px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .memoriaStatus {
+  width: 100%;
+  height: 87px;
+  position: absolute;
+  top: 104px;
+  left: 0px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .description {
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  top: 200px;
+  left: 0px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .description .common_dl {
+  width: 100%;
+  height: 25px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .description .common_dl dt, .EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .description .common_dl dd {
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .description .common_dl dt {
+  width: 112px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .description .common_dl dd {
+  border: 0px;
+}
+
+.EventMemoriaDetailPopup.popupContent.typeA .popupInner .popupTextArea .pickUpDetail.MEMORIA .description .memoriaDetail {
+  height: 52px;
+  margin-top: 6px;
+  font-size: 18px;
+  line-height: 24px;
+}

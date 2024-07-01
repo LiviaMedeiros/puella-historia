@@ -1,0 +1,20 @@
+<div id="EventWitchExchangeTop">
+	<div class="mainSec">
+		<div class="live2dArea"></div>
+		<div id="MemoriaListSec">
+			<div id="MemoriaList" class="<%= model.listClass %>"></div>
+			<div class="getTermTextSec">
+				獲得期間<span class="termText"><%= model.termText %></span>
+			</div>
+		</div>
+		<% if(model.subItemInfo){ %>
+		<div id="subItemSec" class="subItemSec">
+			<div id="ToBoxGachaTopBtn" class="ToBoxGachaTopBtn"></div>
+			<div class="subItem">
+				<img class="icon" src="/magica/resource/image_web/event/eventWitch/common/icon_sub_item.png" alt="">
+				<div class="text ts_gold">×<%= model.subItemInfo.quantity %></div>
+			</div>
+		</div>
+		<% } %>
+	</div>
+</div>
