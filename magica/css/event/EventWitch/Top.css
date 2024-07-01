@@ -1,0 +1,822 @@
+#EventWitchTop {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#EventWitchTop .mainSec {
+  width: 100%;
+  height: 100%;
+}
+
+#EventWitchTop .mainSec #nativeTouchWrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+#EventWitchTop .mainSec .CharaListSec {
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap {
+  position: relative;
+  width: 186px;
+  height: 316px;
+  background: url("/magica/resource/image_web/event/eventWitch/common/base_gauge_6.png") left top no-repeat;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain {
+  position: absolute;
+  top: 46px;
+  left: 22px;
+  width: 146px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec {
+  display: inline-block;
+  margin: 10px 30px;
+  margin: 2px 7px;
+  width: 58px;
+  height: 58px;
+  position: relative;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .charaImgSec {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .charaImgSec .charaImg {
+  width: 44px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .bgframe1,
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .bgframe2 {
+  width: 58px;
+  height: 58px;
+  background-size: 58px 58px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_frame.png") left top no-repeat;
+  background-size: contain;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .bgframe2 {
+  width: 46px;
+  height: 46px;
+  background-size: 46px 46px;
+  background: #403c3f;
+  top: 6px;
+  left: 6px;
+  border-radius: 50%;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .circle {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_normal.png") left top no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  isolation: isolate;
+  top: 2px;
+  left: 2px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .circle .barR {
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 27px;
+  width: 54px;
+  height: 54px;
+  background: #403c3f;
+  -webkit-transform-origin: left 27px;
+      -ms-transform-origin: left 27px;
+          transform-origin: left 27px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .circle .barL {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -27px;
+  width: 54px;
+  height: 54px;
+  background: #403c3f;
+  -webkit-transform-origin: right 27px;
+      -ms-transform-origin: right 27px;
+          transform-origin: right 27px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .circle.animeMax {
+  -webkit-animation: changeMax 0.3s linear forwards;
+          animation: changeMax 0.3s linear forwards;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .circle.animeMax .barL, #EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .circle.animeMax .barR {
+  display: none;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .circle.max {
+  background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_max.png") left top no-repeat;
+  background-size: contain;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .circle.max .barL, #EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .circle.max .barR {
+  opacity: 0;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconUPSec,
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconMaxSec {
+  display: none;
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  top: 0px;
+  left: 0px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconUPSec .upImg,
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconMaxSec .upImg {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconUPSec .decoImg,
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconMaxSec .decoImg {
+  position: absolute;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconUPSec .decoImg.up1, #EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconUPSec .decoImg.max1,
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconMaxSec .decoImg.up1,
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconMaxSec .decoImg.max1 {
+  width: 122px;
+  height: 122px;
+  top: -32px;
+  left: -32px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconUPSec .decoImg.up2, #EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconUPSec .decoImg.max3,
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconMaxSec .decoImg.up2,
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconMaxSec .decoImg.max3 {
+  width: 146px;
+  height: 146px;
+  top: -44px;
+  left: -44px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconUPSec .decoImg.max2,
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconMaxSec .decoImg.max2 {
+  width: 186px;
+  height: 186px;
+  top: -64px;
+  left: -64px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconUPSec.anime,
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconMaxSec.anime {
+  display: block;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconUPSec.anime .upImg,
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconMaxSec.anime .upImg {
+  -webkit-animation: upAnime 0.8s ease 0s 1 normal;
+          animation: upAnime 0.8s ease 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconUPSec.anime .decoImg,
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconMaxSec.anime .decoImg {
+  -webkit-animation: decoAnime 0.8s ease 0s 1 normal;
+          animation: decoAnime 0.8s ease 0s 1 normal;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap #CharaListMain .IconCharaGaugeSec .iconMaxSec .upImg {
+  left: 18px;
+}
+
+@-webkit-keyframes upAnime {
+  0% {
+    -webkit-transform: translateY(12px) translateZ(0);
+            transform: translateY(12px) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateZ(0);
+            transform: translateY(0px) translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes upAnime {
+  0% {
+    -webkit-transform: translateY(12px) translateZ(0);
+            transform: translateY(12px) translateZ(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px) translateZ(0);
+            transform: translateY(0px) translateZ(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes decoAnime {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@keyframes decoAnime {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes changeMax {
+  0% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_normal.png") left top no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+  49% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_normal.png") left top no-repeat;
+    background-size: contain;
+    opacity: 0;
+  }
+  50% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_max.png") left top no-repeat;
+    background-size: contain;
+    opacity: 0;
+  }
+  100% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_max.png") left top no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+}
+
+@keyframes changeMax {
+  0% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_normal.png") left top no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+  49% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_normal.png") left top no-repeat;
+    background-size: contain;
+    opacity: 0;
+  }
+  50% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_max.png") left top no-repeat;
+    background-size: contain;
+    opacity: 0;
+  }
+  100% {
+    background: url("/magica/resource/image_web/event/eventWitch/common/quest_result/gauge_texture_max.png") left top no-repeat;
+    background-size: contain;
+    opacity: 1;
+  }
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap .ToExchangeTopBtn {
+  position: absolute;
+  width: 148px;
+  height: 54px;
+  bottom: 13px;
+  left: 19px;
+  background: url("/magica/resource/image_web/event/eventWitch/common/btn_alina_request.png") left top no-repeat;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap.chara7 {
+  height: 380px;
+  background: url("/magica/resource/image_web/event/eventWitch/common/base_gauge_7.png") left top no-repeat;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap.chara7 #CharaListMain {
+  top: 48px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap.chara7 #CharaListMain .IconCharaGaugeSec {
+  margin: 1px 62px 1px 7px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap.chara7 #CharaListMain .IconCharaGaugeSec:nth-child(2), #EventWitchTop .mainSec .CharaListSec .CharaListWrap.chara7 #CharaListMain .IconCharaGaugeSec:nth-child(4), #EventWitchTop .mainSec .CharaListSec .CharaListWrap.chara7 #CharaListMain .IconCharaGaugeSec:nth-child(6) {
+  position: absolute;
+  top: 30px;
+  left: 70px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap.chara7 #CharaListMain .IconCharaGaugeSec:nth-child(4) {
+  top: 96px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .CharaListWrap.chara7 #CharaListMain .IconCharaGaugeSec:nth-child(6) {
+  top: 164px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .subItemSec {
+  position: relative;
+  width: 164px;
+  height: 100px;
+  margin: 10px 0px 0px 11px;
+  background-color: rgba(248, 241, 227, 0.45);
+}
+
+#EventWitchTop .mainSec .CharaListSec .subItemSec .ToBoxGachaTopBtn {
+  position: absolute;
+  top: 14px;
+  left: 19px;
+  width: 128px;
+  height: 34px;
+  background: url("/magica/resource/image_web/event/eventWitch/common/btn_box_gacha.png") left top no-repeat;
+}
+
+#EventWitchTop .mainSec .CharaListSec .subItemSec .subItem {
+  position: absolute;
+  top: 56px;
+  left: 0px;
+  width: 164px;
+  text-align: center;
+}
+
+#EventWitchTop .mainSec .CharaListSec .subItemSec .subItem .icon, #EventWitchTop .mainSec .CharaListSec .subItemSec .subItem .text {
+  display: inline-block;
+}
+
+#EventWitchTop .mainSec .CharaListSec .subItemSec .subItem .icon {
+  margin: -8px 0px 0px 0px;
+}
+
+#EventWitchTop .mainSec .CharaListSec .subItemSec .subItem .text {
+  color: #fff;
+  margin: 4px 0px 0px -2px;
+  text-shadow: -1px -1px 1px #5e584d,  1px -1px 1px #5e584d,  -1px 1px 1px #5e584d,  1px 1px 1px #5e584d,  -1px -1px #5e584d,  1px -1px #5e584d,  -1px 1px #5e584d,  1px 1px #5e584d,  -1px -1px 2px #5e584d,  1px -1px 2px #5e584d,  -1px 1px 2px #5e584d,  1px 1px 2px #5e584d,  -1px -1px 2px #5e584d,  1px -1px 2px #5e584d,  -1px 1px 2px #5e584d,  1px 1px 2px #5e584d,  -1px -1px 3px #5e584d,  1px -1px 3px #5e584d,  -1px 1px 3px #5e584d,  1px 1px 3px #5e584d;
+}
+
+#EventWitchTop .mainSec #HelpBtn,
+#EventWitchTop .mainSec #archiveBtn {
+  width: 100px;
+  position: absolute;
+  top: 13px;
+  right: 276px;
+}
+
+#EventWitchTop .mainSec #archiveBtn {
+  width: 120px;
+  right: 144px;
+}
+
+#EventWitchTop #battleInfoSec {
+  width: 350px;
+  height: 384px;
+  position: absolute;
+  top: calc(50% - 210px);
+  right: 0px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#f0efed), to(white));
+  background: linear-gradient(bottom, #f0efed 0%, white 100%);
+  display: none;
+  padding: 14px 20px;
+}
+
+#EventWitchTop #battleInfoSec.show {
+  display: block;
+  -webkit-animation: pointWrapShow .25s ease-in-out 0s 1 alternate;
+          animation: pointWrapShow .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#EventWitchTop #battleInfoSec.hide {
+  display: block;
+  -webkit-animation: pointWrapHide .25s ease-in-out 0s 1 alternate;
+          animation: pointWrapHide .25s ease-in-out 0s 1 alternate;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle {
+  position: relative;
+  margin: 0 0 10px 0;
+  height: 42px;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle .battleText {
+  font-size: 150%;
+  position: absolute;
+  padding: 3px 0 0 0;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle .bgImgSec {
+  position: absolute;
+  width: 348px;
+  height: 42px;
+  overflow: hidden;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle .bgImgSec .bgImg {
+  width: 354px;
+  height: 42px;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle .factorIcon {
+  display: none;
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  top: -22px;
+  left: -16px;
+  z-index: 1;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_sub_item, #EventWitchTop #battleInfoSec .battleTitle.type_challenge, #EventWitchTop #battleInfoSec .battleTitle.type_eyesight, #EventWitchTop #battleInfoSec .battleTitle.type_hearing, #EventWitchTop #battleInfoSec .battleTitle.type_smell, #EventWitchTop #battleInfoSec .battleTitle.type_taste, #EventWitchTop #battleInfoSec .battleTitle.type_touch {
+  margin: -10px 0 14px -20px;
+  width: 352px;
+  height: 42px;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_sub_item .bgImg, #EventWitchTop #battleInfoSec .battleTitle.type_challenge .bgImg, #EventWitchTop #battleInfoSec .battleTitle.type_eyesight .bgImg, #EventWitchTop #battleInfoSec .battleTitle.type_hearing .bgImg, #EventWitchTop #battleInfoSec .battleTitle.type_smell .bgImg, #EventWitchTop #battleInfoSec .battleTitle.type_taste .bgImg, #EventWitchTop #battleInfoSec .battleTitle.type_touch .bgImg {
+  background: url("/magica/resource/image_web/event/eventWitch/common/battle_detail/header_point_1.png") left top no-repeat;
+  background-size: cover;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_sub_item .factorIcon, #EventWitchTop #battleInfoSec .battleTitle.type_challenge .factorIcon, #EventWitchTop #battleInfoSec .battleTitle.type_eyesight .factorIcon, #EventWitchTop #battleInfoSec .battleTitle.type_hearing .factorIcon, #EventWitchTop #battleInfoSec .battleTitle.type_smell .factorIcon, #EventWitchTop #battleInfoSec .battleTitle.type_taste .factorIcon, #EventWitchTop #battleInfoSec .battleTitle.type_touch .factorIcon {
+  display: block;
+  background: url("/magica/resource/image_web/event/eventWitch/common/battle_detail/icon_point_1.png") left top no-repeat;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_sub_item .battleText, #EventWitchTop #battleInfoSec .battleTitle.type_challenge .battleText, #EventWitchTop #battleInfoSec .battleTitle.type_eyesight .battleText, #EventWitchTop #battleInfoSec .battleTitle.type_hearing .battleText, #EventWitchTop #battleInfoSec .battleTitle.type_smell .battleText, #EventWitchTop #battleInfoSec .battleTitle.type_taste .battleText, #EventWitchTop #battleInfoSec .battleTitle.type_touch .battleText {
+  font-size: 140%;
+  padding: 5px 0 0 58px;
+  color: #fff;
+  text-shadow: 2px 0px 2px #d54544, -2px 0px 2px #d54544, 0px 2px 2px #d54544, 0px -2px 2px #d54544, 2px 2px 2px #d54544, -2px 2px 2px #d54544, 2px -2px 2px #d54544, -2px -2px 2px #d54544;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_hearing .bgImg {
+  background: url("/magica/resource/image_web/event/eventWitch/common/battle_detail/header_point_2.png") left top no-repeat;
+  background-size: cover;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_hearing .factorIcon {
+  background: url("/magica/resource/image_web/event/eventWitch/common/battle_detail/icon_point_2.png") left top no-repeat;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_hearing .battleText {
+  text-shadow: 2px 0px 2px #229122, -2px 0px 2px #229122, 0px 2px 2px #229122, 0px -2px 2px #229122, 2px 2px 2px #229122, -2px 2px 2px #229122, 2px -2px 2px #229122, -2px -2px 2px #229122;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_smell .bgImg {
+  background: url("/magica/resource/image_web/event/eventWitch/common/battle_detail/header_point_3.png") left top no-repeat;
+  background-size: cover;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_smell .factorIcon {
+  background: url("/magica/resource/image_web/event/eventWitch/common/battle_detail/icon_point_3.png") left top no-repeat;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_smell .battleText {
+  text-shadow: 2px 0px 2px #3761d6, -2px 0px 2px #3761d6, 0px 2px 2px #3761d6, 0px -2px 2px #3761d6, 2px 2px 2px #3761d6, -2px 2px 2px #3761d6, 2px -2px 2px #3761d6, -2px -2px 2px #3761d6;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_taste .bgImg {
+  background: url("/magica/resource/image_web/event/eventWitch/common/battle_detail/header_point_5.png") left top no-repeat;
+  background-size: cover;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_taste .factorIcon {
+  background: url("/magica/resource/image_web/event/eventWitch/common/battle_detail/icon_point_5.png") left top no-repeat;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_taste .battleText {
+  text-shadow: 2px 0px 2px #9130d6, -2px 0px 2px #9130d6, 0px 2px 2px #9130d6, 0px -2px 2px #9130d6, 2px 2px 2px #9130d6, -2px 2px 2px #9130d6, 2px -2px 2px #9130d6, -2px -2px 2px #9130d6;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_touch .bgImg {
+  background: url("/magica/resource/image_web/event/eventWitch/common/battle_detail/header_point_4.png") left top no-repeat;
+  background-size: cover;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_touch .factorIcon {
+  background: url("/magica/resource/image_web/event/eventWitch/common/battle_detail/icon_point_4.png") left top no-repeat;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_touch .battleText {
+  text-shadow: 2px 0px 2px #cf6404, -2px 0px 2px #cf6404, 0px 2px 2px #cf6404, 0px -2px 2px #cf6404, 2px 2px 2px #cf6404, -2px 2px 2px #cf6404, 2px -2px 2px #cf6404, -2px -2px 2px #cf6404;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_sub_item .bgImg {
+  background: url("/magica/resource/image_web/event/eventWitch/common/battle_detail/header_point_6.png") -4px top no-repeat;
+  background-size: 103% 100%;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_sub_item .factorIcon {
+  display: none;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_sub_item .battleText {
+  padding: 5px 0 0 24px;
+  text-shadow: 2px 0px 2px #108a62, -2px 0px 2px #108a62, 0px 2px 2px #108a62, 0px -2px 2px #108a62, 2px 2px 2px #108a62, -2px 2px 2px #108a62, 2px -2px 2px #108a62, -2px -2px 2px #108a62;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_challenge .bgImg {
+  background: url("/magica/resource/image_web/event/eventWitch/common/battle_detail/header_point_7.png") -4px top no-repeat;
+  background-size: 103% 100%;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_challenge .factorIcon {
+  display: none;
+}
+
+#EventWitchTop #battleInfoSec .battleTitle.type_challenge .battleText {
+  padding: 5px 0 0 24px;
+  text-shadow: 2px 0px 2px #693ee0, -2px 0px 2px #693ee0, 0px 2px 2px #693ee0, 0px -2px 2px #693ee0, 2px 2px 2px #693ee0, -2px 2px 2px #693ee0, 2px -2px 2px #693ee0, -2px -2px 2px #693ee0;
+}
+
+#EventWitchTop #battleInfoSec .common_dl {
+  margin: 0 0 10px 0;
+}
+
+#EventWitchTop #battleInfoSec .common_dl dt {
+  width: 90px;
+}
+
+#EventWitchTop #battleInfoSec .common_dl dd {
+  text-align: center;
+  width: 80px;
+}
+
+#EventWitchTop #battleInfoSec .needAPSec {
+  margin: 0 0 16px 0;
+}
+
+#EventWitchTop #battleInfoSec .missionSec {
+  margin: 0 0 4px 0;
+}
+
+#EventWitchTop #battleInfoSec .missionSec dt {
+  width: 260px;
+}
+
+#EventWitchTop #battleInfoSec .treasure {
+  width: 96px;
+  height: 96px;
+  background: url("/magica/resource/image_web/page/quest/questBattle/bg_reward.png") left top no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 20px;
+  top: 74px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#EventWitchTop #battleInfoSec .treasure .title {
+  width: 116px;
+  height: 22px;
+  background: url("/magica/resource/image_web/page/quest/questBattle/mission.png") left top no-repeat;
+  position: absolute;
+  top: -4px;
+  left: -10px;
+}
+
+#EventWitchTop #battleInfoSec .treasure .title.clear {
+  background: url("/magica/resource/image_web/page/quest/questBattle/complete.png") left top no-repeat;
+}
+
+#EventWitchTop #battleInfoSec .treasure .itemImg {
+  width: 47px;
+  height: 47px;
+}
+
+#EventWitchTop #battleInfoSec .treasure .treasureImg {
+  width: 60px;
+  height: 60px;
+}
+
+#EventWitchTop #battleInfoSec .treasure .charaIcon {
+  width: 38px;
+  height: 36px;
+  position: absolute;
+  bottom: 11px;
+  right: 12px;
+  z-index: 10;
+}
+
+#EventWitchTop #battleInfoSec .treasure .charaIcon:before {
+  content: "";
+  width: 38px;
+  height: 36px;
+  display: block;
+  background: url("/magica/resource/image_web/common/chara/chara_frame_S.png");
+  background-size: 38px 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+#EventWitchTop #battleInfoSec .treasure .charaIcon .charaMaskWrap {
+  width: 34px;
+  height: 34px;
+  overflow: hidden;
+  border-radius: 17px;
+  position: absolute;
+  left: 2px;
+  top: 1px;
+}
+
+#EventWitchTop #battleInfoSec .treasure .charaIcon .charaMaskWrap img {
+  width: 40px;
+  height: 44px;
+  position: relative;
+  left: -4px;
+}
+
+#EventWitchTop #battleInfoSec .missionDetailSec {
+  margin: 0 0 0 0;
+}
+
+#EventWitchTop #battleInfoSec .missionDetailSec li {
+  padding-left: 32px;
+  position: relative;
+  font-size: 18px;
+  line-height: 38px;
+}
+
+#EventWitchTop #battleInfoSec .missionDetailSec li:before {
+  width: 28px;
+  height: 28px;
+  background: url("/magica/resource/image_web/event/eventWitch/common/battle_detail/mission_star_off.png") left top no-repeat;
+  background-size: 28px 28px;
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  content: "";
+}
+
+#EventWitchTop #battleInfoSec .missionDetailSec li.cleared:before {
+  background: url("/magica/resource/image_web/event/eventWitch/common/battle_detail/mission_star_on.png") left top no-repeat;
+  background-size: 28px 28px;
+}
+
+#EventWitchTop #battleInfoSec .battleBtnSec {
+  margin: 16px 0 0 0;
+  text-align: center;
+}
+
+#EventWitchTop #battleInfoSec .battleBtnSec .battleBtn {
+  display: inline-block;
+  width: 188px;
+  height: 60px;
+  background: url("/magica/resource/image_web/event/eventWitch/common/battle_detail/btn_formation.png") left top no-repeat;
+}
+
+#EventWitchTop #scaleChangePlus {
+  width: 70px;
+  height: 62px;
+  background: url("/magica/resource/image_web/page/chara/tree/btn_big_on.png") center center no-repeat;
+  position: absolute;
+  right: 70px;
+  bottom: 4px;
+  background-size: 80%;
+}
+
+#EventWitchTop #scaleChangePlus.off {
+  background: url("/magica/resource/image_web/page/chara/tree/btn_big_off.png") center center no-repeat;
+  background-size: 80%;
+}
+
+#EventWitchTop #scaleChangeMinus {
+  width: 70px;
+  height: 62px;
+  background: url("/magica/resource/image_web/page/chara/tree/btn_small_on.png") center center no-repeat;
+  position: absolute;
+  right: 140px;
+  bottom: 4px;
+  background-size: 80%;
+}
+
+#EventWitchTop #scaleChangeMinus.off {
+  background: url("/magica/resource/image_web/page/chara/tree/btn_small_off.png") center center no-repeat;
+  background-size: 80%;
+}
+
+#EventWitchTop .forBrowserSec {
+  position: absolute;
+  width: 50%;
+  height: 0px;
+  top: 100px;
+  left: 176px;
+}
+
+#EventWitchTop .forBrowserSec .pointBtnSec {
+  display: inline-block;
+}
+
+#EventWitchTop .forBrowserSec .pointBtn {
+  display: inline-block;
+  margin: 0 0 20px 20px;
+}
+
+@-webkit-keyframes pointWrapShow {
+  0% {
+    -webkit-transform: translate3d(400px, 0, 0);
+            transform: translate3d(400px, 0, 0);
+    opacity: .3;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes pointWrapShow {
+  0% {
+    -webkit-transform: translate3d(400px, 0, 0);
+            transform: translate3d(400px, 0, 0);
+    opacity: .3;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes pointWrapHide {
+  0% {
+    -webkit-transform: translate3d(0px, 0, 0);
+            transform: translate3d(0px, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(400px, 0, 0);
+            transform: translate3d(400px, 0, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes pointWrapHide {
+  0% {
+    -webkit-transform: translate3d(0px, 0, 0);
+            transform: translate3d(0px, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate3d(400px, 0, 0);
+            transform: translate3d(400px, 0, 0);
+    opacity: 0;
+  }
+}
