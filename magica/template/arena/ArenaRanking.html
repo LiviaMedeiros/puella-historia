@@ -1,0 +1,120 @@
+<div id="ArenaRanking">
+	<div id="rankingHelp" class="mb_white se_tabs TE">
+		<span class="b_screen"></span>
+		遊び方
+	</div>
+	<!-- ユーザー情報 -->
+	<div id="userInfoWrap">
+		<!-- ユーザー名 -->
+		<div class="rankNameWrap">
+			<p class="userRank">Rank<%= model.gameUser.level %></p>
+			<p class="userName arenaColor"><%= _.escape(model.user.loginName) %></p>
+		</div>
+
+		<!-- アリーナデッキリーダー画像 -->
+		<div class="userLeader">
+			<%
+				var arenaDeck = _.findWhere(model.userDeckList,{"deckType":21});
+				var leaderCard = _.findWhere(model.userCardList,{"id":(arenaDeck.questEpisodeUserCardId)});
+			%>
+			<img data-nativeimgkey='card_<%= leaderCard.displayCardId %>_l' data-src='resource/image_native/card/image/card_<%= leaderCard.displayCardId %>_l.png'>
+		</div>
+
+		<div id="rankingBattleStatus">
+			<span class="battleCount"></span>
+			<span class="pointMagni"></span>
+		</div>
+
+		<!-- アリーナデッキ -->
+		<div class="userArenaDeck">
+			<% for(var i=1;i<6;i++){
+				if(arenaDeck["userCardId"+i] && arenaDeck["userCardId"+i] !== arenaDeck.questEpisodeUserCardId){
+					var deckCard = _.findWhere(model.userCardList,{"id":arenaDeck["userCardId"+i]});
+					if(deckCard){ %>
+			<div class="deckIcons">
+				<img data-nativeimgkey='card_<%= deckCard.displayCardId %>_f' data-src='resource/image_native/card/image/card_<%= deckCard.displayCardId %>_f.png'>
+				<div class="deckFrame"></div>
+				<div class="deckBase"></div>
+			</div>
+				<%	}else{ %>
+			<div class="deckIcons">
+				<div class="deckFrame"></div>
+				<div class="deckBase"></div>
+			</div>
+			<%		}
+				}else if(arenaDeck["userCardId"+i] !== arenaDeck.questEpisodeUserCardId){ %>
+			<div class="deckIcons">
+				<div class="deckFrame"></div>
+				<div class="deckBase"></div>
+			</div>
+			<% }
+			}
+			%>
+		</div>
+
+		<!-- チーム力とランキングポイント -->
+		<div class="userPointInfo">
+			<div class="teamPower arenaColor"><%= model.userArenaBattleMatch.userRatingPoint %></div>
+			<div class="arenaPoint arenaColor"><%= model.userArenaBattle.rankingArenaPoint %>Pt</div>
+		</div>
+
+		<div class="vsMark ranking"></div>
+
+		<!-- フッター -->
+		<div id="userInfoBottom">
+			<div class="formationBtn linkBtn se_decide TE" data-href="#/DeckFormation/arena"><span class="b_screen"></span></div>
+		</div>
+	</div>
+
+	<!-- 対戦相手表示 -->
+	<div class="enemySelect"></div>
+	<% var maxCount = (ranking.tarm === "prelim") ? ranking.preliminaryRoundBattleCount : ranking.finalRoundBattleCount; %>
+	<div class="rankingLeftCount"><%= model.gameUser.remainBattleCountOfRanking %>/<%= maxCount %>戦</div>
+
+	<ul id="matchingWrap"></ul>
+
+	<!-- リロードボタン -->
+	<div class="arenaReloadBtn TE se_decide">
+		<span class="b_screen"></span>
+		<span class="leftCount">
+			あと<span id="reloadLeftNum"><%= model.gameUser.remainReloadCountOfRanking %></span>回
+		</span>
+	</div>
+
+	<!-- グラデーション背景 -->
+	<div class="arenaGradationBg"></div>
+</div>
+
+
+<!-- 対戦相手パーツ -->
+<script type="text/template" id="arenaParts">
+	<%="<% if(model.displayTitle) { %\>"%>
+		<div class="userTitle_s <%="<%= model.displayTitle.name %\>"%>">
+			<div id="targetTitleText" class="userTitleText"><%="<%= model.displayTitle.name %\>"%></div>
+			<img id="targetTitleBg" class="userTitleBg" src="/magica/resource/image_web/common/grade/<%="<%= model.displayTitle.baseImage %\>"%>.png">
+		</div>
+	<%="<% } %\>"%>
+	<p class="enemyRank">Rank<%='<%= model.userRank%\>'%></p>
+	<p class="matchingUserName arenaColor"><%='<%= _.escape(model.userName) %\>'%></p>
+	<p class="arenaRateing arenaColor"><%='<%= model.userRatingPoint %\>'%></p>
+	<p class="bonusPoint">
+		<span class="bonusMagni">×<%='<%= model.difficult %\>'%></span>
+	</p>
+	<p class="nowPoint arenaColor"><%='<%= model.userArenaBattle.rankingArenaPoint %\>'%>&nbsp;Pt</p>
+	<div class="enemyInfoBg"></div>
+	<div class="matchingLeader">
+		<img data-nativeimgkey='card_<%="<%= model.leaderUserCard.displayCardId %\>"%>_m' data-src='resource/image_native/card/image/card_<%="<%= model.leaderUserCard.displayCardId %\>"%>_m.png'>
+	</div>
+</script>
+
+<!-- 対戦回数回復ポップ -->
+<script type="text/template" id="cureReloadCountPopupParts">
+	<div id="BpCureWrap">
+		これ以上、対戦相手を変更することはできません。<br>BP回復薬を1個使用することで対戦回数を<span class='c_red'>3</span>回復できます。<br><br>以下の時間が経過すると、自動で対戦相手が再抽選されます。<br>(対戦相手の再抽選まであと<%='<%= min %\>'%>:<%='<%= sec %\>'%>)<br>
+		<div id="bpImageWrap" class="commonFrame4">
+			<span class="nameWrap">BP回復薬</span>
+			<p class="itemRemain"><span class="pointFrame">所持数</span><br><%='<%= quantity %\>'%></p>
+			<span id="decideUse" class="mb_pink cureBtn se_decide TE popupCloseBtn<%='<% if(quantity < 1){ %\>'%> off<%='<% } %\>'%>"><span class="b_screen"></span>回復</span>
+		</div>
+	</div>
+</script>
