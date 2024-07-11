@@ -2094,7 +2094,7 @@
   count: 4
   name: '[MAIN/2/NORMAL/NORMAL] はじまりの記し (序章) / ふたつの歩み'
 1021013:
-  count: 4
+  count: 30
   name: '[MAIN/2/NORMAL/NORMAL] はじまりの記し (序章) / ふたつの歩み'
 10210151:
   count: 1
@@ -2106,7 +2106,7 @@
   count: 2
   name: '[MAIN/2/NORMAL/HARD] はじまりの記し (序章) / ふたつの歩み'
 1022011:
-  count: 4
+  count: 17
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
 1022012:
   count: 4
@@ -8634,13 +8634,13 @@
   name: '[CHARA] ういの観察日記'
 3104241:
   count: 1
-  name: '[CHARA] Lizaの試練'
+  name: '[CHARA] 火災ビンゴの試練'
 3104242:
   count: 1
-  name: '[CHARA] Lizaの試練'
+  name: '[CHARA] 火災ビンゴの試練'
 3104243:
   count: 1
-  name: '[CHARA] Lizaの試練'
+  name: '[CHARA] 火災ビンゴの試練'
 3104311:
   count: 1
   name: '[CHARA] 誰かのための神様へ'
@@ -13142,31 +13142,31 @@
   count: 1
   name: '[CHARA] 夢に向かってここからめぐれ！'
 3304311:
-  count: 2
+  count: 4
   name: '[CHARA] 生まれた時のこと'
 3304312:
-  count: 2
+  count: 3
   name: '[CHARA] 生まれた時のこと'
 3304313:
-  count: 2
+  count: 3
   name: '[CHARA] 生まれた時のこと'
 3304321:
-  count: 2
+  count: 3
   name: '[CHARA] みかづき荘で日常体験'
 3304322:
-  count: 2
+  count: 3
   name: '[CHARA] みかづき荘で日常体験'
 3304323:
-  count: 2
+  count: 3
   name: '[CHARA] みかづき荘で日常体験'
 3304331:
-  count: 2
+  count: 3
   name: '[CHARA] 学校生活はつまらない'
 3304332:
-  count: 2
+  count: 3
   name: '[CHARA] 学校生活はつまらない'
 3304333:
-  count: 2
+  count: 11
   name: '[CHARA] 学校生活はつまらない'
 3304341:
   count: 2
@@ -14132,13 +14132,13 @@
   count: 48
   name: '[CHARA] さよなら、かつてのわたし'
 3400441:
-  count: 1
+  count: 2
   name: '[CHARA] 織莉子のドッペル'
 3400442:
-  count: 1
+  count: 2
   name: '[CHARA] 織莉子のドッペル'
 3400443:
-  count: 1
+  count: 2
   name: '[CHARA] 織莉子のドッペル'
 3401111:
   count: 1
@@ -16409,19 +16409,19 @@
   count: 218
   name: '[WITCH] アリナのアトリエ'
 5219103:
-  count: 167
+  count: 181
   name: '[WITCH] アリナのアトリエ'
 5219104:
-  count: 208
+  count: 232
   name: '[WITCH] アリナのアトリエ'
 5219105:
   count: 159
   name: '[WITCH] アリナのアトリエ'
 5219201:
-  count: 61
+  count: 62
   name: '[WITCH] アリナのアトリエ'
 5219202:
-  count: 73
+  count: 94
   name: '[WITCH] アリナのアトリエ'
 5219203:
   count: 1871
