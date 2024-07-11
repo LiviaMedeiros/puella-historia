@@ -12053,31 +12053,31 @@
   count: 1
   name: '[CHARA] 莉愛のドッペル'
 3301111:
-  count: 1
+  count: 2
   name: '[CHARA] 夏目書房'
 3301112:
-  count: 2
+  count: 3
   name: '[CHARA] 夏目書房'
 3301113:
-  count: 2
+  count: 3
   name: '[CHARA] 夏目書房'
 3301121:
-  count: 1
+  count: 2
   name: '[CHARA] 踏み出せない一歩'
 3301122:
-  count: 1
+  count: 2
   name: '[CHARA] 踏み出せない一歩'
 3301123:
-  count: 1
+  count: 2
   name: '[CHARA] 踏み出せない一歩'
 3301131:
-  count: 1
+  count: 2
   name: '[CHARA] 13歳の覚悟'
 3301132:
-  count: 1
+  count: 2
   name: '[CHARA] 13歳の覚悟'
 3301133:
-  count: 1
+  count: 2
   name: '[CHARA] 13歳の覚悟'
 3301141:
   count: 1
@@ -12089,31 +12089,31 @@
   count: 1
   name: '[CHARA] かこのドッペル'
 3301211:
-  count: 1
+  count: 2
   name: '[CHARA] 侵略者'
 3301212:
-  count: 1
+  count: 2
   name: '[CHARA] 侵略者'
 3301213:
-  count: 1
+  count: 2
   name: '[CHARA] 侵略者'
 3301221:
-  count: 1
-  name: '[CHARA] 調略者'
-3301222:
-  count: 1
-  name: '[CHARA] 調略者'
-3301223:
   count: 2
   name: '[CHARA] 調略者'
+3301222:
+  count: 2
+  name: '[CHARA] 調略者'
+3301223:
+  count: 3
+  name: '[CHARA] 調略者'
 3301231:
-  count: 1
+  count: 2
   name: '[CHARA] 計略者'
 3301232:
-  count: 1
+  count: 2
   name: '[CHARA] 計略者'
 3301233:
-  count: 1
+  count: 2
   name: '[CHARA] 計略者'
 3301241:
   count: 1
@@ -12125,7 +12125,7 @@
   count: 1
   name: '[CHARA] 美雨のドッペル'
 3301311:
-  count: 1
+  count: 2
   name: '[CHARA] 出会った一品'
 3301312:
   count: 1
@@ -16403,19 +16403,19 @@
   count: 1
   name: '[DAILYTOWER] かごめの百怪波瀾'
 5219101:
-  count: 181
+  count: 183
   name: '[WITCH] アリナのアトリエ'
 5219102:
-  count: 208
+  count: 209
   name: '[WITCH] アリナのアトリエ'
 5219103:
-  count: 157
+  count: 158
   name: '[WITCH] アリナのアトリエ'
 5219104:
-  count: 199
+  count: 200
   name: '[WITCH] アリナのアトリエ'
 5219105:
-  count: 149
+  count: 150
   name: '[WITCH] アリナのアトリエ'
 5219201:
   count: 39
