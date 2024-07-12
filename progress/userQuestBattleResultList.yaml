@@ -12629,13 +12629,13 @@
   count: 2
   name: '[CHARA] 会議は揉める'
 3302721:
-  count: 1
+  count: 2
   name: '[CHARA] 共同作戦！'
 3302722:
-  count: 1
+  count: 2
   name: '[CHARA] 共同作戦！'
 3302723:
-  count: 1
+  count: 2
   name: '[CHARA] 共同作戦！'
 3302731:
   count: 1
@@ -12692,10 +12692,10 @@
   count: 1
   name: '[CHARA] あやめのドッペル'
 3302911:
-  count: 1
+  count: 2
   name: '[CHARA] 不可解な微笑み'
 3302912:
-  count: 1
+  count: 2
   name: '[CHARA] 不可解な微笑み'
 3302913:
   count: 1
@@ -16547,7 +16547,7 @@
   count: 1
   name: '[COSTUME] 名作に犠牲はつきもの'
 7100821:
-  count: 1
+  count: 2
   name: '[COSTUME] 揺るがぬ志'
 7100911:
   count: 1
@@ -16577,7 +16577,7 @@
   count: 1
   name: '[COSTUME] 探せ！前世の宝'
 7101221:
-  count: 2
+  count: 4
   name: '[COSTUME] 不屈の漫画家・かりん'
 7101311:
   count: 1
