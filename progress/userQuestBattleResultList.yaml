@@ -7787,19 +7787,19 @@
   count: 3
   name: '[CHARA] もうひとりのウチ'
 3101921:
-  count: 2
-  name: '[CHARA] こわーいあの子'
-3101922:
-  count: 2
-  name: '[CHARA] こわーいあの子'
-3101923:
   count: 3
   name: '[CHARA] こわーいあの子'
+3101922:
+  count: 3
+  name: '[CHARA] こわーいあの子'
+3101923:
+  count: 4
+  name: '[CHARA] こわーいあの子'
 3101931:
-  count: 2
+  count: 3
   name: '[CHARA] そして真っ白になる'
 3101932:
-  count: 1
+  count: 2
   name: '[CHARA] そして真っ白になる'
 3101933:
   count: 3
@@ -12881,10 +12881,10 @@
   count: 3
   name: '[CHARA] 危ないお散歩'
 3303421:
-  count: 2
+  count: 3
   name: '[CHARA] お節介な３人の少女'
 3303422:
-  count: 2
+  count: 3
   name: '[CHARA] お節介な３人の少女'
 3303423:
   count: 2
