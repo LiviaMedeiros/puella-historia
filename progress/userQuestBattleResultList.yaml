@@ -6380,7 +6380,7 @@
   count: 0
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
 10426001:
-  count: 0
+  count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
 10426002:
   count: 0
@@ -13193,13 +13193,13 @@
   count: 2
   name: '[CHARA] 埋まらない溝'
 3304423:
-  count: 1
+  count: 2
   name: '[CHARA] 埋まらない溝'
 3304431:
-  count: 1
+  count: 2
   name: '[CHARA] 選ばない未来'
 3304432:
-  count: 1
+  count: 2
   name: '[CHARA] 選ばない未来'
 3304433:
   count: 1
@@ -13232,28 +13232,28 @@
   count: 1
   name: '[CHARA] 素直な気持ち'
 3304611:
-  count: 1
+  count: 2
   name: '[CHARA] 何も知らずにいた頃'
 3304612:
-  count: 1
+  count: 2
   name: '[CHARA] 何も知らずにいた頃'
 3304613:
-  count: 1
+  count: 2
   name: '[CHARA] 何も知らずにいた頃'
 3304621:
-  count: 1
+  count: 2
   name: '[CHARA] 生まれた時から与えられた宿命'
 3304622:
-  count: 1
+  count: 2
   name: '[CHARA] 生まれた時から与えられた宿命'
 3304623:
-  count: 1
+  count: 2
   name: '[CHARA] 生まれた時から与えられた宿命'
 3304631:
-  count: 1
+  count: 2
   name: '[CHARA] この運命は受け入れられない'
 3304632:
-  count: 1
+  count: 2
   name: '[CHARA] この運命は受け入れられない'
 3304633:
   count: 1
@@ -14932,6 +14932,78 @@
 3404343:
   count: 1
   name: '[CHARA] 駿河のドッペル'
+3404411:
+  count: MISSING
+  name: '[CHARA] 撫子の魔法少女クエスト①'
+3404412:
+  count: MISSING
+  name: '[CHARA] 撫子の魔法少女クエスト①'
+3404413:
+  count: MISSING
+  name: '[CHARA] 撫子の魔法少女クエスト①'
+3404421:
+  count: MISSING
+  name: '[CHARA] 撫子の魔法少女クエスト②'
+3404422:
+  count: MISSING
+  name: '[CHARA] 撫子の魔法少女クエスト②'
+3404423:
+  count: MISSING
+  name: '[CHARA] 撫子の魔法少女クエスト②'
+3404431:
+  count: MISSING
+  name: '[CHARA] 撫子の魔法少女クエスト③'
+3404432:
+  count: MISSING
+  name: '[CHARA] 撫子の魔法少女クエスト③'
+3404433:
+  count: MISSING
+  name: '[CHARA] 撫子の魔法少女クエスト③'
+3404441:
+  count: MISSING
+  name: '[CHARA] 撫子のドッペル'
+3404442:
+  count: MISSING
+  name: '[CHARA] 撫子のドッペル'
+3404443:
+  count: 1
+  name: '[CHARA] 撫子のドッペル'
+3404511:
+  count: MISSING
+  name: '[CHARA] 翼の魔法少女クエスト①'
+3404512:
+  count: MISSING
+  name: '[CHARA] 翼の魔法少女クエスト①'
+3404513:
+  count: MISSING
+  name: '[CHARA] 翼の魔法少女クエスト①'
+3404521:
+  count: MISSING
+  name: '[CHARA] 翼の魔法少女クエスト②'
+3404522:
+  count: MISSING
+  name: '[CHARA] 翼の魔法少女クエスト②'
+3404523:
+  count: MISSING
+  name: '[CHARA] 翼の魔法少女クエスト②'
+3404531:
+  count: MISSING
+  name: '[CHARA] 翼の魔法少女クエスト③'
+3404532:
+  count: MISSING
+  name: '[CHARA] 翼の魔法少女クエスト③'
+3404533:
+  count: MISSING
+  name: '[CHARA] 翼の魔法少女クエスト③'
+3404541:
+  count: MISSING
+  name: '[CHARA] 翼のドッペル'
+3404542:
+  count: MISSING
+  name: '[CHARA] 翼のドッペル'
+3404543:
+  count: 1
+  name: '[CHARA] 翼のドッペル'
 3404611:
   count: 1
   name: '[CHARA] 忍の魔法少女クエスト①'
@@ -15004,6 +15076,42 @@
 3405143:
   count: 1
   name: '[CHARA] なのはの試練'
+3405211:
+  count: MISSING
+  name: '[CHARA] 愛機'
+3405212:
+  count: MISSING
+  name: '[CHARA] 愛機'
+3405213:
+  count: MISSING
+  name: '[CHARA] 愛機'
+3405221:
+  count: MISSING
+  name: '[CHARA] 果てしないミラーズ'
+3405222:
+  count: MISSING
+  name: '[CHARA] 果てしないミラーズ'
+3405223:
+  count: MISSING
+  name: '[CHARA] 果てしないミラーズ'
+3405231:
+  count: MISSING
+  name: '[CHARA] つながる絆'
+3405232:
+  count: MISSING
+  name: '[CHARA] つながる絆'
+3405233:
+  count: MISSING
+  name: '[CHARA] つながる絆'
+3405241:
+  count: MISSING
+  name: '[CHARA] フェイトの試練'
+3405242:
+  count: MISSING
+  name: '[CHARA] フェイトの試練'
+3405243:
+  count: 2
+  name: '[CHARA] フェイトの試練'
 3405311:
   count: 1
   name: '[CHARA] はやてちゃんがいっぱい'
