@@ -6350,7 +6350,7 @@
   count: 0
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 困難級'
 10425001:
-  count: 0
+  count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
 10425002:
   count: 0
@@ -7823,22 +7823,22 @@
   count: 2
   name: '[CHARA] あのころの追憶'
 3102021:
-  count: 1
+  count: 2
   name: '[CHARA] ハプニングは突然に'
 3102022:
-  count: 1
+  count: 2
   name: '[CHARA] ハプニングは突然に'
 3102023:
-  count: 1
+  count: 2
   name: '[CHARA] ハプニングは突然に'
 3102031:
-  count: 1
+  count: 2
   name: '[CHARA] ずっとこの先も'
 3102032:
-  count: 1
+  count: 2
   name: '[CHARA] ずっとこの先も'
 3102033:
-  count: 1
+  count: 2
   name: '[CHARA] ずっとこの先も'
 3102041:
   count: 1
@@ -13190,7 +13190,7 @@
   count: 2
   name: '[CHARA] 埋まらない溝'
 3304422:
-  count: 1
+  count: 2
   name: '[CHARA] 埋まらない溝'
 3304423:
   count: 1
