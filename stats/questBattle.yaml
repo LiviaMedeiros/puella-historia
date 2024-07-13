@@ -1,6 +1,6 @@
 ---
 continueNum: 9
-murderNum: 134210
+murderNum: 134282
 deadNum: 1633
 connectNum: 6074
 totesDamageByFire: 322205653
@@ -10,9 +10,9 @@ totesDamageByLight: 538648088
 totesDamageByDark: 1397734161
 totesDamageByVoid: 336019515
 totesDamage: 179178108
-totesTurn: 50818
+totesTurn: 50836
 results:
-  SUCCESSFUL: 15333
+  SUCCESSFUL: 15342
   FAILED: 346
-sufferingInflicted: 926256
+sufferingInflicted: 926529
 ...
