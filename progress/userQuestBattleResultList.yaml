@@ -3642,7 +3642,7 @@
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / プロローグ'
 1029021:
-  count: 2
+  count: 3
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / ユニオン編 1話'
 10290251:
   count: 1
@@ -3702,13 +3702,13 @@
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / ユニオン編 10話'
 1029121:
-  count: 2
+  count: 3
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / プロミストブラッド編 1話'
 10291251:
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / プロミストブラッド編 1話'
 1029131:
-  count: 2
+  count: 3
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / プロミストブラッド編 2話'
 10291351:
   count: 1
@@ -3762,7 +3762,7 @@
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / プロミストブラッド編 10話'
 1029221:
-  count: 2
+  count: 3
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 時女一族編 1話'
 10292251:
   count: 1
@@ -3822,7 +3822,7 @@
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 時女一族編 10話'
 1029321:
-  count: 2
+  count: 3
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / フォークロア編 1話'
 10293251:
   count: 1
@@ -15293,7 +15293,7 @@
   count: 53
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 木属性'
 4000741:
-  count: 4
+  count: 17
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 光属性'
 4000742:
   count: 4
