@@ -3648,13 +3648,13 @@
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / ユニオン編 1話'
 1029031:
-  count: 2
+  count: 3
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / ユニオン編 2話'
 10290351:
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / ユニオン編 2話'
 1029041:
-  count: 2
+  count: 3
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / ユニオン編 3話'
 10290451:
   count: 1
@@ -3714,7 +3714,7 @@
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / プロミストブラッド編 2話'
 1029141:
-  count: 2
+  count: 3
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / プロミストブラッド編 3話'
 10291451:
   count: 1
@@ -3768,13 +3768,13 @@
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 時女一族編 1話'
 1029231:
-  count: 2
+  count: 3
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 時女一族編 2話'
 10292351:
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 時女一族編 2話'
 1029241:
-  count: 2
+  count: 3
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 時女一族編 3話'
 10292451:
   count: 1
@@ -3828,13 +3828,13 @@
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / フォークロア編 1話'
 1029331:
-  count: 2
+  count: 3
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / フォークロア編 2話'
 10293351:
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / フォークロア編 2話'
 1029341:
-  count: 2
+  count: 3
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / フォークロア編 3話'
 10293451:
   count: 1
@@ -14860,6 +14860,78 @@
 3404143:
   count: 1
   name: '[CHARA] ひたぎのドッペル'
+3404211:
+  count: 2
+  name: '[CHARA] 真宵の魔法少女クエスト①'
+3404212:
+  count: 1
+  name: '[CHARA] 真宵の魔法少女クエスト①'
+3404213:
+  count: 1
+  name: '[CHARA] 真宵の魔法少女クエスト①'
+3404221:
+  count: 2
+  name: '[CHARA] 真宵の魔法少女クエスト②'
+3404222:
+  count: 2
+  name: '[CHARA] 真宵の魔法少女クエスト②'
+3404223:
+  count: 2
+  name: '[CHARA] 真宵の魔法少女クエスト②'
+3404231:
+  count: 1
+  name: '[CHARA] 真宵の魔法少女クエスト③'
+3404232:
+  count: 1
+  name: '[CHARA] 真宵の魔法少女クエスト③'
+3404233:
+  count: 1
+  name: '[CHARA] 真宵の魔法少女クエスト③'
+3404241:
+  count: 1
+  name: '[CHARA] 真宵のドッペル'
+3404242:
+  count: 1
+  name: '[CHARA] 真宵のドッペル'
+3404243:
+  count: 1
+  name: '[CHARA] 真宵のドッペル'
+3404311:
+  count: 1
+  name: '[CHARA] 駿河の魔法少女クエスト①'
+3404312:
+  count: 1
+  name: '[CHARA] 駿河の魔法少女クエスト①'
+3404313:
+  count: 1
+  name: '[CHARA] 駿河の魔法少女クエスト①'
+3404321:
+  count: 1
+  name: '[CHARA] 駿河の魔法少女クエスト②'
+3404322:
+  count: 0
+  name: '[CHARA] 駿河の魔法少女クエスト②'
+3404323:
+  count: MISSING
+  name: '[CHARA] 駿河の魔法少女クエスト②'
+3404331:
+  count: MISSING
+  name: '[CHARA] 駿河の魔法少女クエスト③'
+3404332:
+  count: MISSING
+  name: '[CHARA] 駿河の魔法少女クエスト③'
+3404333:
+  count: MISSING
+  name: '[CHARA] 駿河の魔法少女クエスト③'
+3404341:
+  count: MISSING
+  name: '[CHARA] 駿河のドッペル'
+3404342:
+  count: MISSING
+  name: '[CHARA] 駿河のドッペル'
+3404343:
+  count: MISSING
+  name: '[CHARA] 駿河のドッペル'
 3404611:
   count: 1
   name: '[CHARA] 忍の魔法少女クエスト①'
@@ -15326,7 +15398,7 @@
   count: 4
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
 4000764:
-  count: 35
+  count: 47
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
 4200101:
   count: MISSING
