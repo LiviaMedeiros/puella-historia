@@ -1,0 +1,130 @@
+<%
+	// ストーリーかどうかの判定
+	var isStory = (bonus.storyIds) ? true : false;
+%>
+<div class="campaignBonusWrap<% if(isStory){ %> loginStory<% } %>">
+
+	<!-- アニメーション用/アイテムがなければそもそも生成しない -->
+	<% if(bonus.loginBonusList){ %>
+		<div id="campaignAnimationWrap">
+			<div class="animationBaseWrap">
+				<div class="animItemWrap">
+					<% _.each(bonus.loginBonusList,function(model,index){ %>
+						<div class="animItemBox">
+							<!-- アイテム画像 -->
+
+							<!-- 覚醒素材 -->
+							<% if(model.presentType === "GIFT"){ %>
+								<img data-nativeimgkey='gift_<%= model.gift.id %>' data-src='resource/image_native/gift/item_gift_<%= model.gift.id %>.png'>
+
+							<!-- カースチップ -->
+							<% }else if(model.presentType === "RICHE"){ %>
+								<img src="/magica/resource/image_web/item/main/riche.png">
+
+							<!-- メモリア -->
+							<% }else if(model.presentType === "PIECE" || model.presentType === "MAXPIECE"){ console.log(model.piece);%>
+								<img src="/magica/resource/image_web/memoria/memoria_<%= model.piece.pieceId %>_s.png">
+
+							<!-- 通常アイテム -->
+							<% }else{ %>
+
+								<!-- イベントアイテム判断 -->
+								<% if(model.itemId.indexOf("EVENT_") > -1){ %>
+									<img src="/magica/resource/image_web/item/event/<%= model.itemId.toLowerCase() %>.png">
+								<% }else if(model.presentType === "GIFT"){ %>
+									<img data-nativeimgkey='gift_<%= model.gift.id %>' data-src='resource/image_native/gift/item_gift_<%= model.gift.id %>.png'>
+								<% }else{ %>
+									<img src="/magica/resource/image_web/item/main/<%= model.itemId.toLowerCase() %>.png">
+								<% } %>
+
+							<% } %>
+							<span class="campaignQuantity ts_gold">×<%= model.quantity %></span>
+						</div>
+					<% }); %>
+				</div>
+				<div class="animEf01"></div>
+				<div class="animEf02"></div>
+				<div class="itemPetal1"></div>
+				<div class="itemPetal2"></div>
+				<div class="animRibon"></div>
+				<div class="animTx"></div>
+				<div class="animRolingLight"></div>
+			</div>
+		</div>
+
+
+		<!-- ストーリーログインボーナスの時は生成しない -->
+		<% if(!isStory){ %>
+		<!-- 基礎表示用 -->
+		<div class="campaignBaseWrap">
+
+			<!-- 開催期間 -->
+			<% if(campaign.description){ %>
+				<div class="limitedWrap">
+					<% var toBr = campaign.description.replace(/＠/gi, '<br>') %>
+					<%= toBr %>
+				</div>
+			<% } %>
+
+			<div class="bonusItemWrap commonFrame3">
+				<div class="bonusDays common_title_frame">
+					<% if (bonus.campaign && bonus.campaign.parameterMap && bonus.campaign.parameterMap.LOGIN_BONUS_TITLE) { %>
+						<%= bonus.campaign.parameterMap.LOGIN_BONUS_TITLE %>
+					<% } else { %>
+						ログイン<%= bonus.loginCount %>日目
+					<% } %>
+				</div>
+
+				<!-- ログボアイテム -->
+				<div class="itemsWrap">
+				<% _.each(bonus.loginBonusList,function(model,index){ %>
+					<div class="itemBox">
+						<div class="itemImage">
+							<!-- アイテム画像 -->
+							<% if(model.presentType === "GIFT"){ %>
+								<img data-nativeimgkey='gift_<%= model.gift.id %>' data-src='resource/image_native/gift/item_gift_<%= model.gift.id %>.png'>
+
+							<!-- カースチップ -->
+							<% }else if(model.presentType === "RICHE"){ %>
+								<img src="/magica/resource/image_web/item/main/riche.png">
+
+							<!-- メモリア -->
+							<% }else if(model.presentType === "PIECE" || model.presentType === "MAXPIECE"){ %>
+								<img src="/magica/resource/image_web/memoria/memoria_<%= model.piece.pieceId %>_s.png">
+
+							<!-- 通常アイテム -->
+							<% }else{ %>
+
+								<!-- イベントアイテム判断 -->
+								<% if(model.itemId.indexOf("EVENT_") > -1){ %>
+									<img src="/magica/resource/image_web/item/event/<%= model.itemId.toLowerCase() %>.png">
+								<% }else if(model.presentType === "GIFT"){ %>
+									<img data-nativeimgkey='gift_<%= model.gift.id %>' data-src='resource/image_native/gift/item_gift_<%= model.gift.id %>.png'>
+								<% }else{ %>
+									<img src="/magica/resource/image_web/item/main/<%= model.itemId.toLowerCase() %>.png">
+								<% } %>
+
+							<% } %>
+
+							<!-- アイテム個数 -->
+							<% if(model.quantity > 1){ %>
+								<span class="quantity ts_gold">×<%= model.quantity %></span>
+							<% } %>
+						</div>
+						<div class="itemName"><%= model.displayName %></div>
+					</div>
+				<% }); %>
+				</div>
+			</div>
+			<div class="getMessageWrap c_gold">
+				獲得したアイテムは直接付与されています
+			</div>
+		</div>
+		<% } %>
+	<% } %>
+
+	<!-- 背景 -->
+	<div class="campaignBg">
+		<img src="<%= bonus.imagePath %>">
+	</div>
+</div>
