@@ -6368,16 +6368,16 @@
   count: 0
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
 10425007:
-  count: 0
+  count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
 10425008:
-  count: 0
+  count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
 10425009:
-  count: 0
+  count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
 10425010:
-  count: 0
+  count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
 10426001:
   count: 1
@@ -12137,19 +12137,19 @@
   count: 3
   name: '[CHARA] まさか私が!?'
 3301322:
-  count: 2
+  count: 3
   name: '[CHARA] まさか私が!?'
 3301323:
-  count: 2
+  count: 3
   name: '[CHARA] まさか私が!?'
 3301331:
-  count: 2
+  count: 3
   name: '[CHARA] 見つけたレシピ'
 3301332:
-  count: 2
+  count: 3
   name: '[CHARA] 見つけたレシピ'
 3301333:
-  count: 2
+  count: 3
   name: '[CHARA] 見つけたレシピ'
 3301341:
   count: 1
@@ -13811,10 +13811,10 @@
   count: 2
   name: '[CHARA] 家族の形は変わっても'
 3350332:
-  count: 1
+  count: 2
   name: '[CHARA] 家族の形は変わっても'
 3350333:
-  count: 1
+  count: 2
   name: '[CHARA] 家族の形は変わっても'
 3350341:
   count: 1
@@ -14069,22 +14069,22 @@
   count: 1
   name: '[CHARA] キリカのドッペル'
 3400311:
-  count: 1
+  count: 2
   name: '[CHARA] ゆまのヒーローだよ'
 3400312:
-  count: 1
+  count: 2
   name: '[CHARA] ゆまのヒーローだよ'
 3400313:
-  count: 1
+  count: 2
   name: '[CHARA] ゆまのヒーローだよ'
 3400321:
-  count: 1
-  name: '[CHARA] キョーコはゆまが助けるの'
-3400322:
   count: 2
   name: '[CHARA] キョーコはゆまが助けるの'
+3400322:
+  count: 3
+  name: '[CHARA] キョーコはゆまが助けるの'
 3400323:
-  count: 1
+  count: 2
   name: '[CHARA] キョーコはゆまが助けるの'
 3400331:
   count: 1
@@ -14537,16 +14537,16 @@
   count: 2
   name: '[CHARA] ラピヌのドッペル'
 3402811:
-  count: 1
+  count: 2
   name: '[CHARA] “乙女”の見た夢'
 3402812:
-  count: 1
+  count: 2
   name: '[CHARA] “乙女”の見た夢'
 3402813:
-  count: 1
+  count: 2
   name: '[CHARA] “乙女”の見た夢'
 3402821:
-  count: 1
+  count: 2
   name: '[CHARA] いつわりと救い'
 3402822:
   count: 1
