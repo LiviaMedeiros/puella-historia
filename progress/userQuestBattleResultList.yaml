@@ -2184,28 +2184,28 @@
   count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
 10220251:
-  count: 1
-  name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
-10220252:
-  count: 1
-  name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
-10220253:
   count: 2
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
+10220252:
+  count: 2
+  name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
+10220253:
+  count: 3
+  name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
 10220254:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
 10220255:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
 10220256:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
 10220257:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
 10220258:
-  count: 1
+  count: 30
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
 10220259:
   count: 1
@@ -3678,7 +3678,7 @@
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / ユニオン編 6話'
 1029081:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / ユニオン編 7話'
 10290851:
   count: 1
@@ -3738,7 +3738,7 @@
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / プロミストブラッド編 6話'
 1029181:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / プロミストブラッド編 7話'
 10291851:
   count: 1
@@ -3798,7 +3798,7 @@
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 時女一族編 6話'
 1029281:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 時女一族編 7話'
 10292851:
   count: 1
@@ -8147,7 +8147,7 @@
   count: 2
   name: '[CHARA] 煮え切らない日々'
 3102921:
-  count: 1
+  count: 2
   name: '[CHARA] 初めての理解者'
 3102922:
   count: 1
