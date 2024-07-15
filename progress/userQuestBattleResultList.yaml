@@ -30,13 +30,13 @@
   count: 10
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
 10110251:
-  count: 2
+  count: 11
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
 10110252:
-  count: 2
+  count: 12
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
 10110253:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
 10110254:
   count: 1
@@ -51,7 +51,7 @@
   count: 6
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
 1011034:
-  count: 188
+  count: 218
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
 1011035:
   count: 7
@@ -5633,7 +5633,7 @@
   count: 4
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film4'
 10420415:
-  count: 3
+  count: 4
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film4'
 10420416:
   count: 4
