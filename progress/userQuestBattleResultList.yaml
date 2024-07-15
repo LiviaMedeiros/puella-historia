@@ -9,10 +9,10 @@
   count: 11
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
 10110151:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 小さいキュゥべえ'
 10110152:
-  count: 2
+  count: 5
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 小さいキュゥべえ'
 10110153:
   count: 2
@@ -42,7 +42,7 @@
   count: 1
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
 1011031:
-  count: 6
+  count: 12
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
 1011032:
   count: 6
@@ -5618,10 +5618,10 @@
   count: 4
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film4'
 10420403:
-  count: 3
+  count: 4
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film4'
 10420404:
-  count: 3
+  count: 4
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film4'
 10420406:
   count: 3
@@ -9569,13 +9569,13 @@
   count: 1
   name: '[CHARA] 天音姉妹のドッペル'
 3112011:
-  count: 1
+  count: 2
   name: '[CHARA] 目撃されて夏'
 3112012:
-  count: 1
+  count: 2
   name: '[CHARA] 目撃されて夏'
 3112013:
-  count: 1
+  count: 2
   name: '[CHARA] 目撃されて夏'
 3112021:
   count: 1
@@ -13934,31 +13934,31 @@
   count: 3
   name: '[CHARA] 対話するほどに'
 3390121:
-  count: 2
+  count: 3
   name: '[CHARA] 交錯するほどに'
 3390122:
-  count: 2
+  count: 3
   name: '[CHARA] 交錯するほどに'
 3390123:
-  count: 2
+  count: 3
   name: '[CHARA] 交錯するほどに'
 3390131:
-  count: 2
+  count: 3
   name: '[CHARA] 浸食するほどに'
 3390132:
-  count: 2
+  count: 3
   name: '[CHARA] 浸食するほどに'
 3390133:
-  count: 2
+  count: 3
   name: '[CHARA] 浸食するほどに'
 3390141:
-  count: 1
+  count: 2
   name: '[CHARA] ユゥのドッペル'
 3390142:
-  count: 1
+  count: 2
   name: '[CHARA] ユゥのドッペル'
 3390143:
-  count: 1
+  count: 2
   name: '[CHARA] ユゥのドッペル'
 3390211:
   count: 1
