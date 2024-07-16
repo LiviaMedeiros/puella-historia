@@ -1,0 +1,156 @@
+<div id="RegularEventGroupBattleResult">
+
+	<!-- ダメージ演出 -->
+	<div id="damageAnimationWrap">
+
+		<div id="damageBgWrap">
+			<div class="bg1"></div>
+			<div class="bg2"></div>
+		</div>
+
+		<div id="damageEffectWrap">
+			<div class="effect1"></div>
+			<div class="effect2"></div>
+			<div class="effect3"></div>
+			<div class="effect4"></div>
+			<div class="effect6 anim1"></div>
+			<div class="effect6 anim2"></div>
+			<div class="effect7"></div>
+		</div>
+
+		<div id="damageTitleWrap">
+			<div class="sword1"></div>
+			<div class="sword2"></div>
+			<div class="sword1 fadeout"></div>
+			<div class="sword2 fadeout"></div>
+			<div class="effect5"></div>
+			<div class="textBg"></div>
+			<div class="text1"></div>
+			<div class="text2"></div>
+			<div class="textNum">
+				<% _.forEach(String(resultModel.damage).split(''),function(txt){ %>
+				<div class='num<%= txt %>'></div>
+				<% }) %>
+			</div>
+			<div class="bottom"></div>
+		</div>
+	</div>
+
+	<% var isSimulate = resultModel.isSimulate; %>
+	<div id="resultAnimationWrap">
+		<!-- 背景 -->
+		<div id="resultBgWrap">
+			<div class="bg1"></div>
+			<div class="bg1 add"></div>
+			<div class="bg2"></div>
+			<div class="bg3"></div>
+		</div>
+
+		<div id="resultTitleWrap">
+			<div id="resultTitleBg"></div>
+			<div id="resultTitle">
+				<div id="resultTitleImg"></div>
+				<div id="resultTitleHeader"></div>
+			</div>
+		</div>
+
+		<div id="resultEffectWrap">
+			<div class="clearLight"></div>
+			<div class="circle01"></div>
+			<div class="circle03"></div>
+			<div class="circle04"></div>
+		</div>
+
+		<div id="resultMainWrap">
+			<div id="resultParamDamage" class="resultFrame01">
+				<div class="resultTitle fontResult">合計ダメージ</div>
+				<div class="resultValue fontResult"><%= resultModel.damage %></div>
+			</div>
+			<div id="resultParamBossBonus" class="resultFrame02">
+				<div class="resultTitle fontResult">ボスLvボーナス</div>
+				<div class="resultValue fontResult">x<%= resultModel.bossBonus %></div>
+			</div>
+			<div id="resultParamBattleBonus" class="resultFrame02">
+				<div class="resultTitle fontResult">バトル評価ボーナス</div>
+				<div class="resultValue fontResult">x<%= resultModel.battleBonus %></div>
+			</div>
+			<div id="resultParamGp" class="resultFrame01">
+				<div class="resultTitle fontResult">獲得GP</div>
+				<div class="resultValue fontResult"><%= resultModel.gp %></div>
+			</div>
+			<div id="resultParamTakeOverCharge" class="resultFrame03">
+				<div class="resultTitle fontResult">引き継ぎチャージ数</div>
+				<% if (!isSimulate) { %>
+				<div class="resultValue fontResult"><%= resultModel.takeOverChargeCount %></div>
+				<% } else { %>
+				<div class="resultValue fontResult">-</div>
+				<% } %>
+			</div>
+			<div id="resultParamTakeoverMp" class="resultFrame03">
+				<div class="resultTitle fontResult">引き継ぎMP</div>
+				<% if (!isSimulate) { %>
+				<div class="resultValue fontResult"><%= resultModel.takeOverMp %></div>
+				<% } else { %>
+				<div class="resultValue fontResult">-</div>
+				<% } %>
+			</div>
+			<div id="resultParamMedal" class="resultFrame03 touchScreenStart">
+				<div class="resultTitle fontResult">獲得メダル</div>
+				<% if (!isSimulate) { %>
+				<div class="resultValue fontResult withImg">
+					<img src="/magica/resource/image_web/common/icon/event/icon_event_groupbattle_coin_f.png">
+					×<%= resultModel.medal %>
+				</div>
+				<% } else { %>
+				<div class="resultValue fontResult">-</div>
+				<% } %>
+			</div>
+		</div>
+	</div>
+
+	<!-- タッチスクリーン -->
+	<div class="touch_screen hide"></div>
+	<div id="touchScreen" class="hide"></div>
+
+	<% if (resultModel.turnList && resultModel.turnList.length > 0) { %>
+	<div id="turnInfoBtn" class="sb_regular_02 TE se_decide">詳細</div>
+	<% } %>
+</div>
+
+<script type="text/template" id="TurnInfoPartsTemp">
+	<div class="assistanceDamageWrap">
+		<div class="title gbFontWhite">合計補助ダメージ</div>
+		<div class="value gbFontWhite"><%= resultModel.assistanceDamage %></div>
+	</div>
+	<div class="totaDamagelWrap">
+		<div class="title gbFontWhite">合計攻撃ダメージ</div>
+		<div class="value gbFontWhite"><%= resultModel.damage %></div>
+	</div>
+	<div id="scrollOuter" class="turnList">
+		<div class="scrollInner">
+		<% _.each(resultModel.turnList, function(txt,index){ %>
+		<div class="turnInfoWrap">
+			<div class="turn gbFontWhite">Turn <%= index+1 %></div>
+			<div class="skillWrap">
+				<div class="title gbFontWhite">スキル数</div>
+				<div class="value gbFontWhite"><%= txt.skillNum %></div>
+			</div>
+			<div class="damageWrap">
+				<div class="title gbFontWhite">攻撃ダメージ</div>
+				<div class="value gbFontWhite"><%= txt.totalDamage %></div>
+			</div>
+
+			<div class="discPreview flexBox">
+				<% _.each(txt.charaList, function(disk){ %>
+				<div class='discWrap <%= disk.discType %>'>
+					<div class="discText"></div>
+					<img data-nativeimgkey='mini_<%= disk.charaId %>00_d' data-src='resource/image_native/mini/image/mini_<%= disk.charaId %>00_d.png'>
+					<span class="attribute"><span class='type_f <%= disk.attributeId %>'></span></span>
+				</div>
+				<% }) %>
+			</div>
+		</div>
+		<% }) %>
+		</div>
+	</div>
+</script>

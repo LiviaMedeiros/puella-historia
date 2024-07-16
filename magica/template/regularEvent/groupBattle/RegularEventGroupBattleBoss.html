@@ -1,0 +1,284 @@
+<div id="RegularEventGroupBattleBoss">
+
+	<% if (eventStatus == "final") { %>
+	<div id="miniCharaList">
+		<% _.forEach(sortedRankingList, function(model, index){ %>
+			<% if (model.charaModel) { %>
+				<div class="memberWrap <% if (model.isMyself) { %>myself<% } %>" data-user-id="<%= model.userId %>" style="left:<%= model.charaModel.objX %>px;bottom:<%= model.charaModel.objY %>px;">
+					<div class="userName gbFontWhite"><%= _.escape(model.loginName) %></div>
+				</div>
+			<% } %>
+		<% }) %>
+	</div>
+	<% } %>
+
+	<!-- バトル情報 -->
+	<div id="bossBattleInfoWrap" class="battleInfoWrap">
+		<div class="title <%= eventStatus %>">
+		<% if (eventStatus == "final") { %>
+			<span class="gbFontGold">後半</span><span class="gbFontWhite">　グループ戦</span>
+		<% } else { %>
+			<span class="gbFontGold">前半</span>
+		<% } %>
+		</div>
+
+		<div class="bossHpGaugeWrap">
+			<div class="gaugeWrap">
+				<div id="bossHpGauge" class="gauge" style="width:<%= beforeHpRate %>%;" data-after="<%= afterHpRate %>%"></div>
+				<div id="bossHpDamageEffect"></div>
+			</div>
+		</div>
+
+		<div class="bossHpTextWrap gbFontImgS" data-before="<%= beforeHp %>" after="<%= afterHp %>"></div>
+
+		<div class="bossName gbFontWhite"><%= battleDetailModel.boss.name %></div>
+		<div class="bossLevel gbFontGold">Lv <%= battleDetailModel.boss.level %></div>
+
+		<div class="bossAttribute attribute">
+			<span class="type_f <%= battleDetailModel.boss.attributeId %>"></span>
+		</div>
+
+		<!-- 遊び方ポップボタン -->
+		<div id="eventNaviBtn" class="sb_gold_01 TE se_decide">攻略のヒント</div>
+	</div>
+
+	<% if (eventStatus == "final") { %>
+	<div class="groupInfoWrap">
+		<div class="groupInfo">
+			<div class="header groupName gbFontWhite"><%= regularEventGroupBattleUserGroup.name %></div>
+			<div class="groupRank gbFontWhite">
+				<div class="title gbFontWhite">グループ順位</div>
+				<% if (regularEventGroupBattleUserGroup.ranking) { %>
+				<div class="value gbFontImgS">
+					<% _.forEach(String(regularEventGroupBattleUserGroup.ranking).split(''),function(txt){ %>
+					<div class='num<%= txt %>'></div>
+					<% }) %>
+				</div>
+				<% } %>
+			</div>
+			<div class="personalRank gbFontWhite">
+				<div class="title gbFontWhite">個人順位</div>
+				<% if (regularEventGroupBattleUserGroup.personalRanking) { %>
+				<div class="value gbFontImgS">
+					<% _.forEach(String(regularEventGroupBattleUserGroup.personalRanking).split(''),function(txt){ %>
+					<div class='num<%= txt %>'></div>
+					<% }) %>
+				</div>
+				<% } %>
+			</div>
+		</div>
+		<div class="changePageBtn TE se_decide" data-pageid="PAGE_USER"></div>
+		<% if (battleDetailModel.userRegularEventGroupBattle.remainGoodCount > 0) { %>
+		<div class="groupBtnBadge gbFontWhite"><span>「いいね」</span>をして<br><span>MP</span>を獲得！</div>
+		<% } %>
+	</div>
+	<% } %>
+
+	<!-- フッター -->
+	<div id="bottomWrap">
+
+		<div id="gpInfoWrap">
+			<div class="header gbFontWhite">グレード</div>
+			<div class="gradeIcon grade<%= userRegularEventGroupBattle.grade %>"></div>
+
+			<% var nextGp = battleDetailModel ? battleDetailModel.nextRequiredGp : null; %>
+			<% if (nextGp) { %>
+			<div class="nextGpWrap">
+				<div class="title gbFontWhite">次のグレードまで</div>
+				<div class="value gbFontImgL">
+					<% _.forEach(String(nextGp-userRegularEventGroupBattle.totalGp).split(''),function(txt){ %>
+					<div class='num<%= txt %>'></div>
+					<% }) %>
+				</div>
+			</div>
+
+			<div class="nextRewardWrap">
+				<div class="title gbFontWhite">獲得報酬</div>
+				<div class="rewardWrap">
+					<% var rewardCodesArr = currentReward.rewardCodes.split(','); %>
+					<% var rewardCode = rewardCodesArr[0].split('_'); %>
+
+					<% var quantity = rewardCode[rewardCode.length-1]; %>
+					<% if (rewardCode[0]=='GIFT') { %>
+						<% var imgPath = 'item_gift_' + rewardCodeArr[1]; %>
+						<img data-nativeimgkey="gift_<%='<%= imgPath %\>'%>" data-src="resource/image_native/gift/<%= imgPath %>.png">
+					<% } else { %>
+						<% rewardCode.shift(); rewardCode.pop(); var imgPath = ((rewardCode.indexOf('EVENT_') > -1)? 'event':'main') + '/' + rewardCode.join('_').toLowerCase(); %>
+						<img src="/magica/resource/image_web/item/<%= imgPath %>.png" />
+					<% } %>
+					<span class="quantity">×<%= quantity %></span>
+				</div>
+			</div>
+			<% } else { %>
+			<div class="nextGpWrap">
+				<div class="title gbFontWhite finish">最高グレードに到達しました</div>
+			</div>
+			<% } %>
+
+			<div id="rewardBtn" class="sb_gold_01 TE se_decide">報酬一覧</div>
+		</div>
+
+		<div id="damageInfoWrap">
+			<div class="header gbFontWhite">ダメージ</div>
+			<div class="emblemIcon emblem<%= userRegularEventGroupBattle.maxEmblem %>"></div>
+			<div class="dailyDamageWrap">
+				<div class="title gbFontWhite">デイリーダメージ</div>
+				<div class="value gbFontImgL">
+					<% _.forEach(String(battleDetailModel.dailyDamage).split(''),function(txt){ %>
+					<div class='num<%= txt %>'></div>
+					<% }) %>
+				</div>
+			</div>
+			<div class="beforeDamageWrap">
+				<div class="title gbFontWhite">前回ダメージ</div>
+				<div class="value gbFontImgS">
+				<% if (battleDetailModel.lastDamage) {  %>
+					<% _.forEach(String(battleDetailModel.lastDamage).split(''),function(txt){ %>
+					<div class='num<%= txt %>'></div>
+					<% }) %>
+				<% } else { %>
+					<div class='none'></div>
+				<% } %>
+				</div>
+			</div>
+		</div>
+
+		<div id="shopItemWrap">
+			<img src="/magica/resource/image_web/common/icon/event/icon_event_groupbattle_coin_f.png">
+			<p class="gbFontGold">× <span id="shopItemQuantity" class="gbFontGold"><%= shopItemQuantity %></span></p>
+		</div>
+		<div id="shopBtn" class="sb_gold_01 TE se_decide linkBtn" data-href="#/ShopTop/<%= eventMaster.shopId %>">ショップ</div>
+
+		<div id="missionBtn" class="sb_gold_01 TE se_decide">ミッション<span id="missionBtnBatch" class="batch"></span></div>
+		<div id="battleLogBtn" class="sb_gold_01 TE se_decide">バトルログ</div>
+		<div id="rankingPageBtn" class="changePageBtn sb_gold_01 TE se_decide" data-pageid="PAGE_RANKING" data-backpageid="PAGE_BOSS">ランキング</div>
+		<div class="battleStartBtn se_decide TE" data-type="simulate"></div>
+		<div class="battleStartBtn se_decide TE" data-type="performance">
+
+			<% var cnt = battleDetailModel.userRegularEventGroupBattle.remainBattleCount; %>
+			<% var max = eventMaster.regularEventGroupBattle.maxBattleCount; %>
+			<ul class="battleCountIconList">
+				<% var i=0; while(i<max) { %>
+				<li class="<% if(i<cnt){ %>on<% } %>"></li>
+				<% i=(i+1)|0; } %>
+			</ul>
+		</div>
+
+		<div class="takeOverInfoWrap">
+			<div class="mpWrap">
+				<div class="title gbFontWhite">引継ぎMP</div>
+				<div class="value gbFontGold"><%= parseInt(battleDetailModel.userRegularEventGroupBattle.takeOverMp/10) %></div>
+			</div>
+			<div class="chargeWrap">
+				<div class="title gbFontWhite">チャージ数</div>
+				<div class="value gbFontGold"><%= battleDetailModel.userRegularEventGroupBattle.takeOverChargeCount %></div>
+			</div>
+		</div>
+
+		<% if (window.isDebug) { %>
+			<div class="debugBtn" data-type="UpgradeAnim"></div>
+			<div class="debugBtn" data-type="resurrectAnim"></div>
+			<div class="debugBtn" data-type="defeatAnim"></div>
+			<div class="debugBtn" data-type="attackAnim"></div>
+		<% } %>
+	</div>
+
+	<!-- 難易度選択 -->
+	<div class="selectDifficultyWrap"></div>
+</div>
+
+<!-- HPテキスト -->
+<script type="text/template" id="hpTextPartsTemp">
+	<%='<% _.forEach(String(currentHp).split(""),function(txt){ %\>'%>
+	<div class="num<%='<%= txt %\>'%>"></div>
+	<%='<% }) %\>'%>
+</script>
+
+<!-- キモチ戦回復ポップ -->
+<script type="text/template" id="dailyResultPartsTemp">
+	キモチ戦の挑戦回数が回復しました。<br>
+	前日のデイリーダメージ
+	<span class="gbFontImgS">
+	<%='<% _.forEach(String(dailyDamage).split(""),function(txt){ %\>'%>
+	<div class="num<%='<%= txt %\>'%>"></div>
+	<%='<% }) %\>'%>
+	</span>の評価<br>
+
+	<div class="emblemWrap">
+		<div class="bg"></div>
+		<div class="emblemIcon emblem<%='<%= emblem %\>'%>"></div>
+	</div>
+
+	<%='<% if (goodCount > 0) { %\>'%>
+	<div class="goodWrap">
+		<div class="title gbFontWhite">いいね</div>
+		<div class="value gbFontWhite"><%='<%= goodCount %\>'%></div>
+	</div>
+	<div class='supportPtWrap'>
+		<div class="title gbFontWhite">サポートPt</div>
+		<div class="value gbFontWhite"><%='<%= supportPt %\>'%></div>
+	</div>
+	<br>を獲得しました。
+	<%='<% } %\>'%>
+</script>
+
+<!-- ボス復活演出 -->
+<script type="text/template" id="ResurrectPartsTemp">
+	<div id="resurrectAnimationWrap">
+
+		<div id="resurrectBgWrap">
+			<div class="bg animationEnd"></div>
+			<div class="bgTitle"></div>
+		</div>
+
+		<div id="resurrectBossWrap">
+			<% var bossImg = "/magica/resource/image_web/regularEvent/groupBattle/" + eventMaster.viewParameterMap.BOSS_ID + "/img_boss.png"; %>
+			<img class="boss" src="<%= bossImg %>" />
+			<img class="boss effect" src="<%= bossImg %>" />
+		</div>
+
+		<div id="resurrectTitleWrap">
+			<div class="title"></div>
+			<div class="title effect"></div>
+			<div class="subtitle"></div>
+			<div class="text"><%= battleDetailModel.boss.name %>  Lv<%= battleDetailModel.boss.level %>が出現！</div>
+		</div>
+	</div>
+</script>
+
+<!-- グレード上昇演出 -->
+<script type="text/template" id="UpgradePartsTemp">
+	<div id="upgradeAnimationWrap">
+
+		<div id="upgradeTitleWrap">
+			<div class="effect4"></div>
+			<div class="effect4 reverse"></div>
+			<div class="crown"></div>
+			<div class="textBg"></div>
+			<%
+				var grade = userRegularEventGroupBattle.grade;
+				var gradeTextArr = grade.split("");
+				gradeTextArr.splice(1, 0, "★");
+				var gradeText = gradeTextArr.join("");
+			%>
+			<div class="textGrade">【<%= gradeText %>】グレードに達しました！</div>
+			<% if (nextGp) { %>
+			<div class="textPoint1">次のグレードまでの必要GPは</div>
+			<div class="textPoint2 touchScreenStart"><%= nextGp %> GP</div>
+			<% } else { %>
+			<div class="textPointEnd touchScreenStart">最高グレードへ到達しました</div>
+			<% } %>
+			<div class="gradeIcon grade<%= grade %>"></div>
+			<div class="bottom"></div>
+		</div>
+
+		<div id="upgrageEffectWrap">
+			<div class="effect6"></div>
+			<div class="effect7"></div>
+		</div>
+	</div>
+
+	<!-- タッチスクリーン -->
+	<div class="touch_screen hide"></div>
+	<div id="touchScreen" class="hide"></div>
+</script>

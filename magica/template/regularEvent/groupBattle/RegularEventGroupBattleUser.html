@@ -1,0 +1,146 @@
+<div id="RegularEventGroupBattleUser">
+	<!-- グループメンバ -->
+	<div id="rankingWrap">
+		<div class="header gbFontWhite">グループメンバー</div>
+		<div id="scrollMemberOuter">
+			<div id="rankingList" class="scrollInner">
+				<div data-scroll-hash="memberTop" style="display:none;"></div>
+			</div>
+		</div>
+
+		<div id="myScrollBtn" class="sb_gold_01 se_decide TE">自分へ移動</div>
+		<div id="topScrollMemberBtn" class="sb_gold_01 se_decide TE">TOPへ移動</div>
+	</div>
+
+	<div class="groupInfoWrap">
+		<div class="groupInfo">
+			<div class="header gbFontWhite">
+				<span class="groupName gbFontWhite"><%= _.escape(info.regularEventGroupBattleUserGroup.name) %></span>
+				<% if (info.eventStatus!="close" && myData.userId == info.regularEventGroupBattleUserGroup.topUserId) { %>
+				<div class="nameChange TE se_decide"></div>
+				<% } %>
+			</div>
+			<div class="totalDamageWrap gbFontWhite">
+				<div class="title gbFontWhite">トータルダメージ</div>
+				<div class="value gbFontImgS">
+					<% _.forEach(String(info.regularEventGroupBattleUserGroup.totalDamage).split(''),function(txt){ %>
+					<div class='num<%= txt %>'></div>
+					<% }) %>
+				</div>
+			</div>
+			<div class="bossLevelWrap gbFontWhite">
+				<div class="title gbFontWhite">キモチの最大Lv</div>
+				<div class="value gbFontImgS">
+					<% _.forEach(String(info.regularEventGroupBattleUserGroup.bossLevel).split(''),function(txt){ %>
+						<div class='num<%= txt %>'></div>
+					<% }) %>
+				</div>
+			</div>
+		</div>
+		<div id="rankingPageBtn" class="changePageBtn sb_gold_01 se_decide TE" data-pageid="PAGE_RANKING" data-backpageid="PAGE_USER">ランキング</div>
+	</div>
+
+	<!-- フッター -->
+	<div id="bottomWrap">
+		<%
+			var myUserChara = [];
+			for(var i=1;i<=9;i++) {
+				var chara = myData["userCard"+i];
+				if (chara) {
+					myUserChara.push(chara);
+				}
+			}
+			var leaderCardId = myUserChara.length>0 ? myUserChara[0].cardId : myData.leaderCardId;
+		%>
+		<img class="leaderCardImg" data-nativeimgkey='card_<%= leaderCardId %>_m' data-src='resource/image_native/card/image/card_<%= leaderCardId %>_m.png'>
+
+		<div class="userCharaList">
+			<%
+				_.each(myUserChara, function(chara, index){
+					if (index == 0) return;
+					var cardRank = String(chara.cardId).slice(-1);
+			%>
+			<div class="userCharaIcon">
+				<% var att = 'att_' + chara.attributeId.toLowerCase() %>
+				<% var star = 'star_rank_' + cardRank %>
+				<% var frame = 'frame_rank_' + cardRank %>
+				<% var bg = 'bg_' + chara.attributeId.toLowerCase() %>
+				<span class="att" data-nativebgkey='<%= att %>' data-src='resource/image_native/card/frame/<%= att %>.png'></span>
+				<span class="star" data-nativebgkey='<%= star %>' data-src='resource/image_native/card/frame/<%= star %>.png'></span>
+				<span class="rank" data-nativebgkey='<%= frame %>' data-src='resource/image_native/card/frame/<%= frame %>.png'></span>
+				<img data-nativeimgkey='card_<%= chara.cardId %>_f' data-src='resource/image_native/card/image/card_<%= chara.cardId %>_f.png'>
+				<span class="bg" data-nativebgkey='<%= bg %>' data-src='resource/image_native/card/frame/<%= bg %>.png'></span>
+			</div>
+			<% }); %>
+		</div>
+
+		<div class="userInfoWrap">
+			<div class="header gbFontWhite"><%= _.escape(myData.loginName) %></div>
+			<div class="rankingWrap gbFontWhite">
+				<div class="title gbFontWhite">グループ内の順位</div>
+				<div class="value gbFontImgS">
+					<% _.forEach(String(info.regularEventGroupBattleUserGroup.personalRanking).split(''),function(txt){ %>
+					<div class='num<%= txt %>'></div>
+					<% }) %>
+				</div>
+			</div>
+			<div class="damageWrap gbFontWhite">
+				<div class="title gbFontWhite">最大デイリーダメージ</div>
+				<div class="value gbFontImgL">
+					<% _.forEach(String(info.userRegularEventGroupBattle.maxDailyDamage).split(''),function(txt){ %>
+					<div class='num<%= txt %>'></div>
+					<% }) %>
+				</div>
+			</div>
+			<div id="battleLogBtn" class="sb_gold_01 se_decide TE">バトルログ</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/template" id="memberPartsTemp">
+	<div class="rankIcon rank<%='<%= model.ranking %\>'%>"></div>
+
+	<div class="userCharaList">
+		<%='<% for(var i=1;i<=9;i++){ %\>'%>
+			<%='<% var chara = model["userCard"+i]; %\>'%>
+			<%='<% if (!chara) continue; %\>'%>
+			<%='<% var cardRank = String(chara.cardId).slice(-1); %\>'%>
+
+			<div class="userCharaIcon">
+				<%='<% var att = "att_" + chara.attributeId.toLowerCase() %\>'%>
+				<%='<% var star = "star_rank_" + cardRank %\>'%>
+				<%='<% var frame = "frame_rank_" + cardRank %\>'%>
+				<%='<% var bg = "bg_" + chara.attributeId.toLowerCase() %\>'%>
+				<span class="att" data-nativebgkey="<%='<%= att %\>'%>" data-src="resource/image_native/card/frame/<%='<%= att %\>'%>.png"></span>
+				<span class="star" data-nativebgkey="<%='<%= star %\>'%>" data-src="resource/image_native/card/frame/<%='<%= star %\>'%>.png"></span>
+				<span class="rank" data-nativebgkey="<%='<%= frame %\>'%>" data-src="resource/image_native/card/frame/<%='<%= frame %\>'%>.png"></span>
+				<img data-nativeimgkey="card_<%='<%= chara.cardId %\>'%>_f" data-src="resource/image_native/card/image/card_<%='<%= chara.cardId %\>'%>_f.png">
+				<span class="bg" data-nativebgkey="<%='<%= bg %\>'%>" data-src="resource/image_native/card/frame/<%='<%= bg %\>'%>.png"></span>
+			</div>
+		<%='<% } %\>'%>
+	</div>
+
+	<div class="userRank gbFontWhite">RANK <%='<%= model.level %\>'%></div>
+	<div class="userName gbFontWhite"><%='<%= _.escape(model.loginName) %\>'%></div>
+	<div class="damageTitle gbFontWhite">後半<br>トータルダメージ</div>
+	<div class="damageValue">
+		<%='<%= model.totalDamage %\>'%>
+	</div>
+	<div class="battleCountTitle gbFontWhite">挑戦回数</div>
+
+	<%='<% var cnt = model.remainBattleCount; %\>'%>
+	<%='<% var max = info.eventMaster.regularEventGroupBattle.maxBattleCount; %\>'%>
+	<ul class="battleCountIconList">
+		<%='<% var i=0; while(i<max) { %\>'%>
+		<li class="<%='<% if(i<cnt){ %\>'%>on<%='<% } %\>'%>"></li>
+		<%='<% i=(i+1)|0; } %\>'%>
+	</ul>
+
+	<%='<% if (model.userId) { %\>'%>
+	<div class="logBtn sb_regular_01 TE se_decide" data-user-id="<%='<%= model.userId %\>'%>">バトルログ</div>
+	<%='<% } %\>'%>
+
+	<%='<% if (info.eventStatus!="close" && !model.isMyself && info.userRegularEventGroupBattle.remainGoodCount > 0) { %\>'%>
+	<div class="sb_regular_02 goodBtn TE se_decide" data-user-id="<%='<%= model.userId %\>'%>">いいね</div>
+	<%='<% } %\>'%>
+</script>
