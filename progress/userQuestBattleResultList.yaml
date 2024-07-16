@@ -10706,10 +10706,10 @@
   count: 3
   name: '[CHARA] 魔法少女は花より団子'
 3200632:
-  count: 2
+  count: 3
   name: '[CHARA] 魔法少女は花より団子'
 3200633:
-  count: 2
+  count: 3
   name: '[CHARA] 魔法少女は花より団子'
 3200641:
   count: 2
@@ -13853,13 +13853,13 @@
   count: 2
   name: '[CHARA] それは、私たちの絆'
 3350441:
-  count: 1
+  count: 2
   name: '[CHARA] まさらとこころの試練'
 3350442:
-  count: 1
+  count: 2
   name: '[CHARA] まさらとこころの試練'
 3350443:
-  count: 1
+  count: 2
   name: '[CHARA] まさらとこころの試練'
 3350511:
   count: 1
@@ -16457,8 +16457,8 @@
   count: 2
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
 4203901:
-  count: 4
-  name: ~
+  count: 5
+  name: UNKNOWN
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'
