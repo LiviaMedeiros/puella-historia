@@ -9869,19 +9869,19 @@
   count: 2
   name: '[CHARA] いろはちゃん闇落ちする'
 3120122:
-  count: 1
+  count: 2
   name: '[CHARA] いろはちゃん闇落ちする'
 3120123:
-  count: 1
+  count: 2
   name: '[CHARA] いろはちゃん闇落ちする'
 3120131:
-  count: 1
+  count: 2
   name: '[CHARA] いろはちゃんネタバレする'
 3120132:
-  count: 1
+  count: 2
   name: '[CHARA] いろはちゃんネタバレする'
 3120133:
-  count: 1
+  count: 8
   name: '[CHARA] いろはちゃんネタバレする'
 3120141:
   count: 1
@@ -16457,8 +16457,8 @@
   count: 2
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
 4203901:
-  count: 11
-  name: UNKNOWN
+  count: 13
+  name: '[GROUPBATTLE] 幸福な魔女'
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'
