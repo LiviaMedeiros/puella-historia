@@ -1,0 +1,356 @@
+
+<!-- 共通メニュー -->
+<div id="groupBattleCommonMenu" class="hide">
+
+	<div id="helpBtn" class="sb_gold_01 se_decide TE" data-eventid="<%= eventMaster.regularEventId %>">遊び方</div>
+	<% if (window.isBrowser) { %><div id="debugBtn" class="sb_gold_01 se_decide TE" data-eventid="<%= eventMaster.regularEventId %>">debug</div><% } %>
+</div>
+
+<!-- 開幕カットイン -->
+<script type="text/template" id="firstCutinPartsTemp">
+	<div id="firstCutinWrap">
+		<div class="bg2"></div>
+		<div class="bg3"></div>
+
+		<div class="text1"></div>
+		<div class="text1 bright"></div>
+		<div class="text2"></div>
+		<div class="text2 bright"></div>
+
+		<div class="clearLight animationEnd"></div>
+	</div>
+</script>
+
+<script type="text/template" id="groupNameChangePop">
+	新しく設定するグループ名を入力してください。<br><br>
+	<input id="changeName" class="commonFrame3" readonly="readonly" type="text" maxlength="10" value="">
+	<div class="textCount" style="display:inline-block;margin-left:50px;">
+		<span id="textCount">0</span>/10
+	</div>
+	<div class="c_red" style="margin-top:20px;">※グループ名は何度でも変更可能です</div>
+</script>
+
+<!-- ミッション -->
+<script type="text/template" id="MissionPartsTemp">
+	<div class="popupInner">
+		<p id="popupInfoDetailTitle" class="popupTitle common_title">ミッション報酬</p>
+
+		<div id="missionScrollWrap">
+			<div id="e_<%= eventMaster.viewParameterMap.CHALLENGE_GROUP_ID %>" class="missionList"></div>
+		</div>
+
+		<!-- 一括受け取りボタン -->
+		<div class="sb_gold_01 off se_decide TE" id="allReserve">一括受取</div>
+
+		<!-- とじるボタン -->
+		<span class="closeDefault popupCloseBtn se_cancel TE"></span>
+	</div>
+</script>
+<!-- ミッションリストパーツ -->
+<script type="text/template" id="MissionListPartsTemp">
+
+	<span class="missionTitleWrap"><%='<%= model.challenge.displayName %\>'%></span>
+
+	<div style="display:none;">
+
+		<span class="missionCompleteNum c_gold"><%='<%= model.clearedCount %\>'%>/<%='<%= model.challenge.count %\>'%></span>
+
+		<div class="missionGuageWrap">
+			<div class="missionGuageInner"><div class="missionGuage"></div></div>
+		</div>
+	</div>
+
+	<span class="btn missionBtn se_decide TE"><span class="b_screen"></span>受け取る</span>
+</script>
+
+<!-- バトルログ -->
+<script type="text/template" id="BattleLogPartsTemp">
+
+	<div class="header gbFontWhite"><%="<%= _.escape(userName) %\>"%> <span id="logDay" class="gbFontWhite"></span>日目戦績</div>
+	<div id="battleLogListWrap">
+		<div id="battleLogList" class="logList"></div>
+	</div>
+
+	<%="<% if (Object.keys(logList).length > 0) { %\>"%>
+	<div class="arrow left"></div>
+	<div class="arrow right"></div>
+	<%="<% } %\>"%>
+</script>
+
+
+<script type="text/template" id="BattleLogListPartsTemp">
+
+	<div class="index gbFontWhite"><span class="gbFontWhite"><%="<%= model.index %\>"%></span>回目</span></div>
+
+	<div class="attribute">
+		<span class="type_f <%='<%= model.bossAttributeId %\>'%>"></span>
+	</div>
+	<div class="name gbFontWhite">キモチ</div>
+	<div class="level gbFontGold">Lv <span class="gbFontGold"><%="<%= model.bossLevel %\>"%></span></div>
+
+	<div class="damageWrap">
+		<div class="title gbFontWhite">ダメージ</div>
+		<div class="value gbFontImgL">
+			<%="<% _.forEach(String(model.damage).split(''),function(txt){ %\>"%>
+			<div class="num<%='<%= txt %\>'%>"></div>
+			<%="<% }) %\>"%>
+		</div>
+	</div>
+
+	<div class="takeOverMpWrap">
+		<div class="title gbFontWhite">引き継ぎMP</div>
+		<div class="value gbFontGold"><%="<%= parseInt(model.takeOverMp/10) %\>"%></div>
+	</div>
+
+	<div class="takeOverChargeWrap">
+		<div class="title gbFontWhite">チャージ数</div>
+		<div class="value gbFontGold"><%="<%= model.takeOverChargeCount %\>"%></div>
+	</div>
+
+	<div class="battleCharaList">
+		<%="<% for(var i=1;i<=9;i++){ %\>"%>
+			<%="<% var chara = model['userCard'+i]; %\>"%>
+			<%="<% if (!chara) continue; %\>"%>
+			<%="<% var cardRank = String(chara.cardId).slice(-1); %\>"%>
+
+			<div class="userCharaIcon">
+				<%="<% var att = 'att_' + chara.attributeId.toLowerCase() %\>"%>
+				<%="<% var star = 'star_rank_' + cardRank %\>"%>
+				<%="<% var frame = 'frame_rank_' + cardRank %\>"%>
+				<%="<% var bg = 'bg_' + chara.attributeId.toLowerCase() %\>"%>
+				<span class="att" data-nativebgkey='<%="<%= att %\>"%>' data-src='resource/image_native/card/frame/<%="<%= att %\>"%>.png'></span>
+				<span class="star" data-nativebgkey='<%="<%= star %\>"%>' data-src='resource/image_native/card/frame/<%="<%= star %\>"%>.png'></span>
+				<span class="rank" data-nativebgkey='<%="<%= frame %\>"%>' data-src='resource/image_native/card/frame/<%="<%= frame %\>"%>.png'></span>
+				<img data-nativeimgkey='card_<%="<%= chara.cardId %\>"%>_f' data-src='resource/image_native/card/image/card_<%="<%= chara.cardId %\>"%>_f.png'>
+				<span class="bg" data-nativebgkey='<%="<%= bg %\>"%>' data-src='resource/image_native/card/frame/<%="<%= bg %\>"%>.png'></span>
+			</div>
+		<%="<% } %\>"%>
+	</div>
+
+	<div class="formationWrap">
+		<%="<% var sheet = model.formationMaster; %\>"%>
+		<div class="formationImg">
+			<div class="formationInner">
+			<%="<% for(var i=1;i<10;i++){ %\>"%>
+			<div class="formation<%='<%= i %\>'%> cols<%='<% if(sheet["placeSkillId"+i]){ %\>'%> on<%='<% } %\>'%>"></div>
+			<%="<% } %\>"%>
+			</div>
+		</div>
+		<div class="title gbFontWhite">魔法陣形</div>
+		<div class="value gbFontWhite"><%="<%= sheet.name %\>"%></div>
+	</div>
+
+	<% if (eventStatus !== "close") { %>
+	<div class="copyDeckBtn sb_regular_01 TE se_decide">編成コピー</div>
+	<% } %>
+</script>
+
+
+<!-- 報酬一覧 -->
+<script type="text/template" id="RewardPartsTemp">
+	<div id="rewardTitle" class="header gbFontWhite"></div>
+	<div id="rewardInfoWrap" class="rewardInfoWrap"></div>
+
+	<div id="rewardTabWrap">
+		<ul class="">
+			<li class="rewardTab TE se_tabs" data-type="grade"><span>グレード<br>報酬</span></li>
+			<li class="rewardTab TE se_tabs" data-type="subjugation"><span>撃退数<br>報酬</span></li>
+			<li class="rewardTab TE se_tabs" data-type="emblem"><span>デイリー<br>ダメージ報酬</span>/li>
+			<li class="rewardTab TE se_tabs" data-type="groupRanking"><span>グループ<br>ランキング報酬</span></li>
+			<li class="rewardTab TE se_tabs" data-type="group"><span>所属グループ<br>報酬</span></li>
+			<li class="rewardTab TE se_tabs" data-type="memberRanking"><span>グループ内<br>ランキング報酬</span></li>
+		</ul>
+	</div>
+
+	<ul id="groupTabWrap" class="common_tab_s t_gold">
+		<li class="rewardTab se_tabs TE" data-type="groupRanking" data-id="S">S</li>
+		<li class="rewardTab se_tabs TE" data-type="groupRanking" data-id="A,B">A - B</li>
+		<li class="rewardTab se_tabs TE" data-type="groupRanking" data-id="C,D">C - D</li>
+	</ul>
+
+	<div id="rewardListWrap">
+		<div class="scrollInner">
+			<div id="rewardList"></div>
+		</div>
+	</div>
+</script>
+
+<script type="text/template" id="gradeInfoPartsTemp">
+	<div class="name">自分の所有 GP</div>
+	<div class="param">
+		<div class="value gbFontImgL">
+			<%="<% _.forEach(String(userRegularEventGroupBattle.totalGp).split(''),function(txt){ %\>"%>
+			<div class="num<%='<%= txt %\>'%>"></div>
+			<%="<% }) %\>"%>
+		</div>
+	</div>
+</script>
+
+<script type="text/template" id="subjugationInfoPartsTemp">
+	<%="<% if (regularEventGroupBattleUserGroup.name) { %\>"%>
+	<div class="name">
+			自分の所属グループ：<%="<%= regularEventGroupBattleUserGroup.name %\>"%>
+			<div class="gradeIcon grade<%='<%= regularEventGroupBattleUserGroup.groupGrade %\>'%>"></div>
+	</div>
+	<div class="paramWrap">
+		<div class="title">撃退数</div>
+		<div class="value gbFontImgL">
+			<%="<% var param = regularEventGroupBattleUserGroup.subjugationCount ? regularEventGroupBattleUserGroup.subjugationCount : 0; %\>"%>
+			<%="<% _.forEach(String(param).split(''),function(txt){ %\>"%>
+			<div class="num<%='<%= txt %\>'%>"></div>
+			<%="<% }) %\>"%>
+		</div>
+		<div class="unit">体</div>
+	</div>
+	<%="<% } else { %\>"%>
+	<div class="name">グループに所属していません</div>
+	<%="<% } %\>"%>
+</script>
+
+<script type="text/template" id="emblemInfoPartsTemp">
+	<div class="name">自分のデイリーダメージ</div>
+	<div class="param">
+		<div class="value gbFontImgL">
+			<%="<% var param = userRegularEventGroupBattle.maxDailyDamage ? userRegularEventGroupBattle.maxDailyDamage : 0; %\>"%>
+			<%="<% _.forEach(String(param).split(''),function(txt){ %\>"%>
+			<div class="num<%='<%= txt %\>'%>"></div>
+			<%="<% }) %\>"%>
+		</div>
+	</div>
+</script>
+
+<script type="text/template" id="groupRankingInfoPartsTemp">
+	<%="<% if (regularEventGroupBattleUserGroup.name) { %\>"%>
+	<div class="name">
+		自分の所属グループ：<%="<%= regularEventGroupBattleUserGroup.name %\>"%>
+		<div class="gradeIcon grade<%='<%= regularEventGroupBattleUserGroup.groupGrade %\>'%>"></div>
+	</div>
+	<div class="paramWrap">
+		<div class="title">順位</div>
+		<div class="value gbFontImgL">
+		<%="<% if(regularEventGroupBattleUserGroup.ranking) { %\>"%>
+			<%="<% _.forEach(String(regularEventGroupBattleUserGroup.ranking).split(''),function(txt){ %\>"%>
+			<div class="num<%='<%= txt %\>'%>"></div>
+			<%="<% }) %\>"%>
+		<%="<% } else { %\>"%>
+			<div class="none"></div>
+		<%="<% } %\>"%>
+		</div>
+		<div class="unit">位</div>
+	</div>
+	<%="<% } else { %\>"%>
+	<div class="name">グループに所属していません</div>
+	<%="<% } %\>"%>
+</script>
+
+<script type="text/template" id="groupInfoPartsTemp">
+	<%="<% if (regularEventGroupBattleUserGroup.name) { %\>"%>
+	<div class="name">
+		自分の所属グループ：<%="<%= regularEventGroupBattleUserGroup.name %\>"%>
+		<div class="gradeIcon grade<%='<%= regularEventGroupBattleUserGroup.groupGrade %\>'%>"></div>
+	</div>
+	<%="<% } else { %\>"%>
+	<div class="name">グループに所属していません</div>
+	<%="<% } %\>"%>
+</script>
+
+<script type="text/template" id="memberRankingInfoPartsTemp">
+	<%="<% if (regularEventGroupBattleUserGroup.name) { %\>"%>
+	<div class="name">
+		自分の所属グループ：<%="<%= regularEventGroupBattleUserGroup.name %\>"%>
+		<div class="gradeIcon grade<%='<%= regularEventGroupBattleUserGroup.groupGrade %\>'%>"></div>
+	</div>
+	<div class="paramWrap">
+		<div class="title">順位</div>
+		<div class="value gbFontImgL">
+			<%="<% _.forEach(String(regularEventGroupBattleUserGroup.personalRanking).split(''),function(txt){ %\>"%>
+			<div class="num<%='<%= txt %\>'%>"></div>
+			<%="<% }) %\>"%>
+		</div>
+		<div class="unit">位</div>
+	</div>
+	<%="<% } else { %\>"%>
+	<div class="name">グループに所属していません</div>
+	<%="<% } %\>"%>
+</script>
+
+<script type="text/template" id="RewardListPartsTemp">
+	<%="<% if (type == 'grade') { %\>"%>
+	<div class="gradeWrap">
+		<div class="gradeBg"></div>
+		<div class="gradeIcon grade<%='<%= model.grade %\>'%>"></div>
+	</div>
+	<div class="needGp gbFontImgL">
+		<%="<% _.forEach(String(model.requiredGp).split(''),function(txt){ %\>"%>
+		<div class="num<%='<%= txt %\>'%>"></div>
+		<%="<% }) %\>"%>
+	</div>
+	<%="<% } else if (type == 'emblem') { %\>"%>
+	<div class="gradeWrap">
+		<div class="emblemIcon emblem<%='<%= model.emblem %\>'%>"></div>
+	</div>
+	<div class="needGp gbFontImgL">
+		<%="<% _.forEach(String(model.threshold).split(''),function(txt){ %\>"%>
+		<div class="num<%='<%= txt %\>'%>"></div>
+		<%="<% }) %\>"%>
+	</div>
+	<%="<% } else if (type == 'subjugation') { %\>"%>
+	<div class="needRepel gbFontImgL">
+		<%="<% _.forEach(String(model.subjugationCount).split(''),function(txt){ %\>"%>
+		<div class="num<%='<%= txt %\>'%>"></div>
+		<%="<% }) %\>"%>
+	</div>
+	<%="<% } else if (type == 'groupRanking' || type == 'memberRanking') { %\>"%>
+		<div class="rewardImgTitle gbFontWhite">獲得<br>称号</div>
+		<%="<% if (model.rankingStart === model.rankingEnd) { %\>"%>
+		<div class="rankTarget gbFontWhite"><%='<%= model.rankingStart %\>'%>位</div>
+		<%="<% } else if (model.rankingEnd < 100) { %\>"%>
+		<div class="rankTarget gbFontWhite"><%='<%= model.rankingStart %\>'%>位～<%='<%= model.rankingEnd %\>'%>位</div>
+		<%="<% } else { %\>"%>
+		<div class="rankTarget gbFontWhite"><%='<%= model.rankingStart %\>'%>位以降</div>
+		<%="<% } %\>"%>
+	<%="<% } else if (type == 'group') { %\>"%>
+	<div class="rewardTitle gbFontWhite">グループグレード</div>
+	<div class="gradeWrap">
+		<div class="gradeBg"></div>
+		<div class="gradeIcon grade<%='<%= model.groupGrade %\>'%>"></div>
+	</div>
+	<%="<% } %\>"%>
+
+	<div class="rewardImgList">
+	<%="<% _.forEach(model.rewardImgModel,function(rewardModel, index){ %\>"%>
+		<div class="rewardImg <%='<%= rewardModel.className %\>'%>">
+
+			<%="<% if(rewardModel.titleName) { %\>"%>
+				<div class='userTitleText'><%="<%= rewardModel.titleName %\>"%></div>
+				<img class='userTitleBg' src='/magica/resource/image_web/common/grade/<%="<%= rewardModel.titleBaseImage %\>"%>.png'>
+			<%="<% } else if(rewardModel.nativeimgkey) { %\>"%>
+				<img data-nativeimgkey='<%="<%= rewardModel.nativeimgkey %\>"%>' data-src='resource/image_native/<%="<%= rewardModel.imagePath %\>"%>.png'>
+			<%="<% } else { %\>"%>
+				<img src='/magica/resource/image_web/item/<%="<%= rewardModel.imagePath %\>"%>.png'>
+			<%="<% } %\>"%>
+
+			<%="<% if(rewardModel.quantity) { %\>"%>
+				<span class="quantity gbFontWhite">×<%="<%= rewardModel.quantity %\>"%></span>
+			<%="<% } %\>"%>
+		</div>
+	<%="<% }) %\>"%>
+	</div>
+</script>
+
+<script type="text/template" id="AnnounceRankingPartsTemp">
+	<%="<% if (isTopUser) { %\>"%>
+	<div class="decideText">前日のデイリーダメージに基づいてグループ内順位が確定しました。</div>
+	<div class="memberRankingWrap">
+		<div class="header gbFontWhite"><%="<%= model.regularEventGroupBattleUserGroup.name %\>"%></div>
+		<div class="rankingWrap">
+			<div class="bg"></div>
+			<div class="rankIcon rank1"></div>
+		</div>
+	</div>
+	<%="<% } else { %\>"%>
+	<div class="decideText">キモチ戦で所属するグループが決定しました。</div><br>
+	<%="<% } %\>"%>
+	前日のグループ内順位が1位のユーザーはグループ名を変更することが可能です。<br>
+	1日1回、グループメンバーに<span class="gbFontPurple">いいね</span>を送ることで、引き継ぎMPを<span class="gbFontPurple">50</span>獲得できます
+</script>

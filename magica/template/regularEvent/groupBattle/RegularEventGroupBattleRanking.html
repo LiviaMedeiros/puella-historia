@@ -1,0 +1,175 @@
+<div id="RegularEventGroupBattleRanking">
+	<img id="topCharaImage">
+
+	<div id="rankingTabWrap">
+		<ul class="">
+			<li class="rankingTab se_tabs TE" data-type="total"><span>トータル</span></li>
+			<li class="rankingTab se_tabs TE" data-type="daily"><span>デイリー</span></li>
+			<li class="rankingTab se_tabs TE <% if (Object.keys(groupRankingList).length <= 0) { %>off<% } %>" data-type="group"><span>グループ</span></li>
+		</ul>
+	</div>
+
+	<!-- 自分の情報 -->
+	<div id="bottomWrap">
+		<div class="userInfoWrap">
+			<div class="header groupName gbFontWhite"><%= _.escape(regularEventGroupBattleUserGroup.name) %></div>
+			<div class="name gbFontWhite"><%= _.escape(loginName) %></div>
+			<div class="myRankWrap">
+				<div class="title gbFontWhite">自分の順位</div>
+				<div id="myRankingRank" class="value gbFontGold"><%= regularEventGroupBattleUserGroup.personalRanking %></div>
+			</div>
+			<div id="userDailyDamageWrap" class="damageWrap gbFontWhite">
+				<div class="title gbFontWhite">最大デイリーダメージ</div>
+				<div class="value gbFontImgL">
+					<% if (userRegularEventGroupBattle.maxDailyDamage) { %>
+						<% _.forEach(String(userRegularEventGroupBattle.maxDailyDamage).split(''),function(txt){ %>
+						<div class='num<%= txt %>'></div>
+						<% }) %>
+					<% } else { %>
+						<div class='none'></div>
+					<% } %>
+				</div>
+			</div>
+			<div id="userTotalDamageWrap" class="damageWrap gbFontWhite">
+				<div class="title gbFontWhite">トータルダメージ</div>
+				<div class="value gbFontImgL">
+					<% if (userRegularEventGroupBattle.totalDamage) { %>
+						<% _.forEach(String(userRegularEventGroupBattle.totalDamage).split(''),function(txt){ %>
+						<div class='num<%= txt %>'></div>
+						<% }) %>
+					<% } else { %>
+						<div class='none'></div>
+					<% } %>
+				</div>
+			</div>
+			<div class="groupRankWrap">
+				<div class="title gbFontWhite">順位</div>
+				<%
+					var value = "- - -"
+					if (regularEventGroupBattleUserGroup.groupGrade && regularEventGroupBattleUserGroup.ranking) {
+						value = regularEventGroupBattleUserGroup.groupGrade + " " + regularEventGroupBattleUserGroup.ranking;
+					}
+				%>
+				<div class="value gbFontGold"><%= value %></div>
+			</div>
+			<div class="groupSubjugationWrap">
+				<div class="title gbFontWhite">撃退数</div>
+				<%
+					var value = "- - -"
+					if (regularEventGroupBattleUserGroup.subjugationCount) {
+						value = regularEventGroupBattleUserGroup.subjugationCount;
+					}
+				%>
+				<div class="value gbFontGold"><%= value %></div>
+			</div>
+			<div class="rewardBtn sb_gold_01 TE se_decide">報酬一覧</div>
+		</div>
+	</div>
+
+	<div id="rankingListWrap">
+		<div id="rankingTitle" class="gbFontWhite"></div>
+		<div id="topScrollBtn" class="sb_gold_01 se_decide TE">TOPへ移動</div>
+		<ul id="dailyTabWrap" class="common_tab_s t_gold">
+			<% for (var i=0; i<Object.keys(dailyRankingList).length; ++i) { %>
+			<li class="rankingTab se_tabs TE" data-type="daily" data-id="<%= i+1 %>"><%= i+1 %>日目</li>
+			<% } %>
+		</ul>
+		<ul id="groupTabWrap" class="common_tab_s t_gold">
+			<li class="rankingTab se_tabs TE" data-type="group" data-id="S">S</li>
+			<li class="rankingTab se_tabs TE" data-type="group" data-id="A,B">A - B</li>
+			<li class="rankingTab se_tabs TE" data-type="group" data-id="C,D">C - D</li>
+		</ul>
+
+		<div id="scrollOuter">
+			<div class="rankingList scrollInner"></div>
+		</div>
+	</div>
+</div>
+
+<script type="text/template" id="RankingListPartsTemp">
+
+	<img class="leaderImg" data-nativeimgkey="card_<%='<%= model.leaderCardId %\>'%>_f" data-src="resource/image_native/card/image/card_<%='<%= model.leaderCardId %\>'%>_f.png">
+
+	<%='<% if (model.ranking < 100) { %\>'%>
+	<div class="rankIcon rank<%='<%= model.ranking %\>'%>" data-rank="<%='<%= model.ranking %\>'%>"></div>
+	<%='<% } else { %\>'%>
+	<div class="rankBorderWrap"><%='<%= model.ranking %\>'%>位</div>
+	<%='<% } %\>'%>
+
+	<div class="userCharaList">
+		<%='<% for(var i=1;i<=9;i++){ %\>'%>
+			<%='<% var chara = model["userCard"+i]; %\>'%>
+			<%='<% if (!chara) continue; %\>'%>
+			<%='<% var cardRank = String(chara.cardId).slice(-1); %\>'%>
+
+			<div class="userCharaIcon">
+				<%="<% var att = 'att_' + chara.attributeId.toLowerCase(); %\>"%>
+				<%="<% var star = 'star_rank_' + cardRank %\>"%>
+				<%="<% var frame = 'frame_rank_' + cardRank %\>"%>
+				<%="<% var bg = 'bg_' + chara.attributeId.toLowerCase(); %\>"%>
+				<span class="att" data-nativebgkey="<%='<%= att %\>'%>" data-src="resource/image_native/card/frame/<%='<%= att %\>'%>.png"></span>
+				<span class="star" data-nativebgkey="<%='<%= star %\>'%>" data-src="resource/image_native/card/frame/<%='<%= star %\>'%>.png"></span>
+				<span class="rank" data-nativebgkey="<%='<%= frame %\>'%>" data-src="resource/image_native/card/frame/<%='<%= frame %\>'%>.png"></span>
+				<img data-nativeimgkey="card_<%='<%= chara.cardId %\>'%>_f" data-src="resource/image_native/card/image/card_<%='<%= chara.cardId %\>'%>_f.png">
+				<span class="bg" data-nativebgkey="<%='<%= bg %\>'%>" data-src="resource/image_native/card/frame/<%='<%= bg %\>'%>.png"></span>
+			</div>
+		<%='<% } %\>'%>
+	</div>
+
+	<div class="userName gbFontWhite"><%='<%= _.escape(model.loginName) %\>'%></div>
+	<div class="userRank gbFontWhite">RANK <%='<%= model.level %\>'%></div>
+	<%='<% if (model.type == "total") { %\>'%>
+	<div class="damageTitle gbFontWhite">トータルダメージ</div>
+	<%='<% } else { %\>'%>
+	<div class="damageTitle gbFontWhite">デイリーダメージ</div>
+	<%='<% } %\>'%>
+	<div class="damageValue gbFontImgS">
+		<%='<% _.forEach(String(model.damage).split(""),function(txt){ %\>'%>
+		<div class="num<%='<%= txt %\>'%>"></div>
+		<%='<% }) %\>'%>
+	</div>
+	<%='<% if (model.userId && model.groupId) { %\>'%>
+	<div class="logBtn sb_regular_01 TE se_decide"
+		data-user-id="<%='<%= model.userId %\>'%>"
+		data-group-id="<%='<%= model.groupId %\>'%>"
+		data-user-name="<%='<%= _.escape(model.loginName) %\>'%>"
+	>バトルログ</div>
+	<%='<% } %\>'%>
+</script>
+
+
+<script type="text/template" id="GroupRankingListPartsTemp">
+	<div class="rankIcon rank<%='<%= model.ranking %\>'%>" data-rank="<%='<%= model.ranking %\>'%>"></div>
+	<div class="mvpIcon"></div>
+
+	<div class="userCharaIcon">
+		<%="<% var cardRank = String(model.topUserLeaderCardId).substr(-1); %\>"%>
+		<%="<% var att = 'att_' + model.topUserLeaderCardAttributeId.toLowerCase() %\>"%>
+		<%="<% var star = 'star_rank_' + cardRank %\>"%>
+		<%="<% var frame = 'frame_rank_' + cardRank %\>"%>
+		<%="<% var bg = 'bg_' + model.topUserLeaderCardAttributeId.toLowerCase() %\>"%>
+		<span class="att" data-nativebgkey="<%='<%= att %\>'%>" data-src="resource/image_native/card/frame/<%='<%= att %\>'%>.png"></span>
+		<span class="star" data-nativebgkey="<%='<%= star %\>'%>" data-src="resource/image_native/card/frame/<%='<%= star %\>'%>.png"></span>
+		<span class="rank" data-nativebgkey="<%='<%= frame %\>'%>" data-src="resource/image_native/card/frame/<%='<%= frame %\>'%>.png"></span>
+		<img data-nativeimgkey="card_<%='<%= model.topUserLeaderCardId %\>'%>_f" data-src="resource/image_native/card/image/card_<%='<%= model.topUserLeaderCardId %\>'%>_f.png">
+		<span class="bg" data-nativebgkey="<%='<%= bg %\>'%>" data-src="resource/image_native/card/frame/<%='<%= bg %\>'%>.png"></span>
+	</div>
+
+	<div class="groupName gbFontWhite"><%='<%= model.name %\>'%></div>
+	<div class="userName gbFontWhite"><%='<%= _.escape(model.topUserName) %\>'%></div>
+	<div class="userRank gbFontWhite">RANK <%='<%= model.topUserRank %\>'%></div>
+	<div class="dailyDamageTitle gbFontWhite">最大デイリーダメージ</div>
+	<div class="dailyDamageValue gbFontImgS">
+		<%='<% _.forEach(String(model.topUserMaxDailyDamage).split(""),function(txt){ %\>'%>
+		<div class="num<%='<%= txt %\>'%>"></div>
+		<%='<% }) %\>'%>
+	</div>
+
+	<div class="subjugationCount gbFontWhite">キモチ撃退数 <span class="gbFontGold"><%='<%= model.subjugationCount %\>'%></span> 体</div>
+	<div class="totalDamageTitle gbFontWhite">トータルダメージ</div>
+	<div class="totalDamageValue gbFontImgL">
+		<%='<% _.forEach(String(model.totalDamage).split(""),function(txt){ %\>'%>
+		<div class="num<%='<%= txt %\>'%>"></div>
+		<%='<% }) %\>'%>
+	</div>
+</script>
