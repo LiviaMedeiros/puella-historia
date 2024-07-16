@@ -9857,16 +9857,16 @@
   count: 1
   name: '[CHARA] ウワサのみことのドッペル'
 3120111:
-  count: 1
+  count: 2
   name: '[CHARA] いろはちゃん参上する'
 3120112:
-  count: 1
+  count: 2
   name: '[CHARA] いろはちゃん参上する'
 3120113:
-  count: 1
+  count: 2
   name: '[CHARA] いろはちゃん参上する'
 3120121:
-  count: 1
+  count: 2
   name: '[CHARA] いろはちゃん闇落ちする'
 3120122:
   count: 1
@@ -16457,7 +16457,7 @@
   count: 2
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
 4203901:
-  count: 8
+  count: 11
   name: UNKNOWN
 5217101:
   count: 2
@@ -16919,7 +16919,7 @@
   count: 1
   name: '[COSTUME] 賢者の失敗'
 7120111:
-  count: 2
+  count: 3
   name: '[COSTUME] チャンネル登録お願いします！'
 7120121:
   count: 1
