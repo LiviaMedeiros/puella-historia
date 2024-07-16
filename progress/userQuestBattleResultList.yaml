@@ -189,16 +189,16 @@
   count: 6
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
 10120551:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
 10120552:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
 10120553:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
 10120554:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
 10120555:
   count: 1
@@ -3882,7 +3882,7 @@
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / ネオマギウス編 1話'
 1029421:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / ネオマギウス編 2話'
 10294251:
   count: 1
@@ -3900,7 +3900,7 @@
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / みかげ編 1話'
 1029451:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / みかげ編 2話'
 10294551:
   count: 1
@@ -4851,7 +4851,7 @@
   count: 2
   name: '[MAIN/3/NORMAL/NONE] 現代神浜編 (現代神浜編) / 現代神浜編'
 1034071:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] 現代神浜編 (現代神浜編) / 現代神浜編'
 1035011:
   count: 3
@@ -7751,22 +7751,22 @@
   count: 2
   name: '[CHARA] もうひとりの私'
 3101821:
-  count: 1
+  count: 2
   name: '[CHARA] 会ってはいけない子'
 3101822:
-  count: 1
+  count: 2
   name: '[CHARA] 会ってはいけない子'
 3101823:
-  count: 1
+  count: 2
   name: '[CHARA] 会ってはいけない子'
 3101831:
-  count: 1
+  count: 2
   name: '[CHARA] そしてまっさらになる'
 3101832:
-  count: 1
+  count: 2
   name: '[CHARA] そしてまっさらになる'
 3101833:
-  count: 1
+  count: 2
   name: '[CHARA] そしてまっさらになる'
 3101841:
   count: 1
@@ -8030,13 +8030,13 @@
   count: 1
   name: '[CHARA] 静香のドッペル'
 3102611:
-  count: 2
+  count: 3
   name: '[CHARA] 困惑！事件後の集落'
 3102612:
-  count: 2
+  count: 3
   name: '[CHARA] 困惑！事件後の集落'
 3102613:
-  count: 2
+  count: 3
   name: '[CHARA] 困惑！事件後の集落'
 3102621:
   count: 2
@@ -16457,7 +16457,7 @@
   count: 2
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
 4203901:
-  count: 13
+  count: 14
   name: '[GROUPBATTLE] 幸福な魔女'
 5217101:
   count: 2
