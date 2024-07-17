@@ -201,7 +201,7 @@
   count: 2
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
 10120555:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
 1013011:
   count: 6
@@ -213,13 +213,13 @@
   count: 6
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 何でもできる世界'
 10130151:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 何でもできる世界'
 10130152:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 何でもできる世界'
 10130153:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 何でもできる世界'
 1013021:
   count: 5
@@ -231,13 +231,13 @@
   count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 神社の噂'
 10130251:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 神社の噂'
 10130252:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 神社の噂'
 10130253:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 神社の噂'
 1013031:
   count: 5
@@ -255,7 +255,7 @@
   count: 4
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
 10130351:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
 10130352:
   count: 1
@@ -3912,7 +3912,7 @@
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / アリナ編 1話'
 1029471:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / アリナ編 2話'
 10294751:
   count: 1
@@ -8039,7 +8039,7 @@
   count: 3
   name: '[CHARA] 困惑！事件後の集落'
 3102621:
-  count: 2
+  count: 3
   name: '[CHARA] 潜入！魅力特定班'
 3102622:
   count: 2
@@ -15494,7 +15494,7 @@
   count: 3
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
 4000754:
-  count: 32
+  count: 44
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
 4000761:
   count: 343
@@ -16457,7 +16457,7 @@
   count: 2
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
 4203901:
-  count: 14
+  count: 17
   name: '[GROUPBATTLE] 幸福な魔女'
 5217101:
   count: 2
