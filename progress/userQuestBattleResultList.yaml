@@ -8957,10 +8957,10 @@
   count: 1
   name: '[CHARA] ヘルカのドッペル'
 3105211:
-  count: 2
+  count: 3
   name: '[CHARA] べろべろで不思議な生き物'
 3105212:
-  count: 2
+  count: 3
   name: '[CHARA] べろべろで不思議な生き物'
 3105213:
   count: 2
@@ -15173,16 +15173,16 @@
   count: 3
   name: '[CHARA] Life is short.'
 3406133:
-  count: 3
+  count: 4
   name: '[CHARA] Life is short.'
 3406141:
-  count: 2
+  count: 3
   name: '[CHARA] 千束の試練'
 3406142:
-  count: 2
+  count: 3
   name: '[CHARA] 千束の試練'
 3406143:
-  count: 2
+  count: 3
   name: '[CHARA] 千束の試練'
 3406211:
   count: 1
@@ -16457,7 +16457,7 @@
   count: 2
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
 4203901:
-  count: 34
+  count: 37
   name: '[GROUPBATTLE] 幸福な魔女'
 5217101:
   count: 2
