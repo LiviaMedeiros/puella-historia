@@ -644,9 +644,9 @@
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 黒い羽根の少女たち'
   mission0count: 2
 10140353:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 黒い羽根の少女たち'
-  mission0count: 1
+  mission0count: 2
 10140354:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 黒い羽根の少女たち'
@@ -1056,17 +1056,17 @@
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / アリナの作品'
   mission0count: 2
 10150651:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / アリナの作品'
-  mission0count: 0
+  mission0count: 1
 10150652:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / アリナの作品'
-  mission0count: 0
+  mission0count: 1
 10150653:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / アリナの作品'
-  mission0count: 0
+  mission0count: 1
 10150654:
   count: 1
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / アリナの作品'
@@ -1504,13 +1504,13 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / 地図から見えるもの'
   mission0count: 0
 1017071:
-  count: 2
+  count: 3
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 襲来'
   mission0count: 2
 10170751:
-  count: 1
+  count: 2
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / 襲来'
-  mission0count: 0
+  mission0count: 2
 1017081:
   count: 2
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / さなフェリ脱出録'
@@ -1776,7 +1776,7 @@
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / やちよ編 3話'
   mission0count: 0
 1018081:
-  count: 2
+  count: 3
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / やちよ編 4話'
   mission0count: 2
 10180851:
@@ -2972,7 +2972,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022036:
-  count: 33
+  count: 34
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022037:
@@ -13268,7 +13268,7 @@
   name: '[CHARA] ロスト＆ファウンド'
   mission0count: 1
 3120333:
-  count: 7
+  count: 8
   name: '[CHARA] ロスト＆ファウンド'
   mission0count: 1
 3120341:
@@ -20579,7 +20579,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
   mission0count: 1
 4000761:
-  count: 355
+  count: 366
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4000762:
@@ -21620,7 +21620,7 @@
 4203901:
   count: 57
   name: '[GROUPBATTLE] 幸福な魔女'
-  mission0count: 97
+  mission0count: 100
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'
