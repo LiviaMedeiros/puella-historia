@@ -5296,33 +5296,33 @@
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 全体編 6話'
   mission0count: 0
 1029571:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 全体編 7話'
-  mission0count: 3
+  mission0count: 4
 10295751:
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 全体編 7話'
   mission0count: 0
 1029581:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 全体編 8話'
-  mission0count: 3
+  mission0count: 4
 10295851:
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 全体編 8話'
   mission0count: 0
 1029591:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 全体編 9話'
-  mission0count: 3
+  mission0count: 4
 10295951:
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 全体編 9話'
   mission0count: 0
 1029601:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 全体編 10話'
-  mission0count: 3
+  mission0count: 4
 10296051:
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 全体編 10話'
@@ -20579,7 +20579,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
   mission0count: 1
 4000761:
-  count: 343
+  count: 355
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4000762:
