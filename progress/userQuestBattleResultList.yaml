@@ -51,7 +51,7 @@
   count: 11
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
 1011034:
-  count: 249
+  count: 280
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
 1011035:
   count: 10
@@ -477,16 +477,16 @@
   count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 黒い羽根の少女たち'
 10140351:
-  count: 1
+  count: 3
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 黒い羽根の少女たち'
 10140352:
-  count: 1
+  count: 3
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 黒い羽根の少女たち'
 10140353:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 黒い羽根の少女たち'
 10140354:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 黒い羽根の少女たち'
 10140355:
   count: 1
@@ -1026,7 +1026,7 @@
   count: 2
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / いろはの宣言'
 1016065:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / いろはの宣言'
 1016066:
   count: 2
@@ -1038,13 +1038,13 @@
   count: 1
   name: '[MAIN/1/NORMAL/HARD] 真実を語る記憶 (第6章) / いろはの宣言'
 10160652:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] 真実を語る記憶 (第6章) / いろはの宣言'
 10160653:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] 真実を語る記憶 (第6章) / いろはの宣言'
 10160654:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] 真実を語る記憶 (第6章) / いろはの宣言'
 10160655:
   count: 1
@@ -2376,7 +2376,7 @@
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 微笑みと火花 (第2章) / 思惑モーモーファーム'
 1023021:
-  count: 27
+  count: 124
   name: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / アラウンドエネミー'
 1023022:
   count: 2
@@ -2448,7 +2448,7 @@
   count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / 第三の矢'
 1023037:
-  count: 140
+  count: 181
   name: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / 第三の矢'
 1023038:
   count: 3
@@ -8678,13 +8678,13 @@
   count: 1
   name: '[CHARA] 黒江のドッペル'
 3104411:
-  count: 1
+  count: 2
   name: '[CHARA] 出会ってしまったふたり'
 3104412:
-  count: 1
+  count: 2
   name: '[CHARA] 出会ってしまったふたり'
 3104413:
-  count: 1
+  count: 2
   name: '[CHARA] 出会ってしまったふたり'
 3104421:
   count: 1
@@ -8813,31 +8813,31 @@
   count: 1
   name: '[CHARA] いつかまた会えたなら'
 3104811:
-  count: 1
+  count: 2
   name: '[CHARA] 掴まされた運命'
 3104812:
-  count: 1
+  count: 2
   name: '[CHARA] 掴まされた運命'
 3104813:
-  count: 1
+  count: 2
   name: '[CHARA] 掴まされた運命'
 3104821:
-  count: 1
+  count: 2
   name: '[CHARA] 陰から覗く顔'
 3104822:
-  count: 1
+  count: 2
   name: '[CHARA] 陰から覗く顔'
 3104823:
-  count: 1
+  count: 2
   name: '[CHARA] 陰から覗く顔'
 3104831:
-  count: 1
+  count: 2
   name: '[CHARA] 他に道はなし'
 3104832:
-  count: 1
+  count: 2
   name: '[CHARA] 他に道はなし'
 3104833:
-  count: 18
+  count: 19
   name: '[CHARA] 他に道はなし'
 3104841:
   count: 3
@@ -16457,7 +16457,7 @@
   count: 2
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
 4203901:
-  count: 47
+  count: 49
   name: '[GROUPBATTLE] 幸福な魔女'
 5217101:
   count: 2
