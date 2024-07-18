@@ -2904,7 +2904,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
   mission0count: 3
 1022029:
-  count: 145
+  count: 200
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
   mission0count: 3
 10220210:
@@ -2972,7 +2972,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022036:
-  count: 26
+  count: 33
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022037:
@@ -3804,7 +3804,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 決裂へのカウントダウン'
   mission0count: 3
 1025038:
-  count: 3
+  count: 43
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 決裂へのカウントダウン'
   mission0count: 3
 10250351:
@@ -5248,49 +5248,49 @@
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / インターミッション'
   mission0count: 0
 1029511:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 全体編 1話'
-  mission0count: 3
+  mission0count: 4
 10295151:
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 全体編 1話'
   mission0count: 0
 1029521:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 全体編 2話'
-  mission0count: 3
+  mission0count: 4
 10295251:
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 全体編 2話'
   mission0count: 0
 1029531:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 全体編 3話'
-  mission0count: 3
+  mission0count: 4
 10295351:
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 全体編 3話'
   mission0count: 0
 1029541:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 全体編 4話'
-  mission0count: 3
+  mission0count: 4
 10295451:
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 全体編 4話'
   mission0count: 0
 1029551:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 全体編 5話'
-  mission0count: 3
+  mission0count: 4
 10295551:
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 全体編 5話'
   mission0count: 0
 1029561:
-  count: 3
+  count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 全体編 6話'
-  mission0count: 3
+  mission0count: 4
 10295651:
   count: 1
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 全体編 6話'
@@ -7852,7 +7852,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film13'
   mission0count: 0
 10422101:
-  count: 1
+  count: 2
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422102:
@@ -7884,7 +7884,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422109:
-  count: 1
+  count: 2
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422110:
@@ -7900,7 +7900,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422113:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422114:
@@ -7936,7 +7936,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422122:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422123:
@@ -7960,11 +7960,11 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422128:
-  count: 1
+  count: 2
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422129:
-  count: 3
+  count: 4
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422130:
@@ -7972,7 +7972,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422131:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422132:
@@ -7992,7 +7992,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422136:
-  count: 1
+  count: 2
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422137:
@@ -8000,7 +8000,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422138:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10422201:
@@ -8012,11 +8012,11 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10422203:
-  count: 1
+  count: 2
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10422204:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10422205:
@@ -8028,7 +8028,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10422207:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10422208:
@@ -8040,7 +8040,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10422210:
-  count: 1
+  count: 2
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10422211:
@@ -8068,11 +8068,11 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10422217:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10422218:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10422219:
@@ -8084,7 +8084,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10422221:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10422222:
@@ -8100,7 +8100,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10422225:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10422226:
@@ -8132,7 +8132,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film3'
   mission0count: 0
 10422307:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film3'
   mission0count: 0
 10422308:
@@ -8144,7 +8144,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film3'
   mission0count: 0
 10422310:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film3'
   mission0count: 0
 10422311:
@@ -8152,7 +8152,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film3'
   mission0count: 0
 10422312:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film3'
   mission0count: 0
 10422313:
@@ -8164,7 +8164,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film4'
   mission0count: 0
 10422402:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film4'
   mission0count: 0
 10422403:
@@ -8172,15 +8172,15 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film4'
   mission0count: 0
 10422404:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film4'
   mission0count: 0
 10422405:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film4'
   mission0count: 0
 10422406:
-  count: 1
+  count: 2
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film4'
   mission0count: 0
 10422407:
@@ -8216,7 +8216,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film4'
   mission0count: 0
 10422501:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film5'
   mission0count: 0
 10422502:
@@ -8232,11 +8232,11 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film5'
   mission0count: 0
 10422505:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film5'
   mission0count: 0
 10422506:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film5'
   mission0count: 0
 10422507:
@@ -8260,7 +8260,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film7'
   mission0count: 0
 10422703:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film7'
   mission0count: 0
 10422704:
@@ -8296,15 +8296,15 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film12'
   mission0count: 0
 10423102:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film12'
   mission0count: 0
 10423103:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film12'
   mission0count: 0
 10423201:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423202:
@@ -8312,15 +8312,15 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423203:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423204:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423205:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423206:
@@ -8360,7 +8360,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423215:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423216:
@@ -8368,7 +8368,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423217:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423218:
@@ -8376,7 +8376,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423219:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423220:
@@ -8388,7 +8388,7 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423222:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423223:
@@ -8404,15 +8404,15 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423226:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423227:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423228:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10423229:
@@ -11972,21 +11972,21 @@
   name: '[CHARA] 覚えていてくれる存在'
   mission0count: 2
 3105233:
-  count: 6
+  count: 36
   name: '[CHARA] 覚えていてくれる存在'
   mission0count: 2
 3105241:
-  count: 2
+  count: 3
   name: '[CHARA] トヨのドッペル'
-  mission0count: 1
+  mission0count: 2
 3105242:
-  count: 2
+  count: 3
   name: '[CHARA] トヨのドッペル'
-  mission0count: 1
+  mission0count: 2
 3105243:
-  count: 2
+  count: 3
   name: '[CHARA] トヨのドッペル'
-  mission0count: 1
+  mission0count: 2
 3105311:
   count: 1
   name: '[CHARA] 乙女は遊戯をたしなむべし'
@@ -20559,7 +20559,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 光属性'
   mission0count: 2
 4000744:
-  count: 4
+  count: 7
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 光属性'
   mission0count: 1
 4000751:
@@ -21618,9 +21618,9 @@
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
   mission0count: 2
 4203901:
-  count: 55
+  count: 57
   name: '[GROUPBATTLE] 幸福な魔女'
-  mission0count: 95
+  mission0count: 97
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'
