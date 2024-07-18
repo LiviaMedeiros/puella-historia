@@ -2972,7 +2972,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022036:
-  count: 34
+  count: 47
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022037:
@@ -13268,7 +13268,7 @@
   name: '[CHARA] ロスト＆ファウンド'
   mission0count: 1
 3120333:
-  count: 8
+  count: 34
   name: '[CHARA] ロスト＆ファウンド'
   mission0count: 1
 3120341:
@@ -21618,9 +21618,9 @@
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
   mission0count: 2
 4203901:
-  count: 57
+  count: 60
   name: '[GROUPBATTLE] 幸福な魔女'
-  mission0count: 100
+  mission0count: 102
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'
