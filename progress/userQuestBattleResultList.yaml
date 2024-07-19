@@ -648,13 +648,13 @@
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 黒い羽根の少女たち'
   mission0count: 2
 10140354:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 黒い羽根の少女たち'
-  mission0count: 1
+  mission0count: 2
 10140355:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 黒い羽根の少女たち'
-  mission0count: 1
+  mission0count: 2
 1014041:
   count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / マギウスの翼'
@@ -676,25 +676,25 @@
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / マギウスの翼'
   mission0count: 3
 10140451:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / マギウスの翼'
-  mission0count: 0
+  mission0count: 1
 10140452:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / マギウスの翼'
-  mission0count: 0
+  mission0count: 1
 10140453:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / マギウスの翼'
-  mission0count: 0
+  mission0count: 1
 10140454:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / マギウスの翼'
-  mission0count: 0
+  mission0count: 1
 10140455:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / マギウスの翼'
-  mission0count: 0
+  mission0count: 1
 1014051:
   count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
@@ -720,9 +720,9 @@
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
   mission0count: 3
 10140551:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 崇高な目的'
-  mission0count: 0
+  mission0count: 1
 10140552:
   count: 1
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 崇高な目的'
@@ -2940,7 +2940,7 @@
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
   mission0count: 1
 10220258:
-  count: 30
+  count: 62
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
   mission0count: 1
 10220259:
@@ -3176,7 +3176,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / アラウンドエネミー'
   mission0count: 2
 1023023:
-  count: 51
+  count: 55
   name: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / アラウンドエネミー'
   mission0count: 2
 1023024:
@@ -20591,7 +20591,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 3
 4000764:
-  count: 69
+  count: 74
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 2
 4200101:
@@ -21618,9 +21618,9 @@
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
   mission0count: 2
 4203901:
-  count: 62
+  count: 70
   name: '[GROUPBATTLE] 幸福な魔女'
-  mission0count: 105
+  mission0count: 113
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'
