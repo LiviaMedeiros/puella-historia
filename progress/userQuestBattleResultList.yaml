@@ -1436,7 +1436,7 @@
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 消えた３人、そして…'
   mission0count: 2
 1017012:
-  count: 2
+  count: 15
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 消えた３人、そして…'
   mission0count: 2
 10170151:
@@ -21618,9 +21618,9 @@
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
   mission0count: 2
 4203901:
-  count: 70
+  count: 75
   name: '[GROUPBATTLE] 幸福な魔女'
-  mission0count: 113
+  mission0count: 118
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'

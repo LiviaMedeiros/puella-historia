@@ -1,14 +1,14 @@
 ---
 3hour:
-  apps: 10
-  records: 1806
+  apps: 11
+  records: 2020
 day:
-  apps: 19
-  records: 8061
+  apps: 20
+  records: 6950
 week:
   apps: 31
-  records: 44700
+  records: 42590
 totes:
   apps: 127
-  records: 226479
+  records: 226736
 ...
