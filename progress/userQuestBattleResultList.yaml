@@ -2976,7 +2976,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022037:
-  count: 137
+  count: 151
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022038:
@@ -3176,7 +3176,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / アラウンドエネミー'
   mission0count: 2
 1023023:
-  count: 36
+  count: 51
   name: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / アラウンドエネミー'
   mission0count: 2
 1023024:
@@ -3804,7 +3804,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 決裂へのカウントダウン'
   mission0count: 3
 1025038:
-  count: 43
+  count: 99
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 決裂へのカウントダウン'
   mission0count: 3
 10250351:
@@ -20547,11 +20547,11 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 木属性'
   mission0count: 1
 4000741:
-  count: 17
+  count: 19
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 光属性'
   mission0count: 4
 4000742:
-  count: 4
+  count: 17
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 光属性'
   mission0count: 2
 4000743:
@@ -21618,9 +21618,9 @@
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
   mission0count: 2
 4203901:
-  count: 60
+  count: 62
   name: '[GROUPBATTLE] 幸福な魔女'
-  mission0count: 102
+  mission0count: 105
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'
