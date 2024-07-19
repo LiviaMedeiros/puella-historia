@@ -1,16 +1,16 @@
 ---
 1011011:
-  count: 10
-  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
-  mission0count: 9
-1011012:
-  count: 10
-  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
-  mission0count: 9
-1011013:
   count: 11
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
   mission0count: 10
+1011012:
+  count: 11
+  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
+  mission0count: 10
+1011013:
+  count: 12
+  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
+  mission0count: 11
 10110151:
   count: 10
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 小さいキュゥべえ'
@@ -24,17 +24,17 @@
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 小さいキュゥべえ'
   mission0count: 1
 1011021:
-  count: 17
+  count: 18
+  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
+  mission0count: 11
+1011022:
+  count: 18
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 10
-1011022:
-  count: 17
+1011023:
+  count: 12
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 9
-1011023:
-  count: 11
-  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
-  mission0count: 8
 1011024:
   count: 10
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
@@ -68,7 +68,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 6
 1011034:
-  count: 280
+  count: 302
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 6
 1011035:
@@ -21618,9 +21618,9 @@
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
   mission0count: 2
 4203901:
-  count: 76
+  count: 84
   name: '[GROUPBATTLE] 幸福な魔女'
-  mission0count: 120
+  mission0count: 127
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'
