@@ -36,9 +36,9 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 9
 1011024:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
-  mission0count: 8
+  mission0count: 9
 10110251:
   count: 11
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
@@ -56,25 +56,25 @@
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 1
 1011031:
-  count: 12
+  count: 13
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
-  mission0count: 6
+  mission0count: 7
 1011032:
-  count: 10
-  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
-  mission0count: 6
-1011033:
   count: 11
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
-  mission0count: 6
+  mission0count: 7
+1011033:
+  count: 12
+  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
+  mission0count: 7
 1011034:
-  count: 302
+  count: 303
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
-  mission0count: 6
+  mission0count: 7
 1011035:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
-  mission0count: 6
+  mission0count: 7
 10110351:
   count: 10
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 夢で見る少女…'
@@ -96,17 +96,17 @@
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 1
 1012011:
-  count: 10
+  count: 12
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ふたりの親友を訪ねて'
-  mission0count: 6
+  mission0count: 7
 1012012:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ふたりの親友を訪ねて'
-  mission0count: 6
+  mission0count: 7
 1012013:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ふたりの親友を訪ねて'
-  mission0count: 6
+  mission0count: 7
 1012014:
   count: 10
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ふたりの親友を訪ねて'
@@ -13272,17 +13272,17 @@
   name: '[CHARA] ロスト＆ファウンド'
   mission0count: 1
 3120341:
-  count: 1
+  count: 2
   name: '[CHARA] 鶴乃とフェリシアの試練'
-  mission0count: 0
+  mission0count: 1
 3120342:
-  count: 1
+  count: 2
   name: '[CHARA] 鶴乃とフェリシアの試練'
-  mission0count: 0
+  mission0count: 1
 3120343:
-  count: 1
+  count: 2
   name: '[CHARA] 鶴乃とフェリシアの試練'
-  mission0count: 0
+  mission0count: 1
 3120911:
   count: 3
   name: '[CHARA] 第１の壁　夏のノルマ'
@@ -14652,13 +14652,13 @@
   name: '[CHARA] 確かに甘いわね'
   mission0count: 3
 3210531:
-  count: 3
+  count: 4
   name: '[CHARA] 何度生まれ変わっても'
-  mission0count: 2
+  mission0count: 3
 3210532:
-  count: 3
+  count: 4
   name: '[CHARA] 何度生まれ変わっても'
-  mission0count: 2
+  mission0count: 3
 3210533:
   count: 38
   name: '[CHARA] 何度生まれ変わっても'
@@ -20551,7 +20551,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 光属性'
   mission0count: 4
 4000742:
-  count: 17
+  count: 26
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 光属性'
   mission0count: 2
 4000743:
@@ -20579,7 +20579,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
   mission0count: 1
 4000761:
-  count: 366
+  count: 374
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4000762:
@@ -21618,9 +21618,9 @@
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
   mission0count: 2
 4203901:
-  count: 84
+  count: 88
   name: '[GROUPBATTLE] 幸福な魔女'
-  mission0count: 127
+  mission0count: 131
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'
