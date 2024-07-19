@@ -6,13 +6,13 @@ connectNum: 7032
 totesDamageByFire: 381012610
 totesDamageByWater: 609209350
 totesDamageByTimber: 216543385
-totesDamageByLight: 665507459
+totesDamageByLight: 665550584
 totesDamageByDark: 1693717591
 totesDamageByVoid: 460070924
-totesDamage: 294047781
-totesTurn: 60363
+totesDamage: 294056432
+totesTurn: 60369
 results:
-  SUCCESSFUL: 18364
+  SUCCESSFUL: 18365
   FAILED: 479
-sufferingInflicted: 1133256
+sufferingInflicted: 1133980
 ...
