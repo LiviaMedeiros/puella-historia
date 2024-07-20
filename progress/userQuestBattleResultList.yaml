@@ -724,9 +724,9 @@
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 崇高な目的'
   mission0count: 1
 10140552:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 崇高な目的'
-  mission0count: 0
+  mission0count: 1
 10140553:
   count: 1
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 崇高な目的'
@@ -5340,7 +5340,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 決意の香り'
   mission0count: 4
 1030014:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 決意の香り'
   mission0count: 4
 1030015:
@@ -14660,21 +14660,21 @@
   name: '[CHARA] 何度生まれ変わっても'
   mission0count: 3
 3210533:
-  count: 38
+  count: 39
   name: '[CHARA] 何度生まれ変わっても'
-  mission0count: 2
+  mission0count: 3
 3210541:
-  count: 3
+  count: 4
   name: '[CHARA] まどかの試練'
-  mission0count: 2
+  mission0count: 3
 3210542:
-  count: 3
+  count: 4
   name: '[CHARA] まどかの試練'
-  mission0count: 2
+  mission0count: 3
 3210543:
-  count: 3
+  count: 4
   name: '[CHARA] まどかの試練'
-  mission0count: 2
+  mission0count: 3
 3210611:
   count: 1
   name: '[CHARA] 今しかできないこと'
@@ -21618,9 +21618,9 @@
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
   mission0count: 2
 4203901:
-  count: 88
+  count: 89
   name: '[GROUPBATTLE] 幸福な魔女'
-  mission0count: 131
+  mission0count: 132
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'
