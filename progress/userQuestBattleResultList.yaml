@@ -276,13 +276,13 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 何でもできる世界'
   mission0count: 7
 1013012:
-  count: 6
+  count: 7
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 何でもできる世界'
   mission0count: 7
 1013013:
-  count: 6
+  count: 7
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 何でもできる世界'
-  mission0count: 6
+  mission0count: 7
 10130151:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 何でもできる世界'
@@ -296,17 +296,17 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 何でもできる世界'
   mission0count: 1
 1013021:
-  count: 5
+  count: 6
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 神社の噂'
-  mission0count: 5
+  mission0count: 6
 1013022:
-  count: 5
+  count: 6
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 神社の噂'
-  mission0count: 5
+  mission0count: 6
 1013023:
-  count: 5
+  count: 6
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 神社の噂'
-  mission0count: 5
+  mission0count: 6
 10130251:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 神社の噂'
@@ -20579,7 +20579,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
   mission0count: 1
 4000761:
-  count: 374
+  count: 377
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4000762:
@@ -21618,9 +21618,9 @@
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
   mission0count: 2
 4203901:
-  count: 97
+  count: 100
   name: '[GROUPBATTLE] 幸福な魔女'
-  mission0count: 140
+  mission0count: 143
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'
