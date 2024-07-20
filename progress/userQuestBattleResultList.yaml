@@ -68,7 +68,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011034:
-  count: 303
+  count: 334
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011035:
@@ -19945,17 +19945,21 @@
   name: '[CHARA] 撫子のドッペル'
   mission0count: 0
 3404511:
-  count: MISSING
+  count: 1
   name: '[CHARA] 翼の魔法少女クエスト①'
+  mission0count: 0
 3404512:
-  count: MISSING
+  count: 1
   name: '[CHARA] 翼の魔法少女クエスト①'
+  mission0count: 0
 3404513:
-  count: MISSING
+  count: 2
   name: '[CHARA] 翼の魔法少女クエスト①'
+  mission0count: 0
 3404521:
-  count: MISSING
+  count: 0
   name: '[CHARA] 翼の魔法少女クエスト②'
+  mission0count: 0
 3404522:
   count: MISSING
   name: '[CHARA] 翼の魔法少女クエスト②'
@@ -20078,38 +20082,49 @@
   name: '[CHARA] なのはの試練'
   mission0count: 0
 3405211:
-  count: MISSING
+  count: 1
   name: '[CHARA] 愛機'
+  mission0count: 0
 3405212:
-  count: MISSING
+  count: 1
   name: '[CHARA] 愛機'
+  mission0count: 0
 3405213:
-  count: MISSING
+  count: 1
   name: '[CHARA] 愛機'
+  mission0count: 0
 3405221:
-  count: MISSING
+  count: 1
   name: '[CHARA] 果てしないミラーズ'
+  mission0count: 0
 3405222:
-  count: MISSING
+  count: 1
   name: '[CHARA] 果てしないミラーズ'
+  mission0count: 0
 3405223:
-  count: MISSING
+  count: 1
   name: '[CHARA] 果てしないミラーズ'
+  mission0count: 0
 3405231:
-  count: MISSING
+  count: 1
   name: '[CHARA] つながる絆'
+  mission0count: 0
 3405232:
-  count: MISSING
+  count: 1
   name: '[CHARA] つながる絆'
+  mission0count: 0
 3405233:
-  count: MISSING
+  count: 1
   name: '[CHARA] つながる絆'
+  mission0count: 0
 3405241:
-  count: MISSING
+  count: 1
   name: '[CHARA] フェイトの試練'
+  mission0count: 0
 3405242:
-  count: MISSING
+  count: 1
   name: '[CHARA] フェイトの試練'
+  mission0count: 0
 3405243:
   count: 2
   name: '[CHARA] フェイトの試練'
@@ -22330,9 +22345,9 @@
   name: '[COSTUME] 遊んだ後の楽しみと言えば'
   mission0count: 0
 7220311:
-  count: 1
+  count: 2
   name: '[COSTUME] 選択の理由'
-  mission0count: 0
+  mission0count: 1
 7300111:
   count: 1
   name: '[COSTUME] 隠されたアドバイス'
