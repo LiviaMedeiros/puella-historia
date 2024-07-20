@@ -5344,9 +5344,9 @@
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 決意の香り'
   mission0count: 4
 1030015:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 決意の香り'
-  mission0count: 3
+  mission0count: 4
 10300151:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 決意の香り'
@@ -5368,25 +5368,25 @@
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 決意の香り'
   mission0count: 0
 1030021:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
-  mission0count: 3
+  mission0count: 4
 1030022:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
-  mission0count: 3
+  mission0count: 4
 1030023:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
-  mission0count: 3
+  mission0count: 4
 1030024:
+  count: 5
+  name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
+  mission0count: 4
+1030025:
   count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
   mission0count: 3
-1030025:
-  count: 3
-  name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
-  mission0count: 2
 1030026:
   count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
