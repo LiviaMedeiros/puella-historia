@@ -1,10 +1,10 @@
 ---
 1011011:
-  count: 11
+  count: 38
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
   mission0count: 10
 1011012:
-  count: 11
+  count: 37
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
   mission0count: 10
 1011013:
@@ -2816,7 +2816,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
   mission0count: 4
 1022013:
-  count: 3
+  count: 10
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
   mission0count: 3
 1022014:
@@ -5388,13 +5388,13 @@
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
   mission0count: 3
 1030026:
-  count: 3
+  count: 4
+  name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
+  mission0count: 4
+1030027:
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
   mission0count: 3
-1030027:
-  count: 3
-  name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
-  mission0count: 2
 10300251:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 水面下の足音'
@@ -8428,7 +8428,7 @@
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 困難級'
   mission0count: 2
 10424002:
-  count: 0
+  count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 困難級'
   mission0count: 1
 10424003:
@@ -19908,14 +19908,17 @@
   name: '[CHARA] 駿河のドッペル'
   mission0count: 0
 3404411:
-  count: MISSING
+  count: 1
   name: '[CHARA] 撫子の魔法少女クエスト①'
+  mission0count: 0
 3404412:
-  count: MISSING
+  count: 2
   name: '[CHARA] 撫子の魔法少女クエスト①'
+  mission0count: 0
 3404413:
-  count: MISSING
+  count: 2
   name: '[CHARA] 撫子の魔法少女クエスト①'
+  mission0count: 0
 3404421:
   count: MISSING
   name: '[CHARA] 撫子の魔法少女クエスト②'
@@ -19926,20 +19929,25 @@
   count: MISSING
   name: '[CHARA] 撫子の魔法少女クエスト②'
 3404431:
-  count: MISSING
+  count: 1
   name: '[CHARA] 撫子の魔法少女クエスト③'
+  mission0count: 0
 3404432:
-  count: MISSING
+  count: 1
   name: '[CHARA] 撫子の魔法少女クエスト③'
+  mission0count: 0
 3404433:
-  count: MISSING
+  count: 1
   name: '[CHARA] 撫子の魔法少女クエスト③'
+  mission0count: 0
 3404441:
-  count: MISSING
+  count: 1
   name: '[CHARA] 撫子のドッペル'
+  mission0count: 0
 3404442:
-  count: MISSING
+  count: 1
   name: '[CHARA] 撫子のドッペル'
+  mission0count: 0
 3404443:
   count: 1
   name: '[CHARA] 撫子のドッペル'
@@ -19957,30 +19965,37 @@
   name: '[CHARA] 翼の魔法少女クエスト①'
   mission0count: 0
 3404521:
-  count: 0
+  count: 2
   name: '[CHARA] 翼の魔法少女クエスト②'
   mission0count: 0
 3404522:
-  count: MISSING
+  count: 1
   name: '[CHARA] 翼の魔法少女クエスト②'
+  mission0count: 0
 3404523:
-  count: MISSING
+  count: 1
   name: '[CHARA] 翼の魔法少女クエスト②'
+  mission0count: 0
 3404531:
-  count: MISSING
+  count: 1
   name: '[CHARA] 翼の魔法少女クエスト③'
+  mission0count: 0
 3404532:
-  count: MISSING
+  count: 1
   name: '[CHARA] 翼の魔法少女クエスト③'
+  mission0count: 0
 3404533:
-  count: MISSING
+  count: 1
   name: '[CHARA] 翼の魔法少女クエスト③'
+  mission0count: 0
 3404541:
-  count: MISSING
+  count: 1
   name: '[CHARA] 翼のドッペル'
+  mission0count: 0
 3404542:
-  count: MISSING
+  count: 1
   name: '[CHARA] 翼のドッペル'
+  mission0count: 0
 3404543:
   count: 1
   name: '[CHARA] 翼のドッペル'
@@ -20594,7 +20609,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
   mission0count: 1
 4000761:
-  count: 377
+  count: 391
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4000762:
@@ -21633,9 +21648,9 @@
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
   mission0count: 2
 4203901:
-  count: 100
+  count: 103
   name: '[GROUPBATTLE] 幸福な魔女'
-  mission0count: 143
+  mission0count: 146
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'
