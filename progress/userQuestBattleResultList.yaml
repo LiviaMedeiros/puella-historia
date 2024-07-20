@@ -168,19 +168,19 @@
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 7
 1012033:
-  count: 7
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 7
 1012034:
-  count: 7
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 7
 1012035:
-  count: 7
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 7
 10120351:
-  count: 2
+  count: 4
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 1
 10120352:
@@ -212,7 +212,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 7
 1012044:
-  count: 7
+  count: 8
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 7
 10120451:
@@ -232,25 +232,25 @@
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 1
 1012051:
-  count: 6
-  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
-  mission0count: 6
-1012052:
-  count: 6
-  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
-  mission0count: 6
-1012053:
-  count: 6
+  count: 7
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
   mission0count: 7
+1012052:
+  count: 7
+  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
+  mission0count: 7
+1012053:
+  count: 7
+  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
+  mission0count: 8
 1012054:
-  count: 6
+  count: 7
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
-  mission0count: 6
+  mission0count: 7
 1012055:
-  count: 6
+  count: 8
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
-  mission0count: 6
+  mission0count: 7
 10120551:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
@@ -272,13 +272,13 @@
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
   mission0count: 1
 1013011:
-  count: 6
+  count: 7
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 何でもできる世界'
-  mission0count: 6
+  mission0count: 7
 1013012:
   count: 6
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 何でもできる世界'
-  mission0count: 6
+  mission0count: 7
 1013013:
   count: 6
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 何でもできる世界'
@@ -1448,7 +1448,7 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / 消えた３人、そして…'
   mission0count: 0
 1017021:
-  count: 2
+  count: 15
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / うわさ、脳裏で漂って'
   mission0count: 2
 10170251:
@@ -14244,17 +14244,17 @@
   name: '[CHARA] マミのドッペル'
   mission0count: 0
 3200611:
-  count: 3
+  count: 4
   name: '[CHARA] 魔法少女の信条'
-  mission0count: 3
+  mission0count: 4
 3200612:
-  count: 3
+  count: 4
   name: '[CHARA] 魔法少女の信条'
-  mission0count: 3
+  mission0count: 4
 3200613:
-  count: 3
+  count: 4
   name: '[CHARA] 魔法少女の信条'
-  mission0count: 3
+  mission0count: 4
 3200621:
   count: 3
   name: '[CHARA] 魔法少女とクッキング'
@@ -21618,9 +21618,9 @@
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
   mission0count: 2
 4203901:
-  count: 90
+  count: 97
   name: '[GROUPBATTLE] 幸福な魔女'
-  mission0count: 134
+  mission0count: 140
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'
