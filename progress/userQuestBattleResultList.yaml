@@ -320,25 +320,25 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 神社の噂'
   mission0count: 1
 1013031:
+  count: 6
+  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
+  mission0count: 6
+1013032:
   count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
   mission0count: 5
-1013032:
-  count: 4
-  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
-  mission0count: 4
 1013033:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
-  mission0count: 4
+  mission0count: 5
 1013034:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
-  mission0count: 4
+  mission0count: 5
 1013035:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
-  mission0count: 4
+  mission0count: 5
 10130351:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
@@ -1456,7 +1456,7 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / うわさ、脳裏で漂って'
   mission0count: 0
 1017031:
-  count: 2
+  count: 15
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 鶴乃の安否'
   mission0count: 2
 1017032:
@@ -9984,17 +9984,17 @@
   name: '[CHARA] ももこのドッペル'
   mission0count: 1
 3101111:
-  count: 3
+  count: 5
   name: '[CHARA] 新メンバー'
-  mission0count: 3
+  mission0count: 4
 3101112:
-  count: 3
+  count: 4
   name: '[CHARA] 新メンバー'
-  mission0count: 3
+  mission0count: 4
 3101113:
-  count: 3
+  count: 4
   name: '[CHARA] 新メンバー'
-  mission0count: 3
+  mission0count: 4
 3101121:
   count: 3
   name: '[CHARA] ごめんなさい'
@@ -11980,13 +11980,13 @@
   name: '[CHARA] トヨのドッペル'
   mission0count: 3
 3105242:
-  count: 3
+  count: 4
   name: '[CHARA] トヨのドッペル'
-  mission0count: 2
+  mission0count: 3
 3105243:
-  count: 3
+  count: 4
   name: '[CHARA] トヨのドッペル'
-  mission0count: 2
+  mission0count: 3
 3105311:
   count: 1
   name: '[CHARA] 乙女は遊戯をたしなむべし'
@@ -21648,9 +21648,9 @@
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
   mission0count: 2
 4203901:
-  count: 106
+  count: 113
   name: '[GROUPBATTLE] 幸福な魔女'
-  mission0count: 149
+  mission0count: 164
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'
