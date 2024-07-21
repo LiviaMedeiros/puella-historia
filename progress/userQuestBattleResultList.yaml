@@ -4,7 +4,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
   mission0count: 10
 1011012:
-  count: 37
+  count: 38
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
   mission0count: 10
 1011013:
@@ -1682,7 +1682,7 @@
 1017171:
   count: 2
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / マギウスの目的'
-  mission0count: 2
+  mission0count: 3
 1017172:
   count: 2
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / マギウスの目的'
@@ -2828,7 +2828,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
   mission0count: 3
 1022016:
-  count: 29
+  count: 31
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
   mission0count: 3
 1022017:
@@ -15430,7 +15430,7 @@
 3260133:
   count: 2
   name: '[CHARA] あたしは知ってる'
-  mission0count: 2
+  mission0count: 3
 3260141:
   count: 2
   name: '[CHARA] 杏子の試練'
