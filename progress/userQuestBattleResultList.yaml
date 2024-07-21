@@ -2828,7 +2828,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
   mission0count: 3
 1022016:
-  count: 3
+  count: 29
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
   mission0count: 3
 1022017:
@@ -5424,25 +5424,25 @@
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 水面下の足音'
   mission0count: 0
 1030031:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
-  mission0count: 3
+  mission0count: 4
 1030032:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
-  mission0count: 3
+  mission0count: 4
 1030033:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
-  mission0count: 3
+  mission0count: 4
 1030034:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
-  mission0count: 3
+  mission0count: 4
 1030035:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
-  mission0count: 3
+  mission0count: 4
 1030036:
   count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
@@ -8452,9 +8452,9 @@
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 困難級'
   mission0count: 1
 10424008:
-  count: 0
+  count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 困難級'
-  mission0count: 1
+  mission0count: 3
 10424009:
   count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 困難級'
@@ -8466,11 +8466,11 @@
 10425001:
   count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
-  mission0count: 1
+  mission0count: 2
 10425002:
   count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
-  mission0count: 2
+  mission0count: 3
 10425003:
   count: 0
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
