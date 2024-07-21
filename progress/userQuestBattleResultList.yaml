@@ -112,7 +112,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ふたりの親友を訪ねて'
   mission0count: 7
 10120151:
-  count: 11
+  count: 12
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / ふたりの親友を訪ねて'
   mission0count: 1
 10120152:
@@ -180,31 +180,31 @@
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 7
 10120351:
-  count: 6
+  count: 9
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 1
 10120352:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 1
 10120353:
-  count: 3
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 1
 10120354:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 1
 10120355:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 1
 1012041:
-  count: 7
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 7
 1012042:
-  count: 7
+  count: 14
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 7
 1012043:
@@ -212,7 +212,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 7
 1012044:
-  count: 8
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 7
 10120451:
@@ -11964,21 +11964,21 @@
   name: '[CHARA] 賢くて仲良しの相棒'
   mission0count: 3
 3105231:
-  count: 3
+  count: 5
   name: '[CHARA] 覚えていてくれる存在'
-  mission0count: 2
+  mission0count: 3
 3105232:
-  count: 3
+  count: 4
   name: '[CHARA] 覚えていてくれる存在'
-  mission0count: 2
+  mission0count: 3
 3105233:
-  count: 36
+  count: 38
   name: '[CHARA] 覚えていてくれる存在'
-  mission0count: 2
+  mission0count: 3
 3105241:
-  count: 3
+  count: 4
   name: '[CHARA] トヨのドッペル'
-  mission0count: 2
+  mission0count: 3
 3105242:
   count: 3
   name: '[CHARA] トヨのドッペル'
@@ -20581,7 +20581,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 光属性'
   mission0count: 4
 4000742:
-  count: 26
+  count: 29
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 光属性'
   mission0count: 2
 4000743:
