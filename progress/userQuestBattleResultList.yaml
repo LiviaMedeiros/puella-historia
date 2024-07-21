@@ -1124,9 +1124,9 @@
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 講義のお誘い'
   mission0count: 2
 1016012:
-  count: 2
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 講義のお誘い'
-  mission0count: 3
+  mission0count: 4
 1016013:
   count: 2
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 講義のお誘い'
@@ -5384,17 +5384,17 @@
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
   mission0count: 4
 1030025:
-  count: 4
-  name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
-  mission0count: 3
-1030026:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
   mission0count: 4
-1030027:
-  count: 4
+1030026:
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
-  mission0count: 3
+  mission0count: 5
+1030027:
+  count: 5
+  name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
+  mission0count: 4
 10300251:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 水面下の足音'
@@ -5424,29 +5424,29 @@
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 水面下の足音'
   mission0count: 0
 1030031:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
-  mission0count: 4
+  mission0count: 5
 1030032:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
-  mission0count: 4
+  mission0count: 5
 1030033:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
-  mission0count: 4
+  mission0count: 5
 1030034:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
-  mission0count: 4
+  mission0count: 5
 1030035:
+  count: 5
+  name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
+  mission0count: 5
+1030036:
   count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
   mission0count: 4
-1030036:
-  count: 3
-  name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
-  mission0count: 3
 10300351:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 語られた目的'
@@ -5472,13 +5472,13 @@
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 語られた目的'
   mission0count: 1
 1030041:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
-  mission0count: 3
+  mission0count: 4
 1030042:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
-  mission0count: 3
+  mission0count: 4
 1030043:
   count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
@@ -7360,15 +7360,15 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10420201:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10420202:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10420203:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10420204:
@@ -11616,53 +11616,53 @@
   name: '[CHARA] みことのドッペル'
   mission0count: 0
 3104511:
-  count: 1
+  count: 2
   name: '[CHARA] ご神木を守りし祖霊の姫'
-  mission0count: 0
+  mission0count: 1
 3104512:
-  count: 1
+  count: 2
   name: '[CHARA] ご神木を守りし祖霊の姫'
-  mission0count: 0
+  mission0count: 1
 3104513:
-  count: 1
+  count: 2
   name: '[CHARA] ご神木を守りし祖霊の姫'
-  mission0count: 0
+  mission0count: 1
 3104521:
-  count: 1
+  count: 2
   name: '[CHARA] やります、鉄火起請！'
-  mission0count: 0
+  mission0count: 1
 3104522:
-  count: 1
+  count: 2
   name: '[CHARA] やります、鉄火起請！'
-  mission0count: 0
+  mission0count: 2
 3104523:
-  count: 1
+  count: 2
   name: '[CHARA] やります、鉄火起請！'
-  mission0count: 0
+  mission0count: 1
 3104531:
-  count: 1
+  count: 2
   name: '[CHARA] 消えた千鶴の気持ち'
-  mission0count: 0
+  mission0count: 1
 3104532:
-  count: 1
+  count: 2
   name: '[CHARA] 消えた千鶴の気持ち'
-  mission0count: 0
+  mission0count: 1
 3104533:
-  count: 1
+  count: 2
   name: '[CHARA] 消えた千鶴の気持ち'
-  mission0count: 0
+  mission0count: 1
 3104541:
-  count: 1
+  count: 2
   name: '[CHARA] 露のドッペル'
-  mission0count: 0
+  mission0count: 1
 3104542:
-  count: 1
+  count: 2
   name: '[CHARA] 露のドッペル'
-  mission0count: 0
+  mission0count: 1
 3104543:
-  count: 1
+  count: 2
   name: '[CHARA] 露のドッペル'
-  mission0count: 0
+  mission0count: 1
 3104611:
   count: 3
   name: '[CHARA] 使命を遂げし賊の娘'
@@ -12180,41 +12180,41 @@
   name: '[CHARA] ウワサの鶴乃のドッペル'
   mission0count: 1
 3110411:
-  count: 2
+  count: 3
   name: '[CHARA] ゆめの理由'
-  mission0count: 2
+  mission0count: 3
 3110412:
-  count: 2
+  count: 3
   name: '[CHARA] ゆめの理由'
-  mission0count: 2
+  mission0count: 3
 3110413:
-  count: 2
+  count: 3
   name: '[CHARA] ゆめの理由'
-  mission0count: 2
+  mission0count: 3
 3110421:
-  count: 2
+  count: 3
   name: '[CHARA] のこしたい物語'
-  mission0count: 2
+  mission0count: 3
 3110422:
-  count: 2
+  count: 3
   name: '[CHARA] のこしたい物語'
-  mission0count: 2
+  mission0count: 3
 3110423:
-  count: 2
+  count: 3
   name: '[CHARA] のこしたい物語'
-  mission0count: 2
+  mission0count: 3
 3110431:
-  count: 2
+  count: 3
   name: '[CHARA] 想いをつたえて'
-  mission0count: 2
+  mission0count: 3
 3110432:
-  count: 2
+  count: 3
   name: '[CHARA] 想いをつたえて'
-  mission0count: 2
+  mission0count: 3
 3110433:
-  count: 2
+  count: 4
   name: '[CHARA] 想いをつたえて'
-  mission0count: 2
+  mission0count: 3
 3110441:
   count: 2
   name: '[CHARA] ウワサのさなの試練'
@@ -20541,7 +20541,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 火属性'
   mission0count: 3
 4000714:
-  count: 21
+  count: 22
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 火属性'
   mission0count: 3
 4000721:
@@ -20609,21 +20609,21 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
   mission0count: 1
 4000761:
-  count: 391
+  count: 392
+  name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
+  mission0count: 7
+4000762:
+  count: 16
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
-4000762:
-  count: 15
-  name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
-  mission0count: 3
 4000763:
-  count: 4
+  count: 5
+  name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
+  mission0count: 4
+4000764:
+  count: 76
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 3
-4000764:
-  count: 74
-  name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
-  mission0count: 2
 4200101:
   count: MISSING
   name: '[GROUPBATTLE] 悦ぶ サファイアの唇'
