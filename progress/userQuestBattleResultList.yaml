@@ -112,7 +112,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ふたりの親友を訪ねて'
   mission0count: 7
 10120151:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / ふたりの親友を訪ねて'
   mission0count: 1
 10120152:
@@ -180,7 +180,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 7
 10120351:
-  count: 4
+  count: 6
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 1
 10120352:
@@ -12276,29 +12276,29 @@
   name: '[CHARA] フェリシアちゃんのドッペル'
   mission0count: 0
 3110611:
-  count: 1
+  count: 2
   name: '[CHARA] 夢は変身ヒロイン！'
-  mission0count: 0
+  mission0count: 1
 3110612:
-  count: 1
+  count: 2
   name: '[CHARA] 夢は変身ヒロイン！'
-  mission0count: 0
+  mission0count: 1
 3110613:
-  count: 1
+  count: 2
   name: '[CHARA] 夢は変身ヒロイン！'
-  mission0count: 0
+  mission0count: 1
 3110621:
-  count: 1
+  count: 2
   name: '[CHARA] 夢を見るだけの時間は終わり'
-  mission0count: 0
+  mission0count: 1
 3110622:
-  count: 1
+  count: 2
   name: '[CHARA] 夢を見るだけの時間は終わり'
-  mission0count: 0
+  mission0count: 1
 3110623:
-  count: 1
+  count: 2
   name: '[CHARA] 夢を見るだけの時間は終わり'
-  mission0count: 0
+  mission0count: 1
 3110631:
   count: 1
   name: '[CHARA] 夢も理想も失わず'
@@ -21648,9 +21648,9 @@
   name: '[EXTERMINATION] 殲滅戦 EXCHALLENGE'
   mission0count: 2
 4203901:
-  count: 103
+  count: 106
   name: '[GROUPBATTLE] 幸福な魔女'
-  mission0count: 146
+  mission0count: 149
 5217101:
   count: 2
   name: '[PUELLA_RAID] BEYOND MAGIA'
