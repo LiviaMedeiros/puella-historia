@@ -8428,7 +8428,7 @@
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 困難級'
   mission0count: 3
 10424002:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 困難級'
   mission0count: 2
 10424003:
@@ -8464,9 +8464,9 @@
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 困難級'
   mission0count: 1
 10425001:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
-  mission0count: 3
+  mission0count: 4
 10425002:
   count: 2
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
@@ -8482,7 +8482,7 @@
 10425005:
   count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
-  mission0count: 2
+  mission0count: 3
 10425006:
   count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
@@ -8520,11 +8520,11 @@
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
   mission0count: 1
 10426005:
-  count: 0
+  count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
   mission0count: 1
 10426006:
-  count: 0
+  count: 2
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
   mission0count: 1
 10426007:
@@ -8538,7 +8538,7 @@
 10426009:
   count: 0
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
-  mission0count: 1
+  mission0count: 2
 10426010:
   count: 0
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
@@ -11136,53 +11136,53 @@
   name: '[CHARA] 旭のドッペル'
   mission0count: 0
 3103511:
-  count: 1
+  count: 2
   name: '[CHARA] 屋上と夕日'
-  mission0count: 0
+  mission0count: 1
 3103512:
-  count: 1
+  count: 2
   name: '[CHARA] 屋上と夕日'
-  mission0count: 0
+  mission0count: 1
 3103513:
-  count: 1
+  count: 2
   name: '[CHARA] 屋上と夕日'
-  mission0count: 0
+  mission0count: 1
 3103521:
-  count: 1
+  count: 2
   name: '[CHARA] 先生と私'
-  mission0count: 0
+  mission0count: 1
 3103522:
-  count: 1
+  count: 2
   name: '[CHARA] 先生と私'
-  mission0count: 0
+  mission0count: 1
 3103523:
-  count: 1
+  count: 2
   name: '[CHARA] 先生と私'
-  mission0count: 0
+  mission0count: 1
 3103531:
-  count: 1
+  count: 2
   name: '[CHARA] 初恋とさようなら'
-  mission0count: 0
+  mission0count: 1
 3103532:
-  count: 1
+  count: 2
   name: '[CHARA] 初恋とさようなら'
-  mission0count: 0
+  mission0count: 1
 3103533:
-  count: 1
+  count: 2
   name: '[CHARA] 初恋とさようなら'
-  mission0count: 0
+  mission0count: 1
 3103541:
-  count: 1
+  count: 2
   name: '[CHARA] アレクサンドラのドッペル'
-  mission0count: 0
+  mission0count: 1
 3103542:
-  count: 1
+  count: 2
   name: '[CHARA] アレクサンドラのドッペル'
-  mission0count: 0
+  mission0count: 1
 3103543:
-  count: 1
+  count: 2
   name: '[CHARA] アレクサンドラのドッペル'
-  mission0count: 0
+  mission0count: 1
 3103611:
   count: 2
   name: '[CHARA] ウチだってできるんよ！'
@@ -11796,17 +11796,17 @@
   name: '[CHARA] エボニーのドッペル'
   mission0count: 1
 3104911:
-  count: 1
+  count: 2
   name: '[CHARA] 耐える日々'
-  mission0count: 0
+  mission0count: 1
 3104912:
-  count: 1
+  count: 2
   name: '[CHARA] 耐える日々'
-  mission0count: 0
+  mission0count: 1
 3104913:
-  count: 1
+  count: 2
   name: '[CHARA] 耐える日々'
-  mission0count: 0
+  mission0count: 1
 3104921:
   count: 1
   name: '[CHARA] 妹の機転'
@@ -12216,17 +12216,17 @@
   name: '[CHARA] 想いをつたえて'
   mission0count: 3
 3110441:
-  count: 2
+  count: 3
   name: '[CHARA] ウワサのさなの試練'
-  mission0count: 2
+  mission0count: 3
 3110442:
-  count: 2
+  count: 3
   name: '[CHARA] ウワサのさなの試練'
-  mission0count: 2
+  mission0count: 3
 3110443:
-  count: 2
+  count: 3
   name: '[CHARA] ウワサのさなの試練'
-  mission0count: 2
+  mission0count: 3
 3110511:
   count: 1
   name: '[CHARA] みたまのカメラ'
@@ -19920,14 +19920,17 @@
   name: '[CHARA] 撫子の魔法少女クエスト①'
   mission0count: 0
 3404421:
-  count: MISSING
+  count: 1
   name: '[CHARA] 撫子の魔法少女クエスト②'
+  mission0count: 0
 3404422:
-  count: MISSING
+  count: 1
   name: '[CHARA] 撫子の魔法少女クエスト②'
+  mission0count: 0
 3404423:
-  count: MISSING
+  count: 1
   name: '[CHARA] 撫子の魔法少女クエスト②'
+  mission0count: 0
 3404431:
   count: 1
   name: '[CHARA] 撫子の魔法少女クエスト③'
@@ -22232,9 +22235,9 @@
   name: '[COSTUME] 時女流はろうぃん'
   mission0count: 1
 7103511:
-  count: 1
+  count: 2
   name: '[COSTUME] 色眼鏡は禁物'
-  mission0count: 1
+  mission0count: 2
 7103611:
   count: 3
   name: '[COSTUME] 新しいトリックオアトリート'
