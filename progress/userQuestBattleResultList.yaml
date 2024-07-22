@@ -36,7 +36,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 9
 1011024:
-  count: 11
+  count: 18
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 9
 10110251:
@@ -11568,53 +11568,53 @@
   name: '[CHARA] 黒江のドッペル'
   mission0count: 0
 3104411:
-  count: 2
+  count: 3
   name: '[CHARA] 出会ってしまったふたり'
-  mission0count: 1
+  mission0count: 2
 3104412:
-  count: 2
+  count: 3
   name: '[CHARA] 出会ってしまったふたり'
-  mission0count: 1
+  mission0count: 2
 3104413:
-  count: 2
+  count: 3
   name: '[CHARA] 出会ってしまったふたり'
-  mission0count: 1
+  mission0count: 2
 3104421:
-  count: 1
+  count: 2
   name: '[CHARA] 偽りの中で'
-  mission0count: 0
+  mission0count: 1
 3104422:
-  count: 1
+  count: 2
   name: '[CHARA] 偽りの中で'
-  mission0count: 0
+  mission0count: 1
 3104423:
-  count: 1
+  count: 2
   name: '[CHARA] 偽りの中で'
-  mission0count: 0
+  mission0count: 1
 3104431:
-  count: 1
+  count: 2
   name: '[CHARA] 夜になる前に'
-  mission0count: 0
+  mission0count: 1
 3104432:
-  count: 1
+  count: 2
   name: '[CHARA] 夜になる前に'
-  mission0count: 0
+  mission0count: 1
 3104433:
-  count: 1
+  count: 2
   name: '[CHARA] 夜になる前に'
-  mission0count: 0
+  mission0count: 1
 3104441:
-  count: 1
+  count: 2
   name: '[CHARA] みことのドッペル'
-  mission0count: 0
+  mission0count: 1
 3104442:
-  count: 1
+  count: 2
   name: '[CHARA] みことのドッペル'
-  mission0count: 0
+  mission0count: 1
 3104443:
-  count: 1
+  count: 2
   name: '[CHARA] みことのドッペル'
-  mission0count: 0
+  mission0count: 1
 3104511:
   count: 2
   name: '[CHARA] ご神木を守りし祖霊の姫'
@@ -11808,41 +11808,41 @@
   name: '[CHARA] 耐える日々'
   mission0count: 1
 3104921:
-  count: 1
+  count: 2
   name: '[CHARA] 妹の機転'
-  mission0count: 0
+  mission0count: 1
 3104922:
-  count: 1
+  count: 2
   name: '[CHARA] 妹の機転'
-  mission0count: 0
+  mission0count: 2
 3104923:
-  count: 1
+  count: 2
   name: '[CHARA] 妹の機転'
-  mission0count: 0
+  mission0count: 1
 3104931:
-  count: 1
-  name: '[CHARA] 手を携えて'
-  mission0count: 0
-3104932:
   count: 2
   name: '[CHARA] 手を携えて'
-  mission0count: 0
-3104933:
-  count: 1
+  mission0count: 1
+3104932:
+  count: 3
   name: '[CHARA] 手を携えて'
-  mission0count: 0
+  mission0count: 1
+3104933:
+  count: 2
+  name: '[CHARA] 手を携えて'
+  mission0count: 1
 3104941:
-  count: 1
+  count: 2
   name: '[CHARA] オルガのドッペル'
-  mission0count: 0
+  mission0count: 1
 3104942:
-  count: 1
+  count: 2
   name: '[CHARA] オルガのドッペル'
-  mission0count: 0
+  mission0count: 1
 3104943:
-  count: 1
+  count: 2
   name: '[CHARA] オルガのドッペル'
-  mission0count: 0
+  mission0count: 1
 3105011:
   count: 1
   name: '[CHARA] 同じ夢を見る'
@@ -12660,41 +12660,41 @@
   name: '[CHARA] 十七夜のドッペル'
   mission0count: 0
 3111711:
-  count: 1
+  count: 2
   name: '[CHARA] 空白のスケジュール'
-  mission0count: 1
+  mission0count: 2
 3111712:
-  count: 1
+  count: 2
   name: '[CHARA] 空白のスケジュール'
-  mission0count: 1
+  mission0count: 2
 3111713:
-  count: 1
+  count: 2
   name: '[CHARA] 空白のスケジュール'
-  mission0count: 1
+  mission0count: 2
 3111721:
-  count: 1
+  count: 2
   name: '[CHARA] 年末年始のアクセント'
-  mission0count: 1
+  mission0count: 2
 3111722:
-  count: 1
+  count: 2
   name: '[CHARA] 年末年始のアクセント'
-  mission0count: 1
+  mission0count: 2
 3111723:
-  count: 1
+  count: 2
   name: '[CHARA] 年末年始のアクセント'
-  mission0count: 1
+  mission0count: 2
 3111731:
-  count: 1
+  count: 2
   name: '[CHARA] 本心のスマイル'
-  mission0count: 1
+  mission0count: 2
 3111732:
-  count: 1
+  count: 2
   name: '[CHARA] 本心のスマイル'
-  mission0count: 1
+  mission0count: 2
 3111733:
-  count: 1
+  count: 2
   name: '[CHARA] 本心のスマイル'
-  mission0count: 1
+  mission0count: 2
 3111741:
   count: 1
   name: '[CHARA] みたまのドッペル'
