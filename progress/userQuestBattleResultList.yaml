@@ -844,25 +844,25 @@
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
   mission0count: 2
 10150151:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
-  mission0count: 0
+  mission0count: 1
 10150152:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
-  mission0count: 0
+  mission0count: 1
 10150153:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
-  mission0count: 0
+  mission0count: 1
 10150154:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
-  mission0count: 0
+  mission0count: 1
 10150155:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
-  mission0count: 0
+  mission0count: 1
 1015021:
   count: 2
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
@@ -884,9 +884,9 @@
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
   mission0count: 2
 10150251:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
-  mission0count: 0
+  mission0count: 1
 10150252:
   count: 1
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
@@ -1128,21 +1128,21 @@
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 講義のお誘い'
   mission0count: 4
 1016013:
-  count: 2
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 講義のお誘い'
-  mission0count: 2
+  mission0count: 3
 1016014:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 講義のお誘い'
-  mission0count: 2
+  mission0count: 3
 1016015:
-  count: 2
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 講義のお誘い'
-  mission0count: 2
+  mission0count: 3
 1016016:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 講義のお誘い'
-  mission0count: 2
+  mission0count: 3
 10160151:
   count: 1
   name: '[MAIN/1/NORMAL/HARD] 真実を語る記憶 (第6章) / 講義のお誘い'
@@ -1168,9 +1168,9 @@
   name: '[MAIN/1/NORMAL/HARD] 真実を語る記憶 (第6章) / 講義のお誘い'
   mission0count: 0
 1016021:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 会場は記憶ミュージアム'
-  mission0count: 2
+  mission0count: 3
 1016022:
   count: 2
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 会場は記憶ミュージアム'
@@ -2224,7 +2224,7 @@
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / フェリシア編 7話'
   mission0count: 0
 1018811:
-  count: 2
+  count: 3
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / みたま編 6話'
   mission0count: 2
 10188151:
@@ -2976,7 +2976,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022037:
-  count: 151
+  count: 164
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022038:
@@ -11680,37 +11680,37 @@
   name: '[CHARA] 泰党の技を盗んだ女'
   mission0count: 2
 3104622:
-  count: 2
+  count: 3
   name: '[CHARA] 泰党の技を盗んだ女'
-  mission0count: 1
+  mission0count: 2
 3104623:
-  count: 2
+  count: 3
   name: '[CHARA] 泰党の技を盗んだ女'
-  mission0count: 1
+  mission0count: 2
 3104631:
-  count: 2
-  name: '[CHARA] 怖い、嫌だ、無理！'
-  mission0count: 1
-3104632:
   count: 3
   name: '[CHARA] 怖い、嫌だ、無理！'
-  mission0count: 1
-3104633:
-  count: 2
+  mission0count: 2
+3104632:
+  count: 4
   name: '[CHARA] 怖い、嫌だ、無理！'
-  mission0count: 1
+  mission0count: 2
+3104633:
+  count: 3
+  name: '[CHARA] 怖い、嫌だ、無理！'
+  mission0count: 2
 3104641:
-  count: 1
+  count: 2
   name: '[CHARA] 千鶴のドッペル'
-  mission0count: 0
+  mission0count: 1
 3104642:
-  count: 1
+  count: 2
   name: '[CHARA] 千鶴のドッペル'
-  mission0count: 0
+  mission0count: 1
 3104643:
-  count: 1
+  count: 2
   name: '[CHARA] 千鶴のドッペル'
-  mission0count: 0
+  mission0count: 1
 3104711:
   count: 1
   name: '[CHARA] ひとりで生きると決めたから'
@@ -20621,7 +20621,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4000764:
-  count: 76
+  count: 82
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 3
 4200101:
