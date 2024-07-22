@@ -68,7 +68,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011034:
-  count: 334
+  count: 345
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011035:
@@ -360,29 +360,29 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
   mission0count: 1
 1013041:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
-  mission0count: 4
+  mission0count: 5
 1013042:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
-  mission0count: 4
+  mission0count: 5
 1013043:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
-  mission0count: 4
+  mission0count: 5
 1013044:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
-  mission0count: 4
+  mission0count: 5
 1013045:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
-  mission0count: 4
+  mission0count: 5
 1013046:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
-  mission0count: 4
+  mission0count: 5
 10130451:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 口寄せ神社'
@@ -408,25 +408,25 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 1
 1013051:
-  count: 3
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
-  mission0count: 3
+  mission0count: 4
 1013052:
-  count: 3
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
-  mission0count: 3
+  mission0count: 4
 1013053:
-  count: 3
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
-  mission0count: 3
+  mission0count: 4
 1013054:
-  count: 3
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
-  mission0count: 3
+  mission0count: 4
 1013055:
-  count: 3
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
-  mission0count: 3
+  mission0count: 4
 10130551:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 参拝する少女たち'
@@ -448,9 +448,9 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 参拝する少女たち'
   mission0count: 1
 1013061:
-  count: 3
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
-  mission0count: 3
+  mission0count: 4
 1013062:
   count: 3
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
@@ -12300,17 +12300,17 @@
   name: '[CHARA] 夢を見るだけの時間は終わり'
   mission0count: 1
 3110631:
-  count: 1
+  count: 2
   name: '[CHARA] 夢も理想も失わず'
-  mission0count: 0
+  mission0count: 1
 3110632:
-  count: 1
+  count: 2
   name: '[CHARA] 夢も理想も失わず'
-  mission0count: 0
+  mission0count: 1
 3110633:
-  count: 1
+  count: 2
   name: '[CHARA] 夢も理想も失わず'
-  mission0count: 0
+  mission0count: 1
 3110641:
   count: 1
   name: '[CHARA] みふゆのドッペル'
