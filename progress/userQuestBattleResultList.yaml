@@ -464,7 +464,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 5
 1013065:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 4
 10130651:
@@ -496,7 +496,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
   mission0count: 4
 1013073:
-  count: 4
+  count: 7
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
   mission0count: 4
 1013074:
@@ -2976,7 +2976,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022037:
-  count: 164
+  count: 177
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022038:
@@ -15428,9 +15428,9 @@
   name: '[CHARA] あたしは知ってる'
   mission0count: 2
 3260133:
-  count: 2
+  count: 33
   name: '[CHARA] あたしは知ってる'
-  mission0count: 3
+  mission0count: 4
 3260141:
   count: 2
   name: '[CHARA] 杏子の試練'
