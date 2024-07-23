@@ -36,7 +36,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 9
 1011024:
-  count: 18
+  count: 26
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 9
 10110251:
@@ -68,7 +68,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011034:
-  count: 345
+  count: 355
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011035:
@@ -4200,9 +4200,9 @@
   name: '[MAIN/2/NORMAL/HARD] 揺れて恋歌に霞む理想 (第5章) / 心は一つ、魂も一つ'
   mission0count: 0
 1026051:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 揺れて恋歌に霞む理想 (第5章) / 鏡の奥に映るもの'
-  mission0count: 3
+  mission0count: 4
 1026052:
   count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 揺れて恋歌に霞む理想 (第5章) / 鏡の奥に映るもの'
@@ -5484,25 +5484,25 @@
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
   mission0count: 4
 1030044:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
-  mission0count: 3
+  mission0count: 4
 1030045:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
-  mission0count: 5
+  mission0count: 6
 1030046:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
-  mission0count: 3
+  mission0count: 4
 1030047:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
-  mission0count: 3
+  mission0count: 4
 1030048:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
-  mission0count: 3
+  mission0count: 4
 10300451:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
@@ -5536,25 +5536,25 @@
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
   mission0count: 0
 1030051:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 見えざる意思'
-  mission0count: 3
+  mission0count: 4
 1030052:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 見えざる意思'
-  mission0count: 3
+  mission0count: 4
 1030053:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 見えざる意思'
-  mission0count: 3
+  mission0count: 4
 1030054:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 見えざる意思'
-  mission0count: 3
+  mission0count: 4
 1030055:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 見えざる意思'
-  mission0count: 3
+  mission0count: 4
 10300551:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 見えざる意思'
@@ -5576,9 +5576,9 @@
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 見えざる意思'
   mission0count: 0
 1031011:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
-  mission0count: 3
+  mission0count: 4
 1031012:
   count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
@@ -10720,25 +10720,25 @@
   name: '[CHARA] 潜入！魅力特定班'
   mission0count: 2
 3102622:
-  count: 2
+  count: 3
   name: '[CHARA] 潜入！魅力特定班'
-  mission0count: 1
+  mission0count: 2
 3102623:
-  count: 2
+  count: 3
   name: '[CHARA] 潜入！魅力特定班'
-  mission0count: 1
+  mission0count: 2
 3102631:
-  count: 2
+  count: 3
   name: '[CHARA] 解決!?集落の救世主'
-  mission0count: 1
+  mission0count: 2
 3102632:
-  count: 2
+  count: 3
   name: '[CHARA] 解決!?集落の救世主'
-  mission0count: 1
+  mission0count: 2
 3102633:
-  count: 2
+  count: 3
   name: '[CHARA] 解決!?集落の救世主'
-  mission0count: 1
+  mission0count: 2
 3102641:
   count: 2
   name: '[CHARA] ちはるのドッペル'
@@ -11792,9 +11792,9 @@
   name: '[CHARA] エボニーのドッペル'
   mission0count: 2
 3104843:
-  count: 2
+  count: 3
   name: '[CHARA] エボニーのドッペル'
-  mission0count: 1
+  mission0count: 2
 3104911:
   count: 2
   name: '[CHARA] 耐える日々'
@@ -12696,17 +12696,17 @@
   name: '[CHARA] 本心のスマイル'
   mission0count: 2
 3111741:
-  count: 1
-  name: '[CHARA] みたまのドッペル'
-  mission0count: 1
-3111742:
-  count: 1
-  name: '[CHARA] みたまのドッペル'
-  mission0count: 1
-3111743:
   count: 2
   name: '[CHARA] みたまのドッペル'
-  mission0count: 1
+  mission0count: 2
+3111742:
+  count: 2
+  name: '[CHARA] みたまのドッペル'
+  mission0count: 2
+3111743:
+  count: 3
+  name: '[CHARA] みたまのドッペル'
+  mission0count: 2
 3111811:
   count: 1
   name: '[CHARA] 夏の海の過ごし方'
@@ -12900,53 +12900,53 @@
   name: '[CHARA] 静香のドッペル'
   mission0count: 0
 3113311:
-  count: 1
+  count: 2
   name: '[CHARA] 届かぬシリウス'
-  mission0count: 0
+  mission0count: 1
 3113312:
-  count: 1
+  count: 2
   name: '[CHARA] 届かぬシリウス'
-  mission0count: 0
+  mission0count: 1
 3113313:
-  count: 1
+  count: 2
   name: '[CHARA] 届かぬシリウス'
-  mission0count: 0
+  mission0count: 1
 3113321:
-  count: 1
+  count: 2
   name: '[CHARA] 夢物語は騒がしい'
-  mission0count: 0
+  mission0count: 1
 3113322:
-  count: 1
+  count: 2
   name: '[CHARA] 夢物語は騒がしい'
-  mission0count: 0
+  mission0count: 1
 3113323:
-  count: 1
+  count: 2
   name: '[CHARA] 夢物語は騒がしい'
-  mission0count: 0
+  mission0count: 1
 3113331:
-  count: 1
+  count: 2
   name: '[CHARA] 星空に誓う明日'
-  mission0count: 0
+  mission0count: 1
 3113332:
-  count: 1
+  count: 2
   name: '[CHARA] 星空に誓う明日'
-  mission0count: 0
+  mission0count: 1
 3113333:
-  count: 1
+  count: 2
   name: '[CHARA] 星空に誓う明日'
-  mission0count: 0
+  mission0count: 1
 3113341:
-  count: 1
+  count: 2
   name: '[CHARA] ラビのドッペル'
-  mission0count: 0
+  mission0count: 1
 3113342:
-  count: 1
+  count: 2
   name: '[CHARA] ラビのドッペル'
-  mission0count: 0
+  mission0count: 1
 3113343:
-  count: 1
+  count: 2
   name: '[CHARA] ラビのドッペル'
-  mission0count: 0
+  mission0count: 1
 3113711:
   count: 1
   name: '[CHARA] ベファーナっぽいこと？'
@@ -13668,53 +13668,53 @@
   name: '[CHARA] レナの試練'
   mission0count: 0
 3140111:
-  count: 2
+  count: 3
+  name: '[CHARA] 年末の忘れ物'
+  mission0count: 4
+3140112:
+  count: 3
   name: '[CHARA] 年末の忘れ物'
   mission0count: 3
-3140112:
-  count: 2
-  name: '[CHARA] 年末の忘れ物'
-  mission0count: 2
 3140113:
-  count: 2
+  count: 3
   name: '[CHARA] 年末の忘れ物'
-  mission0count: 2
+  mission0count: 3
 3140121:
-  count: 2
+  count: 3
   name: '[CHARA] お正月の忘れ物'
-  mission0count: 4
+  mission0count: 5
 3140122:
-  count: 2
+  count: 3
   name: '[CHARA] お正月の忘れ物'
-  mission0count: 2
+  mission0count: 3
 3140123:
-  count: 2
+  count: 3
   name: '[CHARA] お正月の忘れ物'
-  mission0count: 2
+  mission0count: 3
 3140131:
-  count: 2
+  count: 3
   name: '[CHARA] 毎日の拾い物'
-  mission0count: 2
+  mission0count: 3
 3140132:
-  count: 2
+  count: 3
   name: '[CHARA] 毎日の拾い物'
-  mission0count: 2
+  mission0count: 3
 3140133:
-  count: 2
+  count: 3
   name: '[CHARA] 毎日の拾い物'
-  mission0count: 2
+  mission0count: 3
 3140141:
-  count: 1
-  name: '[CHARA] いろはとういの試練'
-  mission0count: 1
-3140142:
-  count: 1
-  name: '[CHARA] いろはとういの試練'
-  mission0count: 1
-3140143:
   count: 2
   name: '[CHARA] いろはとういの試練'
-  mission0count: 1
+  mission0count: 2
+3140142:
+  count: 2
+  name: '[CHARA] いろはとういの試練'
+  mission0count: 2
+3140143:
+  count: 3
+  name: '[CHARA] いろはとういの試練'
+  mission0count: 2
 3140211:
   count: 1
   name: '[CHARA] 思い出のマフラー'
@@ -20612,7 +20612,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
   mission0count: 1
 4000761:
-  count: 392
+  count: 403
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 7
 4000762:
