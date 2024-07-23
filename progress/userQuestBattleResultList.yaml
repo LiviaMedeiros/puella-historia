@@ -11748,53 +11748,53 @@
   name: '[CHARA] いつかまた会えたなら'
   mission0count: 1
 3104811:
-  count: 2
+  count: 3
   name: '[CHARA] 掴まされた運命'
-  mission0count: 2
+  mission0count: 3
 3104812:
-  count: 2
+  count: 3
   name: '[CHARA] 掴まされた運命'
-  mission0count: 2
+  mission0count: 3
 3104813:
-  count: 2
+  count: 3
   name: '[CHARA] 掴まされた運命'
-  mission0count: 2
+  mission0count: 3
 3104821:
-  count: 2
+  count: 3
   name: '[CHARA] 陰から覗く顔'
-  mission0count: 2
+  mission0count: 3
 3104822:
-  count: 2
+  count: 3
   name: '[CHARA] 陰から覗く顔'
-  mission0count: 2
+  mission0count: 3
 3104823:
-  count: 2
+  count: 3
   name: '[CHARA] 陰から覗く顔'
-  mission0count: 2
+  mission0count: 3
 3104831:
-  count: 2
+  count: 3
   name: '[CHARA] 他に道はなし'
-  mission0count: 2
+  mission0count: 3
 3104832:
-  count: 2
+  count: 3
   name: '[CHARA] 他に道はなし'
-  mission0count: 2
+  mission0count: 3
 3104833:
-  count: 19
+  count: 20
   name: '[CHARA] 他に道はなし'
-  mission0count: 2
+  mission0count: 3
 3104841:
+  count: 5
+  name: '[CHARA] エボニーのドッペル'
+  mission0count: 3
+3104842:
   count: 4
   name: '[CHARA] エボニーのドッペル'
-  mission0count: 2
-3104842:
-  count: 3
-  name: '[CHARA] エボニーのドッペル'
-  mission0count: 2
+  mission0count: 3
 3104843:
-  count: 3
+  count: 4
   name: '[CHARA] エボニーのドッペル'
-  mission0count: 2
+  mission0count: 3
 3104911:
   count: 2
   name: '[CHARA] 耐える日々'
@@ -11892,9 +11892,9 @@
   name: '[CHARA] ガンヒルトのドッペル'
   mission0count: 1
 3105111:
-  count: 1
+  count: 2
   name: '[CHARA] 尼僧院にて'
-  mission0count: 0
+  mission0count: 1
 3105112:
   count: 1
   name: '[CHARA] 尼僧院にて'
