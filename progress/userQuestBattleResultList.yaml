@@ -1472,7 +1472,7 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / 鶴乃の安否'
   mission0count: 0
 1017041:
-  count: 2
+  count: 15
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / いろはが考えた作戦'
   mission0count: 2
 10170451:
@@ -5832,45 +5832,45 @@
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
   mission0count: 0
 1031051:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 4
+  mission0count: 5
 1031052:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 4
+  mission0count: 5
 1031053:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 4
+  mission0count: 5
 1031054:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 4
+  mission0count: 5
 1031055:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 4
+  mission0count: 5
 1031056:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 4
+  mission0count: 5
 1031057:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 4
+  mission0count: 5
 1031058:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 4
+  mission0count: 5
 1031059:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 4
+  mission0count: 5
 10310510:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 4
+  mission0count: 5
 10310551:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
