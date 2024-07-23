@@ -180,7 +180,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 7
 10120351:
-  count: 9
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 1
 10120352:
@@ -208,7 +208,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 7
 1012043:
-  count: 7
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 7
 1012044:
@@ -216,15 +216,15 @@
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 7
 10120451:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 1
 10120452:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 1
 10120453:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 1
 10120454:
@@ -460,7 +460,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 4
 1013064:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 5
 1013065:
@@ -468,21 +468,21 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 4
 10130651:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
-  mission0count: 1
+  mission0count: 2
 10130652:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
-  mission0count: 1
+  mission0count: 2
 10130653:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
-  mission0count: 1
+  mission0count: 2
 10130654:
-  count: 2
+  count: 6
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
-  mission0count: 1
+  mission0count: 2
 10130655:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
@@ -500,7 +500,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
   mission0count: 4
 1013074:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
   mission0count: 4
 1013075:
@@ -1480,7 +1480,7 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / いろはが考えた作戦'
   mission0count: 0
 1017051:
-  count: 2
+  count: 15
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / うわさを消すツアー'
   mission0count: 2
 10170551:
@@ -1488,7 +1488,7 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / うわさを消すツアー'
   mission0count: 0
 1017061:
-  count: 2
+  count: 6
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 地図から見えるもの'
   mission0count: 2
 1017062:
@@ -4220,17 +4220,17 @@
   name: '[MAIN/2/NORMAL/NORMAL] 揺れて恋歌に霞む理想 (第5章) / 鏡の奥に映るもの'
   mission0count: 4
 1026056:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 揺れて恋歌に霞む理想 (第5章) / 鏡の奥に映るもの'
-  mission0count: 3
+  mission0count: 4
 1026057:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 揺れて恋歌に霞む理想 (第5章) / 鏡の奥に映るもの'
-  mission0count: 3
+  mission0count: 4
 1026058:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 揺れて恋歌に霞む理想 (第5章) / 鏡の奥に映るもの'
-  mission0count: 3
+  mission0count: 4
 10260551:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 揺れて恋歌に霞む理想 (第5章) / 鏡の奥に映るもの'
@@ -6112,9 +6112,9 @@
   name: '[MAIN/2/NORMAL/NORMAL] 喜びと悲しみの終幕流転 (第11章) / 諦念にようこそ'
   mission0count: 3
 1032047:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 喜びと悲しみの終幕流転 (第11章) / 諦念にようこそ'
-  mission0count: 2
+  mission0count: 3
 10320451:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 喜びと悲しみの終幕流転 (第11章) / 諦念にようこそ'
@@ -6144,17 +6144,17 @@
   name: '[MAIN/2/NORMAL/HARD] 喜びと悲しみの終幕流転 (第11章) / 諦念にようこそ'
   mission0count: 0
 1032051:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 喜びと悲しみの終幕流転 (第11章) / すべてを生かす言葉'
-  mission0count: 2
+  mission0count: 3
 1032052:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 喜びと悲しみの終幕流転 (第11章) / すべてを生かす言葉'
-  mission0count: 2
+  mission0count: 3
 1032053:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 喜びと悲しみの終幕流転 (第11章) / すべてを生かす言葉'
-  mission0count: 2
+  mission0count: 3
 10320551:
   count: 2
   name: '[MAIN/2/NORMAL/HARD] 喜びと悲しみの終幕流転 (第11章) / すべてを生かす言葉'
@@ -6168,33 +6168,33 @@
   name: '[MAIN/2/NORMAL/HARD] 喜びと悲しみの終幕流転 (第11章) / すべてを生かす言葉'
   mission0count: 1
 1033011:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 鏡に映る滅びの景色'
-  mission0count: 2
+  mission0count: 3
 1033012:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 鏡に映る滅びの景色'
-  mission0count: 2
+  mission0count: 3
 1033013:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 鏡に映る滅びの景色'
-  mission0count: 2
+  mission0count: 3
 1033014:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 鏡に映る滅びの景色'
-  mission0count: 2
+  mission0count: 3
 1033015:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 鏡に映る滅びの景色'
-  mission0count: 2
+  mission0count: 3
 1033016:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 鏡に映る滅びの景色'
-  mission0count: 2
+  mission0count: 3
 1033017:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 鏡に映る滅びの景色'
-  mission0count: 2
+  mission0count: 3
 10330151:
   count: 2
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 鏡に映る滅びの景色'
@@ -8512,9 +8512,9 @@
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
   mission0count: 1
 10426003:
-  count: 0
+  count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
-  mission0count: 1
+  mission0count: 4
 10426004:
   count: 0
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
@@ -8532,7 +8532,7 @@
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
   mission0count: 1
 10426008:
-  count: 0
+  count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
   mission0count: 1
 10426009:
