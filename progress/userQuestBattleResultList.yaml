@@ -36,7 +36,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 9
 1011024:
-  count: 26
+  count: 31
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 9
 10110251:
@@ -298,7 +298,7 @@
 1013021:
   count: 6
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 神社の噂'
-  mission0count: 6
+  mission0count: 7
 1013022:
   count: 6
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 神社の噂'
@@ -452,21 +452,21 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 4
 1013062:
-  count: 3
-  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
-  mission0count: 3
-1013063:
-  count: 3
-  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
-  mission0count: 3
-1013064:
-  count: 3
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 4
-1013065:
-  count: 3
+1013063:
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
-  mission0count: 3
+  mission0count: 4
+1013064:
+  count: 5
+  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
+  mission0count: 5
+1013065:
+  count: 5
+  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
+  mission0count: 4
 10130651:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
@@ -488,29 +488,29 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 1
 1013071:
-  count: 3
-  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 3
-1013072:
-  count: 3
-  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 3
-1013073:
-  count: 3
-  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 3
-1013074:
-  count: 3
-  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 3
-1013075:
   count: 4
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 3
-1013076:
-  count: 3
+  mission0count: 4
+1013072:
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 3
+  mission0count: 4
+1013073:
+  count: 4
+  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
+  mission0count: 4
+1013074:
+  count: 4
+  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
+  mission0count: 4
+1013075:
+  count: 5
+  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
+  mission0count: 4
+1013076:
+  count: 4
+  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
+  mission0count: 4
 10130751:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 穢れきるとき…'
@@ -5580,37 +5580,37 @@
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
   mission0count: 4
 1031012:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
-  mission0count: 3
+  mission0count: 4
 1031013:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
-  mission0count: 3
+  mission0count: 4
 1031014:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
-  mission0count: 3
+  mission0count: 4
 1031015:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
-  mission0count: 3
+  mission0count: 4
 1031016:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
-  mission0count: 3
+  mission0count: 4
 1031017:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
-  mission0count: 3
+  mission0count: 4
 1031018:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
-  mission0count: 3
+  mission0count: 4
 1031019:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
-  mission0count: 3
+  mission0count: 5
 10310151:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
@@ -5648,33 +5648,33 @@
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
   mission0count: 0
 1031021:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
-  mission0count: 3
+  mission0count: 4
 1031022:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
-  mission0count: 3
+  mission0count: 4
 1031023:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
-  mission0count: 3
+  mission0count: 4
 1031024:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
-  mission0count: 4
+  mission0count: 5
 1031025:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
-  mission0count: 6
+  mission0count: 7
 1031026:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
-  mission0count: 4
+  mission0count: 5
 1031027:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
-  mission0count: 4
+  mission0count: 5
 10310251:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
@@ -5704,37 +5704,37 @@
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
   mission0count: 0
 1031031:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 結ばれた悲嘆の歴史と…'
-  mission0count: 4
+  mission0count: 5
 1031032:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 結ばれた悲嘆の歴史と…'
-  mission0count: 4
+  mission0count: 5
 1031033:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 結ばれた悲嘆の歴史と…'
-  mission0count: 4
+  mission0count: 5
 1031034:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 結ばれた悲嘆の歴史と…'
-  mission0count: 4
+  mission0count: 5
 1031035:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 結ばれた悲嘆の歴史と…'
-  mission0count: 4
+  mission0count: 5
 1031036:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 結ばれた悲嘆の歴史と…'
-  mission0count: 4
+  mission0count: 5
 1031037:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 結ばれた悲嘆の歴史と…'
-  mission0count: 4
+  mission0count: 5
 1031038:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 結ばれた悲嘆の歴史と…'
-  mission0count: 4
+  mission0count: 5
 10310351:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 結ばれた悲嘆の歴史と…'
@@ -5768,37 +5768,37 @@
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 結ばれた悲嘆の歴史と…'
   mission0count: 0
 1031041:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
-  mission0count: 4
+  mission0count: 5
 1031042:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
-  mission0count: 4
+  mission0count: 5
 1031043:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
-  mission0count: 4
+  mission0count: 5
 1031044:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
-  mission0count: 4
+  mission0count: 5
 1031045:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
-  mission0count: 4
+  mission0count: 5
 1031046:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
-  mission0count: 4
+  mission0count: 5
 1031047:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
-  mission0count: 4
+  mission0count: 5
 1031048:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
-  mission0count: 4
+  mission0count: 5
 10310451:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
@@ -20624,7 +20624,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4000764:
-  count: 82
+  count: 85
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 3
 4200101:
