@@ -296,7 +296,7 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 何でもできる世界'
   mission0count: 1
 1013021:
-  count: 6
+  count: 7
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 神社の噂'
   mission0count: 7
 1013022:
@@ -5912,25 +5912,25 @@
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
   mission0count: 0
 1032011:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 喜びと悲しみの終幕流転 (第11章) / 幾多の嘆き'
-  mission0count: 2
+  mission0count: 3
 1032012:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 喜びと悲しみの終幕流転 (第11章) / 幾多の嘆き'
-  mission0count: 2
+  mission0count: 3
 1032013:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 喜びと悲しみの終幕流転 (第11章) / 幾多の嘆き'
-  mission0count: 2
+  mission0count: 3
 1032014:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 喜びと悲しみの終幕流転 (第11章) / 幾多の嘆き'
-  mission0count: 2
+  mission0count: 3
 1032015:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 喜びと悲しみの終幕流転 (第11章) / 幾多の嘆き'
-  mission0count: 2
+  mission0count: 3
 1032016:
   count: 2
   name: '[MAIN/2/NORMAL/NORMAL] 喜びと悲しみの終幕流転 (第11章) / 幾多の嘆き'
@@ -6472,7 +6472,7 @@
   name: '[MAIN/3/NORMAL/NONE] 現代神浜編 (現代神浜編) / 現代神浜編'
   mission0count: 0
 1035011:
-  count: 3
+  count: 12
   name: '[MAIN/3/NORMAL/NORMAL] 神浜の戦神子編 (神浜の戦神子編) / 神浜の戦神子編'
   mission0count: 3
 1035012:
@@ -20536,15 +20536,15 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 火属性'
   mission0count: 4
 4000712:
-  count: 7
+  count: 12
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 火属性'
   mission0count: 4
 4000713:
-  count: 5
+  count: 6
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 火属性'
   mission0count: 3
 4000714:
-  count: 22
+  count: 23
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 火属性'
   mission0count: 3
 4000721:
