@@ -2817,7 +2817,7 @@ GACHA_FREEBIE_MEDAL_PINK_896:
   owned: true
 GACHA_FREEBIE_MEDAL_PINK_987:
   name: 調整屋コイン
-  owned: false
+  owned: true
 GACHA_FREEBIE_MEDAL_PURPLE_1001:
   name: 調整屋コイン
   owned: true
@@ -2826,7 +2826,7 @@ GACHA_FREEBIE_MEDAL_PURPLE_1086:
   owned: true
 GACHA_FREEBIE_MEDAL_PURPLE_1131:
   name: 調整屋コイン
-  owned: false
+  owned: true
 GACHA_FREEBIE_MEDAL_PURPLE_1192:
   name: 調整屋コイン
   owned: true
