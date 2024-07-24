@@ -68,7 +68,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011034:
-  count: 365
+  count: 366
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011035:
@@ -772,25 +772,25 @@
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
   mission0count: 2
 10140651:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
-  mission0count: 1
+  mission0count: 3
 10140652:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
-  mission0count: 1
+  mission0count: 2
 10140653:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
-  mission0count: 1
+  mission0count: 2
 10140654:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
-  mission0count: 1
+  mission0count: 2
 10140655:
-  count: 2
+  count: 6
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
-  mission0count: 1
+  mission0count: 2
 10140656:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
@@ -15120,21 +15120,21 @@
   name: '[CHARA] 最初のファン'
   mission0count: 2
 3240221:
-  count: 2
+  count: 3
   name: '[CHARA] 応援してるから'
-  mission0count: 2
+  mission0count: 3
 3240222:
-  count: 2
+  count: 3
   name: '[CHARA] 応援してるから'
-  mission0count: 2
+  mission0count: 3
 3240223:
-  count: 2
+  count: 3
   name: '[CHARA] 応援してるから'
-  mission0count: 2
+  mission0count: 3
 3240231:
-  count: 2
+  count: 7
   name: '[CHARA] アヴェ・マリア'
-  mission0count: 2
+  mission0count: 3
 3240232:
   count: 2
   name: '[CHARA] アヴェ・マリア'
@@ -20544,7 +20544,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 火属性'
   mission0count: 3
 4000714:
-  count: 23
+  count: 28
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 火属性'
   mission0count: 3
 4000721:
@@ -20592,7 +20592,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 光属性'
   mission0count: 2
 4000744:
-  count: 7
+  count: 38
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 光属性'
   mission0count: 1
 4000751:
@@ -20616,7 +20616,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 8
 4000762:
-  count: 19
+  count: 20
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000763:
@@ -20624,7 +20624,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000764:
-  count: 107
+  count: 109
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4200101:
