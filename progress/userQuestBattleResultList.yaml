@@ -788,7 +788,7 @@
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
   mission0count: 2
 10140655:
-  count: 6
+  count: 7
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
   mission0count: 2
 10140656:
@@ -2976,7 +2976,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022037:
-  count: 198
+  count: 204
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022038:
@@ -12192,7 +12192,7 @@
   name: '[CHARA] ゆめの理由'
   mission0count: 3
 3110421:
-  count: 3
+  count: 5
   name: '[CHARA] のこしたい物語'
   mission0count: 3
 3110422:
@@ -14992,17 +14992,17 @@
   name: '[CHARA] 第３の選択'
   mission0count: 1
 3230132:
-  count: 2
+  count: 3
   name: '[CHARA] 第３の選択'
-  mission0count: 1
+  mission0count: 2
 3230133:
-  count: 2
+  count: 3
   name: '[CHARA] 第３の選択'
-  mission0count: 1
+  mission0count: 2
 3230141:
-  count: 2
+  count: 3
   name: '[CHARA] ほむらの試練'
-  mission0count: 1
+  mission0count: 2
 3230142:
   count: 2
   name: '[CHARA] ほむらの試練'
@@ -15132,7 +15132,7 @@
   name: '[CHARA] 応援してるから'
   mission0count: 3
 3240231:
-  count: 39
+  count: 45
   name: '[CHARA] アヴェ・マリア'
   mission0count: 3
 3240232:
@@ -19046,7 +19046,7 @@
 3402111:
   count: 2
   name: '[CHARA] 放ってはおけません'
-  mission0count: 1
+  mission0count: 2
 3402112:
   count: 1
   name: '[CHARA] 放ってはおけません'
