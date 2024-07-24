@@ -68,7 +68,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011034:
-  count: 376
+  count: 384
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011035:
@@ -264,35 +264,35 @@
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
   mission0count: 1
 10120554:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
   mission0count: 1
 10120555:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
   mission0count: 1
 1013011:
-  count: 7
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 何でもできる世界'
   mission0count: 7
 1013012:
-  count: 7
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 何でもできる世界'
   mission0count: 7
 1013013:
-  count: 7
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 何でもできる世界'
   mission0count: 7
 10130151:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 何でもできる世界'
   mission0count: 1
 10130152:
-  count: 2
+  count: 11
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 何でもできる世界'
   mission0count: 1
 10130153:
-  count: 2
+  count: 4
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 何でもできる世界'
   mission0count: 1
 1013021:
@@ -488,25 +488,25 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 1
 1013071:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 4
+  mission0count: 5
 1013072:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 4
+  mission0count: 5
 1013073:
-  count: 7
+  count: 8
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 4
+  mission0count: 5
 1013074:
-  count: 5
+  count: 6
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 4
+  mission0count: 5
 1013075:
-  count: 5
+  count: 6
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 4
+  mission0count: 5
 1013076:
   count: 4
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
@@ -6444,7 +6444,7 @@
   name: '[MAIN/2/NORMAL/NONE] 結ぶ永久の彩り (第12章) / これまでから明日へと'
   mission0count: 0
 1034011:
-  count: 5
+  count: 6
   name: '[MAIN/3/NORMAL/NONE] 現代神浜編 (現代神浜編) / 現代神浜編'
   mission0count: 0
 1034021:
@@ -11896,49 +11896,49 @@
   name: '[CHARA] 尼僧院にて'
   mission0count: 1
 3105112:
-  count: 1
+  count: 2
   name: '[CHARA] 尼僧院にて'
-  mission0count: 0
+  mission0count: 1
 3105113:
-  count: 1
+  count: 2
   name: '[CHARA] 尼僧院にて'
-  mission0count: 0
+  mission0count: 1
 3105121:
-  count: 1
+  count: 2
   name: '[CHARA] 少女たちの反乱'
-  mission0count: 0
+  mission0count: 1
 3105122:
-  count: 1
+  count: 2
   name: '[CHARA] 少女たちの反乱'
-  mission0count: 0
+  mission0count: 1
 3105123:
-  count: 1
+  count: 2
   name: '[CHARA] 少女たちの反乱'
-  mission0count: 0
+  mission0count: 1
 3105131:
-  count: 1
+  count: 2
   name: '[CHARA] ふたりの檻'
-  mission0count: 0
+  mission0count: 1
 3105132:
-  count: 1
+  count: 2
   name: '[CHARA] ふたりの檻'
-  mission0count: 0
+  mission0count: 1
 3105133:
-  count: 1
+  count: 2
   name: '[CHARA] ふたりの檻'
-  mission0count: 0
+  mission0count: 1
 3105141:
-  count: 1
+  count: 2
   name: '[CHARA] ヘルカのドッペル'
-  mission0count: 0
+  mission0count: 1
 3105142:
-  count: 1
+  count: 2
   name: '[CHARA] ヘルカのドッペル'
-  mission0count: 0
+  mission0count: 1
 3105143:
-  count: 1
+  count: 2
   name: '[CHARA] ヘルカのドッペル'
-  mission0count: 0
+  mission0count: 1
 3105211:
   count: 3
   name: '[CHARA] べろべろで不思議な生き物'
@@ -11988,53 +11988,53 @@
   name: '[CHARA] トヨのドッペル'
   mission0count: 3
 3105311:
-  count: 1
+  count: 2
   name: '[CHARA] 乙女は遊戯をたしなむべし'
-  mission0count: 0
+  mission0count: 1
 3105312:
-  count: 1
+  count: 2
   name: '[CHARA] 乙女は遊戯をたしなむべし'
-  mission0count: 0
+  mission0count: 1
 3105313:
-  count: 1
+  count: 2
   name: '[CHARA] 乙女は遊戯をたしなむべし'
-  mission0count: 0
+  mission0count: 1
 3105321:
-  count: 1
+  count: 2
   name: '[CHARA] 燃えあがる恋の火種'
-  mission0count: 0
+  mission0count: 1
 3105322:
-  count: 2
+  count: 3
   name: '[CHARA] 燃えあがる恋の火種'
-  mission0count: 0
+  mission0count: 1
 3105323:
-  count: 3
+  count: 4
   name: '[CHARA] 燃えあがる恋の火種'
-  mission0count: 0
+  mission0count: 1
 3105331:
-  count: 2
+  count: 3
   name: '[CHARA] 恋は戦争である'
-  mission0count: 0
+  mission0count: 1
 3105332:
+  count: 3
+  name: '[CHARA] 恋は戦争である'
+  mission0count: 1
+3105333:
   count: 2
   name: '[CHARA] 恋は戦争である'
-  mission0count: 0
-3105333:
-  count: 1
-  name: '[CHARA] 恋は戦争である'
-  mission0count: 0
+  mission0count: 1
 3105341:
+  count: 4
+  name: '[CHARA] アマリュリスのドッペル'
+  mission0count: 1
+3105342:
   count: 3
   name: '[CHARA] アマリュリスのドッペル'
-  mission0count: 0
-3105342:
-  count: 2
-  name: '[CHARA] アマリュリスのドッペル'
-  mission0count: 0
+  mission0count: 1
 3105343:
-  count: 2
+  count: 3
   name: '[CHARA] アマリュリスのドッペル'
-  mission0count: 0
+  mission0count: 1
 3110111:
   count: 1
   name: '[CHARA] 練習しましょう'
@@ -13092,41 +13092,41 @@
   name: '[CHARA] 黒江のドッペル'
   mission0count: 1
 3114411:
-  count: 2
+  count: 3
   name: '[CHARA] 手に入れたい普通'
-  mission0count: 1
+  mission0count: 2
 3114412:
-  count: 2
+  count: 3
   name: '[CHARA] 手に入れたい普通'
-  mission0count: 1
+  mission0count: 2
 3114413:
-  count: 2
+  count: 3
   name: '[CHARA] 手に入れたい普通'
-  mission0count: 1
+  mission0count: 2
 3114421:
-  count: 2
+  count: 3
   name: '[CHARA] 幸せは手からこぼれ落ち'
-  mission0count: 1
+  mission0count: 2
 3114422:
-  count: 2
+  count: 3
   name: '[CHARA] 幸せは手からこぼれ落ち'
-  mission0count: 1
+  mission0count: 2
 3114423:
-  count: 2
+  count: 3
   name: '[CHARA] 幸せは手からこぼれ落ち'
-  mission0count: 1
+  mission0count: 2
 3114431:
-  count: 2
+  count: 3
   name: '[CHARA] きらきら'
-  mission0count: 1
+  mission0count: 2
 3114432:
-  count: 2
+  count: 3
   name: '[CHARA] きらきら'
-  mission0count: 1
+  mission0count: 2
 3114433:
-  count: 2
+  count: 3
   name: '[CHARA] きらきら'
-  mission0count: 1
+  mission0count: 2
 3114441:
   count: 1
   name: '[CHARA] ウワサのみことのドッペル'
@@ -13140,33 +13140,33 @@
   name: '[CHARA] ウワサのみことのドッペル'
   mission0count: 0
 3120111:
-  count: 2
+  count: 3
   name: '[CHARA] いろはちゃん参上する'
-  mission0count: 1
+  mission0count: 2
 3120112:
-  count: 2
+  count: 3
   name: '[CHARA] いろはちゃん参上する'
-  mission0count: 1
+  mission0count: 2
 3120113:
-  count: 2
+  count: 3
   name: '[CHARA] いろはちゃん参上する'
-  mission0count: 1
+  mission0count: 2
 3120121:
-  count: 2
+  count: 3
   name: '[CHARA] いろはちゃん闇落ちする'
-  mission0count: 1
+  mission0count: 2
 3120122:
-  count: 2
+  count: 3
   name: '[CHARA] いろはちゃん闇落ちする'
-  mission0count: 1
+  mission0count: 2
 3120123:
-  count: 2
+  count: 3
   name: '[CHARA] いろはちゃん闇落ちする'
-  mission0count: 1
+  mission0count: 2
 3120131:
-  count: 2
+  count: 3
   name: '[CHARA] いろはちゃんネタバレする'
-  mission0count: 1
+  mission0count: 2
 3120132:
   count: 2
   name: '[CHARA] いろはちゃんネタバレする'
@@ -15144,17 +15144,17 @@
   name: '[CHARA] アヴェ・マリア'
   mission0count: 3
 3240241:
-  count: 1
-  name: '[CHARA] さやかの試練'
-  mission0count: 1
-3240242:
-  count: 1
-  name: '[CHARA] さやかの試練'
-  mission0count: 1
-3240243:
   count: 2
   name: '[CHARA] さやかの試練'
-  mission0count: 1
+  mission0count: 2
+3240242:
+  count: 2
+  name: '[CHARA] さやかの試練'
+  mission0count: 2
+3240243:
+  count: 4
+  name: '[CHARA] さやかの試練'
+  mission0count: 2
 3250011:
   count: 1
   name: '[CHARA] マギウスとお勉強'
