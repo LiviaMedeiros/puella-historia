@@ -696,17 +696,17 @@
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / マギウスの翼'
   mission0count: 1
 1014051:
-  count: 3
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
   mission0count: 4
 1014052:
-  count: 3
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
-  mission0count: 3
+  mission0count: 4
 1014053:
-  count: 3
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
-  mission0count: 3
+  mission0count: 4
 1014054:
   count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
@@ -6336,21 +6336,21 @@
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 明日を託す命'
   mission0count: 0
 1033041:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 無から生まれた記録'
-  mission0count: 2
+  mission0count: 3
 1033042:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 無から生まれた記録'
-  mission0count: 2
+  mission0count: 3
 1033043:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 無から生まれた記録'
-  mission0count: 2
+  mission0count: 3
 1033044:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 無から生まれた記録'
-  mission0count: 2
+  mission0count: 3
 10330451:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 無から生まれた記録'
@@ -6368,29 +6368,29 @@
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 無から生まれた記録'
   mission0count: 0
 1033051:
+  count: 4
+  name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / それなら奇跡を見せて'
+  mission0count: 4
+1033052:
+  count: 3
+  name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / それなら奇跡を見せて'
+  mission0count: 4
+1033053:
+  count: 3
+  name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / それなら奇跡を見せて'
+  mission0count: 4
+1033054:
   count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / それなら奇跡を見せて'
   mission0count: 3
-1033052:
-  count: 2
-  name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / それなら奇跡を見せて'
-  mission0count: 2
-1033053:
-  count: 2
-  name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / それなら奇跡を見せて'
-  mission0count: 2
-1033054:
-  count: 2
-  name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / それなら奇跡を見せて'
-  mission0count: 2
 1033055:
-  count: 2
-  name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / それなら奇跡を見せて'
-  mission0count: 2
-1033056:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / それなら奇跡を見せて'
   mission0count: 3
+1033056:
+  count: 3
+  name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / それなら奇跡を見せて'
+  mission0count: 4
 10330551:
   count: 2
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / それなら奇跡を見せて'
@@ -6416,31 +6416,31 @@
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / それなら奇跡を見せて'
   mission0count: 1
 1033061:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NONE] 結ぶ永久の彩り (第12章) / これまでから明日へと'
   mission0count: 0
 1033062:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NONE] 結ぶ永久の彩り (第12章) / これまでから明日へと'
   mission0count: 0
 1033063:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NONE] 結ぶ永久の彩り (第12章) / これまでから明日へと'
   mission0count: 0
 1033064:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NONE] 結ぶ永久の彩り (第12章) / これまでから明日へと'
   mission0count: 0
 1033065:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NONE] 結ぶ永久の彩り (第12章) / これまでから明日へと'
   mission0count: 0
 1033066:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NONE] 結ぶ永久の彩り (第12章) / これまでから明日へと'
   mission0count: 0
 1033067:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NONE] 結ぶ永久の彩り (第12章) / これまでから明日へと'
   mission0count: 0
 1034011:
@@ -8496,9 +8496,9 @@
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
   mission0count: 3
 10425009:
-  count: 1
+  count: 2
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
-  mission0count: 4
+  mission0count: 5
 10425010:
   count: 2
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
@@ -15432,17 +15432,17 @@
   name: '[CHARA] あたしは知ってる'
   mission0count: 5
 3260141:
-  count: 3
+  count: 4
   name: '[CHARA] 杏子の試練'
-  mission0count: 3
+  mission0count: 4
 3260142:
-  count: 3
+  count: 4
   name: '[CHARA] 杏子の試練'
-  mission0count: 3
+  mission0count: 4
 3260143:
-  count: 3
+  count: 5
   name: '[CHARA] 杏子の試練'
-  mission0count: 3
+  mission0count: 4
 3260211:
   count: 3
   name: '[CHARA] 佐倉杏子の災難'
@@ -20596,9 +20596,9 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 光属性'
   mission0count: 1
 4000751:
-  count: 29
+  count: 30
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
-  mission0count: 2
+  mission0count: 3
 4000752:
   count: 4
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
@@ -20612,21 +20612,21 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
   mission0count: 1
 4000761:
-  count: 410
+  count: 411
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
-  mission0count: 7
+  mission0count: 8
 4000762:
-  count: 18
+  count: 19
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
-  mission0count: 4
+  mission0count: 5
 4000763:
-  count: 8
+  count: 9
+  name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
+  mission0count: 5
+4000764:
+  count: 107
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
-4000764:
-  count: 91
-  name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
-  mission0count: 3
 4200101:
   count: MISSING
   name: '[GROUPBATTLE] 悦ぶ サファイアの唇'
