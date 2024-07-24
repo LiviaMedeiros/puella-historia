@@ -68,7 +68,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011034:
-  count: 355
+  count: 365
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011035:
@@ -224,31 +224,31 @@
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 1
 10120453:
-  count: 3
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 1
 10120454:
-  count: 2
+  count: 11
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 1
 1012051:
-  count: 7
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
   mission0count: 7
 1012052:
-  count: 7
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
   mission0count: 7
 1012053:
-  count: 7
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
   mission0count: 8
 1012054:
-  count: 7
+  count: 12
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
   mission0count: 7
 1012055:
-  count: 8
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
   mission0count: 7
 10120551:
@@ -480,7 +480,7 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 2
 10130654:
-  count: 6
+  count: 9
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 2
 10130655:
@@ -536,25 +536,25 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 穢れきるとき…'
   mission0count: 1
 1014011:
-  count: 3
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / フクロウ印の給水屋'
-  mission0count: 3
+  mission0count: 4
 1014012:
-  count: 3
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / フクロウ印の給水屋'
-  mission0count: 3
+  mission0count: 4
 1014013:
-  count: 3
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / フクロウ印の給水屋'
-  mission0count: 3
+  mission0count: 4
 1014014:
-  count: 3
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / フクロウ印の給水屋'
-  mission0count: 3
+  mission0count: 4
 1014015:
-  count: 3
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / フクロウ印の給水屋'
-  mission0count: 3
+  mission0count: 4
 10140151:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / フクロウ印の給水屋'
@@ -1488,11 +1488,11 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / うわさを消すツアー'
   mission0count: 0
 1017061:
-  count: 6
+  count: 16
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 地図から見えるもの'
   mission0count: 2
 1017062:
-  count: 2
+  count: 17
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 地図から見えるもの'
   mission0count: 2
 10170651:
@@ -1504,7 +1504,7 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / 地図から見えるもの'
   mission0count: 0
 1017071:
-  count: 3
+  count: 16
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 襲来'
   mission0count: 2
 10170751:
@@ -6224,29 +6224,29 @@
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 鏡に映る滅びの景色'
   mission0count: 1
 1033021:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 誰も生まれない世界'
-  mission0count: 2
+  mission0count: 3
 1033022:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 誰も生まれない世界'
-  mission0count: 2
+  mission0count: 3
 1033023:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 誰も生まれない世界'
-  mission0count: 2
+  mission0count: 3
 1033024:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 誰も生まれない世界'
-  mission0count: 2
+  mission0count: 3
 1033025:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 誰も生まれない世界'
-  mission0count: 2
+  mission0count: 3
 1033026:
   count: 2
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 誰も生まれない世界'
-  mission0count: 2
+  mission0count: 3
 10330251:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 誰も生まれない世界'
@@ -8538,7 +8538,7 @@
 10426009:
   count: 0
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
-  mission0count: 2
+  mission0count: 4
 10426010:
   count: 0
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
@@ -11092,13 +11092,13 @@
   name: '[CHARA] 新入りの素顔'
   mission0count: 0
 3103412:
-  count: 1
+  count: 2
   name: '[CHARA] 新入りの素顔'
-  mission0count: 0
+  mission0count: 1
 3103413:
-  count: 1
+  count: 2
   name: '[CHARA] 新入りの素顔'
-  mission0count: 0
+  mission0count: 1
 3103421:
   count: 1
   name: '[CHARA] オニババ騒動'
@@ -20612,19 +20612,19 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
   mission0count: 1
 4000761:
-  count: 403
+  count: 410
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 7
 4000762:
-  count: 16
+  count: 18
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4000763:
-  count: 5
+  count: 8
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4000764:
-  count: 85
+  count: 91
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 3
 4200101:
