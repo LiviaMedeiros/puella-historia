@@ -308,11 +308,11 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 神社の噂'
   mission0count: 6
 10130251:
-  count: 9
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 神社の噂'
   mission0count: 1
 10130252:
-  count: 2
+  count: 6
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 神社の噂'
   mission0count: 1
 10130253:
@@ -2828,7 +2828,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
   mission0count: 3
 1022016:
-  count: 31
+  count: 71
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
   mission0count: 3
 1022017:
@@ -12192,7 +12192,7 @@
   name: '[CHARA] ゆめの理由'
   mission0count: 4
 3110421:
-  count: 6
+  count: 7
   name: '[CHARA] のこしたい物語'
   mission0count: 4
 3110422:
