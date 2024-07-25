@@ -2466,7 +2466,7 @@ GACHA_FREEBIE_MEDAL_BROWN_1156:
   owned: true
 GACHA_FREEBIE_MEDAL_BROWN_1300:
   name: 調整屋コイン
-  owned: false
+  owned: true
 GACHA_FREEBIE_MEDAL_BROWN_1357:
   name: 調整屋コイン
   owned: true

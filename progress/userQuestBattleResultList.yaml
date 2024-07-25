@@ -292,15 +292,15 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 何でもできる世界'
   mission0count: 1
 10130153:
-  count: 4
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 何でもできる世界'
   mission0count: 1
 1013021:
-  count: 7
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 神社の噂'
   mission0count: 7
 1013022:
-  count: 6
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 神社の噂'
   mission0count: 6
 1013023:
@@ -308,7 +308,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 神社の噂'
   mission0count: 6
 10130251:
-  count: 2
+  count: 9
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 神社の噂'
   mission0count: 1
 10130252:
@@ -708,17 +708,17 @@
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
   mission0count: 5
 1014054:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
-  mission0count: 4
+  mission0count: 5
 1014055:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
-  mission0count: 4
+  mission0count: 5
 1014056:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
-  mission0count: 4
+  mission0count: 5
 10140551:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 崇高な目的'
@@ -744,33 +744,33 @@
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 崇高な目的'
   mission0count: 1
 1014061:
+  count: 6
+  name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
+  mission0count: 5
+1014062:
   count: 5
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
-  mission0count: 4
-1014062:
-  count: 4
-  name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
-  mission0count: 4
+  mission0count: 5
 1014063:
+  count: 5
+  name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
+  mission0count: 5
+1014064:
+  count: 5
+  name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
+  mission0count: 5
+1014065:
+  count: 5
+  name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
+  mission0count: 5
+1014066:
   count: 4
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
   mission0count: 4
-1014064:
-  count: 3
-  name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
-  mission0count: 3
-1014065:
-  count: 3
-  name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
-  mission0count: 3
-1014066:
-  count: 2
-  name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
-  mission0count: 2
 1014067:
-  count: 2
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
-  mission0count: 2
+  mission0count: 4
 10140651:
   count: 3
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
@@ -800,17 +800,17 @@
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
   mission0count: 1
 1014071:
-  count: 2
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / いろはの新しい日々へ…'
-  mission0count: 2
+  mission0count: 4
 1014072:
-  count: 2
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / いろはの新しい日々へ…'
-  mission0count: 2
+  mission0count: 4
 1014073:
-  count: 2
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / いろはの新しい日々へ…'
-  mission0count: 2
+  mission0count: 4
 10140751:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / いろはの新しい日々へ…'
@@ -824,25 +824,25 @@
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / いろはの新しい日々へ…'
   mission0count: 1
 1015011:
-  count: 2
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
-  mission0count: 2
+  mission0count: 4
 1015012:
-  count: 2
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
-  mission0count: 2
+  mission0count: 4
 1015013:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
-  mission0count: 2
+  mission0count: 3
 1015014:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
-  mission0count: 2
+  mission0count: 3
 1015015:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
-  mission0count: 2
+  mission0count: 3
 10150151:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
@@ -864,25 +864,25 @@
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
   mission0count: 1
 1015021:
-  count: 2
-  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
-  mission0count: 2
-1015022:
-  count: 2
-  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
-  mission0count: 2
-1015023:
-  count: 2
-  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
-  mission0count: 2
-1015024:
-  count: 2
-  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
-  mission0count: 2
-1015025:
   count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
-  mission0count: 2
+  mission0count: 3
+1015022:
+  count: 3
+  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
+  mission0count: 3
+1015023:
+  count: 3
+  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
+  mission0count: 3
+1015024:
+  count: 3
+  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
+  mission0count: 3
+1015025:
+  count: 4
+  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
+  mission0count: 3
 10150251:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
@@ -904,25 +904,25 @@
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
   mission0count: 0
 1015031:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 電波少女と二葉さな'
-  mission0count: 2
+  mission0count: 3
 1015032:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 電波少女と二葉さな'
-  mission0count: 2
+  mission0count: 3
 1015033:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 電波少女と二葉さな'
-  mission0count: 2
+  mission0count: 3
 1015034:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 電波少女と二葉さな'
-  mission0count: 2
+  mission0count: 3
 1015035:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 電波少女と二葉さな'
-  mission0count: 2
+  mission0count: 3
 10150351:
   count: 1
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 電波少女と二葉さな'
@@ -944,29 +944,29 @@
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 電波少女と二葉さな'
   mission0count: 0
 1015041:
-  count: 2
-  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / メッセージは何を求めて'
-  mission0count: 2
-1015042:
-  count: 2
-  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / メッセージは何を求めて'
-  mission0count: 2
-1015043:
-  count: 2
-  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / メッセージは何を求めて'
-  mission0count: 2
-1015044:
-  count: 2
-  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / メッセージは何を求めて'
-  mission0count: 2
-1015045:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / メッセージは何を求めて'
   mission0count: 3
-1015046:
-  count: 2
+1015042:
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / メッセージは何を求めて'
-  mission0count: 2
+  mission0count: 3
+1015043:
+  count: 3
+  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / メッセージは何を求めて'
+  mission0count: 3
+1015044:
+  count: 3
+  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / メッセージは何を求めて'
+  mission0count: 3
+1015045:
+  count: 3
+  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / メッセージは何を求めて'
+  mission0count: 4
+1015046:
+  count: 3
+  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / メッセージは何を求めて'
+  mission0count: 3
 10150451:
   count: 1
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / メッセージは何を求めて'
@@ -992,25 +992,25 @@
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / メッセージは何を求めて'
   mission0count: 0
 1015051:
-  count: 2
-  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / ウワサの結界に潜む者'
-  mission0count: 2
-1015052:
-  count: 2
-  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / ウワサの結界に潜む者'
-  mission0count: 2
-1015053:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / ウワサの結界に潜む者'
   mission0count: 3
+1015052:
+  count: 3
+  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / ウワサの結界に潜む者'
+  mission0count: 3
+1015053:
+  count: 3
+  name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / ウワサの結界に潜む者'
+  mission0count: 4
 1015054:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / ウワサの結界に潜む者'
-  mission0count: 2
+  mission0count: 3
 1015055:
-  count: 2
+  count: 3
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / ウワサの結界に潜む者'
-  mission0count: 2
+  mission0count: 3
 10150551:
   count: 1
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / ウワサの結界に潜む者'
@@ -11668,13 +11668,13 @@
   name: '[CHARA] 使命を遂げし賊の娘'
   mission0count: 2
 3104612:
-  count: 3
+  count: 4
   name: '[CHARA] 使命を遂げし賊の娘'
-  mission0count: 2
+  mission0count: 3
 3104613:
-  count: 3
+  count: 4
   name: '[CHARA] 使命を遂げし賊の娘'
-  mission0count: 2
+  mission0count: 3
 3104621:
   count: 3
   name: '[CHARA] 泰党の技を盗んだ女'
@@ -12180,21 +12180,21 @@
   name: '[CHARA] ウワサの鶴乃のドッペル'
   mission0count: 1
 3110411:
-  count: 3
+  count: 4
   name: '[CHARA] ゆめの理由'
-  mission0count: 3
+  mission0count: 4
 3110412:
-  count: 3
+  count: 4
   name: '[CHARA] ゆめの理由'
-  mission0count: 3
+  mission0count: 4
 3110413:
-  count: 3
+  count: 4
   name: '[CHARA] ゆめの理由'
-  mission0count: 3
+  mission0count: 4
 3110421:
   count: 5
   name: '[CHARA] のこしたい物語'
-  mission0count: 3
+  mission0count: 4
 3110422:
   count: 3
   name: '[CHARA] のこしたい物語'
@@ -20232,17 +20232,17 @@
   name: '[CHARA] Life is short.'
   mission0count: 2
 3406141:
-  count: 3
+  count: 4
   name: '[CHARA] 千束の試練'
-  mission0count: 3
+  mission0count: 4
 3406142:
-  count: 3
+  count: 4
   name: '[CHARA] 千束の試練'
-  mission0count: 3
+  mission0count: 4
 3406143:
-  count: 3
+  count: 4
   name: '[CHARA] 千束の試練'
-  mission0count: 3
+  mission0count: 4
 3406211:
   count: 1
   name: '[CHARA] Just keep going.'
@@ -20624,7 +20624,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000764:
-  count: 113
+  count: 127
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4200101:
