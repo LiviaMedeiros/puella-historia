@@ -304,7 +304,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 神社の噂'
   mission0count: 6
 1013023:
-  count: 6
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 神社の噂'
   mission0count: 6
 10130251:
@@ -312,19 +312,19 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 神社の噂'
   mission0count: 1
 10130252:
-  count: 6
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 神社の噂'
   mission0count: 1
 10130253:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 神社の噂'
   mission0count: 1
 1013031:
-  count: 6
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
   mission0count: 6
 1013032:
-  count: 5
+  count: 6
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
   mission0count: 5
 1013033:
@@ -340,7 +340,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
   mission0count: 5
 10130351:
-  count: 2
+  count: 6
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
   mission0count: 1
 10130352:
@@ -2828,17 +2828,17 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
   mission0count: 3
 1022016:
-  count: 71
+  count: 82
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
   mission0count: 3
 1022017:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
-  mission0count: 3
+  mission0count: 4
 1022018:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
-  mission0count: 3
+  mission0count: 4
 10220151:
   count: 3
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
@@ -8538,7 +8538,7 @@
 10426009:
   count: 0
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
-  mission0count: 4
+  mission0count: 6
 10426010:
   count: 0
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
@@ -12192,7 +12192,7 @@
   name: '[CHARA] ゆめの理由'
   mission0count: 4
 3110421:
-  count: 7
+  count: 8
   name: '[CHARA] のこしたい物語'
   mission0count: 4
 3110422:
@@ -20612,7 +20612,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
   mission0count: 1
 4000761:
-  count: 413
+  count: 427
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 8
 4000762:
