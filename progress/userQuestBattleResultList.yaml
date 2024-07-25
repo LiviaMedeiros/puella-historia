@@ -10464,41 +10464,41 @@
   name: '[CHARA] かごめのドッペル'
   mission0count: 1
 3102111:
+  count: 3
+  name: '[CHARA] 生徒会長の憂鬱'
+  mission0count: 1
+3102112:
   count: 2
   name: '[CHARA] 生徒会長の憂鬱'
-  mission0count: 0
-3102112:
-  count: 1
-  name: '[CHARA] 生徒会長の憂鬱'
-  mission0count: 0
+  mission0count: 1
 3102113:
-  count: 1
+  count: 2
   name: '[CHARA] 生徒会長の憂鬱'
-  mission0count: 0
+  mission0count: 1
 3102121:
-  count: 1
+  count: 2
   name: '[CHARA] 革命の裏で'
-  mission0count: 0
+  mission0count: 1
 3102122:
-  count: 1
+  count: 2
   name: '[CHARA] 革命の裏で'
-  mission0count: 0
+  mission0count: 1
 3102123:
-  count: 1
+  count: 2
   name: '[CHARA] 革命の裏で'
-  mission0count: 0
+  mission0count: 1
 3102131:
-  count: 1
+  count: 2
   name: '[CHARA] 過ぎ去りし日は遠く'
-  mission0count: 0
+  mission0count: 1
 3102132:
-  count: 1
+  count: 2
   name: '[CHARA] 過ぎ去りし日は遠く'
-  mission0count: 0
+  mission0count: 1
 3102133:
-  count: 1
+  count: 2
   name: '[CHARA] 過ぎ去りし日は遠く'
-  mission0count: 0
+  mission0count: 1
 3102141:
   count: 1
   name: '[CHARA] 結菜のドッペル'
@@ -13128,17 +13128,17 @@
   name: '[CHARA] きらきら'
   mission0count: 2
 3114441:
-  count: 2
+  count: 3
   name: '[CHARA] ウワサのみことのドッペル'
   mission0count: 1
 3114442:
-  count: 1
+  count: 2
   name: '[CHARA] ウワサのみことのドッペル'
-  mission0count: 0
+  mission0count: 1
 3114443:
-  count: 1
+  count: 2
   name: '[CHARA] ウワサのみことのドッペル'
-  mission0count: 0
+  mission0count: 1
 3120111:
   count: 3
   name: '[CHARA] いろはちゃん参上する'
@@ -13168,25 +13168,25 @@
   name: '[CHARA] いろはちゃんネタバレする'
   mission0count: 2
 3120132:
-  count: 2
+  count: 3
   name: '[CHARA] いろはちゃんネタバレする'
-  mission0count: 1
+  mission0count: 2
 3120133:
-  count: 23
+  count: 24
   name: '[CHARA] いろはちゃんネタバレする'
-  mission0count: 1
+  mission0count: 2
 3120141:
-  count: 2
+  count: 3
   name: '[CHARA] いろはちゃんの試練'
-  mission0count: 1
+  mission0count: 2
 3120142:
-  count: 2
+  count: 3
   name: '[CHARA] いろはちゃんの試練'
-  mission0count: 1
+  mission0count: 2
 3120143:
-  count: 2
+  count: 3
   name: '[CHARA] いろはちゃんの試練'
-  mission0count: 1
+  mission0count: 2
 3120211:
   count: 1
   name: '[CHARA] みんなで七夕祭りへ'
@@ -13764,25 +13764,25 @@
   name: '[CHARA] やちよのドッペル'
   mission0count: 1
 3150111:
+  count: 3
+  name: '[CHARA] 環いろはの失った記憶'
+  mission0count: 2
+3150112:
   count: 2
   name: '[CHARA] 環いろはの失った記憶'
-  mission0count: 1
-3150112:
-  count: 1
-  name: '[CHARA] 環いろはの失った記憶'
-  mission0count: 1
+  mission0count: 2
 3150113:
-  count: 1
+  count: 2
   name: '[CHARA] 環いろはの失った記憶'
-  mission0count: 1
+  mission0count: 2
 3150121:
-  count: 1
+  count: 2
   name: '[CHARA] 環いろはのひび割れた記憶'
-  mission0count: 1
+  mission0count: 2
 3150122:
-  count: 1
+  count: 2
   name: '[CHARA] 環いろはのひび割れた記憶'
-  mission0count: 1
+  mission0count: 2
 3150123:
   count: 1
   name: '[CHARA] 環いろはのひび割れた記憶'
@@ -20624,7 +20624,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000764:
-  count: 138
+  count: 156
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4200101:
