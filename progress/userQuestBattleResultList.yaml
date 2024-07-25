@@ -1512,7 +1512,7 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / 襲来'
   mission0count: 2
 1017081:
-  count: 2
+  count: 15
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / さなフェリ脱出録'
   mission0count: 2
 1017082:
@@ -12192,7 +12192,7 @@
   name: '[CHARA] ゆめの理由'
   mission0count: 4
 3110421:
-  count: 5
+  count: 6
   name: '[CHARA] のこしたい物語'
   mission0count: 4
 3110422:
@@ -20624,7 +20624,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000764:
-  count: 127
+  count: 138
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4200101:
