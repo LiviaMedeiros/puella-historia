@@ -68,7 +68,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011034:
-  count: 394
+  count: 416
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011035:
@@ -340,7 +340,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
   mission0count: 5
 10130351:
-  count: 11
+  count: 18
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
   mission0count: 1
 10130352:
@@ -360,11 +360,11 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
   mission0count: 1
 1013041:
-  count: 8
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 5
 1013042:
-  count: 5
+  count: 7
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 5
 1013043:
@@ -13656,17 +13656,17 @@
   name: '[CHARA] 水波レナ　後悔の記憶'
   mission0count: 2
 3130941:
-  count: 1
+  count: 2
   name: '[CHARA] レナの試練'
-  mission0count: 0
+  mission0count: 1
 3130942:
-  count: 1
+  count: 2
   name: '[CHARA] レナの試練'
-  mission0count: 0
+  mission0count: 1
 3130943:
-  count: 1
+  count: 2
   name: '[CHARA] レナの試練'
-  mission0count: 0
+  mission0count: 1
 3140111:
   count: 3
   name: '[CHARA] 年末の忘れ物'
