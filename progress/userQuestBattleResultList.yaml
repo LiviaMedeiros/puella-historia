@@ -1,16 +1,16 @@
 ---
 1011011:
-  count: 38
-  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
-  mission0count: 10
-1011012:
-  count: 38
-  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
-  mission0count: 10
-1011013:
-  count: 12
+  count: 39
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
   mission0count: 11
+1011012:
+  count: 39
+  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
+  mission0count: 11
+1011013:
+  count: 13
+  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
+  mission0count: 12
 10110151:
   count: 10
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 小さいキュゥべえ'
@@ -24,13 +24,13 @@
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 小さいキュゥべえ'
   mission0count: 1
 1011021:
-  count: 18
+  count: 19
+  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
+  mission0count: 12
+1011022:
+  count: 19
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 11
-1011022:
-  count: 18
-  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
-  mission0count: 10
 1011023:
   count: 12
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
@@ -384,15 +384,15 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 5
 10130451:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 1
 10130452:
-  count: 2
+  count: 12
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 1
 10130453:
-  count: 9
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 1
 10130454:
@@ -404,55 +404,55 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 1
 10130456:
-  count: 9
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 1
 1013051:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
   mission0count: 5
 1013052:
-  count: 9
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
   mission0count: 5
 1013053:
-  count: 6
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
   mission0count: 5
 1013054:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
   mission0count: 5
 1013055:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
   mission0count: 5
 10130551:
-  count: 2
+  count: 12
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 参拝する少女たち'
   mission0count: 1
 10130552:
-  count: 3
+  count: 13
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 参拝する少女たち'
   mission0count: 1
 10130553:
-  count: 2
+  count: 12
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 参拝する少女たち'
   mission0count: 1
 10130554:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 参拝する少女たち'
   mission0count: 1
 10130555:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 参拝する少女たち'
   mission0count: 1
 1013061:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 5
 1013062:
-  count: 5
+  count: 8
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 5
 1013063:
@@ -5348,25 +5348,25 @@
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 決意の香り'
   mission0count: 4
 10300151:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 決意の香り'
-  mission0count: 0
+  mission0count: 1
 10300152:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 決意の香り'
-  mission0count: 0
+  mission0count: 1
 10300153:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 決意の香り'
-  mission0count: 0
+  mission0count: 1
 10300154:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 決意の香り'
-  mission0count: 0
+  mission0count: 1
 10300155:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 決意の香り'
-  mission0count: 0
+  mission0count: 1
 1030021:
   count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
@@ -5396,25 +5396,25 @@
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 水面下の足音'
   mission0count: 4
 10300251:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 水面下の足音'
-  mission0count: 0
+  mission0count: 1
 10300252:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 水面下の足音'
-  mission0count: 0
+  mission0count: 1
 10300253:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 水面下の足音'
-  mission0count: 0
+  mission0count: 1
 10300254:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 水面下の足音'
-  mission0count: 0
+  mission0count: 1
 10300255:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 水面下の足音'
-  mission0count: 0
+  mission0count: 1
 10300256:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 水面下の足音'
@@ -10944,21 +10944,21 @@
   name: '[CHARA] はぐむのドッペル'
   mission0count: 0
 3103111:
-  count: 2
+  count: 3
   name: '[CHARA] 神様に気づいたとき'
-  mission0count: 1
+  mission0count: 2
 3103112:
-  count: 2
+  count: 3
   name: '[CHARA] 神様に気づいたとき'
-  mission0count: 1
+  mission0count: 2
 3103113:
-  count: 2
+  count: 3
   name: '[CHARA] 神様に気づいたとき'
-  mission0count: 1
+  mission0count: 2
 3103121:
-  count: 2
+  count: 3
   name: '[CHARA] 奇跡にはもう頼らない'
-  mission0count: 1
+  mission0count: 2
 3103122:
   count: 2
   name: '[CHARA] 奇跡にはもう頼らない'
@@ -20612,7 +20612,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
   mission0count: 1
 4000761:
-  count: 429
+  count: 443
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 8
 4000762:
