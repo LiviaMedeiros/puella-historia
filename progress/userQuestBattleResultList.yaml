@@ -1516,11 +1516,11 @@
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / さなフェリ脱出録'
   mission0count: 2
 1017082:
-  count: 2
+  count: 15
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / さなフェリ脱出録'
   mission0count: 2
 1017083:
-  count: 2
+  count: 16
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / さなフェリ脱出録'
   mission0count: 2
 1017084:
@@ -22255,9 +22255,9 @@
   name: '[COSTUME] バレンタインストーリー2021'
   mission0count: 0
 7103911:
-  count: 1
+  count: 2
   name: '[COSTUME] 雰囲気ふんふむ'
-  mission0count: 0
+  mission0count: 1
 7104011:
   count: 1
   name: '[COSTUME] 優しさを貴方に'
@@ -22291,13 +22291,13 @@
   name: '[COSTUME] 初夢見心地'
   mission0count: 0
 7200321:
-  count: 1
+  count: 2
   name: '[COSTUME] もふもふもふもふっ'
-  mission0count: 0
+  mission0count: 1
 7200331:
-  count: 1
+  count: 2
   name: '[COSTUME] どこでだってあなたとなら'
-  mission0count: 0
+  mission0count: 1
 7200411:
   count: 1
   name: '[COSTUME] とっておきのメニュー'
@@ -22355,9 +22355,9 @@
   name: '[COSTUME] 晴着も悪くないのです'
   mission0count: 0
 7200911:
-  count: 2
+  count: 3
   name: '[COSTUME] バックステージの悶々'
-  mission0count: 2
+  mission0count: 3
 7210211:
   count: 1
   name: '[COSTUME] 遊んだ後の楽しみと言えば'
@@ -22379,13 +22379,13 @@
   name: '[COSTUME] 衣装に秘めた想い'
   mission0count: 0
 7300311:
-  count: 1
+  count: 2
   name: '[COSTUME] 温めてくれるのは…'
-  mission0count: 0
+  mission0count: 1
 7300321:
-  count: 3
+  count: 4
   name: '[COSTUME] 真夏のダイナマイトクイーン'
-  mission0count: 2
+  mission0count: 3
 7300411:
   count: 1
   name: '[COSTUME] あなたの視線を一人占め'
@@ -22447,9 +22447,9 @@
   name: '[COSTUME] ハロウィンを楽しもう！'
   mission0count: 0
 7301121:
-  count: 3
+  count: 4
   name: '[COSTUME] 誰がこの水着を決めたの？'
-  mission0count: 2
+  mission0count: 3
 7301211:
   count: 1
   name: '[COSTUME] 勘違いと照れ隠し'
@@ -22527,9 +22527,9 @@
   name: '[COSTUME] このみの日課'
   mission0count: 0
 7303021:
-  count: 1
+  count: 2
   name: '[COSTUME] 秘密のサンタさん'
-  mission0count: 0
+  mission0count: 1
 7303111:
   count: 1
   name: '[COSTUME] ヤバイ'
@@ -22555,9 +22555,9 @@
   name: '[COSTUME] ビーチの話題をひとり占め'
   mission0count: 0
 7303711:
-  count: 1
+  count: 2
   name: '[COSTUME] 余計なお節介です！'
-  mission0count: 0
+  mission0count: 1
 7303721:
   count: 1
   name: '[COSTUME] ハロウィンなので笑ってください'
