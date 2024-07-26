@@ -452,11 +452,11 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 5
 1013062:
-  count: 8
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 5
 1013063:
-  count: 5
+  count: 8
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 5
 1013064:
@@ -468,15 +468,15 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 5
 10130651:
-  count: 3
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 2
 10130652:
-  count: 3
+  count: 11
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 2
 10130653:
-  count: 3
+  count: 11
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 2
 10130654:
@@ -484,7 +484,7 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 2
 10130655:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 1
 1013071:
@@ -5412,17 +5412,17 @@
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 水面下の足音'
   mission0count: 1
 10300255:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 水面下の足音'
   mission0count: 1
 10300256:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 水面下の足音'
-  mission0count: 0
+  mission0count: 1
 10300257:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 水面下の足音'
-  mission0count: 0
+  mission0count: 1
 1030031:
   count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
@@ -8530,7 +8530,7 @@
 10426007:
   count: 0
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
-  mission0count: 1
+  mission0count: 6
 10426008:
   count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
@@ -10960,37 +10960,37 @@
   name: '[CHARA] 奇跡にはもう頼らない'
   mission0count: 2
 3103122:
-  count: 2
+  count: 3
   name: '[CHARA] 奇跡にはもう頼らない'
-  mission0count: 1
+  mission0count: 2
 3103123:
-  count: 2
+  count: 3
   name: '[CHARA] 奇跡にはもう頼らない'
-  mission0count: 1
+  mission0count: 2
 3103131:
-  count: 1
-  name: '[CHARA] 全てを失っても'
-  mission0count: 0
-3103132:
   count: 2
   name: '[CHARA] 全てを失っても'
-  mission0count: 0
-3103133:
-  count: 1
+  mission0count: 1
+3103132:
+  count: 3
   name: '[CHARA] 全てを失っても'
-  mission0count: 0
+  mission0count: 1
+3103133:
+  count: 2
+  name: '[CHARA] 全てを失っても'
+  mission0count: 1
 3103141:
-  count: 1
+  count: 2
   name: '[CHARA] 燦のドッペル'
-  mission0count: 0
+  mission0count: 1
 3103142:
-  count: 1
+  count: 2
   name: '[CHARA] 燦のドッペル'
-  mission0count: 0
+  mission0count: 1
 3103143:
-  count: 1
+  count: 2
   name: '[CHARA] 燦のドッペル'
-  mission0count: 0
+  mission0count: 1
 3103211:
   count: 1
   name: '[CHARA] ミユと燦様の馴れ初め'
@@ -22387,9 +22387,9 @@
   name: '[COSTUME] 真夏のダイナマイトクイーン'
   mission0count: 3
 7300411:
-  count: 1
+  count: 2
   name: '[COSTUME] あなたの視線を一人占め'
-  mission0count: 0
+  mission0count: 1
 7300511:
   count: 1
   name: '[COSTUME] 素敵なひとときはいかが？'
@@ -22547,9 +22547,9 @@
   name: '[COSTUME] 究極の味を求めて'
   mission0count: 0
 7303511:
-  count: 1
+  count: 4
   name: '[COSTUME] わたし、子供じゃないですからっ'
-  mission0count: 0
+  mission0count: 1
 7303521:
   count: 1
   name: '[COSTUME] ビーチの話題をひとり占め'

@@ -2517,7 +2517,7 @@ GACHA_FREEBIE_MEDAL_DEEPBLUE_1148:
   owned: true
 GACHA_FREEBIE_MEDAL_DEEPBLUE_1182:
   name: 調整屋コイン
-  owned: false
+  owned: true
 GACHA_FREEBIE_MEDAL_DEEPBLUE_1341:
   name: 調整屋コイン
   owned: true
@@ -3552,7 +3552,7 @@ SELECTABLE_MEMORIA_TICKET_BLACK_1594:
   owned: true
 SELECTABLE_MEMORIA_TICKET_BLACK_1648:
   name: 選べる★4メモリア交換チケット 黒
-  owned: false
+  owned: true
 SELECTABLE_MEMORIA_TICKET_BLACK_1965:
   name: 選べる★4メモリア交換チケット 黒
   owned: true
@@ -3567,31 +3567,31 @@ SELECTABLE_MEMORIA_TICKET_BLUE_1680:
   owned: true
 SELECTABLE_MEMORIA_TICKET_BROWN_1419:
   name: 選べる★4メモリア交換チケット 茶
-  owned: false
+  owned: true
 SELECTABLE_MEMORIA_TICKET_BROWN_1511:
   name: 選べる★4メモリア交換チケット 茶
-  owned: false
+  owned: true
 SELECTABLE_MEMORIA_TICKET_DEEPBLUE_1691:
   name: 選べる★4メモリア交換チケット 紺
   owned: true
 SELECTABLE_MEMORIA_TICKET_DEEPBLUE_2010:
   name: 選べる★4メモリア交換チケット 紺
-  owned: false
+  owned: true
 SELECTABLE_MEMORIA_TICKET_GREEN_1427:
   name: 選べる★4メモリア交換チケット 緑
-  owned: false
+  owned: true
 SELECTABLE_MEMORIA_TICKET_GREEN_1521:
   name: 選べる★4メモリア交換チケット 緑
-  owned: false
+  owned: true
 SELECTABLE_MEMORIA_TICKET_LIGHTBLUE_1745:
   name: 選べる★4メモリア交換チケット 水
   owned: true
 SELECTABLE_MEMORIA_TICKET_ORANGE_1616:
   name: 選べる★4メモリア交換チケット 橙
-  owned: false
+  owned: true
 SELECTABLE_MEMORIA_TICKET_PINK_1487:
   name: 選べる★4メモリア交換チケット 桃
-  owned: false
+  owned: true
 SELECTABLE_MEMORIA_TICKET_PINK_1603:
   name: 選べる★4メモリア交換チケット 桃
   owned: true
@@ -3615,7 +3615,7 @@ SELECTABLE_MEMORIA_TICKET_RED_1657:
   owned: false
 SELECTABLE_MEMORIA_TICKET_RED_1839:
   name: 選べる★4メモリア交換チケット 赤
-  owned: false
+  owned: true
 SELECTABLE_MEMORIA_TICKET_YELLOW_1387:
   name: 選べる★4メモリア交換チケット 黄
   owned: true
@@ -3624,10 +3624,10 @@ SELECTABLE_MEMORIA_TICKET_YELLOW_1475:
   owned: true
 SELECTABLE_MEMORIA_TICKET_YELLOW_1586:
   name: 選べる★4メモリア交換チケット 黄
-  owned: false
+  owned: true
 SELECTABLE_MEMORIA_TICKET_YELLOW_1795:
   name: 選べる★4メモリア交換チケット 黄
-  owned: false
+  owned: true
 SELECTABLE_MIRRORS_TICKET_1:
   name: ミラーズセレクション交換チケット
   owned: true
@@ -3762,7 +3762,7 @@ SELECTABLE_SPECIAL_TICKET_11:
   owned: true
 SELECTABLE_SPECIAL_TICKET_12:
   name: マギア☆レポートSPチケット
-  owned: false
+  owned: true
 SELECTABLE_SPECIAL_TICKET_13:
   name: アニメver.魔法少女SPチケット
   owned: true
@@ -3771,7 +3771,7 @@ SELECTABLE_SPECIAL_TICKET_14:
   owned: true
 SELECTABLE_SPECIAL_TICKET_15:
   name: 水着魔法少女2020-2021SPチケット
-  owned: false
+  owned: true
 SELECTABLE_SPECIAL_TICKET_16:
   name: 水着魔法少女2022SPチケット
   owned: true
@@ -3849,7 +3849,7 @@ SELECTABLE_SPECIAL_TICKET_38:
   owned: true
 SELECTABLE_SPECIAL_TICKET_39:
   name: 百江なぎさSPチケット
-  owned: false
+  owned: true
 SELECTABLE_SPECIAL_TICKET_4:
   name: クリスマスSPチケット2017-2018
   owned: true
@@ -3867,16 +3867,16 @@ SELECTABLE_SPECIAL_TICKET_43:
   owned: true
 SELECTABLE_SPECIAL_TICKET_5:
   name: クリスマスSPチケット2021
-  owned: false
+  owned: true
 SELECTABLE_SPECIAL_TICKET_6:
   name: お正月スペシャルチケット
   owned: true
 SELECTABLE_SPECIAL_TICKET_7:
   name: 魔法少女たると☆マギカSPチケット2022
-  owned: false
+  owned: true
 SELECTABLE_SPECIAL_TICKET_8:
   name: 魔法少女たると☆マギカSPチケット2020-2021
-  owned: false
+  owned: true
 SELECTABLE_SPECIAL_TICKET_9:
   name: 魔法少女たると☆マギカSPチケット2018-2019
   owned: true
@@ -3951,7 +3951,7 @@ SPECIAL_GACHA_788_TICKET:
   owned: true
 SPECIAL_GACHA_818_TICKET:
   name: ★4魔法少女確定ガチャチケット
-  owned: false
+  owned: true
 SPECIAL_GACHA_849_TICKET:
   name: ★4魔法少女確定ガチャチケット
   owned: true
