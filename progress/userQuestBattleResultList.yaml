@@ -340,11 +340,11 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
   mission0count: 5
 10130351:
-  count: 18
+  count: 19
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
   mission0count: 1
 10130352:
-  count: 10
+  count: 18
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
   mission0count: 1
 10130353:
@@ -364,23 +364,23 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 5
 1013042:
-  count: 7
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 5
 1013043:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 5
 1013044:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 5
 1013045:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 5
 1013046:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 5
 10130451:
@@ -392,27 +392,27 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 1
 10130453:
-  count: 2
+  count: 9
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 1
 10130454:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 1
 10130455:
-  count: 2
+  count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 1
 10130456:
-  count: 2
+  count: 9
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 1
 1013051:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
   mission0count: 5
 1013052:
-  count: 5
+  count: 9
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
   mission0count: 5
 1013053:
@@ -2604,9 +2604,9 @@
   name: '[MAIN/1/NORMAL/NORMAL] 浅き夢の暁 (第10章) / 禍は夜明けと共に'
   mission0count: 1
 1020012:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/NORMAL] 浅き夢の暁 (第10章) / 禍は夜明けと共に'
-  mission0count: 1
+  mission0count: 2
 10200151:
   count: 1
   name: '[MAIN/1/NORMAL/HARD] 浅き夢の暁 (第10章) / 禍は夜明けと共に'
@@ -15132,7 +15132,7 @@
   name: '[CHARA] 応援してるから'
   mission0count: 3
 3240231:
-  count: 45
+  count: 47
   name: '[CHARA] アヴェ・マリア'
   mission0count: 3
 3240232:
@@ -20612,19 +20612,19 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
   mission0count: 1
 4000761:
-  count: 427
+  count: 429
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 8
 4000762:
-  count: 22
+  count: 27
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000763:
-  count: 15
+  count: 18
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000764:
-  count: 158
+  count: 161
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4200101:
@@ -21891,9 +21891,9 @@
   name: '[COSTUME] 寝顔をキャッチ'
   mission0count: 0
 7100171:
-  count: 1
+  count: 2
   name: '[COSTUME] 姉妹で夜更かし'
-  mission0count: 0
+  mission0count: 1
 7100211:
   count: 1
   name: '[COSTUME] 制服タイムスリップ'
