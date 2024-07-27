@@ -456,7 +456,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 5
 1013063:
-  count: 8
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 5
 1013064:
@@ -488,23 +488,23 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 1
 1013071:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
   mission0count: 5
 1013072:
-  count: 5
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
   mission0count: 5
 1013073:
-  count: 8
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
   mission0count: 5
 1013074:
-  count: 6
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
   mission0count: 5
 1013075:
-  count: 6
+  count: 16
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
   mission0count: 5
 1013076:
@@ -9840,41 +9840,41 @@
   name: '[CHARA] 灯花のドッペル'
   mission0count: 0
 3100811:
-  count: 1
+  count: 2
   name: '[CHARA] 消えるモチベーション'
-  mission0count: 1
+  mission0count: 2
 3100812:
-  count: 1
+  count: 2
   name: '[CHARA] 消えるモチベーション'
-  mission0count: 1
+  mission0count: 2
 3100813:
-  count: 1
+  count: 2
   name: '[CHARA] 消えるモチベーション'
-  mission0count: 1
+  mission0count: 2
 3100821:
-  count: 1
+  count: 2
   name: '[CHARA] 最後のアートワーク'
-  mission0count: 1
+  mission0count: 2
 3100822:
-  count: 1
+  count: 2
   name: '[CHARA] 最後のアートワーク'
-  mission0count: 1
+  mission0count: 2
 3100823:
-  count: 1
+  count: 2
   name: '[CHARA] 最後のアートワーク'
-  mission0count: 1
+  mission0count: 2
 3100831:
-  count: 1
+  count: 2
   name: '[CHARA] 目覚めるセンス'
-  mission0count: 1
+  mission0count: 2
 3100832:
-  count: 1
+  count: 2
   name: '[CHARA] 目覚めるセンス'
-  mission0count: 1
+  mission0count: 2
 3100833:
-  count: 1
+  count: 2
   name: '[CHARA] 目覚めるセンス'
-  mission0count: 1
+  mission0count: 2
 3100841:
   count: 1
   name: '[CHARA] アリナのドッペル'
@@ -13908,17 +13908,17 @@
   name: '[CHARA] ∞いろはのドッペル'
   mission0count: 0
 3170111:
-  count: 2
+  count: 3
   name: '[CHARA] 運気は無限大'
-  mission0count: 2
+  mission0count: 3
 3170112:
-  count: 2
+  count: 3
   name: '[CHARA] 運気は無限大'
-  mission0count: 2
+  mission0count: 3
 3170113:
-  count: 2
+  count: 3
   name: '[CHARA] 運気は無限大'
-  mission0count: 2
+  mission0count: 3
 3170121:
   count: 2
   name: '[CHARA] 回転して無限大'
@@ -18336,9 +18336,9 @@
   name: '[CHARA] 梨花とれんの試練'
   mission0count: 0
 3350211:
-  count: 1
+  count: 2
   name: '[CHARA] 怖い話がみつからない'
-  mission0count: 1
+  mission0count: 2
 3350212:
   count: 1
   name: '[CHARA] 怖い話がみつからない'
@@ -22011,13 +22011,13 @@
   name: '[COSTUME] 特別なしるし'
   mission0count: 1
 7100811:
-  count: 1
-  name: '[COSTUME] 名作に犠牲はつきもの'
-  mission0count: 0
-7100821:
   count: 2
+  name: '[COSTUME] 名作に犠牲はつきもの'
+  mission0count: 1
+7100821:
+  count: 3
   name: '[COSTUME] 揺るがぬ志'
-  mission0count: 2
+  mission0count: 3
 7100911:
   count: 1
   name: '[COSTUME] サンタの証明'
