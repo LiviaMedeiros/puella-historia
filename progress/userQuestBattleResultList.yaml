@@ -68,7 +68,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011034:
-  count: 427
+  count: 428
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011035:
@@ -1680,17 +1680,17 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / 楽園の意味'
   mission0count: 0
 1017171:
-  count: 2
+  count: 3
+  name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / マギウスの目的'
+  mission0count: 4
+1017172:
+  count: 3
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / マギウスの目的'
   mission0count: 3
-1017172:
-  count: 2
-  name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / マギウスの目的'
-  mission0count: 2
 1017173:
-  count: 2
+  count: 3
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / マギウスの目的'
-  mission0count: 2
+  mission0count: 3
 10171751:
   count: 1
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / マギウスの目的'
