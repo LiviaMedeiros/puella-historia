@@ -68,7 +68,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011034:
-  count: 416
+  count: 426
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011035:
@@ -8530,7 +8530,7 @@
 10426007:
   count: 0
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
-  mission0count: 6
+  mission0count: 10
 10426008:
   count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
@@ -19524,41 +19524,41 @@
   name: '[CHARA] 鈴音のドッペル'
   mission0count: 1
 3403211:
-  count: 1
+  count: 2
   name: '[CHARA] シュシュ→イヤリング'
-  mission0count: 1
+  mission0count: 2
 3403212:
-  count: 1
+  count: 2
   name: '[CHARA] シュシュ→イヤリング'
-  mission0count: 1
+  mission0count: 2
 3403213:
-  count: 1
+  count: 2
   name: '[CHARA] シュシュ→イヤリング'
-  mission0count: 1
+  mission0count: 2
 3403221:
-  count: 1
+  count: 2
   name: '[CHARA] ヘッドドレス→洗剤'
-  mission0count: 1
+  mission0count: 2
 3403222:
-  count: 1
+  count: 2
   name: '[CHARA] ヘッドドレス→洗剤'
-  mission0count: 1
+  mission0count: 2
 3403223:
-  count: 1
+  count: 2
   name: '[CHARA] ヘッドドレス→洗剤'
-  mission0count: 1
+  mission0count: 2
 3403231:
-  count: 1
+  count: 2
   name: '[CHARA] 釣る権利→？？？'
-  mission0count: 1
+  mission0count: 2
 3403232:
-  count: 1
+  count: 2
   name: '[CHARA] 釣る権利→？？？'
-  mission0count: 1
+  mission0count: 2
 3403233:
-  count: 1
+  count: 5
   name: '[CHARA] 釣る権利→？？？'
-  mission0count: 1
+  mission0count: 2
 3403241:
   count: 1
   name: '[CHARA] 茉莉のドッペル'
@@ -22215,9 +22215,9 @@
   name: '[COSTUME] ちぐはぐコラボレーション'
   mission0count: 1
 7103111:
-  count: 3
+  count: 4
   name: '[COSTUME] 教えてあげない'
-  mission0count: 1
+  mission0count: 2
 7103211:
   count: 2
   name: '[COSTUME] ミユリの夏の楽しみ方'
