@@ -888,19 +888,19 @@
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
   mission0count: 1
 10150252:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
   mission0count: 0
 10150253:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
   mission0count: 0
 10150254:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
   mission0count: 0
 10150255:
-  count: 1
+  count: 2
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
   mission0count: 0
 1015031:
@@ -6248,29 +6248,29 @@
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 誰も生まれない世界'
   mission0count: 3
 10330251:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 誰も生まれない世界'
-  mission0count: 0
+  mission0count: 1
 10330252:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 誰も生まれない世界'
-  mission0count: 0
+  mission0count: 1
 10330253:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 誰も生まれない世界'
-  mission0count: 0
+  mission0count: 1
 10330254:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 誰も生まれない世界'
-  mission0count: 0
+  mission0count: 1
 10330255:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 誰も生まれない世界'
-  mission0count: 0
+  mission0count: 1
 10330256:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 誰も生まれない世界'
-  mission0count: 0
+  mission0count: 1
 1033031:
   count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 明日を託す命'
@@ -6304,25 +6304,25 @@
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 明日を託す命'
   mission0count: 3
 10330351:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 明日を託す命'
-  mission0count: 0
+  mission0count: 1
 10330352:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 明日を託す命'
-  mission0count: 0
+  mission0count: 1
 10330353:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 明日を託す命'
-  mission0count: 0
+  mission0count: 1
 10330354:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 明日を託す命'
-  mission0count: 0
+  mission0count: 1
 10330355:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 明日を託す命'
-  mission0count: 0
+  mission0count: 1
 10330356:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / 明日を託す命'
@@ -8440,9 +8440,9 @@
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 困難級'
   mission0count: 2
 10424005:
-  count: 1
+  count: 2
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 困難級'
-  mission0count: 2
+  mission0count: 3
 10424006:
   count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 困難級'
