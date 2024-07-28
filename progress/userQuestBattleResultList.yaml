@@ -1824,7 +1824,7 @@
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / かえで編 3話'
   mission0count: 0
 1018141:
-  count: 2
+  count: 3
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / レナ編 1話'
   mission0count: 3
 10181451:
@@ -1832,57 +1832,57 @@
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / レナ編 1話'
   mission0count: 0
 1018151:
-  count: 2
+  count: 3
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / レナ編 2話'
-  mission0count: 2
+  mission0count: 3
 10181551:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / レナ編 2話'
   mission0count: 0
 1018161:
-  count: 2
+  count: 3
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / レナ編 3話'
-  mission0count: 2
+  mission0count: 3
 10181651:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / レナ編 3話'
   mission0count: 0
 1018171:
-  count: 2
+  count: 3
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / レナ編 4話'
-  mission0count: 2
+  mission0count: 3
 10181751:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / レナ編 4話'
   mission0count: 0
 1018181:
-  count: 2
+  count: 3
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / ももこ編 1話'
-  mission0count: 2
+  mission0count: 3
 10181851:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / ももこ編 1話'
   mission0count: 0
 1018191:
-  count: 2
+  count: 3
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / ももこ編 2話'
-  mission0count: 2
+  mission0count: 3
 10181951:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / ももこ編 2話'
   mission0count: 0
 1018201:
-  count: 2
+  count: 3
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / ももこ編 3話'
-  mission0count: 2
+  mission0count: 3
 10182051:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / ももこ編 3話'
   mission0count: 0
 1018211:
-  count: 2
+  count: 3
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / ももこ編 4話'
-  mission0count: 2
+  mission0count: 3
 10182151:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / ももこ編 4話'
@@ -1896,33 +1896,33 @@
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / みたま編 1話'
   mission0count: 0
 1018231:
-  count: 2
+  count: 3
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / 鶴乃編 1話'
-  mission0count: 2
+  mission0count: 3
 10182351:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / 鶴乃編 1話'
   mission0count: 0
 1018241:
-  count: 2
+  count: 3
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / 鶴乃編 2話'
-  mission0count: 2
+  mission0count: 3
 10182451:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / 鶴乃編 2話'
   mission0count: 0
 1018251:
-  count: 2
+  count: 3
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / 鶴乃編 3話'
-  mission0count: 2
+  mission0count: 3
 10182551:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / 鶴乃編 3話'
   mission0count: 0
 1018261:
-  count: 2
+  count: 3
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / 鶴乃編 4話'
-  mission0count: 2
+  mission0count: 3
 10182651:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / 鶴乃編 4話'
@@ -1930,7 +1930,7 @@
 1018271:
   count: 2
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / フェリシア編 1話'
-  mission0count: 2
+  mission0count: 3
 10182751:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / フェリシア編 1話'
@@ -20620,7 +20620,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000763:
-  count: 24
+  count: 25
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000764:
