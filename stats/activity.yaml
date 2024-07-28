@@ -1,14 +1,14 @@
 ---
 3hour:
-  apps: 13
-  records: 1315
+  apps: 14
+  records: 1359
 day:
-  apps: 24
-  records: 4765
+  apps: 23
+  records: 4850
 week:
   apps: 53
-  records: 35134
+  records: 35414
 totes:
   apps: 157
-  records: 264916
+  records: 265246
 ...
