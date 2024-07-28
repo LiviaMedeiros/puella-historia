@@ -10800,45 +10800,45 @@
   name: '[CHARA] すなおのドッペル'
   mission0count: 1
 3102811:
+  count: 3
+  name: '[CHARA] 思い込みブルー'
+  mission0count: 3
+3102812:
   count: 2
   name: '[CHARA] 思い込みブルー'
-  mission0count: 2
-3102812:
-  count: 1
-  name: '[CHARA] 思い込みブルー'
-  mission0count: 0
+  mission0count: 1
 3102813:
-  count: 1
+  count: 2
   name: '[CHARA] 思い込みブルー'
-  mission0count: 0
+  mission0count: 1
 3102821:
-  count: 1
+  count: 2
   name: '[CHARA] 繋がるマインド'
-  mission0count: 0
+  mission0count: 1
 3102822:
-  count: 1
+  count: 2
   name: '[CHARA] 繋がるマインド'
-  mission0count: 0
+  mission0count: 1
 3102823:
-  count: 1
+  count: 2
   name: '[CHARA] 繋がるマインド'
-  mission0count: 0
+  mission0count: 1
 3102831:
-  count: 1
+  count: 2
   name: '[CHARA] 離れないでマイメン'
-  mission0count: 0
+  mission0count: 1
 3102832:
-  count: 1
+  count: 2
   name: '[CHARA] 離れないでマイメン'
-  mission0count: 0
+  mission0count: 1
 3102833:
-  count: 1
+  count: 2
   name: '[CHARA] 離れないでマイメン'
-  mission0count: 0
+  mission0count: 1
 3102841:
-  count: 1
+  count: 2
   name: '[CHARA] ひめなのドッペル'
-  mission0count: 0
+  mission0count: 1
 3102842:
   count: 1
   name: '[CHARA] ひめなのドッペル'
@@ -11676,41 +11676,41 @@
   name: '[CHARA] 使命を遂げし賊の娘'
   mission0count: 3
 3104621:
-  count: 3
+  count: 4
   name: '[CHARA] 泰党の技を盗んだ女'
-  mission0count: 2
+  mission0count: 3
 3104622:
-  count: 3
+  count: 4
   name: '[CHARA] 泰党の技を盗んだ女'
-  mission0count: 2
+  mission0count: 3
 3104623:
-  count: 3
+  count: 4
   name: '[CHARA] 泰党の技を盗んだ女'
-  mission0count: 2
+  mission0count: 3
 3104631:
-  count: 3
-  name: '[CHARA] 怖い、嫌だ、無理！'
-  mission0count: 2
-3104632:
   count: 4
   name: '[CHARA] 怖い、嫌だ、無理！'
-  mission0count: 2
-3104633:
-  count: 3
+  mission0count: 3
+3104632:
+  count: 5
   name: '[CHARA] 怖い、嫌だ、無理！'
-  mission0count: 2
+  mission0count: 3
+3104633:
+  count: 4
+  name: '[CHARA] 怖い、嫌だ、無理！'
+  mission0count: 3
 3104641:
-  count: 2
+  count: 3
   name: '[CHARA] 千鶴のドッペル'
-  mission0count: 1
+  mission0count: 2
 3104642:
-  count: 2
+  count: 3
   name: '[CHARA] 千鶴のドッペル'
-  mission0count: 1
+  mission0count: 2
 3104643:
-  count: 2
+  count: 3
   name: '[CHARA] 千鶴のドッペル'
-  mission0count: 1
+  mission0count: 2
 3104711:
   count: 1
   name: '[CHARA] ひとりで生きると決めたから'
@@ -20616,7 +20616,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 8
 4000762:
-  count: 36
+  count: 41
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000763:

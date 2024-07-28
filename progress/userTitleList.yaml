@@ -3906,7 +3906,7 @@
 8000007:
   name: 憧憬を抱くハコの停電
   description: 絶望的な「ハコの魔女」に勝利
-  owned: false
+  owned: true
 8000008:
   name: 無知が生んだ落書きの掃除
   description: 絶望的な「落書きの魔女」に勝利
