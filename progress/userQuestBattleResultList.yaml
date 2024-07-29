@@ -1,16 +1,16 @@
 ---
 1011011:
-  count: 39
-  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
-  mission0count: 11
-1011012:
-  count: 39
-  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
-  mission0count: 11
-1011013:
-  count: 13
+  count: 40
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
   mission0count: 12
+1011012:
+  count: 40
+  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
+  mission0count: 12
+1011013:
+  count: 14
+  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
+  mission0count: 13
 10110151:
   count: 10
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 小さいキュゥべえ'
@@ -24,19 +24,19 @@
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 小さいキュゥべえ'
   mission0count: 1
 1011021:
-  count: 19
+  count: 20
+  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
+  mission0count: 13
+1011022:
+  count: 20
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 12
-1011022:
-  count: 19
-  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
-  mission0count: 11
 1011023:
   count: 12
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 9
 1011024:
-  count: 31
+  count: 32
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 9
 10110251:
@@ -68,7 +68,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011034:
-  count: 437
+  count: 447
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 7
 1011035:
@@ -3702,7 +3702,7 @@
 1025012:
   count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 最後の賭け'
-  mission0count: 3
+  mission0count: 4
 1025013:
   count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 最後の賭け'
@@ -20612,19 +20612,19 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
   mission0count: 1
 4000761:
-  count: 464
+  count: 466
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 8
 4000762:
-  count: 41
+  count: 51
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000763:
-  count: 25
+  count: 28
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000764:
-  count: 167
+  count: 170
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4200101:
