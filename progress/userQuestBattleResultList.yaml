@@ -200,21 +200,21 @@
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / ももこの鉢合わせ作戦！'
   mission0count: 1
 1012041:
-  count: 10
-  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
-  mission0count: 7
-1012042:
-  count: 14
-  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
-  mission0count: 7
-1012043:
-  count: 10
-  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
-  mission0count: 7
-1012044:
   count: 11
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
-  mission0count: 7
+  mission0count: 8
+1012042:
+  count: 15
+  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
+  mission0count: 8
+1012043:
+  count: 11
+  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
+  mission0count: 8
+1012044:
+  count: 12
+  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 消えたかえでを探して'
+  mission0count: 8
 10120451:
   count: 10
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 消えたかえでを探して'
@@ -232,25 +232,25 @@
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 消えたかえでを探して'
   mission0count: 1
 1012051:
-  count: 11
-  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
-  mission0count: 7
-1012052:
-  count: 10
-  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
-  mission0count: 7
-1012053:
-  count: 10
-  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
-  mission0count: 8
-1012054:
   count: 12
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
-  mission0count: 7
-1012055:
+  mission0count: 8
+1012052:
   count: 11
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
-  mission0count: 7
+  mission0count: 8
+1012053:
+  count: 11
+  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
+  mission0count: 9
+1012054:
+  count: 13
+  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
+  mission0count: 8
+1012055:
+  count: 12
+  name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
+  mission0count: 8
 10120551:
   count: 10
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
@@ -272,17 +272,17 @@
   name: '[MAIN/1/NORMAL/HARD] うわさの絶交ルール (第2章) / 牙を剥くウワサ'
   mission0count: 1
 1013011:
-  count: 10
-  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 何でもできる世界'
-  mission0count: 7
-1013012:
   count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 何でもできる世界'
   mission0count: 8
-1013013:
-  count: 10
+1013012:
+  count: 12
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 何でもできる世界'
-  mission0count: 7
+  mission0count: 9
+1013013:
+  count: 11
+  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 何でもできる世界'
+  mission0count: 8
 10130151:
   count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 何でもできる世界'
@@ -296,9 +296,9 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 何でもできる世界'
   mission0count: 1
 1013021:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 神社の噂'
-  mission0count: 7
+  mission0count: 8
 1013022:
   count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 神社の噂'
@@ -656,23 +656,23 @@
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 黒い羽根の少女たち'
   mission0count: 2
 1014041:
-  count: 9
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / マギウスの翼'
   mission0count: 5
 1014042:
-  count: 6
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / マギウスの翼'
   mission0count: 5
 1014043:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / マギウスの翼'
   mission0count: 5
 1014044:
-  count: 5
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / マギウスの翼'
   mission0count: 5
 1014045:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / マギウスの翼'
   mission0count: 5
 10140451:
@@ -696,27 +696,27 @@
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / マギウスの翼'
   mission0count: 1
 1014051:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
   mission0count: 5
 1014052:
-  count: 6
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
   mission0count: 5
 1014053:
-  count: 6
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
   mission0count: 5
 1014054:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
   mission0count: 5
 1014055:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
   mission0count: 5
 1014056:
-  count: 5
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 崇高な目的'
   mission0count: 5
 10140551:
@@ -744,31 +744,31 @@
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 崇高な目的'
   mission0count: 1
 1014061:
-  count: 6
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
   mission0count: 5
 1014062:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
   mission0count: 5
 1014063:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
   mission0count: 5
 1014064:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
   mission0count: 5
 1014065:
-  count: 5
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
   mission0count: 5
 1014066:
-  count: 4
+  count: 28
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
   mission0count: 4
 1014067:
-  count: 4
+  count: 14
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
   mission0count: 4
 10140651:
@@ -800,11 +800,11 @@
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / 不幸が溢れるその角杯'
   mission0count: 1
 1014071:
-  count: 4
+  count: 22
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / いろはの新しい日々へ…'
   mission0count: 4
 1014072:
-  count: 4
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / いろはの新しい日々へ…'
   mission0count: 4
 1014073:
@@ -824,15 +824,15 @@
   name: '[MAIN/1/NORMAL/HARD] ウワサの守り人 (第4章) / いろはの新しい日々へ…'
   mission0count: 1
 1015011:
-  count: 4
+  count: 5
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
   mission0count: 4
 1015012:
-  count: 4
+  count: 9
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
   mission0count: 4
 1015013:
-  count: 3
+  count: 6
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
   mission0count: 3
 1015014:
@@ -3912,13 +3912,13 @@
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 別れが結んだ繋がり'
   mission0count: 4
 1025055:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 別れが結んだ繋がり'
   mission0count: 4
 1025056:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 別れが結んだ繋がり'
-  mission0count: 3
+  mission0count: 4
 10250551:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 別れが結んだ繋がり'
@@ -13920,29 +13920,29 @@
   name: '[CHARA] 運気は無限大'
   mission0count: 3
 3170121:
-  count: 2
+  count: 3
   name: '[CHARA] 回転して無限大'
-  mission0count: 2
+  mission0count: 3
 3170122:
-  count: 2
+  count: 3
   name: '[CHARA] 回転して無限大'
-  mission0count: 2
+  mission0count: 3
 3170123:
-  count: 2
+  count: 3
   name: '[CHARA] 回転して無限大'
-  mission0count: 2
+  mission0count: 3
 3170131:
-  count: 2
+  count: 3
   name: '[CHARA] 大吉で無限大'
-  mission0count: 2
+  mission0count: 3
 3170132:
-  count: 2
+  count: 3
   name: '[CHARA] 大吉で無限大'
-  mission0count: 2
+  mission0count: 3
 3170133:
-  count: 2
+  count: 3
   name: '[CHARA] 大吉で無限大'
-  mission0count: 2
+  mission0count: 3
 3170141:
   count: 2
   name: '[CHARA] 無限大いろはの試練'
@@ -14292,9 +14292,9 @@
   name: '[CHARA] 杏子のドッペル'
   mission0count: 0
 3200711:
-  count: 3
+  count: 4
   name: '[CHARA] 巴マミと出会ったのです'
-  mission0count: 1
+  mission0count: 2
 3200712:
   count: 2
   name: '[CHARA] 巴マミと出会ったのです'
@@ -16288,9 +16288,9 @@
   name: '[CHARA] みんなで探そう！'
   mission0count: 0
 3301532:
-  count: 1
+  count: 3
   name: '[CHARA] みんなで探そう！'
-  mission0count: 0
+  mission0count: 1
 3301533:
   count: 1
   name: '[CHARA] みんなで探そう！'
@@ -18340,29 +18340,29 @@
   name: '[CHARA] 怖い話がみつからない'
   mission0count: 2
 3350212:
-  count: 1
+  count: 2
   name: '[CHARA] 怖い話がみつからない'
-  mission0count: 1
+  mission0count: 2
 3350213:
-  count: 1
+  count: 2
   name: '[CHARA] 怖い話がみつからない'
-  mission0count: 1
+  mission0count: 2
 3350221:
-  count: 1
+  count: 2
   name: '[CHARA] いろいろな怖い話'
-  mission0count: 1
+  mission0count: 2
 3350222:
-  count: 1
+  count: 2
   name: '[CHARA] いろいろな怖い話'
-  mission0count: 1
+  mission0count: 2
 3350223:
-  count: 1
+  count: 2
   name: '[CHARA] いろいろな怖い話'
-  mission0count: 1
+  mission0count: 2
 3350231:
-  count: 1
+  count: 2
   name: '[CHARA] この夏一番の怖い話'
-  mission0count: 1
+  mission0count: 2
 3350232:
   count: 1
   name: '[CHARA] この夏一番の怖い話'
@@ -20624,7 +20624,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000764:
-  count: 182
+  count: 190
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4200101:
