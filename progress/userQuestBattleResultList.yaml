@@ -1636,9 +1636,9 @@
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 楽園の中でしたことは'
   mission0count: 3
 1017152:
-  count: 2
+  count: 3
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 楽園の中でしたことは'
-  mission0count: 2
+  mission0count: 3
 10171551:
   count: 1
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / 楽園の中でしたことは'
@@ -1648,21 +1648,21 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / 楽園の中でしたことは'
   mission0count: 0
 1017161:
-  count: 2
-  name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 楽園の意味'
-  mission0count: 2
-1017162:
-  count: 2
-  name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 楽園の意味'
-  mission0count: 2
-1017163:
-  count: 2
-  name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 楽園の意味'
-  mission0count: 2
-1017164:
   count: 3
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 楽園の意味'
-  mission0count: 2
+  mission0count: 3
+1017162:
+  count: 3
+  name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 楽園の意味'
+  mission0count: 3
+1017163:
+  count: 3
+  name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 楽園の意味'
+  mission0count: 3
+1017164:
+  count: 4
+  name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 楽園の意味'
+  mission0count: 3
 10171651:
   count: 1
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / 楽園の意味'
@@ -1680,17 +1680,17 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / 楽園の意味'
   mission0count: 0
 1017171:
-  count: 3
+  count: 4
+  name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / マギウスの目的'
+  mission0count: 5
+1017172:
+  count: 4
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / マギウスの目的'
   mission0count: 4
-1017172:
-  count: 3
-  name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / マギウスの目的'
-  mission0count: 3
 1017173:
-  count: 3
+  count: 4
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / マギウスの目的'
-  mission0count: 3
+  mission0count: 4
 10171751:
   count: 1
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / マギウスの目的'
@@ -1704,13 +1704,13 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / マギウスの目的'
   mission0count: 0
 1017181:
-  count: 3
+  count: 4
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / チームみかづき荘'
-  mission0count: 3
+  mission0count: 4
 1017182:
-  count: 3
+  count: 4
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / チームみかづき荘'
-  mission0count: 3
+  mission0count: 4
 10171851:
   count: 1
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / チームみかづき荘'
@@ -1720,65 +1720,65 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / チームみかづき荘'
   mission0count: 0
 1018011:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / 全体編 1話'
-  mission0count: 3
+  mission0count: 4
 10180151:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / 全体編 1話'
   mission0count: 0
 1018021:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / 全体編 2話'
-  mission0count: 3
+  mission0count: 4
 10180251:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / 全体編 2話'
   mission0count: 0
 1018031:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / 全体編 3話'
-  mission0count: 3
+  mission0count: 4
 10180351:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / 全体編 3話'
   mission0count: 0
 1018041:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / 全体編 4話'
-  mission0count: 3
+  mission0count: 4
 10180451:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / 全体編 4話'
   mission0count: 0
 1018051:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / やちよ編 1話'
-  mission0count: 3
+  mission0count: 4
 10180551:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / やちよ編 1話'
   mission0count: 0
 1018061:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / やちよ編 2話'
-  mission0count: 3
+  mission0count: 4
 10180651:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / やちよ編 2話'
   mission0count: 0
 1018071:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / やちよ編 3話'
-  mission0count: 3
+  mission0count: 4
 10180751:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / やちよ編 3話'
   mission0count: 0
 1018081:
-  count: 4
+  count: 5
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / やちよ編 4話'
-  mission0count: 4
+  mission0count: 5
 10180851:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / やちよ編 4話'
@@ -1896,9 +1896,9 @@
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / みたま編 1話'
   mission0count: 0
 1018231:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / 鶴乃編 1話'
-  mission0count: 3
+  mission0count: 4
 10182351:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / 鶴乃編 1話'
@@ -1928,57 +1928,57 @@
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / 鶴乃編 4話'
   mission0count: 0
 1018271:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / フェリシア編 1話'
-  mission0count: 3
+  mission0count: 4
 10182751:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / フェリシア編 1話'
   mission0count: 0
 1018281:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / フェリシア編 2話'
-  mission0count: 3
+  mission0count: 4
 10182851:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / フェリシア編 2話'
   mission0count: 0
 1018291:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / フェリシア編 3話'
-  mission0count: 3
+  mission0count: 4
 10182951:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / フェリシア編 3話'
   mission0count: 0
 1018301:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / 十七夜編 1話'
-  mission0count: 3
+  mission0count: 4
 10183051:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / 十七夜編 1話'
   mission0count: 0
 1018311:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / 十七夜編 2話'
-  mission0count: 3
+  mission0count: 4
 10183151:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / 十七夜編 2話'
   mission0count: 0
 1018321:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / 十七夜編 3話'
-  mission0count: 3
+  mission0count: 4
 10183251:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / 十七夜編 3話'
   mission0count: 0
 1018331:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / 十七夜編 4話'
-  mission0count: 3
+  mission0count: 4
 10183351:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / 十七夜編 4話'
@@ -2152,73 +2152,73 @@
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / いろは・さな編 7話'
   mission0count: 0
 1018721:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / ももこ編 5話'
-  mission0count: 3
+  mission0count: 4
 10187251:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / ももこ編 5話'
   mission0count: 0
 1018731:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / みたま編 2話'
-  mission0count: 3
+  mission0count: 4
 10187351:
   count: 2
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / みたま編 2話'
   mission0count: 0
 1018741:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / みたま編 3話'
-  mission0count: 3
+  mission0count: 4
 10187451:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / みたま編 3話'
   mission0count: 0
 1018751:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / みたま編 4話'
-  mission0count: 3
+  mission0count: 4
 10187551:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / みたま編 4話'
   mission0count: 0
 1018761:
-  count: 2
+  count: 3
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / みたま編 5話'
-  mission0count: 2
+  mission0count: 3
 10187651:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / みたま編 5話'
   mission0count: 0
 1018771:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / フェリシア編 4話'
-  mission0count: 3
+  mission0count: 4
 10187751:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / フェリシア編 4話'
   mission0count: 0
 1018781:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / フェリシア編 5話'
-  mission0count: 3
+  mission0count: 4
 10187851:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / フェリシア編 5話'
   mission0count: 0
 1018791:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / フェリシア編 6話'
-  mission0count: 3
+  mission0count: 4
 10187951:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / フェリシア編 6話'
   mission0count: 0
 1018801:
-  count: 3
+  count: 4
   name: '[MAIN/1/BRANCH/NORMAL] 偽りに彩られ神浜 (第8章) / フェリシア編 7話'
-  mission0count: 3
+  mission0count: 4
 10188051:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] 偽りに彩られ神浜 (第8章) / フェリシア編 7話'
@@ -14804,7 +14804,7 @@
   name: '[CHARA] 悪魔的にこみ上げる感情'
   mission0count: 4
 3220133:
-  count: 18
+  count: 64
   name: '[CHARA] 悪魔的にこみ上げる感情'
   mission0count: 3
 3220141:
@@ -17552,7 +17552,7 @@
   name: '[CHARA] 学校生活はつまらない'
   mission0count: 3
 3304333:
-  count: 45
+  count: 46
   name: '[CHARA] 学校生活はつまらない'
   mission0count: 3
 3304341:
