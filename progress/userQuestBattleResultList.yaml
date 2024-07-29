@@ -1,16 +1,16 @@
 ---
 1011011:
-  count: 40
-  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
-  mission0count: 12
-1011012:
-  count: 40
-  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
-  mission0count: 12
-1011013:
-  count: 14
+  count: 41
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
   mission0count: 13
+1011012:
+  count: 41
+  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
+  mission0count: 13
+1011013:
+  count: 15
+  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
+  mission0count: 14
 10110151:
   count: 10
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 小さいキュゥべえ'
@@ -24,21 +24,21 @@
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 小さいキュゥべえ'
   mission0count: 1
 1011021:
-  count: 20
+  count: 21
+  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
+  mission0count: 14
+1011022:
+  count: 21
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 13
-1011022:
-  count: 20
-  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
-  mission0count: 12
 1011023:
-  count: 12
+  count: 13
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
-  mission0count: 9
+  mission0count: 10
 1011024:
-  count: 32
+  count: 33
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
-  mission0count: 9
+  mission0count: 10
 10110251:
   count: 11
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
@@ -56,25 +56,25 @@
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 1
 1011031:
-  count: 13
+  count: 14
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
-  mission0count: 7
+  mission0count: 8
 1011032:
-  count: 11
-  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
-  mission0count: 7
-1011033:
   count: 12
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
-  mission0count: 7
+  mission0count: 8
+1011033:
+  count: 13
+  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
+  mission0count: 8
 1011034:
-  count: 447
+  count: 448
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
-  mission0count: 7
+  mission0count: 8
 1011035:
-  count: 11
+  count: 12
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
-  mission0count: 7
+  mission0count: 8
 10110351:
   count: 10
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 夢で見る少女…'
@@ -96,9 +96,9 @@
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 1
 1012011:
-  count: 13
+  count: 14
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ふたりの親友を訪ねて'
-  mission0count: 7
+  mission0count: 8
 1012012:
   count: 11
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ふたりの親友を訪ねて'
@@ -108,7 +108,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ふたりの親友を訪ねて'
   mission0count: 7
 1012014:
-  count: 12
+  count: 20
   name: '[MAIN/1/NORMAL/NORMAL] うわさの絶交ルール (第2章) / ふたりの親友を訪ねて'
   mission0count: 7
 10120151:
@@ -8452,7 +8452,7 @@
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 困難級'
   mission0count: 2
 10424008:
-  count: 2
+  count: 3
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 困難級'
   mission0count: 5
 10424009:
@@ -8492,7 +8492,7 @@
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
   mission0count: 5
 10425008:
-  count: 1
+  count: 2
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
   mission0count: 3
 10425009:
@@ -8516,7 +8516,7 @@
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
   mission0count: 4
 10426004:
-  count: 0
+  count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
   mission0count: 1
 10426005:
@@ -14808,17 +14808,17 @@
   name: '[CHARA] 悪魔的にこみ上げる感情'
   mission0count: 3
 3220141:
-  count: 1
+  count: 2
   name: '[CHARA] 悪魔ほむらちゃんの試練'
-  mission0count: 1
+  mission0count: 2
 3220142:
-  count: 1
+  count: 2
   name: '[CHARA] 悪魔ほむらちゃんの試練'
-  mission0count: 1
+  mission0count: 2
 3220143:
-  count: 1
+  count: 2
   name: '[CHARA] 悪魔ほむらちゃんの試練'
-  mission0count: 1
+  mission0count: 2
 3220211:
   count: 1
   name: '[CHARA] Act Ⅰ'
@@ -16620,17 +16620,17 @@
   name: '[CHARA] 逃げ続けた日々'
   mission0count: 3
 3302241:
-  count: 2
+  count: 3
   name: '[CHARA] 満のドッペル'
-  mission0count: 1
+  mission0count: 2
 3302242:
-  count: 2
+  count: 3
   name: '[CHARA] 満のドッペル'
-  mission0count: 1
+  mission0count: 2
 3302243:
-  count: 2
+  count: 3
   name: '[CHARA] 満のドッペル'
-  mission0count: 1
+  mission0count: 2
 3302311:
   count: 2
   name: '[CHARA] 恋がため'
@@ -20612,11 +20612,11 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
   mission0count: 1
 4000761:
-  count: 466
+  count: 468
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 8
 4000762:
-  count: 51
+  count: 53
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000763:
