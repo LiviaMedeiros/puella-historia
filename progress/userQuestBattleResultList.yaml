@@ -3700,25 +3700,25 @@
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 最後の賭け'
   mission0count: 3
 1025012:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 最後の賭け'
   mission0count: 4
 1025013:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 最後の賭け'
-  mission0count: 3
+  mission0count: 4
 1025014:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 最後の賭け'
-  mission0count: 3
+  mission0count: 4
 1025015:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 最後の賭け'
-  mission0count: 3
+  mission0count: 4
 1025016:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 最後の賭け'
-  mission0count: 3
+  mission0count: 4
 10250151:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 最後の賭け'
@@ -3744,21 +3744,21 @@
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 最後の賭け'
   mission0count: 0
 1025021:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 繰り返すあの頃'
-  mission0count: 3
+  mission0count: 4
 1025022:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 繰り返すあの頃'
-  mission0count: 3
+  mission0count: 4
 1025023:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 繰り返すあの頃'
-  mission0count: 3
+  mission0count: 4
 1025024:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 繰り返すあの頃'
-  mission0count: 3
+  mission0count: 4
 10250251:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 繰り返すあの頃'
@@ -3776,9 +3776,9 @@
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 繰り返すあの頃'
   mission0count: 0
 1025031:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 決裂へのカウントダウン'
-  mission0count: 3
+  mission0count: 4
 1025032:
   count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 決裂へのカウントダウン'
@@ -7312,63 +7312,63 @@
     Tomorrow'
   mission0count: 4
 10420101:
-  count: 5
+  count: 7
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10420102:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10420103:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10420106:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10420108:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10420110:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10420111:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10420113:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10420114:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10420115:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10420122:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10420123:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film1'
   mission0count: 0
 10420201:
-  count: 5
+  count: 6
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10420202:
-  count: 5
+  count: 6
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10420203:
-  count: 5
+  count: 6
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film2'
   mission0count: 0
 10420204:
@@ -8504,7 +8504,7 @@
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 窮地級'
   mission0count: 5
 10426001:
-  count: 2
+  count: 8
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
   mission0count: 2
 10426002:
@@ -8540,7 +8540,7 @@
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
   mission0count: 11
 10426010:
-  count: 0
+  count: 1
   name: '[MAIN/3/NORMAL/NORMAL] Scene0 (Scene0) / 絶望級'
   mission0count: 1
 2052011:
