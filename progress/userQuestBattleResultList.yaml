@@ -364,13 +364,13 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 6
 1013042:
+  count: 12
+  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
+  mission0count: 6
+1013043:
   count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
-  mission0count: 5
-1013043:
-  count: 10
-  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
-  mission0count: 5
+  mission0count: 6
 1013044:
   count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
@@ -1096,7 +1096,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / ここが私の居場所'
   mission0count: 2
 1015075:
-  count: 2
+  count: 13
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / ここが私の居場所'
   mission0count: 2
 10150751:
@@ -1120,11 +1120,11 @@
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / ここが私の居場所'
   mission0count: 0
 1016011:
-  count: 2
+  count: 13
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 講義のお誘い'
   mission0count: 2
 1016012:
-  count: 4
+  count: 15
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 講義のお誘い'
   mission0count: 4
 1016013:
@@ -2952,15 +2952,15 @@
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 他が為の少女たち'
   mission0count: 0
 1022031:
-  count: 3
+  count: 10
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022032:
-  count: 3
+  count: 10
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022033:
-  count: 3
+  count: 11
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 夢追いの少女たち'
   mission0count: 3
 1022034:
@@ -3024,7 +3024,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 記す少女'
   mission0count: 3
 1022043:
-  count: 3
+  count: 8
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 記す少女'
   mission0count: 3
 1022044:
@@ -3052,41 +3052,41 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 記す少女'
   mission0count: 4
 10220451:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 記す少女'
-  mission0count: 0
+  mission0count: 1
 10220452:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 記す少女'
-  mission0count: 0
+  mission0count: 1
 10220453:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 記す少女'
-  mission0count: 0
+  mission0count: 1
 10220454:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 記す少女'
-  mission0count: 0
+  mission0count: 1
 10220455:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 記す少女'
-  mission0count: 0
+  mission0count: 1
 10220456:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 記す少女'
-  mission0count: 0
+  mission0count: 1
 10220457:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 記す少女'
-  mission0count: 0
+  mission0count: 1
 10220458:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 記す少女'
-  mission0count: 0
+  mission0count: 1
 10220459:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 記す少女'
-  mission0count: 0
+  mission0count: 1
 1023011:
   count: 2
   name: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / 思惑モーモーファーム'
@@ -3844,7 +3844,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 甘美なる悲しみ'
   mission0count: 4
 1025042:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 甘美なる悲しみ'
   mission0count: 4
 1025043:
@@ -3920,21 +3920,21 @@
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 別れが結んだ繋がり'
   mission0count: 4
 10250551:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 別れが結んだ繋がり'
-  mission0count: 0
+  mission0count: 1
 10250552:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 別れが結んだ繋がり'
-  mission0count: 0
+  mission0count: 1
 10250553:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 別れが結んだ繋がり'
-  mission0count: 0
+  mission0count: 1
 10250554:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 別れが結んだ繋がり'
-  mission0count: 0
+  mission0count: 1
 10250555:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 別れが結んだ繋がり'
@@ -4120,7 +4120,7 @@
   name: '[MAIN/2/NORMAL/HARD] 揺れて恋歌に霞む理想 (第5章) / 獄中の叫び'
   mission0count: 0
 1026041:
-  count: 3
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 揺れて恋歌に霞む理想 (第5章) / 心は一つ、魂も一つ'
   mission0count: 3
 1026042:
@@ -5252,9 +5252,9 @@
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 全体編 1話'
   mission0count: 4
 10295151:
-  count: 1
+  count: 2
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 全体編 1話'
-  mission0count: 0
+  mission0count: 1
 1029521:
   count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 全体編 2話'
@@ -5424,7 +5424,7 @@
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 水面下の足音'
   mission0count: 1
 1030031:
-  count: 5
+  count: 22
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
   mission0count: 5
 1030032:
@@ -5440,7 +5440,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
   mission0count: 5
 1030035:
-  count: 5
+  count: 12
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 語られた目的'
   mission0count: 5
 1030036:
@@ -5516,13 +5516,13 @@
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
   mission0count: 2
 10300454:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
-  mission0count: 1
+  mission0count: 2
 10300455:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
-  mission0count: 1
+  mission0count: 2
 10300456:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
@@ -6060,29 +6060,29 @@
   name: '[MAIN/2/NORMAL/NORMAL] 喜びと悲しみの終幕流転 (第11章) / 悲しみと滅びの歴史'
   mission0count: 3
 10320351:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 喜びと悲しみの終幕流転 (第11章) / 悲しみと滅びの歴史'
-  mission0count: 0
+  mission0count: 1
 10320352:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 喜びと悲しみの終幕流転 (第11章) / 悲しみと滅びの歴史'
-  mission0count: 0
+  mission0count: 1
 10320353:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 喜びと悲しみの終幕流転 (第11章) / 悲しみと滅びの歴史'
-  mission0count: 0
+  mission0count: 1
 10320354:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 喜びと悲しみの終幕流転 (第11章) / 悲しみと滅びの歴史'
-  mission0count: 0
+  mission0count: 1
 10320355:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 喜びと悲しみの終幕流転 (第11章) / 悲しみと滅びの歴史'
-  mission0count: 0
+  mission0count: 1
 10320356:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 喜びと悲しみの終幕流転 (第11章) / 悲しみと滅びの歴史'
-  mission0count: 0
+  mission0count: 1
 10320357:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 喜びと悲しみの終幕流転 (第11章) / 悲しみと滅びの歴史'
@@ -13060,37 +13060,37 @@
   name: '[CHARA] きっと馴染めない夏休み'
   mission0count: 3
 3114322:
-  count: 2
+  count: 3
   name: '[CHARA] きっと馴染めない夏休み'
-  mission0count: 2
+  mission0count: 3
 3114323:
-  count: 2
+  count: 3
   name: '[CHARA] きっと馴染めない夏休み'
-  mission0count: 2
+  mission0count: 3
 3114331:
-  count: 2
+  count: 3
   name: '[CHARA] いつもとは違う夏休み'
-  mission0count: 2
+  mission0count: 3
 3114332:
-  count: 2
+  count: 3
   name: '[CHARA] いつもとは違う夏休み'
-  mission0count: 2
+  mission0count: 3
 3114333:
-  count: 2
+  count: 3
   name: '[CHARA] いつもとは違う夏休み'
-  mission0count: 2
+  mission0count: 3
 3114341:
-  count: 1
+  count: 2
   name: '[CHARA] 黒江のドッペル'
-  mission0count: 1
+  mission0count: 2
 3114342:
-  count: 1
+  count: 2
   name: '[CHARA] 黒江のドッペル'
-  mission0count: 1
+  mission0count: 2
 3114343:
-  count: 1
+  count: 2
   name: '[CHARA] 黒江のドッペル'
-  mission0count: 1
+  mission0count: 2
 3114411:
   count: 4
   name: '[CHARA] 手に入れたい普通'
@@ -16404,13 +16404,13 @@
   name: '[CHARA] ゆきかのドッペル'
   mission0count: 1
 3301811:
-  count: 1
+  count: 2
   name: '[CHARA] 更紗帆奈はかく語りき'
-  mission0count: 0
+  mission0count: 1
 3301812:
-  count: 1
+  count: 2
   name: '[CHARA] 更紗帆奈はかく語りき'
-  mission0count: 0
+  mission0count: 1
 3301813:
   count: 1
   name: '[CHARA] 更紗帆奈はかく語りき'
