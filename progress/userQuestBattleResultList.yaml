@@ -1600,7 +1600,7 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / 和泉十七夜の観察'
   mission0count: 0
 1017121:
-  count: 3
+  count: 14
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 楽園の崩壊を目指して'
   mission0count: 3
 10171251:
@@ -11920,13 +11920,13 @@
   name: '[CHARA] ふたりの檻'
   mission0count: 2
 3105132:
-  count: 2
+  count: 3
   name: '[CHARA] ふたりの檻'
-  mission0count: 1
+  mission0count: 2
 3105133:
-  count: 2
+  count: 6
   name: '[CHARA] ふたりの檻'
-  mission0count: 1
+  mission0count: 2
 3105141:
   count: 2
   name: '[CHARA] ヘルカのドッペル'
@@ -19024,13 +19024,13 @@
   name: '[CHARA] イチゴリゾットパーティー'
   mission0count: 2
 3401432:
-  count: 2
+  count: 3
   name: '[CHARA] イチゴリゾットパーティー'
-  mission0count: 1
+  mission0count: 2
 3401433:
-  count: 2
+  count: 3
   name: '[CHARA] イチゴリゾットパーティー'
-  mission0count: 1
+  mission0count: 2
 3401441:
   count: 1
   name: '[CHARA] 昴かずみのドッペル'
@@ -20624,7 +20624,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 6
 4000764:
-  count: 196
+  count: 206
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4200101:
