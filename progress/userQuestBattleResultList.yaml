@@ -2796,17 +2796,17 @@
   name: '[MAIN/2/NORMAL/NORMAL] はじまりの記し (序章) / ふたつの歩み'
   mission0count: 4
 10210151:
-  count: 2
-  name: '[MAIN/2/NORMAL/HARD] はじまりの記し (序章) / ふたつの歩み'
-  mission0count: 1
-10210152:
-  count: 2
-  name: '[MAIN/2/NORMAL/HARD] はじまりの記し (序章) / ふたつの歩み'
-  mission0count: 1
-10210153:
   count: 3
   name: '[MAIN/2/NORMAL/HARD] はじまりの記し (序章) / ふたつの歩み'
-  mission0count: 1
+  mission0count: 2
+10210152:
+  count: 3
+  name: '[MAIN/2/NORMAL/HARD] はじまりの記し (序章) / ふたつの歩み'
+  mission0count: 2
+10210153:
+  count: 4
+  name: '[MAIN/2/NORMAL/HARD] はじまりの記し (序章) / ふたつの歩み'
+  mission0count: 2
 1022011:
   count: 26
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
@@ -2840,17 +2840,17 @@
   name: '[MAIN/2/NORMAL/NORMAL] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
   mission0count: 4
 10220151:
+  count: 4
+  name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
+  mission0count: 2
+10220152:
   count: 3
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
-  mission0count: 1
-10220152:
-  count: 2
-  name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
-  mission0count: 1
+  mission0count: 2
 10220153:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
-  mission0count: 0
+  mission0count: 1
 10220154:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 約束の少女たち'
@@ -6416,31 +6416,31 @@
   name: '[MAIN/2/NORMAL/HARD] 結ぶ永久の彩り (第12章) / それなら奇跡を見せて'
   mission0count: 1
 1033061:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NONE] 結ぶ永久の彩り (第12章) / これまでから明日へと'
   mission0count: 0
 1033062:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NONE] 結ぶ永久の彩り (第12章) / これまでから明日へと'
   mission0count: 0
 1033063:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NONE] 結ぶ永久の彩り (第12章) / これまでから明日へと'
   mission0count: 0
 1033064:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NONE] 結ぶ永久の彩り (第12章) / これまでから明日へと'
   mission0count: 0
 1033065:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NONE] 結ぶ永久の彩り (第12章) / これまでから明日へと'
   mission0count: 0
 1033066:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NONE] 結ぶ永久の彩り (第12章) / これまでから明日へと'
   mission0count: 0
 1033067:
-  count: 3
+  count: 4
   name: '[MAIN/2/NORMAL/NONE] 結ぶ永久の彩り (第12章) / これまでから明日へと'
   mission0count: 0
 1034011:
@@ -15960,17 +15960,17 @@
   name: '[CHARA] 差し伸べる手'
   mission0count: 2
 3300841:
-  count: 1
+  count: 2
   name: '[CHARA] あきらのドッペル'
-  mission0count: 0
+  mission0count: 1
 3300842:
-  count: 1
+  count: 2
   name: '[CHARA] あきらのドッペル'
-  mission0count: 0
+  mission0count: 1
 3300843:
-  count: 1
+  count: 2
   name: '[CHARA] あきらのドッペル'
-  mission0count: 0
+  mission0count: 1
 3300911:
   count: 3
   name: '[CHARA] 無邪気なシェフ'
