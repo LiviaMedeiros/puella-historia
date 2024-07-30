@@ -320,25 +320,25 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 神社の噂'
   mission0count: 1
 1013031:
-  count: 10
-  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
-  mission0count: 6
-1013032:
   count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
-  mission0count: 5
+  mission0count: 7
+1013032:
+  count: 12
+  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
+  mission0count: 6
 1013033:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
-  mission0count: 5
+  mission0count: 6
 1013034:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
-  mission0count: 5
+  mission0count: 6
 1013035:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
-  mission0count: 5
+  mission0count: 6
 10130351:
   count: 19
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
@@ -360,9 +360,9 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 昔話の足跡をたどって'
   mission0count: 1
 1013041:
-  count: 11
+  count: 12
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
-  mission0count: 5
+  mission0count: 6
 1013042:
   count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
@@ -1052,7 +1052,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / アリナの作品'
   mission0count: 2
 1015066:
-  count: 8
+  count: 15
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / アリナの作品'
   mission0count: 2
 10150651:
@@ -1080,19 +1080,19 @@
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / アリナの作品'
   mission0count: 0
 1015071:
-  count: 4
+  count: 13
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / ここが私の居場所'
   mission0count: 2
 1015072:
-  count: 2
+  count: 13
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / ここが私の居場所'
   mission0count: 2
 1015073:
-  count: 2
+  count: 15
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / ここが私の居場所'
   mission0count: 2
 1015074:
-  count: 2
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / ここが私の居場所'
   mission0count: 2
 1015075:
@@ -1432,7 +1432,7 @@
   name: '[MAIN/1/NORMAL/HARD] 真実を語る記憶 (第6章) / ふたりだけじゃない私たち'
   mission0count: 0
 1017011:
-  count: 16
+  count: 17
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 消えた３人、そして…'
   mission0count: 3
 1017012:
@@ -3840,7 +3840,7 @@
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 決裂へのカウントダウン'
   mission0count: 0
 1025041:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 甘美なる悲しみ'
   mission0count: 4
 1025042:
@@ -4656,17 +4656,17 @@
   name: '[MAIN/2/NORMAL/HARD] トワイライト・レムナント (第7章) / 想いの坩堝'
   mission0count: 0
 10280253:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] トワイライト・レムナント (第7章) / 想いの坩堝'
-  mission0count: 0
+  mission0count: 1
 10280254:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] トワイライト・レムナント (第7章) / 想いの坩堝'
-  mission0count: 0
+  mission0count: 1
 10280255:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] トワイライト・レムナント (第7章) / 想いの坩堝'
-  mission0count: 0
+  mission0count: 1
 10280256:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] トワイライト・レムナント (第7章) / 想いの坩堝'
@@ -5020,9 +5020,9 @@
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 時女一族編 1話'
   mission0count: 4
 10292251:
-  count: 1
+  count: 2
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 時女一族編 1話'
-  mission0count: 0
+  mission0count: 1
 1029231:
   count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 時女一族編 2話'
@@ -5092,9 +5092,9 @@
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / 時女一族編 10話'
   mission0count: 4
 10293151:
-  count: 1
+  count: 2
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / 時女一族編 10話'
-  mission0count: 0
+  mission0count: 1
 1029321:
   count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / フォークロア編 1話'
@@ -5196,9 +5196,9 @@
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / みかげ編 1話'
   mission0count: 4
 10294451:
-  count: 1
+  count: 2
   name: '[MAIN/2/BRANCH/HARD] 夢のなごりに芽吹く花 (第8章) / みかげ編 1話'
-  mission0count: 0
+  mission0count: 1
 1029451:
   count: 4
   name: '[MAIN/2/BRANCH/NORMAL] 夢のなごりに芽吹く花 (第8章) / みかげ編 2話'
@@ -5504,17 +5504,17 @@
   name: '[MAIN/2/NORMAL/NORMAL] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
   mission0count: 4
 10300451:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
-  mission0count: 1
+  mission0count: 2
 10300452:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
-  mission0count: 1
+  mission0count: 2
 10300453:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
-  mission0count: 1
+  mission0count: 2
 10300454:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 魔法少女至上主義へ'
@@ -5872,45 +5872,45 @@
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
   mission0count: 5
 10310551:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 0
+  mission0count: 1
 10310552:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 0
+  mission0count: 1
 10310553:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 0
+  mission0count: 1
 10310554:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 0
+  mission0count: 1
 10310555:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 0
+  mission0count: 1
 10310556:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 0
+  mission0count: 1
 10310557:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 0
+  mission0count: 1
 10310558:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 0
+  mission0count: 1
 10310559:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 0
+  mission0count: 1
 103105510:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 哀歌は倫理を飛び越える'
-  mission0count: 0
+  mission0count: 1
 1032011:
   count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 喜びと悲しみの終幕流転 (第11章) / 幾多の嘆き'
@@ -11116,25 +11116,25 @@
   name: '[CHARA] 叶わない願い'
   mission0count: 1
 3103432:
-  count: 1
+  count: 2
   name: '[CHARA] 叶わない願い'
-  mission0count: 0
+  mission0count: 1
 3103433:
-  count: 1
+  count: 2
   name: '[CHARA] 叶わない願い'
-  mission0count: 0
+  mission0count: 1
 3103441:
-  count: 1
+  count: 2
   name: '[CHARA] 旭のドッペル'
-  mission0count: 0
+  mission0count: 1
 3103442:
-  count: 1
+  count: 2
   name: '[CHARA] 旭のドッペル'
-  mission0count: 0
+  mission0count: 1
 3103443:
-  count: 1
+  count: 2
   name: '[CHARA] 旭のドッペル'
-  mission0count: 0
+  mission0count: 1
 3103511:
   count: 2
   name: '[CHARA] 屋上と夕日'
@@ -13044,21 +13044,21 @@
   name: '[CHARA] 月出里のドッペル'
   mission0count: 0
 3114311:
-  count: 2
+  count: 3
+  name: '[CHARA] 私の楽しい夏休み'
+  mission0count: 4
+3114312:
+  count: 3
   name: '[CHARA] 私の楽しい夏休み'
   mission0count: 3
-3114312:
-  count: 2
-  name: '[CHARA] 私の楽しい夏休み'
-  mission0count: 2
 3114313:
-  count: 4
+  count: 5
   name: '[CHARA] 私の楽しい夏休み'
-  mission0count: 2
+  mission0count: 3
 3114321:
-  count: 2
+  count: 3
   name: '[CHARA] きっと馴染めない夏休み'
-  mission0count: 2
+  mission0count: 3
 3114322:
   count: 2
   name: '[CHARA] きっと馴染めない夏休み'
@@ -19592,33 +19592,33 @@
   name: '[CHARA] コトバの剣戟'
   mission0count: 0
 3403323:
-  count: 1
+  count: 2
   name: '[CHARA] コトバの剣戟'
-  mission0count: 0
+  mission0count: 1
 3403331:
-  count: 1
+  count: 2
   name: '[CHARA] 変化は少しずつ'
-  mission0count: 0
+  mission0count: 1
 3403332:
-  count: 1
+  count: 2
   name: '[CHARA] 変化は少しずつ'
-  mission0count: 0
+  mission0count: 1
 3403333:
-  count: 1
+  count: 2
   name: '[CHARA] 変化は少しずつ'
-  mission0count: 0
+  mission0count: 1
 3403341:
-  count: 1
+  count: 2
   name: '[CHARA] 亜里紗のドッペル'
-  mission0count: 0
+  mission0count: 1
 3403342:
-  count: 1
+  count: 2
   name: '[CHARA] 亜里紗のドッペル'
-  mission0count: 0
+  mission0count: 1
 3403343:
-  count: 1
+  count: 2
   name: '[CHARA] 亜里紗のドッペル'
-  mission0count: 0
+  mission0count: 1
 3403411:
   count: 1
   name: '[CHARA] 四人寄ればどんな知恵…!?'
