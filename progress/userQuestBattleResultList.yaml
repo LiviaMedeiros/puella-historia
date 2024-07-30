@@ -496,21 +496,21 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
   mission0count: 6
 1013073:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 5
+  mission0count: 7
 1013074:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 5
+  mission0count: 6
 1013075:
-  count: 16
+  count: 17
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 5
+  mission0count: 6
 1013076:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 5
+  mission0count: 6
 10130751:
   count: 2
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 穢れきるとき…'
@@ -536,9 +536,9 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 穢れきるとき…'
   mission0count: 1
 1014011:
-  count: 11
+  count: 12
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / フクロウ印の給水屋'
-  mission0count: 5
+  mission0count: 6
 1014012:
   count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ウワサの守り人 (第4章) / フクロウ印の給水屋'
@@ -1412,11 +1412,11 @@
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / ふたりだけじゃない私たち'
   mission0count: 3
 1016072:
-  count: 3
+  count: 14
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / ふたりだけじゃない私たち'
   mission0count: 3
 1016073:
-  count: 4
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / ふたりだけじゃない私たち'
   mission0count: 3
 10160751:
@@ -1580,7 +1580,7 @@
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 和泉十七夜の観察'
   mission0count: 3
 1017112:
-  count: 11
+  count: 14
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 和泉十七夜の観察'
   mission0count: 3
 1017113:
@@ -3944,7 +3944,7 @@
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 別れが結んだ繋がり'
   mission0count: 1
 1026011:
-  count: 13
+  count: 27
   name: '[MAIN/2/NORMAL/NORMAL] 揺れて恋歌に霞む理想 (第5章) / 固かったはずの信念'
   mission0count: 3
 1026012:
@@ -5564,7 +5564,7 @@
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 見えざる意思'
   mission0count: 1
 10300553:
-  count: 2
+  count: 3
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 見えざる意思'
   mission0count: 1
 10300554:
@@ -5704,9 +5704,9 @@
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
   mission0count: 0
 1031031:
-  count: 5
+  count: 6
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 結ばれた悲嘆の歴史と…'
-  mission0count: 5
+  mission0count: 6
 1031032:
   count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 結ばれた悲嘆の歴史と…'
@@ -6136,7 +6136,7 @@
   name: '[MAIN/2/NORMAL/HARD] 喜びと悲しみの終幕流転 (第11章) / 諦念にようこそ'
   mission0count: 0
 10320456:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 喜びと悲しみの終幕流転 (第11章) / 諦念にようこそ'
   mission0count: 0
 10320457:
@@ -9996,29 +9996,29 @@
   name: '[CHARA] 新メンバー'
   mission0count: 5
 3101121:
-  count: 3
+  count: 4
   name: '[CHARA] ごめんなさい'
-  mission0count: 3
+  mission0count: 4
 3101122:
-  count: 3
+  count: 4
   name: '[CHARA] ごめんなさい'
-  mission0count: 3
+  mission0count: 4
 3101123:
-  count: 5
+  count: 6
   name: '[CHARA] ごめんなさい'
-  mission0count: 3
+  mission0count: 4
 3101131:
-  count: 3
+  count: 4
   name: '[CHARA] 私の気持ち'
-  mission0count: 3
+  mission0count: 4
 3101132:
-  count: 3
+  count: 4
   name: '[CHARA] 私の気持ち'
-  mission0count: 3
+  mission0count: 4
 3101133:
-  count: 3
+  count: 4
   name: '[CHARA] 私の気持ち'
-  mission0count: 3
+  mission0count: 4
 3101141:
   count: 3
   name: '[CHARA] かえでのドッペル'
@@ -14296,37 +14296,37 @@
   name: '[CHARA] 巴マミと出会ったのです'
   mission0count: 3
 3200712:
-  count: 3
+  count: 4
   name: '[CHARA] 巴マミと出会ったのです'
-  mission0count: 2
+  mission0count: 3
 3200713:
-  count: 3
+  count: 4
   name: '[CHARA] 巴マミと出会ったのです'
-  mission0count: 2
+  mission0count: 3
 3200721:
-  count: 3
+  count: 4
   name: '[CHARA] とっても悩んでいるのです'
-  mission0count: 2
+  mission0count: 3
 3200722:
-  count: 3
+  count: 4
   name: '[CHARA] とっても悩んでいるのです'
-  mission0count: 2
+  mission0count: 3
 3200723:
-  count: 3
+  count: 4
   name: '[CHARA] とっても悩んでいるのです'
-  mission0count: 2
+  mission0count: 3
 3200731:
-  count: 3
+  count: 4
   name: '[CHARA] 紅茶とチーズケーキなのです'
-  mission0count: 2
+  mission0count: 3
 3200732:
-  count: 3
+  count: 4
   name: '[CHARA] 紅茶とチーズケーキなのです'
-  mission0count: 2
+  mission0count: 3
 3200733:
-  count: 3
+  count: 4
   name: '[CHARA] 紅茶とチーズケーキなのです'
-  mission0count: 2
+  mission0count: 3
 3200741:
   count: 1
   name: '[CHARA] なぎさのドッペル'
@@ -16476,13 +16476,13 @@
   name: '[CHARA] はからずもオチ'
   mission0count: 2
 3301931:
-  count: 1
+  count: 2
   name: '[CHARA] 舞台でも楽屋でもあたし'
-  mission0count: 1
+  mission0count: 2
 3301932:
-  count: 1
+  count: 2
   name: '[CHARA] 舞台でも楽屋でもあたし'
-  mission0count: 1
+  mission0count: 2
 3301933:
   count: 1
   name: '[CHARA] 舞台でも楽屋でもあたし'
@@ -18364,13 +18364,13 @@
   name: '[CHARA] この夏一番の怖い話'
   mission0count: 2
 3350232:
-  count: 1
+  count: 2
   name: '[CHARA] この夏一番の怖い話'
-  mission0count: 1
+  mission0count: 2
 3350233:
-  count: 1
+  count: 2
   name: '[CHARA] この夏一番の怖い話'
-  mission0count: 1
+  mission0count: 2
 3350241:
   count: 1
   name: '[CHARA] 万年桜のウワサの試練'
