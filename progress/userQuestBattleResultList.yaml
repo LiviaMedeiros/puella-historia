@@ -1036,19 +1036,19 @@
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / アリナの作品'
   mission0count: 2
 1015062:
-  count: 7
+  count: 16
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / アリナの作品'
   mission0count: 2
 1015063:
-  count: 3
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / アリナの作品'
   mission0count: 2
 1015064:
-  count: 2
+  count: 15
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / アリナの作品'
   mission0count: 2
 1015065:
-  count: 2
+  count: 13
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / アリナの作品'
   mission0count: 2
 1015066:
@@ -5656,13 +5656,13 @@
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
   mission0count: 5
 1031023:
-  count: 4
-  name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
-  mission0count: 4
-1031024:
   count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
   mission0count: 5
+1031024:
+  count: 5
+  name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
+  mission0count: 6
 1031025:
   count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
@@ -9984,17 +9984,17 @@
   name: '[CHARA] ももこのドッペル'
   mission0count: 1
 3101111:
+  count: 6
+  name: '[CHARA] 新メンバー'
+  mission0count: 5
+3101112:
   count: 5
   name: '[CHARA] 新メンバー'
-  mission0count: 4
-3101112:
-  count: 4
-  name: '[CHARA] 新メンバー'
-  mission0count: 4
+  mission0count: 5
 3101113:
-  count: 4
+  count: 5
   name: '[CHARA] 新メンバー'
-  mission0count: 4
+  mission0count: 5
 3101121:
   count: 3
   name: '[CHARA] ごめんなさい'
@@ -13092,9 +13092,9 @@
   name: '[CHARA] 黒江のドッペル'
   mission0count: 1
 3114411:
-  count: 3
+  count: 4
   name: '[CHARA] 手に入れたい普通'
-  mission0count: 2
+  mission0count: 3
 3114412:
   count: 3
   name: '[CHARA] 手に入れたい普通'
@@ -14076,17 +14076,17 @@
   name: '[CHARA] 救済と希望と'
   mission0count: 1
 3200231:
-  count: 2
+  count: 3
   name: '[CHARA] 決別と覚悟と'
-  mission0count: 1
+  mission0count: 2
 3200232:
-  count: 2
+  count: 3
   name: '[CHARA] 決別と覚悟と'
-  mission0count: 1
+  mission0count: 2
 3200233:
-  count: 2
+  count: 3
   name: '[CHARA] 決別と覚悟と'
-  mission0count: 1
+  mission0count: 2
 3200241:
   count: 1
   name: '[CHARA] ほむらのドッペル'
@@ -14292,41 +14292,41 @@
   name: '[CHARA] 杏子のドッペル'
   mission0count: 0
 3200711:
-  count: 4
+  count: 5
+  name: '[CHARA] 巴マミと出会ったのです'
+  mission0count: 3
+3200712:
+  count: 3
   name: '[CHARA] 巴マミと出会ったのです'
   mission0count: 2
-3200712:
-  count: 2
-  name: '[CHARA] 巴マミと出会ったのです'
-  mission0count: 1
 3200713:
-  count: 2
+  count: 3
   name: '[CHARA] 巴マミと出会ったのです'
-  mission0count: 1
+  mission0count: 2
 3200721:
-  count: 2
+  count: 3
   name: '[CHARA] とっても悩んでいるのです'
-  mission0count: 1
+  mission0count: 2
 3200722:
-  count: 2
+  count: 3
   name: '[CHARA] とっても悩んでいるのです'
-  mission0count: 1
+  mission0count: 2
 3200723:
-  count: 2
+  count: 3
   name: '[CHARA] とっても悩んでいるのです'
-  mission0count: 1
+  mission0count: 2
 3200731:
-  count: 2
+  count: 3
   name: '[CHARA] 紅茶とチーズケーキなのです'
-  mission0count: 1
+  mission0count: 2
 3200732:
-  count: 2
+  count: 3
   name: '[CHARA] 紅茶とチーズケーキなのです'
-  mission0count: 1
+  mission0count: 2
 3200733:
-  count: 2
+  count: 3
   name: '[CHARA] 紅茶とチーズケーキなのです'
-  mission0count: 1
+  mission0count: 2
 3200741:
   count: 1
   name: '[CHARA] なぎさのドッペル'
