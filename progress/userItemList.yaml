@@ -2694,7 +2694,7 @@ GACHA_FREEBIE_MEDAL_LIGHTGREEN_665:
   owned: true
 GACHA_FREEBIE_MEDAL_LIGHTGREEN_705:
   name: 調整屋コイン
-  owned: false
+  owned: true
 GACHA_FREEBIE_MEDAL_LIGHTGREEN_786:
   name: 調整屋コイン
   owned: false

@@ -1,16 +1,16 @@
 ---
 1011011:
-  count: 41
+  count: 43
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
-  mission0count: 13
+  mission0count: 15
 1011012:
-  count: 41
+  count: 43
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
-  mission0count: 13
+  mission0count: 15
 1011013:
-  count: 15
+  count: 17
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
-  mission0count: 14
+  mission0count: 16
 10110151:
   count: 10
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 小さいキュゥべえ'
@@ -24,13 +24,13 @@
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 小さいキュゥべえ'
   mission0count: 1
 1011021:
-  count: 21
+  count: 23
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
-  mission0count: 14
+  mission0count: 16
 1011022:
-  count: 21
+  count: 23
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
-  mission0count: 13
+  mission0count: 15
 1011023:
   count: 13
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
@@ -68,7 +68,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 8
 1011034:
-  count: 448
+  count: 458
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 8
 1011035:
@@ -828,19 +828,19 @@
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
   mission0count: 4
 1015012:
-  count: 9
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
   mission0count: 4
 1015013:
-  count: 6
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
   mission0count: 3
 1015014:
-  count: 3
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
   mission0count: 3
 1015015:
-  count: 3
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
   mission0count: 3
 10150151:
@@ -864,19 +864,19 @@
   name: '[MAIN/1/NORMAL/HARD] ひとりぼっちの最果て (第5章) / 少女の声がする電波塔'
   mission0count: 1
 1015021:
-  count: 3
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
   mission0count: 3
 1015022:
-  count: 3
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
   mission0count: 3
 1015023:
-  count: 3
+  count: 6
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
   mission0count: 3
 1015024:
-  count: 3
+  count: 9
   name: '[MAIN/1/NORMAL/NORMAL] ひとりぼっちの最果て (第5章) / 繋がらない手がかり'
   mission0count: 3
 1015025:
@@ -5648,13 +5648,13 @@
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
   mission0count: 0
 1031021:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
-  mission0count: 4
+  mission0count: 5
 1031022:
-  count: 4
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
-  mission0count: 4
+  mission0count: 5
 1031023:
   count: 4
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
@@ -9504,17 +9504,17 @@
   name: '[SUB/2/NORMAL/NORMAL] 交錯のルポルタージュ (第11章) / これからも続く記録'
   mission0count: 1
 3100111:
-  count: 4
+  count: 5
   name: '[CHARA] 思い出の料理'
-  mission0count: 4
+  mission0count: 5
 3100112:
+  count: 5
+  name: '[CHARA] 思い出の料理'
+  mission0count: 5
+3100113:
   count: 4
   name: '[CHARA] 思い出の料理'
   mission0count: 4
-3100113:
-  count: 3
-  name: '[CHARA] 思い出の料理'
-  mission0count: 3
 3100121:
   count: 2
   name: '[CHARA] 相手を思う'
@@ -9600,9 +9600,9 @@
   name: '[CHARA] やちよのドッペル'
   mission0count: 1
 3100311:
-  count: 2
+  count: 3
   name: '[CHARA] もっと強くなりたい！'
-  mission0count: 2
+  mission0count: 3
 3100312:
   count: 2
   name: '[CHARA] もっと強くなりたい！'
@@ -20534,7 +20534,7 @@
 4000711:
   count: 13
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 火属性'
-  mission0count: 4
+  mission0count: 5
 4000712:
   count: 12
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 火属性'
@@ -20612,19 +20612,19 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 闇属性'
   mission0count: 1
 4000761:
-  count: 468
+  count: 470
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 8
 4000762:
-  count: 53
+  count: 54
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000763:
-  count: 28
+  count: 31
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4000764:
-  count: 190
+  count: 194
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 4
 4200101:
@@ -22347,13 +22347,13 @@
   name: '[COSTUME] 生まれながらの美しさ'
   mission0count: 0
 7200711:
-  count: 2
+  count: 3
   name: '[COSTUME] 少しオトナの浮き輪なのです'
-  mission0count: 1
+  mission0count: 2
 7200721:
-  count: 1
+  count: 2
   name: '[COSTUME] 晴着も悪くないのです'
-  mission0count: 0
+  mission0count: 1
 7200911:
   count: 3
   name: '[COSTUME] バックステージの悶々'
