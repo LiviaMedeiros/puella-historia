@@ -452,21 +452,21 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 6
 1013062:
-  count: 10
-  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
-  mission0count: 5
-1013063:
-  count: 10
-  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
-  mission0count: 5
-1013064:
   count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 6
-1013065:
+1013063:
   count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
-  mission0count: 5
+  mission0count: 6
+1013064:
+  count: 12
+  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
+  mission0count: 8
+1013065:
+  count: 12
+  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
+  mission0count: 6
 10130651:
   count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
@@ -488,13 +488,13 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / ふたりの会いたい人'
   mission0count: 1
 1013071:
-  count: 10
-  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 5
-1013072:
   count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
-  mission0count: 5
+  mission0count: 6
+1013072:
+  count: 12
+  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
+  mission0count: 6
 1013073:
   count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 穢れきるとき…'
@@ -1416,7 +1416,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / ふたりだけじゃない私たち'
   mission0count: 3
 1016073:
-  count: 3
+  count: 4
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / ふたりだけじゃない私たち'
   mission0count: 3
 10160751:
@@ -1576,11 +1576,11 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / 和泉十七夜の協力'
   mission0count: 0
 1017111:
-  count: 3
+  count: 4
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 和泉十七夜の観察'
   mission0count: 3
 1017112:
-  count: 3
+  count: 11
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 和泉十七夜の観察'
   mission0count: 3
 1017113:
@@ -3860,7 +3860,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 甘美なる悲しみ'
   mission0count: 4
 1025046:
-  count: 4
+  count: 16
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 甘美なる悲しみ'
   mission0count: 4
 1025047:
@@ -3916,7 +3916,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 別れが結んだ繋がり'
   mission0count: 4
 1025056:
-  count: 4
+  count: 16
   name: '[MAIN/2/NORMAL/NORMAL] 彼方の群青 (第4章) / 別れが結んだ繋がり'
   mission0count: 4
 10250551:
@@ -3944,7 +3944,7 @@
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 別れが結んだ繋がり'
   mission0count: 1
 1026011:
-  count: 3
+  count: 13
   name: '[MAIN/2/NORMAL/NORMAL] 揺れて恋歌に霞む理想 (第5章) / 固かったはずの信念'
   mission0count: 3
 1026012:
@@ -4560,7 +4560,7 @@
   name: '[MAIN/2/NORMAL/HARD] 薄氷のレゾンデートル (第6章) / 砕け、滲み、滴る'
   mission0count: 0
 1028011:
-  count: 16
+  count: 21
   name: '[MAIN/2/NORMAL/NORMAL] トワイライト・レムナント (第7章) / ホームへの帰還'
   mission0count: 4
 1028012:
