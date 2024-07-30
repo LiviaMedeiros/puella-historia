@@ -2409,7 +2409,7 @@ GACHA_FREEBIE_MEDAL_BLACK_711:
   owned: true
 GACHA_FREEBIE_MEDAL_BLACK_769:
   name: 調整屋コイン
-  owned: false
+  owned: true
 GACHA_FREEBIE_MEDAL_BLACK_791:
   name: 調整屋コイン
   owned: true
@@ -2697,7 +2697,7 @@ GACHA_FREEBIE_MEDAL_LIGHTGREEN_705:
   owned: true
 GACHA_FREEBIE_MEDAL_LIGHTGREEN_786:
   name: 調整屋コイン
-  owned: false
+  owned: true
 GACHA_FREEBIE_MEDAL_LIGHTGREEN_825:
   name: 調整屋コイン
   owned: true
@@ -2778,7 +2778,7 @@ GACHA_FREEBIE_MEDAL_PINK_1602:
   owned: true
 GACHA_FREEBIE_MEDAL_PINK_1665:
   name: 調整屋コイン
-  owned: false
+  owned: true
 GACHA_FREEBIE_MEDAL_PINK_1873:
   name: 調整屋コイン
   owned: true
@@ -2853,7 +2853,7 @@ GACHA_FREEBIE_MEDAL_PURPLE_1973:
   owned: true
 GACHA_FREEBIE_MEDAL_PURPLE_455:
   name: 調整屋コイン
-  owned: false
+  owned: true
 GACHA_FREEBIE_MEDAL_PURPLE_507:
   name: 調整屋コイン
   owned: true
@@ -3612,7 +3612,7 @@ SELECTABLE_MEMORIA_TICKET_RED_1576:
   owned: true
 SELECTABLE_MEMORIA_TICKET_RED_1657:
   name: 選べる★4メモリア交換チケット 赤
-  owned: false
+  owned: true
 SELECTABLE_MEMORIA_TICKET_RED_1839:
   name: 選べる★4メモリア交換チケット 赤
   owned: true
@@ -3792,10 +3792,10 @@ SELECTABLE_SPECIAL_TICKET_20:
   owned: true
 SELECTABLE_SPECIAL_TICKET_21:
   name: クリスマス2022SPチケット
-  owned: false
+  owned: true
 SELECTABLE_SPECIAL_TICKET_22:
   name: クリスマス2021SPチケット
-  owned: false
+  owned: true
 SELECTABLE_SPECIAL_TICKET_23:
   name: クリスマス2019-2020SPチケット
   owned: true
@@ -3804,13 +3804,13 @@ SELECTABLE_SPECIAL_TICKET_24:
   owned: true
 SELECTABLE_SPECIAL_TICKET_25:
   name: お正月2022-2023SPチケット
-  owned: false
+  owned: true
 SELECTABLE_SPECIAL_TICKET_26:
   name: お正月2020-2021SPチケット
   owned: true
 SELECTABLE_SPECIAL_TICKET_27:
   name: お正月2018-2019SPチケット
-  owned: false
+  owned: true
 SELECTABLE_SPECIAL_TICKET_28:
   name: ピュエラ・ヒストリアvol.1SPチケット
   owned: true
@@ -3828,7 +3828,7 @@ SELECTABLE_SPECIAL_TICKET_31:
   owned: true
 SELECTABLE_SPECIAL_TICKET_32:
   name: バレンタイン2020-2021SPチケット
-  owned: false
+  owned: true
 SELECTABLE_SPECIAL_TICKET_33:
   name: scene0 ver.魔法少女SPチケット
   owned: true
@@ -3840,10 +3840,10 @@ SELECTABLE_SPECIAL_TICKET_35:
   owned: true
 SELECTABLE_SPECIAL_TICKET_36:
   name: 悪魔ほむらSPチケット
-  owned: false
+  owned: true
 SELECTABLE_SPECIAL_TICKET_37:
   name: アルティメットまどかSPチケット
-  owned: false
+  owned: true
 SELECTABLE_SPECIAL_TICKET_38:
   name: マギア☆レポートSPチケット
   owned: true
@@ -3885,7 +3885,7 @@ SPECIAL_ANNIVERSARY_GACHA10_1110_TICKET:
   owned: true
 SPECIAL_GACHA_1032_TICKET:
   name: ★4魔法少女確定ガチャチケット
-  owned: false
+  owned: true
 SPECIAL_GACHA_1070_TICKET:
   name: ★4魔法少女確定ガチャチケット
   owned: true

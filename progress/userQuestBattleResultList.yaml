@@ -1580,7 +1580,7 @@
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 和泉十七夜の観察'
   mission0count: 3
 1017112:
-  count: 14
+  count: 20
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 和泉十七夜の観察'
   mission0count: 3
 1017113:
@@ -2472,9 +2472,9 @@
   name: '[MAIN/1/BRANCH/HARD] サラウンド・フェントホープ (第9章) / みふゆ編 5話'
   mission0count: 0
 1019441:
-  count: 1
+  count: 2
   name: '[MAIN/1/BRANCH/NORMAL] サラウンド・フェントホープ (第9章) / チームみかづき荘編 1話'
-  mission0count: 1
+  mission0count: 2
 10194451:
   count: 1
   name: '[MAIN/1/BRANCH/HARD] サラウンド・フェントホープ (第9章) / チームみかづき荘編 1話'
@@ -5564,7 +5564,7 @@
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 見えざる意思'
   mission0count: 1
 10300553:
-  count: 3
+  count: 5
   name: '[MAIN/2/NORMAL/HARD] 光差す正機迷宮 (第9章) / 見えざる意思'
   mission0count: 1
 10300554:
@@ -16484,21 +16484,21 @@
   name: '[CHARA] 舞台でも楽屋でもあたし'
   mission0count: 2
 3301933:
-  count: 1
+  count: 2
   name: '[CHARA] 舞台でも楽屋でもあたし'
-  mission0count: 1
+  mission0count: 2
 3301941:
-  count: 1
+  count: 2
   name: '[CHARA] あやかのドッペル'
-  mission0count: 1
+  mission0count: 2
 3301942:
-  count: 1
+  count: 2
   name: '[CHARA] あやかのドッペル'
-  mission0count: 1
+  mission0count: 2
 3301943:
-  count: 1
+  count: 2
   name: '[CHARA] あやかのドッペル'
-  mission0count: 1
+  mission0count: 2
 3302011:
   count: 1
   name: '[CHARA] 絵本に出てくる青い花'
@@ -18096,29 +18096,29 @@
   name: '[CHARA] 紗枝のドッペル'
   mission0count: 1
 3305611:
-  count: 1
+  count: 2
   name: '[CHARA] 露見―Disclose―'
-  mission0count: 0
+  mission0count: 1
 3305612:
-  count: 1
+  count: 2
   name: '[CHARA] 露見―Disclose―'
-  mission0count: 0
+  mission0count: 1
 3305613:
-  count: 1
+  count: 2
   name: '[CHARA] 露見―Disclose―'
-  mission0count: 0
+  mission0count: 1
 3305621:
-  count: 1
+  count: 2
   name: '[CHARA] 解放―Liberation―'
-  mission0count: 0
+  mission0count: 1
 3305622:
-  count: 1
+  count: 2
   name: '[CHARA] 解放―Liberation―'
-  mission0count: 0
+  mission0count: 1
 3305623:
-  count: 1
+  count: 2
   name: '[CHARA] 解放―Liberation―'
-  mission0count: 0
+  mission0count: 1
 3305631:
   count: 1
   name: '[CHARA] 安寧―Peace―'
