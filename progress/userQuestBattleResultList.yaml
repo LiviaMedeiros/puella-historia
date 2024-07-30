@@ -68,7 +68,7 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 8
 1011034:
-  count: 458
+  count: 468
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 夢で見る少女…'
   mission0count: 8
 1011035:
@@ -1584,7 +1584,7 @@
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 和泉十七夜の観察'
   mission0count: 3
 1017113:
-  count: 3
+  count: 17
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 和泉十七夜の観察'
   mission0count: 3
 10171151:
@@ -11892,33 +11892,33 @@
   name: '[CHARA] ガンヒルトのドッペル'
   mission0count: 1
 3105111:
-  count: 2
+  count: 3
   name: '[CHARA] 尼僧院にて'
-  mission0count: 1
+  mission0count: 2
 3105112:
-  count: 2
+  count: 3
   name: '[CHARA] 尼僧院にて'
-  mission0count: 1
+  mission0count: 2
 3105113:
-  count: 2
+  count: 3
   name: '[CHARA] 尼僧院にて'
-  mission0count: 1
+  mission0count: 2
 3105121:
-  count: 2
+  count: 3
   name: '[CHARA] 少女たちの反乱'
-  mission0count: 1
+  mission0count: 2
 3105122:
-  count: 2
+  count: 3
   name: '[CHARA] 少女たちの反乱'
-  mission0count: 1
+  mission0count: 2
 3105123:
-  count: 2
+  count: 3
   name: '[CHARA] 少女たちの反乱'
-  mission0count: 1
+  mission0count: 2
 3105131:
-  count: 2
+  count: 3
   name: '[CHARA] ふたりの檻'
-  mission0count: 1
+  mission0count: 2
 3105132:
   count: 2
   name: '[CHARA] ふたりの檻'
@@ -18120,13 +18120,13 @@
   name: '[CHARA] 解放―Liberation―'
   mission0count: 1
 3305631:
-  count: 1
+  count: 2
   name: '[CHARA] 安寧―Peace―'
-  mission0count: 0
+  mission0count: 1
 3305632:
-  count: 1
+  count: 2
   name: '[CHARA] 安寧―Peace―'
-  mission0count: 0
+  mission0count: 1
 3305633:
   count: 3
   name: '[CHARA] 安寧―Peace―'
@@ -20624,7 +20624,7 @@
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 6
 4000764:
-  count: 195
+  count: 196
   name: '[ENHANCEMENT_AROUSAL] 覚醒強化結界 全属性'
   mission0count: 5
 4200101:

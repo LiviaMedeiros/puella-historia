@@ -1,14 +1,14 @@
 ---
 hour:
-  apps: 18
-  records: 6352
+  apps: 23
+  records: 7183
 day:
-  apps: 37
-  records: 15614
+  apps: 39
+  records: 16401
 week:
-  apps: 74
-  records: 45800
+  apps: 76
+  records: 46623
 totes:
   apps: 184
-  records: 287971
+  records: 288954
 ...
