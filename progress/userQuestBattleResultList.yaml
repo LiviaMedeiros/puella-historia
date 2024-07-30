@@ -1544,7 +1544,7 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / さなフェリ脱出録'
   mission0count: 0
 1017091:
-  count: 3
+  count: 16
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 東のボス'
   mission0count: 3
 10170951:
@@ -5660,21 +5660,21 @@
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
   mission0count: 5
 1031024:
-  count: 5
+  count: 6
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
   mission0count: 6
 1031025:
-  count: 5
+  count: 6
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
-  mission0count: 7
+  mission0count: 8
 1031026:
-  count: 5
+  count: 6
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
-  mission0count: 5
+  mission0count: 6
 1031027:
-  count: 5
+  count: 6
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
-  mission0count: 5
+  mission0count: 6
 10310251:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / つかんだ意思を手繰る'
