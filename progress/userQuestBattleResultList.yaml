@@ -372,13 +372,13 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 6
 1013044:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
-  mission0count: 5
+  mission0count: 6
 1013045:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
-  mission0count: 5
+  mission0count: 6
 1013046:
   count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
@@ -1124,15 +1124,15 @@
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 講義のお誘い'
   mission0count: 2
 1016012:
-  count: 15
+  count: 16
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 講義のお誘い'
   mission0count: 4
 1016013:
-  count: 4
+  count: 15
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 講義のお誘い'
   mission0count: 3
 1016014:
-  count: 3
+  count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 真実を語る記憶 (第6章) / 講義のお誘い'
   mission0count: 3
 1016015:
@@ -1552,11 +1552,11 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / 東のボス'
   mission0count: 0
 1017101:
-  count: 3
+  count: 16
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 和泉十七夜の協力'
   mission0count: 3
 1017102:
-  count: 3
+  count: 17
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 和泉十七夜の協力'
   mission0count: 3
 1017103:
@@ -3088,7 +3088,7 @@
   name: '[MAIN/2/NORMAL/HARD] 前書きは靴音と一緒に (第1章) / 記す少女'
   mission0count: 1
 1023011:
-  count: 2
+  count: 7
   name: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / 思惑モーモーファーム'
   mission0count: 2
 1023012:
@@ -3120,7 +3120,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / 思惑モーモーファーム'
   mission0count: 2
 1023019:
-  count: 2
+  count: 20
   name: '[MAIN/2/NORMAL/NORMAL] 微笑みと火花 (第2章) / 思惑モーモーファーム'
   mission0count: 2
 10230110:
@@ -3552,7 +3552,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 内なる常夜の夜明け (第3章) / 古より連なる矜持'
   mission0count: 3
 1024035:
-  count: 3
+  count: 18
   name: '[MAIN/2/NORMAL/NORMAL] 内なる常夜の夜明け (第3章) / 古より連なる矜持'
   mission0count: 3
 1024036:
@@ -3936,13 +3936,13 @@
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 別れが結んだ繋がり'
   mission0count: 1
 10250555:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 別れが結んだ繋がり'
-  mission0count: 0
+  mission0count: 1
 10250556:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 彼方の群青 (第4章) / 別れが結んだ繋がり'
-  mission0count: 0
+  mission0count: 1
 1026011:
   count: 3
   name: '[MAIN/2/NORMAL/NORMAL] 揺れて恋歌に霞む理想 (第5章) / 固かったはずの信念'
@@ -4120,7 +4120,7 @@
   name: '[MAIN/2/NORMAL/HARD] 揺れて恋歌に霞む理想 (第5章) / 獄中の叫び'
   mission0count: 0
 1026041:
-  count: 5
+  count: 13
   name: '[MAIN/2/NORMAL/NORMAL] 揺れて恋歌に霞む理想 (第5章) / 心は一つ、魂も一つ'
   mission0count: 3
 1026042:
@@ -4136,7 +4136,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 揺れて恋歌に霞む理想 (第5章) / 心は一つ、魂も一つ'
   mission0count: 3
 1026045:
-  count: 3
+  count: 9
   name: '[MAIN/2/NORMAL/NORMAL] 揺れて恋歌に霞む理想 (第5章) / 心は一つ、魂も一つ'
   mission0count: 3
 1026046:
@@ -4152,7 +4152,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 揺れて恋歌に霞む理想 (第5章) / 心は一つ、魂も一つ'
   mission0count: 3
 1026049:
-  count: 3
+  count: 12
   name: '[MAIN/2/NORMAL/NORMAL] 揺れて恋歌に霞む理想 (第5章) / 心は一つ、魂も一つ'
   mission0count: 3
 10260410:
@@ -5800,25 +5800,25 @@
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
   mission0count: 5
 10310451:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
-  mission0count: 0
+  mission0count: 1
 10310452:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
-  mission0count: 0
+  mission0count: 1
 10310453:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
-  mission0count: 0
+  mission0count: 1
 10310454:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
-  mission0count: 0
+  mission0count: 1
 10310455:
-  count: 1
+  count: 2
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
-  mission0count: 0
+  mission0count: 1
 10310456:
   count: 1
   name: '[MAIN/2/NORMAL/HARD] 疾走ドラスティックラバー (第10章) / 怒りが生んだ感情の末'
@@ -14532,17 +14532,17 @@
   name: '[CHARA] まどか先輩のドッペル'
   mission0count: 1
 3210311:
-  count: 2
+  count: 3
   name: '[CHARA] 究極の力'
-  mission0count: 1
+  mission0count: 2
 3210312:
-  count: 2
+  count: 3
   name: '[CHARA] 究極の力'
-  mission0count: 1
+  mission0count: 2
 3210313:
-  count: 2
+  count: 3
   name: '[CHARA] 究極の力'
-  mission0count: 1
+  mission0count: 2
 3210321:
   count: 2
   name: '[CHARA] 本気の勝負'
@@ -16412,45 +16412,45 @@
   name: '[CHARA] 更紗帆奈はかく語りき'
   mission0count: 1
 3301813:
-  count: 1
+  count: 2
   name: '[CHARA] 更紗帆奈はかく語りき'
-  mission0count: 0
+  mission0count: 1
 3301821:
-  count: 1
+  count: 2
   name: '[CHARA] 更紗帆奈と瀬奈みこと'
-  mission0count: 0
+  mission0count: 1
 3301822:
-  count: 1
+  count: 2
   name: '[CHARA] 更紗帆奈と瀬奈みこと'
-  mission0count: 0
+  mission0count: 1
 3301823:
-  count: 1
+  count: 2
   name: '[CHARA] 更紗帆奈と瀬奈みこと'
-  mission0count: 0
+  mission0count: 1
 3301831:
-  count: 1
+  count: 2
   name: '[CHARA] 更紗帆奈に微笑みを'
-  mission0count: 0
+  mission0count: 1
 3301832:
-  count: 1
+  count: 2
   name: '[CHARA] 更紗帆奈に微笑みを'
-  mission0count: 0
+  mission0count: 1
 3301833:
-  count: 1
+  count: 2
   name: '[CHARA] 更紗帆奈に微笑みを'
-  mission0count: 0
+  mission0count: 1
 3301841:
-  count: 1
+  count: 2
   name: '[CHARA] 帆奈のドッペル'
-  mission0count: 0
+  mission0count: 1
 3301842:
-  count: 1
+  count: 2
   name: '[CHARA] 帆奈のドッペル'
-  mission0count: 0
+  mission0count: 1
 3301843:
-  count: 1
+  count: 2
   name: '[CHARA] 帆奈のドッペル'
-  mission0count: 0
+  mission0count: 1
 3301911:
   count: 1
   name: '[CHARA] つかみはインパクト勝負'
@@ -19012,17 +19012,17 @@
   name: '[CHARA] あすなろアラカルト'
   mission0count: 1
 3401422:
-  count: 2
+  count: 3
   name: '[CHARA] あすなろアラカルト'
-  mission0count: 1
+  mission0count: 2
 3401423:
-  count: 2
+  count: 3
   name: '[CHARA] あすなろアラカルト'
-  mission0count: 1
+  mission0count: 2
 3401431:
-  count: 2
+  count: 3
   name: '[CHARA] イチゴリゾットパーティー'
-  mission0count: 1
+  mission0count: 2
 3401432:
   count: 2
   name: '[CHARA] イチゴリゾットパーティー'
