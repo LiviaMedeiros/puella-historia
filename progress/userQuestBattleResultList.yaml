@@ -380,9 +380,9 @@
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 6
 1013046:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 口寄せ神社'
-  mission0count: 5
+  mission0count: 6
 10130451:
   count: 10
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 口寄せ神社'
@@ -408,25 +408,25 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 口寄せ神社'
   mission0count: 1
 1013051:
+  count: 12
+  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
+  mission0count: 6
+1013052:
   count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
-  mission0count: 5
-1013052:
-  count: 10
-  name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
-  mission0count: 5
+  mission0count: 6
 1013053:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
-  mission0count: 5
+  mission0count: 6
 1013054:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
-  mission0count: 5
+  mission0count: 6
 1013055:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / 参拝する少女たち'
-  mission0count: 5
+  mission0count: 6
 10130551:
   count: 12
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 参拝する少女たち'
@@ -448,9 +448,9 @@
   name: '[MAIN/1/NORMAL/HARD] 神浜うわさファイル (第3章) / 参拝する少女たち'
   mission0count: 1
 1013061:
-  count: 10
+  count: 11
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
-  mission0count: 5
+  mission0count: 6
 1013062:
   count: 10
   name: '[MAIN/1/NORMAL/NORMAL] 神浜うわさファイル (第3章) / ふたりの会いたい人'
@@ -1560,7 +1560,7 @@
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 和泉十七夜の協力'
   mission0count: 3
 1017103:
-  count: 3
+  count: 16
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 和泉十七夜の協力'
   mission0count: 3
 10171051:
@@ -3620,7 +3620,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 内なる常夜の夜明け (第3章) / 地下墓地の嘆き'
   mission0count: 3
 1024042:
-  count: 3
+  count: 18
   name: '[MAIN/2/NORMAL/NORMAL] 内なる常夜の夜明け (第3章) / 地下墓地の嘆き'
   mission0count: 3
 1024043:
@@ -4560,7 +4560,7 @@
   name: '[MAIN/2/NORMAL/HARD] 薄氷のレゾンデートル (第6章) / 砕け、滲み、滴る'
   mission0count: 0
 1028011:
-  count: 4
+  count: 16
   name: '[MAIN/2/NORMAL/NORMAL] トワイライト・レムナント (第7章) / ホームへの帰還'
   mission0count: 4
 1028012:
@@ -5588,7 +5588,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
   mission0count: 5
 1031014:
-  count: 5
+  count: 7
   name: '[MAIN/2/NORMAL/NORMAL] 疾走ドラスティックラバー (第10章) / 思惑の糸を探って'
   mission0count: 5
 1031015:
@@ -6284,7 +6284,7 @@
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 明日を託す命'
   mission0count: 3
 1033034:
-  count: 3
+  count: 5
   name: '[MAIN/2/NORMAL/NORMAL] 結ぶ永久の彩り (第12章) / 明日を託す命'
   mission0count: 3
 1033035:
@@ -16452,29 +16452,29 @@
   name: '[CHARA] 帆奈のドッペル'
   mission0count: 1
 3301911:
-  count: 1
+  count: 2
   name: '[CHARA] つかみはインパクト勝負'
-  mission0count: 1
+  mission0count: 2
 3301912:
-  count: 1
+  count: 2
   name: '[CHARA] つかみはインパクト勝負'
-  mission0count: 1
+  mission0count: 2
 3301913:
-  count: 1
+  count: 2
   name: '[CHARA] つかみはインパクト勝負'
-  mission0count: 1
+  mission0count: 2
 3301921:
-  count: 1
+  count: 2
   name: '[CHARA] はからずもオチ'
-  mission0count: 1
+  mission0count: 2
 3301922:
-  count: 1
+  count: 2
   name: '[CHARA] はからずもオチ'
-  mission0count: 1
+  mission0count: 2
 3301923:
-  count: 1
+  count: 2
   name: '[CHARA] はからずもオチ'
-  mission0count: 1
+  mission0count: 2
 3301931:
   count: 1
   name: '[CHARA] 舞台でも楽屋でもあたし'
