@@ -12,18 +12,6 @@
 				<img src="/magica/resource/image_web/banner/announce/banner_0500_m.png">
 			</div>
 		<% } %>
-		<% _.forEach(banner,function(model,index){ %>
-			<%
-				var endAt   = model.endAt.replace(/-/g,"\/");
-				var startAt = model.startAt.replace(/-/g,"\/");
-				if(model.showAnnounce && Date.parse(endAt) > Date.parse(currentTime) && Date.parse(startAt) < Date.parse(currentTime)){
-			%>
-			<div class="pickUpEvent <% if(model.bannerLink && readDay < Infinity){ %> popupCloseBtn TE bannerLinkBtn se_decide<% }else if(model.announcementId){ %> bannerAnnounce TE se_decide<% }else if(model.outerBannerLink){ %>outerLink TE se_decide<% } %>"<% if(model.bannerLink){ %> data-href="<%= model.bannerLink %>"<% }else if(model.announcementId){ %> data-newsId="<%= model.announcementId %>"<% }else if(model.outerBannerLink){ %> data-outlink="<%= model.outerBannerLink %>"<% } %>>
-				<% if(model.bannerText){ %><div class="bannerText pointFrame">▼&nbsp;<%= model.bannerText %>&nbsp;▼</div><% } %>
-				<img src="<%= model.imagePath %>_m.png">
-			</div>
-			<% } %>
-		<% }); %>
 		<% if(addShow.startDashGacha) { %>
 			<div class="pickUpEvent TE linkBtn se_decide" data-href="#/GachaTop/STARTDASH">
 				<img src="/magica/resource/image_web/banner/announce/banner_0119_m.png">
