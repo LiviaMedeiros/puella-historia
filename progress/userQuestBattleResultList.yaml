@@ -16920,13 +16920,13 @@
   name: '[CHARA] あやめのドッペル'
   mission0count: 0
 3302911:
-  count: 2
+  count: 3
   name: '[CHARA] 不可解な微笑み'
-  mission0count: 1
+  mission0count: 2
 3302912:
-  count: 2
+  count: 3
   name: '[CHARA] 不可解な微笑み'
-  mission0count: 1
+  mission0count: 2
 3302913:
   count: 2
   name: '[CHARA] 不可解な微笑み'
@@ -17300,21 +17300,21 @@
   name: '[CHARA] 占いでラッキーデイを掴め！'
   mission0count: 3
 3303723:
-  count: 1
+  count: 2
   name: '[CHARA] 占いでラッキーデイを掴め！'
-  mission0count: 1
+  mission0count: 2
 3303731:
-  count: 1
+  count: 2
   name: '[CHARA] “絶対に当たる占い”の秘密'
-  mission0count: 1
+  mission0count: 2
 3303732:
-  count: 1
+  count: 2
   name: '[CHARA] “絶対に当たる占い”の秘密'
-  mission0count: 1
+  mission0count: 2
 3303733:
-  count: 1
+  count: 2
   name: '[CHARA] “絶対に当たる占い”の秘密'
-  mission0count: 1
+  mission0count: 3
 3303741:
   count: 1
   name: '[CHARA] メルのドッペル'
