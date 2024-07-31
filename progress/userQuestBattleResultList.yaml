@@ -1608,7 +1608,7 @@
   name: '[MAIN/1/SINGLERAID/HARD] 楽園行き覚醒前夜 (第7章) / 楽園の崩壊を目指して'
   mission0count: 0
 1017131:
-  count: 3
+  count: 4
   name: '[MAIN/1/SINGLERAID/NORMAL] 楽園行き覚醒前夜 (第7章) / 楽園を守る翼たち'
   mission0count: 3
 10171351:
@@ -9744,29 +9744,29 @@
   name: '[CHARA] フェリシアのドッペル'
   mission0count: 1
 3100611:
-  count: 4
+  count: 5
   name: '[CHARA] あなたに会いたい'
-  mission0count: 2
+  mission0count: 3
 3100612:
-  count: 3
-  name: '[CHARA] あなたに会いたい'
-  mission0count: 2
-3100613:
   count: 4
   name: '[CHARA] あなたに会いたい'
-  mission0count: 2
+  mission0count: 3
+3100613:
+  count: 5
+  name: '[CHARA] あなたに会いたい'
+  mission0count: 3
 3100621:
-  count: 3
+  count: 4
   name: '[CHARA] あなたは変わらない'
-  mission0count: 2
+  mission0count: 3
 3100622:
-  count: 3
+  count: 4
   name: '[CHARA] あなたは変わらない'
-  mission0count: 2
+  mission0count: 3
 3100623:
-  count: 3
+  count: 4
   name: '[CHARA] あなたは変わらない'
-  mission0count: 2
+  mission0count: 3
 3100631:
   count: 3
   name: '[CHARA] あなたも救うため'
@@ -11924,7 +11924,7 @@
   name: '[CHARA] ふたりの檻'
   mission0count: 2
 3105133:
-  count: 6
+  count: 30
   name: '[CHARA] ふたりの檻'
   mission0count: 2
 3105141:
@@ -17016,25 +17016,25 @@
   name: '[CHARA] このみのドッペル'
   mission0count: 0
 3303111:
-  count: 2
+  count: 3
+  name: '[CHARA] 恋を叶える方法'
+  mission0count: 4
+3303112:
+  count: 3
   name: '[CHARA] 恋を叶える方法'
   mission0count: 3
-3303112:
-  count: 2
-  name: '[CHARA] 恋を叶える方法'
-  mission0count: 2
 3303113:
-  count: 2
+  count: 3
   name: '[CHARA] 恋を叶える方法'
-  mission0count: 2
+  mission0count: 3
 3303121:
-  count: 2
+  count: 3
   name: '[CHARA] 永遠に叶わない願い'
-  mission0count: 2
+  mission0count: 3
 3303122:
-  count: 2
+  count: 3
   name: '[CHARA] 永遠に叶わない願い'
-  mission0count: 2
+  mission0count: 3
 3303123:
   count: 2
   name: '[CHARA] 永遠に叶わない願い'
