@@ -8,9 +8,9 @@
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
   mission0count: 15
 1011013:
-  count: 17
+  count: 18
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 小さいキュゥべえ'
-  mission0count: 16
+  mission0count: 17
 10110151:
   count: 10
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 小さいキュゥべえ'
@@ -24,13 +24,13 @@
   name: '[MAIN/1/NORMAL/HARD] はじまりのいろは (第1章) / 小さいキュゥべえ'
   mission0count: 1
 1011021:
-  count: 23
+  count: 24
+  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
+  mission0count: 17
+1011022:
+  count: 24
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
   mission0count: 16
-1011022:
-  count: 23
-  name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
-  mission0count: 15
 1011023:
   count: 13
   name: '[MAIN/1/NORMAL/NORMAL] はじまりのいろは (第1章) / 神浜市の魔法少女たち'
@@ -10368,17 +10368,17 @@
   name: '[CHARA] 月夜のドッペル'
   mission0count: 1
 3101911:
-  count: 3
-  name: '[CHARA] もうひとりのウチ'
-  mission0count: 1
-3101912:
   count: 4
   name: '[CHARA] もうひとりのウチ'
-  mission0count: 1
-3101913:
-  count: 3
+  mission0count: 2
+3101912:
+  count: 5
   name: '[CHARA] もうひとりのウチ'
-  mission0count: 1
+  mission0count: 2
+3101913:
+  count: 4
+  name: '[CHARA] もうひとりのウチ'
+  mission0count: 2
 3101921:
   count: 3
   name: '[CHARA] こわーいあの子'

@@ -1350,7 +1350,7 @@ input:focus, textarea:focus {
   width: 611px;
   height: auto;
   min-height: 100%;
-  padding: 0px 15px 0px 0px;
+  padding: 20px 15px 0px 0px;
   position: absolute;
   top: 0;
   left: 0px;
@@ -5931,6 +5931,11 @@ input:focus, textarea:focus {
   display: block;
   font-family: "motoya",sans-serif;
   line-height: 63px;
+}
+
+.announcementPopup .popupInner .announceScroll3 .newsField .newsTextField .announceImg {
+  margin: 6px auto;
+  display: block;
 }
 
 /*-- メンテのお知らせ、マイペのお知らせ両方で使うものはこちらに追加していく --*/
@@ -10784,7 +10789,6 @@ input:focus, textarea:focus {
 
 #cardDetail #cardDetailWrap #charaStatus,
 #cardDetail #cardDetailWrap #charaSkill,
-#cardDetail #cardDetailWrap #charaVoice,
 #cardDetail #cardDetailWrap #charaProfile,
 #cardDetail #cardDetailWrap #charaMemoria,
 #cardDetail #cardDetailWrap #charaIllust,
@@ -10801,10 +10805,6 @@ input:focus, textarea:focus {
 }
 
 #cardDetail #cardDetailWrap.memoria #charaMemoria {
-  display: block;
-}
-
-#cardDetail #cardDetailWrap.voice #charaVoice {
   display: block;
 }
 

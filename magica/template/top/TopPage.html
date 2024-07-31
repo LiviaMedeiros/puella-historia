@@ -1,41 +1,29 @@
+<% 
+var _btnClass = 'off';
+var _transferBtnClass = 'off';
+if(model.gameUser) {
+	_btnClass = '';
+}
+if(model.isServerActive) {
+	_transferBtnClass = '';
+}
+%>
 <div id="TopPage">
-	<% if(model.aj2018) { %>
-		<style type='text/css'>
-			.aj2018Btn {
-				width: 128px;
-				height: 152px;
-				background: url('/magica/resource/image_web/test/aj2018/event_pop.png') left top no-repeat;
-
-				position: absolute;
-
-				bottom: 56px;
-				left: 12px;
-				z-index: 10000000;
-			}
-		</style>
-		<div class='aj2018Btn linkBtn se_decide TE' data-href='#/RealGachaTop'></div>
-	<% } %>
-
-	<p id="transferBtn"><span class="topBtn se_decide c_gold">引き継ぎ・連携</span></p>
-	<p id="clearBtn"><span class="topBtn se_decide c_gold">キャッシュクリア</span></p>
-
-	<% if(model.user && model.user.tutorialId == 'TU999'){ %>
-		<p id="opMovieBtn"><span class="topBtn se_decide c_gold">第2部OPムービー</span></p>
-	<% } %>
-
-	<% if(model.gameUser && model.gameUser.inviteCode){ %>
-		<p id="userIdPannel">プレイヤーID：<%= model.gameUser.inviteCode %></p>
-	<% } %>
-
-	<div>
-		<div id="touchScreen" class="se_kettei02">
-    		<span class="touchTxt"></span>
-			<div id="touchBackground"></div>
-		</div>
+	<div class="mainImg"></div>
+	<div class="logo"></div>
+	<div class="thanks"></div>
+	<div id="CharaListTopBtn" class="TE se_decide <%= _btnClass %>"></div>
+	<div id="ArchiveBtn" class="TE se_decide <%= _btnClass %>"></div>
+	<div id="TakeoverBtn" class="TE se_decide <%= _btnClass %>"></div>
+	<div id="RefundBtn" class="TE se_decide <%= _btnClass %>"></div>
+	<div id="transferBtn" class="TE se_decide <%= _transferBtnClass %>"></div>
+	<div id="noticeSec">
+		<ul>
+			<li class="noticeText TE se_decide" data-id="Notice01">【重要】サービス終了のお知らせ</li>
+			<li class="noticeText TE se_decide" data-id="Notice02">【重要】「有償マギアストーン」の払戻し手続きのお知らせ</li>
+		</ul>
 	</div>
-
-	<p id="terms"><span>利用規約</span></p><p id="copy"></p>
-	<p id="app_ver" class="c_purple">VER.<span class="c_purple"></span></p>
+	<div id="copy"></div>
 </div>
 
 <script id="transferInner" type="text/template">
@@ -47,15 +35,78 @@
 	</div>
 </script>
 
-<script id="nameChangePop" type="text/template">
-	第1章3話のストーリーにて、プレイヤー名入力が完了しませんでした。<br>
-	プレイヤー名を入力してください。<br><br>
-	<input id="changeName" class="commonFrame3" readonly="readonly" type="text" maxlength="8" value="">
-	<div class="textCount c_gold">
-		<span id="textCount" class='c_gold'>0</span>/8文字
+<script id="tempRegisterRepaymentMailPopup" type="text/template">
+	<p>現在残っている有償マギアストーン数と払戻し金額は以下になります。</p><br>
+	<div class="MoneySec">
+		<dl class="gameMoney common_dl">
+			<dt>有償マギアストーン数</dt>
+			<dd><%="<%= model.gameMoney %\>"%>個</dd>
+		</dl>
+		<dl class="Money common_dl">
+			<dt>払戻し金額</dt>
+			<dd><%="<%= model.money %\>"%>円</dd>
+		</dl>
 	</div>
-	<div class="cautionText c_red">
-		※後から変更可能です（当日中の変更はできません）<br>
-		※第1章3話のストーリーはアーカイブから参照できます
+	<div class="MailSec">
+		<p>申請のお手続きにはメールアドレスが必要になります。</p><br>
+		<p>メール受信可能なメールアドレスを入力の上、送信ボタンを押してください。</p><br>
+		<span class="textAddress c_gold">メールアドレス</span><input id="inputMail" class="commonFrame3 inputSec" type="text" value="">
 	</div>
+	<div class="ExplanSec">
+		<span class="mb_white ExplanBtn TE"><span class="b_screen"></span>手続き・注意事項</span>
+	</div>
+</script>
+
+<script id="tempAuthNumberPopup" type="text/template">
+	<p class="address">【 <%="<%= model.mailAddress %\>"%> 】</p>
+	<p>上記メールアドレスにお送りしたメールに記載の確認番号を入力の上、<br>確認ボタンを押してください。</p>
+	<div class="inputSec">
+		<span class="textNumber c_gold">確認番号</span><input id="inputAuthNum" class="commonFrame3 inputSec" type="text" value="">
+	</div>
+	<div class="cautionSec">
+		※確認ボタン押下後、当社よりCASH POST(キャッシュポスト)サービスの利用に<br>
+		必要な「認証キー」が記載されたメールが届きましたら、払戻し申請の受付は完了となります。
+	</div>
+	<div class="issueSec">
+		<p>メールが届かない場合は上記メールアドレス、注意事項を<br>再度ご確認の上、再発行ボタンを押してください。</p>
+		<div class="issueBtn TE mb_white"><span class="b_screen"></span>確認番号の再発行</div>
+	</div>
+	<div class="ExplanSec">
+		<span class="mb_white ExplanBtn TE"><span class="b_screen"></span>手続き・注意事項</span>
+	</div>
+</script>
+
+<script id="tempRequestCompletePopup" type="text/template">
+	払戻し申請の受付が完了しました。<br><br>
+	順次、ご入力いただいた連絡用メールアドレス宛に、<br>
+	「CASH POST(キャッシュポスト)」サービスを利用した<br>
+	払戻しの方法をご案内いたします。
+	<div class="ExplanSec">
+		<span class="mb_white ExplanBtn TE"><span class="b_screen"></span>手続き・注意事項</span>
+	</div>
+</script>
+
+<script id="tempRegisterRepaymentMailCautionPopup" type="text/template">
+	<div id="cautionBase">
+		<div class="popupScrollWrap cautionPop">
+		<div class="caution">
+<p>■払戻し申請のお手続きについて</p>
+1.本画面の入力フォームに連絡用のメールアドレスを入力して送信を押してください。<br>
+2.入力いただいたメールアドレス宛に、当社より「確認番号」が記載されたメールが以下のメールアドレスから届きます。（support@magireco.com）<br>
+3.メールアドレス送信後に切り替わる画面にて「確認番号」を入力、「確認」ボタンを押下。<br>
+4.入力いただいたメールアドレス宛に、当社よりCASH POST(キャッシュポスト)サービスの利用に必要な「認証キー」が記載されたメールが届きましたら、払戻し申請の受付は完了となります。<br>
+後日、入力いただいたメールアドレス宛に、「CASH POST(キャッシュポスト)」サービスを利用した払戻しの方法をご案内いたします。<br>
+<br>
+<p>■注意事項</p>
+・メールのセキュリティ設定によっては正しくメールが届かない場合がございますので、以下のドメインを受信できるよう設定をお願いいたします。<br>
+@magireco.com<br>
+@magi-reco.com<br>
+@cashpost.jp<br>
+・払戻しは順次開始いたしますが、お申出の完了順にて対応をさせていただきます。払戻し完了までお時間を頂戴する場合がございますのでご了承ください。<br>
+・すでに消費された「有償マギアストーン」、所有中の「無償マギアストーン」、及び「有償マギアストーン」以外の購入済みゲーム内アイテムは払戻しの対象外となります。<br>
+・日本国内口座以外への払戻しはいたしかねます。<br>
+・ご登録いただきました個人情報は、払戻し手続きのみで利用いたします。払戻し後は当社個人情報保護ポリシー（https://www.aniplex.co.jp/help/privacy.html）に則り、適切に破棄いたします。<br>
+・申出完了とともに、本対応趣旨、利用規約にご理解、同意いただいたものとし、申出のキャンセルはできないものとします。<br>
+		</div>
+	</div>	
 </script>
