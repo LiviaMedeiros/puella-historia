@@ -9768,9 +9768,9 @@
   name: '[CHARA] あなたは変わらない'
   mission0count: 3
 3100631:
-  count: 3
+  count: 4
   name: '[CHARA] あなたも救うため'
-  mission0count: 2
+  mission0count: 3
 3100632:
   count: 3
   name: '[CHARA] あなたも救うため'
@@ -11880,17 +11880,17 @@
   name: '[CHARA] 夢の代償'
   mission0count: 1
 3105041:
-  count: 2
+  count: 3
   name: '[CHARA] ガンヒルトのドッペル'
-  mission0count: 1
+  mission0count: 2
 3105042:
-  count: 2
+  count: 3
   name: '[CHARA] ガンヒルトのドッペル'
-  mission0count: 1
+  mission0count: 2
 3105043:
-  count: 2
+  count: 3
   name: '[CHARA] ガンヒルトのドッペル'
-  mission0count: 1
+  mission0count: 2
 3105111:
   count: 3
   name: '[CHARA] 尼僧院にて'
@@ -13428,13 +13428,13 @@
   name: '[CHARA] 十七夜のドッペル'
   mission0count: 0
 3121711:
-  count: 3
+  count: 4
   name: '[CHARA] 矛盾した望み'
-  mission0count: 2
+  mission0count: 3
 3121712:
-  count: 3
+  count: 4
   name: '[CHARA] 矛盾した望み'
-  mission0count: 2
+  mission0count: 3
 3121713:
   count: 3
   name: '[CHARA] 矛盾した望み'
@@ -17036,13 +17036,13 @@
   name: '[CHARA] 永遠に叶わない願い'
   mission0count: 3
 3303123:
-  count: 2
+  count: 3
   name: '[CHARA] 永遠に叶わない願い'
-  mission0count: 2
+  mission0count: 3
 3303131:
-  count: 2
+  count: 3
   name: '[CHARA] １２時過ぎの魔法使い'
-  mission0count: 2
+  mission0count: 3
 3303132:
   count: 2
   name: '[CHARA] １２時過ぎの魔法使い'
