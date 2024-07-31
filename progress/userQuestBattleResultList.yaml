@@ -13096,13 +13096,13 @@
   name: '[CHARA] 手に入れたい普通'
   mission0count: 3
 3114412:
-  count: 3
+  count: 4
   name: '[CHARA] 手に入れたい普通'
-  mission0count: 2
+  mission0count: 3
 3114413:
-  count: 3
+  count: 4
   name: '[CHARA] 手に入れたい普通'
-  mission0count: 2
+  mission0count: 3
 3114421:
   count: 3
   name: '[CHARA] 幸せは手からこぼれ落ち'
@@ -14544,17 +14544,17 @@
   name: '[CHARA] 究極の力'
   mission0count: 2
 3210321:
-  count: 2
+  count: 3
   name: '[CHARA] 本気の勝負'
-  mission0count: 1
+  mission0count: 2
 3210322:
-  count: 2
+  count: 3
   name: '[CHARA] 本気の勝負'
-  mission0count: 1
+  mission0count: 2
 3210323:
-  count: 2
+  count: 3
   name: '[CHARA] 本気の勝負'
-  mission0count: 1
+  mission0count: 2
 3210331:
   count: 3
   name: '[CHARA] 戦いの末'
@@ -16940,21 +16940,21 @@
   name: '[CHARA] その傷の理由'
   mission0count: 2
 3302923:
-  count: 2
+  count: 3
   name: '[CHARA] その傷の理由'
-  mission0count: 1
+  mission0count: 2
 3302931:
-  count: 2
-  name: '[CHARA] 利己的な庇護欲'
-  mission0count: 1
-3302932:
   count: 3
   name: '[CHARA] 利己的な庇護欲'
-  mission0count: 1
-3302933:
-  count: 2
+  mission0count: 2
+3302932:
+  count: 4
   name: '[CHARA] 利己的な庇護欲'
-  mission0count: 1
+  mission0count: 2
+3302933:
+  count: 3
+  name: '[CHARA] 利己的な庇護欲'
+  mission0count: 2
 3302941:
   count: 1
   name: '[CHARA] まさらのドッペル'
