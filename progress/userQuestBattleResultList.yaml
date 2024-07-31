@@ -16928,17 +16928,17 @@
   name: '[CHARA] 不可解な微笑み'
   mission0count: 2
 3302913:
-  count: 2
+  count: 3
   name: '[CHARA] 不可解な微笑み'
-  mission0count: 1
+  mission0count: 2
 3302921:
-  count: 2
-  name: '[CHARA] その傷の理由'
-  mission0count: 1
-3302922:
   count: 3
   name: '[CHARA] その傷の理由'
-  mission0count: 1
+  mission0count: 2
+3302922:
+  count: 4
+  name: '[CHARA] その傷の理由'
+  mission0count: 2
 3302923:
   count: 2
   name: '[CHARA] その傷の理由'
