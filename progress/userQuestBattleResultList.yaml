@@ -7804,19 +7804,19 @@
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film12-2'
   mission0count: 0
 10421417:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film12-2'
   mission0count: 0
 10421504:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10421506:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10421510:
-  count: 4
+  count: 5
   name: '[MAIN/3/NORMAL/NONE] Scene0 (Scene0) / film0'
   mission0count: 0
 10421515:
@@ -9772,13 +9772,13 @@
   name: '[CHARA] あなたも救うため'
   mission0count: 3
 3100632:
-  count: 3
+  count: 4
   name: '[CHARA] あなたも救うため'
-  mission0count: 2
+  mission0count: 3
 3100633:
-  count: 3
+  count: 4
   name: '[CHARA] あなたも救うため'
-  mission0count: 2
+  mission0count: 3
 3100641:
   count: 3
   name: '[CHARA] みふゆのドッペル'
@@ -13436,21 +13436,21 @@
   name: '[CHARA] 矛盾した望み'
   mission0count: 3
 3121713:
-  count: 3
+  count: 4
   name: '[CHARA] 矛盾した望み'
-  mission0count: 2
+  mission0count: 3
 3121721:
-  count: 3
+  count: 4
   name: '[CHARA] あの日、迷いの中'
-  mission0count: 2
+  mission0count: 3
 3121722:
-  count: 3
+  count: 4
   name: '[CHARA] あの日、迷いの中'
-  mission0count: 2
+  mission0count: 3
 3121723:
-  count: 3
+  count: 4
   name: '[CHARA] あの日、迷いの中'
-  mission0count: 2
+  mission0count: 3
 3121731:
   count: 3
   name: '[CHARA] いつか、許せるように'
@@ -17044,13 +17044,13 @@
   name: '[CHARA] １２時過ぎの魔法使い'
   mission0count: 3
 3303132:
-  count: 2
+  count: 3
   name: '[CHARA] １２時過ぎの魔法使い'
-  mission0count: 2
+  mission0count: 3
 3303133:
-  count: 2
+  count: 3
   name: '[CHARA] １２時過ぎの魔法使い'
-  mission0count: 2
+  mission0count: 3
 3303141:
   count: 1
   name: '[CHARA] 梨花のドッペル'
@@ -17292,13 +17292,13 @@
   name: '[CHARA] すぐにできる！運勢占い'
   mission0count: 1
 3303721:
-  count: 1
+  count: 2
   name: '[CHARA] 占いでラッキーデイを掴め！'
-  mission0count: 1
+  mission0count: 2
 3303722:
-  count: 1
+  count: 2
   name: '[CHARA] 占いでラッキーデイを掴め！'
-  mission0count: 1
+  mission0count: 3
 3303723:
   count: 1
   name: '[CHARA] 占いでラッキーデイを掴め！'
