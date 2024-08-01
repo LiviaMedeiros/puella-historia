@@ -1,13 +1,13 @@
 ---
 hour:
-  apps: 2
-  records: 3
+  apps: 1
+  records: 2
 day:
-  apps: 28
-  records: 4255
+  apps: 27
+  records: 3408
 week:
   apps: 79
-  records: 40859
+  records: 40596
 totes:
   apps: 189
   records: 293209
