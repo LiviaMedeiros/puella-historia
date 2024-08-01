@@ -1,0 +1,6 @@
+#BanWrap { width: 1024px; height: 100%; background-color: rgba(0, 0, 0, 0.6); position: relative; }
+#BanWrap .closeBtn { width: 137px; height: 55px; background: url("/magica/resource/image_web/btn/close01.png") left top no-repeat; display: block; position: fixed; top: 14px; left: 27px; z-index: 1; }
+#BanWrap #mainWrap { width: 1024px; height: 576px; overflow: scroll; position: absolute; top: 0; left: 0; padding: 50px 82px 0px; }
+#BanWrap #mainWrap p { color: #fff; }
+#BanWrap #mainWrap .banTitle { width: 100%; text-align: center; font-size: 30px; display: block; padding: 0px 0px 30px; color: #fff; }
+#BanWrap #mainWrap .caution { color: #CC0000; text-shadow: 2px 0px 2px rgba(0, 0, 0, 0.6), 0px 2px 2px rgba(0, 0, 0, 0.6), 2px 2px 2px rgba(0, 0, 0, 0.6), -2px 0px 2px rgba(0, 0, 0, 0.6), 0px -2px 2px rgba(0, 0, 0, 0.6), -2px 2px 2px rgba(0, 0, 0, 0.6), -2px -2px 2px rgba(0, 0, 0, 0.6); font-size: 20px; padding: 20px 0; }
