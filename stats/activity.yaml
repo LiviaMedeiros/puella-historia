@@ -3,12 +3,12 @@
   apps: 3
   records: 6
 day:
-  apps: 10
-  records: 55
+  apps: 9
+  records: 36
 week:
   apps: 78
-  records: 37466
+  records: 37033
 totes:
   apps: 190
-  records: 293213
+  records: 293218
 ...
