@@ -1,13 +1,13 @@
 ---
 6hour:
-  apps: 3
-  records: 6
+  apps: 2
+  records: 5
 day:
-  apps: 9
-  records: 36
+  apps: 5
+  records: 14
 week:
-  apps: 78
-  records: 37033
+  apps: 76
+  records: 35257
 totes:
   apps: 190
   records: 293218
